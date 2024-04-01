@@ -1,18 +1,29 @@
 
 state={
 	id=323
-	name="STATE_323"
+	name="Montallicel"
 	
-    history = {
-        owner = CZL
+		history={
+		owner = CZL
+		victory_points = {
+			7349 20 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			7349 = {
+                naval_base = 1
+            }
+
+		}
 		add_core_of = CZL
-    }
+
+	}
 	
 	provinces={
 		436 509 673 1438 1446 4219 4436 7336 7349 7373 7400 7553 
 	}
-	manpower=1
 	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
+        manpower=536210
+        state_category = large_town
 }
