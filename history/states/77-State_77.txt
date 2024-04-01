@@ -1,0 +1,31 @@
+
+state = {
+	id = 77
+	name = Castlecross
+	manpower = 428482
+	state_category = town
+		resources={
+		chromium=2
+	}
+
+	history = {
+		owner = THK
+		add_core_of = THK
+		victory_points = {
+			8289 12
+		}
+		victory_points = {
+			8262 5
+		}
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+
+	provinces = {
+		874 2296 2949 3710 4095 4919 5060 5121 8155 8156 8176 8197 8200 8206 8261 8262 8289 8335 
+	}
+}

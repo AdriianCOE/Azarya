@@ -1,0 +1,16 @@
+
+state = {
+    id = 89
+    name = Caeloria
+    manpower = 20502
+    state_category = tiny_island
+    
+    history = {
+        owner = THK
+		add_core_of = THK
+    }
+    
+    provinces = {
+        2652
+    }
+}

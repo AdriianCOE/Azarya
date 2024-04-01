@@ -1,0 +1,12 @@
+TST = {
+	color = rgb { 57 113 228 }
+	color_ui = rgb { 74 147 255 }
+}
+THK = {
+	color = rgb { 279 13 20 }
+	color_ui = rgb { 279 13 20 }
+}
+CZL = {
+	color = rgb { 00 00 255 }
+	color_ui = rgb { 00 00 255 }
+}

@@ -1,0 +1,43 @@
+
+state={
+	id=382
+	name="Eldoria"
+	resources={
+		steel=7
+		aluminium=4
+	}
+
+	history={
+		owner = THK
+		victory_points = {
+			4744 50 
+		}
+				victory_points = {
+			3786 10 
+		}
+						victory_points = {
+			8783 5 
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 3
+			air_base = 2
+			4744 = {
+                naval_base = 5
+            }
+
+		}
+		add_core_of = THK
+
+	}
+
+	provinces={
+		592 605 723 846 1008 1687 2810 3786 3891 3939 4329 4644 4744 4851 8600 8626 8641 8660 8688 8689 8706 8714 8723 8731 8743 8762 8775 8783 8815 8820 8828 8856 8863 8909 8941 
+	}
+	manpower=1399521
+	buildings_max_level_factor=1.000
+	state_category=large_city
+
+	local_supplies=0.0 
+}

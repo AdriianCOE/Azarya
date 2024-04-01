@@ -1,0 +1,16 @@
+
+state = {
+    id = 91
+    name = Brindoria 
+    manpower = 18421
+    state_category = tiny_island
+    
+    history = {
+        owner = THK
+		add_core_of = THK
+    }
+    
+    provinces = {
+        9497
+    }
+}

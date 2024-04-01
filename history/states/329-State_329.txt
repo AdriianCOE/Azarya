@@ -1,0 +1,16 @@
+state={
+	id=329
+	name="STATE_329"
+	
+    history = {
+        owner = CZL
+		add_core_of = CZL
+    }
+	
+	provinces={
+		481 630 715 919 1273 2052 2360 2532 2856 3027 3254 3874 4654 7371 7408 7443 7481 7529 7560 7594 
+	}
+	buildings_max_level_factor=1.000
+        manpower=1
+        state_category = town
+}

@@ -1,0 +1,427 @@
+characters={
+	CZL_ar={
+		advisor={
+			slot = high_command
+			idea_token = CZL_ar
+			ledger  = army 
+				allowed  = {
+					original_tag  = CZL
+				}
+				traits  = {
+					army_regrouping_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_1"
+			}
+		}
+	}
+	CZL_acr={
+		advisor={
+			slot = air_chief
+			idea_token = CZL_acr
+			allowed  = {
+					original_tag  = CZL
+				}
+				traits  = {
+					air_chief_reform_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_3"
+			}
+		}
+	}
+	CZL_mt={
+		advisor={
+			slot = theorist
+			idea_token = CZL_mt
+			ledger  = army 
+				allowed  = {
+					original_tag  = CZL
+				}
+				traits  = {
+					military_theorist 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_1"
+			}
+		}
+	}
+	CZL_stc={
+		advisor={
+			slot = political_advisor
+			idea_token = CZL_stc
+			allowed  = {
+					original_tag  = CZL
+				}
+				traits  = {
+					smooth_talking_charmer 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_3"
+			}
+		}
+	}
+	CZL_aa2={
+		advisor={
+			slot = high_command
+			idea_token = CZL_aa2
+			ledger  = army 
+				allowed  = {
+					original_tag  = CZL
+				}
+				traits  = {
+					army_armored_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_2"
+			}
+		}
+	}
+	CZL_acgs={
+		advisor={
+			slot = air_chief
+			idea_token = CZL_acgs
+			allowed  = {
+					original_tag  = CZL
+				}
+				traits  = {
+					air_chief_ground_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_3"
+			}
+		}
+	}
+	CZL_ncm={
+		advisor={
+			slot = navy_chief
+			idea_token = CZL_ncm
+			allowed  = {
+					original_tag  = CZL
+				}
+				traits  = {
+					navy_chief_maneuver_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_3"
+			}
+		}
+	}
+	CZL_nccr={
+		advisor={
+			slot = navy_chief
+			idea_token = CZL_nccr
+			allowed  = {
+					original_tag  = CZL
+				}
+				traits  = {
+					navy_chief_commerce_raiding_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_2"
+			}
+		}
+	}
+	CZL_coi={
+		advisor={
+			slot = political_advisor
+			idea_token = CZL_coi
+			allowed  = {
+					original_tag  = CZL
+				}
+				traits  = {
+					captain_of_industry 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_1"
+			}
+		}
+	}
+	CZL_democratic_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = CZL_democratic_guy
+			allowed  = {
+					original_tag  = CZL
+				}
+				traits  = {
+					democratic_reformer 
+				}
+				do_effect  = {
+					not  = {
+						has_government  = democratic 
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_1"
+			}
+		}
+	}
+	CZL_acd2={
+		advisor={
+			slot = army_chief
+			idea_token = CZL_acd2
+			allowed  = {
+					original_tag  = CZL
+				}
+				traits  = {
+					army_chief_defensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_1"
+			}
+		}
+	}
+	CZL_acas={
+		advisor={
+			slot = high_command
+			idea_token = CZL_acas
+			ledger  = air 
+				allowed  = {
+					original_tag  = CZL
+				}
+				traits  = {
+					air_close_air_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_2"
+			}
+		}
+	}
+	CZL_communist_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = CZL_communist_guy
+			allowed  = {
+					original_tag  = CZL
+				}
+				traits  = {
+					communist_revolutionary 
+				}
+				do_effect  = {
+					not  = {
+						has_government  = communism 
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_3"
+			}
+		}
+	}
+	CZL_ncs={
+		advisor={
+			slot = high_command
+			idea_token = CZL_ncs
+			ledger  = navy 
+				allowed  = {
+					original_tag  = CZL
+				}
+				traits  = {
+					navy_capital_ship_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_2"
+			}
+		}
+	}
+	CZL_awt={
+		advisor={
+			slot = theorist
+			idea_token = CZL_awt
+			ledger  = air 
+				allowed  = {
+					original_tag  = CZL
+				}
+				traits  = {
+					air_warfare_theorist 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_2"
+			}
+		}
+	}
+	CZL_pot={
+		advisor={
+			slot = political_advisor
+			idea_token = CZL_pot
+			allowed  = {
+					original_tag  = CZL
+				}
+				traits  = {
+					prince_of_terror 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_2"
+			}
+		}
+	}
+	CZL_fascist_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = CZL_fascist_guy
+			allowed  = {
+					original_tag  = CZL
+				}
+				traits  = {
+					fascist_demagogue 
+				}
+				do_effect  = {
+					not  = {
+						has_government  = fascism 
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_2"
+			}
+		}
+	}
+	CZL_ai2={
+		advisor={
+			slot = high_command
+			idea_token = CZL_ai2
+			ledger  = army 
+				allowed  = {
+					original_tag  = CZL
+				}
+				traits  = {
+					army_infantry_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_3"
+			}
+		}
+	}
+	CZL_nt={
+		advisor={
+			slot = theorist
+			idea_token = CZL_nt
+			ledger  = navy 
+				allowed  = {
+					original_tag  = CZL
+				}
+				traits  = {
+					naval_theorist 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_3"
+			}
+		}
+	}
+	CZL_aco2={
+		advisor={
+			slot = army_chief
+			idea_token = CZL_aco2
+			allowed  = {
+					original_tag  = CZL
+				}
+				traits  = {
+					army_chief_organizational_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_2"
+			}
+		}
+	}
+}

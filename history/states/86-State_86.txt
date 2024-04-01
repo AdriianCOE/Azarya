@@ -1,0 +1,12 @@
+
+state={
+	id=86
+	name="STATE_86"
+	provinces={
+		177 1204 2637 4815 4855 8554 8566 8610 8617 8630 8673 8716 8763 8778 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

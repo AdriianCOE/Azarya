@@ -1,0 +1,28 @@
+
+state = {
+    id = 92
+    name = Arvenia
+    manpower = 59527
+    state_category = small_island
+    
+	history = {
+		owner = THK
+		victory_points = {
+			9131 2
+		}
+		buildings = {
+			infrastructure = 1
+			9131 = {
+                naval_base = 1
+            }
+
+		}
+		add_core_of = THK
+
+	}
+    
+    provinces = {
+        9088 9112 9131
+    }
+}
+

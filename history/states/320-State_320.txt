@@ -1,0 +1,12 @@
+
+state={
+	id=320
+	name="STATE_320"
+	provinces={
+		344 408 706 805 867 1748 1819 3026 4159 4407 5097 7224 7247 7253 7283 7317 7446 7517 7522 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}
