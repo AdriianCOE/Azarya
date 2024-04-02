@@ -2,6 +2,12 @@
 state={
 	id=311
 	name="STATE_311"
+
+			history={
+		owner = NIC
+		add_core_of = NIC
+	}
+	
 	provinces={
 		1168 1850 3758 7208 7237 7264 7279 7280 7293 7294 7312 7316 7320 
 	}

@@ -1,6 +1,12 @@
 state={
 	id=76
 	name="STATE_76"
+
+			history={
+		owner = NIC
+		add_core_of = NIC
+	}
+	
 	provinces={
 		1019 
 	}
