@@ -1,0 +1,6 @@
+#ThirynKingdom
+
+graphical_culture = eastern_european
+graphical_culture_2d = eastern_european
+
+color = { 75  0  225 }

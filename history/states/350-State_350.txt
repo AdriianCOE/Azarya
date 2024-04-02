@@ -2,6 +2,12 @@
 state={
 	id=350
 	name="STATE_350"
+
+						history={
+		owner = NIR
+		add_core_of = NIR
+	}
+	
 	provinces={
 		1497 2310 2508 2805 2939 2999 3901 4119 7634 7644 7650 7737 7795 7822 7878 
 	}
