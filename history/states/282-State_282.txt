@@ -6,13 +6,16 @@ state={
 	history={
 		owner = CZL
 		add_core_of = CZL
+				victory_points = {
+			4569 10 
+		}
 
 	}
 
 	provinces={
 		763 927 1327 1775 1986 3060 3098 3332 3882 3908 4569 7064 7096 7133 
 	}
-	manpower=1
+	manpower=686541
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

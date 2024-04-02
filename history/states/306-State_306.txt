@@ -1,18 +1,32 @@
-
 state={
 	id=306
-	name="STATE_306"
+	name="Teno"
+	resources={
+	alluminium=4
+	}
 	
-    history = {
-        owner = CZL
+		history={
+		owner = CZL
+		victory_points = {
+			2620 20 
+		}
+		buildings = {
+		infrastructure = 3
+		industrial_complex = 2
+			2620 = {
+                naval_base = 2
+            }
+
+		}
 		add_core_of = CZL
-    }
+
+	}
 	
 	provinces={
 		2620 7298 7311 
 	}
-	manpower=1
+	manpower=1457941
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=large_city
 	local_supplies=0.000
 }
