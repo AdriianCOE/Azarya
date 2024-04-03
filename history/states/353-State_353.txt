@@ -11,13 +11,13 @@ state={
 			7669 12 
 		}
 		victory_points = {
-			4996 50 
+			4996 25 
 		}
 		buildings = {
-			infrastructure = 5
-			industrial_complex = 4
+			infrastructure = 3
+			industrial_complex = 2
 			4996 = {
-                naval_base = 3
+                naval_base = 2
             }
 
 		}
@@ -29,6 +29,6 @@ state={
 		895 2728 3057 3122 4408 4996 5116 7581 7624 7632 7633 7643 7657 7669 7673 7678 7698 7722 7752 7765 
 	}
 	buildings_max_level_factor=1.000
-        manpower=625027
-        state_category = city
+        manpower=425027
+        state_category = town
 }
