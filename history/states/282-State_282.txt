@@ -1,7 +1,7 @@
 
 state={
 	id=282
-	name="STATE_282"
+	name="Lemanis"
 
 	history={
 		owner = CZL

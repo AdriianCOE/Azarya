@@ -5,26 +5,26 @@ set_technology = {
 	infantry_weapons = 1
 }
 
-recruit_character = NIC_ar
-recruit_character = NIC_acr
-recruit_character = NIC_mt
-recruit_character = NIC_stc
-recruit_character = NIC_aa2
-recruit_character = NIC_acgs
-recruit_character = NIC_ncm
-recruit_character = NIC_nccr
-recruit_character = NIC_coi
-recruit_character = NIC_democratic_guy
-recruit_character = NIC_acd2
-recruit_character = NIC_acas
-recruit_character = NIC_communist_guy
-recruit_character = NIC_ncs
-recruit_character = NIC_awt
-recruit_character = NIC_pot
-recruit_character = NIC_fascist_guy
-recruit_character = NIC_ai2
-recruit_character = NIC_nt
-recruit_character = NIC_aco2
+recruit_character = NIR_ar
+recruit_character = NIR_acr
+recruit_character = NIR_mt
+recruit_character = NIR_stc
+recruit_character = NIR_aa2
+recruit_character = NIR_acgs
+recruit_character = NIR_ncm
+recruit_character = NIR_nccr
+recruit_character = NIR_coi
+recruit_character = NIR_democratic_guy
+recruit_character = NIR_acd2
+recruit_character = NIR_acas
+recruit_character = NIR_communist_guy
+recruit_character = NIR_ncs
+recruit_character = NIR_awt
+recruit_character = NIR_pot
+recruit_character = NIR_fascist_guy
+recruit_character = NIR_ai2
+recruit_character = NIR_nt
+recruit_character = NIR_aco2
 
 set_convoys = 157
 set_war_support = 10
@@ -58,11 +58,11 @@ add_command_power = 50
 		battlefleet_concentration = 1
 		convoy_sailing = 1
 
-		#electronics
-		electronic_mechanical_engineering = 1
+		#electroNIRs
+		electroNIR_mechaNIRal_engineering = 1
 		radio = 1
 		radio_detection = 1
-		mechanical_computing = 1
+		mechaNIRal_computing = 1
 		computing_machine = 1
 
 		#industry

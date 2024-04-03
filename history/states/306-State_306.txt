@@ -2,7 +2,7 @@ state={
 	id=306
 	name="Teno"
 	resources={
-	aluminium=4
+	aluminium=5
 	}
 	
 		history={

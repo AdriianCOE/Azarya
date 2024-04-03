@@ -1,7 +1,10 @@
 
 state={
 	id=317
-	name="STATE_317"
+	name="Caralis"
+		resources={
+	steel=1
+	}
 
 	history={
 		owner = CZL

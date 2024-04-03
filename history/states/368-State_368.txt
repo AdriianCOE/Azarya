@@ -1,18 +1,40 @@
 
 state={
 	id=368
-	name="STATE_368"
+	name="Cerulean Ridge"
+	resources={
+	    steel=2
+	}
 
-					history={
+	history={
 		owner = NIR
 		add_core_of = NIR
+		victory_points = {
+			8016 30 
+		}
+		victory_points = {
+			8007 20 
+		}
+				buildings = {
+			infrastructure = 5
+			industrial_complex = 4
+			arms_factory = 1
+			dockyard = 1
+			air_base = 2
+			8016 = {
+                naval_base = 2
+            }
+
+		}
+
 	}
 	
 	provinces={
 		284 813 839 887 1307 1399 1594 1845 2151 2536 2614 2812 3649 3923 4032 4411 4488 4535 4735 4801 4931 4962 5084 7814 7835 7862 7908 7916 7942 7951 7963 7970 7971 7972 8001 8007 8016 8031 8048 8074 8075 8082 8102 8123 8124 8145 8157 8232 8236 
 	}
-	manpower=1
+	manpower=972971
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=city
 	local_supplies=0.000
 }
+

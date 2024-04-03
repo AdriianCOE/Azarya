@@ -2,6 +2,10 @@
 state={
 	id=323
 	name="Montallicel"
+    resources={
+	    oil=2
+	}
+	
 	
 		history={
 		owner = CZL

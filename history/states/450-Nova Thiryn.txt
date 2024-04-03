@@ -3,8 +3,8 @@ state={
 	id=450
 	name="Basinfrost"
 	resources={
-		steel=3
-		oil=2
+		steel=5
+		oil=3
 	}
 
 	history={
@@ -31,7 +31,7 @@ state={
 	provinces={
 		211 756 799 912 1028 1175 1406 1532 1976 3161 3526 3608 3790 4202 4352 4745 4863 8310 8352 8382 8385 8394 8432 8433 8468 8482 8483 8489 8490 8515 8531 8536 8553 8583 8608 8609 8615 8650 8682 
 	}
-	manpower=525701
+	manpower=625701
 	buildings_max_level_factor=1.000
 	state_category=city
 

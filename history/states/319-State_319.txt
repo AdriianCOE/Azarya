@@ -1,17 +1,28 @@
 
 state={
 	id=319
-	name="STATE_319"
-
-			history={
-		owner = NIC
-		add_core_of = NIC
+	name="Aillant"
+	resources={
+	steel=2
 	}
-	
+
+	history={
+		owner = NIC
+		victory_points = {
+			1150 20
+		}
+				buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = NIC
+
+	}
+
 	provinces={
 		742 966 1150 1782 2193 2565 2762 3051 3092 3210 3417 3488 3517 3748 4000 4281 4709 7338 7340 7374 7401 7403 7415 7425 7431 7435 7460 7461 7496 
 	}
-	manpower=1
+	manpower=587958
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

@@ -2,7 +2,7 @@
 state = {
     id = 92
     name = Arvenia
-    manpower = 59527
+    manpower = 39527
     state_category = small_island
     
 	history = {

@@ -1,7 +1,10 @@
 
 state={
 	id=303
-	name="STATE_303"
+	name="Emporiae"
+	resources={
+	   steel=3
+	}
 	
     history = {
         owner = CZL
@@ -9,6 +12,13 @@ state={
 		victory_points = {
 			7241 15 
 		}
+		victory_points = {
+			3244 5 
+		}
+		victory_points = {
+			3993 8 
+		}
+		
     }
 	
 	provinces={

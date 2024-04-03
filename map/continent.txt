@@ -8,4 +8,5 @@ continents = {
 	middle_east
 	Azarya
 	Nazarya
+	Naislands
 }

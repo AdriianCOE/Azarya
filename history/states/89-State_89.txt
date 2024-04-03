@@ -2,7 +2,7 @@
 state = {
     id = 89
     name = Caeloria
-    manpower = 20502
+    manpower = 9502
     state_category = tiny_island
     
     history = {

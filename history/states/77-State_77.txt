@@ -2,10 +2,10 @@
 state = {
 	id = 77
 	name = Castlecross
-	manpower = 428482
+	manpower = 528482
 	state_category = town
 		resources={
-		chromium=2
+		chromium=3
 	}
 
 	history = {

@@ -1,17 +1,36 @@
 
 state={
 	id=307
-	name="STATE_307"
+	name="Ardon"
+	resources={
+	oil=3
+	}
 
 			history={
 		owner = NIC
+		victory_points = {
+			7330 12 
+		}
+				victory_points = {
+			7132 5 
+		}
+
+				buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			dockyard = 2
+			7330 = {
+                naval_base = 2
+            }
+
+		}
 		add_core_of = NIC
 	}
 	
 	provinces={
 		267 625 1520 2837 3407 4310 5018 7132 7147 7156 7173 7207 7231 7268 7285 7313 7326 7330 7343 
-	}
-	manpower=1
+    }
+	manpower=447959
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

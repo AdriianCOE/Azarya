@@ -1,13 +1,20 @@
 
 state={
 	id=276
-	name="STATE_276"
+	name="Theranda"
+	resources={
+	    steel=12
+		tungsten=4
+	}
 	
 	    history = {
         owner = CZL
 		add_core_of = CZL
 		victory_points = {
 			6940 5 
+		}
+		victory_points = {
+			7001 5 
 		}
     }
 	

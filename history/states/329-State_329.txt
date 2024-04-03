@@ -6,7 +6,10 @@ state={
         owner = CZL
 		add_core_of = CZL
 		victory_points = {
-			7408 10 
+			7408 15 
+		}
+		victory_points = {
+			7560 5 
 		}
     }
 	

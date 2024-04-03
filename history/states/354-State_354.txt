@@ -1,17 +1,31 @@
 state={
 	id=354
 	name="Pejosia"
+	resources={
+	chromium=10
+	}
 
-	history={
+			history={
 		owner = NIC
+		victory_points = {
+			7763 20 
+		}
+				buildings = {
+			infrastructure = 2
+			7763 = {
+                naval_base = 1
+            }
+
+		}
 		add_core_of = NIC
+
 	}
 
 	provinces={
 		682 1033 1147 2430 2709 3453 3604 4660 7688 7718 7732 7763 7804 7834 
 	}
-	manpower=427861
+	manpower=321949
 	buildings_max_level_factor=1.000
-	state_category=city
+	state_category=town
 	local_supplies=0.000
 }
