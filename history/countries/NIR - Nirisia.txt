@@ -58,11 +58,11 @@ add_command_power = 50
 		battlefleet_concentration = 1
 		convoy_sailing = 1
 
-		#electroNIRs
-		electroNIR_mechaNIRal_engineering = 1
+		#electronics
+		electronic_mechanical_engineering = 1
 		radio = 1
 		radio_detection = 1
-		mechaNIRal_computing = 1
+		mechanical_computing = 1
 		computing_machine = 1
 
 		#industry
