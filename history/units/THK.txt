@@ -1,0 +1,86 @@
+﻿division_template = {
+	name = "Divisao Real de Infantaria"
+	division_names_group = SPAN_INFB_02
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+division_template = {
+	name = "Cavalaria Real"  
+	division_names_group = SPAN_CAVB_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+
+units = {
+	##### Ejército de THKa #####
+	division= {	# "1a Divisao do Exercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 4744 # Cormosama
+		division_template = "Divisao Real de Infantaria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+		division= {	# "2a Divisao do Exercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 4744 # Cormosama
+		division_template = "Divisao Real de Infantaria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "1a Divisao de Cavalaria'"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 3786 # Allorguil
+		division_template = "Cavalaria Real" 
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "2a Divisao de Cavalaria'"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 3786 # Allorguil
+		division_template = "Cavalaria Real" 
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+
+	##### No Notable Naval Forces #####
+}
+
+##### No Notable Air Forces #####
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "THK"
+		}
+		requested_factories = 1
+		progress = 0.54
+		efficiency = 100
+	}
+}
