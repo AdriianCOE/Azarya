@@ -5,20 +5,29 @@ state={
 	
 	    history = {
         owner = CZL
-		add_core_of = CZL
 		victory_points = {
 			4842 5 
 		}
 		victory_points = {
 			502 12 
 		}
+		victory_points = {
+			1829 30
+		}
+		buildings = {
+		infrastructure = 4
+		industrial_complex = 2
+            }
+
+		add_core_of = CZL
+
     }
 	
 	provinces={
 		116 349 502 1001 1394 1468 1829 2239 2743 3213 3272 3817 4169 4369 4520 4533 4553 4607 4826 4842 6893 6911 6946 7002 7003 7052 7065 7071 7087 7137 
 	}
-	manpower=587509
+	manpower=1457941
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=town
 	local_supplies=0.000
 }

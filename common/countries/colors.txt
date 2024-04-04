@@ -10,3 +10,15 @@ CZL = {
 	color = rgb { 00 00 255 }
 	color_ui = rgb { 00 00 255 }
 }
+NIC = {
+	color = rgb { 200  200  200 }
+	color_ui = rgb { 200  200  200 }
+}
+NIR = {
+	color = rgb { 75  0  225 }
+	color_ui = rgb { 75  0  225 }
+}
+RFB = {
+	color = rgb { 0  128  128 }
+	color_ui = rgb { 0  128  128 }
+}
