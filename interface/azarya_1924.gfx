@@ -1,4 +1,6 @@
-	    spriteType = {
+spriteTypes = {
+	SpriteType = {
 		    name = "GFX_azarya_bookmark"
 		    texturefile = "gfx/interface/azarya_1924.dds"
 	}
+}
