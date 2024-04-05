@@ -1,6 +1,6 @@
 ﻿division_template = {
 	name = "Divisao Real de Infantaria"
-	division_names_group = SPAN_INFB_02
+	division_names_group = THK_INF_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -11,7 +11,7 @@
 }
 division_template = {
 	name = "Cavalaria Real"  
-	division_names_group = SPAN_CAVB_01
+	division_names_group = THK_CAV_01
 
 	regiments = {
 		cavalry = { x = 0 y = 0 }
@@ -22,7 +22,7 @@ division_template = {
 }
 
 units = {
-	##### Ejército de THKa #####
+	##### Exercito de Thiryn #####
 	division= {	# "1a Divisao do Exercito"
 		division_name = {
 				is_name_ordered = yes
@@ -39,10 +39,42 @@ units = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 4744 # Cormosama
+		location = 92 # Lirden
 		division_template = "Divisao Real de Infantaria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
+
+	}
+		division= {	# "3a Divisao do Exercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 8289
+		division_template = "Divisao Real de Infantaria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+		division= {	# "4a Divisao do Exercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 8934 # Cormosama
+		division_template = "Divisao Real de Infantaria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+		division= {	# "5a Divisao do Exercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 8531
+		division_template = "Divisao Real de Infantaria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7	
 
 	}
 	division= {	# "1a Divisao de Cavalaria'"
@@ -61,7 +93,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 3786 # Allorguil
+		location = 3569
 		division_template = "Cavalaria Real" 
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
@@ -70,6 +102,20 @@ units = {
 
 	##### No Notable Naval Forces #####
 }
+
+units= {
+
+	##### Naval OOB #####
+	fleet = {
+		name = "Marinha Real"
+		naval_base = 4744 # Cormosama
+		task_force = {				
+			name = "Armada Real"			
+			location = 4744 # Montevideo
+			ship = { name = "ROU Thiryn" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = THK version_name = "Cormo Class" } } }
+		}				
+	}
+} 
 
 ##### No Notable Air Forces #####
 

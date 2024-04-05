@@ -1,0 +1,121 @@
+﻿##### ARGENTINA NAME LISTS #####
+### REGULAR DESTROYER NAMES###
+THK_DD_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_DESTROYERS
+
+	for_countries = { THK }
+
+	type = ship
+	ship_types = { ship_hull_light destroyer }			
+
+	prefix = "NRB "
+	fallback_name = "Contratorpedeiro %d"					
+
+	unique = {											
+		"Piaui" "Rio Grande do Norte" "Paraíba" "Alagoas" "Marnhão" "Sergipe" "Santa Catharina" "Mato Grosso" "Mariz e Barros" "Marcílio Dias" "Greenhalgh" 
+		"Amazonas" "Araguari" "Ajuricaba" "Acre" "Araguaya" "Apa" "Juruá" "Javari" "Jutahy" "Juruena" "Jaguaribe" "Japarua" 
+		"Babitonga" "Baependi" "Bauru" "Beberibe" "Benevente" "Bertioga" "Bocaina" "THKcuí" 
+	}
+}
+
+### LIGHT CRUISER NAMES###
+THK_CL_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CL
+
+	for_countries = { THK }
+
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser }
+	
+	prefix = "NRB "
+	fallback_name = "Cruzador Ligeiro %d"
+
+	unique = {
+		"Batata" "Coco" "Xixi" "Pinto"
+	}
+}
+
+### HEAVY CRUISER NAMES###
+THK_CA_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CA
+
+	for_countries = { THK }
+
+	type = ship
+	ship_types = { ship_hull_cruiser heavy_cruiser }
+	
+	prefix = "NRB "
+	fallback_name = "Cruzador Pesado %d"
+
+	unique = {
+				"Batata" "Coco" "Xixi" "Pinto"
+	}
+}
+
+
+### BATTLESHIP NAMES ###
+THK_BB_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BB
+
+	for_countries = { THK }
+
+	type = ship
+	ship_types = { ship_hull_heavy battleship }
+	
+	prefix = "NRB "
+	fallback_name = "Couraçado %d"		
+
+	unique = {
+				"Batata" "Coco" "Xixi" "Pinto"
+	}
+}
+
+### BATTLECRUISER NAMES ###
+THK_BC_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BC
+
+	for_countries = { THK }
+
+	type = ship
+	ship_types = { ship_hull_heavy battle_cruiser }
+	
+	prefix = "NRB "
+	fallback_name = "Cuzador Couraçado %d"		
+
+	unique = {
+			"Batata" "Coco" "Xixi" "Pinto"
+	}
+}
+
+### AIRCRAFT CARRIER NAMES ###
+THK_CV_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CARRIERS
+
+	for_countries = { THK }
+
+	type = ship
+	ship_types = { ship_hull_carrier carrier }
+	
+	prefix = "NRB "
+	fallback_name = "Porta-Aviões %d"	
+
+	unique = {
+		"Batata" "Coco" "Xixi" "Pinto"	}
+}
+
+### SUBMARINES ###
+THK_SS_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_SUBMARINES
+
+	for_countries = { THK }
+
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+	
+	prefix = "NRB "
+	fallback_name = "Submarino %d"
+	
+	unique = {
+		"Humaytá" "Tupi" "Timbira" "Tamoio" "Riachuelo" "Guanabara" "Rio Grande do Sul" "Bahia" "Rio de Janeiro" "Ceará" "Goiás" "Amazonas" 
+	}
+}

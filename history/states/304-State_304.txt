@@ -5,11 +5,14 @@ state={
 
 	history={
 		owner = CZL
-		add_core_of = CZL
+		buildings = {
+		    infrastructure = 1	
+			}
 		victory_points = {
 			1892 8 
 		}
 
+		add_core_of = CZL
 	}
 
 	provinces={
