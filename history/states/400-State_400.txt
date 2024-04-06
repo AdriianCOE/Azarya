@@ -7,8 +7,8 @@ state={
 			buildings = {
 			infrastructure = 1
             
-        }
-		add_core_of = THK
+          }
+		add_core_of = UPG
 	}
 	provinces={
 		2474 2641 3976 4250 4264 4270 4442 4584 4980 8757 8807 8837 8869 8886 8900 8928 8964 9025 9039 

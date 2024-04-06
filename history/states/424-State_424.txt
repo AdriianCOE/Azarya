@@ -10,8 +10,8 @@ state={
 			industrial_complex = 2
 			arms_factory = 2
             
-        }
-		add_core_of = THK
+         }
+		add_core_of = UPG
 	}
 	provinces={
 		1463 2971 3763 3929 4306 5054 5101 9060 9081 9107 9132 9146 

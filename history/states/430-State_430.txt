@@ -2,14 +2,16 @@
 state={
 	id=430
 	name="Movilla"
+		resources={
+		oil=1
+	}
 
 	history={
 		owner = UPG
-	}
-			victory_points = {
+		victory_points = {
 			1448 50 
 		}
-			victory_points = {
+		victory_points = {
 			9164 20 
 		}
 		buildings = {
@@ -20,9 +22,11 @@ state={
 			1448 = {
                 naval_base = 4
             }
-			
-		add_core_of = UPG
+
 		}
+		add_core_of = UPG
+	}
+
 	provinces={
 		1448 2235 2323 2452 3169 4167 4681 9140 9164 9166 9219 9231 9233 9250 9268 9283 9289 
 	}

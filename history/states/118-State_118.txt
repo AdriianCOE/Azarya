@@ -6,9 +6,10 @@ state={
 			buildings = {
 			infrastructure = 1
 
-        }
-		add_core_of = THK
+		}
+		add_core_of = UPG
 	}
+
 	provinces={
 		9499 
 	}

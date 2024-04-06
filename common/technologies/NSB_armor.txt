@@ -112,7 +112,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1918
+		start_year = 1905
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 2 y = 0 }
@@ -202,7 +202,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1934
+		start_year = 1922
 		folder = {
 			name = nsb_armour_folder
 			position = { x = -1 y = 2 }
@@ -260,7 +260,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1936
+		start_year = 1924
 
 		folder = {
 			name = nsb_armour_folder
@@ -353,7 +353,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1938
+		start_year = 1926
 
 		folder = {
 			name = nsb_armour_folder
@@ -418,7 +418,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1941
+		start_year = 1929
 
 		folder = {
 			name = nsb_armour_folder
@@ -467,7 +467,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1941
+		start_year = 1929
 
 		folder = {
 			name = nsb_armour_folder
@@ -550,7 +550,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1938
+		start_year = 1926
 
 		folder = {
 			name = nsb_armour_folder
@@ -628,7 +628,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1940
+		start_year = 1928
 
 		folder = {
 			name = nsb_armour_folder
@@ -714,7 +714,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1943
+		start_year = 1931
 
 		folder = {
 			name = nsb_armour_folder
@@ -771,7 +771,7 @@ technologies = {
 		}
 
 		research_cost = 2.5
-		start_year = 1945
+		start_year = 1933
 
 		folder = {
 			name = nsb_armour_folder
@@ -851,7 +851,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1934
+		start_year = 1922
 
 		folder = {
 			name = nsb_armour_folder
@@ -914,7 +914,7 @@ technologies = {
 		}
 
 		research_cost = 2.5
-		start_year = 1940
+		start_year = 1928
 
 		folder = {
 			name = nsb_armour_folder
@@ -981,7 +981,7 @@ technologies = {
 		}
 
 		research_cost = 2.5
-		start_year = 1943
+		start_year = 1931
 
 		folder = {
 			name = nsb_armour_folder
@@ -1043,7 +1043,7 @@ technologies = {
 		}
 
 		research_cost = 2.5
-		start_year = 1943
+		start_year = 1931
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 8 y = @1943 }
@@ -1103,7 +1103,7 @@ technologies = {
 		show_effect_as_desc = yes
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1924
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 3 y = @1935 }
@@ -1162,7 +1162,7 @@ technologies = {
 		show_effect_as_desc = yes
 
 		research_cost = 1
-		start_year = 1938
+		start_year = 1926
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 3 y = @1938 }
@@ -1219,7 +1219,7 @@ technologies = {
 		show_effect_as_desc = yes
 
 		research_cost = 1
-		start_year = 1941
+		start_year = 1929
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 3 y = @1941 }
@@ -1265,7 +1265,7 @@ technologies = {
 	armor_tech_4 = {
 
 		research_cost = 1
-		start_year = 1944
+		start_year = 1932
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 3 y = @1944 }
@@ -1325,7 +1325,7 @@ technologies = {
 		}
 		show_effect_as_desc = yes
 		research_cost = 1
-		start_year = 1934
+		start_year = 1922
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 2 y = @1935 }
@@ -1382,7 +1382,7 @@ technologies = {
 		show_effect_as_desc = yes
 
 		research_cost = 1
-		start_year = 1938
+		start_year = 1926
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 2 y = @1938 }
@@ -1437,7 +1437,7 @@ technologies = {
 		}
 		show_effect_as_desc = yes
 		research_cost = 1
-		start_year = 1941
+		start_year = 1929
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 2 y = @1941 }
@@ -1483,7 +1483,7 @@ technologies = {
 	engine_tech_4 = {
 
 		research_cost = 1
-		start_year = 1944
+		start_year = 1932
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 2 y = @1944 }
@@ -1548,7 +1548,7 @@ technologies = {
 		show_effect_as_desc = no
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1924
 
 
 		categories = {

@@ -13,7 +13,7 @@ state={
 			dockyard = 4
             
         }
-		add_core_of = THK
+		add_core_of = UPG
 	}
 
 	provinces={
@@ -21,6 +21,6 @@ state={
 	}
 	manpower=419985
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=large_town
 	local_supplies=0.000
 }
