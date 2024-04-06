@@ -1,0 +1,427 @@
+characters={
+	UPG_ar={
+		advisor={
+			slot = high_command
+			idea_token = UPG_ar
+			ledger  = army 
+				allowed  = {
+					original_tag  = UPG
+				}
+				traits  = {
+					army_regrouping_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_1"
+			}
+		}
+	}
+	UPG_acr={
+		advisor={
+			slot = air_chief
+			idea_token = UPG_acr
+			allowed  = {
+					original_tag  = UPG
+				}
+				traits  = {
+					air_chief_reform_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_3"
+			}
+		}
+	}
+	UPG_mt={
+		advisor={
+			slot = theorist
+			idea_token = UPG_mt
+			ledger  = army 
+				allowed  = {
+					original_tag  = UPG
+				}
+				traits  = {
+					military_theorist 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_1"
+			}
+		}
+	}
+	UPG_stc={
+		advisor={
+			slot = political_advisor
+			idea_token = UPG_stc
+			allowed  = {
+					original_tag  = UPG
+				}
+				traits  = {
+					smooth_talking_charmer 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_3"
+			}
+		}
+	}
+	UPG_aa2={
+		advisor={
+			slot = high_command
+			idea_token = UPG_aa2
+			ledger  = army 
+				allowed  = {
+					original_tag  = UPG
+				}
+				traits  = {
+					army_armored_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_2"
+			}
+		}
+	}
+	UPG_acgs={
+		advisor={
+			slot = air_chief
+			idea_token = UPG_acgs
+			allowed  = {
+					original_tag  = UPG
+				}
+				traits  = {
+					air_chief_ground_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_3"
+			}
+		}
+	}
+	UPG_ncm={
+		advisor={
+			slot = navy_chief
+			idea_token = UPG_ncm
+			allowed  = {
+					original_tag  = UPG
+				}
+				traits  = {
+					navy_chief_maneuver_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_3"
+			}
+		}
+	}
+	UPG_nccr={
+		advisor={
+			slot = navy_chief
+			idea_token = UPG_nccr
+			allowed  = {
+					original_tag  = UPG
+				}
+				traits  = {
+					navy_chief_commerce_raiding_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_2"
+			}
+		}
+	}
+	UPG_coi={
+		advisor={
+			slot = political_advisor
+			idea_token = UPG_coi
+			allowed  = {
+					original_tag  = UPG
+				}
+				traits  = {
+					captain_of_industry 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_1"
+			}
+		}
+	}
+	UPG_democratic_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = UPG_democratic_guy
+			allowed  = {
+					original_tag  = UPG
+				}
+				traits  = {
+					democratic_reformer 
+				}
+				do_effect  = {
+					not  = {
+						has_government  = democratic 
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_1"
+			}
+		}
+	}
+	UPG_acd2={
+		advisor={
+			slot = army_chief
+			idea_token = UPG_acd2
+			allowed  = {
+					original_tag  = UPG
+				}
+				traits  = {
+					army_chief_defensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_1"
+			}
+		}
+	}
+	UPG_acas={
+		advisor={
+			slot = high_command
+			idea_token = UPG_acas
+			ledger  = air 
+				allowed  = {
+					original_tag  = UPG
+				}
+				traits  = {
+					air_close_air_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_2"
+			}
+		}
+	}
+	UPG_communist_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = UPG_communist_guy
+			allowed  = {
+					original_tag  = UPG
+				}
+				traits  = {
+					communist_revolutionary 
+				}
+				do_effect  = {
+					not  = {
+						has_government  = communism 
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_3"
+			}
+		}
+	}
+	UPG_ncs={
+		advisor={
+			slot = high_command
+			idea_token = UPG_ncs
+			ledger  = navy 
+				allowed  = {
+					original_tag  = UPG
+				}
+				traits  = {
+					navy_capital_ship_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_2"
+			}
+		}
+	}
+	UPG_awt={
+		advisor={
+			slot = theorist
+			idea_token = UPG_awt
+			ledger  = air 
+				allowed  = {
+					original_tag  = UPG
+				}
+				traits  = {
+					air_warfare_theorist 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_2"
+			}
+		}
+	}
+	UPG_pot={
+		advisor={
+			slot = political_advisor
+			idea_token = UPG_pot
+			allowed  = {
+					original_tag  = UPG
+				}
+				traits  = {
+					prince_of_terror 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_2"
+			}
+		}
+	}
+	UPG_fascist_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = UPG_fascist_guy
+			allowed  = {
+					original_tag  = UPG
+				}
+				traits  = {
+					fascist_demagogue 
+				}
+				do_effect  = {
+					not  = {
+						has_government  = fascism 
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_2"
+			}
+		}
+	}
+	UPG_ai2={
+		advisor={
+			slot = high_command
+			idea_token = UPG_ai2
+			ledger  = army 
+				allowed  = {
+					original_tag  = UPG
+				}
+				traits  = {
+					army_infantry_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_3"
+			}
+		}
+	}
+	UPG_nt={
+		advisor={
+			slot = theorist
+			idea_token = UPG_nt
+			ledger  = navy 
+				allowed  = {
+					original_tag  = UPG
+				}
+				traits  = {
+					naval_theorist 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_3"
+			}
+		}
+	}
+	UPG_aco2={
+		advisor={
+			slot = army_chief
+			idea_token = UPG_aco2
+			allowed  = {
+					original_tag  = UPG
+				}
+				traits  = {
+					army_chief_organizational_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_2"
+			}
+		}
+	}
+}

@@ -1,10 +1,18 @@
 state={
 	id=118
-	name="STATE_118"
+	name="Lipre Island"
+		history={
+		owner = UPG
+			buildings = {
+			infrastructure = 1
+
+        }
+		add_core_of = THK
+	}
 	provinces={
 		9499 
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+        manpower=9879
+        state_category = tiny_island
 }

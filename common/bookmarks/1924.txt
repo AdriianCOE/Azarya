@@ -1,7 +1,7 @@
 bookmarks = {
 	bookmark = {
 		name = "Era of New Azarya"
-		desc = "NEW_AZARYA_DESC	"
+		desc = "NEW_AZARYA_DESC"
 		date = 1924.4.2.12
 		picture = "GFX_azarya_bookmark"
 		default_country = "THK"
@@ -55,23 +55,7 @@ bookmarks = {
 		}
 
 		"---"={
-			history = "OTHER_AZARYA_DESC"
-		}
 
-		# minors from DLC ####
-		"CAN"={
-			minor = yes
-			history = "CAN_BLITZKRIEG_DESC"
-			ideology = democratic
-			ideas = {
-				CAN_great_depression_1
-				CAN_conscription_crisis
-			}
-			focuses = {
-				CAN_skewer_the_eagle
-				CAN_north_american_alliance
-				CAN_join_comintern
-			}
 		}
 
 		effect = {

@@ -1,0 +1,20 @@
+music = {
+	name = "Katyusha"
+	file = "Katyusha.ogg"
+}
+music = {
+	name = "Dark_is_The_Night"
+	file = "Dark_is_The_Night.ogg"
+}
+music = {
+	name = "He_was_a_good_stalker"
+	file = "He_was_a_good_stalker.ogg"
+}
+music = {
+	name = "Joao_e_Maria"
+	file = "Joao_e_Maria.ogg"
+}
+music = {
+	name = "The_World_We_Knew"
+	file = "The_World_We_Knew.ogg"
+}

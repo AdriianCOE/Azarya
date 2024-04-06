@@ -1,12 +1,20 @@
 
 state={
 	id=400
-	name="STATE_400"
+	name="Haifa"
+		history={
+		owner = UPG
+			buildings = {
+			infrastructure = 1
+            
+        }
+		add_core_of = THK
+	}
 	provinces={
 		2474 2641 3976 4250 4264 4270 4442 4584 4980 8757 8807 8837 8869 8886 8900 8928 8964 9025 9039 
 	}
-	manpower=1
+	manpower=157985
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=rural
 	local_supplies=0.000
 }

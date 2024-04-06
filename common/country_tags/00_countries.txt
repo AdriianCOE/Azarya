@@ -264,6 +264,7 @@ CZL = "countries/Czariado de Lesc.txt"
 NIC = "countries/Nicollonia.txt"
 NIR = "countries/Nirisia.txt"
 RFB = "countries/Riofriolia.txt"
+UPG = "countries/United Provinces of Gengen.txt"
 
 # WELSH ARGENTINA
 WLA = "countries/Welsh Argentina.txt"
