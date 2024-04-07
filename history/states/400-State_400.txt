@@ -2,10 +2,15 @@
 state={
 	id=400
 	name="Haifa"
-		history={
+	history={
 		owner = UPG
+	    victory_points = {
+			8900  20 
+		}
 			buildings = {
 			infrastructure = 1
+
+
             
           }
 		add_core_of = UPG
