@@ -4,6 +4,7 @@ state={
 	name="Ropéjasia"
 		resources={
 		chromium=2
+		steel=4
 	}
 		history={
 		owner = UPG
@@ -17,7 +18,10 @@ state={
 			infrastructure = 2
 			industrial_complex = 1
 			dockyard = 4
- 
+ 			4412 = {
+                naval_base = 1
+			}
+			
           }
 		add_core_of = UPG
 	}

@@ -4,6 +4,9 @@ state={
 	name="Doia"
 		history={
 		owner = UPG
+		victory_points = {
+			4855 5 
+		}
 			buildings = {
 			infrastructure = 2
             air_base = 1

@@ -14,15 +14,17 @@ state={
 		victory_points = {
 			9164 20 
 		}
+		victory_points = {
+			9233 5 
+		}
 		buildings = {
 			infrastructure = 3
 			arms_factory = 1
 			industrial_complex = 3
 			air_base = 2
 			1448 = {
-                naval_base = 4
+                naval_base = 3
             }
-
 		}
 		add_core_of = UPG
 	}

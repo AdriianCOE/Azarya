@@ -23,6 +23,6 @@ RFB = {
 	color_ui = rgb { 0  128  128 }
 }
 UPG = {
-	color = rgb { 45  76  50 }
-	color_ui = rgb { 45  76  50 }
+	color = rgb { 250 171 9 }
+	color_ui = rgb { 250 171 9 }
 }
