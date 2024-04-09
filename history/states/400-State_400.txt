@@ -2,21 +2,25 @@
 state={
 	id=400
 	name="Haifa"
+
 	history={
 		owner = UPG
-	    victory_points = {
-			8900  20 
+		victory_points = {
+			8900 20 
 		}
-			buildings = {
+		victory_points = {
+			1044 15 
+		}
+		buildings = {
 			infrastructure = 1
 
-
-            
-          }
+		}
 		add_core_of = UPG
+
 	}
+
 	provinces={
-		2474 2641 3976 4250 4264 4270 4442 4584 4980 8757 8807 8837 8869 8886 8900 8928 8964 9025 9039 
+		452 1044 2474 2641 3976 4250 4264 4270 4442 4980 8757 8807 8837 8886 8900 8928 8964 
 	}
 	manpower=157985
 	buildings_max_level_factor=1.000

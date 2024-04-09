@@ -26,3 +26,7 @@ UPG = {
 	color = rgb { 250 171 9 }
 	color_ui = rgb { 250 171 9 }
 }
+BOM = {
+	color = rgb { 1 255 250 }
+	color_ui = rgb { 1 255 250 }
+}

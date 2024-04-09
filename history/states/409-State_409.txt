@@ -3,19 +3,20 @@ state={
 	id=409
 	name="Mominches"
 
-		history={
+	history={
 		owner = UPG
-			buildings = {
+		buildings = {
 			infrastructure = 1
 			industrial_complex = 1
 
-        }
+		}
 		add_core_of = THK
 		add_core_of = UPG
+
 	}
-			
+
 	provinces={
-		870 897 1279 1367 2321 2818 3301 3459 3484 3685 3808 4608 4782 5012 8916 8952 8956 8959 8994 8999 9005 9023 9024 9042 9052 9075 9094 9113 
+		870 897 1279 1367 2321 2818 3301 3459 3484 3685 3808 4584 4608 4782 5012 8869 8916 8952 8956 8959 8994 8999 9005 9023 9024 9042 9052 9075 9094 9113 
 	}
 	manpower=361792
 	buildings_max_level_factor=1.000

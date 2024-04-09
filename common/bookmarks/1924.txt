@@ -2,7 +2,7 @@ bookmarks = {
 	bookmark = {
 		name = "Era of New Azarya"
 		desc = "NEW_AZARYA_DESC"
-		date = 1924.4.2.12
+		date = 1924.1.1.12
 		picture = "GFX_azarya_bookmark"
 		default_country = "THK"
 	

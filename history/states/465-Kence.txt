@@ -1,0 +1,29 @@
+
+state={
+	id=465
+	name="Kence"
+	resources={
+		steel=1.000
+	}
+
+	history={
+		owner = RFB
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+		add_core_of = RFB
+		add_core_of = NIR
+
+	}
+
+	provinces={
+		398 522 610 759 811 1038 1119 1646 1811 1818 1859 1909 2148 2305 2487 2500 2605 2891 2975 3186 3427 3789 4680 4847 4956 5076 8220 8233 8283 8319 8342 8401 8418 8430 8478 8523 8528 8572 8573 8585 8590 8631 8632 8642 8690 8708 8733 8738 8758 8764 8847 8864 
+	}
+		manpower=478985
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}
+

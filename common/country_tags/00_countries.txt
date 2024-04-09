@@ -265,6 +265,7 @@ NIC = "countries/Nicollonia.txt"
 NIR = "countries/Nirisia.txt"
 RFB = "countries/Riofriolia.txt"
 UPG = "countries/United Provinces of Gengen.txt"
+BOM = "countries/Montia.txt"
 
 # WELSH ARGENTINA
 WLA = "countries/Welsh Argentina.txt"
