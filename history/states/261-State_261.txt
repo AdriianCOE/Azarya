@@ -2,12 +2,6 @@
 state={
 	id=261
 	name="STATE_261"
-
-	 history = {
-        owner = BOM
-		add_core_of = BOM
-
-	}
 	provinces={
 		1865 2085 2283 2386 2771 3175 3340 3585 3937 6686 6728 6742 6756 6764 
 	}
