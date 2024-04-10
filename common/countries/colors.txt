@@ -7,8 +7,8 @@ THK = {
 	color_ui = rgb { 279 13 20 }
 }
 CZL = {
-	color = rgb { 00 00 255 }
-	color_ui = rgb { 00 00 255 }
+	color = rgb { 70 70 70 }
+	color_ui = rgb { 70 70 70 }
 }
 NIC = {
 	color = rgb { 200  200  200 }
