@@ -2,8 +2,12 @@
 state={
 	id=302
 	name="STATE_302"
+					history={
+		owner = CBS
+		add_core_of = CBS
+				}
 	provinces={
-		192 717 766 783 986 1893 1926 2926 3019 3136 3185 3212 3296 
+		192 717 986 1893 1926 3136 3296 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000

@@ -2,6 +2,10 @@
 state={
 	id=330
 	name="STATE_330"
+			history={
+		owner = GYE
+		add_core_of = GYE
+	}
 	provinces={
 		118 133 734 879 1024 1355 2454 2548 3626 4009 4041 4949 4985 7276 7287 7295 7305 7342 7352 7358 7381 7385 7389 7398 7411 7447 7458 7464 7473 7492 7505 
 	}
@@ -10,3 +14,5 @@ state={
 	state_category=town
 	local_supplies=0.000
 }
+
+4009

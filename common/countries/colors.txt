@@ -30,3 +30,11 @@ BOM = {
 	color = rgb { 1 255 250 }
 	color_ui = rgb { 1 255 250 }
 }
+GYE = {
+	color = rgb { 40 20 60 }
+	color_ui = rgb { 40 20 60 }
+}
+CBS = {
+	color = rgb { 250 240 0 }
+	color_ui = rgb { 250 240 0 }
+}

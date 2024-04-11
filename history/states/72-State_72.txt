@@ -1,6 +1,11 @@
 state={
 	id=72
 	name="STATE_72"
+
+				history={
+		owner = GYE
+		add_core_of = GYE
+	}
 	provinces={
 		2663 2851 3418 3448 3544 4495 7683 7710 7740 7744 7777 7848 
 	}
@@ -8,3 +13,5 @@ state={
         manpower=1
         state_category = town
 }
+
+3544

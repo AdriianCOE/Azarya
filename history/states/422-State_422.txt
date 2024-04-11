@@ -9,7 +9,7 @@ state={
 	history={
 		owner = UPG
 			victory_points = {
-			    1717  5
+			1717  5
 		}
 		    victory_points = {
 			1711 5 
