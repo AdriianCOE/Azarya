@@ -1,0 +1,29 @@
+state={
+	id=468
+	name="Qalifah"
+	resources={
+	    steel=4
+	}
+
+	history={
+		owner = CBS
+		victory_points = {
+			7073 50 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 2
+            538 = {
+                bunker = 2
+            }
+		}
+		add_core_of = CBS
+				}
+	provinces={
+		 538 565 7073
+	}
+	manpower=1272851
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

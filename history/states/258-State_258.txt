@@ -1,18 +1,26 @@
 
 state={
 	id=258
-	name="STATE_258"
+	name="Nadim"
 
 				history={
 		owner = CBS
+			victory_points = {
+			     3472 20
+		}
+				buildings = {
+			infrastructure = 3
+			industrial_complex = 4
+
+            }
 		add_core_of = CBS
 				}
 
 
 	provinces={
-		21 122 224 317 613 620 906 964 1172 1196 1597 1609 1841 1942 1978 2057 2132 2406 2574 2585 2817 2827 3472 3752 3889 4292 4384 4604 5031 6858 6907 6958 7010 7022 7031 7034 7039 7043 
+		21 224 613 964 1597 1609 1942 1978 2057 3472 4292 4384 5031 6907 7022 7031 7039 7043
 	}
-	manpower=1
+	manpower=508984
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

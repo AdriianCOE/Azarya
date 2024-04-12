@@ -1,0 +1,26 @@
+state={
+	id=467
+	name="Farid"
+	resources={
+	    oil=10
+	}
+
+	history={
+		owner = CBS
+			victory_points = {
+			     3185 5
+		}
+						buildings = {
+			infrastructure = 1
+            }
+		add_core_of = CBS
+				}
+	provinces={
+		3909 53 3052 3185 783
+	}
+	manpower=101892
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+
+}

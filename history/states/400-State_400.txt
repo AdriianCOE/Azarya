@@ -2,6 +2,9 @@
 state={
 	id=400
 	name="Haifa"
+	resources={
+		steel=4
+	}
 
 	history={
 		owner = UPG
@@ -16,13 +19,14 @@ state={
 
 		}
 		add_core_of = UPG
+		add_core_of = THK
 
 	}
 
 	provinces={
 		452 1044 2474 2641 3976 4250 4264 4270 4442 4980 8757 8807 8837 8886 8900 8928 8964 
 	}
-	manpower=157985
+	manpower=197985
 	buildings_max_level_factor=1.000
 	state_category=rural
 	local_supplies=0.000

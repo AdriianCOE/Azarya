@@ -1,0 +1,22 @@
+state={
+	id=469
+	name="Bahjat"
+
+	history={
+		owner = CBS
+		victory_points = {
+			     620 30
+		}
+		buildings = {
+			infrastructure = 2
+            }
+		add_core_of = CBS
+				}
+	provinces={
+		317 2406 3752 1196 7034 7010 620 4604 6958
+	}
+	manpower=998984
+	state_category=large_town
+	local_supplies=0.0
+
+}

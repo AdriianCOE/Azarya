@@ -2,7 +2,7 @@
 state = {
 	id = 405
 	name = Dornalia
-	manpower = 519071
+	manpower = 589071
 	state_category = rural
 
 	history = {

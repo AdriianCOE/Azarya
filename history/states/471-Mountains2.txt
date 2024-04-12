@@ -1,0 +1,18 @@
+state={
+	id=471
+	name="STATE_471"
+
+	history={
+		owner = GYE
+		add_core_of = GYE
+				}
+	provinces={
+		3695 766 3212 1178 343 459 7361
+	}
+	manpower=23576
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+	impassable=yes
+
+}

@@ -1,16 +1,31 @@
-
 state={
-	id=302
-	name="STATE_302"
-					history={
-		owner = CBS
-		add_core_of = CBS
-				}
-	provinces={
-		192 717 986 1893 1926 3136 3296 
-	}
-	manpower=1
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
+    id=302
+    name="Zahra"
+    history={
+        owner = CBS
+        victory_points = {
+			     192 5
+		}
+        buildings = {
+            infrastructure = 2
+            industrial_complex = 1
+            1926 = {
+                bunker = 4
+            }
+            1893 = {
+                bunker = 4
+            }
+			192 = {
+                bunker = 2
+            }
+        }
+        add_core_of = CBS
+    }
+    provinces={
+        192 717 986 1893 1926 3136 3296
+    }
+    manpower=565592
+    buildings_max_level_factor=1.000
+    state_category="town"
+    local_supplies=0.000
 }

@@ -1,4 +1,4 @@
-﻿capital = 308
+﻿capital = 269
 
 # Starting tech
 set_technology = {
@@ -83,25 +83,10 @@ set_politics = {
 }
 
 set_popularities = {
-	democratic = 0
-	fascism = 0
-	communism = 80
+	democratic = 5
+	fascism = 65
+	communism = 10
 	neutrality = 20
-}
-
-1939.1.1 = {
-	set_politics = {
-		ruling_party = neutrality
-		last_election = "1936.1.1"
-		election_frequency = 48
-		elections_allowed = no
-	}
-	set_popularities = {
-		democratic = 15
-		fascism = 15
-		communism = 5
-		neutrality = 65
-	}
 }
 
 create_country_leader = {

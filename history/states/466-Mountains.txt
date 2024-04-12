@@ -1,0 +1,18 @@
+state={
+	id=466
+	name="STATE_466"
+
+	history={
+		owner = CBS
+		add_core_of = CBS
+				}
+	provinces={
+		2876 2139 1105 1807 7194 4565
+	}
+	manpower=10576
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+	impassable=yes
+
+}

@@ -1,20 +1,22 @@
 
 state={
 	id=301
-	name="STATE_301"
+	name="Celestina"
 
 	    history = {
         owner = BOM
 		victory_points = {
-			7214 50 
+			7214 18 
 		}
 
 		buildings = {
 			infrastructure = 4	
 			industrial_complex = 4
-			arms_factory = 3
+			arms_factory = 2
+			dockyard = 1
+			air_base = 1
 			7214 = {
-                naval_base = 3
+                naval_base = 2
             }
 
 		}
@@ -24,8 +26,8 @@ state={
 	provinces={
 		289 1064 1218 1659 1891 1962 3072 4199 7051 7084 7101 7116 7141 7146 7188 7214 7217 7245 
 	}
-	manpower=1298575
+	manpower=2198575
 	buildings_max_level_factor=1.000
-	state_category=city
+	state_category=large_city
 	local_supplies=0.000
 }
