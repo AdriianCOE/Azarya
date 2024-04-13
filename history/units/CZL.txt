@@ -123,6 +123,39 @@ units = {
 		start_equipment_factor = 0.7
 
 	}
+					division= {	# "10a Divisao do Exercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 2620
+		division_template = "Divisao de Infantaria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+					division= {	# "11a Divisao do Exercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 7241
+		division_template = "Divisao de Infantaria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+					division= {	# "12a Divisao do Exercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 7408
+		division_template = "Divisao de Infantaria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
 	division= {	# "1a Divisao de Cavalaria'"
 		division_name = {
 				is_name_ordered = yes

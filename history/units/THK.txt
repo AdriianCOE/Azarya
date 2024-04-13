@@ -103,21 +103,76 @@ units = {
 	##### No Notable Naval Forces #####
 }
 
-units= {
-
 	##### Naval OOB #####
-	fleet = {
-		name = "Marinha Real"
-		naval_base = 4744 # Cormosama
-		task_force = {				
-			name = "Armada Real"			
-			location = 4744 # Montevideo
-			ship = { name = "ROU Thiryn" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = THK version_name = "Cormo Class" } } }
-			ship = { name = "ROU Lirden" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = THK version_name = "Cormo Class" } } }
-			ship = { name = "ROU Pallosagar" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = THK version_name = "Cormo Class" } } }
-		}				
-	}
-} 
+units = {
+    fleet = {
+        name = "Frota do Thiryn Kingdom"
+        naval_base = 4744
+        task_force = {
+            name = "Battleship Squadron"
+            location = 4744
+            ship = {
+                name = "THK Thiryn"
+                pride_of_the_fleet = yes
+                definition = battleship
+                equipment = { 
+                    ship_hull_heavy_1 = {
+                        amount = 1
+                        owner = THK
+                        version_name = "Thiryn Class"
+                    }
+                }
+            }
+        }
+        task_force = {
+            name = "Destroyer Squadron"
+            location = 1901	
+            ship = {
+                name = "THK Guardian"
+                definition = destroyer
+                equipment = {
+                    ship_hull_destroyer_1 = {
+                        amount = 6
+                        owner = THK
+                        version_name = "Guardian Class"
+                    }
+                }
+            }
+        }
+        task_force = {
+            name = "Cruiser Squadron"
+            location = 4744
+            ship = {
+                name = "THK Defender"
+                definition = heavy_cruiser
+                equipment = {
+                    ship_hull_cruiser_heavy_1 = {
+                        amount = 3
+                        owner = THK
+                        version_name = "Defender Class"
+                    }
+                }
+            }
+        }
+        task_force = {
+            name = "Submarine Squadron"
+            location = 1901
+            ship = {
+                name = "THK Silent Shadow"
+                definition = submarine
+                equipment = {
+                    ship_hull_submarine_2 = {
+                        amount = 3
+                        owner = THK
+                        version_name = "Silent Shadow Class"
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 
 ##### No Notable Air Forces #####
 
