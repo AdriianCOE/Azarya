@@ -1,222 +1,240 @@
-﻿capital = 382
+﻿	capital = 382
 
-oob = "THK"
+	oob = "THK"
 
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-    basic_train = 1	
-	tech_trucks = 1
-}
-
-IF = {
-	limit = {
-		NOT = { has_dlc = "By Blood Alone" }
-	}
+	# Starting tech
 	set_technology = {
-		early_fighter = 1
+		infantry_weapons = 1
+		basic_train = 1	
+		tech_trucks = 1
 	}
-}
-IF = {
-	limit = { NOT = { has_dlc = "Man the Guns" } }
-	set_technology = {
-		early_destroyer = 1
-		early_light_cruiser = 1
+
+	IF = {
+		limit = {
+			NOT = { has_dlc = "By Blood Alone" }
+		}
+		set_technology = {
+			early_fighter = 1
+		}
 	}
-}
-IF = {
-	limit = { has_dlc = "Man the Guns" }
-	set_technology = {
-		basic_naval_mines = 1
-		early_ship_hull_light = 1
-		basic_battery = 1
-		basic_torpedo = 1
+	IF = {
+		limit = { NOT = { has_dlc = "Man the Guns" } }
+		set_technology = {
+			early_destroyer = 1
+			early_light_cruiser = 1
+		}
 	}
-}
+	IF = {
+		limit = { has_dlc = "Man the Guns" }
+		set_technology = {
+			basic_naval_mines = 1
+			submarine_mine_laying = 1
+			early_ship_hull_light = 1
+			early_ship_hull_cruiser = 1
+			early_ship_hull_heavy = 1
+			basic_ship_hull_heavy = 1
+			pre_dreadnoughts = 1
+			early_ship_hull_submarine = 1
+			mtg_transport = 1
+			basic_torpedo = 1
+			improved_ship_torpedo_launcher = 1
+			basic_battery = 1
+			basic_light_battery = 1
+			basic_medium_battery = 1
+			basic_heavy_battery = 1
+			basic_depth_charges = 1
+			sonar = 1
+			basic_cruiser_armor_scheme = 1
+		}
 
-recruit_character = THK_ar
-recruit_character = THK_acr
-recruit_character = THK_mt
-recruit_character = THK_stc
-recruit_character = THK_aa2
-recruit_character = THK_acgs
-recruit_character = THK_ncm
-recruit_character = THK_nccr
-recruit_character = THK_coi
-recruit_character = THK_democratic_guy
-recruit_character = THK_acd2
-recruit_character = THK_acas
-recruit_character = THK_communist_guy
-recruit_character = THK_ncs
-recruit_character = THK_awt
-recruit_character = THK_pot
-recruit_character = THK_fascist_guy
-recruit_character = THK_ai2
-recruit_character = THK_nt
-recruit_character = THK_aco2
 
-set_convoys = 47
-
-1939.1.1 = {
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = large_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	set_technology = {
-		tech_support = 1
-		tech_recon = 1
-		support_weapons = 1
-		gw_artillery = 1
-
-		#doctrines
-		air_superiority = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
 	}
-}
+
+	recruit_character = THK_ar
+	recruit_character = THK_acr
+	recruit_character = THK_mt
+	recruit_character = THK_stc
+	recruit_character = THK_aa2
+	recruit_character = THK_acgs
+	recruit_character = THK_ncm
+	recruit_character = THK_nccr
+	recruit_character = THK_coi
+	recruit_character = THK_democratic_guy
+	recruit_character = THK_acd2
+	recruit_character = THK_acas
+	recruit_character = THK_communist_guy
+	recruit_character = THK_ncs
+	recruit_character = THK_awt
+	recruit_character = THK_pot
+	recruit_character = THK_fascist_guy
+	recruit_character = THK_ai2
+	recruit_character = THK_nt
+	recruit_character = THK_aco2
+
+	set_convoys = 47
+
+	1939.1.1 = {
+		
+		#generic focuses
+		complete_national_focus = army_effort
+		complete_national_focus = equipment_effort
+		complete_national_focus = motorization_effort
+		complete_national_focus = aviation_effort
+		complete_national_focus = naval_effort
+		complete_national_focus = large_navy
+		complete_national_focus = industrial_effort
+		complete_national_focus = construction_effort
+		complete_national_focus = production_effort
+		
+		set_technology = {
+			tech_support = 1
+			tech_recon = 1
+			support_weapons = 1
+			gw_artillery = 1
+
+			#doctrines
+			air_superiority = 1
+			grand_battle_plan = 1
+			trench_warfare = 1
+			fleet_in_being = 1
+			battlefleet_concentration = 1
+			convoy_sailing = 1
+
+			#electronics
+			electronic_mechanical_engineering = 1
+			radio = 1
+			radio_detection = 1
+			mechanical_computing = 1
+			computing_machine = 1
+
+			#industry
+			basic_machine_tools = 1
+			improved_machine_tools = 1
+			advanced_machine_tools = 1
+			construction1 = 1
+			construction2 = 1
+			dispersed_industry = 1
+			dispersed_industry2 = 1
+		}
+	}
 
 
-set_politics = {
-	ruling_party = neutrality
-	last_election = "1936.1.1"
-	election_frequency = 48
-	elections_allowed = no
-}
-
-set_popularities = {
-	democratic = 15
-	fascism = 15
-	communism = 5
-	neutrality = 65
-}
-
-1939.1.1 = {
 	set_politics = {
 		ruling_party = neutrality
 		last_election = "1936.1.1"
 		election_frequency = 48
 		elections_allowed = no
 	}
+
 	set_popularities = {
 		democratic = 15
 		fascism = 15
 		communism = 5
 		neutrality = 65
 	}
-}
 
-create_country_leader = {
-	name = "Adrian Costa"
-	desc = "Bravo demais cara preparado demais"
-	picture = Adriano.dds
-	ideology = despotism
-	traits = {}
-}
+	1939.1.1 = {
+		set_politics = {
+			ruling_party = neutrality
+			last_election = "1936.1.1"
+			election_frequency = 48
+			elections_allowed = no
+		}
+		set_popularities = {
+			democratic = 15
+			fascism = 15
+			communism = 5
+			neutrality = 65
+		}
+	}
 
-create_field_marshal = {
-	name = "Adrian Costa"
-	picture = "Adriano.dds"
-    traits = { Skilled_Staffer Infantry_Expert }
-    skill = 10
-    attack_skill = 8
-    defense_skill = 1
-    planning_skill = 10
-    logistics_skill = 10
-}
+	create_country_leader = {
+		name = "Adrian Costa"
+		desc = "Bravo demais cara preparado demais"
+		picture = Adriano.dds
+		ideology = despotism
+		traits = {}
+	}
 
-IF = {
-	limit = { NOT = { has_dlc = "Man the Guns" } }
-	### Ship Variants ###
-}
-IF = {
-	limit = { has_dlc = "Man the Guns" }
+	create_field_marshal = {
+		name = "Adrian Costa"
+		picture = "Adriano.dds"
+		traits = { Skilled_Staffer Infantry_Expert }
+		skill = 10
+		attack_skill = 8
+		defense_skill = 1
+		planning_skill = 10
+		logistics_skill = 10
+	}
+
+	IF = {
+		limit = { NOT = { has_dlc = "Man the Guns" } }
+		### Ship Variants ###
+	}
+	IF = {
+		limit = { has_dlc = "Man the Guns" }
+		create_equipment_variant = {
+		name = "Thiryn Class"				
+		type = ship_hull_heavy_1
+		name_group = THK_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_2
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_radar_slot = ship_radar_2
+			fixed_ship_engine_slot = heavy_ship_engine_2
+			fixed_ship_secondaries_slot = ship_secondaries_2
+			fixed_ship_armor_slot = ship_armor_bb_1
+			front_1_custom_slot = ship_heavy_battery_2
+			mid_1_custom_slot = ship_anti_air_2
+			mid_2_custom_slot = ship_secondaries_2
+			rear_1_custom_slot = ship_heavy_battery_2
+			}
+		}
+	}
 	create_equipment_variant = {
-    name = "Thiryn Class"				
-    type = ship_hull_heavy_1
-    name_group = THK_DD_HISTORICAL
-    parent_version = 0
-    modules = {
-        fixed_ship_battery_slot = ship_heavy_battery_1
-        fixed_ship_anti_air_slot = ship_anti_air_1
-        fixed_ship_fire_control_system_slot = ship_fire_control_system_1
-        fixed_ship_radar_slot = ship_radar_1
-        fixed_ship_engine_slot = heavy_ship_engine_1
-        fixed_ship_torpedo_slot = empty
-        mid_1_custom_slot = empty
-        rear_1_custom_slot = empty
-        }
-    }
-}
-create_equipment_variant = {
-    name = "Guardian Class"				
-    type = ship_hull_destroyer_1
-    name_group = THK_DD_HISTORICAL
-    parent_version = 0
-    modules = {
-        fixed_ship_battery_slot = ship_light_battery_1
-        fixed_ship_anti_air_slot = ship_anti_air_1
-        fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-        fixed_ship_radar_slot = empty
-        fixed_ship_engine_slot = light_ship_engine_1
-        fixed_ship_torpedo_slot = ship_torpedo_1
-        mid_1_custom_slot = empty
-        rear_1_custom_slot = empty
-    }
-}
-create_equipment_variant = {
-    name = "Defender Class"				
-    type = ship_hull_cruiser_heavy_1
-    name_group = THK_DD_HISTORICAL
-    parent_version = 0
-    modules = {
-        fixed_ship_battery_slot = ship_heavy_battery_1
-        fixed_ship_anti_air_slot = ship_anti_air_1
-        fixed_ship_fire_control_system_slot = ship_fire_control_system_1
-        fixed_ship_radar_slot = ship_radar_1
-        fixed_ship_engine_slot = heavy_ship_engine_1
-        fixed_ship_torpedo_slot = ship_torpedo_1
-        mid_1_custom_slot = empty
-        rear_1_custom_slot = empty
-    }
-}
-create_equipment_variant = {
-    name = "Silent Shadow Class"				
-    type = ship_hull_submarine_2
-    name_group = THK_DD_HISTORICAL
-    parent_version = 0
-    modules = {
-        fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-        fixed_ship_radar_slot = empty
-        fixed_ship_engine_slot = light_ship_engine_1
-        fixed_ship_torpedo_slot = ship_torpedo_2
-        mid_1_custom_slot = empty
-        rear_1_custom_slot = empty
-    }
-}
+		name = "Guardian Class"				
+		type = ship_hull_light_1
+		name_group = THK_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+				fixed_ship_battery_slot = ship_light_battery_2
+				fixed_ship_anti_air_slot = ship_anti_air_2
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+				fixed_ship_radar_slot = ship_radar_1
+				fixed_ship_torpedo_slot = ship_torpedo_2
+				fixed_ship_engine_slot = light_ship_engine_2
+				mid_1_custom_slot = empty
+				rear_1_custom_slot = ship_depth_charge_2
+		}
+	}
+	create_equipment_variant = {
+		name = "Defender Class"				
+		type = ship_hull_cruiser_1
+		name_group = THK_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+				fixed_ship_battery_slot = ship_light_medium_battery_2
+				fixed_ship_anti_air_slot = ship_anti_air_2
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+				fixed_ship_radar_slot = ship_radar_1
+				fixed_ship_engine_slot = cruiser_ship_engine_2
+				fixed_ship_secondaries_slot = ship_secondaries_2
+				fixed_ship_armor_slot = ship_armor_cruiser_2
+				mid_1_custom_slot = ship_torpedo_2
+				mid_2_custom_slot = ship_light_medium_battery_2
+				rear_1_custom_slot = ship_depth_charge_2
+		}
+	}
+	create_equipment_variant = {
+		name = "Silent Shadow Class"				
+		type = ship_hull_submarine_1
+		name_group = THK_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+				fixed_ship_torpedo_slot = ship_torpedo_sub_2
+				fixed_ship_engine_slot = sub_ship_engine_1
+				rear_1_custom_slot = empty
+		}
+	}

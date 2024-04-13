@@ -1,5 +1,7 @@
 ﻿capital = 80
 
+	oob = "RFB"
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1

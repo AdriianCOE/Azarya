@@ -1,4 +1,4 @@
-capital = 335
+capital = 396
 
 
 # Starting tech
@@ -89,13 +89,26 @@ set_popularities = {
 		communism = 5
 		neutrality = 5
 }
+1939.1.1 = {
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+set_popularities = {
+		democratic = 10
+		fascism = 80
+		communism = 5
+		neutrality = 5
+	}
+}
 
 create_country_leader = {
 	name = "Adrian Costa"
 	desc = "Bravo demais cara preparado demais"
 	picture = Adriano.dds
-	ideology = fascist
-	traits = {}
+	ideology = despotism
 }
 
 create_field_marshal = {

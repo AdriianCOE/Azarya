@@ -1,5 +1,7 @@
 capital = 430
 
+oob = "UPG"
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -83,10 +85,10 @@ set_politics = {
 }
 
 set_popularities = {
-	democratic = 5
+	democratic = 80
 	fascism = 5
 	communism = 10
-	neutrality = 80
+	neutrality = 5
 }
 
 create_country_leader = {

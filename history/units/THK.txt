@@ -7,6 +7,9 @@
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 2 }
+		
 	}
 }
 division_template = {
@@ -18,6 +21,7 @@ division_template = {
 		cavalry = { x = 0 y = 1 }
 		cavalry = { x = 1 y = 0 }
 		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 0 y = 2 }
 	}
 }
 
@@ -99,6 +103,17 @@ units = {
 		start_equipment_factor = 0.7
 
 	}
+		division= {	# "3a Divisao de Cavalaria'"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 8615
+		division_template = "Cavalaria Real" 
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
 
 	##### No Notable Naval Forces #####
 }
@@ -106,74 +121,33 @@ units = {
 	##### Naval OOB #####
 units = {
     fleet = {
-        name = "Frota do Thiryn Kingdom"
-        naval_base = 4744
-        task_force = {
-            name = "Battleship Squadron"
-            location = 4744
-            ship = {
-                name = "THK Thiryn"
-                pride_of_the_fleet = yes
-                definition = battleship
-                equipment = { 
-                    ship_hull_heavy_1 = {
-                        amount = 1
-                        owner = THK
-                        version_name = "Thiryn Class"
-                    }
-                }
-            }
-        }
-        task_force = {
-            name = "Destroyer Squadron"
-            location = 1901	
-            ship = {
-                name = "THK Guardian"
-                definition = destroyer
-                equipment = {
-                    ship_hull_destroyer_1 = {
-                        amount = 6
-                        owner = THK
-                        version_name = "Guardian Class"
-                    }
-                }
-            }
-        }
-        task_force = {
-            name = "Cruiser Squadron"
-            location = 4744
-            ship = {
-                name = "THK Defender"
-                definition = heavy_cruiser
-                equipment = {
-                    ship_hull_cruiser_heavy_1 = {
-                        amount = 3
-                        owner = THK
-                        version_name = "Defender Class"
-                    }
-                }
-            }
-        }
-        task_force = {
-            name = "Submarine Squadron"
-            location = 1901
-            ship = {
-                name = "THK Silent Shadow"
-                definition = submarine
-                equipment = {
-                    ship_hull_submarine_2 = {
-                        amount = 3
-                        owner = THK
-                        version_name = "Silent Shadow Class"
-                    }
-                }
-            }
-        }
+    name = "Thiryn Kingdom Navy"
+    naval_base = 4744  # Localização da base naval do Thiryn Kingdom
+
+    task_force = {
+        name = "North Squadron"
+        location = 4744  # Localização da base naval do Thiryn Kingdom
+        ship = { name = "THK Thiryn" pride_of_the_fleet = yes definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = THK version_name = "Thiryn Class" } } }
+		ship = { name = "THK Valoroso" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = THK version_name = "Defender Class" } } }
+		ship = { name = "THK Invencível" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = THK version_name = "Defender Class" } } }
+		ship = { name = "THK Glorioso" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = THK version_name = "Defender Class" } } }
+		ship = { name = "THK Bastard" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = THK version_name = "Defender Class" } } }
     }
+    task_force = {
+        name = "South Squadron"
+        location = 1901  # Localização da base naval do Thiryn Kingdom
+        ship = { name = "THK Silent Shadow" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = THK version_name = "Silent Shadow Class" } } }
+		ship = { name = "THK Shadow Diver" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = THK version_name = "Silent Shadow Class" } } }
+		ship = { name = "THK Silent Runner" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = THK version_name = "Silent Shadow Class" } } }
+		ship = { name = "THK Guardian" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = THK version_name = "Guardian Class" } } }
+		ship = { name = "THK Sentinel" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = THK version_name = "Guardian Class" } } }
+		ship = { name = "THK Guardian II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = THK version_name = "Guardian Class" } } }
+		ship = { name = "THK Defender II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = THK version_name = "Guardian Class" } } }
+		ship = { name = "THK Protector" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = THK version_name = "Guardian Class" } } }
+		ship = { name = "THK Vanguard" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = THK version_name = "Guardian Class" } } }
+    }
+  }  
 }
-
-
-
 ##### No Notable Air Forces #####
 
 instant_effect = {
