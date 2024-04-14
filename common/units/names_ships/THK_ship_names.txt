@@ -30,8 +30,11 @@ THK_CL_HISTORICAL = {
 	prefix = "NRB "
 	fallback_name = "Cruzador Ligeiro %d"
 
-	unique = {
-		"Batata" "Coco" "Xixi" "Pinto"
+	unique = {											
+    "Fênix" "Leão" "Dragão" "Grifo" "Unicórnio" "Pégaso" "Centáuro" "Espectro" "Manticora" "Cerbero" "Hidra" 
+    "Quimera" "Basilisco" "Fênix" "Quimera" "Ciclope" "Fênix" "Hidra" "Fênix" "Dragão" "Unicórnio" "Espectro" 
+    "Quimera" "Grifo" "Leão" "Fênix" "Grifo" "Unicórnio" "Manticora" "Pégaso" "Cerbero" "Espectro" "Quimera" 
+    "Leão" "Fênix" "Quimera" "Grifo" "Espectro" "Unicórnio"
 	}
 }
 
@@ -48,8 +51,8 @@ THK_CA_HISTORICAL = {
 	fallback_name = "Cruzador Pesado %d"
 
 	unique = {
-				"Batata" "Coco" "Xixi" "Pinto"
-	}
+    "Trovão" "Furacão" "Terremoto" "Tempestade" "Vulcão" "Ciclone" "Sismo" "Tsunami" "Fogo" "Raio" "Céu"
+     }
 }
 
 
@@ -66,8 +69,8 @@ THK_BB_HISTORICAL = {
 	fallback_name = "Couraçado %d"		
 
 	unique = {
-				"Batata" "Coco" "Xixi" "Pinto"
-	}
+    "Colosso" "Behemoth" "Titã" "Gigante" "Kraken" "Leviatã" "Cíclope" "Górgona" "Hidra" "Quimera" "Dragão"
+     }
 }
 
 ### BATTLECRUISER NAMES ###
@@ -83,8 +86,8 @@ THK_BC_HISTORICAL = {
 	fallback_name = "Cuzador Couraçado %d"		
 
 	unique = {
-			"Batata" "Coco" "Xixi" "Pinto"
-	}
+    "Fúria" "Terror" "Pânico" "Horror" "Destruição" "Devastação" "Ruína" "Apocalipse" "Armagedom" "Caos" "Desespero"
+     }
 }
 
 ### AIRCRAFT CARRIER NAMES ###
@@ -100,7 +103,7 @@ THK_CV_HISTORICAL = {
 	fallback_name = "Porta-Aviões %d"	
 
 	unique = {
-		"Batata" "Coco" "Xixi" "Pinto"	}
+    "Ventania" "Furacão" "Redemoinho" "Tufão" "Tempestade" "Tornado" "Ciclone" "Maremoto" "Tormenta" "Trovoada"  }
 }
 
 ### SUBMARINES ###
@@ -116,6 +119,6 @@ THK_SS_HISTORICAL = {
 	fallback_name = "Submarino %d"
 	
 	unique = {
-		"Humaytá" "Tupi" "Timbira" "Tamoio" "Riachuelo" "Guanabara" "Rio Grande do Sul" "Bahia" "Rio de Janeiro" "Ceará" "Goiás" "Amazonas" 
-	}
+    "Kraken" "Náutilus" "Tubarão" "Orca" "Baleia" "Lula" "Enguia" "Polvo" "Arraia" "Tubarão-Baleia" "Esturjão"
+    }
 }

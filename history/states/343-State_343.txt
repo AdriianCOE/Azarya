@@ -5,6 +5,7 @@ state={
 				history={
 		owner = GYE
 		add_core_of = GYE
+		add_core_of = NIR
 	}
 	provinces={
 		277 1665 2861 3477 3985 4757 4880 4959 7426 7511 7525 7542 7549 7574 7577 7583 7584 7607 7617 7625 7626 

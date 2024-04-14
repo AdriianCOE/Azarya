@@ -206,9 +206,39 @@ units = {
 
 	}
 	
-
-	##### No Notable Naval Forces #####
 }
+	##### No Notable Naval Forces #####
+
+units= {
+	##### UNIDADES NAVIAIS #####
+	fleet = {
+		name = "Royal Lesc Navy"
+		naval_base = 1527  # Lesc
+		task_force = {				
+			name = "Frota de Lesc 1"
+			location = 1527  # Lesc
+			ship = { name = "ARC Lesc" pride_of_the_fleet = yes definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = CZL version_name = "Lesc Class" } } }
+			ship = { name = "ARC Montañas" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CZL version_name = "Ríos Class" } } }
+			ship = { name = "ARC Ríos" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CZL version_name = "Ríos Class" } } }
+			ship = { name = "ARC Bosques" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CZL version_name = "Ríos Class" } } }
+			ship = { name = "ARC Costas" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CZL version_name = "Ríos Class" } } }
+			ship = { name = "ARC Orillas" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CZL version_name = "Orillas Class" } } }
+			ship = { name = "ARC Caminos" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CZL version_name = "Orillas Class" } } }
+		}
+			task_force = {
+        name = "Frota de Lesc 2"
+        location = 2620  # Lesc
+			ship = { name = "ARC Selvas" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CZL version_name = "Orillas Class" } } }
+			ship = { name = "ARC Páramos" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CZL version_name = "Orillas Class" } } }
+			ship = { name = "ARC Profundos" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CZL version_name = "Profundos Class" } } }
+			ship = { name = "ARC Oscuridad" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CZL version_name = "Profundos Class" } } }
+			ship = { name = "ARC Misterio" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CZL version_name = "Profundos Class" } } }
+			ship = { name = "ARC Noche" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CZL version_name = "Profundos Class" } } }
+			ship = { name = "ARC Sombra" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CZL version_name = "Profundos Class" } } }
+		}
+	}
+}
+
 
 ##### No Notable Air Forces #####
 

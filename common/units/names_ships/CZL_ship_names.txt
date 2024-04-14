@@ -1,0 +1,123 @@
+﻿##### ARGENTINA NAME LISTS #####
+### REGULAR DESTROYER NAMES###
+CZL_DD_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_DESTROYERS
+
+	for_countries = { CZL }
+
+type = ship
+ship_types = { ship_hull_light destroyer }         
+
+prefix = "NRC "
+fallback_name = "Destructor %d"                  
+
+unique = {                                          
+    "Chubut" "Santa Cruz" "Tierra del Fuego" "Río Negro" "Neuquén" "Mendoza" "San Luis" "San Juan" "La Rioja" "Córdoba" "Catamarca" "La Pampa"
+    "Entre Ríos" "Corrientes" "Misiones" "Formosa" "Chaco" "Santiago del Estero" "Tucumán" "Salta" "Jujuy" "Buenos Aires" "Santa Fe"
+    "San Juan" "La Rioja" "Córdoba" "Catamarca" "La Pampa" "Entre Ríos" "Corrientes" "Misiones" "Formosa" "Chaco" "Santiago del Estero"
+      }
+}
+
+### LIGHT CRUISER NAMES###
+CZL_CL_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CL
+
+	for_countries = { CZL }
+
+type = ship
+ship_types = { ship_hull_cruiser light_cruiser }
+
+prefix = "NRC "
+fallback_name = "Crucero Ligero %d"
+
+unique = {
+    "Malbec" "Torrontés" "Bonarda" "Cabernet"
+      }
+}
+
+### HEAVY CRUISER NAMES###
+CZL_CA_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CA
+
+	for_countries = { CZL }
+
+type = ship
+ship_types = { ship_hull_cruiser heavy_cruiser }
+
+prefix = "NRC "
+fallback_name = "Crucero Pesado %d"
+
+unique = {
+    "Malbec" "Torrontés" "Bonarda" "Cabernet"
+      }
+}
+
+
+### BATTLESHIP NAMES ###
+CZL_BB_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BB
+
+	for_countries = { CZL }
+
+type = ship
+ship_types = { ship_hull_heavy battleship }
+
+prefix = "NRC "
+fallback_name = "Acorazado %d"        
+
+unique = {
+    "Malbec" "Torrontés" "Bonarda" "Cabernet"
+    }
+}
+
+### BATTLECRUISER NAMES ###
+CZL_BC_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BC
+
+	for_countries = { CZL }
+
+type = ship
+ship_types = { ship_hull_heavy battle_cruiser }
+
+prefix = "NRC "
+fallback_name = "Crucero Acorazado %d"        
+
+unique = {
+    "Malbec" "Torrontés" "Bonarda" "Cabernet"
+
+      }
+}
+
+### AIRCRAFT CARRIER NAMES ###
+CZL_CV_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CARRIERS
+
+for_countries = { CZL }
+
+type = ship
+ship_types = { ship_hull_carrier carrier }
+
+prefix = "NRC "
+fallback_name = "Portaaviones %d"    
+
+unique = {
+    "Malbec" "Torrontés" "Bonarda" "Cabernet"
+    }
+}
+
+### SUBMARINES ###
+CZL_SS_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_SUBMARINES
+
+	for_countries = { CZL }
+
+type = ship
+ship_types = { ship_hull_submarine submarine }
+
+prefix = "NRC "
+fallback_name = "Submarino %d"
+
+unique = {
+    "Patagonia" "Andes" "Pampa" "Gaucho" "Tango" "Polo" "Maradona" "Messi" "Evita" "Che" "Borges" "Gardel"
+      }
+}

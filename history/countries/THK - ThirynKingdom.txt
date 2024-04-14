@@ -176,7 +176,7 @@
 		create_equipment_variant = {
 		name = "Thiryn Class"				
 		type = ship_hull_heavy_1
-		name_group = THK_DD_HISTORICAL
+		name_group = THK_BB_HISTORICAL
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_heavy_battery_2
@@ -212,7 +212,7 @@
 	create_equipment_variant = {
 		name = "Defender Class"				
 		type = ship_hull_cruiser_1
-		name_group = THK_DD_HISTORICAL
+		name_group = THK_CL_HISTORICAL
 		parent_version = 0
 		modules = {
 				fixed_ship_battery_slot = ship_light_medium_battery_2
@@ -230,7 +230,7 @@
 	create_equipment_variant = {
 		name = "Silent Shadow Class"				
 		type = ship_hull_submarine_1
-		name_group = THK_DD_HISTORICAL
+		name_group = THK_SS_HISTORICAL
 		parent_version = 0
 		modules = {
 				fixed_ship_torpedo_slot = ship_torpedo_sub_2
