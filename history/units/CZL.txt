@@ -1,6 +1,6 @@
 ﻿division_template = {
-	name = "Divisao de Infantaria"
-	division_names_group = SPAN_INFB_02
+	name = "Rifle Division"
+	division_names_group = CZL_INF_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -13,8 +13,8 @@
 	}
 }
 division_template = {
-	name = "Cavalaria"  
-	division_names_group = SPAN_CAVB_01
+	name = "Cavalry Division"  
+	division_names_group = CZL_CAV_01
 
 	regiments = {
 		cavalry = { x = 0 y = 0 }
@@ -27,180 +27,180 @@ division_template = {
 }
 
 units = {
-	##### Ejército de THKa #####
-	division= {	# "1a Divisao do Exercito"
+	##### Ejército de CZL #####
+	division= {	# "1a Strelk. Div"
 		division_name = {
 				is_name_ordered = yes
 				name_order = 1
 		}
 		location = 1527
-		division_template = "Divisao de Infantaria"
+		division_template = "Rifle Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
 	}
-		division= {	# "2a Divisao do Exercito"
+		division= {	# "2a Strelk. Div"
 		division_name = {
 				is_name_ordered = yes
 				name_order = 1
 		}
 		location = 4996
-		division_template = "Divisao de Infantaria"
+		division_template = "Rifle Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
 	}
-		division= {	# "3a Divisao do Exercito"
+		division= {	# "3a Strelk. Div"
 		division_name = {
 				is_name_ordered = yes
 				name_order = 1
 		}
 		location = 1829
-		division_template = "Divisao de Infantaria"
+		division_template = "Rifle Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 
 	}
-		division= {	# "4a Divisao do Exercito"
+		division= {	# "4a Strelk. Div"
 		division_name = {
 				is_name_ordered = yes
 				name_order = 1
 		}
 		location = 2620
-		division_template = "Divisao de Infantaria"
+		division_template = "Rifle Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 
 	}
-			division= {	# "5a Divisao do Exercito"
+			division= {	# "5a Strelk. Div"
 		division_name = {
 				is_name_ordered = yes
 				name_order = 1
 		}
 		location = 1527
-		division_template = "Divisao de Infantaria"
+		division_template = "Rifle Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 
 	}
-			division= {	# "6a Divisao do Exercito"
+			division= {	# "6a Strelk. Div"
 		division_name = {
 				is_name_ordered = yes
 				name_order = 1
 		}
 		location = 3244
-		division_template = "Divisao de Infantaria"
+		division_template = "Rifle Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 
 	}
 
-			division= {	# "7a Divisao do Exercito"
+			division= {	# "7a Strelk. Div"
 		division_name = {
 				is_name_ordered = yes
 				name_order = 1
 		}
 		location = 7302
-		division_template = "Divisao de Infantaria"
+		division_template = "Rifle Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 
 	}
-				division= {	# "8a Divisao do Exercito"
+				division= {	# "8a Strelk. Div"
 		division_name = {
 				is_name_ordered = yes
 				name_order = 1
 		}
 		location = 2620
-		division_template = "Divisao de Infantaria"
+		division_template = "Rifle Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 
 	}
-					division= {	# "9a Divisao do Exercito"
+					division= {	# "9a Strelk. Div"
 		division_name = {
 				is_name_ordered = yes
 				name_order = 1
 		}
 		location = 4569
-		division_template = "Divisao de Infantaria"
+		division_template = "Rifle Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 
 	}
-					division= {	# "10a Divisao do Exercito"
+					division= {	# "10a Strelk. Div"
 		division_name = {
 				is_name_ordered = yes
 				name_order = 1
 		}
 		location = 2620
-		division_template = "Divisao de Infantaria"
+		division_template = "Rifle Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 
 	}
-					division= {	# "11a Divisao do Exercito"
+					division= {	# "11a Strelk. Div"
 		division_name = {
 				is_name_ordered = yes
 				name_order = 1
 		}
 		location = 7241
-		division_template = "Divisao de Infantaria"
+		division_template = "Rifle Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 
 	}
-					division= {	# "12a Divisao do Exercito"
+					division= {	# "12a Strelk. Div"
 		division_name = {
 				is_name_ordered = yes
 				name_order = 1
 		}
 		location = 7408
-		division_template = "Divisao de Infantaria"
+		division_template = "Rifle Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 
 	}
-	division= {	# "1a Divisao de Cavalaria'"
+	division= {	# "1a Kav. Div.'"
 		division_name = {
 				is_name_ordered = yes
 				name_order = 1
 		}
 		location = 502
-		division_template = "Cavalaria" 
+		division_template = "Cavalry Division" 
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 
 	}
-	division= {	# "2a Divisao de Cavalaria'"
+	division= {	# "2a Kav. Div.'"
 		division_name = {
 				is_name_ordered = yes
 				name_order = 1
 		}
 		location = 7388
-		division_template = "Cavalaria" 
+		division_template = "Cavalry Division" 
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 
 	}
-		division= {	# "3a Divisao de Cavalaria'"
+		division= {	# "3a Kav. Div.'"
 		division_name = {
 				is_name_ordered = yes
 				name_order = 1
 		}
 		location = 2620
-		division_template = "Cavalaria" 
+		division_template = "Cavalry Division" 
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 
 	}
-		division= {	# "4a Divisao de Cavalaria'"
+		division= {	# "4a Kav. Div.'"
 		division_name = {
 				is_name_ordered = yes
 				name_order = 1
 		}
 		location = 7349
-		division_template = "Cavalaria" 
+		division_template = "Cavalry Division" 
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 
@@ -209,37 +209,46 @@ units = {
 }
 	##### No Notable Naval Forces #####
 
-units= {
+
 	##### UNIDADES NAVIAIS #####
+units= {
 	fleet = {
-		name = "Royal Lesc Navy"
-		naval_base = 1527  # Lesc
+	name = "Royal Lesc Navy"
+	naval_base = 1527  # Lesc
+
 		task_force = {				
 			name = "Frota de Lesc 1"
 			location = 1527  # Lesc
-			ship = { name = "ARC Lesc" pride_of_the_fleet = yes definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = CZL version_name = "Lesc Class" } } }
-			ship = { name = "ARC Montañas" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CZL version_name = "Ríos Class" } } }
-			ship = { name = "ARC Ríos" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CZL version_name = "Ríos Class" } } }
-			ship = { name = "ARC Bosques" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CZL version_name = "Ríos Class" } } }
-			ship = { name = "ARC Costas" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CZL version_name = "Ríos Class" } } }
-			ship = { name = "ARC Orillas" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CZL version_name = "Orillas Class" } } }
-			ship = { name = "ARC Caminos" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CZL version_name = "Orillas Class" } } }
+			ship = { name = "CLC Czarina" pride_of_the_fleet = yes definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = CZL version_name = "Czarina Class" } } }
+			ship = { name = "CLC Leshkov" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CZL version_name = "Dovka Class" } } }
+			ship = { name = "CLC Dovka" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CZL version_name = "Dovka Class" } } }
+			ship = { name = "CLC Volyn" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CZL version_name = "Dovka Class" } } }
+			ship = { name = "CLC Poltava" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CZL version_name = "Dovka Class" } } }
+			ship = { name = "CLC Kiev" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CZL version_name = "Dovka Class" } } }
+			ship = { name = "CLC Tsarina" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CZL version_name = "Tsarina Class" } } }
+			ship = { name = "CLC Leshka" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CZL version_name = "Tsarina Class" } } }
+			ship = { name = "CLC Romanov" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CZL version_name = "Tsarina Class" } } }
+			ship = { name = "CLC Ivanov" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CZL version_name = "Tsarina Class" } } }
+			ship = { name = "CLC Natasha" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CZL version_name = "Tsarina Class" } } }
+
 		}
-			task_force = {
-        name = "Frota de Lesc 2"
-        location = 2620  # Lesc
-			ship = { name = "ARC Selvas" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CZL version_name = "Orillas Class" } } }
-			ship = { name = "ARC Páramos" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CZL version_name = "Orillas Class" } } }
-			ship = { name = "ARC Profundos" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CZL version_name = "Profundos Class" } } }
-			ship = { name = "ARC Oscuridad" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CZL version_name = "Profundos Class" } } }
-			ship = { name = "ARC Misterio" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CZL version_name = "Profundos Class" } } }
-			ship = { name = "ARC Noche" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CZL version_name = "Profundos Class" } } }
-			ship = { name = "ARC Sombra" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CZL version_name = "Profundos Class" } } }
+		task_force = {
+            name = "Frota de Lesc 2"
+            location = 2620  # Lesc
+			ship = { name = "CLC Pitya" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CZL version_name = "Tsarina Class" } } }
+			ship = { name = "CLC Klain" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CZL version_name = "Tsarina Class" } } }
+			ship = { name = "CLC Katyusha" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CZL version_name = "Tsarina Class" } } }
+			ship = { name = "ARC Selvas" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CZL version_name = "Tsarina Class" } } }
+			ship = { name = "ARC Páramos" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CZL version_name = "Tsarina Class" } } }
+			ship = { name = "CLC Abyssal" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CZL version_name = "Enigma Class" } } }
+			ship = { name = "CLC Umbra" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CZL version_name = "Enigma Class" } } }
+			ship = { name = "CLC Enigma" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CZL version_name = "Enigma Class" } } }
+			ship = { name = "CLC Nightfall" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CZL version_name = "Enigma Class" } } }
+			ship = { name = "CLC Shadow" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CZL version_name = "Enigma Class" } } }
+
 		}
 	}
 }
-
-
 ##### No Notable Air Forces #####
 
 instant_effect = {

@@ -1,4 +1,4 @@
-﻿##### ARGENTINA NAME LISTS #####
+﻿##### CZARIADO DE LESC NAME LISTS #####
 ### REGULAR DESTROYER NAMES###
 CZL_DD_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_DESTROYERS
@@ -12,9 +12,8 @@ prefix = "NRC "
 fallback_name = "Destructor %d"                  
 
 unique = {                                          
-    "Chubut" "Santa Cruz" "Tierra del Fuego" "Río Negro" "Neuquén" "Mendoza" "San Luis" "San Juan" "La Rioja" "Córdoba" "Catamarca" "La Pampa"
-    "Entre Ríos" "Corrientes" "Misiones" "Formosa" "Chaco" "Santiago del Estero" "Tucumán" "Salta" "Jujuy" "Buenos Aires" "Santa Fe"
-    "San Juan" "La Rioja" "Córdoba" "Catamarca" "La Pampa" "Entre Ríos" "Corrientes" "Misiones" "Formosa" "Chaco" "Santiago del Estero"
+    "Vorotila" "Yevgenov" "Kalinin" "Gromov" "Ryzhkov" "Yakutin" "Korzhakov" "Zhukov" "Yermakov" "Kudryavtsev" "Gromov" "Yevgenov"
+"Kalinin" "Vorotila" "Zhukov" "Ryzhkov" "Yakutin" "Korzhakov" "Zhukov" "Yermakov" "Kudryavtsev" "Gromov" "Yevgenov" "Kalinin"
       }
 }
 
@@ -31,7 +30,7 @@ prefix = "NRC "
 fallback_name = "Crucero Ligero %d"
 
 unique = {
-    "Malbec" "Torrontés" "Bonarda" "Cabernet"
+    "Lescovich" "Ivanov" "Vladimir" "Sergei" "Romanov" "Petrov" "Andropov" "Bukharin" "Gorbachev" "Yeltsin" "Putin" "Medvedev"
       }
 }
 
@@ -48,7 +47,7 @@ prefix = "NRC "
 fallback_name = "Crucero Pesado %d"
 
 unique = {
-    "Malbec" "Torrontés" "Bonarda" "Cabernet"
+    "Lescovich" "Ivanov" "Vladimir" "Sergei" "Romanov" "Petrov" "Andropov" "Bukharin" "Gorbachev" "Yeltsin" "Putin" "Medvedev"
       }
 }
 
@@ -83,7 +82,7 @@ prefix = "NRC "
 fallback_name = "Crucero Acorazado %d"        
 
 unique = {
-    "Malbec" "Torrontés" "Bonarda" "Cabernet"
+    "Malbec" "Torrontés" "Bonarda" "Cabernet" "Lescovich" "Ivanov" "Vladimir" "Sergei" "Romanov" "Petrov" "Andropov" "Bukharin" "Gorbachev" "Yeltsin" "Putin" "Medvedev"
 
       }
 }
@@ -101,7 +100,7 @@ prefix = "NRC "
 fallback_name = "Portaaviones %d"    
 
 unique = {
-    "Malbec" "Torrontés" "Bonarda" "Cabernet"
+    "Malbec" "Torrontés" "Bonarda" "Cabernet" "Lescovich" "Ivanov" "Vladimir" "Sergei" "Romanov" "Petrov" "Andropov" "Bukharin" "Gorbachev" "Yeltsin" "Putin" "Medvedev"
     }
 }
 
@@ -118,6 +117,6 @@ prefix = "NRC "
 fallback_name = "Submarino %d"
 
 unique = {
-    "Patagonia" "Andes" "Pampa" "Gaucho" "Tango" "Polo" "Maradona" "Messi" "Evita" "Che" "Borges" "Gardel"
+    "Kursk" "Molotov" "Lenin" "Stalingrad" "Rasputin" "Sputnik" "Bolshevik" "Trotsky" "Kremlin" "Gagarin" "Kalashnikov" "Sputnik"
       }
 }

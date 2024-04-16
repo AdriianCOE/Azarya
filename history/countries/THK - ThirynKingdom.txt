@@ -147,25 +147,59 @@
 			neutrality = 65
 		}
 	}
-
 	create_country_leader = {
-		name = "Adrian Costa"
-		desc = "Bravo demais cara preparado demais"
-		picture = Adriano.dds
-		ideology = despotism
-		traits = {}
+		name = "Queen Elara Lorenthia"
+		desc = "THK_Elara"
+		picture = Queen_Elara.dds
+		ideology = oligarchism
+		traits = {Queen_of_the_People Humble Tenacious_Negotiator }
 	}
+    create_field_marshal = {
+	    name = "Thaddeus Ironwood"
+		desc = "THK_Thaddeus"
+        picture = "Thaddeus_Ironwood.dds" 
+        traits = { war_hero inflexible_strategist infantry_officer politically_connected }
+				attack_skill = 3
+				defense_skill = 4
+				planning_skill = 4
+				logistics_skill = 3
+				skill = 4
 
-	create_field_marshal = {
-		name = "Adrian Costa"
-		picture = "Adriano.dds"
-		traits = { Skilled_Staffer Infantry_Expert }
-		skill = 10
-		attack_skill = 8
-		defense_skill = 1
-		planning_skill = 10
-		logistics_skill = 10
+}
+	create_corps_commander = {
+		name = "Adric Von Drachen"
+		desc = "THK_Adric"
+		picture = "Adric_Von_Drachen.dds"
+		traits = { infantry_officer trickster war_hero trait_reckless }
+				skill = 2
+				attack_skill = 5
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 1
 	}
+	create_corps_commander = {
+		name = "Lysandra Ardent"
+		desc = "THK_Lysandra"
+		picture = "Lysandra_Ardent.dds"
+		traits = { defensive_doctrine brilliant_strategist trait_cautious }
+		skill = 2
+			    attack_skill = 1
+			    defense_skill = 4
+			    planning_skill = 3
+			    logistics_skill = 2
+	}
+    create_navy_leader = {
+	name = "Magnus Goldcrest"
+	desc = "THK_Magnus"
+	picture = "Magnus_Goldcrest.dds"
+    traits = { old_guard_navy gentlemanly superior_tactician spotter }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 4
+			coordination_skill = 4
+    visible = { has_stability > 0.3 }
+}
 
 	IF = {
 		limit = { NOT = { has_dlc = "Man the Guns" } }
