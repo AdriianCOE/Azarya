@@ -3,8 +3,8 @@ state={
 	id=406
 	name="STATE_406"
 			history={
-		owner = GYE
-		add_core_of = GYE
+		owner = KOZ
+		add_core_of = KOZ
 	}
 	provinces={
 		 950 1282 1482 2029 3236 3415 3416 4039 4191 4226 4378 4838 8448 8555 8591 8604 8691 8739 8744 8842 8902 8913 

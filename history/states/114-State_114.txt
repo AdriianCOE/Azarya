@@ -1,6 +1,9 @@
 state={
 	id=114
 	name="STATE_114"
+	history={
+		owner = KOZ
+	}
 	provinces={
 		1723 4228 9339 9354 9365 
 	}

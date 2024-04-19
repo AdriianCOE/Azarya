@@ -268,6 +268,7 @@ UPG = "countries/United Provinces of Gengen.txt"
 BOM = "countries/Montia.txt"
 GYE = "countries/Gydian Empire.txt"
 CBS = "countries/Cambelese Desert.txt"
+KOZ = "countries/Kingdom of Zauern.txt"
 
 # WELSH ARGENTINA
 WLA = "countries/Welsh Argentina.txt"

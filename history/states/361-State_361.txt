@@ -3,7 +3,8 @@ state={
 	id=361
 	name="STATE_361"
 			history={
-		owner = GYE
+		owner = KOZ
+		add_core_of = KOZ
 		add_core_of = GYE
 	}
 	provinces={

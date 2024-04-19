@@ -2,11 +2,31 @@
 state={
 	id=88
 	name="STATE_88"
+	resources={
+		steel=4
+	}
+
+	history={
+		owner = KOZ
+		victory_points = {
+			4852  5
+		}
+	}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 3
+			4852 = {
+                naval_base = 2
+
+            }
+		add_core_of = KOZ
+	}
 	provinces={
 		451 2880 4061 4852 5059 8808 8920 8966 9115 
 	}
-	manpower=1
+	manpower=989875
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=city
 	local_supplies=0.000
 }

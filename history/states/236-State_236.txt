@@ -2,7 +2,7 @@ state={
 	id=236
 	name="Reverence"
 		resources={
-	        Tungsten=8
+		tungsten=8
 	}
 	history = {
 		owner = BOM

@@ -93,6 +93,7 @@ set_politics = {
 	}
 
 create_country_leader = {
+	ideology = Centrism
 }
 
 create_field_marshal = {

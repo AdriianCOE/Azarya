@@ -2,6 +2,9 @@
 state={
 	id=443
 	name="STATE_443"
+	history={
+		owner = KOZ
+	}
 	provinces={
 		1974 3285 3522 4020 9309 9335 9345 9369 9383 9384 9385 9402 
 	}

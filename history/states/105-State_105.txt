@@ -1,6 +1,9 @@
 state={
 	id=105
 	name="STATE_105"
+	history={
+		owner = KOZ
+	}
 	provinces={
 		9201 9205 
 	}
