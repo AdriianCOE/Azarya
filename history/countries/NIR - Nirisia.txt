@@ -78,36 +78,29 @@ add_command_power = 50
 	}
 }
 
-
 set_politics = {
-	ruling_party = neutrality
-	last_election = "1936.1.1"
-	election_frequency = 48
-	elections_allowed = no
-}
+		ruling_party = neutrality
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
 
-set_popularities = {
-	democratic = 2
-	fascism = 8
-	communism = 20
-	neutrality = 70
-}
+	set_popularities = {
+		democratic = 10
+		fascism = 10
+		communism = 0
+		neutrality = 80
+	}
 
 create_country_leader = {
-	name = "Blumenau my friend"
-	desc = ""
-	picture = Adriano.dds
-	ideology = liberalism
-	traits = {}
 }
 
 create_field_marshal = {
-	name = "Adrian Costa"
-	picture = "Adriano.dds"
-    traits = { Skilled_Staffer Infantry_Expert }
-    skill = 10
-    attack_skill = 8
-    defense_skill = 1
-    planning_skill = 10
-    logistics_skill = 10
+    skill = 4
+}
+create_corps_commander = {
+    skill = 2
+}
+create_corps_commander = {
+    skill = 2
 }

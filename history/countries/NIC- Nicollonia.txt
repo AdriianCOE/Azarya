@@ -81,7 +81,7 @@ add_command_power = 50
 
 set_politics = {
 	ruling_party = democratic
-	last_election = "1936.1.1"
+	last_election = "1921.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
@@ -94,20 +94,25 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Nicolle Rillary"
-	desc = ""
-	picture = Adriano.dds
+	name = "Nicole Rilon"
+	desc = "NIC_Nicole"
+	picture = NIC_Nicole.dds
 	ideology = liberalism
-	traits = {}
+	traits = {Editor Humble Great_Architect}
 }
 
 create_field_marshal = {
-	name = "Adrian Costa"
-	picture = "Adriano.dds"
-    traits = { Skilled_Staffer Infantry_Expert }
-    skill = 10
-    attack_skill = 8
-    defense_skill = 1
-    planning_skill = 10
-    logistics_skill = 10
+    skill = 4
+}
+create_corps_commander = {
+    skill = 2
+}
+create_corps_commander = {
+    skill = 2
+}
+create_navy_leader = {
+	skill = 1 
+}
+create_navy_leader = {
+	skill = 2 
 }
