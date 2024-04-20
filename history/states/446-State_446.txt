@@ -3,13 +3,30 @@ state={
 	id=446
 	name="STATE_446"
 	history={
-		owner = KOZ
+		owner = TOL
+			victory_points = {
+			4358  15
+		}
+		    victory_points = {
+			4910 8 
+		}
+	}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 3
+			4358 = {
+                naval_base = 2
+
+            }
+		add_core_of = TOL
+
 	}
 	provinces={
 		156 3553 3687 3794 4023 4358 4910 5063 5123 9314 9325 9334 9362 9368 9381 9397 9410 9411 9421 
 	}
-	manpower=1
+	manpower=1490985
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=city
 	local_supplies=0.000
 }

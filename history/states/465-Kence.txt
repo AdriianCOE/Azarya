@@ -18,6 +18,7 @@ state={
 		}
 		add_core_of = RFB
 		add_core_of = NIR
+		add_core_of = KOZ
 
 	}
 

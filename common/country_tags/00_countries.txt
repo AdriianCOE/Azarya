@@ -269,6 +269,7 @@ BOM = "countries/Montia.txt"
 GYE = "countries/Gydian Empire.txt"
 CBS = "countries/Cambelese Desert.txt"
 KOZ = "countries/Kingdom of Zauern.txt"
+TOL = "countries/Torronese League.txt"
 
 # WELSH ARGENTINA
 WLA = "countries/Welsh Argentina.txt"

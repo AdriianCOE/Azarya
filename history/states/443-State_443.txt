@@ -2,13 +2,29 @@
 state={
 	id=443
 	name="STATE_443"
+	resources={
+		tungsten=15
+	}
 	history={
 		owner = KOZ
+		victory_points = {
+			9335  5
+		}
+	}
+	    buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			9335 = {
+                naval_base = 1
+
+            }
+		add_core_of = TOL
+
 	}
 	provinces={
 		1974 3285 3522 4020 9309 9335 9345 9369 9383 9384 9385 9402 
 	}
-	manpower=1
+	manpower=582875
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

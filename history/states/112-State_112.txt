@@ -1,10 +1,20 @@
 state={
 	id=112
 	name="STATE_112"
+	history={
+		owner = TOL
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = TOL
+
+	}
+	provinc
 	provinces={
 		2630 
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+        manpower=3985
+        state_category = tiny_island
 }

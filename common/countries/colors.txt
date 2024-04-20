@@ -39,6 +39,10 @@ CBS = {
 	color_ui = rgb { 250 240 0 }
 }
 KOZ = {
-	color = rgb { 60  100  60 }
-	color_ui = rgb { 60  100  60 }
+	color = rgb { 60 100 60 }
+	color_ui = rgb { 60 100 60 }
+}
+TOL = {
+	color = rgb { 2  175  215 }
+	color_ui = rgb { 2  175  215 }
 }

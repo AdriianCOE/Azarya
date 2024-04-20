@@ -2,10 +2,20 @@
 state={
 	id=448
 	name="STATE_448"
+	history={
+		owner = TOL
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+
+		}
+		add_core_of = TOL
+
+	}
 	provinces={
 		558 1920 2394 3916 4688 9423 9425 9427 9433 9434 9441 9442 9445 9446 9448 9451 9453 9454 9456 9458 9459 9460 9462 
 	}
-	manpower=1
+	manpower=889895
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

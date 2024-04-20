@@ -1,10 +1,22 @@
 state={
 	id=120
 	name="STATE_120"
+	history={
+		owner = TOL
+			victory_points = {
+			9450  5
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+            }
+		add_core_of = TOL
+
+	}
 	provinces={
 		9450 9455 9457 9463 
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
+        manpower=589869
         state_category = town
 }
