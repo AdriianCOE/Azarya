@@ -29,6 +29,7 @@ recruit_character =  RFB_nt
 recruit_character =  RFB_aco2
 
 set_convoys = 20
+army_experience = 50
 
 1939.1.1 = {
 	

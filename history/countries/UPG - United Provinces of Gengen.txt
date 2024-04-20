@@ -31,6 +31,7 @@ recruit_character = UPG_aco2
 
 set_convoys = 92
 
+
 1939.1.1 = {
 	
 	#generic focuses

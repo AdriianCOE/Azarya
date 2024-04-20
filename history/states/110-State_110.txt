@@ -2,7 +2,12 @@ state={
 	id=110
 	name="Île de Brise"
 	history={
-		owner = KOZ
+		owner = TOL
+		add_core_of = TOL
+		1924.1.1 = {
+			controller = KOZ
+
+		     }
 	    buildings = {
 			infrastructure = 1
 

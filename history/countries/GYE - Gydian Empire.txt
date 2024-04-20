@@ -29,6 +29,7 @@ recruit_character = GYE_aco2
 
 
 set_convoys = 92
+army_experience = 50
 
 1939.1.1 = {
 	

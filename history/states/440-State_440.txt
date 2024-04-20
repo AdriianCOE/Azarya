@@ -3,7 +3,12 @@ state={
 	id=440
 	name="Auroville"
 	history={
-		owner = KOZ
+		owner = TOL
+		add_core_of = TOL
+		1924.1.1 = {
+			controller = KOZ
+
+		     }
 		victory_points = {
 			9262  8
 		}

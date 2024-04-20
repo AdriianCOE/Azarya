@@ -32,6 +32,7 @@ set_convoys = 157
 set_war_support = 10
 add_political_power = 200
 add_command_power = 50
+army_experience = 50
 
 1939.1.1 = {
 	

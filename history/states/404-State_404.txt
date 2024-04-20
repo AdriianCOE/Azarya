@@ -3,7 +3,12 @@ state={
 	id=404
 	name="Valéance"
 	history={
-		owner = KOZ
+		owner = TOL
+		add_core_of = TOL
+		1924.1.1 = {
+			controller = KOZ
+
+		     }
 		victory_points = {
 			9129  10
 		}

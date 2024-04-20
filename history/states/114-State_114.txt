@@ -2,7 +2,12 @@ state={
 	id=114
 	name="Rivages Bleus"
 	history={
-		owner = KOZ
+		owner = TOL
+		add_core_of = TOL
+		1924.1.1 = {
+			controller = KOZ
+
+		     }
 		buildings = {
 			infrastructure = 1
 

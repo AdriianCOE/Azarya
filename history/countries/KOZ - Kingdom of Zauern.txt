@@ -30,6 +30,7 @@ recruit_character = KOZ_aco2
 
 
 set_convoys = 92
+army_experience = 50
 
 declare_war_on = {
 		target = TOL #tag

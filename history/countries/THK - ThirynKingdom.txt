@@ -72,7 +72,7 @@
 	recruit_character = THK_aco2
 
 	set_convoys = 47
-	army_experience = 210
+	army_experience = 50
 
 	1939.1.1 = {
 		

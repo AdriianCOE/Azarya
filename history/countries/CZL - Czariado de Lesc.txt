@@ -77,6 +77,7 @@ recruit_character = CZL_aco2
 
 
 set_convoys = 92
+army_experience = 50
 
 
 set_politics = {
