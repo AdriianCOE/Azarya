@@ -1,6 +1,6 @@
 state={
 	id=110
-	name="STATE_110"
+	name="Île de Brise"
 	history={
 		owner = KOZ
 	    buildings = {

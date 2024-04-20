@@ -1,7 +1,7 @@
 
 state={
 	id=88
-	name="STATE_88"
+	name="Éclatbourg"
 	resources={
 		steel=4
 	}
@@ -9,17 +9,17 @@ state={
 	history={
 		owner = KOZ
 		victory_points = {
-			4852  20
+			4852  25
 		}
-	}
 		buildings = {
 			infrastructure = 4
-			arms_factory = 2
-			industrial_complex = 4
+			arms_factory = 1
+			industrial_complex = 1
 			4852 = {
                 naval_base = 2
+			}
 
-            }
+        }
 		add_core_of = TOL
 
 	
@@ -29,6 +29,6 @@ state={
 	}
 	manpower=1489875
 	buildings_max_level_factor=1.000
-	state_category=city
+	state_category=large_city
 	local_supplies=0.000
 }

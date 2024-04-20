@@ -1,16 +1,22 @@
 
 state={
 	id=404
-	name="STATE_404"
+	name="Valéance"
 	history={
 		owner = KOZ
 		victory_points = {
 			9129  10
 		}
+		victory_points = {
+			3435  6
+		}
+		victory_points = {
+			4780  5
+		}
 		buildings = {
-			infrastructure = 1
-			arms_factory = 2
-			industrial_complex = 2
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
 
 		}
 		add_core_of = TOL

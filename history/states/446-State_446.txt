@@ -1,24 +1,27 @@
 
 state={
 	id=446
-	name="STATE_446"
+	name="Soleilleville"
 	history={
 		owner = TOL
 			victory_points = {
-			4358  15
+			4358 22
 		}
 		    victory_points = {
 			4910 8 
 		}
-	}
+		    victory_points = {
+			9314 5
+		}
 		buildings = {
 			infrastructure = 3
-			arms_factory = 2
-			industrial_complex = 3
+			arms_factory = 1
+			industrial_complex = 2
 			4358 = {
                 naval_base = 2
+			}
 
-            }
+         }
 		add_core_of = TOL
 
 	}

@@ -1,6 +1,6 @@
 state={
 	id=93
-	name="STATE_93"
+	name="Îlot du Clair de Lune"
 	history={
 		owner = KOZ
         buildings = {

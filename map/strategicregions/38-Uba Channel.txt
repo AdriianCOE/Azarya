@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=38
+	name="Uba Channel"
+	provinces={
+		11646 12186 13016 13730 13808 14066 14602 15382 15401 15416 
+	}
+	naval_terrain=water_shallow_sea
+	weather={
+	}
+}

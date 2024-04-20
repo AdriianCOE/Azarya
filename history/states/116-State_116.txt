@@ -1,6 +1,6 @@
 state={
 	id=116
-	name="STATE_116"
+	name="Île du Repos"
 	history={
 		owner = TOL
 		buildings = {
@@ -10,7 +10,6 @@ state={
 		add_core_of = TOL
 
 	}
-	provinc
 	provinces={
 		489 
 	}

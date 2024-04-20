@@ -1,28 +1,37 @@
 
 state={
 	id=113
-	name="STATE_113"
+	name="Émeraude"
 	resources={
-		steel=6
+		steel=2
 	}
 
 		history={
 		owner = TOL
 			victory_points = {
-			2453  20
+			2453  28
 		}
 		    victory_points = {
 			3912 18
 		}
-	}
+		    victory_points = {
+			1317  5
+		}
+		    victory_points = {
+			9323  5
+		}
 		buildings = {
 			infrastructure = 4
 			arms_factory = 2
 			industrial_complex = 3
 			2453 = {
                 naval_base = 4
+			}
+			9323 = {
+                naval_base = 1
+			}
 
-            }
+        }
 		add_core_of = TOL
 
 	}

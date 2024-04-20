@@ -2,9 +2,6 @@
 state={
 	id=307
 	name="Ardon"
-	resources={
-	oil=3
-	}
 
 			history={
 		owner = NIC

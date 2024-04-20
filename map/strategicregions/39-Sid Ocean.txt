@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=39
+	name="Sid Ocean"
+	provinces={
+		15706 15710 15716 15717 
+	}
+	naval_terrain=water_shallow_sea
+	weather={
+	}
+}

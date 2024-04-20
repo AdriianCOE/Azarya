@@ -1,6 +1,6 @@
 state={
 	id=120
-	name="STATE_120"
+	name="Brisevent"
 	history={
 		owner = TOL
 			victory_points = {
@@ -9,6 +9,7 @@ state={
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
+			dockyard = 2
             }
 		add_core_of = TOL
 

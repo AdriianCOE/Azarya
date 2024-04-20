@@ -31,6 +31,11 @@ recruit_character = KOZ_aco2
 
 set_convoys = 92
 
+declare_war_on = {
+		target = TOL #tag
+		type = annex_everything #cb
+	}
+
 1939.1.1 = {
 	
 	#generic focuses

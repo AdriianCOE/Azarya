@@ -1,15 +1,17 @@
 
 state={
 	id=440
-	name="STATE_440"
+	name="Auroville"
 	history={
 		owner = KOZ
 		victory_points = {
 			9262  8
 		}
+		victory_points = {
+			9299  5
+		}
 	    buildings = {
 			infrastructure = 2
-			arms_factory = 1
 			industrial_complex = 1
 
 		}
@@ -20,7 +22,7 @@ state={
 	provinces={
 		563 1007 1314 2098 2380 3074 3188 3644 3932 4632 4705 4951 5001 9220 9234 9238 9242 9262 9263 9270 9278 9299 9300 
 	}
-	manpower=398986
+	manpower=498986
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

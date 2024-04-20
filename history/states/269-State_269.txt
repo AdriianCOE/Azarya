@@ -4,6 +4,7 @@ state={
 	name="Sanctaria"
 	resources={
 	    aluminium=10
+		steel=10
 	}
 			   
 	 history = {

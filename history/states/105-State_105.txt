@@ -1,6 +1,6 @@
 state={
 	id=105
-	name="STATE_105"
+	name="Petite Île Solitaire"
 	history={
 		owner = KOZ
 		buildings = {

@@ -1,12 +1,18 @@
 
 state={
 	id=448
-	name="STATE_448"
+	name="Lysbourg"
 	history={
 		owner = TOL
+		victory_points = {
+			9434  5
+		}
+		victory_points = {
+			2394  10
+		}
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 2
+			industrial_complex = 1
 
 		}
 		add_core_of = TOL
@@ -17,6 +23,6 @@ state={
 	}
 	manpower=889895
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=large_town
 	local_supplies=0.000
 }

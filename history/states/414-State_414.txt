@@ -1,16 +1,27 @@
 
 state={
 	id=414
-	name="STATE_414"
+	name="Auriadia"
 			history={
 		owner = KOZ
+		victory_points = {
+			8910 5 
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 2
+
+		}
 		add_core_of = KOZ
+
+	
 	}
 	provinces={
 		99 483 962 1005 1254 1491 1493 1979 2007 3463 4028 4544 5066 8734 8765 8865 8870 8876 8910 8919 
 	}
-	manpower=195928
+	manpower=2195928
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=city
 	local_supplies=0.000
 }

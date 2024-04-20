@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=35
+	name="Koz-Tol Sea"
+	provinces={
+		10555 10724 11590 11825 12113 12120 13172 14101 14232 14272 14282 14456 14466 15399 15412 15415 15434 
+	}
+	naval_terrain=water_shallow_sea
+	weather={
+	}
+}

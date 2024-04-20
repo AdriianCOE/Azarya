@@ -1,7 +1,7 @@
 
 state={
 	id=396
-	name="STATE_396"
+	name="Marlond"
 	    resources={
 		steel=12
 	}
@@ -20,10 +20,13 @@ state={
 		    victory_points = {
 			8697 10 
 		}
+		victory_points = {
+			8646 5
+		}
 		buildings = {
-			infrastructure = 3
-			arms_factory = 2
-			industrial_complex = 4
+			infrastructure = 4
+			arms_factory = 3
+			industrial_complex = 5
 			4051 = {
                 naval_base = 4
             }
@@ -33,7 +36,7 @@ state={
 	provinces={
 		26 110 131 409 677 836 892 1173 1404 1593 2389 2417 2503 2672 2702 2750 2968 3483 3835 3871 3887 4051 4078 4179 4335 4589 4707 4925 4930 4953 5074 8395 8404 8425 8449 8450 8491 8502 8508 8509 8516 8524 8550 8556 8580 8592 8605 8633 8634 8635 8646 8652 8655 8674 8692 8697 8718 8759 8776 8796 8817 8830 
 	}
-	manpower=3098579
+	manpower=3798579
 	buildings_max_level_factor=1.000
 	state_category=metropolis
 	local_supplies=0.000

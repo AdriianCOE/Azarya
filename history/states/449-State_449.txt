@@ -1,10 +1,10 @@
 
 state={
 	id=449
-	name="STATE_449"
+	name="Lumière-sur-Seine"
 	resources={
-		chromium=10
-		aluminium=10
+		chromium=12
+		aluminium=12
 	}
 	history={
 		owner = TOL
@@ -14,9 +14,12 @@ state={
 		victory_points = {
 			4075  5
 		}
+		victory_points = {
+			9483  5
+		}
 		buildings = {
-			infrastructure = 4
-			arms_factory = 2
+			infrastructure = 3
+			arms_factory = 1
 			industrial_complex = 2
 
 		}

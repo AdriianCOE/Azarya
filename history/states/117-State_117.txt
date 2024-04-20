@@ -1,6 +1,6 @@
 state={
 	id=117
-	name="STATE_117"
+	name="Vallée d'Or"
 	history={
 		owner = TOL
 			victory_points = {
@@ -10,8 +10,9 @@ state={
 			3478 5 
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			industrial_complex = 1
+			dockyard = 3
 
             }
 		add_core_of = TOL

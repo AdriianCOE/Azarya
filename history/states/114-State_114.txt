@@ -1,6 +1,6 @@
 state={
 	id=114
-	name="STATE_114"
+	name="Rivages Bleus"
 	history={
 		owner = KOZ
 		buildings = {
