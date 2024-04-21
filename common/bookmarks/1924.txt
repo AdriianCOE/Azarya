@@ -10,8 +10,8 @@ bookmarks = {
 			history = THK_AZARYA_DESC
 			ideology = democratic
 			ideas={
-				FRA_victors_of_wwi
-				FRA_disjointed_government
+				THK_monarquia_estabelecida
+				THK_Exercito_Polido
 				FRA_protected_by_the_maginot_line
 			}
 			focuses = {

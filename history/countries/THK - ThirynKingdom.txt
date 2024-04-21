@@ -134,6 +134,11 @@
 		neutrality = 65
 	}
 
+	add_ideas = {
+		THK_monarquia_estabelecida
+		THK_Exercito_Polido
+	}
+
 	1939.1.1 = {
 		set_politics = {
 			ruling_party = neutrality

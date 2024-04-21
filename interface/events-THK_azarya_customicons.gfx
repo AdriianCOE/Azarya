@@ -1,0 +1,9 @@
+spriteTypes = { 
+	##Icon For: Marcha militar anual de Thiryn
+	SpriteType = { 
+		name = "THK_marcha_militar_anual_de_thiryn-454"
+		texturefile = "gfx/interface/events/azarya-event/THK_marcha_militar_anual_de_thiryn-454.dds"
+	}
+
+ 
+ }
