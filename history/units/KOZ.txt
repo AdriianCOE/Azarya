@@ -8,6 +8,7 @@
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 2 }
 		
 	}
 }
@@ -24,13 +25,13 @@ division_template = {
 }
 
 units = {
-	##### Ejército de BOM #####
+	##### Ejército de KOZ #####
 	division= {	# "1a Divisao do Exercito"
 		division_name = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 1448
+		location = 4930
 		division_template = "Divisao de Infantaria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
@@ -41,7 +42,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 9326
+		location = 4051
 		division_template = "Divisao de Infantaria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
@@ -52,7 +53,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 1717
+		location = 4908
 		division_template = "Divisao de Infantaria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
@@ -63,7 +64,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 4412
+		location = 3415
 		division_template = "Divisao de Infantaria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
@@ -74,7 +75,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 9400
+		location = 8057
 		division_template = "Divisao de Infantaria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
@@ -85,7 +86,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 9422
+		location = 1007
 		division_template = "Divisao de Infantaria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
@@ -97,7 +98,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 9233
+		location = 2380
 		division_template = "Divisao de Infantaria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
@@ -108,7 +109,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 4608
+		location = 9299
 		division_template = "Divisao de Infantaria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
@@ -119,7 +120,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 2046
+		location = 3932
 		division_template = "Divisao de Infantaria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
@@ -130,7 +131,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 9067
+		location = 9300
 		division_template = "Divisao de Infantaria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
@@ -141,7 +142,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 8554
+		location = 1007
 		division_template = "Divisao de Infantaria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
@@ -152,7 +153,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 2818
+		location = 9309
 		division_template = "Divisao de Infantaria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
@@ -169,13 +170,35 @@ units = {
 		start_equipment_factor = 0.9
 
 	}
+	    division= {	# "14a Divisao do Exercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 1007
+		division_template = "Divisao de Infantaria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+	    division= {	# "15a Divisao do Exercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 4852
+		division_template = "Divisao de Infantaria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
 
 	division= {	# "1a Divisao de Cavalaria'"
 		division_name = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 9164
+		location = 4151
 		division_template = "Cavalaria" 
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
@@ -186,7 +209,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 1711
+		location = 2380
 		division_template = "Cavalaria" 
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
@@ -197,7 +220,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 1044
+		location = 1007
 		division_template = "Cavalaria" 
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
@@ -208,7 +231,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 4855
+		location = 9300
 		division_template = "Cavalaria" 
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
@@ -219,13 +242,22 @@ units = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 1337
+		location = 8194
+		division_template = "Cavalaria" 
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+        division= {	# "6a Divisao de Cavalaria'"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 9043
 		division_template = "Cavalaria" 
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
 
 	}
-
 
 	##### No Notable Naval Forces #####
 }
@@ -236,7 +268,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_0
-			creator = "UPG"
+			creator = "KOZ"
 		}
 		requested_factories = 5
 		progress = 0.60

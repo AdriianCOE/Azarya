@@ -1,0 +1,59 @@
+focus_tree = {
+	id = thiryn_focus
+	continuous_focus_position = { x = -40 y = 1050 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = THK
+		}
+	}
+	#Discurso da Rainha
+	focus = {
+		id = THK_discurso_da_rainha
+		icon = GFX_focus_AST_rats_tobruk
+		x = 4
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+
+		available_if_capitulated = yes
+
+		ai_will_do = { factor = 90 }
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.5
+			
+			
+		}
+	}
+
+	#Apresentação dos Oficiais
+	focus = {
+		id = THK_apresentacaodosoficiais
+		icon = GFX_THK_apresentacaodosoficiais-262079
+		prerequisite = { focus = THK_discurso_da_rainha }
+		x = 4
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		ai_will_do = { factor = 90 }
+		completion_reward = {
+			add_war_support = 0.5
+			army_experience = 15
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+			
+			
+		}
+	}
+
+}
