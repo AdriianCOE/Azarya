@@ -25,6 +25,16 @@ division_template = {
 		cavalry = { x = 1 y = 2 }
 	}
 }
+division_template = {
+	name = "Light-Armored Division"
+	division_names_group = CZL_ARM_01
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+	}
+}
 
 units = {
 	##### Ejército de CZL #####
@@ -205,6 +215,28 @@ units = {
 		start_equipment_factor = 0.7
 
 	}
+		division= {	# "1a Arm. Div.'"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 7349
+		division_template = "Light-Armored Division" 
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+		division= {	# "2a Armored. Div.'"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 7349
+		division_template = "Light-Armored Division" 
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
 	
 }
 	##### No Notable Naval Forces #####
@@ -257,8 +289,26 @@ instant_effect = {
 			type = infantry_equipment_0
 			creator = "CZL"
 		}
-		requested_factories = 3
+		requested_factories = 32
 		progress = 0.54
 		efficiency = 75
 	}
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_equipment_1
+			creator = "CZL"
+		}
+		requested_factories = 1
+		progress = 0.60
+		efficiency = 80
+		}
+		add_equipment_to_stockpile = {
+    		type = light_tank_equipment_1
+    			amount = 100
+		}
+		add_equipment_to_stockpile = {
+    		type = train_equipment_1
+   				amount = 5
+    	}
 }
+	

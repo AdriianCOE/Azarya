@@ -1,6 +1,6 @@
 difficulty_settings = {
 	difficulty_setting = {
-		key = "custom_diff_strong_eqs"
+		key = "custom_diff_strong_thk"
 		modifier = diff_strong_ai_generic
 		countries = { THK }
 		multiplier = 2.0

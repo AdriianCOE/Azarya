@@ -25,7 +25,6 @@ set_technology = {
 		 early_light_cruiser = 1
 		 early_heavy_cruiser = 1
 		 early_battleship = 1
-		 basic_battleship = 1
 		 early_battlecruiser = 1
 		 transport = 1
 		}
@@ -51,7 +50,30 @@ set_technology = {
 		coastal_defense_ships = 1
 		improved_airplane_launcher = 1
 		}
+		
+}
 
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+		improved_light_tank = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		improved_light_tank_chassis = 1
+		armor_tech_1 = 1
+		engine_tech_1 = 1
+	}
 }
 
 recruit_character = CZL_ar
@@ -232,3 +254,21 @@ create_equipment_variant = {
 				rear_1_custom_slot = ship_torpedo_sub_1
     }
 }
+create_equipment_variant = {
+		name = "D-03"
+		type = light_tank_chassis_2
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_small_cannon
+			turret_type_slot = tank_light_one_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_cast_armor
+			engine_type_slot = tank_gasoline_engine
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 2
+			tank_nsb_armor_upgrade = 4
+		}
+
+}
+

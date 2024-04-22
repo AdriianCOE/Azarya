@@ -21,6 +21,7 @@ state={
 			infrastructure = 3
 			arms_factory = 1
 			industrial_complex = 2
+			air_base = 1
 
 		}
 		add_core_of = TOL
@@ -29,7 +30,7 @@ state={
 	provinces={
 		413 1342 1837 1904 2080 2134 2892 3468 3693 3705 4075 4269 4289 4339 4476 4668 4760 4762 9461 9465 9466 9467 9468 9470 9471 9472 9473 9474 9475 9476 9477 9478 9479 9480 9481 9482 9483 9484 9485 9486 9487 9488 
 	}
-	manpower=1398592
+	manpower=1198592
 	state_category=city
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

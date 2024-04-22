@@ -46,9 +46,52 @@
 			sonar = 1
 			basic_cruiser_armor_scheme = 1
 		}
-
-
 	}
+
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_technology = {
+			aa_lmg = 1
+			aa_cannon_1 = 1
+			engines_1 = 1
+			engines_2 = 1
+			early_bombs = 1
+			aircraft_construction = 1
+			iw_small_airframe = 1
+			iw_medium_airframe = 1
+			iw_large_airframe = 1
+			basic_small_airframe = 1
+			basic_medium_airframe = 1
+		}
+	else = {
+		set_technology = {
+			early_fighter = 1
+			naval_bomber1 = 1
+			early_bomber = 1
+			tactical_bomber1 = 1
+			CAS1 = 1
+			fighter1 = 1
+		}
+	}
+	if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		armor_tech_1 = 1
+		engine_tech_1 = 1
+		}
+	}
+}
 
 	recruit_character = THK_ar
 	recruit_character = THK_acr
@@ -73,52 +116,6 @@
 
 	set_convoys = 47
 	army_experience = 50
-
-	1939.1.1 = {
-		
-		#generic focuses
-		complete_national_focus = army_effort
-		complete_national_focus = equipment_effort
-		complete_national_focus = motorization_effort
-		complete_national_focus = aviation_effort
-		complete_national_focus = naval_effort
-		complete_national_focus = large_navy
-		complete_national_focus = industrial_effort
-		complete_national_focus = construction_effort
-		complete_national_focus = production_effort
-		
-		set_technology = {
-			tech_support = 1
-			tech_recon = 1
-			support_weapons = 1
-			gw_artillery = 1
-
-			#doctrines
-			air_superiority = 1
-			grand_battle_plan = 1
-			trench_warfare = 1
-			fleet_in_being = 1
-			battlefleet_concentration = 1
-			convoy_sailing = 1
-
-			#electronics
-			electronic_mechanical_engineering = 1
-			radio = 1
-			radio_detection = 1
-			mechanical_computing = 1
-			computing_machine = 1
-
-			#industry
-			basic_machine_tools = 1
-			improved_machine_tools = 1
-			advanced_machine_tools = 1
-			construction1 = 1
-			construction2 = 1
-			dispersed_industry = 1
-			dispersed_industry2 = 1
-		}
-	}
-
 
 	set_politics = {
 		ruling_party = neutrality
@@ -278,3 +275,46 @@
 				rear_1_custom_slot = empty
 		}
 	}
+	create_equipment_variant = {
+			name = "F.TK-1" #
+			type = small_plane_airframe_1
+			modules = {
+			fixed_main_weapon_slot = light_mg_4x
+			fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = armor_plate_small
+		}
+		icon = "GFX_light_plane_3_medium"
+	}
+		create_equipment_variant = {
+			name = "CAS.TK-2" #
+			type = small_plane_cas_airframe_1
+			modules = {
+				fixed_main_weapon_slot = small_bomb_bay
+				engine_type_slot = engine_2_1x
+				special_type_slot_1 = armor_plate_small
+			}
+			icon = "GFX_FRA_CAS2_medium"
+		}
+		create_equipment_variant = {
+			name = "TB.TK-3" #
+			type = medium_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = medium_bomb_bay
+				fixed_auxiliary_weapon_slot_1 = empty
+				engine_type_slot = engine_2_2x
+				special_type_slot_1 = lmg_defense_turret
+			}
+		}
+		create_equipment_variant = {
+		name = "HB.TK-4" #
+		type = large_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = large_bomb_bay
+			fixed_auxiliary_weapon_slot_1 = empty
+			engine_type_slot = engine_2_4x
+			special_type_slot_1 = lmg_defense_turret
+		}
+		icon = "GFX_FRA_strategic_bomber1_medium"
+	}
+
