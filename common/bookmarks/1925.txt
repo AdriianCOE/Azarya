@@ -1,0 +1,23 @@
+bookmarks = {
+	bookmark = {
+		name = "Era of New Azarya"
+		desc = "NEW_AZARYA_DESC"
+		date = 1925.1.1.12
+		picture = "GFX_select_date_1924"
+		default_country = "THK"
+
+		THK = {
+			history = THK_AZARYA_DESC
+			ideology = democratic
+			ideas={
+				THK_monarquia_estabelecida
+				THK_Exercito_Polido
+			}
+		}
+		
+		effect = {
+			randomize_weather = 12345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

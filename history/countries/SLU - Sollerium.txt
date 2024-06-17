@@ -1,0 +1,53 @@
+capital = 136
+set_oob = "standard_templates"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	basic_train = 1	
+}
+
+recruit_character = SLU_ar
+recruit_character = SLU_acr
+recruit_character = SLU_mt
+recruit_character = SLU_stc
+recruit_character = SLU_aa2
+recruit_character = SLU_acgs
+recruit_character = SLU_ncm
+recruit_character = SLU_nccr
+recruit_character = SLU_coi
+recruit_character = SLU_democratic_guy
+recruit_character = SLU_acd2
+recruit_character = SLU_acas
+recruit_character = SLU_communist_guy
+recruit_character = SLU_ncs
+recruit_character = SLU_awt
+recruit_character = SLU_pot
+recruit_character = SLU_fascist_guy
+recruit_character = SLU_ai2
+recruit_character = SLU_nt
+recruit_character = SLU_aco2
+
+
+set_convoys = 92
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 10
+	fascism = 80
+	communism = 5
+	neutrality = 5
+}
+
+create_country_leader = {
+	ideology = Rexism
+}
+
+create_field_marshal = {
+}

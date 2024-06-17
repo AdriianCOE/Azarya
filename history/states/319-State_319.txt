@@ -3,7 +3,7 @@ state={
 	id=319
 	name="Aillant"
 	resources={
-	steel=4
+	steel=6
 	}
 
 	history={

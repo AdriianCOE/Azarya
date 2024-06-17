@@ -61,31 +61,24 @@ leader_traits = {
 		random = no
 
 		targeted_modifier = {
-			tag = CHI
 			generate_wargoal_tension_against = 0.75
 		}
 		targeted_modifier = {
-			tag = PRC
 			generate_wargoal_tension_against = 0.75
 		}
 		targeted_modifier = {
-			tag = SHX
 			generate_wargoal_tension_against = 0.75
 		}
 		targeted_modifier = {
-			tag = GXC
 			generate_wargoal_tension_against = 0.75
 		}
 		targeted_modifier = {
-			tag = YUN
 			generate_wargoal_tension_against = 0.75
 		}
 		targeted_modifier = {
-			tag = XSM
 			generate_wargoal_tension_against = 0.75
 		}
 		targeted_modifier = {
-			tag = SIK
 			generate_wargoal_tension_against = 0.75
 		}
 
@@ -408,7 +401,6 @@ leader_traits = {
 		random = no
 		ai_strategy = {
 			type = antagonize
-			id = "GER"
 			value = 200
 		}
 
@@ -421,7 +413,6 @@ leader_traits = {
 		random = no
 		ai_strategy = {
 			type = antagonize
-			id = "SOV"
 			value = 200
 		}
 
@@ -434,7 +425,6 @@ leader_traits = {
 		random = no
 		ai_strategy = {
 			type = alliance
-			id = "GER"
 			value = 300
 		}
 
@@ -447,19 +437,16 @@ leader_traits = {
 		random = no
 		ai_strategy = {
 			type = alliance
-			id = "ENG"
 			value = 300
 		}
 
 		ai_strategy = {
 			type = alliance
-			id = "FRA"
 			value = 300
 		}
 
 		ai_strategy = {
 			type = alliance
-			id = "USA"
 			value = 300
 		}
 
@@ -1220,7 +1207,6 @@ leader_traits = {
 		random = no
 		war_support_factor = 0.05
 		targeted_modifier = {
-			tag = SOU
 			attack_bonus_against = 0.1
 			defense_bonus_against = 0.1
 		}
@@ -1318,7 +1304,6 @@ leader_traits = {
 		random = no
 		ai_strategy = {
 			type = befriend
-			id = "TUR"
 			value = 50
 		}
 
@@ -5259,7 +5244,6 @@ leader_traits = {
 		army_morale_factor = 0.05
 		compliance_growth = 0.05
 		targeted_modifier = {
-			tag = JAP
 			attack_bonus_against = 0.1
 			defense_bonus_against = 0.1
 		}
@@ -5681,7 +5665,6 @@ leader_traits = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				not = { has_completed_focus = USA_suspend_the_presecution }
 				factor = 0
 			}
 		}
@@ -5707,8 +5690,6 @@ leader_traits = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				tag = USA
-				NOT = { has_completed_focus = USA_america_first }
 				factor = 0
 			}
 		}
@@ -5722,8 +5703,6 @@ leader_traits = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				tag = HUN
-				NOT = { has_completed_focus = HUN_invite_the_habsburg_prince }
 				factor = 0
 			}
 		}
@@ -6572,7 +6551,6 @@ leader_traits = {
 		fascism_drift = -0.05
 		fascism_acceptance = -40
 		targeted_modifier = {
-			tag = GER
 			attack_bonus_against = 0.1
 			defense_bonus_against = 0.1
 		}

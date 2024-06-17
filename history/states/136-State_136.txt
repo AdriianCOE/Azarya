@@ -2,11 +2,39 @@
 state={
 	id=136
 	name="STATE_136"
-	provinces={
-		2439 2779 2869 3017 5179 5185 5193 5197 5204 5231 
+
+	history={
+		owner = SLU
+		add_core_of = SLU
+		victory_points = {
+			5231 50 
+		}
+		victory_points = {
+			2439 20 
+		}
+		victory_points = {
+			3017 15 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 4
+			arms_factory = 1
+			dockyard = 2
+			air_base = 2
+			5231 = {
+				naval_base = 2
+
+			}
+
+		}
+
 	}
-	manpower=1
+
+	provinces={
+		2272 2439 2779 2869 3017 5179 5185 5193 5194 5197 5204 5205 5231 
+	}
+	manpower=1295805
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=large_city
 	local_supplies=0.000
 }

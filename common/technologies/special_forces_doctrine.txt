@@ -14,9 +14,6 @@ technologies = {
 			max_organisation = 5
 			soft_attack = 0.05
 		}
-		enable_subunits = {
-			rangers_support
-		}		
 		###########
 		
 		force_use_small_tech_layout = yes
@@ -44,10 +41,6 @@ technologies = {
 				has_tech = tech_mountaineers
 				can_unlock_new_special_forces_tree = yes
 			}
-		}
-		
-		on_research_complete = {
-			remove_potential_special_forces_tree = yes
 		}
 		
 		categories = {
@@ -89,15 +82,6 @@ technologies = {
 
 		xor = { rangers }
 		
-		rangers_support = {
-			acclimatization_cold_climate_gain_factor = 0.25
-			snow = {
-				attack = 0.15
-				defence = 0.20
-				movement = 0.15
-			}
-		}
-		
 		doctrine = yes	
 		research_cost = 4.5
 
@@ -135,14 +119,6 @@ technologies = {
 
 		xor = { ski_troops }
 		
-		rangers_support = {
-			mountain = {
-				attack = 0.20
-				defence = 0.10
-				movement = 0.10
-			}
-		}
-		
 		doctrine = yes	
 		research_cost = 4.5
 
@@ -175,7 +151,6 @@ technologies = {
 			initiative = 0.01
 		}
 		unit_mountaineers_design_cost_factor = -0.50
-		unit_rangers_support_design_cost_factor = -0.50
 		
 		force_use_small_tech_layout = yes
 		
@@ -272,13 +247,6 @@ technologies = {
 			battalion_mult = {
 				category = category_mountaineers
 				breakthrough = 0.15
-			}
-		}
-		
-		rangers_support = {
-			battalion_mult = {
-				category = category_line_artillery
-				soft_attack = 0.20
 			}
 		}
 		
@@ -447,10 +415,6 @@ technologies = {
 			}
 		}
 		
-		on_research_complete = {
-			remove_potential_special_forces_tree = yes
-		}
-		
 		path = {
 			leads_to_tech = marines_jungle_troops 
 			research_cost_coeff = 1
@@ -466,10 +430,6 @@ technologies = {
 		category_special_forces = {
 			max_organisation = 5
 			soft_attack = 0.05
-		}
-		
-		enable_subunits = {
-			pioneer_support
 		}
 		
 		doctrine = yes	
@@ -514,14 +474,6 @@ technologies = {
 		
 		force_use_small_tech_layout = yes
 		
-		pioneer_support = {
-			jungle = {
-				attack = 0.15
-				defence = 0.10
-				movement = 0.10
-			}
-		}
-		
 		path = {
 			leads_to_tech = marines_recon 
 			research_cost_coeff = 1
@@ -563,14 +515,6 @@ technologies = {
 		path = {
 			leads_to_tech = marines_recon 
 			research_cost_coeff = 1
-		}
-		
-		pioneer_support = {
-			amphibious = {
-				attack = 0.25
-				defence = 0.15
-				movement = 0.20
-			}
 		}
 		
 		doctrine = yes	
@@ -657,10 +601,6 @@ technologies = {
 		}
 		
 		xor = { marines_expeditionary }
-		
-		enable_subunits = {
-			marine_commando
-		}
 		
 		on_research_complete = {
 			custom_effect_tooltip = SF_MARINES_exfiltration_effect_tt
@@ -753,10 +693,6 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		marine_commando = {
-			breakthrough = 0.15
-		}
-		
 		doctrine = yes	
 		research_cost = 2.25
 		
@@ -795,15 +731,6 @@ technologies = {
 		path = {
 			leads_to_tech = marines_expeditionary_support 
 			research_cost_coeff = 1
-		}
-
-		
-		pioneer_support = {
-			battalion_mult = {
-				category = category_line_artillery
-				max_organisation = 2
-				add = yes
-			}
 		}
 		
 		shore_bombardment_bonus = 0.15
@@ -845,14 +772,6 @@ technologies = {
 			 soft_attack = 0.1
 			 breakthrough = 0.1
 			 max_organisation = 5
-		}
-		
-		pioneer_support = {
-			battalion_mult = {
-				category = category_amphibious_tanks
-				armor = 0.15
-				breakthrough = 0.15
-			}
 		}
 		
 		
@@ -999,10 +918,6 @@ technologies = {
 				has_tech = paratroopers 
 				can_unlock_new_special_forces_tree = yes
 			}
-		}
-		
-		on_research_complete = {
-			remove_potential_special_forces_tree = yes
 		}
 		
 		path = {

@@ -1,4 +1,4 @@
-﻿### Names generation for aces ###
+### Names generation for aces ###
 # Surnames can be male/female dependent or general. Fe. in Polish some surnames has different endings depending on the gender.
 # Names and Surnames are randomly picked and will sometimes repeat, but will never repeat in combinations for example there will never be generated another "John Smith".
 # Assigning the callsign is random - may be assigned or not. If we use the callsign, it will never be assigned to anyone again. Callsigns are not obligatory to script.
@@ -15,9 +15,9 @@
 
 default = {
 	male = {
-		names = { "John" "Bob" "Lucas" "Marcus" "Alexander" "Alex" "Peter" "Jonas" "Jim" "Johannes"}
-		surnames = { }
-		callsigns = { }
+		names = { "Alexey" "Artem" "Vadim" "Vladimir" "Valentin" "Danil" "Daniil" "Danila" "Petr" "Denis" "Dmitriy" "Dimitriy" "Oleg" "Egor" "Georgiy" "Leonid" "Maxim" "Matvey" "Nikita" "Pavel" "Roman" "Sergey" "Stanislav" "Vladislav" "Yaroslav" "Vyacheslav" "Alexander" "Semyon" "Konstantin" "Yuriy" "Yuliy" "Innokentiy" "Iosif" "Lev" }
+		surnames = { "Smirnov" "Ivanov" "Kuznetsov" "Popov" "Sokolov" "Lebedev" "Kozlov" "Novikov" "Morozov" "Petrov" "Volkov" "Soloviev" "Vasiliev" "Zaitsev" "Pavlov" "Semyonov" "Golubev" "Vinogradov" "Bogdanov" "Vorobienov" "Feodorov" "Mihailov" "Belyaev" "Tarasov" "Belov" "Komarov" "Orlov" "Kiselev" "Makarov" "Andreev" "Kovalev" "Iljin" "Gusev" }
+		callsigns = { "Grinichi" "Nixon" "Puchkovets" "Podvyaznoy" "Botsman" "Chester" "Krot" "Belka" "Yaytso" "Hohol" "Maksimkin" "Shish" "Gavrosh" "Nemets" }
 	}
 	#female = {
 	#	names = { "Juliette" "Anna" }
@@ -41,8 +41,3 @@ default = {
 	naval_operation_suffix = o_strat_naval_default
 	
 }
- 
-###############################################################
-# The Majors
-###############################################################
-

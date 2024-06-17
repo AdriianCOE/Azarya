@@ -2,8 +2,15 @@
 state={
 	id=129
 	name="STATE_129"
+
+	history={
+		owner = SLU
+		add_core_of = SLU
+
+	}
+
 	provinces={
-		1936 3581 3721 4952 5166 5169 5171 5176 5177 5181 5182 5188 
+		1456 1936 2654 3581 3721 4013 4952 5166 5169 5171 5175 5176 5177 5181 5182 5186 5188 5189 5198 5201 5206 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000

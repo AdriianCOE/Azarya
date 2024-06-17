@@ -2,7 +2,7 @@ state={
 	id=468
 	name="Qalifah"
 	resources={
-	    steel=4
+	    steel=5
 	}
 
 	history={

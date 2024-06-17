@@ -2,6 +2,11 @@
 state={
 	id=133
 	name="STATE_133"
+	history={
+		owner = SLU
+		add_core_of = SLU
+
+	}
 	provinces={
 		1003 1107 4068 4551 5216 5224 5226 5230 5235 5243 5244 5247 5251 5252 5257 
 	}
