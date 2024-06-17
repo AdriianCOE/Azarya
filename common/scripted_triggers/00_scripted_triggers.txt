@@ -579,6 +579,21 @@ ai_has_completed_air_doctrine = {
 	}
 }
 
+is_available_to_collaboration_government = { # occupied_countries.1 should be updated along with this
+	NOT = {
+		AND = {
+			FROM = { original_tag = THK }
+			original_tag = NIC
+		}
+		AND = {
+			FROM = { original_tag = THK }
+			original_tag = NIC
+		}
+
+		
+	}
+}
+
 ai_has_completed_naval_doctrine = {
 	is_ai = yes
 	OR = {

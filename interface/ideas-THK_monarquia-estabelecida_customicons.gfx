@@ -1,9 +1,0 @@
-spriteTypes = { 
-	##Icon For: Monarquia Estabelecida
-	SpriteType = { 
-		name = "GFX_idea_THK_monarquia_estabelecida-1477"
-		texturefile = "gfx/interface/ideas/monarquia-estabelecida-ideas/THK_monarquia_estabelecida-1477.dds"
-	}
-
- 
- }

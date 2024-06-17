@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=51
+	name="Hrafn Bay"
+	provinces={
+		11132 11286 11408 11933 11946 12025 13379 13480 13582 14076 14265 14500 14576 14942 14960 14961 14976 14977 14979 14994 15017 
+	}
+	naval_terrain=water_shallow_sea
+	weather={
+	}
+}

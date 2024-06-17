@@ -1,12 +1,38 @@
 
 state={
 	id=175
-	name="STATE_175"
+	name="Nordhavn"
+	resources={
+		tungsten=30
+}
+
+history={
+	owner = LUQ
+	victory_points = {
+		5576 40
+	}
+	victory_points = {
+		3451 8
+	}
+	buildings = {
+		infrastructure = 4
+		industrial_complex = 3
+		arms_factory = 1
+		air_base = 3
+		dockyard = 2
+		5576 = {
+			naval_base = 3
+			}
+
+		}
+
+	add_core_of = LUQ
+	}
 	provinces={
 		2206 2285 2826 3362 3451 3518 4579 5556 5576 5584 5660 5687 5700 5713 5729 5733 5749 5758 
 	}
-	manpower=1
+	manpower=1769092
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category= metropolis
 	local_supplies=0.000
 }

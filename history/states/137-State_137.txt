@@ -1,10 +1,13 @@
 
 state={
 	id=137
-	name="STATE_137"
+	name="Mirabella"
 
 	history={
 		owner = SLU
+		victory_points = {
+			2697 5 
+		}
 		add_core_of = SLU
 
 	}
@@ -12,8 +15,8 @@ state={
 	provinces={
 		45 1679 2107 2505 2697 2768 3402 5275 5282 5297 5303 5305 5307 5317 5339 
 	}
-	manpower=1
+	manpower=280912
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=rural
 	local_supplies=0.000
 }

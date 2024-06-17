@@ -1,12 +1,25 @@
 
 state={
 	id=151
-	name="STATE_151"
+	name="Stormhavn"
+	history={
+		owner = LUQ
+		victory_points = {
+			1220 15
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			}
+	
+		add_core_of = LUQ
+		}
 	provinces={
 		51 1220 1304 1661 2402 2657 3149 3466 3508 5045 5403 5436 5468 5497 5507 5529 5538 5561 5572 
 	}
-	manpower=1
+	manpower=779895
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=city
 	local_supplies=0.000
 }

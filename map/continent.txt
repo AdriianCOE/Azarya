@@ -6,7 +6,4 @@ continents = {
 	africa
 	asia
 	middle_east
-	Azarya
-	Nazarya
-	Naislands
 }

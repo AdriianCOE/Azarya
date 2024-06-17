@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=56
+	name="Minor Sea"
+	provinces={
+		15719 
+	}
+	naval_terrain=water_shallow_sea
+	weather={
+	}
+}

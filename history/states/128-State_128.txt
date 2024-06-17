@@ -1,17 +1,23 @@
 
 state={
 	id=128
-	name="STATE_128"
+	name="Solari"
 	history={
 		owner = SLU
+		victory_points = {
+			3814 25
+		}
+		victory_points = {
+			4720 12
+		}
 		add_core_of = SLU
 
 	}
 	provinces={
 		2653 2845 3814 3848 4133 4720 5174 5187 5190 5200 5202 5207 5210 5218 5232 
 	}
-	manpower=1
+	manpower=1224323
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=large_city
 	local_supplies=0.000
 }

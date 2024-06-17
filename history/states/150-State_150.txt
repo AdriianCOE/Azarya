@@ -1,7 +1,7 @@
 
 state={
 	id=150
-	name="DremWich"
+	name="Maravista"
 	resources={
 	    steel=10
 	}
@@ -13,7 +13,7 @@ state={
 	provinces={
 		414 446 1179 1501 1577 2748 2960 3988 4830 5309 5320 5323 5334 5357 5388 5416 
 	}
-	manpower=1
+	manpower=158829
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

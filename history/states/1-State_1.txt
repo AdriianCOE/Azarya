@@ -1,7 +1,7 @@
 
 state={
 	id=1
-	name="STATE_1"
+	name="Valverde"
 
 	history={
 		owner = SLU
@@ -12,8 +12,8 @@ state={
 	provinces={
 		1405 2156 2941 3225 3327 3739 4183 4268 4406 5144 5145 5146 5147 5148 5149 5150 5153 
 	}
-	manpower=1
+	manpower=212000
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=rural
 	local_supplies=0.000
 }
