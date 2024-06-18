@@ -8,6 +8,15 @@ state={
 		victory_points = {
 			2426 5 
 		}
+		buildings = {
+			infrastructure = 2
+			dockyard = 4
+			2426 = {
+				naval_base = 1
+
+			}
+
+		}
 		add_core_of = SLU
 
 	}
@@ -15,7 +24,7 @@ state={
 	provinces={
 		904 959 1381 1600 2426 2835 2913 4859 5238 5246 5262 
 	}
-	manpower=795823
+	manpower=855823
 	buildings_max_level_factor=1.000
 	state_category=large_town
 	local_supplies=0.000

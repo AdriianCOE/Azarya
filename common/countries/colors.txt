@@ -43,6 +43,10 @@ TOL = {
 	color_ui = rgb { 2  175  215 }
 }
 SLU = {
-	color = rgb { 40  00  00 }
-	color_ui = rgb { 40  00  00 }
+	color = rgb { 90  00  20 }
+	color_ui = rgb { 90  00  20 }
+}
+LUQ = {
+	color = rgb { 0  130  205 }
+	color_ui = rgb { 0  130  205 }
 }

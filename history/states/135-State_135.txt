@@ -5,6 +5,9 @@ state={
 
 	history={
 		owner = SLU
+		buildings = {
+			infrastructure = 2
+		}
 		add_core_of = SLU
 
 	}

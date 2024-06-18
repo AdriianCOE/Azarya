@@ -22,6 +22,14 @@ bookmarks = {
 			history = NIC_AZARYA_DESC
 			ideology = democratic
 		}
+		LUQ = {
+			history = x
+			ideology = neutrality
+		}
+		SLU = {
+			history = x
+			ideology = fascism
+		}
 
 		"---"={
 			history = "OTHER_GATHERING_STORM_DESC"

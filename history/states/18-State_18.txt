@@ -2,7 +2,9 @@
 state={
 	id=18
 	name="Vinterheim"
-	
+	resources={
+		steel=4
+}
 	history={
 		owner = LUQ
 		victory_points = {

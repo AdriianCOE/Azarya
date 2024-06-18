@@ -2,6 +2,9 @@
 state={
 	id=136
 	name="Carmine"
+	resources={
+	aluminium = 5
+}
 
 	history={
 		owner = SLU
@@ -18,11 +21,10 @@ state={
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 4
-			arms_factory = 1
-			dockyard = 2
-			air_base = 2
+			arms_factory = 2
+			air_base = 4
 			5231 = {
-				naval_base = 2
+				naval_base = 4
 
 			}
 
@@ -33,7 +35,7 @@ state={
 	provinces={
 		2272 2439 2779 2869 3017 5179 5185 5193 5194 5197 5204 5205 5231 
 	}
-	manpower=1795805
+	manpower=2395805
 	buildings_max_level_factor=1.000
 	state_category=metropolis
 	local_supplies=0.000

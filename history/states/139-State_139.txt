@@ -9,7 +9,11 @@ state={
 			2369 12
 		}
 		victory_points = {
-			4679 18
+			4679 20
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
 		}
 
 		add_core_of = SLU
@@ -19,7 +23,7 @@ state={
 	provinces={
 		1142 1315 1464 2369 2634 3337 3860 4138 4679 5222 5236 5239 5245 5253 5259 5260 5266 5267 5272 5273 5276 5283 
 	}
-	manpower=905892
+	manpower=1115892
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

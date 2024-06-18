@@ -5,10 +5,21 @@ state={
 	history={
 		owner = SLU
 		victory_points = {
-			3814 25
+			3814 28
 		}
 		victory_points = {
-			4720 12
+			4720 15
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 2
+			air_base = 2
+			3814 = {
+				naval_base = 2
+
+			}
+
 		}
 		add_core_of = SLU
 
@@ -16,7 +27,7 @@ state={
 	provinces={
 		2653 2845 3814 3848 4133 4720 5174 5187 5190 5200 5202 5207 5210 5218 5232 
 	}
-	manpower=1224323
+	manpower=1524323
 	buildings_max_level_factor=1.000
 	state_category=large_city
 	local_supplies=0.000

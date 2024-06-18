@@ -8961,7 +8961,7 @@
 8960;164;252;125;land;true;marsh;1
 8961;224;181;130;land;false;plains;1
 8962;203;129;253;land;false;plains;1
-8963;165;229;117;land;false;forest;1
+8963;165;229;117;land;true;forest;1
 8964;172;238;196;land;false;forest;1
 8965;253;112;152;land;false;forest;1
 8966;237;148;188;land;true;plains;1

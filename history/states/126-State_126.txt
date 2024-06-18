@@ -5,6 +5,9 @@ state={
 
 	history={
 		owner = SLU
+		buildings = {
+			infrastructure = 1
+		}
 		add_core_of = SLU
 
 	}
@@ -12,7 +15,7 @@ state={
 	provinces={
 		59 180 218 3261 4070 4547 5156 5160 5172 
 	}
-	manpower=159094
+	manpower=189094
 	buildings_max_level_factor=1.000
 	state_category=rural
 	local_supplies=0.000
