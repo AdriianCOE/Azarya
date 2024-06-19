@@ -1,0 +1,81 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_button_right"
+		texturefile = "gfx/interface/button_right.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_button_left"
+		texturefile = "gfx/interface/button_left.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_core_button"
+		texturefile = "gfx/interface/core_button.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_check_core_button"
+		texturefile = "gfx/interface/check_core_button.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_claim_button"
+		texturefile = "gfx/interface/claim_button.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "button_straight_96_32"
+		texturefile = "gfx/interface/button_straight_96_32.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_return_state_button"
+		texturefile = "gfx/interface/return_state_button.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_revoke_core_button"
+		texturefile = "gfx/interface/revoke_core_button.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_revoke_claim_button"
+		texturefile = "gfx/interface/revoke_claim_button.dds"
+		legacy_lazy_load = no
+	}
+
+
+
+
+	spriteType = {
+		name = "GFX_core_button_small"
+		texturefile = "gfx/interface/core_button_small.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_pol_power_icon2"
+		texturefile = "gfx/interface/pol_power_icon.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_manpower_icon2"
+		texturefile = "gfx/interface/manpower_icon.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_population_icon"
+		textureFile = "gfx/interface/population_icon.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_compliance_icon2"
+		textureFile = "gfx/interface/compliance_icon.dds"
+		legacy_lazy_load = no
+	}
+	
+}

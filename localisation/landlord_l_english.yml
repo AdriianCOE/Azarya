@@ -1,0 +1,79 @@
+﻿l_english:
+
+open_landlord_tooltip: "[open_landlord_tooltip_s]"
+open_landlord_tooltip_open: "§YClick here to open the Landlord menu§!"
+open_landlord_tooltip_close: "§YClick here to close the Landlord menu§!"
+
+CHECK_CORE_STATE_DESC: "§YCalculate cost§!\n\n£population_icon  §YPopulation§! /£pol_power_icon §Y[core_state_cost_game_rule]k§!.\nThe cost will be §Yhalved§! if you have a §Yclaim§!."
+CORE_STATE_DESC: "§YCore State§!\n[core_state_claimed]It will cost you£pol_power_icon£§Y[?ROOT.cost_to_core]§! to core this state.\n[core_state_button_desc]"
+
+core_state_req_not_owned_peace: "--------------------------------------------\n§RYou do not own this state!§!"
+core_state_req_not_owned_war: "--------------------------------------------\n§RYou do not control this state!§!"
+core_state_req_already_cored: "--------------------------------------------\n§RThis state is already your core!§!"
+core_state_req_no_compliance_100: "--------------------------------------------\n§RThis state has less than 100% compliance!§!"
+core_state_req_no_compliance_80: "--------------------------------------------\n§RThis state has less than 80% compliance!§!"
+core_state_req_no_compliance_60: "--------------------------------------------\n§RThis state has less than 60% compliance!§!"
+core_state_req_no_compliance_40: "--------------------------------------------\n§RThis state has less than 40% compliance!§!"
+core_state_req_no_compliance_20: "--------------------------------------------\n§RThis state has less than 20% compliance!§!"
+core_state_req_no_pp: "--------------------------------------------\n§RYou do not have enough political power!§!"
+core_state_req_no_claim: "--------------------------------------------\n§RYou do not have a claim on this state!§!"
+
+CWC_FORMULA_PP_COST_GROUP: "Core With Compliance++"
+CWC_FORMULA_PP_COST: "Cost to core states"
+CWC_COMP_COST: "Compliance requirement"
+CWC_OCCUPY: "Occupy/fully control"
+CWC_CLAIM_FOR_CORE: "Only core claimed states"
+
+core_state_claimed_true: "§CYou have a claim on this state, therefore reducing the cost by half!§!\n"
+
+CWC_FORMULA_PP_COST_5K_NAME: "§YPopulation§! / §Y5k§!"
+CWC_FORMULA_PP_COST_10K_NAME: "§YPopulation§! / §Y10k§!"
+CWC_FORMULA_PP_COST_20K_NAME: "§YPopulation§! / §Y20k§!"
+CWC_FORMULA_PP_COST_40K_NAME: "§YPopulation§! / §Y40k§!"
+
+CWC_FORMULA_PP_COST_5K_DESC: "Roughly £pol_power_icon2 §Y4§!  per £manpower_icon2  §Y1k§!.\n\n£population_icon  §YPopulation§! / £pol_power_icon2 §Y5k§!\n--------------------------------------\n§gMakes coring very expensive.§!"
+CWC_FORMULA_PP_COST_10K_DESC: "Roughly £pol_power_icon2 §Y2§!  per £manpower_icon2  §Y1k§!.\n\n£population_icon  §YPopulation§! / £pol_power_icon2 §Y10k§!\n--------------------------------------\n§gMakes coring expensive.§!"
+CWC_FORMULA_PP_COST_20K_DESC: "Roughly £pol_power_icon2 §Y1§!  per £manpower_icon2  §Y1k§!.\n\n£population_icon  §YPopulation§! / £pol_power_icon2 §Y20k§!\n--------------------------------------\n§gMakes coring cheap.§!"
+CWC_FORMULA_PP_COST_40K_DESC: "Roughly £pol_power_icon2 §Y0.5§!  per £manpower_icon2  §Y1k§!.\n\n£population_icon  §YPopulation§! / £pol_power_icon2 §Y40k§!\n--------------------------------------\n§gMakes coring very cheap.§!"
+
+CWC_COMP_COST_20_NAME: "§C20%§! Compliance"
+CWC_COMP_COST_40_NAME: "§C40%§! Compliance"
+CWC_COMP_COST_60_NAME: "§C60%§! Compliance"
+CWC_COMP_COST_80_NAME: "§C80%§! Compliance"
+CWC_COMP_COST_100_NAME: "§C100%§! Compliance"
+
+CWC_COMP_COST_20_DESC: "Requires £compliance_icon2 §C20%§! to core states"
+CWC_COMP_COST_40_DESC: "Requires £compliance_icon2 §C40%§! to core states"
+CWC_COMP_COST_60_DESC: "Requires £compliance_icon2 §C60%§! to core states"
+CWC_COMP_COST_80_DESC: "Requires £compliance_icon2 §C80%§! to core states"
+CWC_COMP_COST_100_DESC: "Requires £compliance_icon2 §C100%§! to core states"
+
+CWC_OCCUPY_PEACE_NAME: "Fully control"
+CWC_OCCUPY_PEACE_DESC: "Only allows you to core states when you have §tfull control§! of them."
+CWC_OCCUPY_WAR_NAME: "Occupy"
+CWC_OCCUPY_WAR_DESC: "Also allows you to core states when you §toccupy§! them."
+
+CWC_NO_CLAIM_FOR_CORE_NAME: "No claim required"
+CWC_NO_CLAIM_FOR_CORE_DESC: "Does not require you to have a §tclaim§! on a state to core it."
+CWC_CLAIM_FOR_CORE_NAME: "Claim required"
+CWC_CLAIM_FOR_CORE_DESC: "Requires you to have a §tclaim§! on a state to core it."
+
+
+
+CLAIM_STATE_DESC: "§YClaim State§!\nIt will cost you£pol_power_icon£§Y[?ROOT.cost_to_claim]§! to claim this state.\n[claim_state_button_desc]"
+core_state_cost_not_checked: "--------------------------------------------\n§RYou haven't checked the cost yet!§!"
+claim_state_already_owned: "--------------------------------------------\n§RYou can't claim states that you own!§!"
+claim_state_req_already_claimed: "--------------------------------------------\n§RYou already have a claim on this state!§!"
+
+REVOKE_CORE_DESC: "§YRevoke Core§!\nRemoves your core on this state.\n[revoke_core_button_desc]"
+revoke_core_not_core: "--------------------------------------------\n§RThis state is not your core!§!"
+revoke_core_capital: "--------------------------------------------\n§RYou cannot revoke the core on your capital!§!"
+revoke_core_confirmation: "Are you sure you want to §Rrevoke§! your core on §Y[?ROOT.landlord_state.GetName]§!?"
+
+REVOKE_CLAIM_DESC: "§YRevoke Claim§!\nRemoves your claim on this state.\n[revoke_claim_button_desc]"
+revoke_claim_no_claim: "--------------------------------------------\n§RYou don't have a claim on this state!§!"
+revoke_claim_confirmation: "Are you sure you want to §Rrevoke§! your claim on §Y[?ROOT.landlord_state.GetName]§!?"
+
+RETURN_STATE_DESC: "§YReturn State§!\nReturns the state to the country with a core/claim on it. Also revokes your core if you have one."
+return_state_confirmation: "Select a country to give §Y[?ROOT.landlord_state.GetName]§! to:"
+return_state_selected: "Selected country: [?ROOT.landlord_selected_country]"

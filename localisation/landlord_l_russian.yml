@@ -1,0 +1,79 @@
+﻿l_russian:
+
+open_landlord_tooltip: "[open_landlord_tooltip_s]"
+open_landlord_tooltip_open: "§YНажмите здесь, чтобы открыть меню Landlord§!"
+open_landlord_tooltip_close: "§YНажмите здесь, чтобы закрыть меню Landlord§!"
+
+CHECK_CORE_STATE_DESC: "§YПосчитать цену§!\n\n£population_icon  §YНаселение§! /£pol_power_icon §Y[core_state_cost_game_rule]k§!.\nЦена будет §Yснижена вдвое§! если у вас есть §Yпретензия§!."
+CORE_STATE_DESC: "§YНационализировать регион§!\n[core_state_claimed]Это будет стоить вам£pol_power_icon£§Y[?ROOT.cost_to_core]§! чтобы национализировать этот регион.\n[core_state_button_desc]"
+
+core_state_req_not_owned_peace: "--------------------------------------------\n§RВы не владеете этим регионом!§!"
+core_state_req_not_owned_war: "--------------------------------------------\n§RВы не котролируете этот регион!§!"
+core_state_req_already_cored: "--------------------------------------------\n§RЭтот регион уже является национальным!§!"
+core_state_req_no_compliance_100: "--------------------------------------------\n§RЭтот регион имеет меньше 100% подчинения!§!"
+core_state_req_no_compliance_80: "--------------------------------------------\n§RЭтот регион имеет меньше 80% подчинения!§!"
+core_state_req_no_compliance_60: "--------------------------------------------\n§RЭтот регион имеет меньше 60% подчинения!§!"
+core_state_req_no_compliance_40: "--------------------------------------------\n§RЭтот регион имеет меньше 40% подчинения!§!"
+core_state_req_no_compliance_20: "--------------------------------------------\n§RЭтот регион имеет меньше 20% подчинения!§!"
+core_state_req_no_pp: "--------------------------------------------\n§RУ вас недостаточно политической власти!§!"
+core_state_req_no_claim: "--------------------------------------------\n§RУ вас нет претензии на этот регион!§!"
+
+CWC_FORMULA_PP_COST_GROUP: "Core With Compliance++"
+CWC_FORMULA_PP_COST: "Стоимость национализации регионов"
+CWC_COMP_COST: "Минимальное требуемое подчинение"
+CWC_OCCUPY: "Оккупация/полный контроль"
+CWC_CLAIM_FOR_CORE: "Национализация исключительно регионов с претензиями"
+
+core_state_claimed_true: "§CУ вас есть претензии на этот регион, поэтому стоимость снижается вдвое!§!\n"
+
+CWC_FORMULA_PP_COST_5K_NAME: "§YНаселение§! / §Y5k§!"
+CWC_FORMULA_PP_COST_10K_NAME: "§YНаселение§! / §Y10k§!"
+CWC_FORMULA_PP_COST_20K_NAME: "§YНаселение§! / §Y20k§!"
+CWC_FORMULA_PP_COST_40K_NAME: "§YНаселение§! / §Y40k§!"
+
+CWC_FORMULA_PP_COST_5K_DESC: "Примерно по £pol_power_icon2 §Y4§!  за £manpower_icon2  §Y1k§!.\n\n£population_icon  §YНаселения§! / £pol_power_icon2 §Y5k§!\n--------------------------------------\n§gДелает национализацию дорогущей.§!"
+CWC_FORMULA_PP_COST_10K_DESC: "Примерно по £pol_power_icon2 §Y2§!  за £manpower_icon2  §Y1k§!.\n\n£population_icon  §YНаселения§! / £pol_power_icon2 §Y10k§!\n--------------------------------------\n§gДелает национализацию дорогой.§!"
+CWC_FORMULA_PP_COST_20K_DESC: "Примерно по £pol_power_icon2 §Y1§!  за £manpower_icon2  §Y1k§!.\n\n£population_icon  §YНаселения§! / £pol_power_icon2 §Y20k§!\n--------------------------------------\n§gДелает национализацию дешевой.§!"
+CWC_FORMULA_PP_COST_40K_DESC: "Примерно по £pol_power_icon2 §Y0.5§!  за £manpower_icon2  §Y1k§!.\n\n£population_icon  §YНаселения§! / £pol_power_icon2 §Y40k§!\n--------------------------------------\n§gДелает национализацию очень дешевой.§!"
+
+CWC_COMP_COST_20_NAME: "§C20%§! Подчинения"
+CWC_COMP_COST_40_NAME: "§C40%§! Подчинения"
+CWC_COMP_COST_60_NAME: "§C60%§! Подчинения"
+CWC_COMP_COST_80_NAME: "§C80%§! Подчинения"
+CWC_COMP_COST_100_NAME: "§C100%§! Подчинения"
+
+CWC_COMP_COST_20_DESC: "Нужно ещё £compliance_icon2 §C20%§! для национализации провинции"
+CWC_COMP_COST_40_DESC: "Нужно ещё £compliance_icon2 §C40%§! для национализации провинции"
+CWC_COMP_COST_60_DESC: "Нужно ещё £compliance_icon2 §C60%§! для национализации провинции"
+CWC_COMP_COST_80_DESC: "Нужно ещё £compliance_icon2 §C80%§! для национализации провинции"
+CWC_COMP_COST_100_DESC: "Нужно ещё £compliance_icon2 §C100%§! для национализации провинции"
+
+CWC_OCCUPY_PEACE_NAME: "Полный контроль"
+CWC_OCCUPY_PEACE_DESC: "Позволяет национализировать провинции только когда вы §tполностью владеете§! ими."
+CWC_OCCUPY_WAR_NAME: "Оккупация"
+CWC_OCCUPY_WAR_DESC: "Также позволяет национализировать провинции только при их §tоккупации§!."
+
+CWC_NO_CLAIM_FOR_CORE_NAME: "Претензия не требуется"
+CWC_NO_CLAIM_FOR_CORE_DESC: "Не требуется иметь §tпретензию§! на регион, чтобы сделать его национальным."
+CWC_CLAIM_FOR_CORE_NAME: "Претензия требуется"
+CWC_CLAIM_FOR_CORE_DESC: "Требуется иметь §tпретензию§! на регион, чтобы сделать его национальным."
+
+
+
+CLAIM_STATE_DESC: "§YЗаявить претензии на регион§!\nЭто будет стоить £pol_power_icon£§Y[?ROOT.cost_to_claim]§!.\n[claim_state_button_desc]"
+core_state_cost_not_checked: "--------------------------------------------\n§RУ вас недостаточно политической власти!§!"
+claim_state_already_owned: "--------------------------------------------\n§RВы не можете заявить претензии на провинции которыми владеете!§!"
+claim_state_req_already_claimed: "--------------------------------------------\n§RУ вас уже есть претензия на этот регион!§!"
+
+REVOKE_CORE_DESC: "§YУбрать национализацию§!\nУбирает национализацию с региона.\n[revoke_core_button_desc]"
+revoke_core_not_core: "--------------------------------------------\n§RЭта провинция не является вашей национальной!§!"
+revoke_core_capital: "--------------------------------------------\n§RВы не можете денационализировать свою столицу!§!"
+revoke_core_confirmation: "Вы уверены что хотите §Rубрать§! национализацию с §Y[?ROOT.landlord_state.GetName]§!?"
+
+REVOKE_CLAIM_DESC: "§YОтозвать претензии§!\nУбирает претензии на этот регион.\n[revoke_claim_button_desc]"
+revoke_claim_no_claim: "--------------------------------------------\n§RУ вас нет претензий на этот регион!§!"
+revoke_claim_confirmation: "Вы уверены что хотите §Rотозвать§! претензии на §Y[?ROOT.landlord_state.GetName]§!?"
+
+RETURN_STATE_DESC: "§YВернуть регион§!\nВозвращает регион стране с национализацией/претензией на него. Также аннулирует вашу национализацию, если она у вас есть."
+return_state_confirmation: "Выберите страну которой стоит отдать §Y[?ROOT.landlord_state.GetName]§!:"
+return_state_selected: "Выбранная страна: [?ROOT.landlord_selected_country]"

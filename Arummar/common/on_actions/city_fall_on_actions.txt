@@ -1,0 +1,1241 @@
+
+on_actions = {
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					has_war_with = FROM
+					FROM.FROM = {
+						is_owned_by = FROM
+						NOT = { has_state_flag = state_has_fallen }
+					}
+				}
+				if = { # Dublin
+					limit = { FROM.FROM = { state = 113 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = IRE }
+							}
+						}
+						news_event = { id = city_fall_news.1 random_hours = 24 }
+					}
+				}
+				else_if = { # Lisbon
+					limit = { FROM.FROM = { state = 112 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = POR }
+							}
+						}
+						news_event = { id = city_fall_news.2 random_hours = 24 }
+					}
+				}
+				else_if = { # Madrid
+					limit = {
+						FROM.FROM = { state = 41 }
+					}
+					if = {
+						limit = {
+							has_global_flag = scw_over
+							ROOT = {
+								NOT = { original_tag = SPR }
+							}
+						}
+						news_event = { id = city_fall_news.3 random_hours = 24 }
+					}
+				}
+				else_if = { # Barcelona
+					limit = { FROM.FROM = { state = 165 } }
+					if = {
+						limit = {
+							has_global_flag = scw_over
+							ROOT = {
+								NOT = { original_tag = SPR }
+							}
+						}
+						news_event = { id = city_fall_news.4 random_hours = 24 }
+					}
+				} 
+				else_if = { # Edinburgh
+					limit = { FROM.FROM = { state = 121 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = ENG }
+							}
+						}
+						news_event = { id = city_fall_news.5 random_hours = 24 }
+					}
+				}
+				else_if = { # Liverpool
+					limit = { FROM.FROM = { state = 132 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = ENG }
+							}
+						}
+						news_event = { id = city_fall_news.6 random_hours = 24 }
+					}
+				}
+				else_if = { # London
+					limit = { FROM.FROM = { state = 126 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = ENG }
+							}
+						}
+						news_event = { id = city_fall_news.7 random_hours = 24 }
+					}
+				}
+				else_if = { # Bordeaux
+					limit = { FROM.FROM = { state = 19 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = FRA }
+							}
+						}
+						news_event = { id = city_fall_news.8 random_hours = 24 }
+					}
+				}
+				else_if = { # Marseille
+					limit = { FROM.FROM = { state = 21 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = FRA }
+							}
+						}
+						news_event = { id = city_fall_news.9 random_hours = 24 }
+					}
+				}
+				else_if = { # Paris
+					limit = { FROM.FROM = { state = 16 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = FRA }
+							}
+						}
+						news_event = { id = city_fall_news.10 random_hours = 24 }
+					}
+				}
+				else_if = { # Luxembourg
+					limit = { FROM.FROM = { state = 8 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = LUX }
+							}
+						}
+						news_event = { id = city_fall_news.11 random_hours = 24 }
+					}
+				}
+				else_if = { # Brussels
+					limit = { FROM.FROM = { state = 6 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = BEL }
+							}
+						}
+						news_event = { id = city_fall_news.12 random_hours = 24 }
+					}
+				}
+				else_if = { # Amsterdam
+					limit = { FROM.FROM = { state = 7 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = HOL }
+							}
+						}
+						news_event = { id = city_fall_news.13 random_hours = 24 }
+					}
+				}
+				else_if = { # Bern
+					limit = { FROM.FROM = { state = 3 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = SWI }
+							}
+						}
+						news_event = { id = city_fall_news.14 random_hours = 24 }
+					}
+				}
+				else_if = { # Milan
+					limit = { FROM.FROM = { state = 159 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = ITA }
+							}
+						}
+						news_event = { id = city_fall_news.15 random_hours = 24 }
+					}
+				}
+				else_if = { # Rome
+					limit = { FROM.FROM = { state = 2 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = ITA }
+							}
+						}
+						news_event = { id = city_fall_news.16 random_hours = 24 }
+					}
+				}
+				else_if = { # Palermo
+					limit = { FROM.FROM = { state = 115 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = ITA }
+							}
+						}
+						news_event = { id = city_fall_news.17 random_hours = 24 }
+					}
+				}
+				else_if = { # Vienna
+					limit = { FROM.FROM = { state = 4 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = AUS }
+							}
+						}
+						news_event = { id = city_fall_news.18 random_hours = 24 }
+					}
+				}
+				else_if = { # Munich
+					limit = { FROM.FROM = { state = 52 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = GER }
+							}
+						}
+						news_event = { id = city_fall_news.19 random_hours = 24 }
+					}
+				}
+				else_if = { # Hamburg
+					limit = { FROM.FROM = { state = 58 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = GER }
+							}
+						}
+						news_event = { id = city_fall_news.20 random_hours = 24 }
+					}
+				}
+				else_if = { # Berlin
+					limit = { FROM.FROM = { state = 64 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = GER }
+							}
+						}
+						news_event = { id = city_fall_news.21 random_hours = 24 }
+					}
+				}
+				else_if = { # Copenhagen
+					limit = { FROM.FROM = { state = 37 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = DEN }
+							}
+						}
+						news_event = { id = city_fall_news.22 random_hours = 24 }
+					}
+				}
+				else_if = { # Stockholm
+					limit = { FROM.FROM = { state = 141 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = SWE }
+							}
+						}
+						news_event = { id = city_fall_news.23 random_hours = 24 }
+					}
+				}
+				else_if = { # Oslo
+					limit = { FROM.FROM = { state = 110 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = NOR }
+							}
+						}
+						news_event = { id = city_fall_news.24 random_hours = 24 }
+					}
+				}
+				else_if = { # Reykjavik
+					limit = { FROM.FROM = { state = 100 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = ICE }
+							}
+						}
+						news_event = { id = city_fall_news.25 random_hours = 24 }
+					}
+				}
+				else_if = { # Godthåb (Nuuk)
+					limit = { FROM.FROM = { state = 101 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = DEN }
+							}
+						}
+						news_event = { id = city_fall_news.26 random_hours = 24 }
+					}
+				}
+				else_if = { # Helsinki
+					limit = { FROM.FROM = { state = 111 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = FIN }
+							}
+						}
+						news_event = { id = city_fall_news.27 random_hours = 24 }
+					}
+				}
+				else_if = { # Tallinn
+					limit = { FROM.FROM = { state = 812 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = EST }
+							}
+						}
+						news_event = { id = city_fall_news.28 random_hours = 24 }
+					}
+				}
+				else_if = { # Riga
+					limit = { FROM.FROM = { state = 808 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = LAT }
+							}
+						}
+						news_event = { id = city_fall_news.29 random_hours = 24 }
+					}
+				}
+				else_if = { # Kaunas
+					limit = { FROM.FROM = { state = 11 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = LIT }
+							}
+						}
+						news_event = { id = city_fall_news.30 random_hours = 24 }
+					}
+				}
+				else_if = { # Königsberg
+					limit = { FROM.FROM = { state = 763 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = GER }
+							}
+						}
+						news_event = { id = city_fall_news.31 random_hours = 24 }
+					}
+				}
+				else_if = { # Warsaw
+					limit = { FROM.FROM = { state = 10 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = POL }
+							}
+						}
+						news_event = { id = city_fall_news.32 random_hours = 24 }
+					}
+				}
+				else_if = { # Prague
+					limit = { FROM.FROM = { state = 9 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = CZE }
+							}
+						}
+						news_event = { id = city_fall_news.33 random_hours = 24 }
+					}
+				}
+				else_if = { # Bratislava
+					limit = { FROM.FROM = { state = 70 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = CZE }
+							}
+						}
+						news_event = { id = city_fall_news.34 random_hours = 24 }
+					}
+				}
+				else_if = { # Budapest
+					limit = { FROM.FROM = { state = 43 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = HUN }
+							}
+						}
+						news_event = { id = city_fall_news.35 random_hours = 24 }
+					}
+				}
+				else_if = { # Zagreb
+					limit = { FROM.FROM = { state = 109 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = YUG }
+							}
+						}
+						news_event = { id = city_fall_news.36 random_hours = 24 }
+					}
+				}
+				else_if = { # Belgrade
+					limit = { FROM.FROM = { state = 107 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = YUG }
+							}
+						}
+						news_event = { id = city_fall_news.37 random_hours = 24 }
+					}
+				}
+				else_if = { # Bucharest
+					limit = { FROM.FROM = { state = 46 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = ROM }
+							}
+						}
+						news_event = { id = city_fall_news.38 random_hours = 24 }
+					}
+				}
+				else_if = { # Sofia
+					limit = { FROM.FROM = { state = 48 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = BUL }
+							}
+						}
+						news_event = { id = city_fall_news.39 random_hours = 24 }
+					}
+				}
+				else_if = { # Tirana
+					limit = { FROM.FROM = { state = 44 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = ALB }
+							}
+						}
+						news_event = { id = city_fall_news.40 random_hours = 24 }
+					}
+				}
+				else_if = { # Athens
+					limit = { FROM.FROM = { state = 47 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = GRE }
+							}
+						}
+						news_event = { id = city_fall_news.41 random_hours = 24 }
+					}
+				}
+				else_if = { # Istanbul
+					limit = { FROM.FROM = { state = 797 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = TUR }
+							}
+						}
+						news_event = { id = city_fall_news.42 random_hours = 24 }
+					}
+				}
+				else_if = { # Ankara
+					limit = { FROM.FROM = { state = 49 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = TUR }
+							}
+						}
+						news_event = { id = city_fall_news.43 random_hours = 24 }
+					}
+				}
+				else_if = { # Gibraltar
+					limit = { FROM.FROM = { state = 118 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = ENG }
+							}
+						}
+						news_event = { id = city_fall_news.44 random_hours = 24 }
+					}
+				}
+				else_if = { # Kiev
+					limit = { FROM.FROM = { state = 202 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = SOV }
+							}
+						}
+						news_event = { id = city_fall_news.45 random_hours = 24 }
+					}
+				}
+				else_if = { # Minsk
+					limit = { FROM.FROM = { state = 206 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = SOV }
+							}
+						}
+						news_event = { id = city_fall_news.46 random_hours = 24 }
+					}
+				}
+				else_if = { # Leningrad
+					limit = { FROM.FROM = { state = 195 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = SOV }
+							}
+						}
+						news_event = { id = city_fall_news.47 random_hours = 24 }
+					}
+				}
+				else_if = { # Murmansk
+					limit = { FROM.FROM = { state = 213 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = SOV }
+							}
+						}
+						news_event = { id = city_fall_news.48 random_hours = 24 }
+					}
+				}
+				else_if = { # Moscow
+					limit = { FROM.FROM = { state = 219 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = SOV }
+							}
+						}
+						news_event = { id = city_fall_news.49 random_hours = 24 }
+					}
+				}
+				else_if = { # Stalingrad
+					limit = { FROM.FROM = { state = 217 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = SOV }
+							}
+						}
+						news_event = { id = city_fall_news.50 random_hours = 24 }
+					}
+				}
+				else_if = { # Sevastopol
+					limit = { FROM.FROM = { state = 137 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = SOV }
+							}
+						}
+						news_event = { id = city_fall_news.51 random_hours = 24 }
+					}
+				}
+				else_if = { # Tbilisi
+					limit = { FROM.FROM = { state = 231 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = SOV }
+							}
+						}
+						news_event = { id = city_fall_news.52 random_hours = 24 }
+					}
+				}
+				else_if = { # Baku
+					limit = { FROM.FROM = { state = 229 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = SOV }
+							}
+						}
+						news_event = { id = city_fall_news.53 random_hours = 24 }
+					}
+				}
+				else_if = { # Sverdlovsk
+					limit = { FROM.FROM = { state = 653 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = SOV }
+							}
+						}
+						news_event = { id = city_fall_news.54 random_hours = 24 }
+					}
+				}
+				else_if = { # Vladivostok
+					limit = { FROM.FROM = { state = 408 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = SOV }
+							}
+						}
+						news_event = { id = city_fall_news.55 random_hours = 24 }
+					}
+				}
+				else_if = { # Tunis
+					limit = { FROM.FROM = { state = 458 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = FRA }
+							}
+						}
+						news_event = { id = city_fall_news.56 random_hours = 24 }
+					}
+				}
+				else_if = { # Dakar
+					limit = { FROM.FROM = { state = 272 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = FRA }
+							}
+						}
+						news_event = { id = city_fall_news.57 random_hours = 24 }
+					}
+				}
+				else_if = { # Monrovia
+					limit = { FROM.FROM = { state = 298 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = LIB }
+							}
+						}
+						news_event = { id = city_fall_news.58 random_hours = 24 }
+					}
+				}
+				else_if = { # Leopoldville
+					limit = { FROM.FROM = { state = 295 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = BEL }
+							}
+						}
+						news_event = { id = city_fall_news.59 random_hours = 24 }
+					}
+				}
+				else_if = { # Cape Town
+					limit = { FROM.FROM = { state = 681 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = SAF }
+							}
+						}
+						news_event = { id = city_fall_news.60 random_hours = 24 }
+					}
+				}
+				else_if = { # Nairobi
+					limit = { FROM.FROM = { state = 547 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = ENG }
+							}
+						}
+						news_event = { id = city_fall_news.61 random_hours = 24 }
+					}
+				}
+				else_if = { # Mogadishu
+					limit = { FROM.FROM = { state = 559 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = ITA }
+							}
+						}
+						news_event = { id = city_fall_news.62 random_hours = 24 }
+					}
+				}
+				else_if = { # Addis Ababa
+					limit = { FROM.FROM = { state = 271 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = ETH }
+							}
+						}
+						news_event = { id = city_fall_news.63 random_hours = 24 }
+					}
+				}
+				else_if = { # Cairo
+					limit = { FROM.FROM = { state = 907 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { OR = { original_tag = EGY original_tag = ENG } }
+							}
+						}
+						news_event = { id = city_fall_news.64 random_hours = 24 }
+					}
+				}
+				else_if = { # Damascus
+					limit = { FROM.FROM = { state = 554 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = FRA }
+							}
+						}
+						news_event = { id = city_fall_news.65 random_hours = 24 }
+					}
+				}
+				else_if = { # Baghdad
+					limit = { FROM.FROM = { state = 291 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = IRQ }
+							}
+						}
+						news_event = { id = city_fall_news.66 random_hours = 24 }
+					}
+				}
+				else_if = { # Riyadh
+					limit = { FROM.FROM = { state = 292 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = SAU }
+							}
+						}
+						news_event = { id = city_fall_news.67 random_hours = 24 }
+					}
+				}
+				else_if = { # Sana'a
+					limit = { FROM.FROM = { state = 293 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = YEM }
+							}
+						}
+						news_event = { id = city_fall_news.68 random_hours = 24 }
+					}
+				}
+				else_if = { # Muscat
+					limit = { FROM.FROM = { state = 294 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = OMA }
+							}
+						}
+						news_event = { id = city_fall_news.69 random_hours = 24 }
+					}
+				}
+				else_if = { # Tehran
+					limit = { FROM.FROM = { state = 266 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = PER }
+							}
+						}
+						news_event = { id = city_fall_news.70 random_hours = 24 }
+					}
+				}
+				else_if = { # Kabul
+					limit = { FROM.FROM = { state = 267 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = AFG }
+							}
+						}
+						news_event = { id = city_fall_news.71 random_hours = 24 }
+					}
+				}
+				else_if = { # Delhi
+					limit = { FROM.FROM = { state = 439 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = RAJ }
+							}
+						}
+						news_event = { id = city_fall_news.72 random_hours = 24 }
+					}
+				}
+				else_if = { # Calcutta
+					limit = { FROM.FROM = { state = 431 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = RAJ }
+							}
+						}
+						news_event = { id = city_fall_news.73 random_hours = 24 }
+					}
+				}
+				else_if = { # Bangkok
+					limit = { FROM.FROM = { state = 289 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = SIA }
+							}
+						}
+						news_event = { id = city_fall_news.74 random_hours = 24 }
+					}
+				}
+				else_if = { # Hanoi
+					limit = { FROM.FROM = { state = 671 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = FRA }
+							}
+						}
+						news_event = { id = city_fall_news.75 random_hours = 24 }
+					}
+				}
+				else_if = { # Singapore
+					limit = { FROM.FROM = { state = 336 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = MAL }
+							}
+						}
+						news_event = { id = city_fall_news.76 random_hours = 24 }
+					}
+				}
+				else_if = { # Batavia
+					limit = { FROM.FROM = { state = 335 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = INS }
+							}
+						}
+						news_event = { id = city_fall_news.77 random_hours = 24 }
+					}
+				}
+				else_if = { # Sydney
+					limit = { FROM.FROM = { state = 285 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = AST }
+							}
+						}
+						news_event = { id = city_fall_news.78 random_hours = 24 }
+					}
+				}
+				else_if = { # Manila
+					limit = { FROM.FROM = { state = 327 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = PHI }
+							}
+						}
+						news_event = { id = city_fall_news.79 random_hours = 24 }
+					}
+				}
+				else_if = { # Wellington
+					limit = { FROM.FROM = { state = 284 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = NZL }
+							}
+						}
+						news_event = { id = city_fall_news.80 random_hours = 24 }
+					}
+				}
+				else_if = { # Kathmandu
+					limit = { FROM.FROM = { state = 323 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = NEP }
+							}
+						}
+						news_event = { id = city_fall_news.81 random_hours = 24 }
+					}
+				}
+				else_if = { # Punakha
+					limit = { FROM.FROM = { state = 324 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = BHU }
+							}
+						}
+						news_event = { id = city_fall_news.82 random_hours = 24 }
+					}
+				}
+				else_if = { # Lhasa
+					limit = { FROM.FROM = { state = 757 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = TIB }
+							}
+						}
+						news_event = { id = city_fall_news.83 random_hours = 24 }
+					}
+				}
+				else_if = { # Beijing
+					limit = { FROM.FROM = { state = 608 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = CHI }
+							}
+						}
+						news_event = { id = city_fall_news.84 random_hours = 24 }
+					}
+				}
+				else_if = { # Nanjing
+					limit = { FROM.FROM = { state = 613 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = CHI }
+							}
+						}
+						news_event = { id = city_fall_news.85 random_hours = 24 }
+					}
+				}
+				else_if = { # Chongqing
+					limit = { FROM.FROM = { state = 605 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = CHI }
+							}
+						}
+						news_event = { id = city_fall_news.86 random_hours = 24 }
+					}
+				}
+				else_if = { # Ulaanbaatar
+					limit = { FROM.FROM = { state = 330 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = MON }
+							}
+						}
+						news_event = { id = city_fall_news.87 random_hours = 24 }
+					}
+				}
+				else_if = { # Kyzyl (yes im doing tannu tuva)
+					limit = { FROM.FROM = { state = 329 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = TAN }
+							}
+						}
+						news_event = { id = city_fall_news.88 random_hours = 24 }
+					}
+				}
+				else_if = { # Seoul
+					limit = { FROM.FROM = { state = 525 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = JAP }
+							}
+						}
+						news_event = { id = city_fall_news.89 random_hours = 24 }
+					}
+				}
+				else_if = { # Hiroshima
+					limit = { FROM.FROM = { state = 529 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = JAP }
+							}
+						}
+						news_event = { id = city_fall_news.90 random_hours = 24 }
+					}
+				}
+				else_if = { # Tokyo
+					limit = { FROM.FROM = { state = 282 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = JAP }
+							}
+						}
+						news_event = { id = city_fall_news.91 random_hours = 24 }
+					}
+				}
+				else_if = { # Hsinking
+					limit = { FROM.FROM = { state = 328 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = MAN }
+							}
+						}
+						news_event = { id = city_fall_news.92 random_hours = 24 }
+					}
+				}
+				else_if = { # Buenos Aires
+					limit = { FROM.FROM = { state = 278 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = ARG }
+							}
+						}
+						news_event = { id = city_fall_news.93 random_hours = 24 }
+					}
+				}
+				else_if = { # Montevideo
+					limit = { FROM.FROM = { state = 300 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = URG }
+							}
+						}
+						news_event = { id = city_fall_news.94 random_hours = 24 }
+					}
+				}
+				else_if = { # Santiago
+					limit = { FROM.FROM = { state = 279 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = CHL }
+							}
+						}
+						news_event = { id = city_fall_news.95 random_hours = 24 }
+					}
+				}
+				else_if = { # La Paz
+					limit = { FROM.FROM = { state = 302 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = BOL }
+							}
+						}
+						news_event = { id = city_fall_news.96 random_hours = 24 }
+					}
+				}
+				else_if = { # Asuncion
+					limit = { FROM.FROM = { state = 301 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = PAR }
+							}
+						}
+						news_event = { id = city_fall_news.97 random_hours = 24 }
+					}
+				}
+				else_if = { # Lima
+					limit = { FROM.FROM = { state = 303 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = PRU }
+							}
+						}
+						news_event = { id = city_fall_news.98 random_hours = 24 }
+					}
+				}
+				else_if = { # Quito
+					limit = { FROM.FROM = { state = 305 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = ECU }
+							}
+						}
+						news_event = { id = city_fall_news.99 random_hours = 24 }
+					}
+				}
+				else_if = { # Bogota
+					limit = { FROM.FROM = { state = 306 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = COL }
+							}
+						}
+						news_event = { id = city_fall_news.100 random_hours = 24 }
+					}
+				}
+				else_if = { # Caracas
+					limit = { FROM.FROM = { state = 307 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = COL }
+							}
+						}
+						news_event = { id = city_fall_news.101 random_hours = 24 }
+					}
+				}
+				else_if = { # Rio de Janeiro
+					limit = { FROM.FROM = { state = 500 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = BRA }
+							}
+						}
+						news_event = { id = city_fall_news.102 random_hours = 24 }
+					}
+				}
+				else_if = { # Panama Canal
+					limit = { FROM.FROM = { state = 685 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = USA }
+							}
+						}
+						news_event = { id = city_fall_news.103 random_hours = 24 }
+					}
+				}
+				else_if = { # Mexico City
+					limit = { FROM.FROM = { state = 277 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = MEX }
+							}
+						}
+						news_event = { id = city_fall_news.104 random_hours = 24 }
+					}
+				}
+				else_if = { # New York
+					limit = { FROM.FROM = { state = 358 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = USA }
+							}
+						}
+						news_event = { id = city_fall_news.105 random_hours = 24 }
+					}
+				}
+				else_if = { # Washington
+					limit = { FROM.FROM = { state = 361 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = USA }
+							}
+						}
+						news_event = { id = city_fall_news.106 random_hours = 24 }
+					}
+				}
+				else_if = { # Chicago
+					limit = { FROM.FROM = { state = 395 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = USA }
+							}
+						}
+						news_event = { id = city_fall_news.107 random_hours = 24 }
+					}
+				}
+				else_if = { # California
+					limit = { FROM.FROM = { state = 378 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = USA }
+							}
+						}
+						news_event = { id = city_fall_news.108 random_hours = 24 }
+					}
+				}
+				else_if = { # Ottawa
+					limit = { FROM.FROM = { state = 276 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = CAN }
+							}
+						}
+						news_event = { id = city_fall_news.109 random_hours = 24 }
+					}
+				}
+				else_if = { # Tashkent
+					limit = { FROM.FROM = { state = 405 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = SOV }
+							}
+						}
+						news_event = { id = city_fall_news.110 random_hours = 24 }
+					}
+				}
+				else_if = { # Havana
+					limit = { FROM.FROM = { state = 315 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = CUB }
+							}
+						}
+						news_event = { id = city_fall_news.111 random_hours = 24 }
+					}
+				}
+			}
+		}
+	}
+}
