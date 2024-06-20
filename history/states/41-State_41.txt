@@ -1,10 +1,19 @@
 state={
 	id=41
-	name="STATE_41"
+	name="Oka Island"
+	history={
+		owner = SVD
+		buildings = {
+			infrastructure = 4
+			}
+	
+			add_core_of = SVD
+			add_core_of = BKG
+			add_core_of = RFO		}
 	provinces={
 		5080 6018 
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+        manpower=2589
+        state_category = tiny_island
 }

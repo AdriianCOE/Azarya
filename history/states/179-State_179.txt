@@ -1,7 +1,17 @@
 
 state={
 	id=179
-	name="STATE_179"
+	name="Steiburg"
+	history={
+		owner = BKG
+		buildings = {
+			infrastructure = 4
+			}
+	
+			add_core_of = SVD
+			add_core_of = BKG
+			add_core_of = RFO
+		}
 	provinces={
 		68 618 1014 1065 1318 2216 2262 2864 4110 4850 5487 5505 5517 5524 5581 5592 5613 5653 5739 
 	}

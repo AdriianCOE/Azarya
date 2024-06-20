@@ -1,7 +1,17 @@
 
 state={
 	id=194
-	name="STATE_194"
+	name="Geilernachia"
+	history={
+		owner = BKG
+		buildings = {
+			infrastructure = 4
+			}
+	
+			add_core_of = SVD
+			add_core_of = BKG
+			add_core_of = RFO
+		}
 	provinces={
 		313 744 1513 3714 4799 5836 5846 5854 5857 5885 5922 
 	}

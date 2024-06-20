@@ -51,6 +51,7 @@ IF = {
 		early_ship_hull_submarine = 1
 		basic_ship_hull_submarine = 1
 		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
 		early_ship_hull_cruiser = 1
 		early_ship_hull_heavy = 1
 		basic_battery = 1
@@ -200,7 +201,7 @@ IF = {
 	# Heavy Cruisers #
 	create_equipment_variant = {
 		name = "Vigilance Class"				
-		type = ship_hull_cruiser_coastal_defense_ship
+		type = ship_hull_cruiser_1
 		name_group = TOL_CL_HISTORICAL
 		parent_version = 0
 		modules = {
@@ -218,8 +219,8 @@ IF = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Défenseur Class"				
-		type = ship_hull_cruiser_coastal_defense_ship
+		name = "Defenseur Class"				
+		type = ship_hull_cruiser_1
 		name_group = TOL_CA_HISTORICAL
 		parent_version = 0
 		modules = {
@@ -256,7 +257,7 @@ IF = {
 	}
 	# Battleships #
 	create_equipment_variant = {
-		name = "Liberté Class"	
+		name = "Liberte Class"	
 		type = ship_hull_heavy_1
 		name_group = TOL_BB_HISTORICAL
 		parent_version = 0

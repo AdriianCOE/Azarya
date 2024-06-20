@@ -1,3 +1,4 @@
+
 THK = "countries/ThirynKingdom.txt"
 CZL = "countries/Czariado de Lesc.txt"
 NIC = "countries/Nicollonia.txt"
@@ -11,4 +12,7 @@ KOZ = "countries/Kingdom of Zauern.txt"
 TOL = "countries/Torronese League.txt"
 SLU = "countries/Sollerium.txt"
 LUQ = "countries/Luquitos.txt"
-BOI = "countries/Bolia.txt"
+BOA = "countries/Bolia.txt"
+SVD = "countries/Serenvioled.txt"
+BKG = "countries/Blutkrieger.txt"
+RFO = "countries/Ròsfhios.txt"

@@ -1,12 +1,35 @@
 
 state={
 	id=199
-	name="STATE_199"
-	provinces={
-		272 334 1718 1862 2165 3183 3542 3574 3735 3784 3836 4490 5933 5938 5966 5968 5975 5976 5981 5996 6022 6030 6074 6083 
+	name="Dornsruten"
+
+	history={
+		owner = SVD
+		victory_points = {
+			6022 10
+		}
+		victory_points = {
+			6030 8 
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 3
+		6030 = {
+			naval_base = 2
+			}
+		}
+		add_core_of = SVD
+		add_core_of = BKG
+		add_core_of = RFO
+
 	}
-	manpower=1
+
+	provinces={
+		272 334 1718 1862 3183 3542 3735 3784 3836 4490 5966 5968 5975 5976 5981 5996 6022 6030 6074 6083 
+	}
+	manpower=1318982
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=large_city
 	local_supplies=0.000
 }

@@ -1,7 +1,17 @@
 
 state={
 	id=146
-	name="STATE_146"
+	name="Badenalbia"
+	history={
+		owner = BKG
+		buildings = {
+			infrastructure = 4
+			}
+	
+			add_core_of = SVD
+			add_core_of = BKG
+			add_core_of = RFO
+		}
 	provinces={
 		1236 4076 5312 5330 5336 5356 5363 5421 
 	}

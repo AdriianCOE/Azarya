@@ -1,11 +1,34 @@
 
 state={
 	id=195
-	name="STATE_195"
+	name="Todtterkirch"
+
+	history={
+		owner = SVD
+		victory_points = {
+			5075 12
+		}
+		victory_points = {
+			2213 5 
+		}
+		victory_points = {
+			5860 5 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+
+		}
+		add_core_of = SVD
+		add_core_of = BKG
+		add_core_of = RFO
+
+	}
+
 	provinces={
 		965 1075 1443 1712 2142 2213 2498 2726 2784 2793 2834 3274 3682 4216 4290 4362 5075 5844 5849 5851 5859 5860 5863 5875 5876 5879 5888 5904 5909 5918 5921 5934 
 	}
-	manpower=1
+	manpower=658982
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

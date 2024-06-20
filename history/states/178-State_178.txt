@@ -1,7 +1,17 @@
 
 state={
 	id=178
-	name="STATE_178"
+	name="Badefenbia"
+	history={
+		owner = BKG
+		buildings = {
+			infrastructure = 4
+			}
+	
+			add_core_of = SVD
+			add_core_of = BKG
+			add_core_of = RFO
+		}
 	provinces={
 		2787 3196 3837 4732 5142 5597 5606 5616 5620 5624 5651 5667 5682 5693 
 	}

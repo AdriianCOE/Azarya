@@ -40,26 +40,26 @@ IF = {
 	}
 }
 
-recruit_character = BOI_ar
-recruit_character = BOI_acr
-recruit_character = BOI_mt
-recruit_character = BOI_stc
-recruit_character = BOI_aa2
-recruit_character = BOI_acgs
-recruit_character = BOI_ncm
-recruit_character = BOI_nccr
-recruit_character = BOI_coi
-recruit_character = BOI_democratic_guy
-recruit_character = BOI_acd2
-recruit_character = BOI_acas
-recruit_character = BOI_communist_guy
-recruit_character = BOI_ncs
-recruit_character = BOI_awt
-recruit_character = BOI_pot
-recruit_character = BOI_fascist_guy
-recruit_character = BOI_ai2
-recruit_character = BOI_nt
-recruit_character = BOI_aco2
+recruit_character = BOA_ar
+recruit_character = BOA_acr
+recruit_character = BOA_mt
+recruit_character = BOA_stc
+recruit_character = BOA_aa2
+recruit_character = BOA_acgs
+recruit_character = BOA_ncm
+recruit_character = BOA_nccr
+recruit_character = BOA_coi
+recruit_character = BOA_democratic_guy
+recruit_character = BOA_acd2
+recruit_character = BOA_acas
+recruit_character = BOA_communist_guy
+recruit_character = BOA_ncs
+recruit_character = BOA_awt
+recruit_character = BOA_pot
+recruit_character = BOA_fascist_guy
+recruit_character = BOA_ai2
+recruit_character = BOA_nt
+recruit_character = BOA_aco2
 
 set_convoys = 157
 set_war_support = 10

@@ -1,6 +1,16 @@
 state={
 	id=5
-	name="STATE_5"
+	name="Min Island"
+	history={
+		owner = BKG
+		buildings = {
+			infrastructure = 4
+			}
+	
+			add_core_of = SVD
+			add_core_of = BKG
+			add_core_of = RFO
+		}
 	provinces={
 		5261 
 	}

@@ -1,7 +1,17 @@
 
 state={
 	id=185
-	name="STATE_185"
+	name="March"
+	history={
+		owner = RFO
+		buildings = {
+			infrastructure = 4
+			}
+	
+			add_core_of = SVD
+			add_core_of = BKG
+			add_core_of = RFO
+		}
 	provinces={
 		976 1103 1636 2553 3143 3945 3999 4043 4445 4907 4993 5633 5644 5646 5648 5666 5677 5702 5732 5755 5760 5769 5781 5784 5788 5789 5807 
 	}

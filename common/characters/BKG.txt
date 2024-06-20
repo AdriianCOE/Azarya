@@ -1,11 +1,11 @@
 characters={
-	BOI_ar={
+	BKG_ar={
 		advisor={
 			slot = high_command
-			idea_token = BOI_ar
+			idea_token = BKG_ar
 			ledger  = army 
 				allowed  = {
-					original_tag  = BOI
+					original_tag  = BKG
 				}
 				traits  = {
 					army_regrouping_2 
@@ -21,12 +21,12 @@ characters={
 			}
 		}
 	}
-	BOI_acr={
+	BKG_acr={
 		advisor={
 			slot = air_chief
-			idea_token = BOI_acr
+			idea_token = BKG_acr
 			allowed  = {
-					original_tag  = BOI
+					original_tag  = BKG
 				}
 				traits  = {
 					air_chief_reform_2 
@@ -42,13 +42,13 @@ characters={
 			}
 		}
 	}
-	BOI_mt={
+	BKG_mt={
 		advisor={
 			slot = theorist
-			idea_token = BOI_mt
+			idea_token = BKG_mt
 			ledger  = army 
 				allowed  = {
-					original_tag  = BOI
+					original_tag  = BKG
 				}
 				traits  = {
 					military_theorist 
@@ -61,12 +61,12 @@ characters={
 			}
 		}
 	}
-	BOI_stc={
+	BKG_stc={
 		advisor={
 			slot = political_advisor
-			idea_token = BOI_stc
+			idea_token = BKG_stc
 			allowed  = {
-					original_tag  = BOI
+					original_tag  = BKG
 				}
 				traits  = {
 					smooth_talking_charmer 
@@ -79,13 +79,13 @@ characters={
 			}
 		}
 	}
-	BOI_aa2={
+	BKG_aa2={
 		advisor={
 			slot = high_command
-			idea_token = BOI_aa2
+			idea_token = BKG_aa2
 			ledger  = army 
 				allowed  = {
-					original_tag  = BOI
+					original_tag  = BKG
 				}
 				traits  = {
 					army_armored_2 
@@ -101,12 +101,12 @@ characters={
 			}
 		}
 	}
-	BOI_acgs={
+	BKG_acgs={
 		advisor={
 			slot = air_chief
-			idea_token = BOI_acgs
+			idea_token = BKG_acgs
 			allowed  = {
-					original_tag  = BOI
+					original_tag  = BKG
 				}
 				traits  = {
 					air_chief_ground_support_2 
@@ -122,12 +122,12 @@ characters={
 			}
 		}
 	}
-	BOI_ncm={
+	BKG_ncm={
 		advisor={
 			slot = navy_chief
-			idea_token = BOI_ncm
+			idea_token = BKG_ncm
 			allowed  = {
-					original_tag  = BOI
+					original_tag  = BKG
 				}
 				traits  = {
 					navy_chief_maneuver_2 
@@ -143,12 +143,12 @@ characters={
 			}
 		}
 	}
-	BOI_nccr={
+	BKG_nccr={
 		advisor={
 			slot = navy_chief
-			idea_token = BOI_nccr
+			idea_token = BKG_nccr
 			allowed  = {
-					original_tag  = BOI
+					original_tag  = BKG
 				}
 				traits  = {
 					navy_chief_commerce_raiding_2 
@@ -164,12 +164,12 @@ characters={
 			}
 		}
 	}
-	BOI_coi={
+	BKG_coi={
 		advisor={
 			slot = political_advisor
-			idea_token = BOI_coi
+			idea_token = BKG_coi
 			allowed  = {
-					original_tag  = BOI
+					original_tag  = BKG
 				}
 				traits  = {
 					captain_of_industry 
@@ -182,12 +182,12 @@ characters={
 			}
 		}
 	}
-	BOI_democratic_guy={
+	BKG_democratic_guy={
 		advisor={
 			slot = political_advisor
-			idea_token = BOI_democratic_guy
+			idea_token = BKG_democratic_guy
 			allowed  = {
-					original_tag  = BOI
+					original_tag  = BKG
 				}
 				traits  = {
 					democratic_reformer 
@@ -208,12 +208,12 @@ characters={
 			}
 		}
 	}
-	BOI_acd2={
+	BKG_acd2={
 		advisor={
 			slot = army_chief
-			idea_token = BOI_acd2
+			idea_token = BKG_acd2
 			allowed  = {
-					original_tag  = BOI
+					original_tag  = BKG
 				}
 				traits  = {
 					army_chief_defensive_2 
@@ -229,13 +229,13 @@ characters={
 			}
 		}
 	}
-	BOI_acas={
+	BKG_acas={
 		advisor={
 			slot = high_command
-			idea_token = BOI_acas
+			idea_token = BKG_acas
 			ledger  = air 
 				allowed  = {
-					original_tag  = BOI
+					original_tag  = BKG
 				}
 				traits  = {
 					air_close_air_support_2 
@@ -251,12 +251,12 @@ characters={
 			}
 		}
 	}
-	BOI_communist_guy={
+	BKG_communist_guy={
 		advisor={
 			slot = political_advisor
-			idea_token = BOI_communist_guy
+			idea_token = BKG_communist_guy
 			allowed  = {
-					original_tag  = BOI
+					original_tag  = BKG
 				}
 				traits  = {
 					communist_revolutionary 
@@ -277,13 +277,13 @@ characters={
 			}
 		}
 	}
-	BOI_ncs={
+	BKG_ncs={
 		advisor={
 			slot = high_command
-			idea_token = BOI_ncs
+			idea_token = BKG_ncs
 			ledger  = navy 
 				allowed  = {
-					original_tag  = BOI
+					original_tag  = BKG
 				}
 				traits  = {
 					navy_capital_ship_2 
@@ -299,13 +299,13 @@ characters={
 			}
 		}
 	}
-	BOI_awt={
+	BKG_awt={
 		advisor={
 			slot = theorist
-			idea_token = BOI_awt
+			idea_token = BKG_awt
 			ledger  = air 
 				allowed  = {
-					original_tag  = BOI
+					original_tag  = BKG
 				}
 				traits  = {
 					air_warfare_theorist 
@@ -318,12 +318,12 @@ characters={
 			}
 		}
 	}
-	BOI_pot={
+	BKG_pot={
 		advisor={
 			slot = political_advisor
-			idea_token = BOI_pot
+			idea_token = BKG_pot
 			allowed  = {
-					original_tag  = BOI
+					original_tag  = BKG
 				}
 				traits  = {
 					prince_of_terror 
@@ -336,12 +336,12 @@ characters={
 			}
 		}
 	}
-	BOI_fascist_guy={
+	BKG_fascist_guy={
 		advisor={
 			slot = political_advisor
-			idea_token = BOI_fascist_guy
+			idea_token = BKG_fascist_guy
 			allowed  = {
-					original_tag  = BOI
+					original_tag  = BKG
 				}
 				traits  = {
 					fascist_demagogue 
@@ -362,13 +362,13 @@ characters={
 			}
 		}
 	}
-	BOI_ai2={
+	BKG_ai2={
 		advisor={
 			slot = high_command
-			idea_token = BOI_ai2
+			idea_token = BKG_ai2
 			ledger  = army 
 				allowed  = {
-					original_tag  = BOI
+					original_tag  = BKG
 				}
 				traits  = {
 					army_infantry_2 
@@ -384,13 +384,13 @@ characters={
 			}
 		}
 	}
-	BOI_nt={
+	BKG_nt={
 		advisor={
 			slot = theorist
-			idea_token = BOI_nt
+			idea_token = BKG_nt
 			ledger  = navy 
 				allowed  = {
-					original_tag  = BOI
+					original_tag  = BKG
 				}
 				traits  = {
 					naval_theorist 
@@ -403,12 +403,12 @@ characters={
 			}
 		}
 	}
-	BOI_aco2={
+	BKG_aco2={
 		advisor={
 			slot = army_chief
-			idea_token = BOI_aco2
+			idea_token = BKG_aco2
 			allowed  = {
-					original_tag  = BOI
+					original_tag  = BKG
 				}
 				traits  = {
 					army_chief_organizational_2 

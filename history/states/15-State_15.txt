@@ -6,7 +6,7 @@ state={
 		steel=4
 }
 	history={
-		owner = BOL
+		owner = BOA
 		victory_points = {
 			2963 20
 		}
@@ -25,12 +25,12 @@ state={
 	
 			}
 	
-		add_core_of = BOL
+		add_core_of = BOA
 		}
 	provinces={
 		323 731 1407 1437 1495 2963 3792 4254 4652 4739 5313 5314 5322 5331 5344 5365 5379 5400 5409 5410 5422 5475 
 	}
-	manpower=1134895
+	manpower=1534895
 	buildings_max_level_factor=1.000
 	state_category=large_city
 	local_supplies=0.000

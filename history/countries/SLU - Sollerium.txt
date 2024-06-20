@@ -84,7 +84,7 @@ set_convoys = 92
 
 set_politics = {
 	ruling_party = fascism
-	last_election = "1936.1.1"
+	last_election = "1930.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
@@ -97,7 +97,10 @@ set_popularities = {
 }
 
 create_country_leader = {
-	ideology = Rexism
+	name = "Shiprianus"
+	desc = "Esse cara é um mandão"
+	ideology = Absolutism
+	traits = {Tenacious_Negotiator }
 }
 
 create_field_marshal = {

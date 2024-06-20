@@ -1,9 +1,22 @@
 
 state={
 	id=158
-	name="STATE_158"
+	name="Elbach"
+
+	history={
+		owner = RFO
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = SVD
+		add_core_of = BKG
+		add_core_of = RFO
+
+	}
+
 	provinces={
-		360 704 1762 1839 3866 4200 5441 5451 5476 5489 5518 5577 
+		360 670 704 1762 1839 2224 3866 4006 4200 4911 5441 5451 5476 5489 5518 5577 5604 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000

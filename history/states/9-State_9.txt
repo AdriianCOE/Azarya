@@ -1,6 +1,16 @@
 state={
 	id=9
-	name="STATE_9"
+	name="Nitu Island"
+	history={
+		owner = BKG
+		buildings = {
+			infrastructure = 4
+			}
+	
+			add_core_of = SVD
+			add_core_of = BKG
+			add_core_of = RFO
+		}
 	provinces={
 		2015 5048 5288 5290 5301 
 	}

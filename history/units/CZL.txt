@@ -289,22 +289,24 @@ instant_effect = {
 			type = infantry_equipment_0
 			creator = "CZL"
 		}
-		requested_factories = 32
+		requested_factories = 3
 		progress = 0.54
 		efficiency = 75
 	}
 	add_equipment_production = {
 		equipment = {
-			type = light_tank_equipment_1
+			type = light_tank_chassis_1
 			creator = "CZL"
+			version_name = "D-03"
 		}
 		requested_factories = 1
 		progress = 0.60
 		efficiency = 80
 		}
 		add_equipment_to_stockpile = {
-    		type = light_tank_equipment_1
-    			amount = 100
+    		type = light_tank_chassis_1
+			version_name = "D-03"
+    			amount = 84
 		}
 		add_equipment_to_stockpile = {
     		type = train_equipment_1

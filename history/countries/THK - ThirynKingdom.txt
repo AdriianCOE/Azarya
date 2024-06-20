@@ -140,7 +140,7 @@ if = {
 		name = "Queen Elara Lorenthia"
 		desc = "THK_Elara"
 		picture = Queen_Elara.dds
-		ideology = oligarchism
+		ideology = Constitutional_Monarchy
 		traits = {Queen_of_the_People Humble Tenacious_Negotiator }
 	}
     create_field_marshal = {

@@ -1,10 +1,40 @@
+
 state={
 	id=214
-	name="STATE_214"
-	provinces={
-		8 440 503 823 925 1034 1180 1246 2158 2205 2467 3273 3444 3487 4328 4446 4571 6112 6114 6115 6132 6139 6153 6157 6174 6189 6193 6205 6206 6211 6219 6220 6233 6236 6237 6247 6248 6260 6268 6286 6296 6330 
+	name="Tiewald"
+
+	history={
+		owner = SVD
+		victory_points = {
+			925 20 
+		}
+		victory_points = {
+			6189 15
+		}
+		victory_points = {
+			6296 8
+		}
+		buildings = {
+			infrastructure = 4
+			air_base = 4
+			arms_factory = 2
+			industrial_complex = 4
+			6296 = {
+				naval_base = 4
+				}
+
+		}
+		add_core_of = SVD
+		add_core_of = BKG
+		add_core_of = RFO
+
 	}
+
+	provinces={
+		440 503 823 925 1034 1180 1246 2158 2205 2467 3273 3444 3487 4328 4446 4571 6112 6114 6115 6132 6139 6153 6157 6174 6189 6193 6205 6206 6211 6219 6220 6233 6236 6237 6247 6248 6260 6268 6286 6296 6330 
+	}
+	manpower=2398698
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+	state_category=metropolis
+	local_supplies=0.000
 }

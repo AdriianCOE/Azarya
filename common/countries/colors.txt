@@ -7,27 +7,27 @@ CZL = {
 	color_ui = rgb { 70 70 70 }
 }
 NIC = {
-	color = rgb { 200  200  200 }
-	color_ui = rgb { 200  200  200 }
+	color = rgb { 200 200 200 }
+	color_ui = rgb { 200 200 200 }
 }
 NIR = {
-	color = rgb { 75  0  225 }
-	color_ui = rgb { 75  0  225 }
+	color = rgb { 75 0 225 }
+	color_ui = rgb { 75 0 225 }
 }
 RFB = {
-	color = rgb { 0  128  128 }
-	color_ui = rgb { 0  128  128 }
+	color = rgb { 0 128 128 }
+	color_ui = rgb { 0 128 128 }
 }
 UPG = {
 	color = rgb { 250 171 9 }
 	color_ui = rgb { 250 171 9 }
 }
 BOM = {
-	color = rgb { 1 255 250 }
-	color_ui = rgb { 1 255 250 }
+	color = rgb { 0 255 250 }
+	color_ui = rgb { 0 255 250 }
 }
 GYE = {
-	color = rgb { 40 20 60 }
+	color = rgb { 20 6 0 }
 	color_ui = rgb { 40 20 60 }
 }
 CBS = {
@@ -43,14 +43,26 @@ TOL = {
 	color_ui = rgb { 2 175 215 }
 }
 SLU = {
-	color = rgb { 90 00 20 }
-	color_ui = rgb { 90 00 20 }
+	color = rgb { 70 0 100 }
+	color_ui = rgb { 70 0 100 }
 }
 LUQ = {
 	color = rgb { 0 130 205 }
 	color_ui = rgb { 0 130 205 }
 }
-BOL = {
-	color = rgb { 00 20 00 }
-	color_ui = rgb { 00 20 00 }
+BOA = {
+	color = rgb { 200 255 0 }
+    color_ui = rgb { 200 255 0 }
+}
+SVD = {
+	color = rgb { 204 204 204 }
+    color_ui = rgb { 204 204 204 }
+}
+BKG= {
+	color = rgb { 45 50 0 }
+    color_ui = rgb { 45 50 0 }
+}
+RFO = {
+	color = rgb { 140 225 255 }
+    color_ui = rgb { 140 225 255 }
 }

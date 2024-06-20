@@ -265,14 +265,15 @@ units = {
 		fleet = {
 			name = "Marinha de Zauern"			
 				naval_base = 4051 
-				task_force = {
+				task_force = {	
 		name = "Marinha de Zauern"
 		location = 4051
 		ship = { name = "NRZ Thorund" pride_of_the_fleet = yes definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = KOZ version_name = "Thorund Class"} } }
 		ship = { name = "NRZ Aegir" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = KOZ version_name = "Thorund Class"} } }
-		ship = { name = "NRZ Aegir" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = KOZ version_name = "Thorund Class"} } }
+		ship = { name = "NRZ Aegir II" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = KOZ version_name = "Thorund Class"} } }
 		ship = { name = "NRZ Lumina" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOZ version_name = "Lumina Class"} } }
-		ship = { name = "NRZ Lumina" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOZ version_name = "Lumina Class"} } }
+		ship = { name = "NRZ Lumina II" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOZ version_name = "Lumina Class"} } }
+		ship = { name = "NRZ Lumina III" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOZ version_name = "Lumina Class"} } }
 		ship = { name = "NRZ Vesper" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOZ version_name = "Lumina Class"} } }
 		ship = { name = "NRZ Zephyr" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOZ version_name = "Lumina Class"} } }
 		ship = { name = "NRZ Hyperion" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOZ version_name = "Lumina Class"} } }
@@ -284,11 +285,11 @@ units = {
 		ship = { name = "NRZ Fenix IV" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOZ version_name = "Fenix Class"} } }
 		ship = { name = "NRZ Fenix V" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOZ version_name = "Fenix Class"} } }
 		ship = { name = "NRZ Fenix VI" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOZ version_name = "Fenix Class"} } }
-		ship = { name = "NRZ Fenix VI" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOZ version_name = "Fenix Class"} } }
+		ship = { name = "NRZ Fenix VII" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOZ version_name = "Fenix Class"} } }
 		
 		# 2a Flotilla de Contratorpedeiros
-		ship = { name = "NRZ Fenix VII" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOZ version_name = "Fenix Class"} } }	
-		ship = { name = "NRZ Fenix VIII" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOZ version_name = "Fenix Class"} } }
+		ship = { name = "NRZ Fenix VIII" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOZ version_name = "Fenix Class"} } }	
+		ship = { name = "NRZ Borbol" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOZ version_name = "Fenix Class"} } }
 		ship = { name = "NRZ Fenix IX" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOZ version_name = "Fenix Class"} } }
 		ship = { name = "NRZ Fenix X" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOZ version_name = "Fenix Class"} } }
 	}				

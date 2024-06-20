@@ -1,6 +1,16 @@
 state={
 	id=14
-	name="STATE_14"
+	name="Bafendin"
+	history={
+		owner = RFO
+		buildings = {
+			infrastructure = 4
+			}
+	
+			add_core_of = SVD
+			add_core_of = BKG
+			add_core_of = RFO
+		}
 	provinces={
 		535 
 	}

@@ -1,6 +1,16 @@
 state={
 	id=3
-	name="STATE_3"
+	name="Nata Island"
+	history={
+		owner = BKG
+		buildings = {
+			infrastructure = 4
+			}
+	
+			add_core_of = SVD
+			add_core_of = BKG
+			add_core_of = RFO
+		}
 	provinces={
 		2424 3910 5217 5229 5233 5241 
 	}

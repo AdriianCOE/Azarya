@@ -257,7 +257,6 @@ create_equipment_variant = {
 create_equipment_variant = {
 		name = "D-03"
 		type = light_tank_chassis_1
-		parent_version = 0
 		modules = {
 			main_armament_slot = tank_heavy_machine_gun
 			turret_type_slot = tank_light_one_man_tank_turret
@@ -269,6 +268,6 @@ create_equipment_variant = {
 			tank_nsb_engine_upgrade = 5
 			tank_nsb_armor_upgrade = 1
 		}
-
+		icon = "GFX_GER_basic_light_tank_medium"
 }
 

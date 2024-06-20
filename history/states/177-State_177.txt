@@ -1,7 +1,17 @@
 
 state={
 	id=177
-	name="STATE_177"
+	name="Schut"
+	history={
+		owner = BKG
+		buildings = {
+			infrastructure = 4
+			}
+	
+			add_core_of = SVD
+			add_core_of = BKG
+			add_core_of = RFO
+		}
 	provinces={
 		863 1368 1453 1733 2294 2309 2870 3147 3323 4035 4596 5486 5522 5523 5550 5579 5612 5617 5674 5698 
 	}

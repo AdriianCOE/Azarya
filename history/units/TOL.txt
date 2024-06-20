@@ -202,12 +202,12 @@ units = {
 			task_force = {
 				name = "Flotte de la Ligue Toronaise"
 				location = 4358 
-				ship = { name = "TLS Liberté" pride_of_the_fleet = yes definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = TOL version_name = "Liberté Class" } } }
+				ship = { name = "TLS Liberté" pride_of_the_fleet = yes definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = TOL version_name = "Liberte Class" } } }
 				ship = { name = "TLS Justice" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = TOL version_name = "Justice Class" } } }
 				ship = { name = "TLS Fraternité" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = TOL version_name = "Justice Class" } } }
-				ship = { name = "TLS Défenseur" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = TOL version_name = "Défenseur Class" } } }
-				ship = { name = "TLS Vigilance" definition = light_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = TOL version_name = "Vigilance Class" } } }
-				ship = { name = "TLS Indépendance" definition = light_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = TOL version_name = "Vigilance Class" } } }
+				ship = { name = "TLS Défenseur" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = TOL version_name = "Defenseur Class" } } }
+				ship = { name = "TLS Vigilance" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = TOL version_name = "Vigilance Class" } } }
+				ship = { name = "TLS Indépendance" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = TOL version_name = "Vigilance Class" } } }
 				# Flotilla de Destructores nro. 1
 				ship = { name = "TLS Rapide" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TOL version_name = "Rapide Class" } } }
 				ship = { name = "TLS Agile" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TOL version_name = "Rapide Class" } } }

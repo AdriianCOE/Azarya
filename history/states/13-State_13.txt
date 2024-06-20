@@ -1,7 +1,17 @@
 
 state={
 	id=13
-	name="STATE_13"
+	name="Fischin"
+	history={
+		owner = RFO
+		buildings = {
+			infrastructure = 4
+			}
+	
+			add_core_of = SVD
+			add_core_of = BKG
+			add_core_of = RFO
+		}
 	provinces={
 		2522 3306 3492 3579 3711 4196 4223 4696 4921 5109 5308 5315 5324 5343 5370 5432 5443 
 	}

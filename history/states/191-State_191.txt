@@ -1,9 +1,22 @@
 
 state={
 	id=191
-	name="STATE_191"
+	name="Opfheimenia"
+
+	history={
+		owner = BKG
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = SVD
+		add_core_of = BKG
+		add_core_of = RFO
+
+	}
+
 	provinces={
-		2513 2925 3255 4134 5785 5833 5852 
+		2890 2925 3255 4134 5833 5852 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000

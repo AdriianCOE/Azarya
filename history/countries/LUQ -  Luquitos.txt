@@ -97,7 +97,10 @@ set_popularities = {
 }
 
 create_country_leader = {
-	ideology = anarchism
+	name = "Luquitos Chef"
+	desc = "Esse cara é um miliciano"
+	ideology = Outlaws
+	traits = {Tenacious_Negotiator }
 }
 
 create_field_marshal = {

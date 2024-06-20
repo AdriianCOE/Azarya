@@ -30,9 +30,59 @@ bookmarks = {
 			history = x
 			ideology = fascism
 		}
-
+		SVD = {
+			history = x
+			ideology = democratic
+		}
+		GYE = {
+			history = x
+			ideology = fascism
+		}
+		
 		"---"={
 			history = "OTHER_GATHERING_STORM_DESC"
+		}
+
+		# minors from DLC ####
+		"BOM"={
+			minor = yes
+			history = x
+			ideology = fascism
+		}
+		"NIR"={
+			minor = yes
+			history = x
+			ideology = neutrality
+		}
+		"KOZ"={
+			minor = yes
+			history = x
+			ideology = neutrality
+		}
+		"CBS"={
+			minor = yes
+			history = x
+			ideology = neutrality
+		}
+		"RFB"={
+			minor = yes
+			history = x
+			ideology = neutrality
+		}
+		"KOZ"={
+			minor = yes
+			history = x
+			ideology = neutrality
+		}
+		"BKG"={
+			minor = yes
+			history = x
+			ideology = fascism
+		}
+		"RFO"={
+			minor = yes
+			history = x
+			ideology = neutrality
 		}
 
 		effect = {

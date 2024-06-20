@@ -1,7 +1,20 @@
 
 state={
 	id=190
-	name="STATE_190"
+	name="Othengstet"
+
+	history={
+		owner = RFO
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = SVD
+		add_core_of = BKG
+		add_core_of = RFO
+
+	}
+
 	provinces={
 		2135 2429 3377 4888 4897 5766 5791 5802 5821 5825 
 	}
