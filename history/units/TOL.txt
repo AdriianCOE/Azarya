@@ -192,9 +192,46 @@ units = {
 		start_equipment_factor = 0.9
 
 	}
-
-	##### No Notable Naval Forces #####
 }
+	##### No Notable Naval Forces #####
+
+	units = {
+		fleet = {
+			name = "Flotte de la Ligue Toronaise"
+			naval_base = 4358 
+			task_force = {
+				name = "Flotte de la Ligue Toronaise"
+				location = 4358 
+				ship = { name = "TLS Liberté" pride_of_the_fleet = yes definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = TOL version_name = "Liberté Class" } } }
+				ship = { name = "TLS Justice" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = TOL version_name = "Justice Class" } } }
+				ship = { name = "TLS Fraternité" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = TOL version_name = "Justice Class" } } }
+				ship = { name = "TLS Défenseur" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = TOL version_name = "Défenseur Class" } } }
+				ship = { name = "TLS Vigilance" definition = light_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = TOL version_name = "Vigilance Class" } } }
+				ship = { name = "TLS Indépendance" definition = light_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = TOL version_name = "Vigilance Class" } } }
+				# Flotilla de Destructores nro. 1
+				ship = { name = "TLS Rapide" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TOL version_name = "Rapide Class" } } }
+				ship = { name = "TLS Agile" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TOL version_name = "Rapide Class" } } }
+				ship = { name = "TLS Éclair" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TOL version_name = "Rapide Class" } } }
+				ship = { name = "TLS Flèche" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TOL version_name = "Rapide Class" } } }
+				# Flotilla de Destructores nro. 2
+				ship = { name = "TLS Sabre" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = TOL version_name = "Sabre Class" } } }
+				ship = { name = "TLS Mousquet" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = TOL version_name = "Sabre Class" } } }
+				ship = { name = "TLS Bayonette" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = TOL version_name = "Bayonette Class" } } }
+				ship = { name = "TLS Lance" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = TOL version_name = "Bayonette Class" } } }
+				ship = { name = "TLS Dague" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = TOL version_name = "Bayonette Class" } } }
+			}
+			task_force = {
+				name = "Flottille de Sous-marins"
+				location = 4358 
+				ship = { name = "TLS Faucon" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = TOL version_name = "Aigle Class" } } }
+				ship = { name = "TLS Aigle" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = TOL version_name = "Aigle Class" } } }
+				ship = { name = "TLS Requin" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = TOL version_name = "Aigle Class" } } }
+			}
+		}
+	}
+	
+	
+	
 
 ##### No Notable Air Forces #####
 

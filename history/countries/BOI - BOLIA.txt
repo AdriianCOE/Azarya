@@ -1,0 +1,100 @@
+capital = 15
+
+set_oob = "standard_templates"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_trucks = 1
+	basic_train = 1	
+}
+
+IF = {
+	limit = {
+		NOT = { has_dlc = "Man the Guns"}
+	}
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		transport = 1
+	}
+	
+}
+IF = {
+	limit = { has_dlc = "Man the Guns"}
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		mtg_transport = 1
+	}
+}
+
+recruit_character = BOI_ar
+recruit_character = BOI_acr
+recruit_character = BOI_mt
+recruit_character = BOI_stc
+recruit_character = BOI_aa2
+recruit_character = BOI_acgs
+recruit_character = BOI_ncm
+recruit_character = BOI_nccr
+recruit_character = BOI_coi
+recruit_character = BOI_democratic_guy
+recruit_character = BOI_acd2
+recruit_character = BOI_acas
+recruit_character = BOI_communist_guy
+recruit_character = BOI_ncs
+recruit_character = BOI_awt
+recruit_character = BOI_pot
+recruit_character = BOI_fascist_guy
+recruit_character = BOI_ai2
+recruit_character = BOI_nt
+recruit_character = BOI_aco2
+
+set_convoys = 157
+set_war_support = 10
+add_political_power = 200
+add_command_power = 50
+army_experience = 50
+
+set_politics = {
+		ruling_party = neutrality
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+
+	set_popularities = {
+		democratic = 10
+		fascism = 10
+		communism = 0
+		neutrality = 80
+	}
+
+create_country_leader = {
+	ideology = Centrism
+	traits = {}
+}
+
+create_field_marshal = {
+	traits = {}
+    skill = 4
+}
+create_corps_commander = {
+	traits = {}
+    skill = 2
+}
+create_corps_commander = {
+	traits = {}
+    skill = 2
+}

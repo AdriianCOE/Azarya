@@ -1,11 +1,22 @@
 
 state={
 	id=169
-	name="STATE_169"
+	name="Asvodajkbia"
+	history={
+		owner = BOL
+		victory_points = {
+			5656 15
+		}
+		buildings = {
+			infrastructure = 2
+			}
+	
+		add_core_of = BOL
+		}
 	provinces={
 		176 234 1089 1092 1989 2140 3305 3600 3637 4580 5138 5564 5637 5639 5656 5657 5658 5679 5680 5686 5712 5727 
 	}
-	manpower=1
+	manpower=392958
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

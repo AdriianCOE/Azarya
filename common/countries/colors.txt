@@ -39,14 +39,18 @@ KOZ = {
 	color_ui = rgb { 60 100 60 }
 }
 TOL = {
-	color = rgb { 2  175  215 }
-	color_ui = rgb { 2  175  215 }
+	color = rgb { 2 175 215 }
+	color_ui = rgb { 2 175 215 }
 }
 SLU = {
-	color = rgb { 90  00  20 }
-	color_ui = rgb { 90  00  20 }
+	color = rgb { 90 00 20 }
+	color_ui = rgb { 90 00 20 }
 }
 LUQ = {
-	color = rgb { 0  130  205 }
-	color_ui = rgb { 0  130  205 }
+	color = rgb { 0 130 205 }
+	color_ui = rgb { 0 130 205 }
+}
+BOL = {
+	color = rgb { 00 20 00 }
+	color_ui = rgb { 00 20 00 }
 }

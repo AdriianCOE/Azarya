@@ -18,7 +18,7 @@ state={
 			arms_factory = 1
 			industrial_complex = 1
 			4358 = {
-                naval_base = 2
+                naval_base = 3
 			}
 
          }
@@ -28,7 +28,7 @@ state={
 	provinces={
 		156 3553 3687 3794 4023 4358 4910 5063 5123 9314 9325 9334 9362 9368 9381 9397 9410 9411 9421 
 	}
-	manpower=1590985
+	manpower=1620985
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

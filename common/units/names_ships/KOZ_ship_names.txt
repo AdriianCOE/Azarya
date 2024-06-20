@@ -1,0 +1,130 @@
+﻿##### ARGENTINA NAME LISTS #####
+### REGULAR DESTROYER NAMES###
+ZRN_DD_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_DESTROYERS
+
+	for_countries = { KOZ }
+
+	type = ship
+	ship_types = { ship_hull_light destroyer }			
+
+	prefix = "NRZ "
+	fallback_name = "Contratorpedeiro %d"					
+
+	unique = {											
+		"Fênix" "Centauro" "Hydra" "Grifo" "Dracon" "Manticora" "Quimera" "Sereia" "Basilisco" "Pegasus" "Harpia" 
+		"Tritão" "Minotauro" "Górgona" "Hipogrifo" "Mantícora" "Fúria" "Medusa" "Quimera" "Cérbero" "Esfinge" "Gárgula" 
+		"Kraken" "Leviatã" "Sátiro" "Silfo" "Fênix" "Ninfa" "Ondina" "Zéfiro" 
+	}
+}
+
+### LIGHT CRUISER NAMES ###
+ZRN_CL_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CL
+
+	for_countries = { KOZ }
+
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser }
+	
+	prefix = "NRZ "
+	fallback_name = "Cruzador Ligeiro %d"
+
+	unique = {
+		"Lumina" "Aurora" "Estrela" "Tempestade" "Centelha" "Lança" "Cometa" "Valquíria" "Ícaro" "Mercúrio" "Orion" "Sagitta" 
+		"Falcão" "Grifo" "Argos" "Perseu" "Atlas" "Zeus" "Hércules" "Apolo" "Atena" "Héstia" "Hermes" "Selene"
+	}
+}
+
+### HEAVY CRUISER NAMES ###
+ZRN_CA_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CA
+
+	for_countries = { KOZ }
+
+	type = ship
+	ship_types = { ship_hull_cruiser heavy_cruiser }
+	
+	prefix = "NRZ "
+	fallback_name = "Cruzador Pesado %d"
+
+	unique = {
+		"Thorund" "Jotun" "Behemoth" "Titan" "Fenrir" "Odin" "Thor" "Balder" "Freyr" "Loki" "Surtr" "Garm" 
+		"Skoll" "Hati" "Ymir" "Aegir" "Hel" "Nidhogg" "Bolverk" "Gullveig" "Surt" "Valknut" "Jormungandr" "Ginnungagap" 
+		"Fafnir" "Draugr" "Einherjar" "Vanaheim" "Midgard" 
+	}
+}
+
+
+
+### BATTLESHIP NAMES ###
+ZRN_BB_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BB
+
+	for_countries = { KOZ }
+
+	type = ship
+	ship_types = { ship_hull_heavy battleship }
+	
+	prefix = "NRZ "
+	fallback_name = "Couraçado %d"		
+
+	unique = {
+		"Guardião" "Imperador" "Tempestade" "Avalon" "Trovão" "Inexorável" "Leviatã" "Fortaleza" "Titã" "Aegis" "Colosso" 
+		"Olympus" "Soberano" "Valhala" "Dragão" "Cetro" "Montanha" "Dominador" "Baluarte" "Vigilante" "Defensor" "Hegemon"
+		"Indomável" "Goliath" "Heráldico" "Fenrir" "Behemoth" 
+	}
+}
+
+### BATTLECRUISER NAMES ###
+ZRN_BC_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BC
+
+	for_countries = { KOZ }
+
+	type = ship
+	ship_types = { ship_hull_heavy battle_cruiser }
+	
+	prefix = "NRZ "
+	fallback_name = "Cruzador Couraçado %d"		
+
+	unique = {
+		"Valquíria" "Prometeu" "Orion" "Hélio" "Artemis" "Kraken" "Poseidon" "Vulcano" "Zephyrus" 
+		"Hyperion" "Neptuno" "Aurora" "Ares" "Héracles" 
+	}
+}
+
+### AIRCRAFT CARRIER NAMES ###
+ZRN_CV_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CARRIERS
+
+	for_countries = { KOZ }
+
+	type = ship
+	ship_types = { ship_hull_carrier carrier }
+	
+	prefix = "NRZ "
+	fallback_name = "Porta-Aviões %d"	
+
+	unique = {
+		"Zephyr" "Aether" "Horus" "Valkyria" "Aurora" "Osiris" "Prometheus" "Griffon" "Icarus" "Phoenix" "Pegasus" 
+	}
+}
+
+### SUBMARINES ###
+ZRN_SS_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_SUBMARINES
+
+	for_countries = { KOZ }
+
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+	
+	prefix = "NRZ "
+	fallback_name = "Submarino %d"
+	
+	unique = {
+		"Leviatã" "Kraken" "Náutilus" "Tritão" "Scylla" "Charybdis" "Nereus" "Thalassa" "Poseidon" "Nix" "Abyss" "Selkie" 
+	}
+}
+

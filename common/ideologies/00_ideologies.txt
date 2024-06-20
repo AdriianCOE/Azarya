@@ -225,3 +225,49 @@ ideologies = {
 		ai_ideology_wanted_units_factor = 1.15
 	}
 }
+
+Outlaws = {
+
+	types = {
+
+		Honored = {
+		}
+
+		UnHonored = {
+		}
+
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_FASCIST_1"
+		"FACTION_NAME_FASCIST_2"
+		"FACTION_NAME_FASCIST_3"
+		"FACTION_NAME_FASCIST_4"
+		"FACTION_NAME_FASCIST_5"
+	}
+
+	color = { 128 137 229 }
+
+	war_impact_on_world_tension = 1.0
+	faction_impact_on_world_tension = 1.0
+
+	rules = {
+		can_force_government = no
+		can_send_volunteers = no
+		can_puppet = no
+	}
+
+	can_collaborate = yes
+
+	modifiers = {
+		civilian_intel_to_others = 15.0
+		army_intel_to_others = 10.0
+		navy_intel_to_others = 10.0
+		airforce_intel_to_others = 10.0
+		embargo_cost_factor = 1
+		lend_lease_tension = 0.50
+	}
+
+	ai_neutral = yes #
+	ai_ideology_wanted_units_factor = 1.15
+}

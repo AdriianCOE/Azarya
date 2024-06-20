@@ -1,12 +1,23 @@
 
 state={
 	id=154
-	name="STATE_154"
+	name="Lelevenye"
+	history={
+		owner = BOL
+		victory_points = {
+			3501 5
+		}
+		buildings = {
+			infrastructure = 1
+			}
+	
+		add_core_of = BOL
+		}
 	provinces={
 		1212 1299 1514 1544 1564 1750 2444 3501 5598 5608 5623 5652 5654 5675 5704 
 	}
-	manpower=1
+	manpower=172958
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=rural
 	local_supplies=0.000
 }
