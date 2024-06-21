@@ -1,6 +1,6 @@
-#Bolia
+#Grister
 
 graphical_culture = eastern_european_gfx
 graphical_culture_2d = eastern_european_2d
 
-color = { 255  224  102 }
+color = { 200 200 200 }

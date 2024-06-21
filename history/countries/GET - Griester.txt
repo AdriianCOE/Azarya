@@ -1,4 +1,4 @@
-capital = 168
+capital = 223
 
 set_oob = "standard_templates"
 
@@ -40,26 +40,26 @@ IF = {
 	}
 }
 
-recruit_character = RFO_ar
-recruit_character = RFO_acr
-recruit_character = RFO_mt
-recruit_character = RFO_stc
-recruit_character = RFO_aa2
-recruit_character = RFO_acgs
-recruit_character = RFO_ncm
-recruit_character = RFO_nccr
-recruit_character = RFO_coi
-recruit_character = RFO_democratic_guy
-recruit_character = RFO_acd2
-recruit_character = RFO_acas
-recruit_character = RFO_communist_guy
-recruit_character = RFO_ncs
-recruit_character = RFO_awt
-recruit_character = RFO_pot
-recruit_character = RFO_fascist_guy
-recruit_character = RFO_ai2
-recruit_character = RFO_nt
-recruit_character = RFO_aco2
+recruit_character = GET_ar
+recruit_character = GET_acr
+recruit_character = GET_mt
+recruit_character = GET_stc
+recruit_character = GET_aa2
+recruit_character = GET_acgs
+recruit_character = GET_ncm
+recruit_character = GET_nccr
+recruit_character = GET_coi
+recruit_character = GET_democratic_guy
+recruit_character = GET_acd2
+recruit_character = GET_acas
+recruit_character = GET_communist_guy
+recruit_character = GET_ncs
+recruit_character = GET_awt
+recruit_character = GET_pot
+recruit_character = GET_fascist_guy
+recruit_character = GET_ai2
+recruit_character = GET_nt
+recruit_character = GET_aco2
 
 set_convoys = 157
 set_war_support = 10

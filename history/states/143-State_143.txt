@@ -1,6 +1,14 @@
 State={
 	id=143
 	name="STATE_143"
+	history={
+		owner = DTB
+		buildings = {
+			infrastructure = 2
+			}
+	
+			add_core_of = DTB
+		}
 	provinces={
 		153 623 1469 2096 3818 4380 4386 4410 5340 5369 5373 5385 5414 
 	}

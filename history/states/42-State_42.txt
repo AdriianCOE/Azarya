@@ -7,7 +7,10 @@ state={
 	}
 
 	history={
-		owner = SVD
+		owner = GET
+		1924.1.1 = {
+			controller = SVD
+		}
 		victory_points = {
 			6091 12
 		}
@@ -21,6 +24,7 @@ state={
 			add_core_of = SVD
 			add_core_of = BKG
 			add_core_of = RFO
+			add_core_of = GET
 
 		}
 	provinces={

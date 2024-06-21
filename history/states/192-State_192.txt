@@ -4,8 +4,14 @@ state={
 	name="Elzach"
 	history={
 		owner = BKG
+		victory_points = {
+			3187 5
+		}
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
+			3187 = {
+				naval_base = 1
+				}
 			}
 	
 			add_core_of = SVD
@@ -15,8 +21,8 @@ state={
 	provinces={
 		934 1606 3187 5752 5771 5808 5813 
 	}
-	manpower=1
+	manpower=189859
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=rural
 	local_supplies=0.000
 }

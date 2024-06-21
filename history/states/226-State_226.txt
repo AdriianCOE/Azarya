@@ -1,12 +1,32 @@
 
 state={
 	id=226
-	name="STATE_226"
+	name="Nitchys"
+	history={
+		owner = GET
+		victory_points = {
+			6331 15
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			dockyard = 1
+			6331 = {
+				naval_base = 1
+				}
+	
+			 	}
+			add_core_of = SVD
+			add_core_of = BKG
+			add_core_of = RFO
+			add_core_of = GET
+
+		}
 	provinces={
 		4161 5057 6324 6331 6345 6350 6354 6355 6388 6401 
 	}
-	manpower=1
+	manpower=698672
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=large_town
 	local_supplies=0.000
 }

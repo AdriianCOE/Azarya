@@ -2,6 +2,9 @@
 state={
 	id=214
 	name="Tiewald"
+	resources = {
+		oil = 1
+	}
 
 	history={
 		owner = SVD
@@ -33,7 +36,7 @@ state={
 	provinces={
 		440 503 823 925 1034 1180 1246 2158 2205 2467 3273 3444 3487 4328 4446 4571 6112 6114 6115 6132 6139 6153 6157 6174 6189 6193 6205 6206 6211 6219 6220 6233 6236 6237 6247 6248 6260 6268 6286 6296 6330 
 	}
-	manpower=2398698
+	manpower=2498698
 	buildings_max_level_factor=1.000
 	state_category=metropolis
 	local_supplies=0.000

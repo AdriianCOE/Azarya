@@ -4,8 +4,16 @@ state={
 	name="Badefenbia"
 	history={
 		owner = BKG
+		victory_points = {
+			5620 12
+		}
+		victory_points = {
+			2787 5
+		}
 		buildings = {
-			infrastructure = 4
+			industrial_complex = 2
+			infrastructure = 3
+				
 			}
 	
 			add_core_of = SVD
@@ -15,8 +23,8 @@ state={
 	provinces={
 		2787 3196 3837 4732 5142 5597 5606 5616 5620 5624 5651 5667 5682 5693 
 	}
-	manpower=1
+	manpower=847000
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=large_town
 	local_supplies=0.000
 }

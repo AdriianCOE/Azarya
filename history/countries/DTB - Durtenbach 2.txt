@@ -1,4 +1,4 @@
-capital = 168
+capital = 186
 
 set_oob = "standard_templates"
 
@@ -40,26 +40,26 @@ IF = {
 	}
 }
 
-recruit_character = RFO_ar
-recruit_character = RFO_acr
-recruit_character = RFO_mt
-recruit_character = RFO_stc
-recruit_character = RFO_aa2
-recruit_character = RFO_acgs
-recruit_character = RFO_ncm
-recruit_character = RFO_nccr
-recruit_character = RFO_coi
-recruit_character = RFO_democratic_guy
-recruit_character = RFO_acd2
-recruit_character = RFO_acas
-recruit_character = RFO_communist_guy
-recruit_character = RFO_ncs
-recruit_character = RFO_awt
-recruit_character = RFO_pot
-recruit_character = RFO_fascist_guy
-recruit_character = RFO_ai2
-recruit_character = RFO_nt
-recruit_character = RFO_aco2
+recruit_character = DTB_ar
+recruit_character = DTB_acr
+recruit_character = DTB_mt
+recruit_character = DTB_stc
+recruit_character = DTB_aa2
+recruit_character = DTB_acgs
+recruit_character = DTB_ncm
+recruit_character = DTB_nccr
+recruit_character = DTB_coi
+recruit_character = DTB_democratic_guy
+recruit_character = DTB_acd2
+recruit_character = DTB_acas
+recruit_character = DTB_communist_guy
+recruit_character = DTB_ncs
+recruit_character = DTB_awt
+recruit_character = DTB_pot
+recruit_character = DTB_fascist_guy
+recruit_character = DTB_ai2
+recruit_character = DTB_nt
+recruit_character = DTB_aco2
 
 set_convoys = 157
 set_war_support = 10
