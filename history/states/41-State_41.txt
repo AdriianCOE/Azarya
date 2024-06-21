@@ -4,7 +4,7 @@ state={
 	history={
 		owner = SVD
 		buildings = {
-			infrastructure = 4
+			infrastructure = 1
 			}
 	
 			add_core_of = SVD

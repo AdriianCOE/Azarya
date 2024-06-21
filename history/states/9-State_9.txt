@@ -21,6 +21,6 @@ state={
 		2015 5048 5288 5290 5301 
 	}
 	buildings_max_level_factor=1.000
-        manpower=97984
-        state_category = rural
+        manpower=67984
+        state_category = small_island
 }

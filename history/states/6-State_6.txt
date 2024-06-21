@@ -24,6 +24,6 @@ state={
 		984 3675 5027 5274 
 	}
 	buildings_max_level_factor=1.000
-        manpower=169985
-        state_category = town
+        manpower=149985
+        state_category = rural
 }

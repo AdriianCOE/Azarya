@@ -15,6 +15,6 @@ state={
 		2424 3910 5217 5229 5233 5241 
 	}
 	buildings_max_level_factor=1.000
-        manpower=59584
-        state_category = small_island
+        manpower=39584
+        state_category = tiny_island
 }

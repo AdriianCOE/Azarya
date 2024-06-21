@@ -305,7 +305,6 @@ instant_effect = {
 		}
 		add_equipment_to_stockpile = {
     		type = light_tank_chassis_1
-			version_name = "D-03"
     			amount = 84
 		}
 		add_equipment_to_stockpile = {

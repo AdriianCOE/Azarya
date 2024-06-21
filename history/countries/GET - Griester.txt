@@ -67,6 +67,11 @@ add_political_power = 200
 add_command_power = 50
 army_experience = 50
 
+declare_war_on = {
+	target = SVD #tag
+	type = annex_everything #cb
+}
+
 set_politics = {
 		ruling_party = neutrality
 		last_election = "1935.1.1"
