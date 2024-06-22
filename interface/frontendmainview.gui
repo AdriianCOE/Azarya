@@ -846,13 +846,14 @@ containerWindowType = {
 			alwaystransparent = yes
 		}
 	
-	ButtonType = {
-		name = "homepage_button"
-		position = { x=0 y=0 }
-		quadTextureSprite ="homepage"
-		clicksound = click_default
-		pdx_tooltip = "MENU_HOMEPAGE"
-	}
+		ButtonType = {
+			name = "homepage_button"
+			position = { x=-24 y=0 }
+			quadTextureSprite ="homepage"
+			clicksound = click_default
+			pdx_tooltip = "MENU_HOMEPAGE"
+			scale = 0.9
+		}
 	ButtonType = {
 		name = "forum_button"
 		position = { x=50 y=0 }
@@ -879,10 +880,11 @@ containerWindowType = {
 	}
 	ButtonType = {
 		name = "privacy_policy_button"
-		position = { x=200 y=0 }
+		position = { x=228 y=0 } 
 		quadTextureSprite ="privacy"
 		#clicksound = click_default
 		pdx_tooltip = "MENU_PRIVACY_POLICY"
+		scale = 0.9
 	}
 }
 
@@ -899,6 +901,6 @@ containerWindowType = {
 		position = { x = 0 y = 0 }
 		quadTextureSprite ="achievements"
 		pdx_tooltip = "MENU_ACHIEVEMENTS"
-	}		
-}
+		}		
+	}
 }

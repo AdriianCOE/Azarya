@@ -34,6 +34,163 @@ adjacency_rule =
 	
 	required_provinces = { 8119 5127 4012 8152 }
 		
-	icon = 6979
+	icon = 8119
+	offset = { 0 0 0 }
+}
+
+#Luq-Streit
+adjacency_rule =
+{
+	name = "Luq-Streit"
+
+	contested =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 1790 1467 }
+		
+	icon = 1790
+	offset = { 0 0 0 }
+}
+#Sollsea
+adjacency_rule =
+{
+	name = "Solsea"
+
+	contested =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 5205 5194 2272 5175 5186 5198 5206 }
+		
+	icon = 5205
+	offset = { 0 0 0 }
+}
+#Tolose
+adjacency_rule =
+{
+	name = "Tolose"
+
+	contested =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 9306 1007 }
+		
+	icon = 9306
+	offset = { 0 0 0 }
+}
+#Riosfhios
+adjacency_rule =
+{
+	name = "Riosfhios"
+
+	contested =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 2626 2905 }
+		
+	icon = 10856
 	offset = { 0 0 0 }
 }
