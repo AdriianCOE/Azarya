@@ -1,11 +1,13 @@
 
 state={
 	id=453
-	name="STATE_453"
+	name="Tannenheim"
 	history={
 		owner = DTB
 		buildings = {
 			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 1
 			}
 	
 			add_core_of = DTB
@@ -13,8 +15,8 @@ state={
 	provinces={
 		320 2215 4674 4988 5019 5089 5462 5473 5510 5515 
 	}
-	manpower=1
-	state_category=town
+	manpower=751293
+	state_category=large_town
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

@@ -1,6 +1,6 @@
 state={
 	id=8
-	name="Neutach"
+	name="Sonneninsel"
 	history={
 		owner = DTB
 		buildings = {

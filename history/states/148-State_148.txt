@@ -1,10 +1,24 @@
 state={
 	id=148
-	name="STATE_148"
+	name="Rosenheim"
+	history={
+		owner = DTB
+		victory_points = {
+			5332 10
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			5284 = {
+				naval_base = 1
+				}
+			}
+			add_core_of = DTB
+		}
 	provinces={
-		335 1174 1784 1853 2516 3350 4639 5332 5372 5381 5396 5397 
+		335 1174 1784 1853 2516 3350 4639 5332 5372 5381 5396 5397 3840 5502 5532 3465 5481 5498 5461 2667 1705
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+        manpower=359869
+        state_category = rural
 }

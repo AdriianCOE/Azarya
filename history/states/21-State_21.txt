@@ -1,10 +1,10 @@
 state={
 	id=21
-	name="STATE_21"
+	name="Mondinsel"
 	history={
 		owner = DTB
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 			}
 	
 			add_core_of = DTB
@@ -13,6 +13,6 @@ state={
 		2819 5386 5420 5431 5456 
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+        manpower=21923
+        state_category = tiny_island
 }

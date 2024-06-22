@@ -1,7 +1,7 @@
 
 state={
 	id=173
-	name="STATE_173"
+	name="Bruchwald"
 	history={
 		owner = DTB
 		victory_points = {
@@ -9,6 +9,7 @@ state={
 		}
 		buildings = {
 			infrastructure = 2
+			arms_factory = 2
 			2905 = {
 				naval_base = 2
 				}

@@ -3,8 +3,8 @@ state={
 	id=313
 	name="Aubin"
 		resources={
-	oil=4
-	rubber=12
+	oil=5
+	rubber=16
 	}
 
 			history={

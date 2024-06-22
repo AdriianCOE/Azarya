@@ -1,20 +1,31 @@
 
 state={
 	id=132
-	name="STATE_132"
+	name="Hohenburg"
 	history={
 		owner = DTB
+		victory_points = {
+			5759 15
+		}
+		victory_points = {
+			636 12
+		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
+			dockyard = 1
+			industrial_complex = 4
+			636 = {
+				naval_base = 2
+				}
 			}
 	
 			add_core_of = DTB
 		}
 	provinces={
-		260 636 1258 1858 2063 2582 5731 5734 5759 5774 5780 5795 5799 5805 
+		260 636 1258 1858 2063 2582 5731 5734 5759 5774 5780 5795 5799 5805 5793 2128 1627 2739
 	}
-	manpower=1
+	manpower=1052985
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=city
 	local_supplies=0.000
 }

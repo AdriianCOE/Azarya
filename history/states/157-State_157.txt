@@ -1,32 +1,25 @@
 
 state={
 	id=157
-	name="STATE_157"
+	name="Silberfeld"
 	history={
 		owner = DTB
 		victory_points = {
-			1041 15
-		}
-		victory_points = {
-			5629 10
-		}
-		victory_points = {
-			5724 5
+			2160 5
 		}
 		buildings = {
+			arms_factory = 2
+			industrial_complex = 2
 			infrastructure = 2
-			2905 = {
-				naval_base = 2
-				}
 			}
 	
 			add_core_of = DTB
 		}
 	provinces={
-		182 195 385 637 1041 1747 1935 2160 2361 2626 2723 2778 3099 3166 3430 3431 4279 4536 4634 4786 5014 5449 5466 5482 5496 5535 5536 5547 5603 5629 5681 5697 5708 5723 5724 5745 
+	 385 1747 2160 2778 3430 3431 4536 5449 5466 5482 5496 5535 5536 5547 19 5645
 	}
-	manpower=1
+	manpower=947094
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=city
 	local_supplies=0.000
 }

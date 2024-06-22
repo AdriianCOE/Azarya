@@ -1,10 +1,10 @@
 state={
 	id=30
-	name="STATE_30"
+	name="Drachenfels"
 	history={
 		owner = DTB
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 			}
 	
 			add_core_of = DTB
@@ -13,6 +13,6 @@ state={
 		5783 5806 5811 
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+        manpower=37958
+        state_category = tiny_island
 }

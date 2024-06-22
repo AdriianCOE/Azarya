@@ -3,7 +3,7 @@ state={
 	id=289
 	name="Wadi"
 	resources={
-	    oil=40
+	    oil=45
 	}
 
 		history={

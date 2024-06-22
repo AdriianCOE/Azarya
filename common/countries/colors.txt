@@ -3,74 +3,74 @@ THK = {
 	color_ui = rgb { 279 13 20 }
 }
 CZL = {
-	color = rgb { 70 70 70 }
-	color_ui = rgb { 70 70 70 }
+	color = rgb { 0 35 70 }
+	color_ui = rgb { 0 35 70 }
 }
 NIC = {
-	color = rgb { 200 200 200 }
-	color_ui = rgb { 200 200 200 }
+	color = rgb { 230 205 255 }
+	color_ui = rgb { 230 205 255 }
 }
 NIR = {
-	color = rgb { 75 0 225 }
-	color_ui = rgb { 75 0 225 }
+	color = rgb { 165 150 250 }
+	color_ui = rgb { 165 150 250 }
 }
 RFB = {
-	color = rgb { 0 128 128 }
-	color_ui = rgb { 0 128 128 }
+	color = rgb { 65 100 90 }
+	color_ui = rgb { 65 100 90 }
 }
 UPG = {
-	color = rgb { 250 171 9 }
-	color_ui = rgb { 250 171 9 }
+	color = rgb { 255 215 120 }
+	color_ui = rgb { 255 215 120 }
 }
 BOM = {
-	color = rgb { 0 255 250 }
-	color_ui = rgb { 0 255 250 }
+	color = rgb { 185 170 210 }
+	color_ui = rgb { 185 170 210 }
 }
 GYE = {
-	color = rgb { 20 6 0 }
-	color_ui = rgb { 40 20 60 }
+	color = rgb { 24 25 34 }
+	color_ui = rgb { 24 25 34 }
 }
 CBS = {
-	color = rgb { 250 240 0 }
-	color_ui = rgb { 250 240 0 }
+	color = rgb { 255 220 105 }
+	color_ui = rgb { 255 220 105 }
 }
 KOZ = {
-	color = rgb { 60 100 60 }
-	color_ui = rgb { 60 100 60 }
+	color = rgb { 50 190 90 }
+	color_ui = rgb { 50 190 90 }
 }
 TOL = {
-	color = rgb { 2 175 215 }
-	color_ui = rgb { 2 175 215 }
+	color = rgb { 95 200 255 }
+	color_ui = rgb { 95 200 255 }
 }
 SLU = {
-	color = rgb { 70 0 100 }
-	color_ui = rgb { 70 0 100 }
+	color = rgb { 165 75 150 }
+	color_ui = rgb { 165 75 150 }
 }
 LUQ = {
-	color = rgb { 0 130 205 }
-	color_ui = rgb { 0 130 205 }
+	color = rgb { 125 200 240 }
+	color_ui = rgb { 125 200 240 }
 }
 BOA = {
-	color = rgb { 255 224 102 }
-    color_ui = rgb { 255 224 102 }
+	color = rgb { 225 160 80 }
+    color_ui = rgb { 225 160 80 }
 }
 SVD = {
-	color = rgb { 204 204 204 }
-    color_ui = rgb { 204 204 204 }
+	color = rgb { 91 100 85 }
+    color_ui = rgb { 91 100 85 }
 }
 BKG= {
-	color = rgb { 51 51 51 }
-    color_ui = rgb { 255 224 102 }
+	color = rgb { 85 50 40 }
+    color_ui = rgb { 85 50 40 }
 }
 RFO = {
-	color = rgb { 140 225 255 }
-    color_ui = rgb { 140 225 255 }
+	color = rgb { 100 150 195 }
+    color_ui = rgb { 100 150 195 }
 }
 DTB = {
-	color = rgb { 223 32 0 }
-    color_ui = rgb { 223 32 0 }
+	color = rgb { 220 70 30 }
+    color_ui = rgb { 220 70 30 }
 }
 GET = {
-	color = rgb { 200 200 200 }
-    color_ui = rgb { 200 200 200 }
+	color = rgb { 230 205 255 }
+    color_ui = rgb { 230 205 255 }
 }

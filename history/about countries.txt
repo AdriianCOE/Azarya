@@ -1,4 +1,13 @@
 
-SVD   -   BKG    -  RFO
 dockyard - arms_factory - industrial_complex
-4-5-12  3-7-11     5-10-14 
+SVD
+4+5+12  = 21
+BKG 
+3+7+11  = 21
+RFO 
+5+10+14 = 29
+DTB
+7+14+20 = 41
+
+mudar cores:
+SVD NIR BOM UPG

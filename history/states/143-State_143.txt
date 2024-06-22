@@ -1,10 +1,12 @@
 State={
 	id=143
-	name="STATE_143"
+	name="Greifenwald"
 	history={
 		owner = DTB
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 1
 			}
 	
 			add_core_of = DTB
@@ -12,8 +14,8 @@ State={
 	provinces={
 		153 623 1469 2096 3818 4380 4386 4410 5340 5369 5373 5385 5414 
 	}
-	manpower=1
+	manpower=397959
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=rural
 	local_supplies=0.000
 }

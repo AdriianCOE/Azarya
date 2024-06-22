@@ -6,6 +6,7 @@ state={
 	history={
 		owner = NIC
 		buildings = {
+			air_base = 1
 			infrastructure = 1
 
 		}
