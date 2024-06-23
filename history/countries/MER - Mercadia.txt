@@ -1,0 +1,100 @@
+capital = 474
+
+set_oob = "standard_templates"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_trucks = 1
+	basic_train = 1	
+}
+
+IF = {
+	limit = {
+		NOT = { has_dlc = "Man the Guns"}
+	}
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		transport = 1
+	}
+	
+}
+IF = {
+	limit = { has_dlc = "Man the Guns"}
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		mtg_transport = 1
+	}
+}
+
+recruit_character = AEI_ar
+recruit_character = AEI_acr
+recruit_character = AEI_mt
+recruit_character = AEI_stc
+recruit_character = AEI_aa2
+recruit_character = AEI_acgs
+recruit_character = AEI_ncm
+recruit_character = AEI_nccr
+recruit_character = AEI_coi
+recruit_character = AEI_democratic_guy
+recruit_character = AEI_acd2
+recruit_character = AEI_acas
+recruit_character = AEI_communist_guy
+recruit_character = AEI_ncs
+recruit_character = AEI_awt
+recruit_character = AEI_pot
+recruit_character = AEI_fascist_guy
+recruit_character = AEI_ai2
+recruit_character = AEI_nt
+recruit_character = AEI_aco2
+
+set_convoys = 157
+set_war_support = 10
+add_political_power = 200
+add_command_power = 50
+army_experience = 50
+
+set_politics = {
+		ruling_party = democratic
+		last_election = "1932.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+
+	set_popularities = {
+		democratic = 100
+		fascism = 0
+		communism = 0
+		neutrality = 0
+	}
+
+create_country_leader = {
+	ideology = Merchant_Republic
+	traits = {}
+}
+
+create_field_marshal = {
+	traits = {}
+    skill = 4
+}
+create_corps_commander = {
+	traits = {}
+    skill = 2
+}
+create_corps_commander = {
+	traits = {}
+    skill = 2
+}

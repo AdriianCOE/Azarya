@@ -1,4 +1,4 @@
-capital = 12
+capital = 174
 
 set_oob = "standard_templates"
 
@@ -68,21 +68,21 @@ add_command_power = 50
 army_experience = 50
 
 set_politics = {
-		ruling_party = fascism
+		ruling_party = democratic
 		last_election = "1932.1.1"
 		election_frequency = 48
 		elections_allowed = no
 	}
 
 	set_popularities = {
-		democratic = 0
-		fascism = 80
-		communism = 10
-		neutrality = 10
+		democratic = 15
+		fascism = 10
+		communism = 0
+		neutrality = 75
 	}
 
 create_country_leader = {
-	ideology = Absolutism
+	ideology = conservatism
 	traits = {}
 }
 

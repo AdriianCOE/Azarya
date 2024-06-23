@@ -82,3 +82,11 @@ AEI = {
 	color = rgb { 40 155 50 }
     color_ui = rgb { 40 155 50 }
 }
+MER = {
+	color = rgb { 0 102 204 }
+	color_ui = { 0 102 204}
+}
+NSA = {
+	color = rgb { 178 34 34 }
+	color_ui = { 178 34 34}
+}

@@ -1,0 +1,22 @@
+
+state={
+	id=476
+	name="Proletarsk"
+	history={
+		owner = NSA
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			air_base = 1
+			}
+	
+			add_core_of = NSA
+		}
+	provinces={
+		5951 758 5969 5989 6013 6027 5999 5971 2783 1185 1639 30 4082 2431 2108 1500 1826 1023 5957 5984 920
+	}
+	manpower=659867
+	state_category=large_town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,10 +1,19 @@
 state={
 	id=26
-	name="STATE_26"
+	name="Isle Bir"
+	history={
+		owner = LUA
+		buildings = {
+			infrastructure = 0
+		}
+		add_core_of = LUA
+		
+
+	}
 	provinces={
 		9490 
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+        manpower=986
+        state_category = tiny_island
 }

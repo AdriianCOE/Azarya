@@ -1,11 +1,23 @@
 
 state={
 	id=200
-	name="STATE_200"
-	provinces={
-		454 468 480 902 952 1083 1695 2200 2438 2671 2694 3618 3894 4433 4497 4672 5737 5741 5768 5773 5819 5830 5872 5905 5919 
+	name="Leninovsk"
+	resources = {
+		steel=20
 	}
-	manpower=1
+	history={
+		owner = NSA
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			}
+	
+			add_core_of = NSA
+		}
+	provinces={
+		454 468 480 902 952 1083 1695 2200 2438 2671 2694 3618 3894 4433 4497 4672 5737 5741 5768 5773 5819 5830 5872 5905 5919 276 5091 5958 2490 5959
+	}
+	manpower=501958
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

@@ -1,12 +1,38 @@
 
 state={
 	id=182
-	name="STATE_182"
+	name="Novoborsk"
+	resources = {
+		aluminium = 10
+	}
+	history={
+		owner = NSA
+		victory_points = {
+			2106 12
+		}
+		victory_points = {
+			2083 10
+		}
+		victory_points = {
+			3014 10
+		}
+		buildings = {
+			infrastructure = 4
+			dockyard = 4
+			industrial_complex = 1
+			arms_factory = 3
+			2106 = {
+				naval_base = 2
+				}
+			}
+	
+			add_core_of = NSA
+		}
 	provinces={
 		274 824 1139 1223 1375 1667 1740 1774 1874 2083 2106 2172 2180 2221 2233 2318 2556 2904 2932 3014 3298 3394 3496 3764 3949 3974 4837 4874 5004 5070 5618 5694 5726 5740 5762 5767 5772 5779 5790 5796 5803 5812 5814 5816 5828 5829 5847 5910 5912 5914 5931 5950 
 	}
-	manpower=1
+	manpower=2668747
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=metropolis
 	local_supplies=0.000
 }

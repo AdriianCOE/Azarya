@@ -1,6 +1,10 @@
 state={
 	id=474
-	name="State_474"
+	name="Maritimia"
+	resources = {
+		rubber = 20
+		oil = 10
+	}
 
 	history={
 		victory_points = {
@@ -9,7 +13,7 @@ state={
 		victory_points = {
 			5347 8
 		}
-		owner = DTB
+		owner = MER
 				buildings = {
 			infrastructure = 3
 			arms_factory = 2
@@ -23,14 +27,14 @@ state={
 					bunker = 3
 				}
             }
-		add_core_of = DTB
+		add_core_of = MER
 				}
 	provinces={
 		2790 5346 5335 5354 4903 5347 5380 2393
 	}
-	manpower=1732985
+	manpower=2532985
 	buildings_max_level_factor=1.000
-	state_category=megalopolis
+	state_category=metropolis
 	local_supplies=0.000
 
 }

@@ -5,7 +5,7 @@ state={
 	history={
 		owner = AEI
 		victory_points = {
-			5541 20 
+			5541 25
 		}
 		victory_points = {
 			1694 10
