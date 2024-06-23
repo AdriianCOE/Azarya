@@ -11,20 +11,20 @@ NIC = {
 	color_ui = rgb { 230 205 255 }
 }
 NIR = {
-	color = rgb { 165 150 250 }
-	color_ui = rgb { 165 150 250 }
+	color = rgb { 75 0 225 }
+	color_ui = rgb { 75 0 225 }
 }
 RFB = {
 	color = rgb { 65 100 90 }
 	color_ui = rgb { 65 100 90 }
 }
 UPG = {
-	color = rgb { 255 215 120 }
-	color_ui = rgb { 255 215 120 }
+	color = rgb { 230 140 50 }
+	color_ui = rgb { 230 140 50 }
 }
 BOM = {
-	color = rgb { 185 170 210 }
-	color_ui = rgb { 185 170 210 }
+	color = rgb { 110 205 240 }
+	color_ui = rgb { 110 205 240 }
 }
 GYE = {
 	color = rgb { 24 25 34 }
@@ -55,12 +55,12 @@ BOA = {
     color_ui = rgb { 225 160 80 }
 }
 SVD = {
-	color = rgb { 91 100 85 }
-    color_ui = rgb { 91 100 85 }
+	color = rgb { 225 225 250 }
+    color_ui = rgb { 225 225 250 }
 }
 BKG= {
-	color = rgb { 85 50 40 }
-    color_ui = rgb { 85 50 40 }
+	color = rgb { 60 65 90 }
+    color_ui = rgb { 60 65 90 }
 }
 RFO = {
 	color = rgb { 100 150 195 }
@@ -73,4 +73,12 @@ DTB = {
 GET = {
 	color = rgb { 230 205 255 }
     color_ui = rgb { 230 205 255 }
+}
+LUA = {
+	color = rgb { 85 50 40 }
+    color_ui = rgb { 85 50 40 }
+}
+AEI = {
+	color = rgb { 40 155 50 }
+    color_ui = rgb { 40 155 50 }
 }

@@ -1,11 +1,27 @@
 
 state={
 	id=27
-	name="STATE_27"
+	name="Oakenridge"
+	history={
+		owner = LUA
+		victory_points = {
+			5692 10
+		}
+		buildings = {
+			infrastructure = 2
+			dockyard = 2
+			5692 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = LUA
+		
+
+	}
 	provinces={
 		170 536 1137 1199 1202 1369 1461 3012 3470 5664 5676 5692 5718 5810 5823 5826 5842 5893 5932 
 	}
-	manpower=1
+	manpower=749582
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

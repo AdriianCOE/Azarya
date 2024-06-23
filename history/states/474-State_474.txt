@@ -1,0 +1,36 @@
+state={
+	id=474
+	name="State_474"
+
+	history={
+		victory_points = {
+			2790 30
+		}
+		victory_points = {
+			5347 8
+		}
+		owner = DTB
+				buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 3
+			dockyard = 1
+			2790 = {
+				naval_base = 2
+				coastal_bunker = 2
+				}
+				2393 = {
+					bunker = 3
+				}
+            }
+		add_core_of = DTB
+				}
+	provinces={
+		2790 5346 5335 5354 4903 5347 5380 2393
+	}
+	manpower=1732985
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+	local_supplies=0.000
+
+}

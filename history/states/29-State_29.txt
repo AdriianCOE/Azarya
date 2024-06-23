@@ -1,10 +1,19 @@
 state={
 	id=29
-	name="STATE_29"
+	name="Isla Maronnia"
+	history={
+		owner = LUA
+		buildings = {
+			infrastructure = 0
+		}
+		add_core_of = LUA
+		
+
+	}
 	provinces={
 		9491 
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+        manpower=2194
+        state_category = tiny_island
 }

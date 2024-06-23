@@ -1,0 +1,427 @@
+characters={
+	AEI_ar={
+		advisor={
+			slot = high_command
+			idea_token = AEI_ar
+			ledger  = army 
+				allowed  = {
+					original_tag  = AEI
+				}
+				traits  = {
+					army_regrouping_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_1"
+			}
+		}
+	}
+	AEI_acr={
+		advisor={
+			slot = air_chief
+			idea_token = AEI_acr
+			allowed  = {
+					original_tag  = AEI
+				}
+				traits  = {
+					air_chief_reform_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_3"
+			}
+		}
+	}
+	AEI_mt={
+		advisor={
+			slot = theorist
+			idea_token = AEI_mt
+			ledger  = army 
+				allowed  = {
+					original_tag  = AEI
+				}
+				traits  = {
+					military_theorist 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_1"
+			}
+		}
+	}
+	AEI_stc={
+		advisor={
+			slot = political_advisor
+			idea_token = AEI_stc
+			allowed  = {
+					original_tag  = AEI
+				}
+				traits  = {
+					smooth_talking_charmer 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_3"
+			}
+		}
+	}
+	AEI_aa2={
+		advisor={
+			slot = high_command
+			idea_token = AEI_aa2
+			ledger  = army 
+				allowed  = {
+					original_tag  = AEI
+				}
+				traits  = {
+					army_armored_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_2"
+			}
+		}
+	}
+	AEI_acgs={
+		advisor={
+			slot = air_chief
+			idea_token = AEI_acgs
+			allowed  = {
+					original_tag  = AEI
+				}
+				traits  = {
+					air_chief_ground_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_3"
+			}
+		}
+	}
+	AEI_ncm={
+		advisor={
+			slot = navy_chief
+			idea_token = AEI_ncm
+			allowed  = {
+					original_tag  = AEI
+				}
+				traits  = {
+					navy_chief_maneuver_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_3"
+			}
+		}
+	}
+	AEI_nccr={
+		advisor={
+			slot = navy_chief
+			idea_token = AEI_nccr
+			allowed  = {
+					original_tag  = AEI
+				}
+				traits  = {
+					navy_chief_commerce_raiding_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_2"
+			}
+		}
+	}
+	AEI_coi={
+		advisor={
+			slot = political_advisor
+			idea_token = AEI_coi
+			allowed  = {
+					original_tag  = AEI
+				}
+				traits  = {
+					captain_of_industry 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_1"
+			}
+		}
+	}
+	AEI_democratic_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = AEI_democratic_guy
+			allowed  = {
+					original_tag  = AEI
+				}
+				traits  = {
+					democratic_reformer 
+				}
+				do_effect  = {
+					not  = {
+						has_government  = democratic 
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_1"
+			}
+		}
+	}
+	AEI_acd2={
+		advisor={
+			slot = army_chief
+			idea_token = AEI_acd2
+			allowed  = {
+					original_tag  = AEI
+				}
+				traits  = {
+					army_chief_defensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_1"
+			}
+		}
+	}
+	AEI_acas={
+		advisor={
+			slot = high_command
+			idea_token = AEI_acas
+			ledger  = air 
+				allowed  = {
+					original_tag  = AEI
+				}
+				traits  = {
+					air_close_air_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_2"
+			}
+		}
+	}
+	AEI_communist_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = AEI_communist_guy
+			allowed  = {
+					original_tag  = AEI
+				}
+				traits  = {
+					communist_revolutionary 
+				}
+				do_effect  = {
+					not  = {
+						has_government  = communism 
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_3"
+			}
+		}
+	}
+	AEI_ncs={
+		advisor={
+			slot = high_command
+			idea_token = AEI_ncs
+			ledger  = navy 
+				allowed  = {
+					original_tag  = AEI
+				}
+				traits  = {
+					navy_capital_ship_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_2"
+			}
+		}
+	}
+	AEI_awt={
+		advisor={
+			slot = theorist
+			idea_token = AEI_awt
+			ledger  = air 
+				allowed  = {
+					original_tag  = AEI
+				}
+				traits  = {
+					air_warfare_theorist 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_2"
+			}
+		}
+	}
+	AEI_pot={
+		advisor={
+			slot = political_advisor
+			idea_token = AEI_pot
+			allowed  = {
+					original_tag  = AEI
+				}
+				traits  = {
+					prince_of_terror 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_2"
+			}
+		}
+	}
+	AEI_fascist_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = AEI_fascist_guy
+			allowed  = {
+					original_tag  = AEI
+				}
+				traits  = {
+					fascist_demagogue 
+				}
+				do_effect  = {
+					not  = {
+						has_government  = fascism 
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_2"
+			}
+		}
+	}
+	AEI_ai2={
+		advisor={
+			slot = high_command
+			idea_token = AEI_ai2
+			ledger  = army 
+				allowed  = {
+					original_tag  = AEI
+				}
+				traits  = {
+					army_infantry_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_3"
+			}
+		}
+	}
+	AEI_nt={
+		advisor={
+			slot = theorist
+			idea_token = AEI_nt
+			ledger  = navy 
+				allowed  = {
+					original_tag  = AEI
+				}
+				traits  = {
+					naval_theorist 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_3"
+			}
+		}
+	}
+	AEI_aco2={
+		advisor={
+			slot = army_chief
+			idea_token = AEI_aco2
+			allowed  = {
+					original_tag  = AEI
+				}
+				traits  = {
+					army_chief_organizational_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_2"
+			}
+		}
+	}
+}

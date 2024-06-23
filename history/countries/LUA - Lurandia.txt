@@ -1,0 +1,107 @@
+capital = 212
+set_oob = "standard_templates"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_trucks = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	basic_train = 1	
+}
+
+IF = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+	}
+}
+IF = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+	}
+}
+IF = {
+	limit = {
+		NOT = { has_dlc = "Man the Guns"}
+	}
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		transport = 1
+	}
+	
+}
+IF = {
+	limit = { has_dlc = "Man the Guns"}
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		mtg_transport = 1
+	}
+}
+
+recruit_character = LUA_ar
+recruit_character = LUA_acr
+recruit_character = LUA_mt
+recruit_character = LUA_stc
+recruit_character = LUA_aa2
+recruit_character = LUA_acgs
+recruit_character = LUA_ncm
+recruit_character = LUA_nccr
+recruit_character = LUA_coi
+recruit_character = LUA_democratic_guy
+recruit_character = LUA_acd2
+recruit_character = LUA_acas
+recruit_character = LUA_communist_guy
+recruit_character = LUA_ncs
+recruit_character = LUA_awt
+recruit_character = LUA_pot
+recruit_character = LUA_fascist_guy
+recruit_character = LUA_ai2
+recruit_character = LUA_nt
+recruit_character = LUA_aco2
+
+
+set_convoys = 92
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1930.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 10
+	fascism = 80
+	communism = 5
+	neutrality = 5
+}
+
+create_country_leader = {
+	name = "Shiprianus"
+	desc = "Esse cara é um mandão"
+	ideology = oligarchism
+	traits = {Tenacious_Negotiator }
+}
+
+create_field_marshal = {
+}
