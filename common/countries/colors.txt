@@ -90,3 +90,8 @@ NSA = {
 	color = rgb { 178 34 34 }
 	color_ui = { 178 34 34}
 }
+SIT = {
+	color = rgb { 50 0 2 }
+	color_ui = { 50 0 2}
+}
+

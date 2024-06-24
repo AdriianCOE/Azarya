@@ -2,8 +2,13 @@
 state={
 	id=253
 	name="STATE_253"
+	history={
+		owner = SIT
+		add_core_of = SIT
+
+	}
 	provinces={
-		81 298 629 999 1881 1993 2947 6752 6838 
+		 298 1620 629 999 1993 6752 6838 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000

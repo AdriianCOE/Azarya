@@ -1,6 +1,11 @@
 state={
 	id=51
 	name="STATE_51"
+	history={
+		owner = SIT
+		add_core_of = SIT
+
+	}
 	provinces={
 		3016 6444 6455 
 	}

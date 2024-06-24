@@ -8,7 +8,7 @@ state={
 			add_core_of = NIR
 }
 	provinces={
-		820
+		3170
 	}
 	manpower=129859
 	buildings_max_level_factor=1.000
