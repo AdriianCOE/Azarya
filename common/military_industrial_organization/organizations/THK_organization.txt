@@ -1,0 +1,105 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+
+ THK_bernadini_organization = {
+ 	include = generic_medium_tank_organization
+ 	icon = GFX_idea_BRA_bernardini
+ 	allowed = {	
+		tag = THK
+	}
+}
+
+
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+
+
+THK_amrj_organization = {
+	include = generic_escort_ship_organization
+	icon = GFX_idea_BRA_arsenal_de_marinha
+	allowed = {	
+		tag = THK
+	}
+}
+
+
+
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+
+THK_embraer_organization = {
+	include = generic_general_aircraft_organization
+	icon = GFX_idea_BRA_embraer
+	allowed = {	
+		tag = THK
+	}
+}
+
+
+
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+
+THK_rossi_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_BRA_rossi
+	allowed = {	
+		tag = THK
+	}
+}
+
+THK_cbc_organization = {
+	include = generic_support_equipment_organization
+	#icon = GFX_idea_generic_infantry_equipment_manufacturer_1
+	allowed = { 
+		tag = THK
+	}
+}
+
+THK_ddam_organization = {
+	include = generic_artillery_organization
+	#icon = GFX_idea_generic_infantry_equipment_manufacturer_1
+	allowed = {	
+		tag = THK
+	}
+}
+
+THK_fnm_organization = {
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_BRA_fnm
+	allowed = {	
+		tag = THK
+	}
+}

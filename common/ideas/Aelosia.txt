@@ -1,0 +1,32 @@
+ideas = {
+	country = {
+
+		AEI = {
+
+			name = AEI_TheTree
+			picture = POL_ideology_drift_defence
+			allowed = {
+				original_tag = AEI
+			}
+
+			available = {
+			}
+
+			visible = {
+				always = yes
+			}
+
+			cancel = {
+			}
+
+			modifier = {
+				stability_weekly = 0.01
+				democratic_drift = 0.02
+				war_support_factor = -0.5
+				conscription_factor = -0.05
+				enemy_justify_war_goal_time = 0.2
+
+				}
+			}
+		}
+}	
