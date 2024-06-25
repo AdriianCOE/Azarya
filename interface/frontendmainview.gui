@@ -501,13 +501,44 @@ containerWindowType = {
 	size = { width = 256 height = 768}
 	
 	iconType =
-	{
-		name ="frontend_game_logo"
-		spriteType = "GFX_frontend_game_logo"
-		position = { x= 20 y = 20 }
+		{
+			name ="frontend_game_logo"
+			spriteType = "GFX_frontend_game_logo"
+			position = { x= 20 y = 20 }
+		}
+		instantTextBoxType = {
+			name ="azarya_version_label"
+			position = { x = 20 y = 240 }
+			textureFile = ""
+			font = "hoi_24header"
+			borderSize = {x = 0 y = 0}
+			text = "AZ_MOD_VERSION"
+			format = centre
+			maxWidth = 448
+		}
+		instantTextBoxType = {
+			name ="vanilla_version_label"
+			position = { x = 20 y = 215 }
+			textureFile = ""
+			font = "hoi_24header"
+			borderSize = {x = 0 y = 0}
+			text = "compatible_game"
+			format = centre
+			maxWidth = 448
+		}
+		instantTextBoxType = {
+			name ="funny_version_label"
+			position = { x = 1505 y = 1050 }
+			textureFile = ""
+			font = "hoi_24header"
+			borderSize = {x = 0 y = 0}
+			text = "made"
+			format = centre
+			maxWidth = 448
+		}
 	}
-	
-}
+
+
 
 #containerWindowType = {
 #	name  ="frontend_alpha_stamp"
