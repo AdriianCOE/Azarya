@@ -1,20 +1,22 @@
+
 state={
 	id=4
 	name="Mon Island"
+
 	history={
-		owner = BKG
+		owner = NSA
 		buildings = {
-			infrastructure = 0
-			}
-	
-			add_core_of = SVD
-			add_core_of = BKG
-			add_core_of = RFO
+			infrastructure = 1
 		}
-	provinces={
-		4881 
+		add_core_of = NSA
+
 	}
+
+	provinces={
+		204 830 871 997 1079 1786 2368 3421 3795 4477 4806 6037 6085 6092 6110 6243 
+	}
+	manpower=159684
 	buildings_max_level_factor=1.000
-        manpower=3895
-        state_category = tiny_island
+	state_category=rural
+	local_supplies=0.000
 }

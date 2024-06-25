@@ -1,16 +1,12 @@
+
 state={
 	id=71
 	name="Aubigny"
-
-			history={
-		owner = NIC
-		add_core_of = NIC
-	}
-	
 	provinces={
-		3447 7663 
+		47 386 873 1925 1982 2104 2223 2738 2897 2903 3182 3347 3788 3825 4160 4229 4613 5002 5015 5126 8367 8393 8410 8423 8424 8453 8465 8473 8474 8496 8526 8546 8558 8577 8621 8679 8685 8756 8797 
 	}
+	manpower=11589
 	buildings_max_level_factor=1.000
-        manpower=11589
-        state_category = tiny_island
+	state_category=tiny_island
+	local_supplies=0.000
 }

@@ -1,25 +1,13 @@
+
 state={
 	id=93
 	name="Îlot du Clair de Lune"
-	history={
-		owner = TOL
-		add_core_of = TOL
-		1924.1.1 = {
-			controller = KOZ
 
-		     }
-        buildings = {
-			infrastructure = 1
-
-		}
-		add_core_of = TOL
-
-	
-	}
 	provinces={
-		3084 
+		96 199 402 694 825 1163 1322 1540 1543 1557 1677 1911 2125 2127 2491 2629 2875 3160 3381 3393 3513 3565 3645 3888 3905 4334 4519 4895 5055 7812 7827 7853 7864 7900 7903 7922 7930 7934 7952 7953 7954 7960 7961 7966 7984 7998 8020 8029 8046 8055 8061 8062 
 	}
+	manpower=3089
 	buildings_max_level_factor=1.000
-        manpower=3089
-        state_category = tiny_island
+	state_category=tiny_island
+	local_supplies=0.000
 }

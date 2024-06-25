@@ -1,19 +1,14 @@
+
 state={
 	id=22
 	name="Isle of Elmsbrook"
-	history={
-		owner = AEI
-		buildings = {
-			infrastructure = 0
-		}
-		add_core_of = AEI
-		
 
-	}
+
 	provinces={
-		9489 
+		6 105 838 1066 1431 1688 6657 6757 
 	}
+	manpower=2893
 	buildings_max_level_factor=1.000
-        manpower=2893
-        state_category = tiny_island
+	state_category=tiny_island
+	local_supplies=0.000
 }

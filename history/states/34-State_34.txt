@@ -1,6 +1,6 @@
 state={
 	id=34
-	name="Insel der Eichen"
+	name="Insels der Eichen"
 	resources = {
 		rubber = 4
 	}
@@ -22,9 +22,9 @@ state={
 			add_core_of = DTB
 		}
 	provinces={
-		4185 5037 5039 5845 5867 5869 
+		4185 5037 5039 5845 5867 5869 5811 5806 5783 3015
 	}
 	buildings_max_level_factor=1.000
-        manpower=217859
+        manpower=261786
         state_category = town
 }

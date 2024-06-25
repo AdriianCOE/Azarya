@@ -1,20 +1,19 @@
+
 state={
 	id=23
 	name="Nite Island"
+
 	history={
-		owner = BKG
-		buildings = {
-			infrastructure = 4
-			}
-	
-			add_core_of = SVD
-			add_core_of = BKG
-			add_core_of = RFO
-		}
-	provinces={
-		5412 5445 
+		owner = GYE
+		add_core_of = GYE
+
 	}
+
+	provinces={
+		103 347 391 445 957 1452 1814 2231 2358 2401 3159 4089 4973 5107 6953 7027 7040 7044 7048 7092 7097 7113 7118 7142 7150 7168 7184 7190 7200 
+	}
+	manpower=8686
 	buildings_max_level_factor=1.000
-        manpower=8686
-        state_category = tiny_island
+	state_category=tiny_island
+	local_supplies=0.000
 }

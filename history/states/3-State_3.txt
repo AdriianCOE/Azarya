@@ -1,20 +1,19 @@
+
 state={
 	id=3
 	name="Nata Island"
+
 	history={
-		owner = BKG
-		buildings = {
-			infrastructure = 1
-			}
-	
-			add_core_of = SVD
-			add_core_of = BKG
-			add_core_of = RFO
-		}
-	provinces={
-		2424 3910 5217 5229 5233 5241 
+		owner = GYE
+		add_core_of = GYE
+
 	}
+
+	provinces={
+		130 135 1948 2661 3156 7591 7785 
+	}
+	manpower=39584
 	buildings_max_level_factor=1.000
-        manpower=39584
-        state_category = tiny_island
+	state_category=tiny_island
+	local_supplies=0.000
 }

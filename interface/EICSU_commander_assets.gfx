@@ -1,0 +1,56 @@
+spriteTypes = {
+
+	### Background
+
+	spriteType = {
+		name = "GFX_EICSU_leader_selection_bg"
+		texturefile = "gfx/interface/EICSU_leader_selection_bg.tga"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_EICSU_leader_selection_spy_bg"
+		texturefile = "gfx/interface/EICSU_leader_selection_spy_bg.tga"
+		transparencecheck = yes
+	}
+
+	### Side art
+
+	spriteType = {
+		name = "GFX_EICSU_army_side_art"
+		texturefile = "gfx/interface/EICSU_general_army_art.tga"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_EICSU_navy_side_art"
+		texturefile = "gfx/interface/EICSU_navy_side_art.tga"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_EICSU_spy_side_art"
+		texturefile = "gfx/interface/EICSU_spy_side_art.tga"
+		transparencecheck = yes
+	}
+
+	### Buttons
+
+	spriteType = {
+		name = "GFX_EICSU_checkbox_small"
+		texturefile = "gfx/interface/EICSU_checkbox_small.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_EICSU_army_navy_buttons_bg"
+		texturefile = "gfx/interface/EICSU_army_navy_buttons_bg.dds"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_EICSU_spy_buttons_bg"
+		texturefile = "gfx/interface/EICSU_spy_buttons_bg.dds"
+		transparencecheck = yes
+	}
+}

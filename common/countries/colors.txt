@@ -94,4 +94,8 @@ SIT = {
 	color = rgb { 50 0 2 }
 	color_ui = { 50 0 2}
 }
+WIH = {
+	color = rgb { 150 150 165 }
+	color_ui = { 150 150 165 }
+}
 

@@ -1,25 +1,20 @@
+
 state={
 	id=105
 	name="Petite Île Solitaire"
 	history={
-		owner = TOL
-		add_core_of = TOL
-		1924.1.1 = {
-			controller = KOZ
-
-		     }
+		owner = WIH
 		buildings = {
 			infrastructure = 1
-
-		}
-		add_core_of = TOL
-
+			}
 	
-	}
+		add_core_of = WHI
+		}
 	provinces={
-		9201 9205 
+		120 261 307 315 331 1267 1492 1504 1870 1959 2018 2220 2311 3011 3089 3537 3696 4208 4388 4972 5583 5615 5635 5641 5689 5721 5742 5747 5765 5794 5868 5870 5891 6042 
 	}
+	manpower=987
 	buildings_max_level_factor=1.000
-        manpower=987
-        state_category = tiny_island
+	state_category=tiny_island
+	local_supplies=0.000
 }

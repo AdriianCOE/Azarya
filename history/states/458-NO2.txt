@@ -2,6 +2,14 @@
 state={
 	id=458
 	name="STATE_458"
+	history={
+		owner = WIH
+		buildings = {
+			infrastructure = 1
+			}
+	
+		add_core_of = WIH
+		}
 	provinces={
 		82 148 921 1248 1449 1531 2300 2399 2872 3222 3663 4273 4614 5986 6050 6054 6178 6183 6221 
 	}

@@ -1,18 +1,19 @@
+
 state={
 	id=30
 	name="Drachenfels"
+
 	history={
-		owner = DTB
-		buildings = {
-			infrastructure = 1
-			}
-	
-			add_core_of = DTB
-		}
-	provinces={
-		5783 5806 5811 
+		owner = GYE
+		add_core_of = GYE
+
 	}
+
+	provinces={
+		57 157 243 465 1385 2447 3486 4215 4809 7484 7487 7565 
+	}
+	manpower=37958
 	buildings_max_level_factor=1.000
-        manpower=37958
-        state_category = tiny_island
+	state_category=tiny_island
+	local_supplies=0.000
 }

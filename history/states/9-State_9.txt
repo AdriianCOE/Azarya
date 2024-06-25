@@ -1,26 +1,35 @@
 state={
 	id=9
-	name="Nitu Island"
+	name="Nitu Islands"
+	resources = {
+		rubber = 4
+	}
 	history={
 		owner = BKG
 		victory_points = {
-			2015 10
+			2015 8
+		}
+		victory_points = {
+			5274 12
 		}
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			2015 = {
 				naval_base = 1
 				}
+			5274 = {
+				naval_base = 2
+				}
+
 			}
-	
 			add_core_of = SVD
 			add_core_of = BKG
 			add_core_of = RFO
 		}
 	provinces={
-		2015 5048 5288 5290 5301 
+		2015 5048 5288 5290 5301 3675 5027 984 5274 5261 4881 3910 2424 5241 5233 5217 5229 5342 5328 5316 5341 5412 5445
 	}
 	buildings_max_level_factor=1.000
-        manpower=67984
-        state_category = small_island
+        manpower=293864
+        state_category = rural
 }

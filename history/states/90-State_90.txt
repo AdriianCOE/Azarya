@@ -3,7 +3,7 @@ state={
 	id=90
 	name="Brankiev"
 	resources={
-		steel=3
+		steel=4
 	}
 
 	history={
@@ -14,11 +14,17 @@ state={
 		victory_points = {
 			631 10
 		}
+		victory_points = {
+			9131 2
+		}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 3
 			4452 = {
                 naval_base = 2
+            }
+			9131 = {
+                naval_base = 1
             }
 
 		}
@@ -27,9 +33,9 @@ state={
 	}
 
 	provinces={
-		631 2623 3736 3856 4452 9027 9050 9051 
+		631 2623 3736 3856 4452 9027 9050 9051 9088 9112 9131 9497 2652
 	}
-	manpower=674062
+	manpower=738769
 	buildings_max_level_factor=1.000
 	state_category=city
 

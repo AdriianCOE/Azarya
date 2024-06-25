@@ -2,13 +2,16 @@
 state={
 	id=127
 	name="STATE_127"
+
 	history={
 		owner = GYE
-			add_core_of = GYE
-			add_core_of = NIR
-}
+		add_core_of = GYE
+		add_core_of = NIR
+
+	}
+
 	provinces={
-		3170
+		102 444 471 1039 2371 3170 3821 6890 6895 6941 
 	}
 	manpower=129859
 	buildings_max_level_factor=1.000

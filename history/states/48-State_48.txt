@@ -2,20 +2,23 @@
 state={
 	id=48
 	name="Radograd"
+
 	history={
 		owner = NSA
 		buildings = {
 			infrastructure = 2
 			arms_factory = 2
 			dockyard = 1
-			}
-	
-			add_core_of = NSA
+
 		}
-	provinces={
-		70 204 830 871 997 1079 1148 1716 1786 1887 2368 2613 3224 3421 3662 3795 3954 4414 4477 4806 4818 4961 6037 6085 6092 6094 6110 6141 6148 6198 6226 6243 
+		add_core_of = NSA
+
 	}
-	manpower=789582
+
+	provinces={
+		70 1148 1716 1887 2613 3224 3662 3954 4414 4818 4961 6094 6141 6148 6198 6226 
+	}
+	manpower=709582
 	buildings_max_level_factor=1.000
 	state_category=large_town
 	local_supplies=0.000

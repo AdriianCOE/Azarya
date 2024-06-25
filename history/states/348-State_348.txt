@@ -1,19 +1,23 @@
+
 state={
 	id=348
 	name="STATE_348"
-		resources={
-		steel=30
-		}
-
-		history={
-			owner = GYE
-				add_core_of = GYE
-				add_core_of = NIR
+	resources={
+		steel=30.000
 	}
+
+	history={
+		owner = GYE
+		add_core_of = GYE
+		add_core_of = NIR
+
+	}
+
 	provinces={
 		28 164 778 1176 1335 1648 1900 2179 2650 2698 3148 3326 3409 3964 4285 4416 4771 7543 7670 7699 7703 7774 7779 7782 7796 7815 7823 7830 7868 7879 7888 
 	}
+	manpower=509850
 	buildings_max_level_factor=1.000
-        manpower=509850
-        state_category = town
+	state_category=town
+	local_supplies=0.000
 }

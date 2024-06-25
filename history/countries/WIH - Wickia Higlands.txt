@@ -1,0 +1,100 @@
+capital = 15
+
+set_oob = "standard_templates"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_trucks = 1
+	basic_train = 1	
+}
+
+IF = {
+	limit = {
+		NOT = { has_dlc = "Man the Guns"}
+	}
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		transport = 1
+	}
+	
+}
+IF = {
+	limit = { has_dlc = "Man the Guns"}
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		mtg_transport = 1
+	}
+}
+
+recruit_character = WIH_ar
+recruit_character = WIH_acr
+recruit_character = WIH_mt
+recruit_character = WIH_stc
+recruit_character = WIH_aa2
+recruit_character = WIH_acgs
+recruit_character = WIH_ncm
+recruit_character = WIH_nccr
+recruit_character = WIH_coi
+recruit_character = WIH_democratic_guy
+recruit_character = WIH_acd2
+recruit_character = WIH_acas
+recruit_character = WIH_communist_guy
+recruit_character = WIH_ncs
+recruit_character = WIH_awt
+recruit_character = WIH_pot
+recruit_character = WIH_fascist_guy
+recruit_character = WIH_ai2
+recruit_character = WIH_nt
+recruit_character = WIH_aco2
+
+set_convoys = 157
+set_war_support = 10
+add_political_power = 200
+add_command_power = 50
+army_experience = 50
+
+set_politics = {
+		ruling_party = democratic
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+
+	set_popularities = {
+		democratic = 80
+		fascism = 5
+		communism = 5
+		neutrality = 15
+	}
+
+create_country_leader = {
+	ideology = conservatism
+	traits = {}
+}
+
+create_field_marshal = {
+	traits = {}
+    skill = 4
+}
+create_corps_commander = {
+	traits = {}
+    skill = 2
+}
+create_corps_commander = {
+	traits = {}
+    skill = 2
+}

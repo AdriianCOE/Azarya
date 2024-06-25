@@ -1,20 +1,14 @@
+
 state={
 	id=45
 	name="Miku Island"
-	history={
-		owner = SVD
-		buildings = {
-			infrastructure = 0
-			}
-	
-			add_core_of = SVD
-			add_core_of = BKG
-			add_core_of = RFO
-		}
+
+
 	provinces={
-		9493 
+		165 800 3286 3293 3346 3864 4562 4574 6981 7004 7011 7028 7037 7041 7056 7119 7126 7161 7174 
 	}
+	manpower=1968
 	buildings_max_level_factor=1.000
-        manpower=1968
-        state_category = tiny_island
+	state_category=tiny_island
+	local_supplies=0.000
 }

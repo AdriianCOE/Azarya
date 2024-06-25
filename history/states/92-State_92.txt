@@ -1,28 +1,12 @@
 
-state = {
-    id = 92
-    name = Arvenia
-    manpower = 39527
-    state_category = small_island
-    
-	history = {
-		owner = THK
-		victory_points = {
-			9131 2
-		}
-		buildings = {
-			infrastructure = 1
-			9131 = {
-                naval_base = 1
-            }
-
-		}
-		add_core_of = THK
-
+state={
+	id=92
+	name="Arvenia"
+	provinces={
+		601 1632 1693 2004 2674 2714 4873 7604 7637 7691 7780 
 	}
-    
-    provinces = {
-        9088 9112 9131
-    }
+	manpower=39527
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
 }
-

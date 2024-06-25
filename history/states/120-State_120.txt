@@ -1,23 +1,22 @@
+
 state={
 	id=120
 	name="Brisevent"
 	history={
-		owner = TOL
-			victory_points = {
-			9450  5
-		}
+		owner = WIH
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-			dockyard = 2
-            }
-		add_core_of = TOL
+			infrastructure = 1
+			}
+	
+		add_core_of = WIH
+		}
 
-	}
+
 	provinces={
-		9450 9455 9457 9463 
+		794 1167 1319 1424 1618 1914 1930 2462 2730 3207 3433 3523 3892 4004 4040 4227 4783 4827 5896 5917 5923 5926 5935 5937 5961 5973 5974 6001 6025 
 	}
+	manpower=589869
 	buildings_max_level_factor=1.000
-        manpower=589869
-        state_category = town
+	state_category=town
+	local_supplies=0.000
 }

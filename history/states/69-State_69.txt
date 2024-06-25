@@ -6,7 +6,7 @@ state={
 		add_core_of = GYE
 	}
 	provinces={
-		992 
+		992 3289 7555
 	}
 	buildings_max_level_factor=1.000
         manpower=1

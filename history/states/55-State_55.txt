@@ -1,16 +1,14 @@
+
 state={
 	id=55
 	name="Vida"
 
-	 history = {
-        owner = BOM
-		add_core_of = BOM
 
-	}
 	provinces={
-		9495 
+		127 506 668 806 1507 1777 1778 2081 2110 2288 2320 2339 2457 2509 2640 3110 3370 3631 3944 4049 4148 4265 4645 4693 7994 8005 8014 8043 8072 8122 8162 8168 8199 8213 8230 8249 8280 8305 8317 
 	}
+	manpower=680
 	buildings_max_level_factor=1.000
-        manpower=680
-        state_category = tiny_island
+	state_category=tiny_island
+	local_supplies=0.000
 }

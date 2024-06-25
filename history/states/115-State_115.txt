@@ -1,19 +1,31 @@
+
 state={
 	id=115
 	name="Île des Marées"
+
 	history={
-		owner = TOL
-		buildings = {
-			infrastructure = 1
-
+		owner = WIH
+		victory_points = {
+			5764 30
 		}
-		add_core_of = TOL
+		victory_points = {
+			5792 15
+		}
+		victory_points = {
+			4612 10
+		}
+		buildings = {
+			infrastructure = 4
+			}
+	
+		add_core_of = WHI
+		}
 
-	}
 	provinces={
-		9338 
+		470 552 566 831 942 1297 1383 1439 1617 2026 2060 2101 2152 3123 3142 3178 3942 4172 4376 4496 4513 4612 4627 4692 5738 5751 5763 5764 5787 5792 5817 5820 5837 5838 5841 5858 5873 5882 5897 5906 5907 5915 5920 5930 
 	}
+	manpower=5982
 	buildings_max_level_factor=1.000
-        manpower=5982
-        state_category = tiny_island
+	state_category=large_city
+	local_supplies=0.000
 }

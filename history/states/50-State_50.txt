@@ -2,12 +2,17 @@ state={
 	id=50
 	name="STATE_50"
 	history={
-		owner = SIT
-		add_core_of = SIT
-
-	}
+		owner = SVD
+		buildings = {
+			infrastructure = 0
+			}
+	
+			add_core_of = SVD
+			add_core_of = BKG
+			add_core_of = RFO
+		}
 	provinces={
-		6329 
+		6018 5080
 	}
 	buildings_max_level_factor=1.000
         manpower=1

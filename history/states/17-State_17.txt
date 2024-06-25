@@ -1,20 +1,14 @@
+
 state={
 	id=17
 	name="Mooka Island"
-	history={
-		owner = BKG
-		buildings = {
-			infrastructure = 0
-			}
-	
-			add_core_of = SVD
-			add_core_of = BKG
-			add_core_of = RFO
-		}
+
+
 	provinces={
-		5316 5328 5341 5342 
+		657 1301 1638 1832 2202 2570 2909 3287 3968 4178 4736 6142 6185 6199 6203 6234 6255 6264 6294 6325 6381
 	}
+	manpower=17869
 	buildings_max_level_factor=1.000
-        manpower=17869
-        state_category = tiny_island
+	state_category=tiny_island
+	local_supplies=0.000
 }

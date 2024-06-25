@@ -1,18 +1,19 @@
+
 state={
 	id=39
 	name="Nebelinsel"
+
 	history={
-		owner = DTB
-		buildings = {
-			infrastructure = 0
-			}
-	
-			add_core_of = DTB
-		}
-	provinces={
-		3015 
+		owner = GYE
+		add_core_of = GYE
+
 	}
+
+	provinces={
+		686 848 867 980 1170 1451 1748 1773 1819 1895 2510 2638 2669 2679 3090 3093 3387 3504 3509 4428 4559 4776 4832 4845 5061 5081 5088 5097 7081 7098 7106 7114 7123 7134 7139 7153 7157 7162 7165 7170 7180 7185 7189 7197 7198 7204 7219 7221 7224 7225 7227 7242 7247 7248 7251 7253 7303 
+	}
+	manpower=5969
 	buildings_max_level_factor=1.000
-        manpower=5969
-        state_category = tiny_island
+	state_category=tiny_island
+	local_supplies=0.000
 }

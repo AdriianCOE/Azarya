@@ -1,14 +1,15 @@
+
 state={
 	id=68
 	name="STATE_68"
-	history={
-		owner = GYE
-		add_core_of = GYE
-	}
+
+
+
 	provinces={
-		7555 
+		300 1157 1285 1582 1650 1691 1698 1793 2888 3181 3233 4438 4582 4766 8576 8678 8699 8720 8735 8755 8771 8772 8786 8818 8852 8877 8878 8908 8930 
 	}
+	manpower=1
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+	state_category=town
+	local_supplies=0.000
 }
