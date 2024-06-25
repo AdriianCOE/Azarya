@@ -1,5 +1,6 @@
 
-dockyard - arms_factory - industrial_complex
+#dockyard - arms_factory - industrial_complex
+
 SVD
 5+5+12  = 22
 BKG 
@@ -9,4 +10,6 @@ RFO
 DTB
 7+10+17 = 35
 NSA
-5+9+15   = 29
+5+10+15 = 30
+SIT
+6+8+14  = 28

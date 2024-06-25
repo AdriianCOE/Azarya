@@ -81,6 +81,9 @@ set_politics = {
 		neutrality = 75
 	}
 
+	add_ideas = {
+		AEI_TheTree
+	}
 create_country_leader = {
 	ideology = conservatism
 	traits = {}

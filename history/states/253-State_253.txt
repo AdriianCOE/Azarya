@@ -5,6 +5,16 @@ state={
 
 	history={
 		owner = SIT
+		victory_points = {
+			298 5 
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			298 = {
+				naval_base = 1
+				}
+		}
 		add_core_of = SIT
 
 	}
@@ -12,8 +22,8 @@ state={
 	provinces={
 		298 629 999 1993 6752 6838 
 	}
-	manpower=1
+	manpower=291938
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=rural
 	local_supplies=0.000
 }

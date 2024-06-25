@@ -1,17 +1,34 @@
 
 state={
 	id=235
-	name="STATE_235"
+	name="Bellator"
+	resources = {
+		tungsten = 12
+	}
 	history={
 		owner = SIT
+		victory_points = {
+			3001 12 
+		}
+		victory_points = {
+			6557 8
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 2
+			3001 = {
+				naval_base = 2
+				}
+			}
 		add_core_of = SIT
 
 	}
 	provinces={
 		114 329 660 1068 1076 1376 1517 2319 3001 3032 3217 3315 3336 3592 3913 3940 4107 4173 4704 5049 6509 6535 6536 6542 6557 6569 6570 6585 6599 6613 6620 6622 6631 6644 6645 6660 6661 6670 6674 6680 6684 6716 
 	}
-	manpower=1
+	manpower=3392859
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=metropolis
 	local_supplies=0.000
 }

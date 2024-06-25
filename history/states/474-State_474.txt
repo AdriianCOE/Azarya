@@ -2,8 +2,8 @@ state={
 	id=474
 	name="Maritimia"
 	resources = {
-		rubber = 20
-		oil = 10
+		rubber = 30
+		oil = 20
 	}
 
 	history={

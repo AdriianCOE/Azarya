@@ -84,6 +84,14 @@ bookmarks = {
 			history = x
 			ideology = neutrality
 		}
+		"AEI"={
+			minor = yes
+			history = x
+			ideology = neutrality
+			ideas={
+				AEI_TheTree
+			}
+		}
 
 		effect = {
 			randomize_weather = 12345 # <- Obligatory in every bookmark !

@@ -1,10 +1,22 @@
 
 state={
 	id=479
-	name="Sovetskaya"
+	name="Montis"
+	resources = {
+		steel = 25
+	}
 
 	history={
 		owner = SIT
+		victory_points = {
+			4258 10
+		}
+		victory_points = {
+			6796 5
+		}
+		buildings = {
+			infrastructure = 2
+		}
 		add_core_of = SIT
 
 	}
@@ -12,8 +24,8 @@ state={
 	provinces={
 		194 461 562 580 1085 1158 1460 1736 2005 2090 4258 4641 6640 6751 6796 6803 6818 6918 6922 6962 
 	}
-	manpower=4298578
+	manpower=595839
 	buildings_max_level_factor=1.000
-	state_category=megalopolis
+	state_category=rural
 	local_supplies=0.000
 }

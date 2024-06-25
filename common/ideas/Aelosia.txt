@@ -1,9 +1,9 @@
 ideas = {
 	country = {
 
-		AEI = {
+		AEI_TheTree = {
 
-			name = AEI_TheTree
+			name = AEI_TheBigTree
 			picture = POL_ideology_drift_defence
 			allowed = {
 				original_tag = AEI

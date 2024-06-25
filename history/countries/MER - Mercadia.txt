@@ -40,26 +40,26 @@ IF = {
 	}
 }
 
-recruit_character = AEI_ar
-recruit_character = AEI_acr
-recruit_character = AEI_mt
-recruit_character = AEI_stc
-recruit_character = AEI_aa2
-recruit_character = AEI_acgs
-recruit_character = AEI_ncm
-recruit_character = AEI_nccr
-recruit_character = AEI_coi
-recruit_character = AEI_democratic_guy
-recruit_character = AEI_acd2
-recruit_character = AEI_acas
-recruit_character = AEI_communist_guy
-recruit_character = AEI_ncs
-recruit_character = AEI_awt
-recruit_character = AEI_pot
-recruit_character = AEI_fascist_guy
-recruit_character = AEI_ai2
-recruit_character = AEI_nt
-recruit_character = AEI_aco2
+recruit_character = MER_ar
+recruit_character = MER_acr
+recruit_character = MER_mt
+recruit_character = MER_stc
+recruit_character = MER_aa2
+recruit_character = MER_acgs
+recruit_character = MER_ncm
+recruit_character = MER_nccr
+recruit_character = MER_coi
+recruit_character = MER_democratic_guy
+recruit_character = MER_acd2
+recruit_character = MER_acas
+recruit_character = MER_communist_guy
+recruit_character = MER_ncs
+recruit_character = MER_awt
+recruit_character = MER_pot
+recruit_character = MER_fascist_guy
+recruit_character = MER_ai2
+recruit_character = MER_nt
+recruit_character = MER_aco2
 
 set_convoys = 157
 set_war_support = 10

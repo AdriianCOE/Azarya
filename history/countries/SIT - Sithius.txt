@@ -1,4 +1,4 @@
-capital = 252
+capital = 51
 
 set_oob = "standard_templates"
 
@@ -68,7 +68,7 @@ add_command_power = 50
 army_experience = 50
 
 set_politics = {
-		ruling_party = democratic
+		ruling_party = neutrality
 		last_election = "1932.1.1"
 		election_frequency = 48
 		elections_allowed = no
@@ -82,7 +82,7 @@ set_politics = {
 	}
 
 create_country_leader = {
-	ideology = conservatism
+	ideology = Constitutional_Monarchy
 	traits = {}
 }
 
