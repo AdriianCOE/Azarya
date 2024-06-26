@@ -1,0 +1,31 @@
+ideas = {
+	country = {
+
+		SIT_Victorium_Legacy = {
+
+			name = SIT_Victorium_Legacy
+			picture = can_patriation
+			allowed = {
+				original_tag = SIT
+			}
+
+			available = {
+			}
+
+			visible = {
+				always = yes
+			}
+
+			cancel = {
+			}
+
+			modifier = {
+				stability_factor = -0.12
+				war_support_factor = -0.1
+				industrial_capacity_dockyard = 0.1
+				consumer_goods_factor = 0.15
+				navy_org_factor = 0.05
+				}
+			}
+		}
+}	

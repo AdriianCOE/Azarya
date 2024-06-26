@@ -4,5 +4,8 @@ THK_Monarchy:0 "Established Monarchy"
 THK_monarquia_estabelecida_desc:0 "Thiryn's deep-rooted monarchical tradition finds its ultimate expression in this idea. With the monarchy firmly established as the preferred form of government, stability and government legitimacy are strengthened."
 THK_Army:0 "Polid Army"
 #AEI
-AEI_TheTree:0 "The Tree"
+AEI_TheBigTree:0 "The Tree"
 AEI_TheBigTree_desc:0 "The Big Tree unified all of us..."
+#SIT
+SIT_Victorium_Legacy:0 "Victorium Legacy"
+SIT_Victorium_Legacy_desc:0 "The legacy of the Victorium Empire brings both strength and burden to Sithius. While it enhances naval organization and dockyard capacity, it also causes significant political instability and increased consumer goods demands."

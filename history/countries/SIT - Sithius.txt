@@ -81,9 +81,16 @@ set_politics = {
 		neutrality = 75
 	}
 
+	add_ideas = {
+		SIT_Victorium_Legacy
+	}
+
 create_country_leader = {
+	name = "Emperor Valerius IX"
+	desc = "SIT_Emperor_Valerius_IX"
+	picture = ""
 	ideology = Constitutional_Monarchy
-	traits = {}
+	traits = {Ruthless_Administrator Autocratic_Imperialist }
 }
 
 create_field_marshal = {

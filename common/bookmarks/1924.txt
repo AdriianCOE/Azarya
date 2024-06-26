@@ -34,9 +34,12 @@ bookmarks = {
 			history = x
 			ideology = democratic
 		}
-		GYE = {
-			history = x
+		SIT = {
+			history = SIT_AZARYA_DESC
 			ideology = fascism
+			ideas={
+				SIT_Victorium_Legacy
+			}
 		}
 		
 		"---"={
