@@ -2,6 +2,10 @@
 state={
 	id=17
 	name="Mooka Island"
+	history={
+		owner = DKG
+		add_core_of = DKG
+	}
 
 
 	provinces={

@@ -2,6 +2,11 @@
 state={
 	id=234
 	name="STATE_234"
+	history={
+		owner = MEK
+		add_core_of = MEK
+
+	}
 	provinces={
 		822 1676 1722 1981 2116 2895 3872 4062 4363 4423 4609 6385 6399 6435 6452 6480 6481 6526 6540 6541 
 	}

@@ -98,4 +98,11 @@ WIH = {
 	color = rgb { 150 150 165 }
 	color_ui = { 150 150 165 }
 }
-
+DKG = {
+	color = rgb { 250 210 160 }
+	color_ui = { 250 210 160 }
+}
+MEK = {
+	color = rgb { 250 140 130 }
+	color_ui = { 250 140 130 }
+}

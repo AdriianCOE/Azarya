@@ -1,6 +1,5 @@
-capital = 468
-
-oob = "standard_templates"
+capital = 17
+oob = "CBS"
 
 # Starting tech
 set_technology = {

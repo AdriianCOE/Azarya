@@ -1,6 +1,11 @@
 state={
 	id=46
 	name="STATE_46"
+	history={
+		owner = MEK
+		add_core_of = MEK
+
+	}
 	provinces={
 		4392 6225 
 	}

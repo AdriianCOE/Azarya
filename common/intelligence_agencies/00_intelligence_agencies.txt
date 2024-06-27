@@ -85,4 +85,109 @@ intelligence_agency = {
 	
 	default = { always = yes } 
 }
+intelligence_agency = {
 
+	picture = GFX_intelligence_agency_logo_usa
+	names = { "Office of Strategic Services" }
+	
+	default = { tag = GYE }
+	available = { original_tag = GYE }
+}
+
+intelligence_agency = {
+
+	picture = GFX_intelligence_agency_logo_uk
+	names = { "MI6" "SIS" }
+	
+	default = { tag = SVD }
+	available = { original_tag = SVD }
+}
+
+intelligence_agency = {
+
+	picture = GFX_intelligence_agency_logo_sov
+	names = { "NKVD" }
+	
+	default = { tag = NSA }
+	available = { original_tag = NSA }
+}
+
+intelligence_agency = {
+
+	picture = GFX_intelligence_agency_logo_fra
+	names = { "Deuxième Bureau" }
+	
+	default = { tag = TOL }
+	available = { original_tag = TOL }
+}
+
+intelligence_agency = {
+	
+	picture = GFX_intelligence_agency_logo_ger
+	names = { "Abwehr" }
+	
+	default = { tag = CZL }
+	available = { original_tag = CZL }
+}
+
+intelligence_agency = {
+	
+	picture = GFX_intelligence_agency_logo_jap
+	names = { "G-2 Department" "Section 3" }
+	
+	default = { tag = LUQ }
+	available = { original_tag = LUQ }
+}
+
+intelligence_agency = {
+	
+	picture = GFX_intelligence_agency_logo_ita
+	names = { "Servizio Informazioni Militare" }
+	
+	default = { tag = SIT }
+	available = { original_tag = SIT }
+}
+
+intelligence_agency = {
+	
+	picture = GFX_intelligence_agency_logo_swe
+	names = { "C-byrån" }
+	
+	default = { tag = SLU }
+	available = { original_tag = SLU }
+}
+
+intelligence_agency = {
+	
+	picture = GFX_intelligence_agency_logo_nor
+	names = { "E-tjenesten" }
+	
+	default = { tag = DTB }
+	available = { original_tag = DTB }
+}
+
+intelligence_agency = {
+	
+	picture = GFX_intelligence_agency_logo_bel
+	names = { "ADIV" "SGRS" }
+	
+	default = { tag = BEL }
+	available = { original_tag = BEL }
+}
+
+intelligence_agency = {
+	
+	picture = GFX_intelligence_agency_logo_hol
+	names = { "Bureau Inteligence" }
+	
+	default = { tag = THK }
+	available = { original_tag = THK}
+}
+intelligence_agency = {
+	
+	picture = GFX_intelligence_agency_logo_BRA_neutrality
+	names = { "Departamento de Ordem" }
+	
+	default = { tag = KOZ }
+	available = { original_tag = KOZ }
+}

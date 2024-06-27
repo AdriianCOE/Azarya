@@ -2,85 +2,70 @@ ideas = {
 	country = {
 
 		SIT_Victorium_Legacy = {
-
 			name = SIT_Victorium_Legacy
 			picture = can_patriation
 			allowed = {
 				original_tag = SIT
 			}
-
 			available = {
 			}
-
 			visible = {
 				always = yes
 			}
-
 			cancel = {
 			}
-
 			modifier = {
-				stability_factor = -0.12
-				war_support_factor = -0.1
-				industrial_capacity_dockyard = 0.1
-				consumer_goods_factor = 0.15
-				navy_org_factor = 0.05
+				stability_factor = -0.1  -- Penalidade na estabilidade devido às memórias de antigos conflitos e divisões internas.
+				war_support_factor = -0.05  -- Penalidade menor no suporte à guerra, refletindo uma população cansada de conflitos passados.
+				industrial_capacity_dockyard = 0.15  -- Maior bônus na capacidade industrial dos estaleiros, destacando a herança naval.
+				navy_org_factor = 0.1  -- Bônus na organização da marinha, refletindo a importância histórica da marinha.
+				conscription_factor = 0.05
+			}
+		}
+		
+			
+		SIT_Navy_Legacy = {
+			name = SIT_Navy_Legacy
+			picture = NORDIC_navy_communist
+			allowed = {
+				original_tag = SIT
+			}
+			available = {
+			}
+			visible = {
+				always = yes
+			}
+			cancel = {
+			}
+			modifier = {
+				industrial_capacity_dockyard = 0.10
+				naval_speed_factor = 0.1  -- Bônus na velocidade naval, refletindo as habilidades marítimas avançadas.
+				naval_hit_chance = 0.1  -- Bônus na chance de acerto naval, destacando a precisão da marinha.
+				naval_attack_factor = 0.1  -- Bônus no ataque naval, reforçando a força da marinha.
+			}
+		}
+		
+
+		SIT_Unstable_Government = {
+			name = SIT_Unstable_Government
+			picture = generic_deal_with_the_devil
+			allowed = {
+				original_tag = SIT
+			}
+			available = {
+			}
+			visible = {
+				always = yes
+			}
+			cancel = {
+			}
+			modifier = {
+				political_power_gain = -0.1  -- Penalidade na aquisição de poder político, indicando dificuldades governamentais.
+				consumer_goods_factor = 0.2  -- Penalidade maior no consumo de bens, mostrando as dificuldades econômicas.
+				production_speed_buildings_factor = -0.05
 				}
 			}
-			
-			SIT_Navy_Legacy = {
-
-				name = SIT_Navy_Legacy
-				picture = NORDIC_navy_communist
-				allowed = {
-					original_tag = SIT
-				}
-	
-				available = {
-				}
-	
-				visible = {
-					always = yes
-				}
-	
-				cancel = {
-				}
-	
-				modifier = {
-					stability_factor = -0.12
-					war_support_factor = -0.1
-					industrial_capacity_dockyard = 0.1
-					consumer_goods_factor = 0.15
-					navy_org_factor = 0.05
-					}
-				}
-
-				SIT_Unstable_Government = {
-
-					name = SIT_Unstable_Government
-					picture = generic_deal_with_the_devil
-					allowed = {
-						original_tag = SIT
-					}
 		
-					available = {
-					}
-		
-					visible = {
-						always = yes
-					}
-		
-					cancel = {
-					}
-		
-					modifier = {
-						stability_factor = -0.12
-						war_support_factor = -0.1
-						industrial_capacity_dockyard = 0.1
-						consumer_goods_factor = 0.15
-						navy_org_factor = 0.05
-						}
-					}
 		}
 		
 }	

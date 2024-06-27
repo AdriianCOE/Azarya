@@ -1,6 +1,6 @@
-capital = 468
+capital = 242
+set_oob = "standard_templates"
 
-oob = "standard_templates"
 
 # Starting tech
 set_technology = {
@@ -59,50 +59,57 @@ IF = {
 	}
 }
 
-recruit_character = CBS_ar
-recruit_character = CBS_acr
-recruit_character = CBS_mt
-recruit_character = CBS_stc
-recruit_character = CBS_aa2
-recruit_character = CBS_acgs
-recruit_character = CBS_ncm
-recruit_character = CBS_nccr
-recruit_character = CBS_coi
-recruit_character = CBS_democratic_guy
-recruit_character = CBS_acd2
-recruit_character = CBS_acas
-recruit_character = CBS_communist_guy
-recruit_character = CBS_ncs
-recruit_character = CBS_awt
-recruit_character = CBS_pot
-recruit_character = CBS_fascist_guy
-recruit_character = CBS_ai2
-recruit_character = CBS_nt
-recruit_character = CBS_aco2
+recruit_character = GYE_ar
+recruit_character = GYE_acr
+recruit_character = GYE_mt
+recruit_character = GYE_stc
+recruit_character = GYE_aa2
+recruit_character = GYE_acgs
+recruit_character = GYE_ncm
+recruit_character = GYE_nccr
+recruit_character = GYE_coi
+recruit_character = GYE_democratic_guy
+recruit_character = GYE_acd2
+recruit_character = GYE_acas
+recruit_character = GYE_communist_guy
+recruit_character = GYE_ncs
+recruit_character = GYE_awt
+recruit_character = GYE_pot
+recruit_character = GYE_fascist_guy
+recruit_character = GYE_ai2
+recruit_character = GYE_nt
+recruit_character = GYE_aco2
+
 
 set_convoys = 92
 army_experience = 50
+set_research_slots = 3
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = fascism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 5
-	fascism = 5
-	communism = 5
-	neutrality = 85
+		democratic = 10
+		fascism = 80
+		communism = 5
+		neutrality = 5
 }
 
 create_country_leader = {
-	ideology = oligarchism
-	traits = {}
+	ideology = Rexism
 }
 
 create_field_marshal = {
+	name = ""
+	picture = ""
     traits = { Skilled_Staffer Infantry_Expert }
-    skill = 4
+    skill = 10
+    attack_skill = 8
+    defense_skill = 1
+    planning_skill = 10
+    logistics_skill = 10
 }

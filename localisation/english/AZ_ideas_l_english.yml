@@ -8,4 +8,10 @@ AEI_TheBigTree:0 "The Tree"
 AEI_TheBigTree_desc:0 "The Big Tree unified all of us..."
 #SIT
 SIT_Victorium_Legacy:0 "Victorium Legacy"
-SIT_Victorium_Legacy_desc:0 "The legacy of the Victorium Empire brings both strength and burden to Sithius. While it enhances naval organization and dockyard capacity, it also causes significant political instability and increased consumer goods demands."
+SIT_Victorium_Legacy_desc:0 "The Sithius Empire, once the grand Victorium, carries a legacy of maritime prowess and imperial glory. Despite the grandeur, internal divisions and memories of past conflicts still haunt the empire, leading to a mixed stability and a focus on naval strength."
+
+SIT_Navy_Legacy:0 "Navy Legacy"
+SIT_Navy_Legacy_desc:0 "The Sithius Empire's history is rich with naval achievements, from conquering coastal cities to dominating the seas. This legacy has left the empire with a highly skilled and efficient navy, but internal stability remains a challenge."
+
+SIT_Unstable_Government:0 "Unstable Government"
+SIT_Unstable_Government_desc:0 "The Sithius Empire faces significant internal challenges, with political instability and economic difficulties. The government's struggle to maintain control has led to decreased stability and war support, reflecting the turbulent state of the nation."
