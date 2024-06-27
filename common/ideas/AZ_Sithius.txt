@@ -27,5 +27,60 @@ ideas = {
 				navy_org_factor = 0.05
 				}
 			}
+			
+			SIT_Navy_Legacy = {
+
+				name = SIT_Navy_Legacy
+				picture = NORDIC_navy_communist
+				allowed = {
+					original_tag = SIT
+				}
+	
+				available = {
+				}
+	
+				visible = {
+					always = yes
+				}
+	
+				cancel = {
+				}
+	
+				modifier = {
+					stability_factor = -0.12
+					war_support_factor = -0.1
+					industrial_capacity_dockyard = 0.1
+					consumer_goods_factor = 0.15
+					navy_org_factor = 0.05
+					}
+				}
+
+				SIT_Unstable_Government = {
+
+					name = SIT_Unstable_Government
+					picture = generic_deal_with_the_devil
+					allowed = {
+						original_tag = SIT
+					}
+		
+					available = {
+					}
+		
+					visible = {
+						always = yes
+					}
+		
+					cancel = {
+					}
+		
+					modifier = {
+						stability_factor = -0.12
+						war_support_factor = -0.1
+						industrial_capacity_dockyard = 0.1
+						consumer_goods_factor = 0.15
+						navy_org_factor = 0.05
+						}
+					}
 		}
+		
 }	

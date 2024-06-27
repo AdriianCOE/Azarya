@@ -5,7 +5,7 @@ characters={
 			idea_token = MER_ar
 			ledger  = army 
 				allowed  = {
-					original_tag  = MER
+					original_tag = MER
 				}
 				traits  = {
 					army_regrouping_2 

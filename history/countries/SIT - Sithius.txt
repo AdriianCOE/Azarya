@@ -83,6 +83,8 @@ set_politics = {
 
 	add_ideas = {
 		SIT_Victorium_Legacy
+		SIT_Navy_Legacy
+		SIT_Unstable_Government
 	}
 
 create_country_leader = {
