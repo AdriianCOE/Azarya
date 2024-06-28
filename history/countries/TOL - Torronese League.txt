@@ -101,6 +101,8 @@ set_popularities = {
 
 create_country_leader = {
 	ideology = Conservatism
+	picture = portrait_tol_leon_blum.dds
+	name = "rogerio do tol"
 	traits = {}
 }
 
