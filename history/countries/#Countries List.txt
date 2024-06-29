@@ -1,0 +1,954 @@
+#Bishopric of Montia (BOM - RGB: 110 205 240 ) 
+Capital: Sanctaria
+Leader: *****
+Stability: 50%
+War Support: 65%
+Free Manpower: 153.67k
+
+Population:
+Elegible (18.09M)
+Non-Elegible (18.09M)
+
+Factories:
+Military: 10
+Civilian: 20
+Dockyards: 5
+Total: = 35
+
+Army: 28 Divisions
+(108.00k Manpower)
+(Tanks: 0)
+
+Navy: 0 Ships
+(00.00k Manpower)
+Battleship: 0 
+Heavy Cruiser: 0 
+Destroyer: 0
+Submarines: 0
+
+AirForce:
+(0 Manpower)
+Fighter: 0
+Cas: 0
+Tactical Bomber: 0
+Strategic Bomber: 0
+
+#Cambalese Desert ( CBS - RGB: 255 220 105)
+Capital: Zahira
+Leader: *****
+Stability: 62%
+War Support: 60%
+Free Manpower: 50.01k
+
+Population:
+Elegible (5.66M)
+Non-Elegible (5.66M)
+
+Factories:
+Military: 3
+Civilian: 10
+Dockyards: 0
+Total: = 13
+
+Army: 17 Divisions
+(32.00k Manpower)
+(Tanks: 0)
+
+Navy: 0 Ships
+(00.00k Manpower)
+Battleship: 0 
+Heavy Cruiser: 0 
+Destroyer: 0
+Submarines: 0
+
+AirForce:
+(0 Manpower)
+Fighter: 0
+Cas: 0
+Tactical Bomber: 0
+Strategic Bomber: 0 
+
+#Council of Grister ( GET - RGB: 230 205 255)
+Capital: Luckinger
+Leader: *****
+Stability: 38%
+War Support: 90%
+Free Manpower: 26.01k
+
+At War on Start: Serenvioled (Defensive: SVD)
+
+Population:
+Elegible (1.79M)
+Non-Elegible (22.32M)
+
+Factories:
+Military: 2
+Civilian: 3
+Dockyards: 1
+Total: = 6
+
+Army: 0 Divisions
+(00.00k Manpower)
+(Tanks: 0)
+
+Navy: 0 Ships
+(00.00k Manpower)
+Battleship: 0 
+Heavy Cruiser: 0 
+Destroyer: 0
+Submarines: 0
+
+AirForce:
+(0 Manpower)
+Fighter: 0
+Cas: 0
+Tactical Bomber: 0
+Strategic Bomber: 0
+
+#Czariado de Lesc ( CZL - RGB: 0 35 70)
+Capital: Vermilion
+Leader: Prince Lescote
+Stability: 44%
+War Support: 62%
+Free Manpower: 417.39k
+
+Population:
+Elegible (12.26M)
+Non-Elegible (0.00M)
+
+Factories:
+Military: 3
+Civilian: 11
+Dockyards: 2
+Total: = 16
+
+Army: 18 Divisions
+(56.00k Manpower)
+(Tanks: 480)
+
+Navy: 21 Ships
+(10.50k Manpower)
+Battleship: 1 
+Heavy Cruiser: 5 
+Destroyer: 10
+Submarines: 5
+
+AirForce:
+(0 Manpower)
+Fighter: 0
+Cas: 0
+Tactical Bomber: 0
+Strategic Bomber: 0
+
+#Delp Khanate (Broken) ( *** - RGB: ** ** **)
+Capital: *****
+Leader: *****
+Stability: 0%
+War Support: 0%
+Free Manpower: 0.00k
+
+Population:
+Elegible (0.00M)
+Non-Elegible (0.0M)
+
+Factories:
+Military: 0
+Civilian: 0
+Dockyards: 0
+Total: = 0
+
+Army: 0 Divisions
+(00.00k Manpower)
+(Tanks: 0)
+
+Navy: 0 Ships
+(00.00k Manpower)
+Battleship: 0 
+Heavy Cruiser: 0 
+Destroyer: 0
+Submarines: 0
+
+AirForce:
+(0 Manpower)
+Fighter: 0
+Cas: 0
+Tactical Bomber: 0
+Strategic Bomber: 0
+
+#Durtenbach Kingdom ( DTB - RGB: 220 70 30)
+Capital: Durtenstadt
+Leader: *****
+Stability: 61%
+War Support: 100%
+Free Manpower: 180.23kk
+
+Population:
+Elegible (12.46M)
+Non-Elegible (332.34k)
+
+Factories:
+Military: 10
+Civilian: 7
+Dockyards: 17
+Total: = 34
+
+Army: 0 Divisions
+(00.00k Manpower)
+(Tanks: 0)
+
+Navy: 0 Ships
+(00.00k Manpower)
+Battleship: 0 
+Heavy Cruiser: 0 
+Destroyer: 0
+Submarines: 0
+
+AirForce:
+(0 Manpower)
+Fighter: 0
+Cas: 0
+Tactical Bomber: 0
+Strategic Bomber: 0
+
+#Gydian Empire (Broken) (GYE - RGB: 24 25 34)
+Capital: Arvenia
+Leader: *****
+Stability: 52%
+War Support: 65%
+Free Manpower: 130.17k
+
+Population:
+Elegible (8.99M)
+Non-Elegible (0.0M)
+
+Factories:
+Military: 4
+Civilian: 5
+Dockyards: 2
+Total: = 0
+
+Army: 0 Divisions
+(00.00k Manpower)
+(Tanks: 0)
+
+Navy: 0 Ships
+(00.00k Manpower)
+Battleship: 0 
+Heavy Cruiser: 0 
+Destroyer: 0
+Submarines: 0
+
+AirForce:
+(0 Manpower)
+Fighter: 0
+Cas: 0
+Tactical Bomber: 0
+Strategic Bomber: 0
+
+#Highlands of Wickia (Broken) (WIH - RGB: 150 150 165)	
+Capital: *****
+Leader: *****
+Stability: 0%
+War Support: 0%
+Free Manpower: 0.00k
+
+Population:
+Elegible (0.00M)
+Non-Elegible (0.0M)
+
+Factories:
+Military: 0
+Civilian: 0
+Dockyards: 0
+Total: = 0
+
+Army: 0 Divisions
+(00.00k Manpower)
+(Tanks: 0)
+
+Navy: 0 Ships
+(00.00k Manpower)
+Battleship: 0 
+Heavy Cruiser: 0 
+Destroyer: 0
+Submarines: 0
+
+AirForce:
+(0 Manpower)
+Fighter: 0
+Cas: 0
+Tactical Bomber: 0
+Strategic Bomber: 0
+
+#House of Lurandia (LUA - RGB: 85 50 40)	
+Capital: Daugava
+Leader: *****
+Stability: 40%
+War Support: 60%
+Free Manpower: 64.95k
+
+Population:
+Elegible (4.49M)
+Non-Elegible (0.0M)
+
+Factories:
+Military: 3
+Civilian: 2
+Dockyards: 7
+Total: = 12
+
+Army: 0 Divisions
+(00.00k Manpower)
+(Tanks: 0)
+
+Navy: 0 Ships
+(00.00k Manpower)
+Battleship: 0 
+Heavy Cruiser: 0 
+Destroyer: 0
+Submarines: 0
+
+AirForce:
+(0 Manpower)
+Fighter: 0
+Cas: 0
+Tactical Bomber: 0
+Strategic Bomber: 0
+
+#Kingdom of Blutkrieger (BKG - RGB: 60 65 90)	
+Capital: Pitlochry
+Leader: *****
+Stability: 45%
+War Support: 100%
+Free Manpower: 132.22k
+
+Population:
+Elegible (9.14M)
+Non-Elegible (0.0M)
+
+Factories:
+Military: 7
+Civilian: 11
+Dockyards: 3
+Total: = 21
+
+Army: 0 Divisions
+(00.00k Manpower)
+(Tanks: 0)
+
+Navy: 0 Ships
+(00.00k Manpower)
+Battleship: 0 
+Heavy Cruiser: 0 
+Destroyer: 0
+Submarines: 0
+
+AirForce:
+(0 Manpower)
+Fighter: 0
+Cas: 0
+Tactical Bomber: 0
+Strategic Bomber: 0
+
+#Kingdom of Nirisia (NIR - RGB: 75 0 225)	
+Capital: Solhaven
+Leader: *****
+Stability: 61%
+War Support: 100%
+Free Manpower: 45.41k
+
+Population:
+Elegible (3.96M)
+Non-Elegible (0.0M)
+
+Factories:
+Military: 2
+Civilian: 7
+Dockyards: 2
+Total: = 11
+
+Army: 6 Divisions
+(12.00k Manpower)
+(Tanks: 0)
+
+Navy: 0 Ships
+(00.00k Manpower)
+Battleship: 0 
+Heavy Cruiser: 0 
+Destroyer: 0
+Submarines: 0
+
+AirForce:
+(0 Manpower)
+Fighter: 0
+Cas: 0
+Tactical Bomber: 0
+Strategic Bomber: 0
+
+#Kingdom of Zauern (KOZ - RGB: 50 190 90)	
+Capital: Pesalo
+Leader: *****
+Stability: 61%
+War Support: 100%
+Free Manpower: 143.56k
+
+Population:
+Elegible (13.86M)
+Non-Elegible (4.05M)
+
+At War on Start: Torronese (Defensive: TOL)
+
+Factories:
+Military: 9
+Civilian: 15
+Dockyards: 4
+Total: = 31
+
+Army: 21 Divisions
+(57.00k Manpower)
+(Tanks: 0)
+
+Navy: 25 Ships
+(19.35k Manpower)
+Battleship: 3
+Heavy Cruiser: 6
+Destroyer: 11
+Submarines: 5
+
+AirForce:
+(0 Manpower)
+Fighter: 0
+Cas: 0
+Tactical Bomber: 0
+Strategic Bomber: 0
+
+#Merchant Republic of Mercadia (MER - RGB: 0 102 204)	
+Capital: Portus Maris
+Leader: *****
+Stability: 61%
+War Support: 100%
+Free Manpower: 36.74k
+
+Population:
+Elegible (2.53M)
+Non-Elegible (0.0M)
+
+Factories:
+Military: 2
+Civilian: 3
+Dockyards: 1
+Total: = 6
+
+Army: 0 Divisions
+(00.00k Manpower)
+(Tanks: 0)
+
+Navy: 0 Ships
+(00.00k Manpower)
+Battleship: 0 
+Heavy Cruiser: 0 
+Destroyer: 0
+Submarines: 0
+
+AirForce:
+(0 Manpower)
+Fighter: 0
+Cas: 0
+Tactical Bomber: 0
+Strategic Bomber: 0	
+
+#Duchy of Meronian (Broken) (MEK - RGB: 250 140 130)	
+Capital: *****
+Leader: *****
+Stability: 61%
+War Support: 100%
+Free Manpower: 0.00k
+
+Population:
+Elegible (0.00M)
+Non-Elegible (0.0M)
+
+Factories:
+Military: 0
+Civilian: 0
+Dockyards: 0
+Total: = 0
+
+Army: 0 Divisions
+(00.00k Manpower)
+(Tanks: 0)
+
+Navy: 0 Ships
+(00.00k Manpower)
+Battleship: 0 
+Heavy Cruiser: 0 
+Destroyer: 0
+Submarines: 0
+
+AirForce:
+(0 Manpower)
+Fighter: 0
+Cas: 0
+Tactical Bomber: 0
+Strategic Bomber: 0
+
+#Milicianos de Luquitos (LUQ - RGB: 125 200 240)	
+Capital: Isenborg
+Leader: *****
+Stability: 61%
+War Support: 100%
+Free Manpower: 67.53k
+
+Population:
+Elegible (4.66M)
+Non-Elegible (0.0M)
+
+Factories:
+Military: 2
+Civilian: 9	
+Dockyards: 3
+Total: = 14
+
+Army: 0 Divisions
+(00.00k Manpower)
+(Tanks: 0)
+
+Navy: 0 Ships
+(00.00k Manpower)
+Battleship: 0 
+Heavy Cruiser: 0 
+Destroyer: 0
+Submarines: 0
+
+AirForce:
+(0 Manpower)
+Fighter: 0
+Cas: 0
+Tactical Bomber: 0
+Strategic Bomber: 0
+
+#Nicollonia Republic (NIC - RGB: 230 205 255)	
+Capital: Aubigny
+Leader: *****
+Stability: 61%
+War Support: 100%
+Free Manpower: 61.64k
+
+Population:
+Elegible (6.19M)
+Non-Elegible (0.0M)
+
+Factories:
+Military: 2
+Civilian: 6
+Dockyards: 2
+Total: = 10
+
+Army: 14 Divisions
+(28.00k Manpower)
+(Tanks: 0)
+
+Navy: 0 Ships
+(00.00k Manpower)
+Battleship: 0 
+Heavy Cruiser: 0 
+Destroyer: 0
+Submarines: 0
+
+AirForce:
+(0 Manpower)
+Fighter: 0
+Cas: 0
+Tactical Bomber: 0
+Strategic Bomber: 0
+
+#Principality of Bolia (BOA - RGB: 225 160 80)	
+Capital: Nyirma
+Leader: *****
+Stability: 61%
+War Support: 100%
+Free Manpower: 39.15k
+
+Population:
+Elegible (2.70M)
+Non-Elegible (0.0M)
+
+Factories:
+Military: 3
+Civilian: 1
+Dockyards: 5
+Total: = 9
+
+Army: 0 Divisions
+(00.00k Manpower)
+(Tanks: 0)
+
+Navy: 0 Ships
+(00.00k Manpower)
+Battleship: 0 
+Heavy Cruiser: 0 
+Destroyer: 0
+Submarines: 0
+
+AirForce:
+(0 Manpower)
+Fighter: 0
+Cas: 0
+Tactical Bomber: 0
+Strategic Bomber: 0
+
+#Riofriolia Bandits (AAA - RGB: 0 102 204)	
+Capital: Lilmendro
+Leader: *****
+Stability: 0%
+War Support: 0%
+Free Manpower: 24.00k
+
+Population:
+Elegible (2.17M)
+Non-Elegible (0.0M)
+
+Factories:
+Military: 2
+Civilian: 0
+Dockyards: 4
+Total: = 6
+
+Army: 5 Divisions
+(7.50k Manpower)
+(Tanks: 0)
+
+Navy: 0 Ships
+(00.00k Manpower)
+Battleship: 0 
+Heavy Cruiser: 0 
+Destroyer: 0
+Submarines: 0
+
+AirForce:
+(0 Manpower)
+Fighter: 0
+Cas: 0
+Tactical Bomber: 0
+Strategic Bomber: 0
+
+#Rosfhios Polity (RFB - RGB: 65 100 90)	
+Capital: Llanelli
+Leader: *****
+Stability: 0%
+War Support: 0%
+Free Manpower: 91.51k
+
+Population:
+Elegible (6.32M)
+Non-Elegible (0.0M)
+
+Factories:
+Military: 2
+Civilian: 14
+Dockyards: 3
+Total: = 19
+
+Army: 0 Divisions
+(00.00k Manpower)
+(Tanks: 0)
+
+Navy: 0 Ships
+(00.00k Manpower)
+Battleship: 0 
+Heavy Cruiser: 0 
+Destroyer: 0
+Submarines: 0
+
+AirForce:
+(0 Manpower)
+Fighter: 0
+Cas: 0
+Tactical Bomber: 0
+Strategic Bomber: 0
+
+#Serenvioled (SVD - RGB: 225 225 250)	 
+Capital: Seningen
+Leader: *****
+Stability: 0%
+War Support: 0%
+Free Manpower: 97.80k
+
+Population:
+Elegible (6.76M)
+Non-Elegible (0.0M)
+
+Factories:
+Military: 5
+Civilian: 12
+Dockyards: 4
+Total: = 21
+
+Army: 0 Divisions
+(00.00k Manpower)
+(Tanks: 0)
+
+Navy: 0 Ships
+(00.00k Manpower)
+Battleship: 0 
+Heavy Cruiser: 0 
+Destroyer: 0
+Submarines: 0
+
+AirForce:
+(0 Manpower)
+Fighter: 0
+Cas: 0
+Tactical Bomber: 0
+Strategic Bomber: 0
+
+#Sithius Imperium (SIT - RGB: 50 0 2)	
+Capital: Sith
+Leader: Emperor Valerius IX
+Stability: 0%
+War Support: 0%
+Free Manpower: 249.60k
+
+Population:
+Elegible (17.25M)
+Non-Elegible (0.0M)
+
+Factories:
+Military: 8
+Civilian: 14
+Dockyards: 6
+Total: = 28
+
+Army: 0 Divisions
+(00.00k Manpower)
+(Tanks: 0)
+
+Navy: 0 Ships
+(00.00k Manpower)
+Battleship: 0 
+Heavy Cruiser: 0 
+Destroyer: 0
+Submarines: 0
+
+AirForce:
+(0 Manpower)
+Fighter: 0
+Cas: 0
+Tactical Bomber: 0
+Strategic Bomber: 0
+
+#Sollerium Empire (SLU - RGB: 165 75 150)	
+Capital: Lakeford
+Leader: Shiprianus
+Stability: 0%
+War Support: 0%
+Free Manpower: 165.08k
+
+Population:
+Elegible (11.41M)
+Non-Elegible (0.0M)
+
+Factories:
+Military: 4
+Civilian: 8
+Dockyards: 4
+Total: = 16
+
+Army: 0 Divisions
+(00.00k Manpower)
+(Tanks: 0)
+
+Navy: 0 Ships
+(00.00k Manpower)
+Battleship: 0 
+Heavy Cruiser: 0 
+Destroyer: 0
+Submarines: 0
+
+AirForce:
+(0 Manpower)
+Fighter: 0
+Cas: 0
+Tactical Bomber: 0
+Strategic Bomber: 0
+
+#Soviet Novasovian People's Republic (NSA - RGB: 178 34 34)	
+Capital: Novagorod
+Leader: *****
+Stability: 0%
+War Support: 0%
+Free Manpower: 178.33k
+
+Population:
+Elegible (12.32M)
+Non-Elegible (0.0M)
+
+Factories:
+Military: 11
+Civilian: 16
+Dockyards: 5
+Total: = 32
+
+Army: 0 Divisions
+(00.00k Manpower)
+(Tanks: 0)
+
+Navy: 0 Ships
+(00.00k Manpower)
+Battleship: 0 
+Heavy Cruiser: 0 
+Destroyer: 0
+Submarines: 0
+
+AirForce:
+(0 Manpower)
+Fighter: 0
+Cas: 0
+Tactical Bomber: 0
+Strategic Bomber: 0
+
+#Thiryn Kingdom (THK - RGB: 279 13 20)	
+Capital: Cormosama
+Leader: Queen Elara Lorenthia
+Stability: 0%
+War Support: 0%
+Free Manpower: 74.51k
+
+Population:
+Elegible (6.62M)
+Non-Elegible (8.28M)
+
+Factories:
+Military: 3
+Civilian: 10
+Dockyards: 1
+Total: = 14
+
+Army: 8 Divisions
+(22.50k Manpower)
+(Tanks: 0)
+
+Navy: 14 Ships
+(8.50k Manpower)
+Battleship: 1 
+Heavy Cruiser: 4 
+Destroyer: 6
+Submarines: 3
+
+AirForce:
+(2.10k Manpower)
+Fighter: 52
+Cas: 27 
+Tactical Bomber: 7
+Strategic Bomber: 3
+
+#Torronese League (TOL - RGB: 95 200 255)	
+Capital: Riviera
+Leader: *****
+Stability: 0%
+War Support: 0%
+Free Manpower: 67.92k
+
+Population:
+Elegible (7.18M)
+Non-Elegible (0.0M)
+
+At War on Start: Zauern (Defensive: KOZ)
+
+Factories:
+Military: 4
+Civilian: 9
+Dockyards: 5
+Total: = 18
+
+Army: 15 Divisions
+(36.00k Manpower)
+(Tanks: 0)
+
+Navy: 18 Ships
+(10.22k Manpower)
+Battleship: 1
+Heavy Cruiser: 3
+Light Cruiser: 2
+Destroyer: 9
+Submarines: 3
+
+AirForce:
+(0 Manpower)
+Fighter: 0
+Cas: 0
+Tactical Bomber: 0
+Strategic Bomber: 0
+
+#Unified Aelosia (AEI - RGB: 40 155 50)	
+Capital: Prosperis
+Leader: *****
+Stability: 0%
+War Support: 0%
+Free Manpower: 42.18k
+
+Population:
+Elegible (3.07M)
+Non-Elegible (0.0M)
+
+Ideas: The Big Tree (++)
+
+Factories:
+Military: 2
+Civilian: 5
+Dockyards: 1
+Total: = 8
+
+Army: 0 Divisions
+(00.00k Manpower)
+(Tanks: 0)
+
+Navy: 0 Ships
+(00.00k Manpower)
+Battleship: 0 
+Heavy Cruiser: 0 
+Destroyer: 0
+Submarines: 0
+
+AirForce:
+(0 Manpower)
+Fighter: 0
+Cas: 0
+Tactical Bomber: 0
+Strategic Bomber: 0
+
+#United Provinces of Gengen (UPG - RGB: 230 140 50)	
+Capital: Movilla
+Leader: *****
+Stability: 42%
+War Support: 50%
+Free Manpower: 74.63k
+
+Population:
+Elegible (8.09M)
+Non-Elegible (0.0M)
+
+Factories:
+Military: 5
+Civilian: 11
+Dockyards: 4
+Total: = 20
+
+Army: 18 Divisions
+(42.50k Manpower)
+(Tanks: 0)
+
+Navy: 0 Ships
+(00.00k Manpower)
+Battleship: 0 
+Heavy Cruiser: 0 
+Destroyer: 0
+Submarines: 0
+
+AirForce:
+(0 Manpower)
+Fighter: 0
+Cas: 0
+Tactical Bomber: 0
+Strategic Bomber: 0
+
