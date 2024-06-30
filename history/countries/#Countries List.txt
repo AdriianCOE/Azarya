@@ -810,37 +810,33 @@ Strategic Bomber: 0
 #Thiryn Kingdom (THK - RGB: 279 13 20)	
 Capital: Cormosama
 Leader: Queen Elara Lorenthia
-Stability: 0%
-War Support: 0%
+Stability: 50%
+War Support: 60%
 Free Manpower: 74.51k
+Ideology: Neutrality
 
 Population:
 Elegible (6.62M)
-Non-Elegible (8.28M)
 
-Factories:
+Economy:
 Military: 3
-Civilian: 10
+Civilian: 9
 Dockyards: 1
-Total: = 14
+Total: = 13
 
+Resources:
+17 Steel, 3 oil, 4 Tungstenium, 4 Chromium, 5 Alluminium
+
+Armed Forces: 
 Army: 8 Divisions
 (22.50k Manpower)
 (Tanks: 0)
 
 Navy: 14 Ships
 (8.50k Manpower)
-Battleship: 1 
-Heavy Cruiser: 4 
-Destroyer: 6
-Submarines: 3
 
-AirForce:
+AirForce: 89 Planes
 (2.10k Manpower)
-Fighter: 52
-Cas: 27 
-Tactical Bomber: 7
-Strategic Bomber: 3
 
 #Torronese League (TOL - RGB: 95 200 255)	
 Capital: Riviera

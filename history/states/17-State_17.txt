@@ -2,11 +2,6 @@
 state={
 	id=17
 	name="Mooka Island"
-	history={
-		owner = DKG
-		add_core_of = DKG
-	}
-
 
 	provinces={
 		657 1301 1638 1832 2202 2570 2909 3287 3968 4178 4736 6142 6185 6199 6203 6234 6255 6264 6294 6325 6381

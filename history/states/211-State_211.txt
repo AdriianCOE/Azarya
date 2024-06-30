@@ -2,10 +2,7 @@
 state={
 	id=211
 	name="STATE_211"
-	history={
-		owner = DKG
-		add_core_of = DKG
-	}
+
 	provinces={
 		359 728 907 956 1143 1160 1440 1441 3038 3850 4340 6011 6033 6044 6063 6078 6096 6118 6122 
 	}
