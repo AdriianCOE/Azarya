@@ -84,21 +84,21 @@ recruit_character = UPG_aco2
 set_convoys = 92
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
 
 set_popularities = {
-	democratic = 80
-	fascism = 5
-	communism = 10
-	neutrality = 5
+	democratic = 79
+	fascism = 2
+	communism = 8
+	neutrality = 11
 }
 
 create_country_leader = {
-	ideology = oligarchism
+	ideology = conservatism
 }
 
 create_field_marshal = {

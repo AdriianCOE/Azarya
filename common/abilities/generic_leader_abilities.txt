@@ -1,3 +1,4 @@
+#####---------------------------------------------------------------------> edited by Greatexperiment
 ability = {
 	force_attack = {
 		name = ABILITY_FORCE_ATTACK
@@ -15,6 +16,7 @@ ability = {
 					limit = {
 						has_dlc = "Waking the Tiger"
 					}
+					NOT = { has_completed_focus = KMT_dare_to_die_corps }
 				}
 			}
 		}
@@ -65,6 +67,12 @@ ability = {
 		allowed = {
 			is_leading_army_group = no
 			is_border_war = no
+			OWNER = {
+				NOT = {
+					has_completed_focus = JAP_warrior_spirit
+					has_completed_focus = SPA_cultivate_fanaticism
+				}
+			}
 		}
 		
 		cost = 0.22
@@ -119,6 +127,7 @@ ability = {
 		
 		unit_modifiers = {
 			planning_speed = 4.0
+			land_reinforce_rate = 1
 		}
 		
 		
@@ -198,6 +207,7 @@ ability = {
 		cost = 0.1
 		duration = 168
 	}
+	
 	faster_naval_invasion_planning = {
 		name = ABILITY_FASTER_NAVAL_PLANNING
 		desc = ABILITY_FASTER_NAVAL_PLANNING_DESC
@@ -224,7 +234,16 @@ ability = {
 		type = army_leader
 		
 		allowed = {
-			has_ability = probing_attack
+			OR = {
+				AND = {
+					defense_skill_level > 7
+					has_trait = inflexible_strategist
+				}
+				
+				has_ability = probing_attack
+			}
+			
+
 			is_border_war = no
 		}
 		
@@ -251,9 +270,9 @@ ability = {
 		
 		
 		unit_modifiers = {
-			river_crossing_factor = -0.4
+			river_crossing_factor = -0.5
 			river = {
-				attack = 0.2
+				attack = 0.4
 			}
 		}
 		
@@ -280,7 +299,21 @@ ability = {
 		type = army_leader
 		
 		allowed = {
-			has_ability = extra_suplies
+			OR = {
+				OR = {
+					AND = {
+						logistics_skill_level > 7
+						OR = {
+							has_trait = inflexible_strategist
+							has_trait = brilliant_strategist
+						}
+						
+					}
+				}
+							
+				has_ability = extra_suplies
+			}
+			
 			is_border_war = no
 		}
 		
@@ -304,7 +337,21 @@ ability = {
 		type = army_leader
 		
 		allowed = {
-			has_ability = requisition_winter_gear
+			OR = {
+				OR = {
+					AND = {
+						logistics_skill_level > 7
+						OR = {
+							has_trait = inflexible_strategist
+							has_trait = brilliant_strategist
+						}
+						
+					}
+				}
+							
+				has_ability = requisition_winter_gear
+			}			
+			
 			is_border_war = no
 		}
 		
@@ -330,5 +377,5 @@ ability = {
 				add = 2
 			}
 		}
-	}
+	}	
 }

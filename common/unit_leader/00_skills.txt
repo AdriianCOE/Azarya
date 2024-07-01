@@ -193,4 +193,24 @@ leader_skills = {
 			operation_outcome = 0.1
 		}
 	}
+	3 = {
+		cost = 2500
+		type = operative
+		modifier = {
+			intel_network_gain = 0.3
+			intelligence_agency_defense = 0.3
+			operation_outcome = 0.2
+		}
+	}
+	4 = {
+		cost = 4500
+		type = operative
+		modifier = {
+			intel_network_gain = 0.3
+			intelligence_agency_defense = 0.3
+			operation_outcome = 0.2
+			enemy_operative_capture_chance_factor = 0.1
+			enemy_operative_detection_chance_factor = 0.2
+		}
+	}	
 }
