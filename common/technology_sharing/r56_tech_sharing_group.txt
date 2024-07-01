@@ -746,7 +746,6 @@ technology_sharing_group = {
 	research_sharing_per_country_bonus = 0.1
 
     available = {
-        ENG = { has_government = communism }
     
     }
 
@@ -764,7 +763,6 @@ technology_sharing_group = {
 	research_sharing_per_country_bonus = 0.1
 
     available = {
-        HOL = { has_government = fascism }
     }
 }
 
@@ -780,7 +778,6 @@ technology_sharing_group = {
     available = {
         OR = {
 		
-		is_puppet_of = HOL
 		}
         
     }
@@ -801,9 +798,6 @@ technology_sharing_group = {
 	available = {
 		OR = {
 		}
-		NOT = { POL = { has_war_with = GER } }
-		country_exists = POL
-		country_exists = GER
     }
 }
 
@@ -845,7 +839,6 @@ technology_sharing_group = {
 
 			}
 		}
-     		RAJ = { has_government = communism }
     	}
 
 }
