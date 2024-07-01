@@ -112,11 +112,6 @@ technology_sharing_group = {
 
 	categories = { summer_clothing_tech winter_clothing_tech r56_shock_infantry_tech r56_desert_infantry_tech r56_jaeger_infantry_tech r56_jungle_infantry_tech r56_marines_infantry_tech r56_mountain_infantry_tech r56_paratroops_infantry_tech r56_special_forces_training_tech } #land_doctrine air_doctrine naval_doctrine
 	
-    available = {
-			USA = { 
-				NOT = { has_war_with = CAN } 
-		}
-    }
 }
 
 ###------> FIN <><> <><> <><> <><> <><>
@@ -296,12 +291,60 @@ technology_sharing_group = {
 	
     available = {
 		OR = {
-			original_tag = ICE
-			original_tag = NOR
-			original_tag = DEN
-			original_tag = SWE
-			original_tag = FIN
-			original_tag = EST
+			
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
 			is_subject_of = NOR
 			is_in_faction_with = NOR
 		}
@@ -319,12 +362,60 @@ technology_sharing_group = {
 	
     available = {
 		OR = {
-			original_tag = ICE
-			original_tag = NOR
-			original_tag = DEN
-			original_tag = SWE
-			original_tag = FIN
-			original_tag = EST
+			
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
 			is_subject_of = NOR
 			is_in_faction_with = NOR
 		}
@@ -342,14 +433,78 @@ technology_sharing_group = {
 	
     available = {
 		OR = {
-			original_tag = ICE
-			original_tag = NOR
-			original_tag = DEN
-			original_tag = HOL
-			original_tag = FRA
-			original_tag = ENG
-			original_tag = CAN
-			original_tag = USA
+			
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
 			is_subject_of = NOR
 			is_in_faction_with = NOR
 		}
@@ -367,15 +522,87 @@ technology_sharing_group = {
 	
     available = {
 		OR = {
-			original_tag = ICE
-			original_tag = NOR
-			original_tag = DEN
-			original_tag = FIN
-			original_tag = HOL
-			original_tag = GER
-			original_tag = AUS
-			original_tag = HUN
-			original_tag = ITA
+			
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
 			is_subject_of = NOR
 			is_in_faction_with = NOR
 		}
@@ -393,15 +620,87 @@ technology_sharing_group = {
 	
     available = {
 		OR = {
-			original_tag = ICE
-			original_tag = NOR
-			original_tag = DEN
-			original_tag = FIN
-			original_tag = EST
-			original_tag = LAT
-			original_tag = KAR
-			original_tag = SOV
-			original_tag = UKR
+			
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
 			is_subject_of = NOR
 			is_in_faction_with = NOR
 		}
@@ -422,7 +721,15 @@ technology_sharing_group = {
 	available = {
 		OR = {
 			is_in_faction_with = PRU
-			original_tag = PRU
+			
+
+
+
+
+
+
+
+
 		}
 	}
 }
@@ -442,7 +749,15 @@ technology_sharing_group = {
 	available = {
 		OR = {
 			is_in_faction_with = TUR
-			original_tag = TUR
+			
+
+
+
+
+
+
+
+
 		}
 	}
 }
@@ -558,11 +873,27 @@ technology_sharing_group = {
     	available = {
 		OR = {
 			AND = {
-        			original_tag = SOV
+					
+
+
+
+
+
+
+
+
       				is_in_faction_with = RAJ
 			}
 			AND = {
-        			original_tag = RAJ
+					
+
+
+
+
+
+
+
+
       				is_in_faction_with = SOV
 			}
 		}

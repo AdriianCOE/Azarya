@@ -324,22 +324,18 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				NOT = { tag = GER }
 			}
 			
 			modifier = {
 				factor = 2
-				tag = USA
 			}
 			
 			modifier = {
 				factor = 2
-				tag = ENG
 			}
 			
 			modifier = {
 				factor = 2
-				tag = JAP
 			}
 
 			modifier = {
@@ -569,22 +565,18 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				tag = GER
 			}
 			
 			modifier = {
 				factor = 0.25
-				tag = USA
 			}
 			
 			modifier = {
 				factor = 0.25
-				tag = ENG
 			}
 			
 			modifier = {
 				factor = 0.25
-				tag = JAP
 			}
 
 			modifier = {
@@ -903,7 +895,6 @@ technologies = {
 		ai_will_do = {
 			factor = 5
 			modifier = {
-				tag = USA
 				factor = 0.5
 			}
 			modifier = {
@@ -969,7 +960,6 @@ technologies = {
 		ai_will_do = {
 			factor = 5
 			modifier = {
-				tag = USA
 				factor = 0.5
 			}	
 			modifier = {
@@ -1026,7 +1016,6 @@ technologies = {
 		ai_will_do = {
 			factor = 5
 			modifier = {
-				tag = USA
 				factor = 0.5
 			}	
 			modifier = {
@@ -1074,7 +1063,6 @@ technologies = {
 		ai_will_do = {
 			factor = 5
 			modifier = {
-				tag = USA
 				factor = 0.5
 			}	
 			modifier = {
@@ -1118,7 +1106,6 @@ technologies = {
 		ai_will_do = {
 			factor = 5
 			modifier = {
-				tag = USA
 				factor = 0.5
 			}
 			modifier = {
@@ -1172,9 +1159,6 @@ technologies = {
 			factor = 5
 			modifier = {
 				OR = {
-					tag = GER
-					tag = ITA
-					tag = JAP
 				}
 				has_war = yes
 				factor = 5
@@ -1228,9 +1212,6 @@ technologies = {
 			factor = 2
 			modifier = {
 				OR = {
-					tag = GER
-					tag = ITA
-					tag = JAP
 					rubber < 1
 				}
 				has_war = yes
@@ -1238,8 +1219,6 @@ technologies = {
 			}
 			modifier = {
 				OR = {
-					tag = USA
-					tag = SOV
 				}
 				has_war = yes
 				factor = 5				
@@ -1289,9 +1268,6 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GER
-					tag = ITA
-					tag = JAP
 				}
 				has_war = yes
 				factor = 25
@@ -1309,7 +1285,6 @@ technologies = {
 				oil > 30
 			}			
 			modifier = {
-				original_tag = GER			
 				has_war = yes
 				factor = 3
 			}	
@@ -1348,9 +1323,6 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GER
-					tag = ITA
-					tag = JAP
 				}
 				has_war = yes
 				factor = 25
@@ -1519,7 +1491,6 @@ technologies = {
 			}
 			modifier = {
 				factor = 3
-				original_tag = USA
 			}			
 		}
 	}
@@ -1611,7 +1582,6 @@ technologies = {
 			}
 			modifier = {
 				factor = 3
-				original_tag = USA
 			}				
 		}
 	}	
@@ -1715,7 +1685,6 @@ technologies = {
 			}
 			modifier = {
 				factor = 3.5
-				original_tag = USA
 			}				
 		}
 	}	
@@ -1807,7 +1776,6 @@ technologies = {
 			}
 			modifier = {
 				factor = 3.5
-				original_tag = USA
 			}				
 		}
 	}		
@@ -1903,7 +1871,6 @@ technologies = {
 			}
 			modifier = {
 				factor = 3.5
-				original_tag = USA
 			}				
 		}
 	}	
@@ -1991,7 +1958,6 @@ technologies = {
 			}
 			modifier = {
 				factor = 3
-				original_tag = USA
 			}				
 		}
 	}	
@@ -2076,7 +2042,6 @@ technologies = {
 			}
 			modifier = {
 				factor = 3
-				original_tag = USA
 			}				
 		}
 	}
@@ -2161,7 +2126,6 @@ technologies = {
 			}
 			modifier = {
 				factor = 3
-				original_tag = USA
 			}				
 		}
 	}
@@ -2241,7 +2205,6 @@ technologies = {
 			}
 			modifier = {
 				factor = 3
-				original_tag = USA
 			}				
 		}
 	}
@@ -2281,11 +2244,6 @@ technologies = {
 				factor = 5
 				has_capitulated = no
 				OR = {
-					original_tag = JAP
-					original_tag = GER
-					original_tag = ITA
-					original_tag = USA
-					original_tag = SOV
 					rubber < 1
 				}
 				
@@ -2344,11 +2302,6 @@ technologies = {
 				factor = 5
 				has_capitulated = no
 				OR = {
-					original_tag = JAP
-					original_tag = GER
-					original_tag = ITA
-					original_tag = USA
-					original_tag = SOV
 					rubber < 1
 				}
 				
@@ -2405,11 +2358,6 @@ technologies = {
 				factor = 5
 				has_capitulated = no
 				OR = {
-					original_tag = JAP
-					original_tag = GER
-					original_tag = ITA
-					original_tag = USA
-					original_tag = SOV
 					rubber < 1
 				}
 				
@@ -2461,11 +2409,6 @@ technologies = {
 				factor = 5
 				has_capitulated = no
 				OR = {
-					original_tag = JAP
-					original_tag = GER
-					original_tag = ITA
-					original_tag = USA
-					original_tag = SOV
 					rubber < 1
 				}
 				

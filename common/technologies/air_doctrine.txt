@@ -440,11 +440,9 @@ technologies = {
 				factor = 2
 			}
 			modifier = {
-				tag = ENG
 				factor = 1.5
 			}
 			modifier = {
-				tag = USA
 				factor = 0.5
 			}
 		}
@@ -497,11 +495,9 @@ technologies = {
 				factor = 2
 			}
 			modifier = {
-				tag = ENG
 				factor = 0.5
 			}
 			modifier = {
-				tag = USA
 				factor = 1.5
 			}
 		}
@@ -773,10 +769,8 @@ technologies = {
 			
 			modifier = {
 				factor = 0
-				tag = USA
 			}
 			modifier = {
-				tag = SOV
 				factor = 4
 			}
 			modifier = {
@@ -833,7 +827,6 @@ technologies = {
 			}
 
 			modifier = {
-				tag = GER
 				factor = 0.5
 			}
 		}
@@ -887,7 +880,6 @@ technologies = {
 				factor = 2
 			}
 			modifier = {
-				tag = GER
 				factor = 0.5
 			}
 		}
@@ -941,7 +933,6 @@ technologies = {
 				factor = 2
 			}
 			modifier = {
-				tag = GER
 				factor = 0.5
 			}
 		}
@@ -994,7 +985,6 @@ technologies = {
 				factor = 2
 			}
 			modifier = {
-				tag = GER
 				factor = 0.5
 			}
 		}
@@ -1042,7 +1032,6 @@ technologies = {
 				factor = 2
 			}
 			modifier = {
-				tag = GER
 				factor = 0.5
 			}
 		}
@@ -1104,7 +1093,6 @@ technologies = {
 				factor = 2
 			}
 			modifier = {
-				tag = GER
 				factor = 0.5
 			}
 		}
@@ -1409,7 +1397,6 @@ technologies = {
 			
 			modifier = {
 				factor = 0
-				tag = USA
 			}
 			modifier = {
 				ai_land_doctrine_tier_1_trigger = yes

@@ -60,7 +60,6 @@ leader_traits = {
 		
 		ai_strategy = { #Im mad >:(
 			type = antagonize
-			id = "SOV"			
 			value = 200
 		}
 	}
@@ -87,43 +86,36 @@ leader_traits = {
 
 		ai_strategy = { 
 			type = send_lend_lease_desire
-			id = "GER"
 			value = 750
 		}
 
 		ai_strategy = { #Worry about yourself
 			type = dont_defend_ally_borders
-			id = "GER"
 			value = 750
 		}
 
 		ai_strategy = { #Worry about yourself
 			type = send_volunteers_desire
-			id = "GER"
 			value = -750
 		}
 
 		ai_strategy = { #Worry about yourself
 			type = support
-			id = "GER"
 			value = -750
 		}
 
 		ai_strategy = { #dad help me
 			type = asking_foreign_garrison
-			id = "GER"
 			value = 750
 		}
 
 		ai_strategy = {
 			type = equipment_market_trade_desire
-			id = "GER"
 			value = 100
 		}
 
 		ai_strategy = {
 			type = equipment_market_trade_desire
-			id = "ITA"
 			value = 75
 		}
 	}
@@ -133,19 +125,16 @@ leader_traits = {
 		random = no
 		ai_strategy = {
 			type = antagonize
-			id = "SOV"			
 			value = 25
 		}
 
 		ai_strategy = {
 			type = alliance        
-			id = "SOV"       
 			value = -75
 		}
 
 		ai_strategy = { 
 			type = befriend       
-			id = "SOV"       
 			value = -25
 		}
 		
@@ -174,13 +163,11 @@ leader_traits = {
 
 		ai_strategy = { #daddy UwU
 			type = befriend       
-			id = "USA"       
 			value = 999
 		}
 
 		ai_strategy = { #daddy UwU
 			type = alliance        
-			id = "USA"       
 			value = 999
 		}
 	}
@@ -197,49 +184,41 @@ leader_traits = {
 
 		ai_strategy = {
 			type = alliance      
-			id = "GER"       
 			value = -200
 		}
 
 		ai_strategy = {
 			type = alliance   
-			id = "JAP"      
 			value = -200
 		}
 
 		ai_strategy = {
 			type = befriend       
-			id = "JAP"       
 			value = -200
 		}
 
 		ai_strategy = {
 			type = befriend       
-			id = "USA"       
 			value = 200
 		}
 
 		ai_strategy = {
 			type = alliance      
-			id = "USA"       
 			value = 200
 		}
 
 		ai_strategy = {
 			type = antagonize       
-			id = "ELS"     
 			value = 100
 		}
 
 		ai_strategy = {
 			type = antagonize       
-			id = "GUA"
 			value = 100
 		}
 
 		ai_strategy = {
 			type = antagonize       
-			id = "NIC"
 			value = 100
 		}
 
@@ -498,37 +477,31 @@ leader_traits = {
 
 		ai_strategy = {
 			type = support
-			id = "GER"
 			value = 15
 		}
 
 		ai_strategy = {
 			type = support
-			id = "ITA"
 			value = 15
 		}
 
 		ai_strategy = {
 			type = send_lend_lease_desire
-			id = "GER"
 			value = -15
 		}
 
 		ai_strategy = {
 			type = send_lend_lease_desire
-			id = "ITA"
 			value = -15
 		}
 
 		ai_strategy = {
 			type = equipment_market_trade_desire
-			id = "GER"
 			value = 50
 		}
 
 		ai_strategy = {
 			type = equipment_market_trade_desire
-			id = "ITA"
 			value = 50
 		}
 
@@ -571,22 +544,18 @@ leader_traits = {
 		
 		ai_strategy = {
 			type = occupation_policy
-			id = "ISR"        
 			value = 3				
 		}
 		ai_strategy = {
 			type = antagonize       
-			id = "ISR"        
 			value = 200
 		}
 		ai_strategy = {
 			type = antagonize       
-			id = "POL"        
 			value = 200
 		}
 		ai_strategy = {
 			type = occupation_policy
-			id = "POL"        
 			value = 3				
 		}							
 	}	
@@ -767,12 +736,10 @@ leader_traits = {
 
 		ai_strategy = { #Hates imperialists
 			type = antagonize
-			id = "ENG"			
 			value = 75
 		}
 		ai_strategy = { 
 			type = antagonize
-			id = "FRA"			
 			value = 50
 		}
 	}
@@ -843,7 +810,6 @@ leader_traits = {
 		fascism_acceptance = 20
 		ai_strategy = {
 			type = befriend
-			id = "GER"			
 			value = 25
 		}
 	}
@@ -890,7 +856,6 @@ leader_traits = {
 		random = no
 		ai_strategy = {
 			type = befriend
-			id = "ITA"			
 			value = 50
 		}
 	}
@@ -1654,12 +1619,10 @@ leader_traits = {
 
 		ai_strategy = { #Hate imperialists
 			type = antagonize
-			id = "ENG"			
 			value = 50
 		}
 		ai_strategy = { 
 			type = antagonize
-			id = "FRA"			
 			value = 50
 		}
 	}
@@ -1673,12 +1636,10 @@ leader_traits = {
 
 		ai_strategy = { #Hate imperialists
 			type = antagonize
-			id = "ENG"			
 			value = 50
 		}
 		ai_strategy = { 
 			type = antagonize
-			id = "FRA"			
 			value = 50
 		}
 	}
@@ -1693,12 +1654,10 @@ leader_traits = {
 
 		ai_strategy = { #Hate imperialists
 			type = antagonize
-			id = "ENG"			
 			value = 50
 		}
 		ai_strategy = { 
 			type = antagonize
-			id = "FRA"			
 			value = 50
 		}
 	}
@@ -1731,7 +1690,6 @@ leader_traits = {
 
 		ai_strategy = { 
 			type = befriend
-			id = "SOV"			
 			value = 100
 		}
 	}
@@ -2261,43 +2219,36 @@ leader_traits = {
 		
 		ai_strategy = {
 			type = alliance
-			id = "CHI"
 			value = 750
 		}
 
 		ai_strategy = {
 			type = befriend
-			id = "CHI"
 			value = 25
 		}
 
 		ai_strategy = {
 			type = alliance
-			id = "PRC"
 			value = 750
 		}
 
 		ai_strategy = {
 			type = alliance
-			id = "JAP"
 			value = -250
 		}
 
 		ai_strategy = {
 			type = alliance
-			id = "ENG"
 			value = -250
 		}
 
 		ai_strategy = {
 			type = alliance
-			id = "GER"
 			value = -250
 		}
 
 		ai_strategy = {
 			type = alliance
-			id = "SOV"
 			value = -250
 		}
 	}
@@ -2308,42 +2259,34 @@ leader_traits = {
 
 			ai_strategy = {
 				type = antagonize
-				id = "CHI"
 				value = 1000
 			}
 			ai_strategy = {
 				type = antagonize
-				id = "PRC"
 				value = 200
 			}
 			ai_strategy = {
 				type = antagonize
-				id = "SHX"
 				value = 200
 			}
 			ai_strategy = {
 				type = antagonize
-				id = "GXC"
 				value = 200
 			}
 			ai_strategy = {
 				type = antagonize
-				id = "YUN"
 				value = 200
 			}
 			ai_strategy = {
 				type = antagonize
-				id = "XSM"
 				value = 200
 			}
 			ai_strategy = {
 				type = antagonize
-				id = "ENG"
 				value = 200
 			}
 			ai_strategy = {
 				type = antagonize
-				id = "USA"
 				value = 200
 			}
 	}
@@ -2354,47 +2297,38 @@ leader_traits = {
 
 			ai_strategy = {
 				type = alliance
-				id = "CHI"
 				value = 200
 			}
 			ai_strategy = {
 				type = befriend
-				id = "CHI"
 				value = 200
 			}
 			ai_strategy = {
 				type = antagonize
-				id = "PRC"
 				value = 200
 			}
 			ai_strategy = {
 				type = antagonize
-				id = "SHX"
 				value = 200
 			}
 			ai_strategy = {
 				type = antagonize
-				id = "GXC"
 				value = 200
 			}
 			ai_strategy = {
 				type = antagonize
-				id = "YUN"
 				value = 200
 			}
 			ai_strategy = {
 				type = antagonize
-				id = "XSM"
 				value = 200
 			}
 			ai_strategy = {
 				type = antagonize
-				id = "ENG"
 				value = 200
 			}
 			ai_strategy = {
 				type = antagonize
-				id = "USA"
 				value = 200
 			}
 	}
@@ -2405,37 +2339,30 @@ leader_traits = {
 
 			ai_strategy = {
 				type = antagonize
-				id = "SOV"
 				value = 200
 			}
 			ai_strategy = {
 				type = ignore
-				id = "CHI"
 				value = 50
 			}
 			ai_strategy = {
 				type = ignore
-				id = "SHX"
 				value = 50
 			}
 			ai_strategy = {
 				type = ignore
-				id = "PRC"
 				value = 50
 			}
 			ai_strategy = {
 				type = ignore
-				id = "XSM"
 				value = 50
 			}
 			ai_strategy = {
 				type = ignore
-				id = "GXC"
 				value = 50
 			}
 			ai_strategy = {
 				type = ignore
-				id = "YUN"
 				value = 50
 			}
 	}
@@ -2446,42 +2373,34 @@ leader_traits = {
 
 			ai_strategy = {
 				type = antagonize
-				id = "SOV"
 				value = 200
 			}
 			ai_strategy = {
 				type = alliance
-				id = "CHI"
 				value = 200
 			}
 			ai_strategy = {
 				type = befriend
-				id = "CHI"
 				value = 200
 			}
 			ai_strategy = {
 				type = ignore
-				id = "SHX"
 				value = 50
 			}
 			ai_strategy = {
 				type = ignore
-				id = "PRC"
 				value = 50
 			}
 			ai_strategy = {
 				type = ignore
-				id = "XSM"
 				value = 50
 			}
 			ai_strategy = {
 				type = ignore
-				id = "GXC"
 				value = 50
 			}
 			ai_strategy = {
 				type = ignore
-				id = "YUN"
 				value = 50
 			}
 	}
@@ -2606,27 +2525,22 @@ leader_traits = {
 		mobilization_speed = 0.1
 		ai_strategy = { # Anti-imperialist
 			type = antagonize       
-			id = "ENG"
 			value = 10
 		}
 		ai_strategy = {
 			type = antagonize       
-			id = "FRA"
 			value = 10
 		}
 		ai_strategy = {
 			type = befriend      
-			id = "PER"
 			value = 25
 		}
 		ai_strategy = { # We're related
 			type = befriend      
-			id = "JOR"
 			value = 100
 		}
 		ai_strategy = {
 			type = protect     
-			id = "JOR"
 			value = 50
 		}
 	}
@@ -3276,7 +3190,6 @@ leader_traits = {
 		resistance_damage_to_garrison = -0.05
 		ai_strategy = { # Somewhat collaborationist
 			type = befriend
-			id = "ENG"			
 			value = 10
 		}
 	}
@@ -3360,7 +3273,6 @@ leader_traits = {
 		political_power_factor = -0.05
 		ai_strategy = {
 			type = befriend
-			id = "GER"			
 			value = 75
 		}
 	}
@@ -3378,7 +3290,6 @@ leader_traits = {
 		random = no
 		ai_strategy = {
 			type = antagonize
-			id = "POL"			
 			value = 200
 		}
 		
@@ -4455,12 +4366,10 @@ leader_traits = {
 		surrender_limit = 0.1
 		ai_strategy = { # Theocracies and Shah's don't get along very well
 			type = antagonize
-			id = "PER"			
 			value = 25
 		}
 		ai_strategy = { # We're chill, I guess
 			type = protect
-			id = "OMA"			
 			value = 10
 		}
 	}
@@ -4666,7 +4575,6 @@ leader_traits = {
 		improve_relations_maintain_cost_factor = 1
 		ai_strategy = {
 			type = befriend
-			id = "JAP"
 			value = 100
 		}		
 	}
@@ -4682,7 +4590,6 @@ leader_traits = {
 		random = no
 		ai_strategy = {
 			type = befriend
-			id = "GER"
 			value = 100
 		}
 	}
@@ -5121,7 +5028,6 @@ leader_traits = {
 		offensive_war_stability_factor = 0.15
 		ai_strategy = { # This man despises the british
 			type = antagonize
-			id = "ENG"			
 			value = 50
 		}
 	}
@@ -5152,17 +5058,14 @@ leader_traits = {
 		surrender_limit = 0.15
 		ai_strategy = {
 			type = antagonize
-			id = "ENG"			
 			value = 25
 		}
 		ai_strategy = {
 			type = befriend
-			id = "IRQ"			
 			value = 25
 		}
 		ai_strategy = { 
 			type = befriend
-			id = "SAU"			
 			value = 25
 		}
 	}
@@ -5173,7 +5076,6 @@ leader_traits = {
 		army_core_defence_factor = 0.1
 		ai_strategy = {
 			type = befriend
-			id = "SOV"			
 			value = 25
 		}
 	}
@@ -5184,7 +5086,6 @@ leader_traits = {
 		army_speed_factor = 0.1
 		ai_strategy = {
 			type = befriend
-			id = "SOV"			
 			value = 25
 		}
 	}

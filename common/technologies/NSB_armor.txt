@@ -266,18 +266,15 @@ technologies = {
 				factor = 2
 				is_major = yes
 				not = {
-					tag = JAP
 					num_of_military_factories < 50
 				}
 			}
 			modifier = {
 				is_major = yes
-				not = { tag = JAP }
 				has_war = yes
 				factor = 10 #you are embarassing yourself
 			}
 			modifier = {
-				tag = SOV
 				factor = 3
 			}
 
@@ -339,13 +336,10 @@ technologies = {
 				add = 0.4
 				is_major = yes
 				NOT = {
-					TAG = GER
 				}
 			}
 			modifier = {
 				OR = {
-					original_tag = USA
-					original_tag = JAP
 				}
 				add = 3
 			}
@@ -405,9 +399,6 @@ technologies = {
 			}
 			modifier = {
 				OR = {
-					original_tag = USA
-					original_tag = JAP
-					original_tag = ENG
 				}
 				add = 3
 			}
@@ -597,13 +588,11 @@ technologies = {
 				factor = 2
 				is_major = yes
 				not = {
-					tag = JAP
 					num_of_military_factories < 50
 				}
 				date > "1937.9.1"
 			}
 			modifier = {
-				tag = SOV
 				factor = 1.5
 			}
 			modifier = {
@@ -623,12 +612,10 @@ technologies = {
 
 			modifier = { #Rush
 				factor = 5.0
-				tag = GER
 			}
 
 			modifier = {
 				factor = 15.0
-				tag = GER
 				has_opinion_modifier = sov_ger_treaty
 			}
 		}
@@ -670,7 +657,6 @@ technologies = {
 				factor = 2
 				is_major = yes
 				not = {
-					tag = JAP
 					num_of_military_factories < 50
 				}
 			}
@@ -680,12 +666,10 @@ technologies = {
 			}
 			modifier = {
 				factor = 2
-				tag = GER
 			}
 
 			modifier = {
 				factor = 3
-				tag = SOV
 			}
 
 			modifier = {
@@ -705,7 +689,6 @@ technologies = {
 
 			modifier = {
 				factor = 15.0
-				tag = GER
 				has_opinion_modifier = sov_ger_treaty
 			}
 		}
@@ -929,11 +912,9 @@ technologies = {
 				date > "1939.1.1"
 			}
 			modifier = {
-				tag = FRA
 				factor = 3
 			}
 			modifier = {
-				tag = JAP
 				num_of_military_factories < 100
 				factor = 0
 			}
@@ -975,7 +956,6 @@ technologies = {
 		ai_will_do = {
 			factor = 0.8
 			modifier = {
-				tag = JAP
 				num_of_military_factories < 100
 				factor = 0
 			}

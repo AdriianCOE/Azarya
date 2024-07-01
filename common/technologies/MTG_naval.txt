@@ -53,7 +53,6 @@ technologies = {
 			
 			modifier = {
 				factor = 4
-				tag = ENG
 			}
 			modifier = {
 				not = {
@@ -102,8 +101,6 @@ technologies = {
 			modifier = {
 				factor = 4
 				OR = {
-					tag = ENG
-					tag = JAP
 				}
 			}
 			modifier = {
@@ -158,9 +155,6 @@ technologies = {
 			modifier = {
 				factor = 4
 				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
 				}
 			}
 			modifier = {
@@ -206,9 +200,6 @@ technologies = {
 			modifier = {
 				factor = 4
 				OR = {
-					original_tag = ENG
-					original_tag = JAP
-					original_tag = USA
 				}
 			}
 			modifier = {
@@ -256,9 +247,6 @@ technologies = {
 			modifier = {
 				factor = 4
 				OR = {
-					original_tag = ENG
-					original_tag = JAP
-					original_tag = USA
 				}
 			}
 			modifier = {
@@ -303,7 +291,6 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = ENG
 			}
 		}
 		
@@ -697,9 +684,6 @@ technologies = {
 			modifier = {
 				factor = 4
 				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
 				}
 			}
 			modifier = {
@@ -763,9 +747,6 @@ technologies = {
 			modifier = {
 				factor = 4
 				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
 				}
 			}
 			modifier = {
@@ -822,9 +803,6 @@ technologies = {
 			
 			modifier = {
 				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
 				}
 				factor = 4
 			}
@@ -882,8 +860,6 @@ technologies = {
 			modifier = {
 				factor = 2
 				OR = {
-					tag = ENG
-					tag = USA
 				}
 			}
 			modifier = {
@@ -932,8 +908,6 @@ technologies = {
 			modifier = {
 				factor = 2
 				OR = {
-					tag = ENG
-					tag = USA
 				}
 			}
 			modifier = {
@@ -988,9 +962,6 @@ technologies = {
 			modifier = {
 				factor = 3.5
 				OR = {
-					tag = GER
-					tag = JAP
-					tag = USA
 				}
 			}
 			modifier = {
@@ -1047,9 +1018,6 @@ technologies = {
 			modifier = {
 				factor = 3
 				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
 				}
 			}
 		}
@@ -1100,9 +1068,6 @@ technologies = {
 			modifier = {
 				factor = 2
 				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
 				}
 			}
 		}
@@ -1144,8 +1109,6 @@ technologies = {
 			modifier = {
 				factor = 4
 				OR = {
-					tag = ENG
-					tag = USA
 				}
 			}
 			modifier = {
@@ -1206,9 +1169,6 @@ technologies = {
 			modifier = {
 				factor = 2
 				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
 				}
 			}
 			modifier = {
@@ -1275,9 +1235,6 @@ technologies = {
 			modifier = {
 				factor = 2
 				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
 				}
 			}
 			modifier = {
@@ -1331,7 +1288,6 @@ technologies = {
 			
 			modifier = {
 				factor = 25
-				tag = JAP
 			}
 		}
 		
@@ -1370,7 +1326,6 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				tag = USA
 			}
 			modifier = {
 				is_major = no
@@ -1428,7 +1383,6 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				tag = USA
 
 			}
 			modifier = {
@@ -1478,7 +1432,6 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				tag = USA
 			}
 			modifier = {
 				factor = 4
@@ -1548,9 +1501,6 @@ early_ship_hull_carrier = {
 			modifier = {
 				factor = 8
 				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
 				}
 			}
 			modifier = {
@@ -1605,9 +1555,6 @@ early_ship_hull_carrier = {
 			modifier = {
 				factor = 8
 				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
 				}
 			}
 			modifier = {
@@ -1662,9 +1609,6 @@ early_ship_hull_carrier = {
 			modifier = {
 				factor = 8
 				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
 				}
 			}
 			modifier = {
@@ -1718,9 +1662,6 @@ early_ship_hull_carrier = {
 			modifier = {
 				factor = 8
 				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
 				}
 			}
 			modifier = {
@@ -1767,9 +1708,6 @@ early_ship_hull_carrier = {
 			modifier = {
 				factor = 8
 				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
 				}
 			}
 			modifier = {
@@ -1833,8 +1771,6 @@ early_ship_hull_carrier = {
 			modifier = {
 				factor = 7
 				OR = {
-					tag = GER
-					tag = USA
 				}
 			}
 			modifier = {
@@ -1894,8 +1830,6 @@ early_ship_hull_carrier = {
 			modifier = {
 				factor = 7
 				OR = {
-					tag = GER
-					tag = USA
 				}
 			}
 			modifier = {
@@ -1957,8 +1891,6 @@ early_ship_hull_carrier = {
 			modifier = {
 				factor = 7
 				OR = {
-					tag = GER
-					tag = USA
 				}
 			}
 			modifier = {
@@ -2013,8 +1945,6 @@ early_ship_hull_carrier = {
 			modifier = {
 				factor = 7
 				OR = {
-					tag = GER
-					tag = USA
 				}
 			}
 			modifier = {
@@ -2062,8 +1992,6 @@ early_ship_hull_carrier = {
 			modifier = {
 				factor = 7
 				OR = {
-					tag = GER
-					tag = USA
 				}
 			}
 			modifier = {
@@ -2116,8 +2044,6 @@ early_ship_hull_carrier = {
 			modifier = {
 				factor = 7
 				OR = {
-					tag = GER
-					tag = HOL
 				}
 			}
 			modifier = {
@@ -2177,8 +2103,6 @@ early_ship_hull_carrier = {
 			modifier = {
 				factor = 7
 				OR = {
-					tag = GER
-					tag = HOL
 				}
 			}
 			modifier = {

@@ -130,7 +130,6 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				tag = USA
 				factor = 4
 			}
 		}
@@ -168,8 +167,6 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = ENG
-					tag = USA
 				}
 				factor = 5
 			}
@@ -219,8 +216,6 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = ENG
-					tag = USA
 				}
 				factor = 5
 			}
@@ -269,8 +264,6 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = ENG
-					tag = USA
 				}
 				factor = 4
 			}
@@ -317,8 +310,6 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = ENG
-					tag = USA
 				}
 				factor = 4
 			}
@@ -369,8 +360,6 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = ENG
-					tag = USA
 				}
 				factor = 5
 			}
@@ -527,7 +516,6 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				tag = GER
 			}
 		}
 		
@@ -619,12 +607,10 @@ technologies = {
 			modifier = {
 				factor = 3
 
-				tag = GER
 			}
 			modifier = {
 				factor = 3
 
-				tag = SOV
 			}
 		}
 		categories = {
@@ -661,12 +647,10 @@ technologies = {
 			modifier = {
 				factor = 3
 
-				tag = GER
 			}
 			modifier = {
 				factor = 3
 
-				tag = SOV
 			}
 		}
 		categories = {
@@ -703,12 +687,10 @@ technologies = {
 			modifier = {
 				factor = 3
 
-				tag = GER
 			}
 			modifier = {
 				factor = 3
 
-				tag = SOV
 			}
 		}
 		categories = {
@@ -741,12 +723,10 @@ technologies = {
 			modifier = {
 				factor = 3
 
-				tag = GER
 			}
 			modifier = {
 				factor = 3
 
-				tag = SOV
 			}
 		}
 		
@@ -780,12 +760,10 @@ technologies = {
 			modifier = {
 				factor = 3
 
-				tag = GER
 			}
 			modifier = {
 				factor = 3
 
-				tag = SOV
 			}
 		}
 		
@@ -819,12 +797,10 @@ technologies = {
 			modifier = {
 				factor = 3
 
-				tag = GER
 			}
 			modifier = {
 				factor = 3
 
-				tag = SOV
 			}
 		}
 		
@@ -855,9 +831,6 @@ technologies = {
 			factor = 0.75
 			modifier = {
 				OR = {
-					tag = ENG
-					tag = USA
-					tag = JAP
 				}
 				factor = 3
 			}
@@ -896,9 +869,6 @@ technologies = {
 			factor = 0.75
 			modifier = {
 				OR = {
-					tag = ENG
-					tag = USA
-					tag = JAP
 				}
 				factor = 3
 			}
@@ -938,9 +908,6 @@ technologies = {
 			factor = 0.75
 			modifier = {
 				OR = {
-					tag = ENG
-					tag = USA
-					tag = JAP
 				}
 				factor = 3
 			}
@@ -1239,7 +1206,6 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = USA
 			}
 		}
 		
@@ -1270,7 +1236,6 @@ technologies = {
 		ai_will_do = {
 			factor = 3
 			modifier = {
-				tag = USA
 				factor = 2
 			}
 		}
@@ -1311,7 +1276,6 @@ technologies = {
 		on_research_complete = {
 			if = {
 				limit = {
-					tag = USA
 					has_war_with = JAP
 				}
 				play_warning_to_japan_effect = yes
@@ -1702,12 +1666,10 @@ technologies = {
 			modifier = {
 				factor = 3
 
-				tag = GER
 			}
 			modifier = {
 				factor = 3
 
-				tag = SOV
 			}
 		}
 		
@@ -1745,12 +1707,10 @@ technologies = {
 			modifier = {
 				factor = 3
 
-				tag = USA
 			}
 			modifier = {
 				factor = 3
 
-				tag = ENG
 			}
 		}
 		
@@ -1788,12 +1748,10 @@ technologies = {
 			modifier = {
 				factor = 3
 
-				tag = GER
 			}
 			modifier = {
 				factor = 3
 
-				tag = SOV
 			}
 		}
 		
@@ -1831,12 +1789,10 @@ technologies = {
 			modifier = {
 				factor = 3
 
-				tag = USA
 			}
 			modifier = {
 				factor = 3
 
-				tag = ENG
 			}
 		}
 		
@@ -1874,12 +1830,10 @@ technologies = {
 			modifier = {
 				factor = 3
 
-				tag = USA
 			}
 			modifier = {
 				factor = 3
 
-				tag = ENG
 			}
 		}
 		
@@ -1917,12 +1871,10 @@ technologies = {
 			modifier = {
 				factor = 3
 
-				tag = USA
 			}
 			modifier = {
 				factor = 3
 
-				tag = ENG
 			}
 		}
 		

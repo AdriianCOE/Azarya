@@ -2946,10 +2946,6 @@ technologies = {
 				}
 				factor = 0.8
 			}
-			modifier = {
-				tag = SOV
-				factor = 2
-			}
 
 			modifier = {
 				factor = 0.4

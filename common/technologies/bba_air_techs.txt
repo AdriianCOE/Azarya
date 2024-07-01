@@ -171,7 +171,6 @@ technologies = {
 
 			modifier = {
 				factor = 0
-				original_tag = GER
 				date < "1941.1.1"
 			}
 
@@ -312,7 +311,6 @@ technologies = {
 				factor = 2
 			}
 			modifier = {
-				tag = GER
 				factor = 2
 			}
 		}
@@ -587,12 +585,10 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				tag = ENG
 			}
 			
 			modifier = {
 				factor = 5
-				tag = USA
 			}
 		}
 	}
@@ -629,12 +625,10 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				tag = ENG
 			}
 			
 			modifier = {
 				factor = 5
-				tag = USA
 			}
 		}
 	}
@@ -671,12 +665,10 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				tag = ENG
 			}
 			
 			modifier = {
 				factor = 5
-				tag = USA
 			}
 		}
 	}
@@ -713,12 +705,10 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				tag = ENG
 			}
 			
 			modifier = {
 				factor = 5
-				tag = USA
 			}
 		}
 	}
@@ -1175,8 +1165,6 @@ technologies = {
 			}
 			modifier = {
 				OR = {
-					tag = USA
-					tag = GER
 				}
 				factor = 3
 			}
@@ -1229,9 +1217,6 @@ technologies = {
 			}
 			modifier = {
 				OR = {
-					tag = GER
-					tag = SOV
-					tag = ENG
 				}
 				factor = 3
 			}
@@ -1277,9 +1262,6 @@ technologies = {
 			}
 			modifier = {
 				OR = {
-					tag = GER
-					tag = SOV
-					tag = ENG
 				}
 				factor = 3
 			}
@@ -1325,9 +1307,6 @@ technologies = {
 			}
 			modifier = {
 				OR = {
-					tag = GER
-					tag = SOV
-					tag = ENG
 				}
 				factor = 3
 			}
@@ -1639,8 +1618,6 @@ technologies = {
 			}
 			modifier = {
 				OR = {
-					tag = USA
-					tag = JAP
 				}
 				factor = 3
 			}

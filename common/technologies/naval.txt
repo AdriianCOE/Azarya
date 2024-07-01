@@ -25,7 +25,6 @@ technologies = {
 			
 			modifier = {
 				factor = 4
-				tag = ENG
 			}
 			modifier = {
 				not = {
@@ -73,8 +72,6 @@ technologies = {
 			modifier = {
 				factor = 4
 				OR = {
-					tag = ENG
-					tag = JAP
 				}
 			}
 			modifier = {
@@ -126,9 +123,6 @@ technologies = {
 			modifier = {
 				factor = 4
 				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
 				}
 			}
 			modifier = {
@@ -173,7 +167,6 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = ENG
 			}
 		}
 		
@@ -206,9 +199,6 @@ technologies = {
 			modifier = {
 				factor = 4
 				OR = {
-					original_tag = ENG
-					original_tag = JAP
-					original_tag = USA
 				}
 			}
 			modifier = {
@@ -266,9 +256,6 @@ technologies = {
 			modifier = {
 				factor = 4
 				OR = {
-					original_tag = ENG
-					original_tag = JAP
-					original_tag = USA
 				}
 			}
 			modifier = {
@@ -327,9 +314,6 @@ technologies = {
 			modifier = {
 				factor = 4
 				OR = {
-					original_tag = ENG
-					original_tag = JAP
-					original_tag = USA
 				}
 			}
 			modifier = {
@@ -387,9 +371,6 @@ technologies = {
 			modifier = {
 				factor = 4
 				OR = {
-					original_tag = ENG
-					original_tag = JAP
-					original_tag = USA
 				}
 			}
 			modifier = {
@@ -447,9 +428,6 @@ technologies = {
 			modifier = {
 				factor = 4
 				OR = {
-					original_tag = ENG
-					original_tag = JAP
-					original_tag = USA
 				}
 			}
 			modifier = {
@@ -497,9 +475,6 @@ technologies = {
 			modifier = {
 				factor = 4
 				OR = {
-					original_tag = ENG
-					original_tag = JAP
-					original_tag = USA
 				}
 			}
 			modifier = {
@@ -892,9 +867,6 @@ technologies = {
 			modifier = {
 				factor = 4
 				OR = {
-					original_tag = ENG
-					original_tag = JAP
-					original_tag = USA
 				}
 			}
 			modifier = {
@@ -940,9 +912,6 @@ technologies = {
 			modifier = {
 				factor = 4
 				OR = {
-					original_tag = ENG
-					original_tag = JAP
-					original_tag = USA
 				}
 			}
 			modifier = {
@@ -1054,17 +1023,14 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = USA
 			}
 			
 			modifier = {
 				factor = 2
-				tag = JAP
 			}
 			
 			modifier = {
 				factor = 2
-				tag = ENG
 			}
 		}
 		
@@ -1110,17 +1076,14 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = USA
 			}
 			
 			modifier = {
 				factor = 2
-				tag = JAP
 			}
 
 			modifier = {
 				factor = 50
-				tag = JAP
 				OR = {
 					has_war_with = USA
 					CHI = {  
@@ -1135,7 +1098,6 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = ENG
 			}
 		}
 		
@@ -1168,17 +1130,14 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = USA
 			}
 			
 			modifier = {
 				factor = 2
-				tag = JAP
 			}
 			
 			modifier = {
 				factor = 2
-				tag = ENG
 			}
 		}
 		
@@ -1213,12 +1172,10 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				tag = USA
 			}
 			
 			modifier = {
 				factor = 5
-				tag = JAP
 			}
 		}
 		
@@ -1253,12 +1210,10 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				tag = USA
 			}
 			
 			modifier = {
 				factor = 5
-				tag = JAP
 			}
 		}
 		
@@ -1294,12 +1249,10 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				tag = USA
 			}
 			
 			modifier = {
 				factor = 5
-				tag = JAP
 			}
 		}
 		
@@ -1334,12 +1287,10 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				tag = USA
 			}
 			
 			modifier = {
 				factor = 5
-				tag = JAP
 			}
 		}
 		
@@ -1370,12 +1321,10 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				tag = USA
 			}
 			
 			modifier = {
 				factor = 5
-				tag = JAP
 			}
 		}
 		
@@ -1412,8 +1361,6 @@ technologies = {
 			modifier = {
 				factor = 7
 				OR = {
-					tag = GER
-					tag = USA
 				}
 			}
 			modifier = {
@@ -1464,8 +1411,6 @@ technologies = {
 			modifier = {
 				factor = 7
 				OR = {
-					tag = GER
-					tag = USA
 				}
 			}
 			modifier = {
@@ -1518,8 +1463,6 @@ technologies = {
 			modifier = {
 				factor = 7
 				OR = {
-					tag = GER
-					tag = USA
 				}
 			}
 			modifier = {
@@ -1572,8 +1515,6 @@ technologies = {
 			modifier = {
 				factor = 7
 				OR = {
-					tag = GER
-					tag = USA
 				}
 			}
 			modifier = {
@@ -1620,8 +1561,6 @@ technologies = {
 			modifier = {
 				factor = 7
 				OR = {
-					tag = GER
-					tag = USA
 				}
 			}
 			modifier = {
