@@ -15,8 +15,6 @@ ability = {
 				if = {
 					limit = {
 						has_dlc = "Waking the Tiger"
-					}
-					NOT = { has_completed_focus = KMT_dare_to_die_corps }
 				}
 			}
 		}
@@ -69,8 +67,6 @@ ability = {
 			is_border_war = no
 			OWNER = {
 				NOT = {
-					has_completed_focus = JAP_warrior_spirit
-					has_completed_focus = SPA_cultivate_fanaticism
 				}
 			}
 		}

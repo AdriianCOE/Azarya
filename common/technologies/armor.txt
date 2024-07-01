@@ -393,7 +393,6 @@ technologies = {
 			factor = 0.2
 			modifier = {
 				factor = 20
-				has_completed_focus = BEL_light_tank_destroyers
 			}
 			modifier = {
 				factor = 120

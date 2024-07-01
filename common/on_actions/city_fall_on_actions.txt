@@ -217,7 +217,6 @@ on_actions = {
 					if = {
 						limit = {
 							ROOT = {
-								NOT = { original_tag = GER }
 							}
 						}
 						news_event = { id = city_fall_news.19 random_hours = 24 }
@@ -228,7 +227,6 @@ on_actions = {
 					if = {
 						limit = {
 							ROOT = {
-								NOT = { original_tag = GER }
 							}
 						}
 						news_event = { id = city_fall_news.20 random_hours = 24 }
@@ -239,7 +237,6 @@ on_actions = {
 					if = {
 						limit = {
 							ROOT = {
-								NOT = { original_tag = GER }
 							}
 						}
 						news_event = { id = city_fall_news.21 random_hours = 24 }
@@ -349,7 +346,6 @@ on_actions = {
 					if = {
 						limit = {
 							ROOT = {
-								NOT = { original_tag = GER }
 							}
 						}
 						news_event = { id = city_fall_news.31 random_hours = 24 }

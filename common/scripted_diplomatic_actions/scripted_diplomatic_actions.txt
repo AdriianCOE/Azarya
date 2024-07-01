@@ -23,7 +23,6 @@
 #
 #		icon = 1 # icon frame to use in notification
 #
-#       #for effects/triggers/variables, root is the sender and this is receiver
 #
 #		# runs when the action is sent
 #		on_sent_effect = {
@@ -97,7 +96,6 @@
 #				ROOT = {
 #					tag = ENG
 #				}
-#				tag = GER
 #				add = 1000
 #			}
 #		}

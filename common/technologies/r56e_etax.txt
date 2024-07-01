@@ -1788,8 +1788,6 @@ technologies = {
 			modifier = {
 				factor = 0
 				OR = {
-					tag = ENG
-					tag = FRA
 				}
 			}
 		}

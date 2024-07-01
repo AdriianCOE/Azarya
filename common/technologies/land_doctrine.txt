@@ -265,7 +265,6 @@ technologies = {
 			}
 
 			modifier = {
-				tag = GER
 				factor = 2
 			}
 		}
@@ -892,7 +891,6 @@ technologies = {
 				factor = 0.5
 			}
 			modifier = {
-				tag = GER
 				factor = 3
 			}
 		}
@@ -2951,13 +2949,6 @@ technologies = {
 				factor = 0.4
 
 				OR = {
-					tag = CHI
-					tag = PRC
-					tag = XSM
-					tag = SIK
-					tag = GXC
-					tag = SHX
-					tag = YUN
 				}
 			}
 			modifier = {
@@ -3406,13 +3397,6 @@ technologies = {
 				factor = 0.6
 
 				OR = {
-					tag = CHI
-					tag = PRC
-					tag = XSM
-					tag = SIK
-					tag = GXC
-					tag = SHX
-					tag = YUN
 				}
 			}
 
@@ -3762,9 +3746,6 @@ technologies = {
 			}
 			modifier = {
 				AND = { #Motti Tactics
-					original_tag = FIN
-					FIN = {
-						has_completed_focus = fin_motti
 					}
 				}
 				factor = 500
@@ -4190,11 +4171,6 @@ technologies = {
 				factor = 0.6
 
 				OR = {
-					tag = XSM
-					tag = SIK
-					tag = GXC
-					tag = SHX
-					tag = YUN
 				}
 			}
 

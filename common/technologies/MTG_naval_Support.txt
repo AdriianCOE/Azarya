@@ -2024,7 +2024,6 @@ technologies = {
 				factor = 2
 			}
 			modifier = {
-				has_war_with = JAP
 				factor = 2
 			}
 
@@ -2080,18 +2079,15 @@ technologies = {
 				factor = 2
 			}
 			modifier = {
-				has_war_with = JAP
 				factor = 2
 			}
 			modifier = {
 				factor = 50
 				OR = {
-					has_war_with = USA
 					CHI = {
 						OR = {
 							has_capitulated = yes
 							exists = no
-		                    is_subject_of = JAP
 						}
 					}
 				}
@@ -2135,7 +2131,6 @@ technologies = {
 			}
 			modifier = {
 				factor = 2
-				has_war_with = JAP
 			}
 			modifier = {
 				factor = 3

@@ -1085,12 +1085,6 @@ technologies = {
 			modifier = {
 				factor = 50
 				OR = {
-					has_war_with = USA
-					CHI = {  
-						OR = { 
-							has_capitulated = yes 
-							exists = no
-		                    is_subject_of = JAP
 						}
 					}
 				}
@@ -1105,7 +1099,6 @@ technologies = {
 			naval_equipment
 			tp_tech
 		}
-	}
 	
 	tank_landing_craft = {
 

@@ -341,7 +341,6 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				has_war_with = GER
 			}
 			modifier = {
 				factor = 3
@@ -396,7 +395,6 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				has_war_with = GER
 				has_navy_size = {
 					size > 0
 				}					
@@ -453,7 +451,6 @@ technologies = {
 			
 			modifier = {
 				factor = 4
-				has_war_with = GER
 				has_navy_size = {
 					size > 0
 				}					
@@ -507,7 +504,6 @@ technologies = {
 			
 			modifier = {
 				factor = 4
-				has_war_with = GER
 				has_navy_size = {
 					size > 0
 				}	
@@ -560,7 +556,6 @@ technologies = {
 			
 			modifier = {
 				factor = 4
-				has_war_with = GER
 				has_navy_size = {
 					size > 0
 				}					
@@ -610,7 +605,6 @@ technologies = {
 			
 			modifier = {
 				factor = 4
-				has_war_with = GER
 				has_navy_size = {
 					size > 0
 				}					
@@ -2048,8 +2042,6 @@ early_ship_hull_carrier = {
 			}
 			modifier = {
 				not = {
-					has_war_with = ENG
-					has_War_with = USA
 				}
 				factor = 0.5
 			}

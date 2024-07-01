@@ -12,7 +12,6 @@ technology_sharing_group = {
 	research_sharing_per_country_bonus = 0.1
 
     available = {
-        is_in_faction_with = AUS
     }
 }
 
@@ -28,7 +27,6 @@ technology_sharing_group = {
 	research_sharing_per_country_bonus = 0.1
 
     available = {
-        is_in_faction_with = AST
     }
 }
 
@@ -45,7 +43,6 @@ technology_sharing_group = {
 
     available = {
 		OR = {
-			is_in_faction_with = YUG
 			is_puppet_of = YUG
 		}	
     }
@@ -64,8 +61,6 @@ technology_sharing_group = {
 
     available = {
         OR = {
-			is_in_faction_with = BEL
-			is_in_faction_with = HOL
 		}
         compare_autonomy_state > autonomy_puppet
     }
@@ -126,7 +121,6 @@ technology_sharing_group = {
 	research_sharing_per_country_bonus = 0.1
 
     available = {
-        is_in_faction_with = GER
     }
 }
 
@@ -140,7 +134,6 @@ technology_sharing_group = {
 	research_sharing_per_country_bonus = 0.1
 
     available = {
-        is_in_faction_with = FIN
     }
 }
 
@@ -157,14 +150,7 @@ technology_sharing_group = {
 
     available = {
 		AND = {
-			is_in_faction_with = FRA
 			OR = {
-				tag = FRI
-				tag = FRA
-				tag = MOR
-				tag = TUN
-				tag = SYR
-				tag = LEB
 			}
 		}
     }
@@ -181,8 +167,6 @@ technology_sharing_group = {
 
     available = {
 		OR = {
-	        tag = FRI
-			tag = FRA
 		}
     }
 }
@@ -215,10 +199,6 @@ technology_sharing_group = {
 	
 	available = {
 		OR = {
-			ICE = { is_subject_of = DEN }
-			ICE = { is_in_faction_with = DEN }
-			GRL = { is_subject_of = DEN }
-			GRL = { is_in_faction_with = DEN }
 		}
 	}
 }
@@ -232,10 +212,6 @@ technology_sharing_group = {
 	
 	available = {
 		OR = {
-			ICE = { is_subject_of = DEN }
-			ICE = { is_in_faction_with = DEN }
-			GRL = { is_subject_of = DEN }
-			GRL = { is_in_faction_with = DEN }
 		}
 	}
 }
@@ -252,7 +228,6 @@ technology_sharing_group = {
 	research_sharing_per_country_bonus = 0.15		#strong Lithunian research cooperation?
 
     available = {
-		is_in_faction_with = LIT
     }
 }
 
@@ -269,12 +244,6 @@ technology_sharing_group = {
 
     available = {
 		OR = {
-			is_in_faction_with = ICE
-			is_in_faction_with = NOR
-			is_in_faction_with = DEN
-			is_in_faction_with = SWE
-			is_in_faction_with = FIN
-			is_in_faction_with = EST
 		}
     }
 
@@ -345,8 +314,6 @@ technology_sharing_group = {
 
 
 
-			is_subject_of = NOR
-			is_in_faction_with = NOR
 		}
     }
 }
@@ -416,8 +383,6 @@ technology_sharing_group = {
 
 
 
-			is_subject_of = NOR
-			is_in_faction_with = NOR
 		}
     }
 }
@@ -505,8 +470,6 @@ technology_sharing_group = {
 
 
 
-			is_subject_of = NOR
-			is_in_faction_with = NOR
 		}
     }
 }
@@ -603,8 +566,6 @@ technology_sharing_group = {
 
 
 
-			is_subject_of = NOR
-			is_in_faction_with = NOR
 		}
     }
 }
@@ -701,8 +662,6 @@ technology_sharing_group = {
 
 
 
-			is_subject_of = NOR
-			is_in_faction_with = NOR
 		}
     }
 }
@@ -720,7 +679,6 @@ technology_sharing_group = {
 
 	available = {
 		OR = {
-			is_in_faction_with = PRU
 			
 
 
@@ -748,7 +706,6 @@ technology_sharing_group = {
 
 	available = {
 		OR = {
-			is_in_faction_with = TUR
 			
 
 
@@ -774,7 +731,6 @@ technology_sharing_group = {
 	research_sharing_per_country_bonus = 0.1
 
     available = {
-        is_in_faction_with = SWE
     }
 }
 
@@ -790,7 +746,6 @@ technology_sharing_group = {
 	research_sharing_per_country_bonus = 0.1
 
     available = {
-        is_in_faction_with = ENG    
         ENG = { has_government = communism }
     
     }
@@ -809,8 +764,6 @@ technology_sharing_group = {
 	research_sharing_per_country_bonus = 0.1
 
     available = {
-        is_in_faction_with = JAP
-        is_in_faction_with = HOL
         HOL = { has_government = fascism }
     }
 }
@@ -826,7 +779,6 @@ technology_sharing_group = {
 
     available = {
         OR = {
-		is_in_faction_with = HOL
 		
 		is_puppet_of = HOL
 		}
@@ -848,8 +800,6 @@ technology_sharing_group = {
 
 	available = {
 		OR = {
-			tag = POL
-			tag = GER				
 		}
 		NOT = { POL = { has_war_with = GER } }
 		country_exists = POL
@@ -882,7 +832,6 @@ technology_sharing_group = {
 
 
 
-      				is_in_faction_with = RAJ
 			}
 			AND = {
 					
@@ -894,7 +843,6 @@ technology_sharing_group = {
 
 
 
-      				is_in_faction_with = SOV
 			}
 		}
      		RAJ = { has_government = communism }
