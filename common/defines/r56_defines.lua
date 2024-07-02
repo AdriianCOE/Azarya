@@ -1,4 +1,4 @@
-	NDefines.NGame.END_DATE = "1956.1.1.1" -- we are called r56 for a reason!
+	NDefines.NGame.END_DATE = "1944.1.1.1" -- we are called r56 for a reason!
 	
 	
 	NDefines.NDiplomacy.LICENSE_ACCEPTANCE_PUPPET_BASE = 20			-- Acceptance modifier for puppets requesting production licenses.
@@ -23,7 +23,7 @@
 	
 	NDefines.NCountry.SPECIAL_FORCES_CAP_BASE = 0.1
 	NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 40
-	NDefines.NCountry.BASE_RESEARCH_SLOTS = 3
+	NDefines.NCountry.BASE_RESEARCH_SLOTS = 2
 	NDefines.NCountry.FEMALE_UNIT_LEADER_BASE_CHANCE = { 
 			-- applies as a factor to female unit leader randomization
 			-- the values needs to be zero if you don't actually have random portraits
