@@ -1,8 +1,8 @@
 technologies = { 
 	
-	@1920 = 1
-	@1930 = 2
-	@1936 = 4
+	@1908 = 1
+	@1918 = 2
+	@1924 = 4
 
 	#New 1.13 Tech ported to prevent CTD's and other issues
 	tech_trucks = { 
@@ -33,7 +33,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1920
+		start_year = 1908
 		folder = {
 			name = r56_vechicles_folder
 			position = { x = -7 y = 1 }
@@ -49,17 +49,17 @@ technologies = {
 			
 			modifier = {
 				factor = 6
-				date > "1937.1.1"
+				date > "1925.1.1"
 			}
 			
 			modifier = {
 				factor = 7
-				date > "1938.1.1"
+				date > "1926.1.1"
 			}
 			
 			modifier = {
 				factor = 8
-				date > "1939.1.1"
+				date > "1927.1.1"
 			}
 			modifier = {
 				is_major = no
@@ -106,7 +106,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1936
+		start_year = 1924
 
 		folder = {
 			name = r56_vechicles_folder
@@ -129,17 +129,17 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				date > "1937.1.1"
+				date > "1925.1.1"
 			}
 			
 			modifier = {
 				factor = 3
-				date > "1938.1.1"
+				date > "1926.1.1"
 			}
 			
 			modifier = {
 				factor = 4
-				date > "1939.1.1"
+				date > "1927.1.1"
 			}
 
 			modifier = {
@@ -159,7 +159,7 @@ technologies = {
 	###------> stat techs <><> <><> <><> <><> <><>
 	r56_combat_service = {
 		research_cost = 1.75
-		start_year = 1936
+		start_year = 1924
 		folder = {
 			name = r56_vechicles_folder
 			position = { x = -8 y = 6 }
@@ -185,12 +185,12 @@ technologies = {
 		
 			modifier = {
 				factor = 0.75
-				date > "1938.1.1"
+				date > "1926.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1939.1.1"
+				date > "1927.1.1"
 			}
 
 			modifier = {
@@ -198,13 +198,13 @@ technologies = {
 				AND = {
 					OR = { #We get it. Everyone else is dumb
 					}
-					date > "1939.1.1"
+					date > "1927.1.1"
 				}
 			}
 			
 			modifier = {
 				factor = 3
-				date > "1940.1.1"
+				date > "1928.1.1"
 			}
 
 			modifier = {
@@ -212,13 +212,13 @@ technologies = {
 				AND = {
 					OR = { #this might be important...
 					}
-					date > "1940.1.1"
+					date > "1928.1.1"
 				}
 			}
 
 			modifier = {
 				factor = 5
-				date > "1941.1.1"
+				date > "1929.1.1"
 			}
 
 			modifier = {
@@ -230,7 +230,7 @@ technologies = {
 
 	r56_convoy_highways = {
 		research_cost = 1.75
-		start_year = 1941
+		start_year = 1929
 		folder = {
 			name = r56_vechicles_folder
 			position = { x = -8 y = 10 }
@@ -257,12 +257,12 @@ technologies = {
 		
 			modifier = {
 				factor = 0.75
-				date > "1940.1.1"
+				date > "1928.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1942.1.1"
+				date > "1930.1.1"
 			}
 
 			modifier = {
@@ -270,13 +270,13 @@ technologies = {
 				AND = {
 					OR = { #We get it. Everyone else is dumb
 					}
-					date > "1940.1.1"
+					date > "1928.1.1"
 				}
 			}
 			
 			modifier = {
 				factor = 3
-				date > "1941.1.1"
+				date > "1929.1.1"
 			}
 
 			modifier = {
@@ -284,13 +284,13 @@ technologies = {
 				AND = {
 					OR = { #this might be important...
 					}
-					date > "1942.1.1"
+					date > "1930.1.1"
 				}
 			}
 
 			modifier = {
 				factor = 5
-				date > "1943.1.1"
+				date > "1931.1.1"
 			}
 
 			modifier = {
@@ -302,7 +302,7 @@ technologies = {
 
 	r56_convoy_highways_2 = {
 		research_cost = 1.75
-		start_year = 1943
+		start_year = 1931
 		folder = {
 			name = r56_vechicles_folder
 			position = { x = -8 y = 14 }
@@ -331,7 +331,7 @@ technologies = {
 
 	r56_convoy_highways_3 = {
 		research_cost = 2
-		start_year = 1947
+		start_year = 1935
 		folder = {
 			name = r56_vechicles_folder
 			position = { x = -8 y = 19 }
@@ -360,7 +360,7 @@ technologies = {
 
 	r56_convoy_highways_4 = {
 		research_cost = 2.25
-		start_year = 1950
+		start_year = 1938
 		folder = {
 			name = r56_vechicles_folder
 			position = { x = -8 y = 24 }
@@ -408,13 +408,13 @@ technologies = {
 		
 
 		research_cost = 1.5
-		start_year = 1939
+		start_year = 1927
 		
 		ai_will_do = {
 			factor = 1
 			modifier = {
 				factor = 6
-				date > "1939.1.1"
+				date > "1927.1.1"
 			}	
 			modifier = {
 				factor = 4
@@ -466,7 +466,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 2
-		start_year = 1939
+		start_year = 1927
 		folder = {
 			name = r56_vechicles_folder
 			position = { x = -7 y = 8 }
@@ -488,7 +488,7 @@ technologies = {
 				not = {
 					num_of_military_factories < 50
 				}
-				date > "1938.9.1"
+				date > "1926.9.1"
 			}
 			
 			modifier = {
@@ -496,7 +496,7 @@ technologies = {
 			}
 			modifier = {
 				factor = 5
-				date > "1938.6.1"
+				date > "1926.6.1"
 			}					
 		}
 	}
@@ -522,7 +522,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1941
+		start_year = 1929
 		folder = {
 			name = r56_vechicles_folder
 			position = { x = -4 y = 10 }
@@ -557,7 +557,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1943
+		start_year = 1931
 		folder = {
 			name = r56_vechicles_folder
 			position = { x = -4 y = 14 }
@@ -596,7 +596,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1942
+		start_year = 1930
 		folder = {
 			name = r56_vechicles_folder
 			position = { x = -7 y = 12 }
@@ -644,7 +644,7 @@ technologies = {
 		}
 
 		research_cost = 3
-		start_year = 1945
+		start_year = 1933
 		folder = {
 			name = r56_vechicles_folder
 			position = { x = -7 y = 17 }
@@ -692,7 +692,7 @@ technologies = {
 		}
 
 		research_cost = 3
-		start_year = 1949
+		start_year = 1937
 		folder = {
 			name = r56_vechicles_folder
 			position = { x = -7 y = 22 }
@@ -736,11 +736,11 @@ technologies = {
 
 
 		research_cost = 2
-		start_year = 1930
+		start_year = 1918
 
 		folder = {
 			name = r56_vechicles_folder
-			position = { x = -2 y = @1936 }
+			position = { x = -2 y = @1924 }
 		}
 		
 		categories = {
@@ -766,7 +766,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1939
+		start_year = 1927
 		folder = {
 			name = r56_vechicles_folder
 			position = { x = -2 y = 8 }
@@ -795,7 +795,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1942
+		start_year = 1930
 		folder = {
 			name = r56_vechicles_folder
 			position = { x = -2 y = 12 }
@@ -823,7 +823,7 @@ technologies = {
 		}
 
 		research_cost = 1
-		start_year = 1942
+		start_year = 1930
 		sub_tech_index = 1
 		
 		categories = {
@@ -846,7 +846,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 1920
+		start_year = 1908
 		folder = {
 			name = r56_vechicles_folder
 			position = { x = 0 y = 1 }
@@ -885,17 +885,17 @@ technologies = {
 			}
 			modifier = {
 				factor = 1
-				date > "1936.1.1"
+				date > "1924.1.1"
 			}
 			
 			modifier = {
 				factor = 5
-				date > "1937.1.1"
+				date > "1925.1.1"
 			}
 			
 			modifier = {
 				factor = 10
-				date > "1938.1.1"
+				date > "1926.1.1"
 			}
 		}
 	}
@@ -906,7 +906,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 1936
+		start_year = 1924
 		folder = {
 			name = r56_vechicles_folder
 			position = { x = 4 y = 8 }
@@ -981,7 +981,7 @@ technologies = {
 		}
 
 		research_cost = 1
-		start_year = 1930
+		start_year = 1918
 		sub_tech_index = 1
 		
 		categories = {
@@ -1001,7 +1001,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 1939
+		start_year = 1927
 
 		path = {
 			leads_to_tech = r56_mid_wartime_train
@@ -1027,17 +1027,17 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				date > "1940.1.1"
+				date > "1928.1.1"
 			}
 			
 			modifier = {
 				factor = 3
-				date > "1941.1.1"
+				date > "1929.1.1"
 			}
 			
 			modifier = {
 				factor = 4
-				date > "1942.1.1"
+				date > "1930.1.1"
 			}
 
 			modifier = {
@@ -1062,7 +1062,7 @@ technologies = {
 		}
 		
 		research_cost = 1.5
-		start_year = 1936
+		start_year = 1924
 		folder = {
 			name = r56_vechicles_folder
 			position = { x = 2 y = 6 }
@@ -1090,17 +1090,17 @@ technologies = {
 
 			modifier = {
 				add = 2
-				date > "1939.1.1"
+				date > "1927.1.1"
 			}
 			
 			modifier = {
 				add = 3
-				date > "1940.1.1"
+				date > "1928.1.1"
 			}
 			
 			modifier = {
 				add = 4
-				date > "1941.1.1"
+				date > "1929.1.1"
 			}
 
 			modifier = {
@@ -1117,7 +1117,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 1942
+		start_year = 1930
 		folder = {
 			name = r56_vechicles_folder
 			position = { x = 0 y = 12 }
@@ -1137,17 +1137,17 @@ technologies = {
 
 			modifier = {
 				factor = 0.1
-				date > "1942.1.1"
+				date > "1930.1.1"
 			}
 			
 			modifier = {
 				factor = 1
-				date > "1944.1.1"
+				date > "1932.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1946.1.1"
+				date > "1934.1.1"
 			}
 
 			modifier = {
@@ -1164,7 +1164,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1948
+		start_year = 1936
 		folder = {
 			name = r56_vechicles_folder
 			position = { x = 0 y = 20 }
@@ -1183,17 +1183,17 @@ technologies = {
 			
 			modifier = {
 				factor = 1
-				date > "1948.1.1"
+				date > "1936.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1949.1.1"
+				date > "1937.1.1"
 			}
 			
 			modifier = {
 				factor = 3
-				date > "1950.1.1"
+				date > "1938.1.1"
 			}
 
 			modifier = {
@@ -1205,7 +1205,7 @@ technologies = {
 	###------> New railway stat techs <><> <><> <><> <><> <><>
 	r56_flexible_railnetwork = {
 		research_cost = 1.50
-		start_year = 1936
+		start_year = 1924
 		folder = {
 			name = r56_vechicles_folder
 			position = { x = -1 y = 6 }
@@ -1229,12 +1229,12 @@ technologies = {
 		
 			modifier = {
 				factor = 2
-				date > "1938.1.1"
+				date > "1926.1.1"
 			}
 			
 			modifier = {
 				factor = 3
-				date > "1939.1.1"
+				date > "1927.1.1"
 			}
 
 		}
@@ -1243,7 +1243,7 @@ technologies = {
 
 	r56_military_railnetwork = {
 		research_cost = 1.50
-		start_year = 1941
+		start_year = 1929
 		folder = {
 			name = r56_vechicles_folder
 			position = { x = -1 y = 10 }
@@ -1267,17 +1267,17 @@ technologies = {
 		
 			modifier = {
 				factor = 1
-				date > "1941.1.1"
+				date > "1929.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1942.1.1"
+				date > "1930.1.1"
 			}
 
 			modifier = {
 				factor = 3
-				date > "1943.1.1"
+				date > "1931.1.1"
 			}
 
 		}
@@ -1285,7 +1285,7 @@ technologies = {
 
 	r56_modern_military_railnetwork = {
 		research_cost = 2
-		start_year = 1944
+		start_year = 1932
 		folder = {
 			name = r56_vechicles_folder
 			position = { x = -1 y = 16 }
@@ -1309,24 +1309,24 @@ technologies = {
 		
 			modifier = {
 				factor = 1
-				date > "1944.1.1"
+				date > "1932.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1945.1.1"
+				date > "1933.1.1"
 			}
 
 			modifier = {
 				factor = 3
-				date > "1946.1.1"
+				date > "1934.1.1"
 			}
 		}
 	}
 
 	r56_modern_military_railnetwork_2 = {
 		research_cost = 2
-		start_year = 1950
+		start_year = 1938
 		folder = {
 			name = r56_vechicles_folder
 			position = { x = -1 y = 24 }
@@ -1345,17 +1345,17 @@ technologies = {
 		
 			modifier = {
 				factor = 1
-				date > "1948.1.1"
+				date > "1936.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1950.1.1"
+				date > "1938.1.1"
 			}
 
 			modifier = {
 				factor = 3
-				date > "1952.1.1"
+				date > "1940.1.1"
 			}
 		}
 	}
