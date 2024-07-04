@@ -80,10 +80,8 @@ has_excessive_army_size = { #not currently used due to AI concerns
 			has_army_manpower = { size = 250000 }
 			has_manpower < 1
 			NOT = {
-				TAG = RAJ
 			}
 			NOT = {
-				TAG = CHI
 			}
 			NOT = {
 				has_government = communism
@@ -94,10 +92,8 @@ has_excessive_army_size = { #not currently used due to AI concerns
 			has_army_manpower = { size = 500000 }
 			has_manpower < 1
 			NOT = {
-				TAG = RAJ
 			}
 			NOT = {
-				TAG = CHI
 			}
 			NOT = {
 				has_government = communism
@@ -108,10 +104,8 @@ has_excessive_army_size = { #not currently used due to AI concerns
 			has_army_manpower = { size = 750000 }
 			has_manpower < 1
 			NOT = {
-				TAG = RAJ
 			}
 			NOT = {
-				TAG = CHI
 			}
 			NOT = {
 				has_government = communism
@@ -122,10 +116,8 @@ has_excessive_army_size = { #not currently used due to AI concerns
 			has_army_manpower = { size = 1000000 }
 			has_manpower < 1
 			NOT = {
-				TAG = RAJ
 			}
 			NOT = {
-				TAG = CHI
 			}
 			NOT = {
 				has_government = communism

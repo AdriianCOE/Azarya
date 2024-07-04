@@ -515,32 +515,6 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 0.5
-			
-			modifier = {
-				factor = 5
-			}
-			modifier = {
-				factor = 10
-				POL = { has_capitulated = yes }
-				GER = { has_war = yes }
-			}
-			
-			modifier = {
-				factor = 5
-			}
-			
-			modifier = {
-				factor = 2
-
-			}
-			
-			modifier = {
-				factor = 2
-			}
-		
-			modifier = {
-				factor = 2
-			}
 	
 			modifier = {
 				factor = 2

@@ -2023,17 +2023,6 @@ technologies = {
 			modifier = {
 				factor = 2
 			}
-			modifier = {
-				factor = 2
-			}
-
-			modifier = {
-				factor = 3
-			}
-
-			modifier = {
-				factor = 2
-			}
 		}
 
 		categories = {
@@ -2075,27 +2064,6 @@ technologies = {
 				has_war = no
 			}
 
-			modifier = {
-				factor = 2
-			}
-			modifier = {
-				factor = 2
-			}
-			modifier = {
-				factor = 50
-				OR = {
-					CHI = {
-						OR = {
-							has_capitulated = yes
-							exists = no
-						}
-					}
-				}
-			}
-
-			modifier = {
-				factor = 2
-			}
 
 		}
 

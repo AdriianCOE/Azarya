@@ -199,7 +199,6 @@ technologies = {
 				
 				OR = {
 					date > "1925.1.1"
-					JAP = { is_ai = no }
 				}
 			}
 			

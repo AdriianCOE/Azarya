@@ -1276,7 +1276,6 @@ technologies = {
 		on_research_complete = {
 			if = {
 				limit = {
-					has_war_with = JAP
 				}
 				play_warning_to_japan_effect = yes
 			}
