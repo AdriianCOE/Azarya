@@ -1,0 +1,23 @@
+state={
+	id=487
+	name="Gallowmere"
+	history={
+		owner = BOK
+		victory_points = {
+			1111 5
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		add_core_of = BOK
+	}
+	provinces={
+		6089 6127 6176 1111 787
+	}
+	manpower=791093
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

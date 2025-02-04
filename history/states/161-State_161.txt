@@ -1,0 +1,25 @@
+
+state={
+	id=161
+	name="Veltrund"
+	resources={
+	    steel=15
+	}
+	history={
+		owner = VRD
+		victory_points = {
+			5566 5
+		}
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = VRD
+	}
+	provinces={
+		373 458 669 746 2348 2313 2688 2855 4954 5527 5542 5566 5589 5599 
+	}
+	manpower=595867
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

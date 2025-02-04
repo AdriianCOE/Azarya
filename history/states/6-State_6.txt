@@ -1,0 +1,19 @@
+
+state={
+	id=6
+	name="Nikas Islands"
+
+	history={
+		owner = GYE
+		add_core_of = GYE
+
+	}
+
+	provinces={
+		290 397 750 985 2673 7910 8076 8134 3597
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

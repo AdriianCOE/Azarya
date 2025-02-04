@@ -1,0 +1,20 @@
+
+state={
+	id=28
+	name="Mekeresztoma"
+	history={
+		owner = WIH
+		buildings = {
+			infrastructure = 1
+			}
+	
+		add_core_of = WHI
+		}
+	provinces={
+		111 305 356 621 722 777 1311 1630 1848 3058 3527 3536 3568 3655 3707 3852 4101 4109 4491 4499 4618 4790 4984 5748 5753 5757 5770 5775 5776 5786 5797 5800 5801 5809 5815 5822 5831 5834 5839 5840 5865 5878 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

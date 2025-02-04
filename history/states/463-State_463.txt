@@ -1,0 +1,25 @@
+
+state={
+	id=463
+	name="Oriastria"
+			history={
+		owner = KOZ
+        victory_points = {
+			511 10 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_core_of = KOZ
+
+	}
+	provinces={
+		141 189 511 2217 4325 8320 8383 
+	}
+	manpower=804896
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

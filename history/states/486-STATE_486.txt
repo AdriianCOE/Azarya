@@ -1,0 +1,22 @@
+state={
+	id=486
+	name="Yoipa"
+	history={
+		owner = ARK
+		victory_points = {
+			1188 5
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		add_core_of = ARK
+	}
+	provinces={
+		362 469 1188 6478 
+	}
+	manpower=291093
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

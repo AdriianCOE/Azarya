@@ -1,0 +1,37 @@
+
+state={
+	id=42
+	name="Breittinbach"
+	resources = {
+		rubber = 8
+	}
+
+	history={
+		owner = GET
+		1924.1.1 = {
+			controller = SVD
+		}
+		victory_points = {
+			6091 12
+		}
+		buildings = {
+			infrastructure = 2
+			6091 = {
+				naval_base = 1
+				}
+	
+			 	}
+			add_core_of = SVD
+			add_core_of = BKG
+			add_core_of = RFO
+			add_core_of = GET
+
+		}
+	provinces={
+		71 1843 2985 4689 6026 6053 6091 6107 6133 
+	}
+	manpower=218975
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

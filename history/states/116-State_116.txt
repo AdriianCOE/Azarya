@@ -1,0 +1,21 @@
+
+state={
+	id=116
+	name="Île du Repos"
+	history={
+		owner = WIH
+		buildings = {
+			infrastructure = 1
+			}
+	
+		add_core_of = WHI
+		}
+
+	provinces={
+		241 529 586 801 2031 3851 3917 4494 5903 5943 
+	}
+	manpower=27985
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
+}

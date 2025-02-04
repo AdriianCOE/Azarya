@@ -1,0 +1,26 @@
+
+state={
+	id=22
+	name="Red Dunes"
+	history={
+		owner = SDB
+			victory_points = {
+			     1431 20
+		}
+				buildings = {
+			industrial_complex = 2
+			arms_factory = 1
+			infrastructure = 2
+            }
+		add_core_of = SDB
+				}
+
+
+	provinces={
+		6 105 838 1066 1431 1688 15788 6657 6757 15798 15800 15799 15792 15794 15795 15797
+	}
+	manpower=838893
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

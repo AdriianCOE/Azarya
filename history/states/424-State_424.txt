@@ -1,0 +1,25 @@
+
+state={
+	id=424
+	name="Chovepidana"
+
+	history={
+		owner = UPG
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+
+		}
+		add_core_of = UPG
+
+	}
+
+	provinces={
+		1463 2971 3763 3929 4306 5054 5101 9025 9039 9060 9081 9107 9132 9146 
+	}
+	manpower=496987
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

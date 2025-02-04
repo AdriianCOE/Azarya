@@ -1,0 +1,26 @@
+state={
+	id=225
+	name="Auraliana"
+	history={
+		owner = ARK
+		victory_points = {
+			4727 20
+		}
+		victory_points = {
+			3712 5
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 3
+		}
+		add_core_of = ARK
+	}
+	provinces={
+		13 844 996 1012 1713 2514 3040 3583 3636 3638 3697 3712 4727 4942 6377 6380 6415 6426 6443 6464 6470 6492 6524 6547 
+	}
+	manpower=2984792
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

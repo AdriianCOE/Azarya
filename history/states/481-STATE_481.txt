@@ -1,0 +1,20 @@
+
+state={
+	id=481
+	name="State_481"
+	history={
+		owner = NSA
+		buildings = {
+			infrastructure = 1
+		}
+	
+			add_core_of = NSA
+		}
+	provinces={
+		5091 5958 276 5919 4433 2490 5959 2671 5905 1695 1083 2438 2200 3894 3618 5773 952 5741
+	}
+	manpower=159968
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

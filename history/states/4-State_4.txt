@@ -1,0 +1,22 @@
+
+state={
+	id=4
+	name="Mon Island"
+
+	history={
+		owner = NSA
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = NSA
+
+	}
+
+	provinces={
+		204 830 871 997 1079 1786 2368 3421 3795 4477 4806 6037 6085 6092 6110 6243 
+	}
+	manpower=159684
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

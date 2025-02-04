@@ -1,0 +1,27 @@
+
+state={
+	id=483
+	name="State_483"
+	history={
+		owner = AEI
+		victory_points = {
+			1694 10
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			1694 = {
+				naval_base = 2
+			}
+		}
+	
+			add_core_of = AEI
+		}
+	provinces={
+		5777 1694 561 1388 155 5707 2873 5647 5621 5588
+	}
+	manpower=359968
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

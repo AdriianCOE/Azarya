@@ -1,0 +1,22 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_ideology_THK_neutrality_group"
+		texturefile = "gfx/interface/ideologies/THK_neutrality.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_THK_fascism_group"
+		texturefile = "gfx/interface/ideologies/THK_fascism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_THK_communism_group"
+		texturefile = "gfx/interface/ideologies/THK_communism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_THK_democratic_group"
+		texturefile = "gfx/interface/ideologies/THK_democratic.dds"
+	}
+}

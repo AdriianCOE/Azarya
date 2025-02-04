@@ -1,0 +1,18 @@
+state={
+	id=11
+	name="STATE_11"
+	history={
+		owner = MER
+				buildings = {
+			infrastructure = 1
+            }
+		add_core_of = MER
+		add_core_of = VRD
+				}
+	provinces={
+		3816 
+	}
+	buildings_max_level_factor=1.000
+        manpower=17948
+        state_category = rural
+}

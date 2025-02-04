@@ -1,0 +1,19 @@
+
+state={
+	id=321
+	name="STATE_321"
+
+	history={
+		owner = GYE
+		add_core_of = GYE
+		add_core_of = NIR
+	}
+
+	provinces={
+		 820 1052 1988 2440 2529 2659 2926 3019 4366 4554 4712 5096 7613 7696 7727 7790 7805 7926 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

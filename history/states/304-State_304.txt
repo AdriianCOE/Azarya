@@ -1,0 +1,25 @@
+
+state={
+	id=304
+	name="Castellum"
+
+	history={
+		owner = CZL
+		buildings = {
+		    infrastructure = 1	
+			}
+		victory_points = {
+			1892 8 
+		}
+
+		add_core_of = CZL
+	}
+
+	provinces={
+		504 816 1892 1984 2486 2665 3131 3364 3858 4308 4337 7159 7203 7272 7301 
+	}
+	manpower=317942
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

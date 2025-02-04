@@ -1,0 +1,315 @@
+﻿division_template = {
+	name = "Rifle Division"
+	division_names_group = CZL_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 0 y = 3 }
+	}
+}
+division_template = {
+	name = "Cavalry Division"  
+	division_names_group = CZL_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 2 }
+	}
+}
+division_template = {
+	name = "Light-Armored Division"
+	division_names_group = CZL_ARM_01
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+	}
+}
+
+units = {
+	##### Ejército de CZL #####
+	division= {	# "1a Strelk. Div"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 1527
+		division_template = "Rifle Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+		division= {	# "2a Strelk. Div"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 4996
+		division_template = "Rifle Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+		division= {	# "3a Strelk. Div"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 1829
+		division_template = "Rifle Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+		division= {	# "4a Strelk. Div"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 2620
+		division_template = "Rifle Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+			division= {	# "5a Strelk. Div"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 1527
+		division_template = "Rifle Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+			division= {	# "6a Strelk. Div"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 3244
+		division_template = "Rifle Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+
+			division= {	# "7a Strelk. Div"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 7302
+		division_template = "Rifle Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+				division= {	# "8a Strelk. Div"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 2620
+		division_template = "Rifle Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+					division= {	# "9a Strelk. Div"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 4569
+		division_template = "Rifle Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+					division= {	# "10a Strelk. Div"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 2620
+		division_template = "Rifle Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+					division= {	# "11a Strelk. Div"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 7241
+		division_template = "Rifle Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+					division= {	# "12a Strelk. Div"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 7408
+		division_template = "Rifle Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "1a Kav. Div.'"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 502
+		division_template = "Cavalry Division" 
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "2a Kav. Div.'"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 7388
+		division_template = "Cavalry Division" 
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+		division= {	# "3a Kav. Div.'"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 2620
+		division_template = "Cavalry Division" 
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+		division= {	# "4a Kav. Div.'"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 7349
+		division_template = "Cavalry Division" 
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+		division= {	# "1a Arm. Div.'"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 7349
+		division_template = "Light-Armored Division" 
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+		division= {	# "2a Armored. Div.'"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 7349
+		division_template = "Light-Armored Division" 
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+	
+}
+	##### No Notable Naval Forces #####
+
+
+	##### UNIDADES NAVIAIS #####
+units= {
+	fleet = {
+	name = "Royal Lesc Navy"
+	naval_base = 1527  # Lesc
+
+		task_force = {				
+			name = "Frota de Lesc 1"
+			location = 1527  # Lesc
+			ship = { name = "CLC Czarina" pride_of_the_fleet = yes definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = CZL version_name = "Czarina Class" } } }
+			ship = { name = "CLC Leshkov" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CZL version_name = "Dovka Class" } } }
+			ship = { name = "CLC Dovka" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CZL version_name = "Dovka Class" } } }
+			ship = { name = "CLC Volyn" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CZL version_name = "Dovka Class" } } }
+			ship = { name = "CLC Poltava" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CZL version_name = "Dovka Class" } } }
+			ship = { name = "CLC Kiev" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CZL version_name = "Dovka Class" } } }
+			ship = { name = "CLC Tsarina" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CZL version_name = "Tsarina Class" } } }
+			ship = { name = "CLC Leshka" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CZL version_name = "Tsarina Class" } } }
+			ship = { name = "CLC Romanov" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CZL version_name = "Tsarina Class" } } }
+			ship = { name = "CLC Ivanov" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CZL version_name = "Tsarina Class" } } }
+			ship = { name = "CLC Natasha" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CZL version_name = "Tsarina Class" } } }
+
+		}
+		task_force = {
+            name = "Frota de Lesc 2"
+            location = 2620  # Lesc
+			ship = { name = "CLC Pitya" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CZL version_name = "Tsarina Class" } } }
+			ship = { name = "CLC Klain" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CZL version_name = "Tsarina Class" } } }
+			ship = { name = "CLC Katyusha" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CZL version_name = "Tsarina Class" } } }
+			ship = { name = "ARC Selvas" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CZL version_name = "Tsarina Class" } } }
+			ship = { name = "ARC Páramos" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CZL version_name = "Tsarina Class" } } }
+			ship = { name = "CLC Abyssal" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CZL version_name = "Enigma Class" } } }
+			ship = { name = "CLC Umbra" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CZL version_name = "Enigma Class" } } }
+			ship = { name = "CLC Enigma" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CZL version_name = "Enigma Class" } } }
+			ship = { name = "CLC Nightfall" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CZL version_name = "Enigma Class" } } }
+			ship = { name = "CLC Shadow" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CZL version_name = "Enigma Class" } } }
+
+		}
+	}
+}
+##### No Notable Air Forces #####
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "CZL"
+		}
+		requested_factories = 3
+		progress = 0.54
+		efficiency = 75
+	}
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_chassis_1
+			creator = "CZL"
+			version_name = "D-03"
+		}
+		requested_factories = 1
+		progress = 0.60
+		efficiency = 80
+		}
+		add_equipment_to_stockpile = {
+    		type = light_tank_chassis_1
+    			amount = 84
+		}
+		add_equipment_to_stockpile = {
+    		type = train_equipment_1
+   				amount = 5
+    	}
+}
+	

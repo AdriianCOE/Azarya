@@ -1,0 +1,31 @@
+
+state={
+	id=343
+	name="Solaria Heights"
+	resources={
+	    tungsten = 12
+	}
+
+	history={
+	owner = FVI
+	victory_points = {
+		7583 30
+	}
+	buildings = {
+		infrastructure = 3
+		industrial_complex = 4
+		air_base = 1
+	}
+		add_core_of = FVI
+		add_core_of = NIR
+	}
+	provinces={
+		277 1665 2861 3477 3985 4757 4880 4959 7426 7511 7525 7542 7549 7574 7577 7583 7584 7607 7617 7625 7626 
+	}
+	manpower=1308984
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}
+
+7385

@@ -1,0 +1,33 @@
+
+state={
+	id=149
+	name="Fenymalia"
+	resources={
+		oil=1
+}
+	history={
+		owner = BOA
+		victory_points = {
+			1324 15
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 1
+			1324 = {
+				naval_base = 1
+				}
+	
+			}
+			
+	
+		add_core_of = BOA
+		}
+	provinces={
+		85 1183 1324 1601 1660 1710 1790 2415 2656 2740 3191 5360 5368 5560 5565 
+	}
+	manpower=598598
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

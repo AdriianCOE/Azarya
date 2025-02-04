@@ -1,0 +1,33 @@
+
+state={
+	id=171
+	name="Deyokaya"
+	resources = {
+		oil = 3
+	}
+	history={
+		owner = NSA
+		victory_points = {
+			3706 12
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+			3706 = {
+				naval_base = 2
+				}
+
+			}
+			add_core_of = NSA
+		}
+	provinces={
+		129 361  497 501  1265 1516 1584 2141 3424 3623 3706 4001 4619 4665 4844 5850 5861 5864 5916 6036 6060 6081 
+	}
+	manpower=698578
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}
+
+ 

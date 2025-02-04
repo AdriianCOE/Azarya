@@ -1,0 +1,28 @@
+
+state={
+	id=485
+	name="Daggerholt"
+	history={
+		owner = BOK
+
+		victory_points = {
+			5880 5
+		}
+		victory_points = {
+			1652 20
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 2
+		}
+		add_core_of = BOK
+	}
+	provinces={
+		4769 1652 293 2579 1253 5886 1708 3493 5880
+	}
+	manpower=1695828
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

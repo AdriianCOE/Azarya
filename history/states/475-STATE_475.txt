@@ -1,0 +1,19 @@
+
+state={
+	id=475
+	name="Ormarch"
+	history={
+		owner = VRD
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = VRD
+	}
+	provinces={
+		124 712 5835 4356 1069 1325 4171 5804 17
+	}
+	manpower=226828
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

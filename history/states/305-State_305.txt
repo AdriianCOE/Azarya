@@ -1,0 +1,23 @@
+
+state={
+	id=305
+	name="Batavar"
+	
+    history = {
+        owner = CZL
+		buildings = {
+			infrastructure = 2
+			dockyard = 2
+		}
+		add_core_of = CZL
+
+	}
+	
+	provinces={
+		9 1193 2470 2692 3134 4214 4508 7218 7256 7275 7309 7382 
+	}
+	manpower=587520
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

@@ -1,0 +1,30 @@
+
+state={
+	id=164
+	name="Draumstedt"
+	history={
+		owner = VRD
+		victory_points = {
+			1131 30
+		}
+		victory_points = {
+			3190 15
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 4
+			arms_factory = 2
+			air_base = 2
+		}
+		add_core_of = VRD
+	}
+	provinces={
+		1131 2268 2863 2921 4463 4807 4947 5408 5413 5442 5472 5491 5494 5528 5553 5558 3751 3190 322
+	}
+	manpower=3483858
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}
+
+ 

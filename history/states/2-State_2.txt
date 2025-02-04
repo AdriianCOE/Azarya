@@ -1,0 +1,15 @@
+state={
+	id=2
+	name="Isola del Sole"
+	history={
+		owner = SLU
+		add_core_of = SLU
+
+	}
+	provinces={
+		5092 
+	}
+	buildings_max_level_factor=1.000
+        manpower=5982
+        state_category = tiny_island
+}

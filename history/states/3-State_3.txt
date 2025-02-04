@@ -1,0 +1,19 @@
+
+state={
+	id=3
+	name="Nata Island"
+
+	history={
+		owner = GYE
+		add_core_of = GYE
+
+	}
+
+	provinces={
+		130 135 1948 2661 3156 7591 7785 
+	}
+	manpower=39584
+	buildings_max_level_factor=1.000
+	state_category=tiny_island
+	local_supplies=0.000
+}

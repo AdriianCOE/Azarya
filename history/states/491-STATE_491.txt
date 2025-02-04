@@ -1,0 +1,17 @@
+
+state={
+	id=491
+	name="State_491"
+	history={
+		owner = DKG
+		add_core_of = DKG
+		}
+	provinces={
+		708 5962 3849
+	}
+	manpower=5593
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+	impassable=yes
+}

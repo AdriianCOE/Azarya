@@ -1,0 +1,20 @@
+state={
+	id=360
+	name="Eboracum"
+	
+    history = {
+        owner = CZL
+				buildings = {
+			infrastructure = 3	
+
+				}
+		add_core_of = CZL
+    }
+	
+	provinces={
+		688 1166 1757 1905 2056 2735 3893 4046 7702 7794 
+	}
+	buildings_max_level_factor=1.000
+        manpower=287219
+        state_category = rural
+}
