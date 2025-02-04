@@ -2246,7 +2246,7 @@ generic_raider_ship_organization = {
 	allowed = {
 		AND = {
 			has_dlc = "Arms Against Tyranny"
-			original_tag = THK
+			original_tag = ICE
 		}
 		#always = no # Archetype only - countries using it have their own versions
 	}

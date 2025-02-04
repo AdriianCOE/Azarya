@@ -17,6 +17,10 @@ operation_rescue_operative = { ### 0 1/35
 	operatives = 1
 
 	visible = {
+		network_national_coverage = {
+			target = FROM
+			value > 0
+		}
 		FROM = {
 			has_captured_operative = ROOT
 		}
@@ -25,13 +29,6 @@ operation_rescue_operative = { ### 0 1/35
 	available = {
 		
 	}
-
-	requirements = {
-		FROM = {
-			has_captured_operative = ROOT
-		}
-	}
-
 
 	equipment = {
 		
@@ -74,7 +71,7 @@ operation_rescue_operative = { ### 0 1/35
 						transport_plane_equipment < 1
 					}
 				}
-				factor = 0
+				factor = 0.1 #less likely if we have no transports
 			}
 		}
 		infiltration_diplomatic = {
@@ -108,7 +105,7 @@ operation_rescue_operative = { ### 0 1/35
 						transport_plane_equipment < 1
 					}
 				}
-				factor = 0
+				factor = 0.1 #less likely if we have no transports
 			}
 		}
 		exfiltration_border = { base = 30 }
@@ -217,7 +214,7 @@ operation_infiltrate_civilian = { ### 1 1/35
 						transport_plane_equipment < 1
 					}
 				}
-				factor = 0
+				factor = 0.1 #less likely if we have no transports
 			}
 		}
 		infiltration_diplomatic = {
@@ -251,7 +248,7 @@ operation_infiltrate_civilian = { ### 1 1/35
 						transport_plane_equipment < 1
 					}
 				}
-				factor = 0
+				factor = 0.1 #less likely if we have no transports
 			}
 		}
 		exfiltration_border = { base = 30 }
@@ -406,10 +403,9 @@ operation_capture_cipher = { ### 3 1/55
 	desc = operation_capture_cipher_desc
 	priority = 3
 
-	days = 75
-	network_strength = 40
+	days = 120
+	network_strength = 50
 	operatives = 2
-	is_captured_cipher = yes
 
 	visible = {
 		network_strength = {
@@ -432,7 +428,7 @@ operation_capture_cipher = { ### 3 1/55
 		ROOT = {
 			add_decryption = {
 				target = FROM
-				ratio = 0.3
+				ratio = 0.1
 			}
 		}
 	}
@@ -442,7 +438,7 @@ operation_capture_cipher = { ### 3 1/55
 				ROOT = {
 					add_decryption = {
 						target = FROM
-						ratio = 0.5
+						ratio = 0.2
 					}
 					random_list = {
 						25 = {
@@ -476,7 +472,7 @@ operation_capture_cipher = { ### 3 1/55
 				ROOT = {
 					add_decryption = {
 						target = FROM
-						ratio = 0.5
+						ratio = 0.2
 					}
 				}
 			}
@@ -487,7 +483,7 @@ operation_capture_cipher = { ### 3 1/55
 		ROOT = {
 			add_decryption = {
 				target = FROM
-				ratio = 0.3
+				ratio = 0.1
 			}
 		}
 	}
@@ -503,7 +499,7 @@ operation_capture_cipher = { ### 3 1/55
 						transport_plane_equipment < 1
 					}
 				}
-				factor = 0
+				factor = 0.1 #less likely if we have no transports
 			}
 		}
 		infiltration_diplomatic = {
@@ -540,7 +536,7 @@ operation_capture_cipher = { ### 3 1/55
 						transport_plane_equipment < 1
 					}
 				}
-				factor = 0
+				factor = 0.1 #less likely if we have no transports
 			}
 		}
 		exfiltration_border = { base = 30 }
@@ -556,7 +552,7 @@ operation_infiltrate_armed_forces_army = { ### 4 1/55
 	desc = operation_infiltrate_armed_forces_army_desc
 	priority = 4
 	
-	days = 75
+	days = 90
 	network_strength = 50
 	operatives = 2
 
@@ -648,7 +644,7 @@ operation_infiltrate_armed_forces_army = { ### 4 1/55
 						transport_plane_equipment < 1
 					}
 				}
-				factor = 0
+				factor = 0.1 #less likely if we have no transports
 			}
 		}
 		infiltration_diplomatic = {
@@ -689,7 +685,7 @@ operation_infiltrate_armed_forces_army = { ### 4 1/55
 						transport_plane_equipment < 1
 					}
 				}
-				factor = 0
+				factor = 0.1 #less likely if we have no transports
 			}
 		}
 		exfiltration_border = { base = 30 }
@@ -705,7 +701,7 @@ operation_infiltrate_armed_forces_navy = { ### 5 1/55
 	desc = operation_infiltrate_armed_forces_navy_desc
 	priority = 5
 	
-	days = 75
+	days = 90
 	network_strength = 50
 	operatives = 2
 
@@ -806,7 +802,7 @@ operation_infiltrate_armed_forces_navy = { ### 5 1/55
 						transport_plane_equipment < 1
 					}
 				}
-				factor = 0
+				factor = 0.1 #less likely if we have no transports
 			}
 		}
 		infiltration_diplomatic = {
@@ -847,7 +843,7 @@ operation_infiltrate_armed_forces_navy = { ### 5 1/55
 						transport_plane_equipment < 1
 					}
 				}
-				factor = 0
+				factor = 0.1 #less likely if we have no transports
 			}
 		}
 		exfiltration_border = { base = 30 }
@@ -863,7 +859,7 @@ operation_infiltrate_armed_forces_airforce = { ### 6 1/55
 	desc = operation_infiltrate_armed_forces_airforce_desc
 	priority = 6
 
-	days = 75
+	days = 90
 	network_strength = 50
 	operatives = 2
 
@@ -957,7 +953,7 @@ operation_infiltrate_armed_forces_airforce = { ### 6 1/55
 						transport_plane_equipment < 1
 					}
 				}
-				factor = 0
+				factor = 0.1 #less likely if we have no transports
 			}
 		}
 		infiltration_diplomatic = {
@@ -998,7 +994,7 @@ operation_infiltrate_armed_forces_airforce = { ### 6 1/55
 						transport_plane_equipment < 1
 					}
 				}
-				factor = 0
+				factor = 0.1 #less likely if we have no transports
 			}
 		}
 		exfiltration_border = { base = 30 }
@@ -1017,7 +1013,6 @@ operation_coup_government = { ### 7 1/70
 	days = 180
 	network_strength = 70
 	operatives = 2
-	is_staged_coup = yes
 
 	visible = {
 		network_strength = {
@@ -1048,37 +1043,9 @@ operation_coup_government = { ### 7 1/70
 	available = {
 		
 		FROM = {
-			has_civil_war = no
-			NOT = {
-				has_government = var:PREV.ROOT.current_party_ideology_group
-			}
-			if = {
-				limit = {
-					PREV.ROOT = { has_government = fascism }
-				}
-				fascism > 0.2
-			}
-			if = {
-				limit = {
-					PREV.ROOT = { has_government = communism }
-				}
-				communism > 0.2
-			}
-			if = {
-				limit = {
-					PREV.ROOT = { has_government = democratic }
-				}
-				democratic > 0.2
-			}
-			if = {
-				limit = {
-					PREV.ROOT = { has_government = neutrality }
-				}
-				neutrality > 0.2
-			}
-				#set_temp_variable = { coup_ideology@ROOT = PREV.ROOT.current_party_ideology_group }
-				#set_temp_variable = { coup_ideology_popularity@ROOT = party_popularity@ROOT.coup_ideology }
-				#check_variable = { ROOT.coup_ideology_popularity > 0.2 }
+				set_temp_variable = { coup_ideology@ROOT = PREV.ROOT.current_party_ideology_group }
+				set_temp_variable = { coup_ideology_popularity@ROOT = party_popularity@ROOT.coup_ideology }
+				check_variable = { ROOT.coup_ideology_popularity > 0.3 }
 			
 			OR = {
 				AND = {
@@ -1249,7 +1216,7 @@ operation_coup_government = { ### 7 1/70
 						transport_plane_equipment < 1
 					}
 				}
-				factor = 0
+				factor = 0.1 #less likely if we have no transports
 			}
 		}
 		infiltration_diplomatic = {
@@ -1263,8 +1230,8 @@ operation_coup_government = { ### 7 1/70
 			}
 		}
 	}
-	phases = { lar_fra_coup_pre_position_units = { base = 100 } }
-	phases = { lar_fra_launch_coup = { base = 100 } }
+	#phases = { lar_fra_coup_pre_position_units = { base = 100 } }
+	#phases = { lar_fra_launch_coup = { base = 100 } }
 }
 
 operation_boost_resistance = { ### 8 2/40
@@ -1276,7 +1243,7 @@ operation_boost_resistance = { ### 8 2/40
 	
 	cost_multiplier = 0.25
 	
-	days = 50
+	days = 60
 	network_strength = 35
 	operatives = 2
 
@@ -1313,18 +1280,9 @@ operation_boost_resistance = { ### 8 2/40
 	outcome_modifiers = { boost_resistance_factor }
 	outcome_execute = {
 		FROM.FROM = {
-			if = {
-				add_resistance_target = {
-					amount = 25
-					tooltip = intelligency_agency_resistance_boost_tt
-				}
-				add_compliance = -15
-			}
-			else = {
-				add_resistance_target = {
-					amount = 10
-					tooltip = intelligency_agency_resistance_boost_tt
-				}
+			add_resistance_target = {
+				amount = 10
+				tooltip = intelligency_agency_resistance_boost_tt
 			}
 			subtract_from_variable = { boost_resistance_chance = 10 }
 		}
@@ -1357,18 +1315,9 @@ operation_boost_resistance = { ### 8 2/40
 
 	outcome_potential = {
 		FROM.FROM = {
-			if = {
-				add_resistance_target = {
-					amount = 25
-					tooltip = intelligency_agency_resistance_boost_tt
-				}
-				add_compliance = -15
-			}
-			else = {
-				add_resistance_target = {
-					amount = 10
-					tooltip = intelligency_agency_resistance_boost_tt
-				}
+			add_resistance_target = {
+				amount = 10
+				tooltip = intelligency_agency_resistance_boost_tt
 			}
 		}
 	}
@@ -1402,7 +1351,15 @@ operation_boost_resistance = { ### 8 2/40
 		resistance_support_arms_depots = { base = 25 }
 		resistance_support_distribute_weapons = { base = 25 }
 		resistance_support_organize_training = { base = 25 }
-		resistance_support_coordinate_groups = { base = 25 }
+		resistance_support_coordinate_groups = {
+			base = 25
+			modifier = {
+				FROM.FROM = {
+					resistance < 40
+				}
+				factor = 30
+			}
+		}
 	}
 	phases = { #exfiltration
 		exfiltration_air_pickup = { 
@@ -1566,7 +1523,7 @@ operation_make_resistance_contacts = { ### 9 2/40
 						transport_plane_equipment < 1
 					}
 				}
-				factor = 0
+				factor = 0.1 #less likely if we have no transports
 			}
 		}
 	}
@@ -1584,7 +1541,7 @@ operation_make_resistance_contacts = { ### 9 2/40
 						transport_plane_equipment < 1
 					}
 				}
-				factor = 0
+				factor = 0.1 #less likely if we have no transports
 			}
 		}
 		exfiltration_border = { base = 30 }
@@ -1640,7 +1597,7 @@ operation_collaboration_government = { ### 10 2/55
 		ROOT = {
 			add_collaboration = {
 				target = FROM
-				value = 0.3
+				value = 0.4
 			}
 		}
 	}
@@ -1648,7 +1605,7 @@ operation_collaboration_government = { ### 10 2/55
 		ROOT = {
 			add_collaboration = {
 				target = FROM
-				value = 0.45
+				value = 0.2
 			}
 		}
 	}
@@ -1657,7 +1614,7 @@ operation_collaboration_government = { ### 10 2/55
 		ROOT = {
 			add_collaboration = {
 				target = FROM
-				value = 0.3
+				value = 0.2
 			}
 		}
 	}
@@ -1673,7 +1630,7 @@ operation_collaboration_government = { ### 10 2/55
 						transport_plane_equipment < 1
 					}
 				}
-				factor = 0
+				factor = 0.1 #less likely if we have no transports
 			}
 		}
 		infiltration_diplomatic = {
@@ -1701,7 +1658,7 @@ operation_collaboration_government = { ### 10 2/55
 						transport_plane_equipment < 1
 					}
 				}
-				factor = 0
+				factor = 0.1 #less likely if we have no transports
 			}
 		}
 		exfiltration_border = { base = 30 }
@@ -1782,7 +1739,7 @@ operation_coordinated_strike = { ### 11 2/70
 						transport_plane_equipment < 1
 					}
 				}
-				factor = 0
+				factor = 0.1 #less likely if we have no transports
 			}
 		}
 		infiltration_diplomatic = {
@@ -1830,7 +1787,6 @@ operation_steal_tech_civilian = { ### 12 3/35
 	days = 120
 	network_strength = 35
 	operatives = 3
-	cost_multiplier = 0.05
 
 	visible = {
 		num_of_operatives > 0
@@ -1902,7 +1858,7 @@ operation_steal_tech_civilian = { ### 12 3/35
 						folder = industry_folder
 
 						bonus = 3.0
-						ahead_reduction = 1
+						ahead_reduction = 2
 						dynamic = yes
 						instant = yes
 						name = operation_steal_tech_civilian
@@ -1941,7 +1897,7 @@ operation_steal_tech_civilian = { ### 12 3/35
 						transport_plane_equipment < 1
 					}
 				}
-				factor = 0
+				factor = 0.1 #less likely if we have no transports
 			}
 		}
 		infiltration_diplomatic = {
@@ -1975,7 +1931,7 @@ operation_steal_tech_civilian = { ### 12 3/35
 						transport_plane_equipment < 1
 					}
 				}
-				factor = 0
+				factor = 0.1 #less likely if we have no transports
 			}
 		}
 		exfiltration_border = { base = 30 }
@@ -1990,8 +1946,10 @@ operation_targeted_sabotage_industry = { ### 13 3/35
 	name = operation_targeted_sabotage_industry
 	desc = operation_targeted_sabotage_industry_desc
 	priority = 13
+
+	cost_multiplier = 0.25
 	
-	days = 90
+	days = 120
 	network_strength = 35
 	operatives = 3
 
@@ -2038,7 +1996,7 @@ operation_targeted_sabotage_industry = { ### 13 3/35
 		FROM.FROM = {
 			add_to_variable = {
 				var = targeted_sabotage_industry
-				value = 5
+				value = 2
 			}
 			custom_effect_tooltip = targeted_sabotage_industry_2_tt
 		}
@@ -2050,14 +2008,26 @@ operation_targeted_sabotage_industry = { ### 13 3/35
 		}
 	}
 	outcome_extra_execute = { # SCOPE_OPERATION
-		
-		FROM.FROM = {
-			add_to_variable = {
-				var = targeted_sabotage_industry
-				value = 8
+		random_list = {
+			33 = {
+				FROM.FROM = {
+					add_to_variable = {
+						var = targeted_sabotage_industry
+						value = 3
+					}
+					custom_effect_tooltip = targeted_sabotage_industry_3_tt
+				}
 			}
-			custom_effect_tooltip = targeted_sabotage_industry_3_tt
-		}		
+			67 = {
+				FROM.FROM = {
+					add_to_variable = {
+						var = targeted_sabotage_industry
+						value = 2
+					}
+					custom_effect_tooltip = targeted_sabotage_industry_2_tt
+				}
+			}
+		}	
 	}
 
 	outcome_potential = {
@@ -2076,7 +2046,7 @@ operation_targeted_sabotage_industry = { ### 13 3/35
 						transport_plane_equipment < 1
 					}
 				}
-				factor = 0
+				factor = 0.1 #less likely if we have no transports
 			}
 		}
 		infiltration_diplomatic = {
@@ -2109,7 +2079,7 @@ operation_targeted_sabotage_industry = { ### 13 3/35
 						transport_plane_equipment < 1
 					}
 				}
-				factor = 0
+				factor = 0.1 #less likely if we have no transports
 			}
 		}
 		exfiltration_border = { base = 30 }
@@ -2124,8 +2094,10 @@ operation_targeted_sabotage_infrastructure = { ### 14 3/35
 	name = operation_targeted_sabotage_infrastructure
 	desc = operation_targeted_sabotage_infrastructure_desc
 	priority = 14
+
+	cost_multiplier = 0.25
 	
-	days = 90
+	days = 120
 	network_strength = 35
 	operatives = 3
 
@@ -2145,6 +2117,7 @@ operation_targeted_sabotage_infrastructure = { ### 14 3/35
 	requirements = {
 		FROM = {
 			any_controlled_state = {
+
 				has_resistance = yes
 			}
 		}
@@ -2170,7 +2143,7 @@ operation_targeted_sabotage_infrastructure = { ### 14 3/35
 		FROM.FROM = {
 			add_to_variable = {
 				var = targeted_sabotage_infrastructure
-				value = 5
+				value = 2
 			}
 			custom_effect_tooltip = targeted_sabotage_infrastructure_2_tt
 		}
@@ -2182,12 +2155,25 @@ operation_targeted_sabotage_infrastructure = { ### 14 3/35
 		}
 	}
 	outcome_extra_execute = { # SCOPE_OPERATION
-		FROM.FROM = {
-			add_to_variable = {
-				var = targeted_sabotage_infrastructure
-				value = 8
+		random_list = {
+			33 = {
+				FROM.FROM = {
+					add_to_variable = {
+						var = targeted_sabotage_infrastructure
+						value = 3
+					}
+					custom_effect_tooltip = targeted_sabotage_infrastructure_3_tt
+				}
 			}
-			custom_effect_tooltip = targeted_sabotage_infrastructure_3_tt
+			67 = {
+				FROM.FROM = {
+					add_to_variable = {
+						var = targeted_sabotage_infrastructure
+						value = 2
+					}
+					custom_effect_tooltip = targeted_sabotage_infrastructure_2_tt
+				}
+			}
 		}
 	}
 	outcome_potential = {
@@ -2205,7 +2191,7 @@ operation_targeted_sabotage_infrastructure = { ### 14 3/35
 						transport_plane_equipment < 1
 					}
 				}
-				factor = 0
+				factor = 0.1 #less likely if we have no transports
 			}
 		}
 		infiltration_diplomatic = {
@@ -2240,7 +2226,7 @@ operation_targeted_sabotage_infrastructure = { ### 14 3/35
 						transport_plane_equipment < 1
 					}
 				}
-				factor = 0
+				factor = 0.1 #less likely if we have no transports
 			}
 		}
 		exfiltration_border = { base = 30 }
@@ -2255,8 +2241,10 @@ operation_targeted_sabotage_resources = { ### 15 3/35
 	name = operation_targeted_sabotage_resources
 	desc = operation_targeted_sabotage_resources_desc
 	priority = 15
+
+	cost_multiplier = 0.25
 	
-	days = 90
+	days = 120
 	network_strength = 35
 	operatives = 3
 
@@ -2301,7 +2289,7 @@ operation_targeted_sabotage_resources = { ### 15 3/35
 		FROM.FROM = {
 			add_to_variable = {
 				var = targeted_sabotage_resources
-				value = 5
+				value = 2
 			}
 			custom_effect_tooltip = targeted_sabotage_resources_2_tt
 		}
@@ -2313,13 +2301,25 @@ operation_targeted_sabotage_resources = { ### 15 3/35
 		}
 	}
 	outcome_extra_execute = { # SCOPE_OPERATION
-		
-		FROM.FROM = {
-			add_to_variable = {
-				var = targeted_sabotage_resources
-				value = 8
+		random_list = {
+			33 = {
+				FROM.FROM = {
+					add_to_variable = {
+						var = targeted_sabotage_resources
+						value = 3
+					}
+					custom_effect_tooltip = targeted_sabotage_resources_3_tt
+				}
 			}
-			custom_effect_tooltip = targeted_sabotage_resources_2_tt
+			67 = {
+				FROM.FROM = {
+					add_to_variable = {
+						var = targeted_sabotage_resources
+						value = 2
+					}
+					custom_effect_tooltip = targeted_sabotage_resources_2_tt
+				}
+			}
 		}
 	}
 	outcome_potential = {
@@ -2337,7 +2337,7 @@ operation_targeted_sabotage_resources = { ### 15 3/35
 						transport_plane_equipment < 1
 					}
 				}
-				factor = 0
+				factor = 0.1 #less likely if we have no transports
 			}
 		}
 		infiltration_diplomatic = {
@@ -2370,7 +2370,7 @@ operation_targeted_sabotage_resources = { ### 15 3/35
 						transport_plane_equipment < 1
 					}
 				}
-				factor = 0
+				factor = 0.1 #less likely if we have no transports
 			}
 		}
 		exfiltration_border = { base = 30 }
@@ -2389,7 +2389,6 @@ operation_steal_tech_army = { ### 16 3/55
 	days = 120
 	network_strength = 50
 	operatives = 3
-	cost_multiplier = 0.05
 
 	visible = {
 		num_of_operatives > 1
@@ -2418,135 +2417,60 @@ operation_steal_tech_army = { ### 16 3/55
 	outcome_modifiers = { operation_steal_tech_outcome operation_outcome }
 	cost_modifiers = { operation_cost }
 	outcome_execute = {
-		if = {
-			limit = {
-				NOT = {
-					has_dlc = "No Step Back"
-				}
+		ROOT = {
+			steal_random_tech_bonus = {
+				folder = armour_folder
+				folder = artillery_folder
+				folder = infantry_folder
+				folder = support_folder
+				bonus = 3.0
+				dynamic = yes
+				instant = yes
+				name = operation_steal_tech_army
+				target = FROM
+				uses = 1
 			}
-			ROOT = {
-				steal_random_tech_bonus = {
-					folder = armour_folder
-					folder = artillery_folder
-					folder = infantry_folder
-					folder = support_folder
-					bonus = 3.0
-					dynamic = yes
-					instant = yes
-					name = operation_steal_tech_army
-					target = FROM
-					uses = 1
-				}
-				remove_operation_token = {
-					tag = FROM
-					token = token_army
-				}
-			}
-		}
-		else = {
-			ROOT = {
-				steal_random_tech_bonus = {
-					folder = nsb_armour_folder
-					folder = artillery_folder
-					folder = infantry_folder
-					folder = support_folder
-					bonus = 3.0
-					dynamic = yes
-					instant = yes
-					name = operation_steal_tech_army
-					target = FROM
-					uses = 1
-				}
-				remove_operation_token = {
-					tag = FROM
-					token = token_army
-				}
+			remove_operation_token = {
+				tag = FROM
+				token = token_army
 			}
 		}
 	}
 	outcome_extra_execute = { # SCOPE_OPERATION
 		random_list = {
 			33 = {
-				if = {
-					limit = {
-						NOT = {
-							has_dlc = "No Step Back"
-						}
-					}
-					ROOT = {
-						steal_random_tech_bonus = {
-							folder = armour_folder
-							folder = artillery_folder
-							folder = infantry_folder
-							folder = support_folder
+				ROOT = {
+					steal_random_tech_bonus = {
+						folder = armour_folder
+						folder = artillery_folder
+						folder = infantry_folder
+						folder = support_folder
 
-							bonus = 3.0
-							ahead_reduction = 2
-							dynamic = yes
-							instant = yes
-							name = operation_steal_tech_army
-							target = FROM
-							uses = 1
-						}
-					}
-				}
-				else = {
-					ROOT = {
-						steal_random_tech_bonus = {
-							folder = nsb_armour_folder
-							folder = artillery_folder
-							folder = infantry_folder
-							folder = support_folder
-
-							bonus = 3.0
-							ahead_reduction = 2
-							dynamic = yes
-							instant = yes
-							name = operation_steal_tech_army
-							target = FROM
-							uses = 1
-						}
+						bonus = 3.0
+						ahead_reduction = 2
+						dynamic = yes
+						instant = yes
+						name = operation_steal_tech_army
+						target = FROM
+						uses = 1
 					}
 				}
 			}
 			67 = {
-				if = {
-					limit = {
-						NOT = { has_dlc = "No Step Back" }
-					}
-					ROOT = {
-						steal_random_tech_bonus = {
-							folder = armour_folder
-							folder = artillery_folder
-							folder = infantry_folder
-							folder = support_folder
-	
-							bonus = 3.0
-							dynamic = yes
-							instant = yes
-							ahead_reduction = 1
-							name = operation_steal_tech_army
-							target = FROM
-							uses = 1
-						}
-					}
-				}
-				else = {
-					ROOT = {
-						steal_random_tech_bonus = {
-							folder = nsb_armour_folder
-							folder = artillery_folder
-							folder = infantry_folder
-							folder = support_folder
-	
-							bonus = 3.0
-							dynamic = yes
-							instant = yes
-							ahead_reduction = 1
-							name = operation_steal_tech_army
-							target = FROM
-							uses = 1
-						}
+				ROOT = {
+					steal_random_tech_bonus = {
+						folder = armour_folder
+						folder = artillery_folder
+						folder = infantry_folder
+						folder = support_folder
+
+						bonus = 3.0
+						dynamic = yes
+						instant = yes
+						ahead_reduction = 1
+						name = operation_steal_tech_army
+						target = FROM
+						uses = 1
 					}
 				}
 			}
@@ -2554,39 +2478,19 @@ operation_steal_tech_army = { ### 16 3/55
 	}
 
 	outcome_potential = {
-		if = {
-			limit = { NOT = { has_dlc = "No Step Back" } }
-			ROOT = {
-				steal_random_tech_bonus = {
-					folder = armour_folder
-					folder = artillery_folder
-					folder = infantry_folder
-					folder = support_folder
-					bonus = 3.0
-					dynamic = yes
-					instant = yes
-					name = operation_steal_tech_army
-					target = FROM
-					uses = 1
-				}
+		ROOT = {
+			steal_random_tech_bonus = {
+				folder = armour_folder
+				folder = artillery_folder
+				folder = infantry_folder
+				folder = support_folder
+				bonus = 3.0
+				dynamic = yes
+				instant = yes
+				name = operation_steal_tech_army
+				target = FROM
+				uses = 1
 			}
-		}
-		else = {
-			ROOT = {
-				steal_random_tech_bonus = {
-					folder = nsb_armour_folder
-					folder = artillery_folder
-					folder = infantry_folder
-					folder = support_folder
-					bonus = 3.0
-					dynamic = yes
-					instant = yes
-					name = operation_steal_tech_army
-					target = FROM
-					uses = 1
-				}
-			}
-
 		}
 		custom_effect_tooltip = operation_outcome_consumes_token_tt
 	}
@@ -2602,7 +2506,7 @@ operation_steal_tech_army = { ### 16 3/55
 						transport_plane_equipment < 1
 					}
 				}
-				factor = 0
+				factor = 0.1 #less likely if we have no transports
 			}
 		}
 		infiltration_diplomatic = {
@@ -2635,7 +2539,7 @@ operation_steal_tech_army = { ### 16 3/55
 						transport_plane_equipment < 1
 					}
 				}
-				factor = 0
+				factor = 0.1 #less likely if we have no transports
 			}
 		}
 		exfiltration_border = { base = 30 }
@@ -2654,7 +2558,6 @@ operation_steal_tech_navy = { ### 17 3/55
 	days = 120
 	network_strength = 50
 	operatives = 3
-	cost_multiplier = 0.05
 
 	visible = {
 		num_of_operatives > 1
@@ -2823,7 +2726,7 @@ operation_steal_tech_navy = { ### 17 3/55
 						transport_plane_equipment < 1
 					}
 				}
-				factor = 0
+				factor = 0.1 #less likely if we have no transports
 			}
 		}
 		infiltration_diplomatic = {
@@ -2857,7 +2760,7 @@ operation_steal_tech_navy = { ### 17 3/55
 						transport_plane_equipment < 1
 					}
 				}
-				factor = 0
+				factor = 0.1 #less likely if we have no transports
 			}
 		}
 		exfiltration_border = { base = 30 }
@@ -2873,10 +2776,10 @@ operation_steal_tech_airforce = { ### 18 3/55
 	desc = operation_steal_tech_airforce_desc
 	priority = 18
 
+
 	days = 120
 	network_strength = 50
 	operatives = 3
-	cost_multiplier = 0.05
 
 	visible = {
 		num_of_operatives > 1
@@ -2980,7 +2883,7 @@ operation_steal_tech_airforce = { ### 18 3/55
 						transport_plane_equipment < 1
 					}
 				}
-				factor = 0
+				factor = 0.1 #less likely if we have no transports
 			}
 		}
 		infiltration_diplomatic = {
@@ -3014,7 +2917,7 @@ operation_steal_tech_airforce = { ### 18 3/55
 						transport_plane_equipment < 1
 					}
 				}
-				factor = 0
+				factor = 0.1 #less likely if we have no transports
 			}
 		}
 		exfiltration_border = { base = 30 }

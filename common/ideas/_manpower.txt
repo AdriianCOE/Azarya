@@ -315,12 +315,9 @@ ideas = {
 			cancel_if_invalid = no
 		}
 
-		### Ethiopian National Levy
-		ETH_chitet_law = {
-			picture = ETH_chitet_law
-			cost = 150
-			removal_cost = -1
-			level = 6
+		UAT_inadequate_mobilization = {
+
+			picture = ENG_the_war_to_end_all_wars
 
 			allowed = {
 				always = no
@@ -328,100 +325,24 @@ ideas = {
 			allowed_to_remove = {
 				always = no
 			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.25
+				army_morale_factor = 0.25
+				minimum_training_level = -1
+				industrial_capacity_factory = -0.25
+				industrial_capacity_dockyard = -0.25
+				production_speed_buildings_factor = -0.25
+				training_time_factor = 0.5
+			}
+
+			cancel_if_invalid = no
 
 			ai_will_do = {
    				factor = 0
-			}
-
-			modifier = {
-				conscription = 0.045
-				custom_modifier_tooltip = ETH_chitet_law_tt
-				industrial_capacity_factory = -0.05
-				industrial_capacity_dockyard = -0.05
-				production_speed_buildings_factor = -0.05
-			}
-
-			default = yes
-
-			cancel_if_invalid = no
-		}
-		ETH_chitet_law_peace_time = {
-			picture = ETH_chitet_law
-
-			cost = 150
-			removal_cost = -1
-			level = 6
-
-			allowed = {
-				always = no
-			}
-			allowed_to_remove = {
-				always = no
-			}
-
-			ai_will_do = {
-   				factor = 0
-			}
-
-			modifier = {
-				conscription = 0.005
-				custom_modifier_tooltip = ETH_chitet_law_tt
-				industrial_capacity_factory = 0.05
-				industrial_capacity_dockyard = 0.05
-				production_speed_buildings_factor = 0.05
-			}
-
-			default = yes
-
-			cancel_if_invalid = no
-		}
-
-		### Swiss Citizen Militia ###
-
-		SWI_citizen_militia_1 = {
-			cost = 200
-			picture = citizen_militia_1
-			removal_cost = -1
-			level = 6
-
-			allowed = {
-				always = no
-			}
-			allowed_to_remove = {
-			}
-			ai_will_do = {
-				factor = 0
-			}
-
-			modifier = {
-				conscription = 0.1
-				custom_modifier_tooltip = SWI_army_limitations_TT
-				ai_desired_divisions_factor = 1
-			}
-		}
-
-		SWI_citizen_militia_2 = {
-			picture = citizen_militia_2
-			cost = 200
-			removal_cost = -1
-			level = 6
-
-			allowed = {
-				always = no
-			}
-			allowed_to_remove = {
-			}
-			ai_will_do = {
-				factor = 0
-			}
-
-			modifier = {
-				conscription = 0.2
-				custom_modifier_tooltip = SWI_army_limitations_TT
-				ai_desired_divisions_factor = 2
-			}
+   			}
 		}
 	}
-
-
 }

@@ -1,6 +1,0 @@
-spriteTypes = {
-	SpriteType = {
-		    name = "GFX_select_date_1924"
-		    texturefile = "gfx/interface/select_date_1924.dds"
-	}
-}

@@ -1,5 +1,37 @@
-#This specifically overrides the rule check as to whether or not you can guarantee other ideologies
-DIPLOMACY_GUARANTEE_ENABLE_TRIGGER_OVERRIDES_GAME = {
+#	Triggers to control if diplomatic actions are enabled:
+#		Format:
+#
+#		<diplomatic action tag>_enabled_trigger = {
+#			<trigger contents>
+#		}
+#
+#		ROOT is the country initiating the diplomatic action.
+#		FROM is the recipient or target of the diplomatic action.
+#
+#		Note:  For cleaner tooltips, it is recommended that you use
+#			if triggers within the enable triggers, and a single
+#			custom_trigger_tooltip trigger within each if trigger.
+#
+#		Example: (Germany is prevented from declaring war on the Soviet Union.)
+#
+#		DIPLOMACY_WAR_ENABLE_TRIGGER = {
+#			if = {
+#				limit = {
+#					tag = GER
+#				}
+#				custom_trigger_tooltip = {
+#					tooltip = PREVENT_GER_WAR_ON_SOV
+#					FROM = {
+#						NOT = {
+#							tag = SOV
+#						}
+#					}
+#				}
+#			}
+#		}
+
+# This specifically overrides the rule check as to whether or not you can guarantee other ideologies
+DIPLOMACY_GUARANTEE_ENABLE_TRIGGER_OVERRIDES_GAME_TRIGGER = {
 	NOT = {
 		has_game_rule = {
 			rule = allow_guarantees
@@ -75,8 +107,50 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 				rule = allow_release_nations
 				option = FREE
 			}
+			OR = {
+				NOT = { has_dlc = "Man the Guns" }
+			}
+			OR = {
+				NOT = { has_dlc = "La Resistance" }
+			}
+			OR = {
+				NOT = { has_dlc = "Death or Dishonor" }
+			}
+			OR = {
+				NOT = { has_dlc = "Trial of Allegiance" }
+			}
 		}
 		always = yes
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_release_nations
+				option = PEACE_ONLY
+			}
+			OR = {
+				NOT = { has_dlc = "Man the Guns" }
+			}
+			OR = {
+				NOT = { has_dlc = "La Resistance" }
+		}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_RELEASE_NATIONS_PEACE_ONLY_TOOLTIP
+			has_war = no
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_release_nations
+				option = BLOCKED
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_RELEASE_NATIONS_BLOCKED_TOOLTIP
+			always = no
+		}
 	}
 }
 DIPLOMACY_MILACC_ENABLE_TRIGGER = {
@@ -578,20 +652,6 @@ DIPLOMACY_LEAVE_FACTION_ENABLE_TRIGGER = {
 		}
 	}
 }
- DIPLOMACY_ASSUME_FACTION_LEADERSHIP_ENABLE_TRIGGER = {
-	if = {
-		limit = {
-			has_game_rule = {
-				rule = allow_take_over_faction
-				option = BLOCKED
-			}
-		}
-		custom_trigger_tooltip = {
-			tooltip = RULE_ASSUME_LEADERSHIP_BLOCKED_TOOLTIP
-			always = no
-		}
-	}
-}
 DIPLOMACY_KICK_FROM_FACTION_ENABLE_TRIGGER = {
 	if = {
 		limit = {
@@ -614,14 +674,7 @@ DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
 				option = ALWAYS_FREE
 			}
 		}
-		if = {
-			custom_trigger_tooltip = {
-				tooltip = RULE_VOLUNTEERS_NOT_ANARCHISTS_TT
-			}
-		}
-		else = {
-			always = yes
-		}
+		always = yes
 	}
 	if = {
 		limit = {
@@ -630,185 +683,7 @@ DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
 				option = LIMITED
 			}
 		}
-		if = {
-			custom_trigger_tooltip = {
-				tooltip = RULE_VOLUNTEERS_NOT_ANARCHISTS_TT
-			}
-		}
-		else_if = {
-			limit = {
-				has_dlc = "La Resistance"
-				NOT = { has_global_flag = scw_over }
-			}
-			custom_trigger_tooltip = {
-				tooltip = RULE_VOLUNTEERS_PORTUGAL_SCW_TT
-			}
-		}
-		else_if = { #Bulgarian volunteers in SCW (with La Resistance)
-			limit = {
-				has_dlc = "Battle for the Bosporus"
-				has_dlc = "La Resistance"
-				NOT = { has_global_flag = scw_over }
-				
-			}
-			custom_trigger_tooltip = {
-				tooltip = RULE_VOLUNTEERS_BULGARIA_SCW_TT
-			}
-		}
-		else_if = { #Bulgarian volunteers in SCW (without La Resistance)
-			limit = {
-				has_dlc = "Battle for the Bosporus"
-				NOT = { has_dlc = "La Resistance" }
-				any_country = {
-					has_civil_war = yes
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = RULE_VOLUNTEERS_BULGARIA_SCW_TT
-				NOT = {
-					AND = {
-						FROM = {
-							NOT = { has_government = communism }
-							NOT = { has_government = democratic }
-						}
-					}
-				}
-				NOT = {
-					AND = {
-						FROM = {
-							NOT = { has_government = fascism }
-							NOT = { has_government = neutrality }
-						}
-					}
-				}
-			}
-		}
-		else_if = { #Soviet volunteers to China (Communist Soviet -> Only to the supported China)
-			limit = {
-				has_government = communism
-			}
-			custom_trigger_tooltip = {
-				tooltip = RULE_VOLUNTEERS_SOVIET_CHINA_SUPPORT_CHOSEN_ONE_TT
-			}
-		}
-		else_if = { #Soviet volunteers to China (other ideologies -> Only to one China)
-			limit = {
-				NOT = { has_government = communism }
-			}
-			custom_trigger_tooltip = {
-				tooltip = RULE_VOLUNTEERS_SOVIET_CHINA_ONLY_ONE_TT
-			}
-		}
-		else_if = { #Soviet volunteers to Spain (Commie & Democr) (no POUM) (with No Step Back)
-			limit = {
-				has_dlc = "No Step Back"
-				OR = {
-					has_government = communism
-					has_government = democratic
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = RULE_VOLUNTEERS_SOVIET_SCW_TT
-				NOT = {
-					OR = {
-						AND = {
-							has_dlc = "La Resistance"
-						}
-						AND = {
-							NOT = { has_dlc = "La Resistance" }
-							FROM = {
-								NOT = { has_government = communism }
-								NOT = { has_government = democratic }
-							}
-						}
-					}
-				}
-			}
-		}
-		else_if = { #Soviet volunteers to Spain (Commie) (supporting POUM -> POUM split happened -> Stalin in charge) (with No Step Back)
-			limit = {
-				has_dlc = "No Step Back"
-				has_dlc = "La Resistance"
-				has_government = communism
-			}
-			custom_trigger_tooltip = {
-				tooltip = RULE_VOLUNTEERS_SOVIET_SCW_COVERT_POUM_TT
-			}
-		}
-		else_if = { #Soviet volunteers to Spain (Commie) (supporting POUM -> POUM split happened -> Right Oppo in charge) (with No Step Back)
-			limit = {
-				has_dlc = "No Step Back"
-				has_dlc = "La Resistance"
-				has_government = communism
-			}
-			custom_trigger_tooltip = {
-				tooltip = RULE_VOLUNTEERS_SOVIET_SCW_POUM_TT
-			}
-		}
-		else_if = { #Soviet volunteers to Spain (Commie & Democr) (without No Step Back)
-			limit = {
-				NOT = { has_dlc = "No Step Back" }
-				OR = {
-					has_government = communism
-					has_government = democratic
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = RULE_VOLUNTEERS_SOVIET_SCW_TT
-				NOT = {
-					OR = {
-						AND = {
-							has_dlc = "La Resistance"
-						}
-						AND = {
-							NOT = { has_dlc = "La Resistance" }
-							FROM = {
-								NOT = { has_government = communism }
-								NOT = { has_government = democratic }
-							}
-						}
-					}
-						
-				}
-			}
-		}
-		else_if = { #Soviet volunteers to Spain (Exiles)
-			limit = {
-				OR = {
-					has_government = fascism
-					has_government = neutrality
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = RULE_VOLUNTEERS_SOVIET_EXILES_SCW_TT
-				NOT = {
-					OR = {
-						AND = {
-							has_dlc = "La Resistance"
-						}
-						AND = {
-							NOT = { has_dlc = "La Resistance" }
-							FROM = {
-								NOT = { has_government = fascism }
-								NOT = { has_government = neutrality }
-							}
-						}
-					}
-						
-				}
-			}
-		}
-		#else_if = { #Can only send Volunteers to Ethiopia while having the National Spirit to do so)
-		#	limit = {
-		#		has_dlc = "By Blood Alone"
-		#	}
-		#	custom_trigger_tooltip = {
-		#		tooltip = RULE_VOLUNTEERS_ETHIOPIA_ONLY_ONE_TT
-		#	}
-		#}
-		else = {
-			always = yes
-		}
+		always = yes
 	}
 	if = {
 		limit = {
@@ -820,11 +695,6 @@ DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
 		custom_trigger_tooltip = {
 			tooltip = RULE_VOLUNTEERS_SAME_IDEOLOGY_TT
 			has_government = FROM
-		}
-		if = {
-			custom_trigger_tooltip = {
-				tooltip = RULE_VOLUNTEERS_NOT_ANARCHISTS_TT
-			}
 		}
 	}
 	if = {
@@ -842,39 +712,10 @@ DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
 }
 
 DIPLOMACY_JOIN_ALLY_ENABLE_TRIGGER = {
-	if = { # TODO_TA make more generic trigger
-		limit = {
-			NOT = { has_global_flag = ethiopia_recognized_flag }
-			
-		}
-		custom_trigger_tooltip = {
-			tooltip = LON_NON_INTERFERENCE_RESOLUTION_JOIN
-			always = no
-		}
-	}
-	if = { 
-		limit = {
-			has_dlc = "Arms Against Tyranny"
-			ROOT = {
-				has_idea = neutrality_idea
-				is_subject = yes 
-			}
-		}
-		custom_trigger_tooltip = {
-			tooltip = ICELAND_HAS_DECLARED_NEUTRALITY_JOIN
-			always = no
-		}
-	}
-	if = { 
-		limit = {
-			has_dlc = "Arms Against Tyranny"
-			ROOT = {
-				is_subject = yes 
-			}
-		}
-		custom_trigger_tooltip = {
-			tooltip = DENMARK_IS_A_PUPPET_JOIN
-			always = no
-		}
-	}
+}
+DIPLOMACY_CALL_ALLY_ENABLE_TRIGGER = {
+}
+DIPLOMACY_JOIN_FACTION_ENABLE_TRIGGER = {
+}
+DIPLOMACY_OFFER_JOIN_FACTION_ENABLE_TRIGGER = {
 }

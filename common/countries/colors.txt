@@ -106,3 +106,35 @@ MEK = {
 	color = rgb { 250 140 130 }
 	color_ui = { 250 140 130 }
 }
+ATI = {
+	color = rgb { 0  95  115 }
+	color_ui = { 0  95  115 }
+}
+SDB = {
+	color = rgb { 139  1  1 }
+	color_ui = { 139  1  1 }
+}
+MOR = {
+	color = rgb { 128  0  32 }
+	color_ui = { 128  0  32 }
+}
+ARK = {
+	color = rgb { 218  165  32 }
+	color_ui = { 218  165  32 }
+}
+BOK = {
+	color = rgb { 176  94  137 }
+	color_ui = { 176  94  137 }
+}
+SAH = {
+	color = rgb { 204  132  58 }
+	color_ui = { 204  132  58 }
+}
+VRD = {
+	color = rgb { 186  28  51 }
+	color_ui = { 186  28  51 }
+}
+FVI = {
+	color = rgb { 210  255  90 }
+	color_ui = { 210  255  90 }
+}

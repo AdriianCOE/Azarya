@@ -156,7 +156,7 @@ destroyers = {
 
 generic_escorts = {
 	category = naval
-	
+
 	available_for = {
 		
 	}
@@ -213,7 +213,7 @@ generic_escorts = {
 		enable = {
 			AND = {
 				has_tech = improved_depth_charges
-				has_tech = decimetric_radar
+				has_tech = cavity_magnatron
 			}
 		}
 		role_icon_index = 2
@@ -477,7 +477,7 @@ naval_light_cruiser = {
 
 naval_cruiser_heavy = {
 	category = naval
-	
+
 	available_for = {
 	}
 	
@@ -912,7 +912,7 @@ naval_capital_battleship = {
 
 naval_capital_bc = {
 	category = naval
-	
+
 	available_for = {
 	}
 	
@@ -1045,7 +1045,7 @@ naval_capital_bc = {
 
 naval_carrier = {
 	category = naval
-	
+
 	available_for = {
 	}
 	
@@ -1215,7 +1215,7 @@ naval_carrier = {
 
 naval_submarine = {
 	category = naval
-	
+
 	available_for = {
 	}
 	
@@ -1355,7 +1355,7 @@ naval_submarine = {
 
 naval_mine_sweeper = {
 	category = naval
-	
+
 	available_for = {
 	}
 	
@@ -1462,7 +1462,7 @@ naval_mine_sweeper = {
 
 naval_mine_layer = {
 	category = naval
-	
+
 	available_for = {
 	}
 	

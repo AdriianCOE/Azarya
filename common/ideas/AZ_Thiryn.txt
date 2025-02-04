@@ -1,10 +1,32 @@
 ideas = {
 	country = {
 
-		THK_monarquia_estabelecida = {
+		THK_Corrupt_Queen = { 
+			name = THK_Corrupt_Queen
+			picture = THK_Corrupt_Queen_GFX
+			allowed = {
+				original_tag = THK
+			}
 
-			name = THK_Monarchy
-			picture = THK_monarquia_estabelecida-1477
+			available = {
+			}
+
+			visible = {
+				always = yes
+			}
+		
+			modifier = {
+				democratic_acceptance = -50
+				political_power_factor = 0.2
+				drift_defence_factor = 0.1
+				stability_factor = -0.05
+				war_support_factor = -0.1
+			}
+		}
+
+		THK_Defeated_Army = {
+			name = THK_Defeated_Army
+			picture = bul_zveno
 			allowed = {
 				original_tag = THK
 			}
@@ -20,20 +42,16 @@ ideas = {
 			}
 
 			modifier = {
-				stability_weekly = 0.01
-				legitimacy_daily = 0.10
-				political_power_gain = 0.3	
-				neutrality_drift = 0.03	
-				faction_trade_opinion_factor = 0.5
-				production_speed_buildings_factor = 0.2
-
+				army_morale_factor = -0.10
+				army_org_factor = -0.05
+				promote_cost_factor = 0.10
+				recruitable_population_factor = -0.008
 				}
 			}
-		
-			THK_Exercito_Polido = { 
 
-			picture = generic_industrial_concern_2
-			name = THK_Army
+		Great_Earthquake = { 
+			picture = ger_mefo_bills_payment
+			name = Great_Earthquake
 			allowed = {
 				original_tag = THK
 			}
@@ -45,18 +63,74 @@ ideas = {
 				always = yes
 			}
 
-			research_bonus = {
-				industry = 0.2
+			modifier = {
+				consumer_goods_factor = 0.12	
+				production_speed_infrastructure_factor = -0.05
+				production_speed_industrial_complex_factor = -0.02
+				monthly_population = -0.01
 			}
-		
-			traits = { central_bank } 
+		}
+		THK_Pioneer_Airforce = { 
+			picture = BEL_legacy_of_the_belgian_airforce
+			name = THK_Pioneer_Airforce
+			allowed = {
+				original_tag = THK
+			}
+
+			available = {
+			}
+
+			visible = {
+				always = yes
+			}
 
 			modifier = {
-				consumer_goods_factor = -0.05
-				experience_gain_army_unit_factor = 0.5
-				army_attack_factor = 0.5
-				army_speed_factor = 0.2
-				army_morale = 2
+				air_training_xp_gain_factor = 0.05
+				air_doctrine_cost_factor = -0.02
+			}
+		}
+		THK_Spoiled_politics = { 
+			picture = ger_mefo_bills_payment
+			name = Spoiled_Politics
+			allowed = {
+				original_tag = THK
+			}
+
+			available = {
+			}
+
+			visible = {
+				always = yes
+			}
+
+			modifier = {
+				political_power_factor = -0.10
+				research_speed_factor = -0.020
+				drift_defence_factor = 0.3
+				fascism_drift = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		THK_rapid_industrialization = {
+			name = URG_rapid_industrialization
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+			}
+
+			removal_cost = -1
+			
+			picture = generic_build_infrastructure
+			
+			modifier = {
+				consumer_goods_factor = -0.25
+				production_speed_buildings_factor = 0.2
 			}
 		}
 	}

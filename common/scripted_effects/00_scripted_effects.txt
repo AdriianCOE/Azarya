@@ -1163,7 +1163,6 @@ add_ruling_to_neu = {
 	}
 }
 
-
 on_daily = {
 
 }

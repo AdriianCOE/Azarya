@@ -8,6 +8,10 @@ debug_decisions = {
 propaganda_efforts = {
 	icon = generic_propaganda
 
+	allowed = {
+		always = no
+	}
+
 	visible = {
 
 	}
@@ -16,6 +20,7 @@ MTG_naval_treaties = {
 	picture = GFX_decision_cat_picture_naval_treaties
 	allowed = {
 		has_dlc = "Man the Guns"
+		always = no
 	}
 	visible = {
 		OR = {
@@ -29,6 +34,10 @@ MTG_naval_treaties = {
 }
 war_measures = {
 	icon = generic_propaganda
+
+	allowed = {
+		always = no
+	}
 
 	visible = {
 		has_war = yes
@@ -58,7 +67,7 @@ political_actions = {
 	icon = generic_political_actions
 
 	allowed = {
-		always = yes
+		always = no
 	}
 }
 foreign_influence = {
@@ -85,6 +94,10 @@ demobilization = {
 }
 economy_decisions = {
 	icon = generic_economy
+
+	allowed = {
+		always = no
+	}
 
 }
 prospect_for_resources = {

@@ -439,12 +439,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 1.5
-			}
-			modifier = {
-				factor = 0.5
-			}
 		}
 		
 		ai_research_weights = {
@@ -493,12 +487,6 @@ technologies = {
 			modifier = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
-			}
-			modifier = {
-				factor = 0.5
-			}
-			modifier = {
-				factor = 1.5
 			}
 		}
 		
@@ -738,6 +726,8 @@ technologies = {
 		doctrine_name = "TITLE_BATTLEFIELD_SUPPORT"
 
 		xor = { force_rotation air_superiority }
+
+		xp_research_type = air
 		
 		# EFFECT ########
 		air_superiority_detect_factor = 0.15
@@ -768,12 +758,6 @@ technologies = {
 			factor = 5
 			
 			modifier = {
-				factor = 0
-			}
-			modifier = {
-				factor = 4
-			}
-			modifier = {
 				ai_land_doctrine_tier_1_trigger = yes
 				factor = 2
 			}
@@ -790,9 +774,12 @@ technologies = {
 	}
 
 	dive_bombing = {
+
+		xp_research_type = air
 		
 		# EFFECT ########
 		air_cas_efficiency = 0.20
+		ground_attack_factor = 0.10
 		###########
 		
 		path = {
@@ -824,10 +811,6 @@ technologies = {
 			modifier = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
-			}
-
-			modifier = {
-				factor = 0.5
 			}
 		}
 		
@@ -879,9 +862,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0.5
-			}
 		}
 		
 		ai_research_weights = {
@@ -932,9 +912,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0.5
-			}
 		}
 		
 		ai_research_weights = {
@@ -984,9 +961,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0.5
-			}
 		}
 		
 		ai_research_weights = {
@@ -1030,9 +1004,6 @@ technologies = {
 			modifier = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
-			}
-			modifier = {
-				factor = 0.5
 			}
 		}
 		
@@ -1091,9 +1062,6 @@ technologies = {
 			modifier = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
-			}
-			modifier = {
-				factor = 0.5
 			}
 		}
 		
@@ -1365,6 +1333,8 @@ technologies = {
 	force_rotation = {
 		doctrine_name = "TITLE_OPERATIONAL_INTEGRITY"
 		
+		xp_research_type = air
+		
 		xor = { formation_flying air_superiority }	
 
 		# EFFECT ########
@@ -1395,9 +1365,6 @@ technologies = {
 		ai_will_do = {
 			factor = 10
 			
-			modifier = {
-				factor = 0
-			}
 			modifier = {
 				ai_land_doctrine_tier_1_trigger = yes
 				factor = 2

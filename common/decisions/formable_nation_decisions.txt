@@ -20,13 +20,13 @@ forming_category = {
 			}
 		}
 		visible = {
-			original_tag = TST
+			original_tag = THK
 			NOT = { has_global_flag = form_test_flag }
 			NOT = { has_country_flag = created_country }
 		}
 
 		complete_effect = {
-			set_cosmetic_tag = TST_UNIF
+			set_cosmetic_tag = THK_UNIF
 			custom_effect_tooltip = form_test_tt
 			hidden_effect = {
 				set_global_flag = form_test_flag

@@ -1,27 +1,20 @@
-#####-----------------------------------------------------------> Mod by Sig "Greatexperiment" Altre
-
 technologies = {
 	
-	@1906 = 0
-	@1924 = 2
-	@1926 = 4
-	@1927 = 6
-	@1928 = 8
-	@1929 = 10
-	@1930 = 12
-	@1931 = 14
-	@1932 = 16
-	@1933 = 18
-	@1934 = 20
-	@1935 = 22
-	@1936 = 24
-	@1937 = 26
-	@1938 = 28
-	@1951 = 30
-	@1940 = 32
-	@1941 = 34
-	@1942 = 36
-	@1943 = 38
+	@1918 = 0
+	@1936 = 2
+	@1938 = 4
+	@1939 = 6
+	@1940 = 8
+	@1941 = 10
+	@1942 = 12
+	@1943 = 14
+	@1944 = 16
+	@1945 = 18
+	@1946 = 20
+
+	@field_hospital_x = 9 #it is actually Y :D
+	@logistic_x = 11 #it is actually Y :D
+	@signal_x = 14 #it is actually Y :D
 
 
 	tech_support = {
@@ -40,7 +33,6 @@ technologies = {
 			leads_to_tech = tech_recon
 			research_cost_coeff = 1
 		}	
-		
 		path = {
 			leads_to_tech = tech_field_hospital
 			research_cost_coeff = 1
@@ -50,27 +42,23 @@ technologies = {
 			leads_to_tech = tech_logistics_company
 			research_cost_coeff = 1
 		}
-		
 		path = {
 			leads_to_tech = tech_military_police
 			research_cost_coeff = 1
 		}
-		
 		path = {
 			leads_to_tech = tech_signal_company
 			research_cost_coeff = 1
 		}
-		
 		path = {
 			leads_to_tech = tech_maintenance_company
 			research_cost_coeff = 1
 		}
-		
 		research_cost = 1.0
-		start_year = 1906
+		start_year = 1918
 		folder = {
 			name = support_folder
-			position = { x = 0 y = @1906 }
+			position = { x = 0 y = @1918 }
 		}
 		
 		categories = {
@@ -78,24 +66,25 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			base = 2
 			
 			modifier = {
 				factor = 4
-				date > "1925.1.1"
+				date > "1937.1.1"
 			}
 			
 			modifier = {
 				factor = 4
-				date > "1926.1.1"
+				date > "1938.1.1"
 			}
 			
 			modifier = {
 				factor = 4
-				date > "1927.1.1"
+				date > "1939.1.1"
 			}
 		}
 	}
+
 	
 	tech_engineers = {
 
@@ -108,11 +97,16 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
-		start_year = 1924
+		path = {
+			leads_to_tech = sp_armored_engineer_tech
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.25
+		start_year = 1936
 		folder = {
 			name = support_folder
-			position = { x = 0 y = @1924 }
+			position = { x = 0 y = @1936 }
 		}
 		
 		categories = {
@@ -121,7 +115,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			base = 4
 			
 			modifier = {
 				factor = 2
@@ -129,47 +123,90 @@ technologies = {
 			}
 			
 			modifier = {
-				factor = 1.2
-				date > "1925.1.1"
+				factor = 2
+				date > "1937.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1926.1.1"
+				date > "1938.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1927.1.1"
+				date > "1939.1.1"
 			}
 			modifier = {
 				factor = 10
-				date > "1928.1.1"
+				date > "1940.1.1"
+			}
+		}
+
+		on_research_complete = {
+			if = {
+				limit = {
+					has_dlc = "No Step Back"
+				}
+				custom_effect_tooltip = {
+					localization_key = SP_UNLOCK_PROJECT
+					PROJECT = sp_land_flamethrower_tank	
+				}
+			}
+
+			custom_effect_tooltip = {
+				localization_key = SP_UNLOCK_PROJECT
+				PROJECT = sp_land_military_engineering_vehicles
 			}
 		}
 	}
 	
 	tech_engineers2 = {
 
-		engineer = {
-			entrenchment  = 2
-			
+		engineer = {	
+			entrenchment = 0.50
 			fort = {
 				defence = 0.10
 				attack = 0.10
 			}
 		}
 
-		enable_equipment_modules = {
-			dozer_blade
+		assault_engineer = {	
+			breakthrough = 0.1
+			fort = {
+				attack = 0.15
+			}
 		}
 
-		enable_subunits = {
-			light_flame_tank
-			medium_flame_tank
-			heavy_flame_tank
+		armored_engineer = {	
+			entrenchment = 1
+			fort = {
+				defence = 0.15
+			}
 		}
+
+		enable_equipment_modules = {
+			dozer_blade
+			#flamethrower #MM: Moved to Special Project sp_land_flamethrower_tank
+		}
+
+		#enable_subunits = { #MM: Moved to Special Project sp_land_flamethrower_tank
+		#	light_flame_tank
+		#	medium_flame_tank
+		#	heavy_flame_tank
+		#}
 		
+		#on_research_complete = { #MM: Moved to Special Project sp_land_flamethrower_tank
+		#	hidden_effect = {
+		#		if = {
+		#			limit = {
+		#				has_dlc = "No Step Back"
+		#				original_tag = ITA
+		#				has_completed_focus = ITA_italian_tankettes
+		#			}
+		#			ITA_add_basic_light_flamethrower_template = yes
+		#		}
+		#	}
+		#}
 		
 		path = {
 			leads_to_tech = tech_engineers3
@@ -177,10 +214,10 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 1927
+		start_year = 1939
 		folder = {
 			name = support_folder
-			position = { x = 0 y = @1927 }
+			position = { x = 0 y = @1939 }
 		}
 		
 		categories = {
@@ -189,31 +226,82 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			base = 4
+
 			modifier = {
-				factor = 1.2
-				date > "1928.1.1"
+				factor = 2
+				is_major = yes
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1929.1.1"
+				date > "1940.1.1"
 			}
-		
+			
 			modifier = {
 				factor = 2
-				date > "1930.1.1"
+				date > "1941.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1942.1.1"
 			}
 		}
 	}
 	
 	tech_engineers3 = {
 
+		enable_equipment_modules = {
+			lc_obstacle_clearance_gear #Module for Land Cruiser
+		}
+
 		engineer = {
-			entrenchment  = 2
+			entrenchment = 0.50
 			river = {
 				attack = 0.1	
 				defence = 0.10
+			}
+		}
+
+		assault_engineer = {
+			breakthrough = 0.1
+			river = {
+				attack = 0.1
+			}
+		}
+
+		armored_engineer = {
+			entrenchment = 1
+			river = {
+				attack = 0.05	
+				defence = 0.05
+				movement = 0.15
+			}
+		}
+
+		light_flame_tank = {
+			urban = {
+				attack = 0.1
+			}
+			fort = {
+				attack = 0.10
+			}
+		}
+		medium_flame_tank = {
+			urban = {
+				attack = 0.1
+			}
+			fort = {
+				attack = 0.10
+			}
+		}
+		heavy_flame_tank = {
+			urban = {
+				attack = 0.1
+			}
+			fort = {
+				attack = 0.10
 			}
 		}
 		path = {
@@ -221,11 +309,11 @@ technologies = {
 			research_cost_coeff = 1
 		}		
 
-		research_cost = 1.5
-		start_year = 1930
+		research_cost = 2.0
+		start_year = 1942
 		folder = {
 			name = support_folder
-			position = { x = 0 y = @1930 }
+			position = { x = 0 y = @1942 }
 		}
 		
 		categories = {
@@ -234,45 +322,84 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			base = 4
+
 			modifier = {
-				factor = 1.2
-				date > "1931.1.1"
+				factor = 2
+				is_major = yes
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1932.1.1"
+				date > "1943.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1933.1.1"
+				date > "1944.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1945.1.1"
 			}
 		}
 	}
 	
-###------> Old Engineers <><> <><> <><> <><> <><>
-	
 	tech_engineers4 = {
 
 		engineer = {
-			entrenchment  = 2
+			entrenchment = 0.50
 			urban = {
 				attack = 0.1	
 				defence = 0.1
 			}
 		}
-		path = {
-			leads_to_tech = tech_engineers_a
-			research_cost_coeff = 1
+
+		assault_engineer = {
+			breakthrough = 0.1
+			urban = {
+				attack = 0.15	
+			}
 		}
 
-		research_cost = 1.5
-		start_year = 1933
+		armored_engineer = {
+			entrenchment = 1
+			urban = {
+				defence = 0.15
+				movement = 0.15
+			}
+		}
+
+		light_flame_tank = {
+			urban = {
+				attack = 0.1
+			}
+			fort = {
+				attack = 0.10
+			}
+		}
+		medium_flame_tank = {
+			urban = {
+				attack = 0.1
+			}
+			fort = {
+				attack = 0.10
+			}
+		}
+		heavy_flame_tank = {
+			urban = {
+				attack = 0.1
+			}
+			fort = {
+				attack = 0.10
+			}
+		}
+		research_cost = 2.0
+		start_year = 1945
 		folder = {
 			name = support_folder
-			position = { x = 0 y = @1933 }
+			position = { x = 0 y = @1945 }
 		}
 		
 		categories = {
@@ -281,25 +408,29 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			base = 4
+
 			modifier = {
-				factor = 1.2
-				date > "1934.1.1"
+				factor = 2
+				is_major = yes
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1935.1.1"
+				date > "1946.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1936.1.1"
+				date > "1947.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1948.1.1"
 			}
 		}
 	}	
-
-###------> X <><> <><> <><> <><> <><>
 	
 	tech_recon = {
 
@@ -315,11 +446,16 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
-		start_year = 1924
+		path = {
+			leads_to_tech = sp_helicopter_artillery_observers_tech
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.25
+		start_year = 1936
 		folder = {
 			name = support_folder
-			position = { x = 2 y = @1924 }
+			position = { x = 2 y = @1936 }
 		}
 		
 		categories = {
@@ -328,7 +464,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			base = 1
 			
 			modifier = {
 				factor = 2
@@ -337,21 +473,21 @@ technologies = {
 			
 			modifier = {
 				factor = 1.2
-				date > "1925.1.1"
+				date > "1937.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1926.1.1"
+				date > "1938.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1927.1.1"
+				date > "1939.1.1"
 			}
 			modifier = {
 				factor = 10
-				date > "1928.1.1"
+				date > "1940.1.1"
 			}
 		}
 	}
@@ -361,6 +497,10 @@ technologies = {
 		category_recon = {
 			recon = 2
 		}
+
+		helicopter_recon = {
+			recon = 1
+		}
 		
 		path = {
 			leads_to_tech = tech_recon3
@@ -368,10 +508,10 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 1927
+		start_year = 1939
 		folder = {
 			name = support_folder
-			position = { x = 2 y = @1927 }
+			position = { x = 2 y = @1939 }
 		}
 		
 		categories = {
@@ -380,20 +520,21 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			base = 1
+			
 			modifier = {
 				factor = 1.2
-				date > "1928.1.1"
+				date > "1940.1.1"
 			}
-		
+			
 			modifier = {
 				factor = 2
-				date > "1929.1.1"
+				date > "1941.1.1"
 			}
-		
+			
 			modifier = {
 				factor = 2
-				date > "1930.1.1"
+				date > "1942.1.1"
 			}
 		}
 	}
@@ -403,16 +544,25 @@ technologies = {
 		category_recon = {
 			recon = 2
 		}
+
+		helicopter_recon = {
+			recon = 1
+		}
+
+		helicopter_brigade = {
+			recon = 2
+		}
+
 		path = {
 			leads_to_tech = tech_recon4
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
-		start_year = 1930
+		research_cost = 2.0
+		start_year = 1942
 		folder = {
 			name = support_folder
-			position = { x = 2 y = @1930 }
+			position = { x = 2 y = @1942 }
 		}
 		
 		categories = {
@@ -421,45 +571,39 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
-
+			base = 1
 			
 			modifier = {
 				factor = 1.2
-				date > "1931.1.1"
-			}
-			
-
-			modifier = {
-				factor = 2
-				date > "1932.1.1"
+				date > "1943.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1933.1.1"
+				date > "1944.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1945.1.1"
 			}
 		}
 	}
-	
-###------> Old Recon <><> <><> <><> <><> <><>
-
 	tech_recon4 = {
 
 		category_recon = {
 			recon = 2
 		}
-		
-		path = {
-			leads_to_tech = tech_recon_a
-			research_cost_coeff = 1
+
+		helicopter_recon = {
+			recon = 2
 		}
 
-		research_cost = 1.5
-		start_year = 1933
+		research_cost = 2.0
+		start_year = 1945
 		folder = {
 			name = support_folder
-			position = { x = 2 y = @1933 }
+			position = { x = 2 y = @1945 }
 		}
 		
 		categories = {
@@ -468,27 +612,24 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			base = 1
 			
 			modifier = {
 				factor = 1.2
-				date > "1934.1.1"
+				date > "1946.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1935.1.1"
+				date > "1947.1.1"
 			}
 			
-
 			modifier = {
 				factor = 2
-				date > "1936.1.1"
+				date > "1948.1.1"
 			}
 		}
 	}
-	
-###------> X <><> <><> <><> <><> <><>
 	
 	tech_military_police = {
 
@@ -501,11 +642,16 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
-		start_year = 1924
+		path = {
+			leads_to_tech = sp_armored_motorized_military_police_tech
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.25
+		start_year = 1936
 		folder = {
 			name = support_folder
-			position = { x = 4 y = @1924 }
+			position = { x = 4 y = @1936 }
 		}
 		
 		categories = {
@@ -514,21 +660,12 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.5
-	
+			base = 0.5
+		
 			modifier = {
 				factor = 2
 				has_war = yes
 			}
-			modifier = {
-				factor = 3
-				any_state = {
-					is_controlled_by = ROOT
-					NOT = {
-						is_core_of = ROOT
-					}	
-				}
-			}			
 		}
 	}
 	
@@ -536,9 +673,13 @@ technologies = {
 
 		military_police = {
 			suppression_factor = 0.1
+		}
 
-			urban = {
-				movement = 0.05
+		motorized_military_police = {
+			suppression_factor = 0.1
+			battalion_mult = {
+				category = category_vehicle_infantry
+				default_morale = 0.05
 			}
 		}
 		
@@ -548,10 +689,10 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 1927
+		start_year = 1939
 		folder = {
 			name = support_folder
-			position = { x = 4 y = @1927 }
+			position = { x = 4 y = @1939 }
 		}
 		
 		categories = {
@@ -560,21 +701,12 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.5
+			base = 0.5
 			
 			modifier = {
 				factor = 2
 				has_war = yes
 			}
-			modifier = {
-				factor = 3
-				any_state = {
-					is_controlled_by = ROOT
-					NOT = {
-						is_core_of = ROOT
-					}	
-				}
-			}			
 		}
 	}
 	
@@ -583,17 +715,25 @@ technologies = {
 		military_police = {
 			suppression_factor = 0.1
 		}
-		
+
+		motorized_military_police = {
+			suppression_factor = 0.1
+			battalion_mult = {
+				category = category_vehicle_infantry
+				default_morale = 0.05
+			}
+		}
+
 		path = {
 			leads_to_tech = tech_military_police4
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
-		start_year = 1930
+		research_cost = 2.0
+		start_year = 1942
 		folder = {
 			name = support_folder
-			position = { x = 4 y = @1930 }
+			position = { x = 4 y = @1942 }
 		}
 		
 		categories = {
@@ -602,42 +742,33 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.5
+			base = 0.5
 			
 			modifier = {
 				factor = 2
 				has_war = yes
 			}
-			modifier = {
-				factor = 3
-				any_state = {
-					is_controlled_by = ROOT
-					NOT = {
-						is_core_of = ROOT
-					}	
-				}
-			}			
 		}
 	}
-	
-###------> Old Military Police <><> <><> <><> <><> <><>
-
 	tech_military_police4 = {
 
 		military_police = {
 			suppression_factor = 0.1
 		}
-		
-		path = {
-			leads_to_tech = tech_military_police_a
-			research_cost_coeff = 1
+
+		motorized_military_police = {
+			suppression_factor = 0.1
+			battalion_mult = {
+				category = category_vehicle_infantry
+				default_morale = 0.05
+			}
 		}
 
-		research_cost = 1.5
-		start_year = 1933
+		research_cost = 2.0
+		start_year = 1945
 		folder = {
 			name = support_folder
-			position = { x = 4 y = @1933 }
+			position = { x = 4 y = @1945 }
 		}
 		
 		categories = {
@@ -646,26 +777,14 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.5
+			base = 0.5
 			
 			modifier = {
 				factor = 2
 				has_war = yes
 			}
-			modifier = {
-				factor = 3
-				any_state = {
-					is_controlled_by = ROOT
-					NOT = {
-						is_core_of = ROOT
-					}	
-				}
-			}			
 		}
-
 	}
-	
-###------> X <><> <><> <><> <><> <><>
 
 	camicie_nere_security_militias = {
 
@@ -692,11 +811,16 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
-		start_year = 1924
+		path = {
+			leads_to_tech = sp_armored_maintenance_tech
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.25
+		start_year = 1936
 		folder = {
 			name = support_folder
-			position = { x = 6 y = @1924 }
+			position = { x = 6 y = @1936 }
 		}
 		
 		categories = {
@@ -705,21 +829,21 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			base = 1
 			
 			modifier = {
 				factor = 1.2
-				date > "1925.1.1"
+				date > "1937.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1926.1.1"
+				date > "1938.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1927.1.1"
+				date > "1939.1.1"
 			}
 		}
 	}
@@ -729,11 +853,14 @@ technologies = {
 		maintenance_company = {
 			reliability_factor = 0.05
 			equipment_capture_factor = 0.05
-			
-			desert = {
-				movement = 0.05
-			}
 		}
+
+		armored_maintenance = {
+			reliability_factor = 0.02
+			recovery = 0.03
+			equipment_capture_factor = 0.1
+		}
+
 		enable_equipment_modules = {
 			easy_maintenance
 		}
@@ -745,10 +872,10 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 1927
+		start_year = 1939
 		folder = {
 			name = support_folder
-			position = { x = 6 y = @1927 }
+			position = { x = 6 y = @1939 }
 		}
 		
 		categories = {
@@ -757,22 +884,22 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			base = 1
+			
 			modifier = {
 				factor = 1.2
-				date > "1928.1.1"
+				date > "1940.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1929.1.1"
+				date > "1941.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1930.1.1"
+				date > "1942.1.1"
 			}
-
 		}
 	}
 	
@@ -780,22 +907,39 @@ technologies = {
 
 		maintenance_company = {
 			reliability_factor = 0.05
-			equipment_capture_factor = 0.05
-
-			forest = {
-				movement = 0.05
+			
+			battalion_mult = {
+				category = category_all_armor
+				equipment_capture_factor = 0.01
+				add = yes
+				display_as_percentage = yes
 			}
+			
 		}
+
+		armored_maintenance = {
+			reliability_factor = 0.02
+			recovery = 0.3
+			
+			battalion_mult = {
+				category = category_all_armor
+				equipment_capture_factor = 0.02
+				add = yes
+				display_as_percentage = yes
+			}
+			
+		}
+
 		path = {
 			leads_to_tech = tech_maintenance_company4
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
-		start_year = 1930
+		research_cost = 2.0
+		start_year = 1942
 		folder = {
 			name = support_folder
-			position = { x = 6 y = @1930 }
+			position = { x = 6 y = @1942 }
 		}
 		
 		categories = {
@@ -804,49 +948,42 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			base = 1
 			
 			modifier = {
 				factor = 1.2
-				date > "1931.1.1"
+				date > "1943.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1932.1.1"
+				date > "1944.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1933.1.1"
+				date > "1945.1.1"
 			}
-
 		}
 	}
-	
-###------> Old Maintenance Company <><> <><> <><> <><> <><>
-
 	tech_maintenance_company4 = {
 
 		maintenance_company = {
 			reliability_factor = 0.05
 			equipment_capture_factor = 0.05
-
-			jungle = {
-				movement = 0.05 
-			}
-		}
-		
-		path = {
-			leads_to_tech = tech_maintenance_company_a
-			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
-		start_year = 1933
+		armored_maintenance = {
+			reliability_factor = 0.02
+			recovery = 0.03
+			equipment_capture_factor = 0.1
+		}
+
+		research_cost = 2.0
+		start_year = 1945
 		folder = {
 			name = support_folder
-			position = { x = 6 y = @1933 }
+			position = { x = 6 y = @1945 }
 		}
 		
 		categories = {
@@ -855,27 +992,24 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			base = 1
 			
 			modifier = {
 				factor = 1.2
-				date > "1934.1.1"
+				date > "1946.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1935.1.1"
+				date > "1947.1.1"
 			}
 			
-
 			modifier = {
 				factor = 1.2
-				date > "1936.1.1"
+				date > "1948.1.1"
 			}
 		}
 	}
-	
-###------> X <><> <><> <><> <><> <><>
 
 	tech_field_hospital = {
 
@@ -888,47 +1022,45 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		path = {
+			leads_to_tech = sp_helicopter_med_evac_tech
+			research_cost_coeff = 1
+		}
+
 		dependencies = {
 			motorised_infantry = 1
 		}
 
-		research_cost = 2
-		start_year = 1924
+		research_cost = 1.25
+		start_year = 1936
 		folder = {
 			name = support_folder
-			position = { x = 8 y = @1924 }
+			position = { x = @field_hospital_x y = @1936 }
 		}
 		
 		categories = {
 			support_tech
 			hospital_tech
 			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
 		}
 		
 		ai_will_do = {
-			factor = 3
-			
-			modifier = {
-				factor = 20
-				AND = {
-					OR = { 
-					}
-				}
-			}			
+			base = 1
 			
 			modifier = {
 				factor = 1.2
-				date > "1925.1.1"
+				date > "1937.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1926.1.1"
+				date > "1938.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1927.1.1"
+				date > "1939.1.1"
 			}
 		}
 	}
@@ -940,50 +1072,51 @@ technologies = {
 			experience_loss_factor = -0.10
 		}
 
-		category_support_battalions = {
-			acclimatization_hot_climate_gain_factor = 0.01
+		helicopter_field_hospital = {
+			casualty_trickleback = 0.12
+			experience_loss_factor = -0.08
+
+			battalion_mult = {
+				category = category_all_infantry
+				default_morale = 0.05
+			}
 		}
-		
+
 		path = {
 			leads_to_tech = tech_field_hospital3
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1.5
-		start_year = 1927
+		start_year = 1939
 		folder = {
 			name = support_folder
-			position = { x = 8 y = @1927 }
+			position = { x = @field_hospital_x y = @1939 }
 		}
 		
 		categories = {
 			support_tech
 			hospital_tech
 			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
 		}
 		
 		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 20
-				AND = {
-					OR = { 
-					}
-				}
-			}			
+			base = 1
+			
 			modifier = {
 				factor = 1.2
-				date > "1928.1.1"
+				date > "1940.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1929.1.1"
+				date > "1941.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1930.1.1"
+				date > "1942.1.1"
 			}
 		}
 	}
@@ -995,8 +1128,24 @@ technologies = {
 			experience_loss_factor = -0.10
 		}
 
-		category_support_battalions = {
-			acclimatization_hot_climate_gain_factor = 0.01
+		helicopter_field_hospital = {
+			casualty_trickleback = 0.12
+			experience_loss_factor = -0.08
+
+			battalion_mult = {
+				category = category_all_infantry
+				default_morale = 0.05
+			}
+		}
+
+		helicopter_brigade = {
+			casualty_trickleback = 0.15
+			experience_loss_factor = -0.1
+
+			battalion_mult = {
+				category = category_all_infantry
+				default_morale = 0.05
+			}
 		}
 
 		path = {
@@ -1004,40 +1153,39 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
-		start_year = 1930
+		research_cost = 2.0
+		start_year = 1942
 		folder = {
 			name = support_folder
-			position = { x = 8 y = @1930 }
+			position = { x = @field_hospital_x y = @1942 }
 		}
 		
 		categories = {
 			support_tech
 			hospital_tech
 			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
 		}
 		
 		ai_will_do = {
-			factor = 1
+			base = 1
+			
 			modifier = {
 				factor = 1.2
-				date > "1931.1.1"
-			}
-
-			modifier = {
-				factor = 1.2
-				date > "1932.1.1"
+				date > "1943.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1933.1.1"
+				date > "1944.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1945.1.1"
 			}
 		}
 	}
-	
-###------> Old Field Hospital <><> <><> <><> <><> <><>
-
 	tech_field_hospital4 = {
 
 		field_hospital = {
@@ -1045,56 +1193,56 @@ technologies = {
 			experience_loss_factor = -0.10
 		}
 
-		category_support_battalions = {
-			acclimatization_hot_climate_gain_factor = 0.01
-		}
-		
-		path = {
-			leads_to_tech = tech_field_hospital_a
-			research_cost_coeff = 1
+		helicopter_field_hospital = {
+			casualty_trickleback = 0.12
+			experience_loss_factor = -0.08
+
+			battalion_mult = {
+				category = category_all_infantry
+				default_morale = 0.05
+			}
 		}
 
-		research_cost = 1.5
-		start_year = 1933
+		research_cost = 2.0
+		start_year = 1945
 		folder = {
 			name = support_folder
-			position = { x = 8 y = @1933 }
+			position = { x = @field_hospital_x y = @1945 }
 		}
 		
 		categories = {
 			support_tech
 			hospital_tech
 			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
 		}
 		
 		ai_will_do = {
-			factor = 1
+			base = 1
 			
 			modifier = {
 				factor = 1.2
-				date > "1934.1.1"
+				date > "1946.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1935.1.1"
+				date > "1947.1.1"
 			}
 			
-
 			modifier = {
 				factor = 1.2
-				date > "1936.1.1"
+				date > "1948.1.1"
 			}
 		}
 	}
-	
-###------> X <><> <><> <><> <><> <><>
+
 
 	SWI_saint_bernard_tech = { #Saint Bernard tech
 		allow = { always = no } #Only obtained through Focus
 		field_hospital = {
-			casualty_trickleback = 0.1 ## REMEMBER TO UPDATE THE TOOLTIP 
-			experience_loss_factor = -0.1
+			casualty_trickleback = 0.20 ## REMEMBER TO UPDATE THE TOOLTIP 
+			experience_loss_factor = -0.3
 		}
 	}
 
@@ -1112,55 +1260,56 @@ technologies = {
 		enable_subunits = {
 			logistics_company
 		}
-
+		
 		path = {
 			leads_to_tech = tech_logistics_company2
 			research_cost_coeff = 1
 		}
 
+		path = {
+			leads_to_tech = sp_helicopter_transport_pods_tech
+			research_cost_coeff = 1
+		}
 
 		dependencies = {
 			motorised_infantry = 1
 		}
 
-		research_cost = 2
-		start_year = 1924
+		research_cost = 1.25
+		start_year = 1936
 		folder = {
 			name = support_folder
-			position = { x = 10 y = @1924 }
+			position = { x = @logistic_x y = @1936 }
 		}
 		
 		categories = {
 			support_tech
 			logistics_tech
 			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
 		}
 		
 		ai_will_do = {
-			factor = 1
+			base = 1
 			
 			modifier = {
 				factor = 1.2
-				date > "1925.1.1"
+				date > "1937.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1926.1.1"
+				date > "1938.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1927.1.1"
+				date > "1939.1.1"
 			}
 			modifier = {
 				factor = 5
-				date > "1928.1.1"
+				date > "1940.1.1"
 			}
-			modifier = {
-				factor = 3
-				num_of_military_factories > 15
-			}			
 		}
 	}
 	
@@ -1168,11 +1317,12 @@ technologies = {
 
 		logistics_company = {
 			supply_consumption_factor = -0.1
-			fuel_consumption_factor = -0.01
+			fuel_consumption_factor = -0.05
 		}
 
-		no_supply_grace = 1
-		
+		helicopter_transport = {
+			supply_consumption_factor = -0.12
+		}
 		
 		path = {
 			leads_to_tech = tech_logistics_company3
@@ -1180,38 +1330,36 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 1927
+		start_year = 1939
 		folder = {
 			name = support_folder
-			position = { x = 10 y = @1927 }
+			position = { x = @logistic_x y = @1939 }
 		}
 		
 		categories = {
 			support_tech
 			logistics_tech
 			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
 		}
 		
 		ai_will_do = {
-			factor = 1
+			base = 1
+			
 			modifier = {
 				factor = 1.2
-				date > "1928.1.1"
+				date > "1940.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1929.1.1"
+				date > "1941.1.1"
 			}
-		
+			
 			modifier = {
 				factor = 2
-				date > "1930.1.1"
+				date > "1942.1.1"
 			}
-			modifier = {
-				factor = 3
-				num_of_military_factories > 15
-			}			
 		}
 	}
 	
@@ -1219,110 +1367,100 @@ technologies = {
 
 		logistics_company = {
 			supply_consumption_factor = -0.1
-			fuel_consumption_factor = -0.01
+			fuel_consumption_factor = -0.05
 		}
 
-		no_supply_grace = 1
+		helicopter_transport = {
+			supply_consumption_factor = -0.12
+		}
+
+		helicopter_brigade = {
+			supply_consumption_factor = -0.12
+		}
 
 		path = {
 			leads_to_tech = tech_logistics_company4
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
-		start_year = 1930
+		research_cost = 2.0
+		start_year = 1942
 		folder = {
 			name = support_folder
-			position = { x = 10 y = @1930 }
+			position = { x = @logistic_x y = @1942 }
 		}
 		
 		categories = {
 			support_tech
-			motorized_equipment
 			logistics_tech
+			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
 		}
 		
 		ai_will_do = {
-			factor = 1
-
+			base = 1
 			
 			modifier = {
 				factor = 1.2
-				date > "1931.1.1"
-			}
-			
-
-			modifier = {
-				factor = 2
-				date > "1932.1.1"
+				date > "1943.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1933.1.1"
+				date > "1944.1.1"
 			}
+			
 			modifier = {
-				factor = 3
-				num_of_military_factories > 15
-			}			
+				factor = 2
+				date > "1945.1.1"
+			}
 		}
 	}
-	
-###------> Old Logisitcs Company <><> <><> <><> <><> <><>
-
 	tech_logistics_company4 = {
 
 		logistics_company = {
 			supply_consumption_factor = -0.1
-			fuel_consumption_factor = -0.01
+			fuel_consumption_factor = -0.05
 		}
 
-		no_supply_grace = 1
-		
-		path = {
-			leads_to_tech = tech_logistics_company_a
-			research_cost_coeff = 1
+		helicopter_transport = {
+			supply_consumption_factor = -0.15
 		}
 
-		research_cost = 1.5
-		start_year = 1933
+		research_cost = 2.0
+		start_year = 1945
 		folder = {
 			name = support_folder
-			position = { x = 10 y = @1933 }
+			position = { x = @logistic_x y = @1945 }
 		}
 		
 		categories = {
 			support_tech
 			logistics_tech
 			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
 		}
 		
 		ai_will_do = {
-			factor = 1
+			base = 1
 			
 			modifier = {
 				factor = 1.2
-				date > "1934.1.1"
+				date > "1946.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1935.1.1"
+				date > "1947.1.1"
 			}
 			
-
 			modifier = {
 				factor = 2
-				date > "1936.1.1"
+				date > "1948.1.1"
 			}
-			modifier = {
-				factor = 3
-				num_of_military_factories > 15
-			}			
 		}
 	}
-	
-###------> X <><> <><> <><> <><> <><>
+
 
 	tech_signal_company = {
 
@@ -1335,16 +1473,21 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		path = {
+			leads_to_tech = sp_armored_signal_tech
+			research_cost_coeff = 1
+		}
+
 		dependencies = {
 			radio = 1
 			motorised_infantry = 1
 		}
 
-		research_cost = 2
-		start_year = 1924
+		research_cost = 1.25
+		start_year = 1936
 		folder = {
 			name = support_folder
-			position = { x = 12 y = @1924 }
+			position = { x = @signal_x y = @1936 }
 		}
 		
 		categories = {
@@ -1354,11 +1497,12 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
-			
+			base = 1
+
 			modifier = {
-				factor = 10
+				factor = 5
 				is_major = yes
+				date > "1940.1.1"
 			}
 		}
 	}
@@ -1369,16 +1513,25 @@ technologies = {
 			initiative = 0.12
 		}
 		
+		armored_signal = {
+			initiative = 0.08
+			battalion_mult = {
+				category = category_all_armor
+				breakthrough = 0.01
+				add = yes
+			}
+		}
+
 		path = {
 			leads_to_tech = tech_signal_company3
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1.5
-		start_year = 1927
+		start_year = 1939
 		folder = {
 			name = support_folder
-			position = { x = 12 y = @1927 }
+			position = { x = @signal_x y = @1939 }
 		}
 		
 		categories = {
@@ -1388,20 +1541,21 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			base = 1
+			
 			modifier = {
 				factor = 1.2
-				date > "1925.1.1"
+				date > "1937.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1926.1.1"
+				date > "1938.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1927.1.1"
+				date > "1939.1.1"
 			}
 		}
 	}
@@ -1411,17 +1565,26 @@ technologies = {
 		signal_company = {
 			initiative = 0.12
 		}
-		
+
+		armored_signal = {
+			initiative = 0.08
+			battalion_mult = {
+				category = category_all_armor
+				breakthrough = 0.01
+				add = yes
+			}
+		}
+
 		path = {
 			leads_to_tech = tech_signal_company4
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
-		start_year = 1930
+		research_cost = 2.0
+		start_year = 1942
 		folder = {
 			name = support_folder
-			position = { x = 12 y = @1930 }
+			position = { x = @signal_x y = @1942 }
 		}
 		
 		categories = {
@@ -1431,42 +1594,45 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			base = 1
+			
 			modifier = {
 				factor = 1.2
-				date > "1931.1.1"
+				date > "1943.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1932.1.1"
+				date > "1944.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1933.1.1"
+				date > "1945.1.1"
 			}
 		}
 	}
-	
-###------> Old Signal Company <><> <><> <><> <><> <><>
-
 	tech_signal_company4 = {
 
 		signal_company = {
 			initiative = 0.12
 		}
-		
-		path = {
-			leads_to_tech = tech_signal_company_a
-			research_cost_coeff = 1
+
+		armored_signal = {
+			initiative = 0.08
+			battalion_mult = {
+				category = category_all_armor
+				breakthrough = 0.01
+				add = yes
+			}
 		}
 
-		research_cost = 1.5
-		start_year = 1933
+
+		research_cost = 2.0
+		start_year = 1945
 		folder = {
 			name = support_folder
-			position = { x = 12 y = @1933 }
+			position = { x = @signal_x y = @1945 }
 		}
 		
 		categories = {
@@ -1476,44 +1642,331 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			base = 1
+			
 			modifier = {
 				factor = 1.2
-				date > "1934.1.1"
-			}
-		
-			modifier = {
-				factor = 1.2
-				date > "1935.1.1"
+				date > "1946.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
+				date > "1947.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1948.1.1"
+			}
+		}
+	}
+
+	basic_train = {
+		enable_equipments = {
+			train_equipment_1
+		}
+
+		research_cost = 1.5
+		start_year = 1910
+		folder = {
+			name = support_folder
+			position = { x = 0 y = @1918 }
+		}
+
+		path = {
+			leads_to_tech = wartime_train
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = armored_train
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			train_tech
+		}
+		
+		ai_will_do = {
+			base = 1
+			modifier = {
+				num_of_factories > 25
+				factor = 100 #might wanna get on that
+			}
+			modifier = {
+				factor = 1.2
 				date > "1936.1.1"
 			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1937.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1938.1.1"
+			}
 		}
 	}
-	
-###------> X <><> <><> <><> <><> <><>
-	
-###------> New Signal Company <><> <><> <><> <><> <><>
 
-	tech_signal_company_a = {
-
-		signal_company = {
-			initiative = 0.12
+	railway_gun = {
+		enable_equipments = {
+			railway_gun_equipment_1
 		}
-		
-		path = {
-			leads_to_tech = tech_signal_company_b
-			research_cost_coeff = 1
+
+		enable_equipment_modules = {
+			lc_hull_mounted_railway_gun #Module for Land Cruiser
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = {
+				localization_key = SP_UNLOCK_PROJECT
+				PROJECT = sp_land_super_heavy_railway_gun
+			}
 		}
 
 		research_cost = 1.5
 		start_year = 1936
 		folder = {
 			name = support_folder
-			position = { x = 12 y = @1936 }
+			position = { x = 4 y = 3 }
+		}
+
+		path = {
+			leads_to_tech = sp_cluster_shells
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			train_tech
+			artillery
+		}
+		
+		ai_will_do = {
+			base = 0.5
+			
+			modifier = {
+				is_major = yes
+				factor = 1
+			}
+		}
+	}
+
+	wartime_train = {
+		enable_equipments = {
+			train_equipment_2
+		}
+
+		research_cost = 1.5
+		start_year = 1939
+		folder = {
+			name = support_folder
+			position = { x = 0 y = @1939 }
+		}
+		
+		categories = {
+			train_tech
+		}
+		
+		ai_will_do = {
+			base = 2
+			
+			modifier = {
+				has_war = yes
+				factor = 20
+			}
+			modifier = {
+				factor = 1.2
+				date > "1940.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1941.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1942.1.1"
+			}
+		}
+	}
+
+	armored_train = {
+		enable_equipments = {
+			train_equipment_3
+		}
+
+		allow_branch = {
+			has_dlc = "No Step Back"
+		}
+
+		path = {
+			leads_to_tech = railway_gun
+			research_cost_coeff = 1
+		}
+				
+		research_cost = 1.5
+		start_year = 1936
+		folder = {
+			name = support_folder
+			position = { x = 2 y = 3 }
+		}
+		
+		categories = {
+			train_tech
+		}
+		
+		ai_will_do = {
+			base = 1
+			
+			modifier = {
+				has_war = yes
+				factor = 20
+			}
+			modifier = {
+				factor = 1.2
+				date > "1938.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1939.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1940.1.1"
+			}
+		}
+	}
+
+
+	### SPECIAL PROJECTS ###
+
+	sp_armored_engineer_tech = {
+		allow = {
+	 		ROOT = {
+				is_special_project_completed = sp:sp_land_military_engineering_vehicles
+			}
+		}
+
+		is_special_project_tech = yes
+
+		research_cost = 2.0
+		start_year = 1938
+		folder = {
+			name = support_folder
+			position = { x = 1 y = @1938 }
+		}
+		
+		categories = {
+			support_tech
+			engineers_tech
+		}
+
+		enable_subunits = {
+			armored_engineer
+		}
+
+		on_research_complete = {
+			if = {
+				limit = {
+					has_dlc = "Gotterdammerung"
+				}
+				SP_create_variant_based_on_country_armored_engineer = yes
+			}
+		}
+		
+		ai_will_do = {
+			base = 2
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			
+			modifier = {
+				factor = 1.5
+				date > "1940.1.1"
+			}
+			
+			modifier = {
+				factor = 1.5
+				date > "1944.1.1"
+			}
+		}
+	}
+
+	sp_armored_maintenance_tech = {
+		allow = {
+	 		ROOT = {
+				is_special_project_completed = sp:sp_land_military_engineering_vehicles
+			}
+		}
+
+		is_special_project_tech = yes
+
+		research_cost = 2.0
+		start_year = 1938
+		folder = {
+			name = support_folder
+			position = { x = 7 y = @1938 }
+		}
+		
+		categories = {
+			support_tech
+			maintenance_company_tech
+		}
+
+		enable_subunits = {
+			armored_maintenance
+		}
+
+		on_research_complete = {
+			if = {
+				limit = {
+					has_dlc = "Gotterdammerung"
+				}
+				SP_create_variant_based_on_country_armored_maintenance = yes
+			}
+		}
+		
+		ai_will_do = {
+			base = 2
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			
+			modifier = {
+				factor = 1.5
+				date > "1940.1.1"
+			}
+			
+			modifier = {
+				factor = 1.5
+				date > "1944.1.1"
+			}
+		}
+	}
+
+	sp_armored_signal_tech = {
+		allow = {
+	 		ROOT = {
+				is_special_project_completed = sp:sp_land_military_engineering_vehicles
+			}
+		}
+
+		is_special_project_tech = yes
+
+		research_cost = 2.0
+		start_year = 1938
+		folder = {
+			name = support_folder
+			position = { x = 15 y = @1938 }
 		}
 		
 		categories = {
@@ -1521,668 +1974,238 @@ technologies = {
 			signal_company_tech
 			electronics
 		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	tech_signal_company_b = {
 
-		signal_company = {
-			initiative = 0.12
-		}
-		
-		path = {
-			leads_to_tech = tech_signal_company_c
-			research_cost_coeff = 1
+		enable_subunits = {
+			armored_signal
 		}
 
-		research_cost = 1.5
-		start_year = 1951
-		folder = {
-			name = support_folder
-			position = { x = 12 y = @1951 }
-		}
-		
-		categories = {
-			support_tech
-			signal_company_tech
-			electronics
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	tech_signal_company_c = {
-
-		signal_company = {
-			initiative = 0.12
+		enable_equipment_modules = { #TODO_Manu: This shouldn't show up without NSB OR GOT
+			lc_command_center #Module for Land Cruiser
 		}
 
-		research_cost = 1.5
-		start_year = 1942
-		folder = {
-			name = support_folder
-			position = { x = 12 y = @1942 }
-		}
-		
-		categories = {
-			support_tech
-			electronics
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-###------> X <><> <><> <><> <><> <><>
-
-###------> New Engineers <><> <><> <><> <><> <><>
-
-	tech_engineers_a = {
-
-		engineer = {
-			entrenchment  = 2
-			urban = {
-				attack = 0.1	
-				defence = 0.1
+		on_research_complete = {
+			if = {
+				limit = {
+					has_dlc = "Gotterdammerung"
+				}
+				SP_create_variant_based_on_country_armored_signal = yes
 			}
 		}
 		
-		path = {
-			leads_to_tech = tech_engineers_b
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 1936
-		folder = {
-			name = support_folder
-			position = { x = 0 y = @1936 }
-		}
-		
-		categories = {
-			support_tech
-			engineers_tech
-		}
-
 		ai_will_do = {
-			factor = 1
-		}
+			base = 2
 
-	}	
-	
-	tech_engineers_b = {
-
-		engineer = {
-			entrenchment  = 2
-			urban = {
-				attack = 0.1	
-				defence = 0.1
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			
+			modifier = {
+				factor = 1.5
+				date > "1940.1.1"
+			}
+			
+			modifier = {
+				factor = 1.5
+				date > "1944.1.1"
 			}
 		}
-		
-		path = {
-			leads_to_tech = tech_engineers_c
+	}
 
-			research_cost_coeff = 1
+	sp_helicopter_transport_pods_tech = {
+		allow_branch = {
+			 has_dlc = "Gotterdammerung"
 		}
 
-		research_cost = 1.5
-		start_year = 1951
-		folder = {
-			name = support_folder
-			position = { x = 0 y = @1951 }
-		}
-		
-		categories = {
-			support_tech
-			engineers_tech
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}	
-	
-	tech_engineers_c = {
-
-		engineer = {
-			entrenchment  = 2
-			urban = {
-				attack = 0.1	
-				defence = 0.1
+		allow = {
+	 		ROOT = {
+				is_special_project_completed = sp:sp_air_helicopter
 			}
 		}
 
-		research_cost = 1.5
-		start_year = 1942
+		is_special_project_tech = yes
+
+		research_cost = 2.0
+		start_year = 1938
 		folder = {
 			name = support_folder
-			position = { x = 0 y = @1942 }
+			position = { x = 12 y = @1938 }
 		}
 		
 		categories = {
 			support_tech
-			engineers_tech
+			logistics_tech
+			helicopter_tech
+		}
+
+		enable_subunits = {
+			helicopter_transport
 		}
 		
 		ai_will_do = {
-			factor = 1
+			base = 2
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			
+			modifier = {
+				factor = 3
+				date > "1944.1.1"
+			}
 		}
-	}	
+	}
 
-###------> X <><> <><> <><> <><> <><>
+	sp_helicopter_artillery_observers_tech = {
+		allow_branch = {
+			 has_dlc = "Gotterdammerung"
+		}
 
-###------> New Recon <><> <><> <><> <><> <><>
+		allow = {
+	 		ROOT = {
+				is_special_project_completed = sp:sp_air_helicopter
+			}
+		}
 
-	tech_recon_a = {
+		is_special_project_tech = yes
 
-		category_recon = {
-			recon = 2
+		enable_subunits = {
+			helicopter_recon
 		}
 		
-		path = {
-			leads_to_tech = tech_recon_b
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 1936
+		research_cost = 2.0
+		start_year = 1938
 		folder = {
 			name = support_folder
-			position = { x = 2 y = @1936 }
+			position = { x = 3 y = @1938 }
 		}
 		
 		categories = {
 			support_tech
 			recon_tech
+			helicopter_tech
 		}
 		
 		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	tech_recon_b = {
-
-
-		category_recon = {
-			recon = 2
-		}
-		
-		path = {
-			leads_to_tech = tech_recon_c
-
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 1951
-		folder = {
-			name = support_folder
-			position = { x = 2 y = @1951 }
-		}
-		
-		categories = {
-			support_tech
-			recon_tech
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	tech_recon_c = {
-
-		category_recon = {
-			recon = 2
-		}
-
-		research_cost = 1.5
-		start_year = 1942
-		folder = {
-			name = support_folder
-			position = { x = 2 y = @1942 }
-		}
-		
-		categories = {
-			support_tech
-			recon_tech
-		}
-		
-		ai_will_do = {
-
-			factor = 1
-		}
-
-	}
-	
-###------> X <><> <><> <><> <><> <><>
-
-###------> New Miliary Police <><> <><> <><> <><> <><>
-
-	tech_military_police_a = {
-
-		military_police = {
-			suppression_factor = 0.1
-		}
-		
-		path = {
-			leads_to_tech = tech_military_police_b
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 1936
-		folder = {
-			name = support_folder
-			position = { x = 4 y = @1936 }
-		}
-		
-		categories = {
-			support_tech
-			military_police_tech
-		}
-		
-		ai_will_do = {
-			factor = 0.5
+			base = 1
+			
 			modifier = {
-				factor = 3
-				any_state = {
-					is_controlled_by = ROOT
-					NOT = {
-						is_core_of = ROOT
-					}	
-				}
-			}			
-		}
-		
-	}
-	
-	tech_military_police_b = {
-
-		military_police = {
-			suppression_factor = 0.1
-		}
-		
-		path = {
-			leads_to_tech = tech_military_police_c
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 1951
-		folder = {
-			name = support_folder
-			position = { x = 4 y = @1951 }
-		}
-		
-		categories = {
-			support_tech
-			military_police_tech
-		}
-		
-		ai_will_do = {
-			factor = 0.5
-			modifier = {
-				factor = 3
-				any_state = {
-					is_controlled_by = ROOT
-					NOT = {
-						is_core_of = ROOT
-					}	
-				}
-			}			
-		}
-	}
-	
-	tech_military_police_c = {
-
-		military_police = {
-			suppression_factor = 0.1
-		}
-
-		research_cost = 1.5
-		start_year = 1942
-		folder = {
-			name = support_folder
-			position = { x = 4 y = @1942 }
-		}
-		
-		categories = {
-			support_tech
-			military_police_tech
-		}
-		
-		ai_will_do = {
-			factor = 0.5
-			modifier = {
-				factor = 3
-				any_state = {
-					is_controlled_by = ROOT
-					NOT = {
-						is_core_of = ROOT
-					}	
-				}
-			}			
-		}
-	}
-	
-###------> X <><> <><> <><> <><> <><>
-
-###------> New Maintenance Company <><> <><> <><> <><> <><>
-
-	tech_maintenance_company_a = {
-
-		maintenance_company = {
-			reliability_factor = 0.05
-			equipment_capture_factor = 0.05
-
-			marsh = {
-				movement = 0.05
+				factor = 2
+				is_major = yes
 			}
-		}
-		
-		path = {
-			leads_to_tech = tech_maintenance_company_b
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.75
-		start_year = 1936
-		folder = {
-			name = support_folder
-			position = { x = 6 y = @1936 }
-		}
-		
-		categories = {
-			support_tech
-			maintenance_company_tech
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	tech_maintenance_company_b = {
-
-		maintenance_company = {
-			reliability_factor = 0.05
-			equipment_capture_factor = 0.05
-
-			mountain = {
-				movement = 0.05
-			}
-		}
-		
-		path = {
-			leads_to_tech = tech_maintenance_company_c
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.75
-		start_year = 1951
-		folder = {
-			name = support_folder
-			position = { x = 6 y = @1951 }
-		}
-		
-		categories = {
-			support_tech
-			maintenance_company_tech
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	tech_maintenance_company_c = {
-
-		maintenance_company = {
-			reliability_factor = 0.05
-			equipment_capture_factor = 0.05
-
-			hills = {
-				movement = 0.05
+			
+			modifier = {
+				factor = 2
+				date > "1939.1.1"
 			}
 
-		}
-
-		research_cost = 2
-		start_year = 1942
-		folder = {
-			name = support_folder
-			position = { x = 6 y = @1942 }
-		}
-		
-		categories = {
-			support_tech
-			maintenance_company_tech
-		}
-		
-		ai_will_do = {
-			factor = 1
+			modifier = {
+				factor = 4
+				date > "1940.1.1"
+			}
 		}
 	}
-###------> X <><> <><> <><> <><> <><>
 
-###------> New Field Hospital <><> <><> <><> <><> <><>
-
-	tech_field_hospital_a = {
-
-		field_hospital = {
-			casualty_trickleback = 0.1
-			experience_loss_factor = -0.10
+	sp_helicopter_med_evac_tech = {
+		allow_branch = {
+			 has_dlc = "Gotterdammerung"
 		}
 
-		category_support_battalions = {
-			acclimatization_hot_climate_gain_factor = 0.01
-		}
-		
-		path = {
-			leads_to_tech = tech_field_hospital_b
-			research_cost_coeff = 1
+		allow = {
+	 		ROOT = {
+				is_special_project_completed = sp:sp_air_helicopter
+			}
 		}
 
-		research_cost = 1.75
-		start_year = 1936
+		is_special_project_tech = yes
+
+		research_cost = 2.0
+		start_year = 1938
 		folder = {
 			name = support_folder
-			position = { x = 8 y = @1936 }
-		}
-		
-		categories = {
-			support_tech
-			motorized_equipment
-			hospital_tech
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	tech_field_hospital_b = {
-
-
-		field_hospital = {
-			casualty_trickleback = 0.1
-			experience_loss_factor = -0.10
-		}
-
-		category_support_battalions = {
-			acclimatization_hot_climate_gain_factor = 0.01
-		}
-		
-		path = {
-			leads_to_tech = tech_field_hospital_c
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.75
-		start_year = 1951
-		folder = {
-			name = support_folder
-			position = { x = 8 y = @1951 }
-
+			position = { x = 10 y = @1938 }
 		}
 		
 		categories = {
 			support_tech
 			hospital_tech
-			motorized_equipment
+			helicopter_tech
+		}
+
+		enable_subunits = {
+			helicopter_field_hospital
 		}
 		
 		ai_will_do = {
-			factor = 1
+			base = 2
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			
+			modifier = {
+				factor = 1.5
+				date > "1938.1.1"
+			}
+			
+			modifier = {
+				factor = 1.5
+				date > "1940.1.1"
+			}
+			
+			modifier = {
+				factor = 1.5
+				date > "1944.1.1"
+			}
 		}
 	}
-	
-	tech_field_hospital_c = {
 
-		field_hospital = {
-			casualty_trickleback = 0.1
-			experience_loss_factor = -0.10
+	sp_armored_motorized_military_police_tech = {
+		allow_branch = {
+			 has_dlc = "Gotterdammerung"
+		}
+		
+		allow = {
+	 		ROOT = {
+				is_special_project_completed = sp:sp_land_military_engineering_vehicles
+			}
 		}
 
-		category_support_battalions = {
-			acclimatization_hot_climate_gain_factor = 0.01
-		}
+		is_special_project_tech = yes
+
+		force_use_small_tech_layout = yes
+		show_equipment_icon = yes
 
 		research_cost = 2.0
-		start_year = 1942
+		start_year = 1938
 		folder = {
 			name = support_folder
-			position = { x = 8 y = @1942 }
+			position = { x = 5 y = @1938 }
 		}
 		
 		categories = {
 			support_tech
-			motorized_equipment
+			military_police_tech
+		}
+
+		enable_subunits = {
+			motorized_military_police
+		}
+
+		enable_equipments = {
+			motorbike_equipment_1
 		}
 		
 		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-###------> X <><> <><> <><> <><> <><>
+			base = 2
 
-###------> New Logistics Company <><> <><> <><> <><> <><>
-
-	tech_logistics_company_a = {
-
-		logistics_company = {
-			supply_consumption_factor = -0.1
-			fuel_consumption_factor = -0.01
-		}
-
-		no_supply_grace = 1
-		
-		path = {
-			leads_to_tech = tech_logistics_company_b
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.75
-		start_year = 1936
-		folder = {
-			name = support_folder
-			position = { x = 10 y = @1936 }
-		}
-		
-		categories = {
-			support_tech
-			motorized_equipment
-			logistics_tech
-		}
-		
-		ai_will_do = {
-			factor = 1
 			modifier = {
-				factor = 3
-				num_of_military_factories > 15
-			}			
+				factor = 2
+				is_major = yes
+			}
 		}
 	}
-	
-	tech_logistics_company_b = {
 
-
-		logistics_company = {
-			supply_consumption_factor = -0.1
-			fuel_consumption_factor = -0.01
-		}
-
-		no_supply_grace = 1
-		
-		path = {
-			leads_to_tech = tech_logistics_company_c
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.75
-		start_year = 1951
-		folder = {
-			name = support_folder
-			position = { x = 10 y = @1951 }
-
-		}
-		
-		categories = {
-			support_tech
-			logistics_tech
-			motorized_equipment
-		}
-		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 3
-				num_of_military_factories > 15
-			}			
-		}
-	}
-	
-	tech_logistics_company_c = {
-
-		logistics_company = {
-			supply_consumption_factor = -0.1
-			fuel_consumption_factor = -0.01
-		}
-
-		no_supply_grace = 1
-
-		research_cost = 2.0
-		start_year = 1942
-		folder = {
-			name = support_folder
-			position = { x = 10 y = @1942 }
-		}
-		
-		categories = {
-			support_tech
-			motorized_equipment
-			logistics_tech
-		}
-		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 3
-				num_of_military_factories > 15
-			}			
-		}
-	}
- #Trains are in r56_vechicles 
 }
-
-#####-----------------------------------------------------------> End

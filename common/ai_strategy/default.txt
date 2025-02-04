@@ -387,7 +387,7 @@ bba_support_boosts = {
 
 	enable = {
 		is_historical_focus_on = yes
-		date < 1927.1.1
+		date < 1939.1.1
 	}
 	abort_when_not_enabled = yes
 
@@ -683,7 +683,7 @@ highered_armored_production = {
 
 more_naval_focused_nation = {
 	enable = {
-		date > "1929.1.1"  # Delaying it by a couple of years
+		date > "1941.1.1"  # Delaying it by a couple of years
 	}
 	abort_when_not_enabled = yes
 
@@ -873,10 +873,10 @@ default_market_convoy_purchases = {
 
 DEFAULT_early_template_design = {
 	enable = {
-		date < 1928.1.1
+		date < 1940.1.1
 	}
 	abort = {
-		date > 1928.1.1
+		date > 1940.1.1
 	}
 
 	ai_strategy = {
@@ -924,7 +924,7 @@ DEFAULT_early_template_design = {
 
 DEFAULT_midlate_template_design = {
 	enable = {
-		date > 1928.1.1
+		date > 1940.1.1
 	}
 	abort_when_not_enabled = yes
 
@@ -1029,7 +1029,7 @@ build_intelligence_agency_as_major = {
 		is_major = yes
 		OR = {
 			has_war = yes
-			date > 1926.1.1
+			date > 1938.1.1
 		}
 	}
 	abort_when_not_enabled = yes
@@ -1043,7 +1043,7 @@ build_intelligence_agency_as_major = {
 
 build_intelligence_agency = {
 	enable = {
-		date > 1928.1.1
+		date > 1940.1.1
 		has_war = no
 		num_of_civilian_factories > 25
 	}
@@ -1063,7 +1063,7 @@ build_intelligence_agency = {
 
 upgrade_intelligence_agency = {
 	enable = {
-		date > 1928.1.1
+		date > 1940.1.1
 		num_of_civilian_factories > 50
 	}
 	abort = {

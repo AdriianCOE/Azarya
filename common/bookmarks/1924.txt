@@ -10,8 +10,9 @@ bookmarks = {
 			history = THK_AZARYA_DESC
 			ideology = democratic
 			ideas={
-				THK_monarquia_estabelecida
-				THK_Exercito_Polido
+				THK_Defeated_Army
+				THK_Corrupt_Queen
+				Great_Earthquake
 			}
 		}
 		CZL = {

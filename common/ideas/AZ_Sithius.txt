@@ -62,9 +62,7 @@ ideas = {
 				political_power_gain = -0.1  #Penalidade na aquisição de poder político, indicando dificuldades governamentais.
 				consumer_goods_factor = 0.2  #Penalidade maior no consumo de bens, mostrando as dificuldades econômicas.
 				production_speed_buildings_factor = -0.05
-				}
 			}
-		
 		}
-		
+	}
 }	

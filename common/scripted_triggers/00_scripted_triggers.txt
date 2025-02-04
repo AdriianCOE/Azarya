@@ -1,3 +1,18 @@
+#	Example:
+#
+#	example_trigger = {
+#		tag = GER
+#		is_ai = no
+#	}
+#
+#
+#	In a script file:
+#
+#	trigger = {
+#		exampel_trigger = yes
+#	}
+#
+
 can_ROOT_get_wargoal_on_THIS = {
 	exists = yes
 	NOT = { is_in_faction_with = ROOT }
@@ -51,6 +66,20 @@ is_controlled_by_ROOT_or_subject = {
 	}
 }
 
+is_not_controlled_by_ROOT_or_subject = {
+	custom_trigger_tooltip = {
+		tooltip = is_not_controlled_by_ROOT_or_subject
+		CONTROLLER = {
+			NOT = {
+				OR = {
+					tag = ROOT
+					is_subject_of = ROOT
+				}
+			}
+		}
+	}
+}
+
 #Country scope
 is_free_or_subject_of_root = {
 	OR = {
@@ -70,6 +99,31 @@ is_controlled_by_ROOT_or_ally = {
 				is_in_faction_with = ROOT
 			}
 		}
+	}
+}
+
+is_csa_state = {
+	OR = {
+		state = 366
+		state = 365
+		state = 367
+		state = 370
+		state = 362
+		state = 363
+		state = 364
+		state = 371
+		state = 375
+		state = 368
+		state = 372
+	}
+}
+
+has_naval_treaty_trigger = {
+	OR = {
+		has_idea = MTG_naval_treaty_adherent
+		has_idea = MTG_naval_treaty_cheating
+		has_idea = MTG_naval_treaty_adherent_reduced
+		has_idea = MTG_naval_treaty_cheating_reduced
 	}
 }
 
@@ -124,47 +178,38 @@ enemy_has_equal_or_better_radar_tech_trigger = {
 				ROOT = {
 					has_tech = radio_detection
 					NOT = {
-						has_tech = decimetric_radar
+						has_tech = cavity_magnatron
 					}
 				}
 			}
 			FROM = {
 				OR = {
 					has_tech = radio_detection
-					has_tech = decimetric_radar
+					has_tech = cavity_magnatron
 				}
 			}
 		}
 		else_if = {
 			limit = {
 				ROOT = {
-					has_tech = decimetric_radar
-					NOT = {
-						has_tech = improved_decimetric_radar
-					}
+					has_tech = cavity_magnatron
+
 				}
 			}
 			FROM = {
-				OR = {
-					has_tech = decimetric_radar
-					has_tech = improved_decimetric_radar
-				}
+				has_tech = cavity_magnatron
 			}
 		}
 		else_if = {
 			limit = {
 				ROOT = {
-					has_tech = improved_decimetric_radar
 					NOT = {
 						has_tech = centimetric_radar
 					}
 				}
 			}
 			FROM = {
-				OR = {
-					has_tech = improved_decimetric_radar
-					has_tech = centimetric_radar
-				}
+				has_tech = centimetric_radar
 			}
 		}
 		else_if = {
@@ -172,34 +217,44 @@ enemy_has_equal_or_better_radar_tech_trigger = {
 				ROOT = {
 					has_tech = centimetric_radar
 					NOT = {
-						has_tech = improved_centimetric_radar
+						has_tech = phased_array
 					}
 				}
 			}
 			FROM = {
 				OR = {
 					has_tech = centimetric_radar
-					has_tech = improved_centimetric_radar
+					has_tech = phased_array
 				}
 			}
 		}
 		else_if = {
 			limit = {
 				ROOT = {
-					has_tech = improved_centimetric_radar
+					has_tech = phased_array
 					NOT = {
-						has_tech = advanced_centimetric_radar
+						has_tech = monopulse_radar
 					}
 				}
 			}
 			FROM = {
 				OR = {
-					has_tech = improved_centimetric_radar
-					has_tech = advanced_centimetric_radar
+					has_tech = phased_array
+					has_tech = monopulse_radar
 				}
 			}
 		}
 		#no more steps needed because end of research tree is reached
+	}
+}
+
+is_available_to_collaboration_government = { # occupied_countries.1 should be updated along with this
+	NOT = {
+		any_country_with_original_tag = {
+			original_tag_to_check = FROM
+			is_puppet_of = PREV # if already created one do not create another
+			has_autonomy_state = autonomy_collaboration_government
+		}
 	}
 }
 
@@ -245,6 +300,16 @@ is_core_or_compliance_60 = {
 			}
 			compliance > 60
 		}
+	}
+}
+
+has_any_byz_cosmetic_tag = {
+	OR = {
+		has_cosmetic_tag = BYZ_UNIFIED
+		has_cosmetic_tag = BYZ_UNIFIED_communism
+		has_cosmetic_tag = BYZ_UNIFIED_democratic
+		has_cosmetic_tag = BYZ_UNIFIED_fascism
+		has_cosmetic_tag = BYZ_UNIFIED_neutrality
 	}
 }
 
@@ -298,6 +363,13 @@ has_subject_autonomy_feature = {
 	#TODO_Manu: More DLCs?
 }
 
+is_organization_of_african_unity_member = {
+	custom_trigger_tooltip = {
+		tooltip = is_league_of_nations_member_tt
+		has_idea = organization_of_african_unity_member_idea
+	}
+}
+
 has_tech_sharing_feature = {
 	OR = {
 		has_dlc = "Together for Victory"
@@ -343,6 +415,23 @@ state_is_fully_controlled_by_ROOT_or_subject = {
 	}
 }
 
+#State scope
+state_is_fully_controlled_by_ROOT_subject_or_faction_member = {
+	custom_trigger_tooltip = {
+		tooltip = state_is_fully_controlled_by_ROOT_subject_or_faction_member_tt
+		OR = {
+			is_fully_controlled_by = ROOT
+			controller = {
+				OR = {
+					is_subject_of = ROOT
+					is_in_faction_with = ROOT
+				}
+				has_full_control_of_state = PREV
+			}
+		}
+	}
+}
+
 state_has_any_resource = {
 	OR = {
 		has_resources_amount = {
@@ -380,6 +469,76 @@ country_can_be_reasonable_target_of_wargoal = { #Expected scopes: Target country
 		is_guaranteed_by = PREV
 		has_non_aggression_pact_with = PREV
 		is_subject_of = PREV
+	}
+}
+
+is_unlikely_country_tag = {
+	OR = {
+	    tag = BRI
+	    tag = CAT
+	    tag = NAV
+	    tag = GLC
+	    tag = ADU
+	    tag = BRI
+	    tag = OCC
+	    tag = COR
+	    tag = DNZ
+	    tag = KSH
+	    tag = CKK
+	    tag = FER
+	    tag = YAK
+	    tag = VLA
+	    tag = KKP
+	    tag = YAM
+	    tag = TAY
+	    tag = OVO
+	    tag = NEN
+	    tag = KOM
+	    tag = CHU
+	    tag = MEL
+	    tag = RIF
+	    tag = HAR
+	    tag = TIG
+	    tag = AFA
+	    tag = BEG
+	    tag = GBA
+	    tag = SID
+	    tag = ORO
+	    tag = QEM
+	    tag = LBV
+	    tag = PAP
+	    tag = TOS
+	    tag = SPM
+	    tag = TTS
+		tag = BSK
+		tag = TAT
+		tag = UDM
+		tag = KHA
+		tag = VGE
+		tag = KAL
+		tag = KAR
+		tag = SIL
+		tag = KSH
+		tag = ALT
+		tag = BUK
+		tag = KHI
+		tag = SMI
+		tag = QUE
+		tag = YUC
+		tag = RIG
+		tag = WLA
+		tag = GRN
+		tag = EVE
+		tag = SHL
+		tag = MEK
+		tag = HAN
+		tag = SAX
+		tag = PRE
+		tag = BAY
+		tag = WUR
+		tag = THU
+		tag = HES
+		tag = RHI
 	}
 }
 
@@ -428,7 +587,6 @@ has_mtg = {
 has_aat = {
 	has_dlc = "Arms Against Tyranny"
 }
-
 has_any_tank_tech = {
 	if = {
 		limit = {
@@ -571,21 +729,6 @@ ai_has_completed_air_doctrine = {
 	}
 }
 
-is_available_to_collaboration_government = { # occupied_countries.1 should be updated along with this
-	NOT = {
-		AND = {
-			FROM = { original_tag = THK }
-			original_tag = NIC
-		}
-		AND = {
-			FROM = { original_tag = THK }
-			original_tag = NIC
-		}
-
-		
-	}
-}
-
 ai_has_completed_naval_doctrine = {
 	is_ai = yes
 	OR = {
@@ -629,9 +772,15 @@ is_democracy_seller_trigger = {
 	has_government = democratic 
 }
 
+is_communist_seller_trigger = {
+	NOT = { has_war_with = ROOT }
+	has_government = communism
+}
+
 is_allied_seller_trigger = {
 	custom_trigger_tooltip = {
 		tooltip = subsidy_allied_nation_tt
 		FROM = { is_in_faction_with = ROOT }
 	}
 }
+
