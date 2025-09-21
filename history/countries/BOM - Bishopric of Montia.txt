@@ -4,29 +4,47 @@ oob = "BOM"
 
 # Starting tech
 set_technology = {
-	infantry_weapons = 1
-	tech_support = 1		
-	tech_engineers = 1
-	tech_trucks = 1
-	gw_artillery = 1
-	interwar_antiair = 1
-	basic_train = 1	
+		infantry_weapons = 1
+		infantry_weapons1 = 1
+		support_weapons = 1
+		sniper_rifle = 1
+		basic_train = 1	
+		tech_trucks = 1
+		tech_recon = 1
+		r56_flexible_railnetwork = 1
+		tech_field_hospital = 1
+		motorised_infantry = 1
+		tech_support = 1		
+		tech_engineers = 1
+		flamethrower = 1
+		gw_artillery = 1
+		interwar_antitank = 1
+		r56_gw_railway_gun = 1
+		interwar_artillery = 1
+		camo = 1
+		winter_clothes_gw = 1
 }
 
-IF = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_technology = {
-		gwtank_chassis = 1
-	}
-}
-IF = {
+if = {
 	limit = {
 		NOT = { has_dlc = "No Step Back" }
 	}
 	set_technology = {
 		gwtank = 1
+		basic_light_tank = 1
+		improved_light_tank = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		improved_light_tank_chassis = 1
+		armor_tech_1 = 1
+		engine_tech_1 = 1
 	}
 }
 IF = {
@@ -41,20 +59,58 @@ IF = {
 		early_battleship = 1
 		transport = 1
 	}
+	
 }
 IF = {
 	limit = { has_dlc = "Man the Guns"}
 	set_technology = {
 		basic_naval_mines = 1
-		submarine_mine_laying = 1
-		early_ship_hull_submarine = 1
-		basic_ship_hull_submarine = 1
-		early_ship_hull_light = 1
-		early_ship_hull_cruiser = 1
-		early_ship_hull_heavy = 1
-		basic_battery = 1
-		basic_torpedo = 1
-		mtg_transport = 1
+			submarine_mine_laying = 1
+			early_ship_hull_light = 1
+			early_ship_hull_cruiser = 1
+			early_ship_hull_heavy = 1
+			basic_ship_hull_heavy = 1
+			basic_ship_hull_submarine = 1
+			basic_ship_hull_light = 1
+			pre_dreadnoughts = 1
+			early_ship_hull_submarine = 1
+			mtg_transport = 1
+			basic_torpedo = 1
+			improved_ship_torpedo_launcher = 1
+			basic_battery = 1
+			basic_light_battery = 1
+			basic_medium_battery = 1
+			basic_heavy_battery = 1
+			basic_depth_charges = 1
+			sonar = 1
+			improved_sonar = 1
+			basic_cruiser_armor_scheme = 1
+			damage_control_1 = 1
+	}
+}
+	if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_technology = {
+			aa_lmg = 1
+			aa_cannon_1 = 1
+			engines_1 = 1
+			engines_2 = 1
+			early_bombs = 1
+			aircraft_construction = 1
+			iw_small_airframe = 1
+			iw_medium_airframe = 1
+			iw_large_airframe = 1
+			range_improvements = 1
+		}
+	else = {
+		set_technology = {
+			early_fighter = 1
+			naval_bomber1 = 1
+			early_bomber = 1
+			tactical_bomber1 = 1
+			CAS1 = 1
+			fighter1 = 1
+		}
 	}
 }
 

@@ -1,16 +1,20 @@
 
 state={
 	id=291
-	name="STATE_291"
+	name="Novus"
 	history={
 		owner = SIT
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+		}
 		add_core_of = SIT
 
 	}
 	provinces={
 		  692 1237 1847 2204 2862 3251  3333 4856 7024 7055 7111  7177 7186 7232
 	}
-	manpower=1
+	manpower=495827
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

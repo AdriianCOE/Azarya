@@ -8,8 +8,31 @@ set_technology = {
 	tech_support = 1		
 	tech_trucks = 1
 	basic_train = 1	
+	gw_artillery = 1
+	camo = 1
 }
 
+#No Step Back
+IF = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
+IF = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+}
+
+#Man the Guns
 IF = {
 	limit = {
 		NOT = { has_dlc = "Man the Guns"}
@@ -29,14 +52,37 @@ IF = {
 	set_technology = {
 		basic_naval_mines = 1
 		submarine_mine_laying = 1
-		early_ship_hull_submarine = 1
 		basic_ship_hull_submarine = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
 		early_ship_hull_light = 1
 		early_ship_hull_cruiser = 1
 		early_ship_hull_heavy = 1
 		basic_battery = 1
 		basic_torpedo = 1
 		mtg_transport = 1
+	}
+}
+
+#Blood Alone
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_technology = {
+			aa_lmg = 1
+			engines_1 = 1
+			early_bombs = 1
+			aircraft_construction = 1
+			iw_small_airframe = 1
+			iw_medium_airframe = 1
+		}
+	else = {
+		set_technology = {
+			early_fighter = 1
+			naval_bomber1 = 1
+			tactical_bomber1 = 1
+			CAS1 = 1
+			fighter1 = 1
+		}
 	}
 }
 
@@ -61,9 +107,9 @@ recruit_character = AEI_ai2
 recruit_character = AEI_nt
 recruit_character = AEI_aco2
 
-set_convoys = 157
+set_convoys = 90
 set_war_support = 10
-add_political_power = 200
+add_political_power = 100
 add_command_power = 50
 army_experience = 50
 
@@ -86,6 +132,7 @@ set_politics = {
 	}
 create_country_leader = {
 	ideology = conservatism
+	picture = Portrait_PLACEHOLDER_2_large.dds
 	traits = {}
 }
 

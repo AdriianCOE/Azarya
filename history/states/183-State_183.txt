@@ -15,9 +15,9 @@ state={
 		add_core_of = LUQ
 		}
 	provinces={
-		1365 3440 3609 4651 4823 5640 5668 5691 5701 5722 5730 5744 5750 
+		1365 3440 3609 4651 4823 5640 5668 5691 5701 5722 5730 5744 5750 15812 15811 15831
 	}
-	manpower=179878
+	manpower=349878
 	buildings_max_level_factor=1.000
 	state_category=rural
 	local_supplies=0.000

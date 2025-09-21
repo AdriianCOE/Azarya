@@ -1,0 +1,16 @@
+infantry_division_TK = {
+	set_country_flag = infantry_division_TK
+	division_template = {			
+			name = "TK Militia-Division"
+			priority = 2
+			division_names_group = THK_INF_01
+			is_locked = yes
+		regiments = {
+			infantry = { x = 0 y = 0 }
+			infantry = { x = 0 y = 1 }
+			infantry = { x = 1 y = 0 }
+			cavalry = { x = 1 y = 1 }
+			
+		}
+	}
+}

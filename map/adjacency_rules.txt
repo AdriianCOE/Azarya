@@ -38,6 +38,46 @@ adjacency_rule =
 	offset = { 0 0 0 }
 }
 
+#Sidus
+adjacency_rule =
+{
+	name = "Sidus"
+
+	contested =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 70 4729 6280 }
+		
+	icon = 70
+	offset = { 0 0 0 }
+}
+
 #Luq-Streit
 adjacency_rule =
 {
@@ -77,6 +117,7 @@ adjacency_rule =
 	icon = 1790
 	offset = { 0 0 0 }
 }
+
 #Sollsea
 adjacency_rule =
 {

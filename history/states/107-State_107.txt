@@ -1,6 +1,13 @@
 state={
 	id=107
 	name="STATE_107"
+	history={
+		owner = CMR
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = CMR
+	}
 	provinces={
 		3172 
 	}

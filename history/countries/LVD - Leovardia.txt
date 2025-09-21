@@ -1,0 +1,146 @@
+capital = 387
+
+set_oob = "LVD"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1	
+	tech_trucks = 1
+	motorised_infantry = 1
+	tech_support = 1
+	tech_engineers = 1
+	basic_train = 1
+	gw_artillery = 1
+	sniper_rifle = 1
+	camo = 1
+}
+
+#No Step Back
+IF = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+	}
+}
+IF = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+	}
+}
+
+#Blood Alone
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_technology = {
+			aa_lmg = 1
+			engines_1 = 1
+			early_bombs = 1
+			aircraft_construction = 1
+			iw_small_airframe = 1
+			iw_medium_airframe = 1
+			basic_small_airframe = 1
+		}
+	else = {
+		set_technology = {
+			early_fighter = 1
+			naval_bomber1 = 1
+			tactical_bomber1 = 1
+			CAS1 = 1
+			fighter1 = 1
+		}
+	}
+}
+
+IF = {
+	limit = {
+		NOT = { has_dlc = "Man the Guns"}
+	}
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		transport = 1
+	}
+	
+}
+IF = {
+	limit = { has_dlc = "Man the Guns"}
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		mtg_transport = 1
+	}
+}
+
+recruit_character = LVD_ar
+recruit_character = LVD_acr
+recruit_character = LVD_mt
+recruit_character = LVD_stc
+recruit_character = LVD_aa2
+recruit_character = LVD_acgs
+recruit_character = LVD_ncm
+recruit_character = LVD_nccr
+recruit_character = LVD_coi
+recruit_character = LVD_democratic_guy
+recruit_character = LVD_acd2
+recruit_character = LVD_acas
+recruit_character = LVD_communist_guy
+recruit_character = LVD_ncs
+recruit_character = LVD_awt
+recruit_character = LVD_pot
+recruit_character = LVD_fascist_guy
+recruit_character = LVD_ai2
+recruit_character = LVD_nt
+recruit_character = LVD_aco2
+
+set_war_support = 1
+set_convoys = 132
+add_political_power = 100
+add_command_power = 50
+army_experience = 50
+
+set_politics = {
+		ruling_party = neutrality
+		last_election = "1932.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+
+	set_popularities = {
+		democratic = 15
+		fascism = 10
+		communism = 0
+		neutrality = 75
+	}
+
+create_country_leader = {
+	name = "Queen Alvienne III"
+	ideology = Constitutional_Monarchy
+	traits = {}
+}
+
+create_field_marshal = {
+	traits = {}
+    skill = 4
+}
+create_corps_commander = {
+	traits = {}
+    skill = 2
+}
+create_corps_commander = {
+	traits = {}
+    skill = 2
+}

@@ -1,16 +1,27 @@
 ﻿l_english:
  BM_HISTORY_TITLE:0 "Brief History"
+ OTHER_GATHERING_STORM_DESC:0 "The nations of the world, great and small, are not all content to hold their breath awaiting the outbreak of another global conflict. From major powers on the brink of civil war to the many nations formed and transformed by the Great War, all will have to make difficult decisions and balance ideals with pragmatism to have an impact on the future of the world."
+ POL_GATHERING_STORM_DESC:1 "After centuries in which the Polish nation has been divided between three empires, Poland now stands independent once again. But its position is not an easy one. \n\nIn the east, the Soviet Union has not forgotten the humiliating defeat in the Polish-Soviet war. \n\nIn the west, German Führer Adolf Hitler makes no secret of his desire for more "living space" - and that the former German areas now under Polish control will be the first step to achieve it."
+
 #OTHER
- OTHER_AZARYA_DESC:0 "ai que nao sei o que que nao sei la"
- CAN_BLITZKRIEG_DESC:0 "save canadaaaaa NÃO USE NÃO FUNCIONA"
+OTHER_AZARYA_DESC:0 "ai que nao sei o que que nao sei la"
+CAN_BLITZKRIEG_DESC:0 "save canadaaaaa NÃO USE NÃO FUNCIONA"
 #AZARYA
- NEW_AZARYA_DESC:0 "Azarya stands at a historic crossroads, as nations brace for what could be the most devastating conflict of their era. With the emergence of new charismatic leaders and rising ideologies, the global political landscape is marked by intense rivalries and fragile alliances. As armies mobilize and arms factories work tirelessly, the world watches with growing apprehension, knowing that a single act could unleash a cascade of events that will change the course of Azarya's history forever."
+NEW_AZARYA_DESC:0 "Azarya stands at a historic crossroads, as nations brace for what could be the most devastating conflict of their era. With the emergence of new charismatic leaders and rising ideologies, the global political landscape is marked by intense rivalries and fragile alliances. As armies mobilize and arms factories work tirelessly, the world watches with growing apprehension, knowing that a single act could unleash a cascade of events that will change the course of Azarya's history forever."
 #THK
- THK_AZARYA_DESC:0 "After decades of relative stability under the reign of the beloved Queen Elara of Aurum, the Kingdom of Thiryn now finds itself facing turbulent and challenging times. A series of recent events has shaken the kingdom's tranquility, triggering growing political and economic unrest among its citizens. Rumors of intrigue at court and external pressures have echoed through the halls of power, casting doubt on Thiryn's future and the fate of its beloved monarch. As the country braces itself to weather the winds of change, the people await eagerly for answers and for leadership capable of guiding them through these uncertain times."
+THK_AZARYA_DESC:0 "For over four centuries, the Kingdom of Thiryn was ruled with an iron grip by the corrupt Aurum dynasty. Their rule brought wealth to the crown—but despair to the people. A humiliating defeat in a border conflict shattered the illusion of invincibility, shaking the old nobility to its core. In the aftermath, now leads a campaign to reshape Thiryn into a new order. In 1924, the Kingdom stands at a crossroads. Will the ancient throne survive? Will the revolution devour its creators? Or will Thiryn forge a new destiny—by steel, by blood, or by fire?"
+ 
 #CZL 
 CZL_AZARYA_DESC:0 "Amidst the rugged landscapes of the Czariado de Lesc, a land once known for its stability now grapples with turmoil. Turbulent waves of civil unrest sweep through the northern provinces, shaking the foundations of power. The echoes of discontent reverberate across the nation, challenging the authority of the Czar and his administration. As tensions escalate, the future of Lesc hangs in the balance, with uncertainty clouding the horizon. In the face of adversity, the people yearn for resolution and leadership to navigate these troubled waters and steer the nation towards calmer shores."
-#NIC
-NIC_AZARYA_DESC:0 "Nicollonia, a land of diverse cultures and stunning landscapes, has a vibrant history shaped by trade, colonization, and independence struggles. From its early days as a crossroads of civilizations to its present status as a beacon of democracy and prosperity, Nicollonia's story is one of resilience, progress, and enduring charm."
+#SLV
+SLV_AZARYA_DESC:0 "Nicollonia, a land of diverse cultures and stunning landscapes, has a vibrant history shaped by trade, colonization, and independence struggles. From its early days as a crossroads of civilizations to its present status as a beacon of democracy and prosperity, Nicollonia's story is one of resilience, progress, and enduring charm."
 #SIT
 SIT_AZARYA_DESC:0 "The Empire of Sithius, formerly known as the Empire of Victorium, is a thriving and resilient remnant of the once powerful maritime empire that ruled the Victorium Sea. Inspired by the legacy of Emperor Victor, the Empire of Sithius preserves the rich cultural, intellectual, and military heritage of the ancient Victorians. With its capital in Sìth on the island of Eòlas, the empire is a beacon of knowledge and innovation, enduring adversities while keeping the spirit of conquest and progress alive."
+#LUQ
+LUQ_AZARYA_DESC:0 "The Federal State of Lucafis is a young republic forged through compromise between mountain clans and coastal merchants. Though stable on paper, its political foundations are fragile, and regional unrest threatens to shatter the illusion of unity as the continent destabilizes."
+#SLU
+SLU_AZARYA_DESC:0 "The Sollarium Empire claims divine mandate, led by an ancient ruling caste that views itself as the last light of civilization. Obsessed with tradition and purity, its iron grip may soon be tested by rebellion, war, or both."
+#SVD
+SVD_AZARYA_DESC:0 "The Merchant Republic of Serenvioled is a thriving coastal power, where trade guilds hold more sway than generals. Its wealth flows through silk-lined contracts and quiet influence, not battlefield conquest. \n\nBut as global tensions rise, the republic must decide: will it cling to neutrality—or leverage its riches to shape the new world order?"
+
 

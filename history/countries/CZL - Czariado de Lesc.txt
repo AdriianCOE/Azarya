@@ -7,6 +7,13 @@ set_technology = {
 		infantry_weapons = 1
 		basic_train = 1	
 		tech_trucks = 1
+		motorised_infantry = 1
+		tech_support = 1		
+		tech_engineers = 1
+		tech_maintenance_company = 1
+		gw_artillery = 1
+		interwar_artillery = 1
+		camo = 1
 }
 
 	IF = {
@@ -98,8 +105,15 @@ recruit_character = CZL_nt
 recruit_character = CZL_aco2
 
 
-set_convoys = 92
+set_convoys = 125
 army_experience = 50
+set_research_slots = 2
+add_political_power = 100
+add_ideas = {
+		CZL_Monetary_retention
+		CZL_Autoritarismo
+		CZL_Fear_of_the_population
+	}
 
 
 set_politics = {
@@ -119,8 +133,9 @@ set_popularities = {
 create_country_leader = {
     name = "Prince Lescote"
     desc = "CZL_Lescote"
+	picture = "Portrait_Soviet_Generic_1.dds"
     ideology = oligarchism
-	traits = {DEN_konservativ Dealbroker Railroad_Enthusiast}
+	traits = { iron_fisted_ruler nostalgic_imperialist autocratic_reformer }
 }
 
 create_field_marshal = {

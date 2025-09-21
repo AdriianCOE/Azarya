@@ -1,7 +1,7 @@
 equipments = {
 	
 	nuclear_missile_equipment = {
-		year = 1936
+		year = 1924
 
 		can_be_produced = {
 			if = {
@@ -45,7 +45,7 @@ equipments = {
 	}
 	
 	nuclear_missile_equipment_1 = {
-		year = 1945
+		year = 1933
 
 		archetype = nuclear_missile_equipment
 		is_buildable = yes
@@ -59,7 +59,7 @@ equipments = {
 	}
 
 	nuclear_missile_equipment_2 = {
-		year = 1950
+		year = 1938
 
 		archetype = nuclear_missile_equipment
 		is_buildable = yes

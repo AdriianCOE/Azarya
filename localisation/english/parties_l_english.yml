@@ -76,8 +76,8 @@
  RFO_fascism_party: "FPR"
  RFO_communism_party: "CPR"
  RFO_neutrality_party: "Polity"
- NIC_democratic_party: "PLN"
- NIC_democratic_party_long: "Partido Liberal Nacionalista"
+ SLV_democratic_party: "PLN"
+ SLV_democratic_party_long: "Partido Liberal Nacionalista"
 
 Constitutional_Monarchy_desc: "A constitutional monarchy is a government system where a monarch's powers are limited by a constitution. Elected officials handle most legislative and executive duties, balancing traditional monarchy with democratic governance.                                                                         "
 Merchant_Republic_desc: "A Merchant Republic merges aspects of a republic with a trade-focused economy, prioritizing commerce and maritime trade. Elected officials represent both political and commercial interests, emphasizing international trade relations and route expansion. Key tenets include protecting national commerce, fostering maritime trade, and collaborating closely with merchants and trade guilds. The system values economic freedom, entrepreneurship, and market competition, aiming for prosperity while navigating challenges like economic inequality and reliance on foreign trade.                                                                      "

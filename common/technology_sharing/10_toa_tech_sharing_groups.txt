@@ -33,7 +33,7 @@ technology_sharing_group = {
 	research_sharing_per_country_bonus = 0.15
 
 	available = {
-		#original_tag = ITA
+		#original_tag = SIT
 		#
 	}
 }
@@ -60,7 +60,6 @@ technology_sharing_group = {
 	research_sharing_per_country_bonus = 0.20
 
 	available = {
-		has_idea = BRA_commonwealth_idea
 	}
 }
 

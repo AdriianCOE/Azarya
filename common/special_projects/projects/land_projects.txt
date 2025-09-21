@@ -7,7 +7,7 @@
  #       ######  #    #  #    #  ######    #    #    #  #    #   ####   #    #  ######  #    #        #    #    #  #    #  #    #   ####  
                                                                                                                                           
 
-
+#TODO_R56 don't overwrite this file because of one tech?
 sp_land_flamethrower_tank = {
 	specialization = specialization_land
 	#icon = GFX_sp_land_flamethrower_tank ### Automatically hooked-in since the GFX ID matches the project ID.
@@ -24,7 +24,7 @@ sp_land_flamethrower_tank = {
 	
 	available = {
 		FROM = {
-			has_tech = tech_engineers
+			has_tech = flamethrower
 		}
 	}
 
@@ -38,6 +38,13 @@ sp_land_flamethrower_tank = {
 	
 	project_output = {
 		country_effects = {
+			hidden_effect = { #Update tooltip in Italian focus if anything changes here!!! (maybe change focus effects too if Italy starts with Flamethrower Tank)
+				if = {
+					limit = {
+						has_dlc = "No Step Back"
+					}
+				}
+			}
 
 			add_design_template_bonus = {
 				name = sp_land_flamethrower_tank
@@ -1223,8 +1230,19 @@ sp_land_super_heavy_railway_gun = {
 		}
 
 		country_effects = {
-			create_railway_gun = {
-				equipment = super_heavy_railway_gun_equipment_1
+			if = {
+				limit = {
+					original_tag = CZL
+				}
+				create_railway_gun = {
+					equipment = super_heavy_railway_gun_equipment_1
+					name = "Dora"
+				}
+			}
+			else = {
+				create_railway_gun = {
+					equipment = super_heavy_railway_gun_equipment_1
+				}
 			}
 		}
 	}

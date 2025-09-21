@@ -4,8 +4,8 @@ state={
 	name="Ascheres"
 
 				history={
-		owner = NIC
-		add_core_of = NIC
+		owner = SLV
+		add_core_of = SLV
 		add_core_of = CBS
 	}
 	

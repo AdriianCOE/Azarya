@@ -14,25 +14,34 @@ bookmarks = {
 				THK_Corrupt_Queen
 				Great_Earthquake
 			}
+			focuses = {
+				THK_queensSpeech
+				THK_MenOfPride
+			}
 		}
 		CZL = {
 			history = CZL_AZARYA_DESC
 			ideology = democratic
+			ideas={
+				CZL_Fear_of_the_population
+				CZL_Autoritarismo
+				CZL_Monetary_retention
+			}
 		}
-		NIC = {
-			history = NIC_AZARYA_DESC
+		SLV = {
+			history = SLV_AZARYA_DESC
 			ideology = democratic
 		}
 		LUQ = {
-			history = x
+			history = LUQ_AZARYA_DESC
 			ideology = neutrality
 		}
 		SLU = {
-			history = x
+			history = SLU_AZARYA_DESC
 			ideology = fascism
 		}
 		SVD = {
-			history = x
+			history = SVD_AZARYA_DESC
 			ideology = democratic
 		}
 		SIT = {
@@ -42,21 +51,21 @@ bookmarks = {
 				SIT_Victorium_Legacy
 			}
 		}
-		
-		"---"={
-			history = "OTHER_GATHERING_STORM_DESC"
-		}
 
 		# minors from DLC ####
-		"BOM"={
+		BOM = {
 			minor = yes
 			history = x
 			ideology = fascism
 		}
-		"NIR"={
+		NIR={
 			minor = yes
 			history = x
 			ideology = neutrality
+		}
+		
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
 		}
 		"KOZ"={
 			minor = yes

@@ -6,7 +6,7 @@ CZL = {
 	color = rgb { 0 35 70 }
 	color_ui = rgb { 0 35 70 }
 }
-NIC = {
+SLV = {
 	color = rgb { 230 205 255 }
 	color_ui = rgb { 230 205 255 }
 }
@@ -137,4 +137,52 @@ VRD = {
 FVI = {
 	color = rgb { 210  255  90 }
 	color_ui = { 210  255  90 }
+}
+EDR = {
+	color = rgb { 85  107  47 }
+	color_ui = { 85  107  47 }
+}
+ATV = {
+	color = rgb { 205  92  02 }
+	color_ui = { 205  92  02 }
+}
+ELD = {
+	color = rgb { 98  146  203 }
+	color_ui = { 98  146  203 }
+}
+HEL = {
+	color = rgb { 64  64  64 }
+	color_ui = { 64  64  64 }
+}
+VAL = {
+	color = rgb { 84  118  155 }
+	color_ui = { 84  118  155 }
+}
+TRB = {
+	color = rgb { 139  69  19 }
+	color_ui = { 139  69  19 }
+}
+VAN = {
+	color = rgb { 0  102  51 }
+	color_ui = { 0  102  51 }
+}
+DUH = {
+	color = rgb { 90  60  40 }
+	color_ui = { 90  60  40 }
+}
+TRD = {
+	color = rgb { 48  95  160 }
+	color_ui = { 48  95  160 }
+}
+ARD = {
+    color = rgb { 30 50 160 }
+    color_ui = rgb { 30 50 160 }
+}
+LVD = {
+    color = rgb { 207 170 52 }
+    color_ui = rgb { 207 170 52 }
+}
+CMR = {
+    color = rgb { 153 30 30 }
+    color_ui = rgb { 153 30 30 }
 }

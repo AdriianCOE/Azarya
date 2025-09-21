@@ -171,8 +171,8 @@ intelligence_agency = {
 	picture = GFX_intelligence_agency_logo_bel
 	names = { "ADIV" "SGRS" }
 	
-	default = { tag = BEL }
-	available = { original_tag = BEL }
+	default = { tag = MEK }
+	available = { original_tag = GYE }
 }
 
 intelligence_agency = {

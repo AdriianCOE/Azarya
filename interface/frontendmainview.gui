@@ -506,11 +506,11 @@ containerWindowType = {
 		{
 			name ="frontend_game_logo"
 			spriteType = "GFX_frontend_game_logo"
-			position = { x= 20 y = 20 }
+			position = { x= 750 y = 25 }
 		}
 		instantTextBoxType = {
 			name ="azarya_version_label"
-			position = { x = 20 y = 240 }
+			position = { x = 755 y = 240 }
 			textureFile = ""
 			font = "hoi_24header"
 			borderSize = {x = 0 y = 0}
@@ -520,21 +520,11 @@ containerWindowType = {
 		}
 		instantTextBoxType = {
 			name ="vanilla_version_label"
-			position = { x = 20 y = 215 }
+			position = { x = 745 y = 215 }
 			textureFile = ""
 			font = "hoi_24header"
 			borderSize = {x = 0 y = 0}
 			text = "compatible_game"
-			format = centre
-			maxWidth = 448
-		}
-		instantTextBoxType = {
-			name ="funny_version_label"
-			position = { x = 1505 y = 1050 }
-			textureFile = ""
-			font = "hoi_24header"
-			borderSize = {x = 0 y = 0}
-			text = "made"
 			format = centre
 			maxWidth = 448
 		}
@@ -577,27 +567,27 @@ containerWindowType = {
 
 	iconType =
 	{
-		name ="frontend_dev_logo"
-		spriteType = "GFX_frontend_dev_logo"
-		position = { x= 15 y = 15 }
+		name ="frontend_dev_az_logo"
+		spriteType = "GFX_frontend_az_dev_logo"
+		position = { x= 120 y = 5 }
 	}
 	
 	iconType =
 	{
 		name ="pdx_int_logo"
 		spriteType = "GFX_pdx_int_logo"
-		position = { x= 135 y = 15 }
-	}		
+		position = { x= 0 y = 25 }
+	}	
 	
 }		
 
 ### SINGLE PLAYER MENU
 containerWindowType = {
 	name = "mainmenu_single_player"
-	position = { x=-30 y =-30}
-	size = { width = 320 height = 395}
-	Orientation = lower_right
-	Origo = lower_right
+	position = { x=0 y =0}
+		size = { width = 320 height = 395 }
+		Orientation = CENTER
+		Origo = center		
 			
 	background = {
 		name = "Background"		
@@ -672,14 +662,14 @@ containerWindowType = {
 	}
 	
 	ButtonType = {
-		name = "sp_tutorial_button"
-		position = { x = 16 y = 138}
-		quadTextureSprite ="GFX_main_lobby_button"	
-		buttonText = "FE_TUTORIAL"
-		buttonFont = "hoi_24header"
-		clicksound = click_default
-		oversound = ui_menu_over
-	}
+			name = "sp_tutorial_button"
+			position = { x = 16 y = 138}
+			quadTextureSprite ="GFX_main_lobby_button"	
+			buttonText = "FE_TUTORIAL"
+			buttonFont = "hoi_24header"
+			clicksound = click_default
+			oversound = ui_menu_over
+		}
 	
 	ButtonType = {
 		name = "sp_back_button"
@@ -696,10 +686,10 @@ containerWindowType = {
 ### MAIN MENU PANEL (bottom)
 containerWindowType = {
 	name ="mainmenu_panel_bottom"
-	position = { x=-30 y =-30}
-	size = { width = 320 height = 395}
-	Orientation = lower_right
-	Origo = lower_right
+		position = { x=0 y =0}
+		size = { width = 320 height = 450 }
+		Orientation = CENTER
+		Origo = center		
 
 	positionType = {
 		name = "subscription_size"
@@ -839,7 +829,7 @@ containerWindowType = {
 		quadTextureSprite ="workshop"
 		#clicksound = click_default
 		pdx_tooltip = "MENU_WORKSHOP"
-		web_link = "https://steamcommunity.com/sharedfiles/filedetails/?id=3261305586&searchtext=blank"
+		web_link = "https://steamcommunity.com/sharedfiles/filedetails/?id=3505750217"
 	}
 }
 
@@ -879,6 +869,17 @@ containerWindowType = {
 			alwaystransparent = yes
 		}
 	
+		containerWindowType = {
+            name = "first_row"
+			position = { x=48 y=-17 }
+            ButtonType = {
+                name = "homepage_button"
+                position = { x=0 y=0 }
+                quadTextureSprite ="homepage"
+                clicksound = click_default
+                pdx_tooltip = "MENU_HOMEPAGE"
+            }
+
 		ButtonType = {
 		name = "forum_button"
 		position = { x=50 y=0 }
@@ -896,6 +897,14 @@ containerWindowType = {
 		pdx_tooltip = "MENU_FACEBOOK"
 		web_link = "https://www.facebook.com/Heartsofiron"
 		}
+
+		ButtonType = {
+        name = "privacy_policy_button"
+        position = { x = 220 y = 309 }
+        quadTextureSprite ="privacy"
+        #clicksound = click_default
+        pdx_tooltip = "MENU_PRIVACY_POLICY"
+   		}
 
 		ButtonType = {
 		name = "twitter_button"

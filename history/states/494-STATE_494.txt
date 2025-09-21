@@ -1,0 +1,15 @@
+state={
+	id=494
+	name="Ilda"
+	history={
+			owner = EDR
+			add_core_of = EDR
+		}
+	provinces={
+		457 6378 6336 1526 401 4800 187
+	}
+	manpower=790593
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

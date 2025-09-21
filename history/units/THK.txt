@@ -41,7 +41,7 @@ units = {
 		division= {	# "2a Divisao do Exercito"
 		division_name = {
 				is_name_ordered = yes
-				name_order = 1
+				name_order = 2
 		}
 		location = 9131 # Lirden
 		division_template = "Divisao Real de Infantaria"
@@ -52,7 +52,7 @@ units = {
 		division= {	# "3a Divisao do Exercito"
 		division_name = {
 				is_name_ordered = yes
-				name_order = 1
+				name_order = 3
 		}
 		location = 8289
 		division_template = "Divisao Real de Infantaria"
@@ -63,7 +63,7 @@ units = {
 		division= {	# "4a Divisao do Exercito"
 		division_name = {
 				is_name_ordered = yes
-				name_order = 1
+				name_order = 4
 		}
 		location = 8934 # Cormosama
 		division_template = "Divisao Real de Infantaria"
@@ -73,7 +73,7 @@ units = {
 		division= {	# "5a Divisao do Exercito"
 		division_name = {
 				is_name_ordered = yes
-				name_order = 1
+				name_order = 5
 		}
 		location = 8531
 		division_template = "Divisao Real de Infantaria"
@@ -95,7 +95,7 @@ units = {
 	division= {	# "2a Divisao de Cavalaria'"
 		division_name = {
 				is_name_ordered = yes
-				name_order = 1
+				name_order = 2
 		}
 		location = 3569
 		division_template = "Cavalaria Real" 
@@ -106,7 +106,7 @@ units = {
 		division= {	# "3a Divisao de Cavalaria'"
 		division_name = {
 				is_name_ordered = yes
-				name_order = 1
+				name_order = 3
 		}
 		location = 8615
 		division_template = "Cavalaria Real" 
@@ -115,7 +115,7 @@ units = {
 
 	}
 }
-	##### No Notable Naval Forces #####
+	##### Notable Air Forces #####
 
 air_wings = {
 	# Thiryn -- Cormosama
@@ -177,7 +177,8 @@ units = {
     }
   }  
 }
-##### No Notable Air Forces #####
+
+#Production
 
 instant_effect = {
 	add_equipment_production = {

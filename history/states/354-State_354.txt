@@ -6,7 +6,7 @@ state={
 	}
 
 			history={
-		owner = NIC
+		owner = SLV
 		victory_points = {
 			7763 20 
 		}
@@ -17,7 +17,7 @@ state={
             }
 
 		}
-		add_core_of = NIC
+		add_core_of = SLV
 
 	}
 

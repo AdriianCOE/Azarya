@@ -2,8 +2,12 @@
 state={
 	id=248
 	name="STATE_248"
+	history={
+		owner = ATV
+		add_core_of = ATV
+		}
 	provinces={
-		1 299 393 745 932 1227 1308 1877 1902 3321 3582 3918 4154 4777 4989 6516 6658 
+		1 299 342 393 745 1227 1308 1877 1902 3321 3582 4154 4777 4989 6516 6658 6582 926 932 6619
 	}
 	manpower=1
 	buildings_max_level_factor=1.000

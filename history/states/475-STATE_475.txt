@@ -10,7 +10,7 @@ state={
 		add_core_of = VRD
 	}
 	provinces={
-		124 712 5835 4356 1069 1325 4171 5804 17
+		 712 5835 4356 1069 1325 4171 5804 17 4010 124 5963 95 1595 865 239
 	}
 	manpower=226828
 	state_category=rural

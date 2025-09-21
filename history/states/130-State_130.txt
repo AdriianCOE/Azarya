@@ -2,8 +2,12 @@
 state={
 	id=130
 	name="STATE_130"
+	history={
+		owner = VAN
+		add_core_of = VAN
+	}
 	provinces={
-		18 667 860 983 2261 5782 
+		 667 860 5782 15870 15871 15872 15873
 	}
 	manpower=1
 	buildings_max_level_factor=1.000

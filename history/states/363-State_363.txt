@@ -1,19 +1,28 @@
 
 state={
 	id=363
-	name="STATE_363"
+	name="Krendhal"
 
 	history={
-		owner = GYE
-		add_core_of = GYE
-
+		owner = DUH
+		    victory_points = {
+			8064 10 
+		}
+		victory_points = {
+			7806 4 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 2
+        }
+		add_core_of = DUH
 	}
 
 	provinces={
-		743 901 1472 2214 2588 2596 3365 3667 4464 7806 8024 8064 8104 8112 
+		743 901 1472 2214 2588 2596 3365 3667 4464 7806 8064 8104 8112 15820 15822 15823 15824 15825
 	}
-	manpower=1
+	manpower=995827
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=large_town
 	local_supplies=0.000
 }

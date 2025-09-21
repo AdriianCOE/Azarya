@@ -112,6 +112,31 @@ leader_traits = {
 		}
 		
 	}
+
+	fanatic_revolutionary = { 
+		type = corps_commander 
+		
+		
+		gain_xp = {
+			always = no # not gainable
+		}
+		cost = 0
+		corps_commander_modifier = {
+			army_infantry_attack_factor = 0.10
+			planning_speed = 0.15
+			experience_gain_factor = 0.15
+		}
+		custom_effect_tooltip = INCREASED_ASSAULT_AND_SHOCK_CHANCE
+		
+		slot = army_chief
+		specialist_advisor_trait = army_chief_maneuver_1
+		expert_advisor_trait = army_chief_maneuver_2
+		genius_advisor_trait = army_chief_maneuver_3
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	
 	
 	inflexible_strategist = { 
@@ -344,7 +369,7 @@ leader_traits = {
 	}
 
 	bearer_of_artillery = { # Reserved for Wojtek  
-		type = corps_commander
+		type = corps_commander 
 		
 		trait_type = personality_trait
 		

@@ -1,6 +1,6 @@
 forming_category = {
 	
-	form_test = {
+	form_Great_Thiryn = {
 
 		icon = generic_form_nation
 
@@ -10,14 +10,9 @@ forming_category = {
 
 		available = {
 			is_subject = no
-			hidden_trigger = {
-				NOT = { has_global_flag = form_test_flag }
-				NOT = { has_country_flag = created_country }
-			}
-			custom_trigger_tooltip = {
-				tooltip = controlling_territories
-				controls_state = 1
-			}
+				controls_state = 86
+				controls_state = 409
+				controls_state = 400
 		}
 		visible = {
 			original_tag = THK
@@ -30,13 +25,21 @@ forming_category = {
 			custom_effect_tooltip = form_test_tt
 			hidden_effect = {
 				set_global_flag = form_test_flag
+				news_event = { id = news.59 hours = 6 }
 				set_country_flag = created_country
-				1 = { add_core_of = ROOT }
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 400
+				state = 86
+				state = 409
 			}
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 100
 		}
 	}
 }

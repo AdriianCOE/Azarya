@@ -1,0 +1,10 @@
+﻿l_english:
+ THK_UNIF_neutrality:0 "Great Thiryn"
+ THK_UNIF_fascism:0 "Imperium of Thiryn"
+ THK_UNIF_democratic:0 "Federal Union of Thiryn"
+ THK_UNIF_communism:0 "People's Republic of Thiryn"
+
+ THK_UNIF_neutrality_DEF:0 "The Great Thiryn"
+ THK_UNIF_fascism_DEF:0 "The Imperium of Thiryn"
+ THK_UNIF_democratic_DEF:0 "The Federal Union of Thiryn"
+ THK_UNIF_communism_DEF:0 "The People's Republic of Thiryn"

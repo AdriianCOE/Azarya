@@ -1,0 +1,180 @@
+﻿division_template = {
+	name = "Division d'Infanterie"
+	division_names_group = TOL_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 0 y = 2 }
+		
+	}
+}
+division_template = {
+	name = "Cavalaria"  
+	division_names_group = TOL_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+
+units = {
+	##### Ejército de tol #####
+	division= {	# "1a Division d'Infanterie"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 3679
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+		division= {	# "2a Division d'Infanterie"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 8911
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+		division= {	# "3a Divisao do Exercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 9291
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+		division= {	# "4a Divisao do Exercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 1789
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+			division= {	# "5a Divisao do Exercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 8725
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+			division= {	# "6a Divisao do Exercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 4307
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+
+			division= {	# "7a Divisao do Exercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 3278
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+				division= {	# "8a Divisao do Exercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 9214
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+					division= {	# "9a Divisao do Exercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 3747
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+
+	division= {	# "1a Division de Cavalerie'"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 1436
+		division_template = "Cavalaria" 
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+	division= {	# "2a Division de Cavalerie'"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 4976
+		division_template = "Cavalaria" 
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+		division= {	# "3a Division de Cavalerie'"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 9315
+		division_template = "Cavalaria" 
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+}
+	##### No Notable Naval Forces #####
+	
+	
+	
+
+##### No Notable Air Forces #####
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "ARD"
+		}
+		requested_factories = 3
+		progress = 0.70
+		efficiency = 60
+	}
+}

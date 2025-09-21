@@ -7,7 +7,7 @@ state={
 		add_core_of = CBS
 				}
 	provinces={
-		2876 2139 1105 1807 7194 4565
+		2876 2139 1105 1807 7194 4565 15833
 	}
 	manpower=24576
 	buildings_max_level_factor=1.000

@@ -476,7 +476,6 @@ instantiate_collaboration_government = {
 			# if country_to_initiate exists, create a dynamic country as our new puppet
 
 			create_dynamic_country = {
-				original_tag = country_to_initiate
 
 				set_variable = { collaboration_formed_by = PREV }
 				set_temp_variable = { new_country = this }
@@ -510,7 +509,6 @@ abandon_colony_tag = {
 		}
 		if = {
 			limit = {
-				original_tag = CAN
 			}
 			if = {
 				limit = { NOT = { has_dlc = "Together for Victory" } }
@@ -522,19 +520,16 @@ abandon_colony_tag = {
 		}
 		else_if = {
 			limit = {
-				original_tag = RAJ
 			}
 			set_cosmetic_tag = RAJ_UK
 		}
 		else_if = {
 			limit = {
-				original_tag = MAL
 			}
 			set_cosmetic_tag = MAL_UK
 		}
 		else_if = {
 			limit = {
-				original_tag = INS
 			}
 			set_cosmetic_tag = INS_HOL
 		}

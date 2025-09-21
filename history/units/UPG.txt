@@ -141,7 +141,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 8554
+		location = 8610
 		division_template = "Divisao de Infantaria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9

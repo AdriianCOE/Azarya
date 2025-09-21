@@ -1,5 +1,12 @@
 ﻿l_english:
- VICTORY_POINTS_TOOLTIP:0 "§G$NAME$§! victory points = §Y$POINTS$§!"
+ VICTORY_POINTS_TOOLTIP:0 "§G$NAME$§! victory points = §Y$POINTS$§!" 
+ VICTORY_POINTS_834:0 "Langen"
+ VICTORY_POINTS_4465:0 "Palmes"
+ VICTORY_POINTS_9291:0 "Viana"
+ VICTORY_POINTS_8911:0 "Providence"
+ VICTORY_POINTS_3679:0 "Port Marinus"
+ VICTORY_POINTS_8725:0 "Coronus"
+ VICTORY_POINTS_1789:0 "Etus"
  VICTORY_POINTS_4744:0 "Cormosama"
  VICTORY_POINTS_4452:0 "Stotfordge"
  VICTORY_POINTS_3786:0 "Allorguil"
@@ -17,6 +24,8 @@
  VICTORY_POINTS_8783:0 "Nicollpell"
  VICTORY_POINTS_8433:0 "Denoku"
  VICTORY_POINTS_4996:0 "Verivino"
+ VICTORY_POINTS_15838:0 "Petrya"
+ VICTORY_POINTS_15842:0 "Tommya"
  VICTORY_POINTS_7349:0 "Montallicel"
  VICTORY_POINTS_2620:0 "Colcino"
  VICTORY_POINTS_7669:0 "Mona"
@@ -236,11 +245,10 @@
  VICTORY_POINTS_4258:0 "Novum"        // Nova cidade, refletindo renovação
  VICTORY_POINTS_3414:0 "Altus"        // Cidade nas montanhas
  VICTORY_POINTS_7166:0 "Aequitas"     // Refletindo justiça e igualdade
- VICTORY_POINTS_7187:0 "Agrarius"     // Em homenagem à bravura
+ VICTORY_POINTS_7187:0 "Agrarius"
  VICTORY_POINTS_3863:0 "Erytheia"     
  VICTORY_POINTS_6159:0 "Drakos"     
  VICTORY_POINTS_1431:0 "Dryspire"
-
  VICTORY_POINTS_1131:0 "Callenberg" #VRD
  VICTORY_POINTS_3190:0 "Luthengrad" #VRD
  VICTORY_POINTS_5566:0 "Redwark"    #VRD
@@ -264,3 +272,56 @@
  VICTORY_POINTS_7583:0 "Vyrenthia"  #FVI
  VICTORY_POINTS_7699:0 "Pyrenvale"  #FVI
  VICTORY_POINTS_2508:0 "Flamtown"  #FVI
+
+ VICTORY_POINTS_1939:0 "Vernacath" #ATV 
+ VICTORY_POINTS_3476:0 "Thalridge"  #ATV
+ VICTORY_POINTS_6627:0 "Estravax" #ATV
+
+ VICTORY_POINTS_3112:0 "Eldoria" #ELD
+ VICTORY_POINTS_6130:0 "Valmere"  #ELD
+
+ VICTORY_POINTS_1681:0 "Stravograd"  #HEL
+ VICTORY_POINTS_1346:0 "Vostokholm"  #HEL
+ VICTORY_POINTS_5941:0 "Targoviyarsk"  #HEL
+ VICTORY_POINTS_1298:0 "Tommynask"  #HEL
+
+ VICTORY_POINTS_3597:0 "Dürnhaupt"  #DUR
+ VICTORY_POINTS_8064:0 "Hochfeldt"  #DUR
+ VICTORY_POINTS_7806:0 "Steinwacht"  #DUR
+
+ #GYE
+ VICTORY_POINTS_15850:0 "Virodunum"  #GYE
+ VICTORY_POINTS_7524:0 "Marcomagus"  #GYE
+ VICTORY_POINTS_1217:0 "Teurio"  #GYE
+ VICTORY_POINTS_3724:0 "Brigantium"  #GYE 
+ VICTORY_POINTS_7825:0 "Gesonia"  #GYE
+ VICTORY_POINTS_7858:0 "Lugdunum"  #GYE
+ VICTORY_POINTS_7806:0 "Noviomagus"  #GYE
+ VICTORY_POINTS_7180:0 "Argentoratum"  #GYE
+ VICTORY_POINTS_7823:0 "Mogontiacum"  #GYE
+ VICTORY_POINTS_957:0 "Sorviodurum"  #GYE
+ VICTORY_POINTS_464:0 "Glevum"  #GYE
+ VICTORY_POINTS_1956:0 "Durovernum"  #GYE
+ VICTORY_POINTS_3460:0 "Reccared"  #GYE
+ VICTORY_POINTS_711:0 "Salians"  #GYE 
+ VICTORY_POINTS_7550:0 "Batavi"  #GYE 
+ VICTORY_POINTS_3170:0 "Hypanis"  #GYE 
+ VICTORY_POINTS_2795:0 "Aquincum"  #GYE 
+
+ VICTORY_POINTS_2737:0 "Velgrast"
+ VICTORY_POINTS_8337:0 "Erdalon"
+ VICTORY_POINTS_8843:0 "Leovarde"
+ VICTORY_POINTS_8888:0 "Norwyck"
+ VICTORY_POINTS_8278:0 "Mernath"
+ VICTORY_POINTS_8405:0 "Veymar"
+ VICTORY_POINTS_8160:0 "Bronmarch"
+ VICTORY_POINTS_8618:0 "Dunverra"
+ VICTORY_POINTS_15851:0 "Ellia"
+
+ VICTORY_POINTS_528:0 "Caerlynne"
+ VICTORY_POINTS_8984:0 "Thalvaris"
+ VICTORY_POINTS_9162:0 "Myrrhgate"
+
+
+
+

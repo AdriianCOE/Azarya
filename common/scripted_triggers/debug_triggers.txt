@@ -1,15 +1,15 @@
 #test_SOV_try_to_steal_ENG_tech = {
-#    SOV = {
+#    NSA = {
 #        num_finished_operations = {
 #            operation = operation_steal_tech_navy
-#            target = ENG
+#            target = THK
 #            value < 1
 #        }
 #    }
 #}
 #
 #test_ENG_wants_to_free_BRA = {
-#    ENG = {
+#    THK = {
 #        num_finished_operations = {
 #            operation = operation_coup_government
 #            target = BRA

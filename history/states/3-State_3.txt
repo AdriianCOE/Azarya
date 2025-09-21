@@ -1,10 +1,15 @@
 
 state={
 	id=3
-	name="Nata Island"
+	name="Sarmatia"
 
 	history={
 		owner = GYE
+		buildings = {
+			industrial_complex = 2
+			arms_factory = 1
+			infrastructure = 2
+		}
 		add_core_of = GYE
 
 	}
@@ -12,8 +17,8 @@ state={
 	provinces={
 		130 135 1948 2661 3156 7591 7785 
 	}
-	manpower=39584
+	manpower=985984
 	buildings_max_level_factor=1.000
-	state_category=tiny_island
+	state_category=large_town 
 	local_supplies=0.000
 }

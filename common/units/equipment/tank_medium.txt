@@ -2,7 +2,7 @@
 equipments = {
 
 #	medium_tank_equipment = {
-#		year = 1934
+#		year = 1922
 #
 #
 #		is_archetype = yes
@@ -53,7 +53,7 @@ equipments = {
 #
 #	# 1939
 #	medium_tank_equipment_1 = {
-#		year = 1939
+#		year = 1927
 #
 #		archetype = medium_tank_equipment
 #		priority = 50
@@ -63,7 +63,7 @@ equipments = {
 #
 #	# 1941
 #	medium_tank_equipment_2 = {
-#		year = 1941
+#		year = 1929
 #
 #		archetype = medium_tank_equipment
 #		parent = medium_tank_equipment_1
@@ -95,7 +95,7 @@ equipments = {
 #
 #	# 1943
 #	medium_tank_equipment_3 = {
-#		year = 1943
+#		year = 1931
 #
 #		archetype = medium_tank_equipment
 #		parent = medium_tank_equipment_2
@@ -126,7 +126,7 @@ equipments = {
 #	}
 #
 #	medium_tank_artillery_equipment = {
-#		year = 1934
+#		year = 1922
 #
 #
 #		is_archetype = yes
@@ -176,7 +176,7 @@ equipments = {
 #	}
 #
 #	medium_tank_artillery_equipment_1 = {
-#		year = 1939
+#		year = 1927
 #
 #		archetype = medium_tank_artillery_equipment
 #		family = medium_tank_equipment_1
@@ -188,7 +188,7 @@ equipments = {
 #	}
 #
 #	medium_tank_artillery_equipment_2 = {
-#		year = 1941
+#		year = 1929
 #
 #		archetype = medium_tank_artillery_equipment
 #		parent = medium_tank_artillery_equipment_1
@@ -222,7 +222,7 @@ equipments = {
 #	}
 #
 #	medium_tank_artillery_equipment_3 = {
-#		year = 1943
+#		year = 1931
 #
 #		archetype = medium_tank_artillery_equipment
 #		parent = medium_tank_artillery_equipment_2
@@ -256,7 +256,7 @@ equipments = {
 #	}
 #
 #	medium_tank_destroyer_equipment = {
-#		year = 1934
+#		year = 1922
 #
 #
 #		is_archetype = yes
@@ -307,7 +307,7 @@ equipments = {
 #
 #	# 1939
 #	medium_tank_destroyer_equipment_1 = {
-#		year = 1939
+#		year = 1927
 #
 #		archetype = medium_tank_destroyer_equipment
 #		family = medium_tank_equipment_1
@@ -320,7 +320,7 @@ equipments = {
 #
 #	# 1941
 #	medium_tank_destroyer_equipment_2 = {
-#		year = 1941
+#		year = 1929
 #
 #		archetype = medium_tank_destroyer_equipment
 #		parent = medium_tank_destroyer_equipment_1
@@ -356,7 +356,7 @@ equipments = {
 #
 #	# 1943
 #	medium_tank_destroyer_equipment_3 = {
-#		year = 1943
+#		year = 1931
 #
 #		archetype = medium_tank_destroyer_equipment
 #		parent = medium_tank_destroyer_equipment_2
@@ -392,7 +392,7 @@ equipments = {
 #
 #
 #	medium_tank_aa_equipment = {
-#		year = 1934
+#		year = 1922
 #
 #
 #		is_archetype = yes
@@ -442,7 +442,7 @@ equipments = {
 #	}
 #
 #	medium_tank_aa_equipment_1 = {
-#		year = 1939
+#		year = 1927
 #
 #		archetype = medium_tank_aa_equipment
 #		family = medium_tank_equipment_1
@@ -455,7 +455,7 @@ equipments = {
 #	}
 #
 #	medium_tank_aa_equipment_2 = {
-#		year = 1941
+#		year = 1929
 #
 #		archetype = medium_tank_aa_equipment
 #		parent = medium_tank_aa_equipment_1
@@ -491,7 +491,7 @@ equipments = {
 #	}
 #
 #	medium_tank_aa_equipment_3 = {
-#		year = 1943
+#		year = 1931
 #
 #		archetype = medium_tank_aa_equipment
 #		parent = medium_tank_aa_equipment_2

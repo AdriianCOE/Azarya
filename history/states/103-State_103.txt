@@ -1,6 +1,13 @@
 state={
 	id=103
-	name="STATE_103"
+	name="Crownport Isles"
+	history={
+		owner = CMR
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = LVD
+	}
 	provinces={
 		9196 9202 
 	}

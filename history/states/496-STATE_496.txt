@@ -1,0 +1,35 @@
+
+state={
+	id=496
+	name="Ylika"
+	history = {
+        owner = TRD
+		victory_points = {
+			15838 10
+		}
+		victory_points = {
+			15842 5
+		}
+		buildings = {
+			infrastructure = 2	
+			industrial_complex = 2
+			arms_factory = 1
+			15838 = {
+                naval_base = 1
+				coastal_bunker = 1
+            }
+			15842 = {
+				coastal_bunker = 1
+			}
+		}
+		add_core_of = TRD
+		add_core_of = CZL
+	}
+	provinces={
+		15836 15837 15838 15839 15840 15841 15842 15843 15844 15845 15846 15847 15848 15849
+	}
+	manpower=989862
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

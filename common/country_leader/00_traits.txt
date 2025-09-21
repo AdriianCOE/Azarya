@@ -397,64 +397,6 @@ leader_traits = {
 #ai_focus_naval_air_factor
 #ai_focus_aviation_factor
 
-	dislikes_germany = {
-		random = no
-		ai_strategy = {
-			type = antagonize
-			value = 200
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	dislikes_soviet = {
-		random = no
-		ai_strategy = {
-			type = antagonize
-			value = 200
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	likes_germany = {
-		random = no
-		ai_strategy = {
-			type = alliance
-			value = 300
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	likes_allies = {
-		random = no
-		ai_strategy = {
-			type = alliance
-			value = 300
-		}
-
-		ai_strategy = {
-			type = alliance
-			value = 300
-		}
-
-		ai_strategy = {
-			type = alliance
-			value = 300
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
 	tenacious_defender = {
 		random = no
 
@@ -1078,6 +1020,37 @@ leader_traits = {
 		random = no
 		war_support_factor = 0.1
 		resistance_target_on_our_occupied_states = 0.25
+	}
+	
+	iron_fisted_ruler = {
+		random = no
+		stability_factor = 0.05
+		justify_war_goal_time = -0.15
+		war_support_weekly = -0.01
+	}
+	nostalgic_imperialist = {
+		random = no
+		army_core_defence_factor = 0.10
+		local_non_core_manpower = 0.10
+		research_speed_factor = -0.10
+	}
+	autocratic_reformer = {
+		random = no
+		political_power_gain = 0.10
+		production_speed_infrastructure_factor = -0.05
+		consumer_goods_factor = -0.10
+		stability_factor = -0.05
+	}
+	fragile_loyalty = {
+		random = no
+		army_org_regain = -0.10
+		political_advisor_cost_factor = 0.05
+	}
+	fanatic_revolutionary = {
+		random = no
+		army_attack_factor = 0.10            # +10% de ataque
+        planning_speed = 0.15           # +15% de velocidade de planejamento
+        experience_gain_factor = 0.15   # +15% de ganho de XP
 	}
 
 	leider = {

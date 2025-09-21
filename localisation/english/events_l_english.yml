@@ -3367,3 +3367,9 @@
  AAT_germany.3.desc: "[FROM.GetName] has accepted our deal, something that will surely benefit us both. Lets hope that this profitable arrangement is followed by many more"
  AAT_germany.3.a: "Great"
  
+ news.59.t:0 "The Great Thiryn is Formed"
+ news.59.desc:0 "In a sweeping move of consolidation and power, the Kingdom of Thiryn has declared the foundation of the Great Thiryn. The new state claims to be the true successor of the ancient imperial legacy, and now stands ready to shape the fate of Azarya."
+
+ news.59.a:0 "A new chapter begins."
+ news.59.b:0 "We shall watch their rise closely."
+ news.59.c:0 "This changes everything!"

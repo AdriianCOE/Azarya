@@ -2,7 +2,7 @@
 equipments = {
 
 #	modern_tank_equipment = {
-#		year = 1934
+#		year = 1922
 #
 #
 #		is_archetype = yes
@@ -51,7 +51,7 @@ equipments = {
 #	}
 #
 #	modern_tank_equipment_1 = {
-#		year = 1945
+#		year = 1933
 #
 #		archetype = modern_tank_equipment
 #		priority = 170
@@ -60,7 +60,7 @@ equipments = {
 #	}
 #
 #	modern_tank_artillery_equipment = {
-#		year = 1934
+#		year = 1922
 #
 #
 #		is_archetype = yes
@@ -111,7 +111,7 @@ equipments = {
 #	}
 #
 #	modern_tank_artillery_equipment_1 = {
-#		year = 1945
+#		year = 1933
 #
 #		archetype = modern_tank_artillery_equipment
 #		priority = 180
@@ -122,7 +122,7 @@ equipments = {
 #	}
 #
 #	modern_tank_destroyer_equipment = {
-#		year = 1934
+#		year = 1922
 #
 #		is_archetype = yes
 #		is_convertable = yes
@@ -172,7 +172,7 @@ equipments = {
 #	}
 #
 #	modern_tank_destroyer_equipment_1 = {
-#		year = 1945
+#		year = 1933
 #
 #		archetype = modern_tank_destroyer_equipment
 #		priority = 200
@@ -183,7 +183,7 @@ equipments = {
 #	}
 #
 #	modern_tank_aa_equipment = {
-#		year = 1934
+#		year = 1922
 #
 #		is_archetype = yes
 #		is_convertable = yes
@@ -232,7 +232,7 @@ equipments = {
 #	}
 #
 #	modern_tank_aa_equipment_1 = {
-#		year = 1945
+#		year = 1933
 #
 #		archetype = modern_tank_aa_equipment
 #		priority = 190

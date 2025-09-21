@@ -1,0 +1,47 @@
+AEI - Aelosia - rgb { 40 155 50 } Estado Medio, Pais pacifista que se importa muito com arvores
+ARD - Aeridor - rgb { 30 50 160 } Estado Pequeno
+ARK - Auralis - rgb { 218 165 32 } Estado Pequeno 
+ATI- Attica - rgb { 0 95 115 } Estado Pequeno
+ATV - Astravern - rgb { 205 92 02 }
+BKG - Blutkrieger - rgb { 60 65 90 } Pais inspirado na Escocia porem dividido em 3 sendo uma ilha, Estado Medio
+BOA - Bolia - rgb { 225 160 80 }
+BOK - Bokkan - rgb { 176 94 137 }
+BOM - Bishopric of Montia - rgb { 110 205 240 } Potencia Global, Pais inspirado nos estados papais porem extremista faz fronteira com Czariado de Lesc
+CBS - Cambelese Desert - rgb { 255 220 105 }
+CMR - Cymranth - rgb { 153 30 30 }
+CZL - Czariado de Lesc - rgb { 0 35 70 } Potencia Regional, tendo duas culturas conflitantes 
+DKG - Delp Khanate - rgb { 250 210 160 }
+DTB - Durtenbach - rgb { 220 70 30 } Pais inspirado na Polonia, estado Medio
+DUH - Durnstad - rgb { 90 60 40 } 
+EDR - Eldrina - rgb { 85 107 47 }
+ELD - Eldwyn - rgb { 98 146 203 }
+FVI - Fervonia - rgb { 210 255 90 }
+GET - Griester - rgb { 230 205 255 } Pais inspirado na Irlanda em Guerra revolucionaria contra Serenvioled
+GYE - Gydian Empire - rgb { 24 25 34 } Super-Potencia (Inspirado na Alemanha)
+HEL - Helvaria - rgb { 64 64 64 }
+KOZ - Kingdom of Zauern - rgb { 50 190 90 } Pais inspirado no Brasil sendo uma monarquia em busca da expansão em guerra com Torronese, potencia regional
+LUA - Lurandia - rgb { 85 50 40 }
+LUQ - Luquitos - rgb { 125 200 240 } Pais mercante insular pescante, Estado Medio
+LVD - Leovardia - rgb { 207 170 52 }
+MEK - Meronian Kingdom - rgb { 250 140 130 }
+MER - Mercadia - rgb { 0 102 204 } Pais insular totalmente mercante, Estado Pequeno
+MOR - Mortdet - rgb { 128 0 32 }
+NIR - Nirisia - rgb { 75 0 225 }
+NSA - Novasovia - rgb { 178 34 34 } Pais inspirado na União sovietica potencia regional
+RFB - Riofriolia Bandits - rgb { 65 100 90 } Pais de bandidos fez revolução contra Nirisia, Estado Pequeno
+RFO - Rosfhios - rgb { 100 150 195 } Pais inspirado no pais de gales porem dividido em 3 sendo uma ilha, Estado Medio
+SAH - Sahraza - rgb { 204 132 58 }
+SDB - SeddusBadlands - rgb { 139 1 1 } Pais do caos sem estabilidade, Estado Pequeno
+SIT - Sithius - rgb { 50 0 2 } Pais inspirado no Imperio Romano decadente sendo cada vez suprimido pelo Gydian Empire na fronteira, Potencia Regional
+SLU - Sollerium - rgb { 165 75 150 } Pais inspirado no Japão ao norte do mundo, pais gelado porem unido, Potencia Emergente
+SLV- Sylvan - rgb { 230 205 255 }
+SVD - Serenvioled - rgb { 225 225 250 } Pais inspirado na Inglaterra porem dividido em 3 sendo uma ilha, Estado Medio em guerra com Griester
+THK - ThirynKingdom - rgb { 279 13 20 } Principal Pais Potencia decadente criado e focado por mim
+TOL - Torronese League - rgb { 95 200 255 } Inspirado na França em Guerra existencial contra Zauern
+TRB - Zandara - rgb { 139 69 19 }
+TRD - Tridian - rgb { 48 95 160 }
+UPG - United Provinces of Gengen - rgb { 230 140 50 }
+VAL - Valeria - rgb { 84 118 155 }
+VAN - Valanora - rgb { 0 102 51 }
+VRD - Varadnia - rgb { 186 28 51 }
+WIH - Wickia Higlands - rgb { 150 150 165 }

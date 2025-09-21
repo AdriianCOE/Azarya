@@ -14,32 +14,88 @@
 # The prefix must be provided for all pools
 
 default = {
-	male = {
-		names = { "Alexey" "Artem" "Vadim" "Vladimir" "Valentin" "Danil" "Daniil" "Danila" "Petr" "Denis" "Dmitriy" "Dimitriy" "Oleg" "Egor" "Georgiy" "Leonid" "Maxim" "Matvey" "Nikita" "Pavel" "Roman" "Sergey" "Stanislav" "Vladislav" "Yaroslav" "Vyacheslav" "Alexander" "Semyon" "Konstantin" "Yuriy" "Yuliy" "Innokentiy" "Iosif" "Lev" }
-		surnames = { "Smirnov" "Ivanov" "Kuznetsov" "Popov" "Sokolov" "Lebedev" "Kozlov" "Novikov" "Morozov" "Petrov" "Volkov" "Soloviev" "Vasiliev" "Zaitsev" "Pavlov" "Semyonov" "Golubev" "Vinogradov" "Bogdanov" "Vorobienov" "Feodorov" "Mihailov" "Belyaev" "Tarasov" "Belov" "Komarov" "Orlov" "Kiselev" "Makarov" "Andreev" "Kovalev" "Iljin" "Gusev" }
-		callsigns = { "Grinichi" "Nixon" "Puchkovets" "Podvyaznoy" "Botsman" "Chester" "Krot" "Belka" "Yaytso" "Hohol" "Maksimkin" "Shish" "Gavrosh" "Nemets" }
-	}
-	#female = {
-	#	names = { "Juliette" "Anna" }
-	#	surnames = { }
-	#	callsigns = { "Queen Of The Sky" "The Red Princess" }
-	#}
-	surnames = { "Smith" "Jones" "Taylor" "Brown" "Williams" "Wilson" "Evans" "Walker" "White" "Roberts" }
-	callsigns = { "Easy Kill" "The Lightning" "The Devil" "Grasshopper" "Handsome" "Moose" "Mouse" "Pebbles" "Sunshine" Demon}
-	
-	
-	#Operations - treat these as keys, not strings.
-	prefix = o_operation
-	
-	operation = {
-		0 = { o_default_operation }
-	}
-	
-	use_geographical_default_operation_names = yes
-	offensive_operation_suffix = o_strat_offensive_default
-	defensive_operation_suffix = o_strat_defensive_default
-	naval_operation_suffix = o_strat_naval_default
-	
+    male = {
+        names = {
+            Kaelen Roric Baelor Theron Garrick Lyander Corbin Malachi Alaric Zephyr
+            Draven Silas Rhys Torvin Erion Valerius Orion Cassian Fendrel Gideon
+            Zane Joric Falkor Brandis Stellan Peregrin Quillan Ronan Talon Warrick
+            Aldric Borin Caelus Darian Eamon Finnian Galen Hagan Icarus Jaxon
+            Kael Lian Merek Niall Orin Phelan Quinlan Riordan Soren Tavish
+            Ulric Varian Wyatt Xander Yarrow Zayne Asher Bastian Cyrus Darius
+            Ewan Ferris Gareth Heath Ivor Jasper Kieran Leif Magnus Nikolai
+            Odin Paxton Quinten Ragnar Sterling Tristan Uriah Victor Wystan Xylos
+            Zander Alistair Balthazar Caspian Dorian Elias Fabian Giles Horatio
+        }
+        surnames = {
+            Stonehand Shadow-walker Iron-fist Sunstrider Blackwood Whisperwind Fire-forge Storm-caller Oakenshield Night-runner
+            Silverwood Drake-bane Gore-howl Bright-hammer Grey-mantle Frost-beard Stag-heart Wolf-kin Raven-eye Bear-claw
+            Ash-fall Boulder-shoulder Crag-jumper Deep-delver Earth-shaker Flame-hair Gore-drinker High-mountain Ice-vein Jarl-slayer
+            Krag-hammer Light-bringer Moon-chaser Night-fall Oath-keeper Peak-climber Quick-strike River-runner Sea-warden Thunder-roar
+            Under-hill Void-gazer White-water Wyrm-rider Young-blood Zephyr-song Amber-light Blade-dancer Cliff-breaker Dawn-fire
+        }
+        callsigns = {
+            "Dragon's Breath" "The Iron Wall" Ghost Reaper Sunfire Golem Viper "The Silent" Hawk Griffon
+            Blade Fury Avalanche Warlock Paladin Executioner Wraith Phantom Goliath Colossus
+            Hellfire Ice-shard Thunderclap "Shadow-strike" "The Void" Maelstrom Tempest Cyclone Typhoon Hurricane
+            Juggernaut Behemoth Leviathan Kraken Basilisk Wyvern Hydra Chimera Manticore Cerberus
+        }
+    }
+
+    female = {
+        names = {
+            Seraphina Lyra Elara Morwenna Isolde Briony Gwynevere Ravenna Amara Sorcha
+            Elysia Faelan Kaia Astrid Lilith Ysolde Rowan Lyanna Moira Sabine
+            Aria Bronwyn Carys Dahlia Eira Fiona Giselle Helena Iona Jocelyn
+            Kaelen Lirael Maelis Niamh Ophelia Phaedra Quintessa Rhiannon Seraphine Tamsin
+            Ursula Vespera Willow Xylia Yvaine Zara Aine Briar Celeste Demetria
+            Eowyn Fallon Genevieve Hazel Imogen Juno Kira Luna Maeve Nova
+            Orla Persephone Quorra Renata Saoirse Thea Una Violet Wren Xanthe
+        }
+        surnames = {
+            Moon-shadow Winter-rose Star-fire Sun-sorrow Whisper-song Raven-wing Silver-brook Storm-rider Light-bringer Night-shade
+            Veridian Cinder-fall Fay-whisper Glimmer-wing Hallow-glade Ivy-heart Jade-petal Kestrel-flight Lark-song Misty-vale
+            Night-bloom Oaken-heart Petal-fall Quiet-stream Rain-dancer Shadow-fern Thorn-rose Vale-lily Wild-flower Yarrow-stem
+            Zephyr-wind Amber-leaf Briar-wood Crystal-tear Dew-drop Ever-green Frost-flower Golden-bough Heather-bloom Iris-glen
+        }
+        callsigns = {
+            Nightshade "The Silver Arrow" Starlight "The Phantom Queen" Valkyrie Siren Tempest Sunstone Banshee "Lady Death"
+            Sorceress Enchantress Priestess Huntress Warden Oracle Seer Prophetess Mystic "The Weaver"
+            "Moon-beam" "Star-fall" "Sun-flare" "Void-singer" "The Whisper" "The Echo" "The Mirage" "The Illusion" "The Dreamer" "The Nightmare"
+        }
+    }
+
+    surnames = {
+        High-tower Gold-hand Swift-blade Deep-wood Star-fall Iron-heart Grey-wind Bright-water Wyrm-speaker Soul-fire
+        Axe-Biter Battle-Born Crow-Caller Dragon-Slayer Eagle-Eyed Fire-Walker Grim-Fang Hammer-Fist Ice-Breaker Jarl-Friend
+        Knot-Beard Long-Strider Mountain-Mover North-Star Oath-Sworn Peace-Keeper Quiet-Foot Red-Hand Shield-Maiden True-Shot
+        Un-Broken Void-Stalker White-Wolf Young-Lion
+    }
+    callsigns = {
+        "The Phoenix" Fury Oblivion Spectre "The Comet" Archon Titan Wyvern Chimera Leviathan
+        Behemoth Harbinger Nemesis Vengeance Wrath Apex Zenith Nadir Eclipse Solstice
+        Equinox Catalyst Paradox Enigma Cipher Riddle Mirage Oasis Vortex Abyss
+    }
+
+
+    #Operations - treat these as keys, not strings.
+    prefix = o_operation
+
+    operation = {
+        0 = {
+            o_operation_broken_crown o_operation_serpents_tooth o_operation_sunfire_offensive o_operation_winter_wolf o_operation_shadow_veil
+            o_operation_dragons_fall o_operation_crystal_lance o_operation_crimson_tide o_operation_unending_night o_operation_golden_dawn
+            o_operation_steel_tempest o_operation_burning_skies o_operation_frozen_path o_operation_whispering_dread o_operation_final_dawn
+            o_operation_eclipsed_sun o_operation_shattered_moon o_operation_iron_serpent o_operation_wyrm_hunt o_operation_giants_bane
+            o_operation_the_long_march o_operation_crimson_arrow o_operation_the_reckoning o_operation_forgotten_kings o_operation_silent_resolve
+            o_operation_unseen_blade o_operation_the_great_crusade o_operation_avenging_angels o_operation_the_iron_tide o_operation_first_light
+        }
+    }
+
+    use_geographical_default_operation_names = yes
+    offensive_operation_suffix = o_strat_offensive_fantasy
+    defensive_operation_suffix = o_strat_defensive_fantasy
+    naval_operation_suffix = o_strat_naval_fantasy
+
 }
 
 #Thiryn Kingdom
@@ -416,7 +472,7 @@ UPG = {
 }
 
 #Nicollanian Republic
-NIC = {
+SLV = {
 	male = {
 		names = {
 			Albert Alexander Alfred Archibald Arthur Bernard Charles Colbert

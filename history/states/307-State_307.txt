@@ -4,7 +4,7 @@ state={
 	name="Ardon"
 
 			history={
-		owner = NIC
+		owner = SLV
 		victory_points = {
 			7330 12 
 		}
@@ -21,7 +21,7 @@ state={
             }
 
 		}
-		add_core_of = NIC
+		add_core_of = SLV
 		add_core_of = CBS
 	}
 	

@@ -3,7 +3,7 @@ default = { # For countries without specific info
 	career_profile_background = "GFX_career_profile_bg_default"
 }
 
-# ENG = { # United Kingdom
+# THK = { # United Kingdom
 # 	playthrough_stats_background = "GFX_playthrough_stats_bg_ENG"
 # 	career_profile_background = "GFX_career_profile_bg_ENG"
 # }
@@ -18,12 +18,12 @@ default = { # For countries without specific info
 # 	career_profile_background = "GFX_career_profile_bg_JAP"
 # }
 
-# SOV = { # Soviet Union
+# NSA = { # Soviet Union
 # 	playthrough_stats_background = "GFX_playthrough_stats_bg_SOV"
 # 	career_profile_background = "GFX_career_profile_bg_SOV"
 # }
 
-# USA = { # USA
+# WIH = { # WIH
 # 	playthrough_stats_background = "GFX_playthrough_stats_bg_USA"
 # 	career_profile_background = "GFX_career_profile_bg_USA"
 # }

@@ -1,10 +1,17 @@
 state={
 	id=108
-	name="STATE_108"
+	name="Furu Island"
+	history={
+		owner = ARD
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = ARD
+	}
 	provinces={
 		2245 
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+        manpower=2948
+        state_category = small_island
 }

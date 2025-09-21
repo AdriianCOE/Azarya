@@ -1,0 +1,74 @@
+#####################  
+
+###  ##  #  # # #  ##  
+ #  #  # ## # # # #    
+ #  #### # ## ##   #   
+ #  #  # #  # # #   #  
+ #  #  # #  # # # ##   
+
+#####################  
+
+SIT_kratos_organization = {  
+	include = generic_medium_tank_organization  
+	icon = GFX_idea_BRA_fnm
+	allowed = {  	
+		tag = SIT  
+	}  
+}  
+
+
+#####################  
+
+ ## #  # ### ###   ##  
+#   #  #  #  #  # #    
+ #  ####  #  ###   #   
+  # #  #  #  #      #  
+##  #  # ### #    ##   
+
+#####################  
+
+SIT_phalanx_organization = {  
+	include = generic_escort_ship_organization  
+	icon = GFX_idea_BRA_fnm
+	allowed = {  	
+		tag = SIT  
+	}  
+}  
+
+
+###########################  
+
+###  #    ##  #  # ###  ##  
+#  # #   #  # ## # #   #    
+###  #   #### # ## ##   #   
+#    #   #  # #  # #     #  
+#    ### #  # #  # ### ##   
+
+###########################  
+
+SIT_icarus_organization = {  
+	include = generic_general_aircraft_organization  
+	icon = GFX_idea_BRA_fnm
+	allowed = {  	
+		tag = SIT  
+	}  
+}  
+
+
+###################################  
+
+#   #  ##  ### ### ###  ### ### #    
+## ## #  #  #  #   #  #  #  #   #    
+# # # ####  #  ##  ###   #  ##  #    
+#   # #  #  #  #   #  #  #  #   #    
+#   # #  #  #  ### #  # ### ### ###  
+
+###################################  
+
+SIT_zeus_organization = {  
+	include = generic_infantry_equipment_organization  
+	icon = GFX_idea_BRA_fnm
+	allowed = {  	
+		tag = SIT  
+	}  
+}  

@@ -1,7 +1,7 @@
 equipments = {
 
 	super_heavy_railway_gun_equipment = {
-		year = 1936
+		year = 1924
 
 		is_archetype = yes
 		picture = archetype_artillery_equipment		
@@ -29,7 +29,7 @@ equipments = {
 	}
 
 	super_heavy_railway_gun_equipment_1 = {
-		year = 1936
+		year = 1924
 
 		archetype = super_heavy_railway_gun_equipment
 		priority = 50

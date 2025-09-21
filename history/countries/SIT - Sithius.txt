@@ -90,7 +90,7 @@ set_politics = {
 create_country_leader = {
 	name = "Emperor Valerius IX"
 	desc = "SIT_Emperor_Valerius_IX"
-	picture = "Portrait_Durten_NotHirohito.dds"
+	picture = "Portrait_Italy_Vittorio_Emanuele_III.dds"
 	ideology = Constitutional_Monarchy
 	traits = { NOR_ruthless_administrator Autocratic_Imperialist }
 }

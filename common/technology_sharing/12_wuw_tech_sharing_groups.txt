@@ -24,8 +24,6 @@ technology_sharing_group = {
 		AND = {
 			capital_scope = { is_on_continent = europe }
 			OR = {
-				original_tag = AUS
-				is_in_faction_with = AUS
 			}
 		}
 	}
@@ -67,17 +65,13 @@ technology_sharing_group = {
 	available = { 
 		OR = {
 			AND = {
-				original_tag = GER
 				has_government = fascism
 				NOT = {
-					has_war_with = JAP
 				}
 			}
 			AND = {
-				original_tag = JAP
 				has_government = fascism
 				NOT = {
-					has_war_with = GER
 				}
 			}
 		}

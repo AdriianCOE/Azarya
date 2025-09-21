@@ -1,7 +1,7 @@
 equipments = {
 
 	helicopter_equipment = {
-		year = 1936
+		year = 1924
 
 		is_archetype = yes
 		picture = archetype_helicopter_equipment #TODO_GK
@@ -42,7 +42,7 @@ equipments = {
 	}
 
 	helicopter_equipment_1 = {
-		year = 1936
+		year = 1924
 
 		archetype = helicopter_equipment
 		priority = 15	

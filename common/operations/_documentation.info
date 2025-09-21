@@ -90,7 +90,7 @@ operation_test = {
 	#
 	
 	allowed = { 
-		original_tag = GER
+		original_tag = CZL
 	}
 
 	#
@@ -124,7 +124,7 @@ operation_test = {
 	#
 	
 	operation_target = {
-		targets = { ENG }
+		targets = { THK }
 	}
 
 	#

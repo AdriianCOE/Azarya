@@ -49,6 +49,7 @@ technology_sharing_group = {
 		}
 
 		OR = {
+			is_subject_of = SWE
 		}
 	}
 }

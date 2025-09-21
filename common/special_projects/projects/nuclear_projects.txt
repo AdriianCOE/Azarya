@@ -414,11 +414,13 @@ sp_nuclear_engines = {
 	}
 
 	special_project_parent = {
-		sp_commercial_nuclear_reactor
+		sp_nuclear_reactor	#changed from commercial reactor since there was just 8 months between these technologies IRL, and commercial reactor requires Gotterdamerung
 	}
+
 	allowed = {
-		has_dlc = "Gotterdammerung"
+		#has_dlc = "Gotterdammerung"	#DLC in vanilla, but we had these modules before them
 	}
+
 	available = { 
 		
 	}
@@ -428,10 +430,17 @@ sp_nuclear_engines = {
 			
 		}
 
+		enable_equipment_modules = {		#equivalents in vanilla
+			sub_ship_engine_nuclear_1		#sub_ship_nuclear_engine_1
+			heavy_ship_engine_nuclear_1		#heavy_ship_nuclear_engine_1
+			carrier_ship_engine_nuclear_1	#carrier_ship_nuclear_engine_1
+		}
+		#Hidden for the sake of non gross looking TT
 		enable_equipment_modules = {
-			sub_ship_nuclear_engine_1
-			heavy_ship_nuclear_engine_1
-			carrier_ship_nuclear_engine_1
+			limit = {
+				has_dlc = "Gotterdammerung"
+			}			
+			sub_ship_nuclear_engine_1	
 		}
 	}
 	
@@ -488,7 +497,12 @@ sp_nuclear_bomb = {
 					popup = no
 				}
 			}
-		}	
+		}
+
+		scientist_effects = { #The limit to only apply the effect if is_character = USA_robert_oppenheimer throws error and doesn't work.
+			set_character_flag = USA_oppenheimer_made_the_nuke_flag
+		}
+		
 	}
 	
 	empty_reward_weight = {

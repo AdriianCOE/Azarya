@@ -15,6 +15,15 @@ bookmarks = {
 				Great_Earthquake
 			}
 		}
+		BOM = {
+			history = THK_AZARYA_DESC
+			ideology = democratic
+			ideas={
+				THK_Defeated_Army
+				THK_Corrupt_Queen
+				Great_Earthquake
+			}
+		}
 		
 		effect = {
 			randomize_weather = 12345 # <- Obligatory in every bookmark !

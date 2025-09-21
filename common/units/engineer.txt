@@ -1,6 +1,6 @@
 sub_units = {
 	engineer = {
-		abbreviation = "ENG"
+		abbreviation = "THK"
 		sprite = infantry
 		map_icon_category = infantry
 		priority = 0

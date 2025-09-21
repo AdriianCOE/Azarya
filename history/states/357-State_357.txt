@@ -1,16 +1,34 @@
 
 state={
 	id=357
-	name="STATE_357"
+	name="Kaltmark"
+	resources = {
+		aluminium = 40
+	}
 			history={
 		owner = GYE
+		victory_points = {
+			7825 10
+		}
+		victory_points = {
+			7858 5
+		}
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 3
+			arms_factory = 1
+			dockyard = 3
+			7825 = {
+				naval_base = 2
+			}
+		}
 		add_core_of = GYE
 	}
 	provinces={
 		514 1050 1125 1329 1670 2120 2552 2832 3193 3877 4979 7759 7783 7808 7824 7825 7845 7858 7880 7917 7939 7945 7980 7987 7997 8003 8032 8041 
 	}
-	manpower=1
+	manpower=1996958
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=large_city
 	local_supplies=0.000
 }

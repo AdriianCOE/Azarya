@@ -243,8 +243,6 @@ types = {
 			modifier = {
 				factor = 2
 				OR = {
-					original_tag = USA
-					original_tag = SOV
 				}
 			}
 			modifier = {
@@ -406,8 +404,6 @@ types = {
 			modifier = {
 				factor = 2
 				OR = {
-					original_tag = USA
-					original_tag = SOV
 				}
 			}
 			modifier = {

@@ -1,7 +1,7 @@
 equipments = {
 	
 	guided_missile_equipment = {
-		year = 1936
+		year = 1924
 
 		can_be_produced = {
 			if = {
@@ -44,7 +44,7 @@ equipments = {
 	}
 
 	guided_missile_equipment_1 = {
-		year = 1944
+		year = 1932
 
 		archetype = guided_missile_equipment
 		is_buildable = yes
@@ -60,7 +60,7 @@ equipments = {
 	}
 
 	guided_missile_equipment_2 = {
-		year = 1944
+		year = 1932
 
 		archetype = guided_missile_equipment
 		parent = guided_missile_equipment_1
@@ -75,7 +75,7 @@ equipments = {
 	}
 	
 	guided_missile_equipment_3 = {
-		year = 1945
+		year = 1933
 
 		archetype = guided_missile_equipment
 		parent = guided_missile_equipment_2

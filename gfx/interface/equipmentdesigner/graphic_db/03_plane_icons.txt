@@ -1,0 +1,1029 @@
+default = {
+	large_plane_airframe = {
+		pool = {
+			icons = { 
+				GFX_modern_large_airframe_medium
+				GFX_advanced_large_airframe_medium
+				GFX_improved_large_airframe_medium
+				GFX_basic_large_airframe_medium
+				GFX_iw_large_airframe_medium
+			 }
+		}
+		pool = {
+			models = { 
+				heavy_plane_entity
+			 }
+		}
+	}
+}
+
+##########################################################################
+
+WIH = {
+	small_plane_airframe_0 = {
+		pool = {
+			icons = {
+				GFX_AUS_early_fighter_medium
+			}
+		}
+	}
+	small_plane_airframe_1 = {
+		pool = {
+			icons = {
+				GFX_AUS_fighter1_medium
+			}
+			models = {
+			}
+		}
+	}
+	small_plane_airframe_2 = {
+		pool = {
+			icons = {
+				GFX_AUS_fighter2_medium
+			}
+		}
+	}
+	small_plane_airframe_3 = {
+		pool = {
+			icons = {
+				GFX_AUS_fighter3_medium
+			}
+			models = {
+				# No need for anything here, since the default order set up in small_plane_airframe will make the most modern plane (tier 2 in this case) to show up first
+			}
+		}
+	}
+	small_plane_airframe_4 = {
+		pool = {
+			icons = {
+				GFX_AUS_jet_fighter1_medium
+			}
+			models = {
+				# No need for anything here, since the default order set up in small_plane_airframe will make the most modern plane (tier 2 in this case) to show up first
+			}
+		}
+	}
+
+	#CAS
+	small_plane_cas_airframe = {
+		pool = {
+			icons = {
+				GFX_AUS_CAS1_medium
+				GFX_AUS_CAS2_medium
+				GFX_AUS_CAS3_medium
+			}
+		}
+	}
+	small_plane_cas_airframe_1 = {
+		pool = {
+			icons = {
+				GFX_AUS_CAS1_medium
+			}
+			models = {
+			}
+		}
+	}
+	small_plane_cas_airframe_2 = {
+		pool = {
+			icons = {
+				GFX_AUS_CAS2_medium
+			}
+		}
+	}
+	small_plane_cas_airframe_3 = {
+		pool = {
+			icons = {
+				GFX_AUS_CAS3_medium
+			}
+		}
+	}
+
+	#NAVAL BOMBER
+	small_plane_naval_bomber_airframe = {
+		pool = {
+			icons = {
+				GFX_AUS_naval_bomber1_medium
+				GFX_AUS_naval_bomber2_medium
+				GFX_AUS_naval_bomber3_medium
+			}
+		}
+	}
+	small_plane_naval_bomber_airframe_0 = {
+		pool = {
+			icons = {
+				GFX_AUS_naval_bomber1_medium
+			}
+		}
+	}
+	small_plane_naval_bomber_airframe_1 = {
+		pool = {
+			icons = {
+				GFX_AUS_naval_bomber2_medium
+			}
+		}
+	}
+	small_plane_naval_bomber_airframe_2 = {
+		pool = {
+			icons = {
+				GFX_AUS_naval_bomber2_medium
+			}
+		}
+	}
+
+	small_plane_naval_bomber_airframe_3 = {
+		pool = {
+			icons = {
+				GFX_AUS_naval_bomber3_medium
+			}
+		}
+	}
+
+	cv_small_plane_airframe_0 = {
+		pool = {
+			icons = {
+				GFX_AUS_early_fighter_medium
+			}
+		}
+	}
+	cv_small_plane_airframe_1 = {
+		pool = {
+			icons = {
+				GFX_AUS_fighter1_medium
+			}
+			models = {
+				
+			}
+		}
+	}
+	cv_small_plane_airframe_2 = {
+		pool = {
+			icons = {
+				GFX_AUS_fighter2_medium
+			}
+		}
+	}
+	cv_small_plane_airframe_3 = {
+		pool = {
+			icons = {
+				GFX_AUS_fighter3_medium
+			}
+			models = {
+				
+			}
+		}
+	}
+	cv_small_plane_airframe_4 = {
+		pool = {
+			icons = {
+				GFX_AUS_jet_fighter1_medium
+			}
+			models = {
+			}
+		}
+	}
+
+	cv_small_plane_cas_airframe_1 = {
+		pool = {
+			icons = {
+				GFX_AUS_CAS1_medium
+			}
+		}
+	}
+	cv_small_plane_cas_airframe_2 = {
+		pool = {
+			icons = {
+				GFX_AUS_CAS2_medium
+			}
+		}
+	}
+	cv_small_plane_cas_airframe_3 = {
+		pool = {
+			icons = {
+				GFX_AUS_CAS3_medium
+			}
+		}
+	}
+	
+	cv_small_plane_naval_bomber_airframe_1 = {
+		pool = {
+			icons = {
+				GFX_AUS_naval_bomber1_medium
+			}
+		}
+	}
+	cv_small_plane_naval_bomber_airframe_2 = {
+		pool = {
+			icons = {
+				GFX_AUS_naval_bomber2_medium
+			}
+		}
+	}
+	cv_small_plane_naval_bomber_airframe_3 = {
+		pool = {
+			icons = {
+				GFX_AUS_naval_bomber3_medium
+			}
+		}
+	}
+
+	#TACTICAL BOMBER
+	medium_plane_airframe = {
+		pool = {
+			icons = {
+				GFX_AUS_heavy_fighter1_medium
+				GFX_AUS_heavy_fighter2_medium
+				GFX_AUS_heavy_fighter3_medium
+			}
+		}
+	}
+
+	medium_plane_airframe_0 = {
+		pool = {
+			icons = {
+			}
+			models = {
+
+			}
+		}
+	}
+	medium_plane_airframe_1 = {
+		pool = {
+			icons = {
+			}
+			models = {
+				
+			}
+		}
+	}
+	medium_plane_airframe_2 = {
+		pool = {
+			icons = {
+			}
+			models = {
+				
+			}
+		}
+	}
+	medium_plane_airframe_3 = {
+		pool = {
+			icons = {
+			}
+			models = {
+				
+			}
+		}
+	}
+	medium_plane_airframe_4 = {
+		pool = {
+			icons = {
+			}
+			models = {
+				
+			}
+		}
+	}
+
+	medium_plane_fighter_airframe_1 = {
+		pool = {
+			icons = {
+			}
+			models = {
+				
+			}
+		}
+	}
+	medium_plane_fighter_airframe_3 = {
+		pool = {
+			icons = {
+			}
+			models = {
+				
+			}
+		}
+	}
+
+	medium_plane_scout_plane_airframe_0 = { #Duplicate of tier 1 so that it appears first for IW tier
+		pool = {
+			icons = {
+			}
+			models = {
+					
+			}
+		}
+	}
+	medium_plane_scout_plane_airframe_1 = {
+		pool = {
+			icons = {
+			}
+			models = {
+					
+			}
+		}
+	}
+	
+	large_plane_airframe_0 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	large_plane_airframe_1 = {
+		pool = {
+			icons = {
+			}
+			models = {
+				
+			}
+		}
+	}
+	large_plane_airframe_2 = {
+		pool = {
+			icons = {
+			}
+			models = {
+				
+			}
+		}
+	}
+	large_plane_airframe_3 = {
+		pool = {
+			icons = {
+			}
+			models = {
+				
+			}
+		}
+	}
+	large_plane_airframe_4 = {
+		pool = {
+			icons = {
+			}
+			models = {
+				
+			}
+		}
+	}
+}
+
+
+#BLEGIUM #########################################################################
+
+MEK = {
+	#CAS
+	small_plane_cas_airframe = {
+		pool = {
+			icons = {
+				GFX_BEL_CAS1_medium
+				GFX_BEL_CAS2_medium
+				GFX_BEL_CAS3_medium
+			}
+		}
+	}
+	small_plane_cas_airframe_1 = {
+		pool = {
+			icons = {
+				GFX_BEL_CAS1_medium
+			}
+		}
+	}
+	small_plane_cas_airframe_2 = {
+		pool = {
+			icons = {
+				GFX_BEL_CAS2_medium
+			}
+		}
+	}
+	small_plane_cas_airframe_3 = {
+		pool = {
+			icons = {
+				GFX_BEL_CAS3_medium
+			}
+		}
+	}
+
+	#NAVAL BOMBER
+	small_plane_naval_bomber_airframe = {
+		pool = {
+			icons = {
+				GFX_BEL_naval_bomber1_medium
+				GFX_BEL_naval_bomber2_medium
+				GFX_BEL_naval_bomber3_medium
+			}
+		}
+	}
+	small_plane_naval_bomber_airframe_0 = {
+		pool = {
+			icons = {
+				GFX_BEL_naval_bomber1_medium
+			}
+		}
+	}
+	small_plane_naval_bomber_airframe_1 = {
+		pool = {
+			icons = {
+				GFX_BEL_naval_bomber1_medium
+			}
+		}
+	}
+	small_plane_naval_bomber_airframe_2 = {
+		pool = {
+			icons = {
+				GFX_BEL_naval_bomber2_medium
+			}
+		}
+	}
+	small_plane_naval_bomber_airframe_3 = {
+		pool = {
+			icons = {
+				GFX_BEL_naval_bomber3_medium
+			}
+		}
+	}
+
+	#CAS
+	cv_small_plane_cas_airframe = {
+		pool = {
+			icons = {
+				GFX_BEL_CAS1_medium
+			}
+		}
+	}
+	cv_small_plane_cas_airframe_1 = {
+		pool = {
+			icons = {
+				GFX_BEL_CAS1_medium
+			}
+		}
+	}
+	cv_small_plane_cas_airframe_2 = {
+		pool = {
+			icons = {
+				GFX_BEL_CAS2_medium
+			}
+		}
+	}
+	cv_small_plane_cas_airframe_3 = {
+		pool = {
+			icons = {
+				GFX_BEL_CAS3_medium
+			}
+		}
+	}
+
+	#NAVAL BOMBER
+	cv_small_plane_naval_bomber_airframe = {
+		pool = {
+			icons = {
+				GFX_BEL_naval_bomber1_medium
+				GFX_BEL_naval_bomber2_medium
+				GFX_BEL_naval_bomber3_medium
+			}
+		}
+	}
+	cv_small_plane_naval_bomber_airframe_0 = {
+		pool = {
+			icons = {
+				GFX_BEL_naval_bomber1_medium
+			}
+		}
+	}
+	cv_small_plane_naval_bomber_airframe_1 = {
+		pool = {
+			icons = {
+				GFX_BEL_naval_bomber1_medium
+			}
+		}
+	}
+	cv_small_plane_naval_bomber_airframe_2 = {
+		pool = {
+			icons = {
+				GFX_BEL_naval_bomber2_medium
+			}
+		}
+	}
+	cv_small_plane_naval_bomber_airframe_3 = {
+		pool = {
+			icons = {
+				GFX_BEL_naval_bomber3_medium
+			}
+		}
+	}
+
+	#TACTICAL BOMBER
+	medium_plane_airframe = {
+		pool = {
+			icons = {
+				GFX_BEL_early_bomber_medium
+				GFX_BEL_tactical_bomber1_medium
+				GFX_BEL_tactical_bomber2_medium
+				GFX_BEL_tactical_bomber3_medium
+				GFX_BEL_jet_tactical_bomber1_medium
+			}
+		}
+	}
+
+	medium_plane_airframe_4 = {
+		pool = {
+			icons = {
+				GFX_BEL_jet_tactical_bomber1_medium
+			}
+			models = {
+				
+			}
+		}
+	}
+
+	# HEAVY FIGHTER
+	medium_plane_fighter_airframe = {
+		pool = {
+			icons = {
+				GFX_BEL_heavy_fighter1_medium
+				GFX_BEL_heavy_fighter2_medium
+				GFX_BEL_heavy_fighter3_medium
+			}
+		}
+	}
+	medium_plane_fighter_airframe_1 = {
+		pool = {
+			icons = {
+				GFX_BEL_heavy_fighter1_medium
+			}
+		}
+	}
+	medium_plane_fighter_airframe_2 = {
+		pool = {
+			icons = {
+				GFX_BEL_heavy_fighter2_medium
+			}
+		}
+	}
+	medium_plane_fighter_airframe_3 = {
+		pool = {
+			icons = {
+				GFX_BEL_heavy_fighter3_medium
+			}
+		}
+	}
+
+	# SCOUT PLANE
+	medium_plane_scout_plane_airframe = {
+		pool = {
+			icons = {
+			}
+			models = {
+				
+			}
+		}
+	}
+	medium_plane_scout_plane_airframe_0 = { #Duplicate of tier 1 so that it appears first for IW tier
+		pool = {
+			icons = {
+			}
+			models = {
+					
+			}
+		}
+	}
+	medium_plane_scout_plane_airframe_1 = {
+		pool = {
+			icons = {
+			}
+			models = {
+					
+			}
+		}
+	}
+	medium_plane_scout_plane_airframe_2 = { #No needto duplicate since tier 2 icon will already appear first in the list for tier 3
+		pool = {
+			icons = {
+			}
+			models = {
+				
+			}
+		}
+	}
+
+	#STRATEGIC BOMBER
+	large_plane_airframe = {
+		pool = {
+			icons = {
+				GFX_BEL_strategic_bomber1_medium
+				GFX_BEL_strategic_bomber2_medium
+				GFX_BEL_strategic_bomber3_medium
+					GFX_BEL_jet_strategic_bomber1_medium
+			}
+		}
+	}
+	
+	large_plane_airframe_1 = {
+		pool = {
+			icons = {
+				GFX_BEL_strategic_bomber1_medium
+			}
+		}
+	}
+	large_plane_airframe_2 = {
+		pool = {
+			icons = {
+				GFX_BEL_strategic_bomber2_medium
+			}
+		}
+	}
+	large_plane_airframe_3 = {
+		pool = {
+			icons = {
+				GFX_BEL_strategic_bomber3_medium
+			}
+		}
+	}
+	large_plane_airframe_4 = {
+		pool = {
+			icons = {
+				GFX_BEL_jet_strategic_bomber1_medium
+			}
+			models = {
+				
+			}
+		}
+	}
+}
+
+#ENGLAND #########################################################################
+
+THK = {
+	small_plane_airframe = {
+		pool = {
+			icons = {
+			}
+			models = {
+
+			}
+		}
+	}
+	small_plane_airframe_0 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	small_plane_airframe_1 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	small_plane_airframe_2 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	small_plane_airframe_3 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	small_plane_airframe_4 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+
+	#CAS
+	small_plane_cas_airframe = {
+		pool = {
+			icons = {
+			}
+		}
+	}
+	small_plane_cas_airframe_1 = {
+		pool = {
+			icons = {
+			}
+		}
+	}
+	small_plane_cas_airframe_2 = {
+		pool = {
+			icons = {
+			}
+		}
+	}
+	small_plane_cas_airframe_3 = {
+		pool = {
+			icons = {
+			}
+		}
+	}
+
+	#NAVAL BOMBER
+	small_plane_naval_bomber_airframe = {
+		pool = {
+			icons = {
+			}
+		}
+	}
+	small_plane_naval_bomber_airframe_0 = {
+		pool = {
+			icons = {
+			}
+		}
+	}
+	small_plane_naval_bomber_airframe_1 = {
+		pool = {
+			icons = {
+			}
+		}
+	}
+	small_plane_naval_bomber_airframe_2 = {
+		pool = {
+			icons = {
+			}
+		}
+	}
+	small_plane_naval_bomber_airframe_3 = {
+		pool = {
+			icons = {
+			}
+		}
+	}
+
+	#FIGTHER
+	cv_small_plane_airframe = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	cv_small_plane_airframe_0 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	cv_small_plane_airframe_1 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	cv_small_plane_airframe_2 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	cv_small_plane_airframe_3 = {
+		pool = {
+			icons = {
+			}
+			models = {
+				
+			}
+		}
+	}
+	cv_small_plane_airframe_4 = {
+		pool = {
+			icons = {
+			}
+			models = {
+				
+			}
+		}
+	}
+
+	#CAS
+	cv_small_plane_cas_airframe = {
+		pool = {
+			icons = {
+			}
+		}
+	}
+	cv_small_plane_cas_airframe_1 = {
+		pool = {
+			icons = {
+			}
+		}
+	}
+	cv_small_plane_cas_airframe_2 = {
+		pool = {
+			icons = {
+			}
+		}
+	}
+	cv_small_plane_cas_airframe_3 = {
+		pool = {
+			icons = {
+			}
+		}
+	}
+
+	#NAVAL BOMBER
+	cv_small_plane_naval_bomber_airframe = {
+		pool = {
+			icons = {
+			}
+		}
+	}
+	cv_small_plane_naval_bomber_airframe_0 = {
+		pool = {
+			icons = {
+			}
+		}
+	}
+	cv_small_plane_naval_bomber_airframe_1 = {
+		pool = {
+			icons = {
+			}
+		}
+	}
+	cv_small_plane_naval_bomber_airframe_2 = {
+		pool = {
+			icons = {
+			}
+		}
+	}
+	cv_small_plane_naval_bomber_airframe_3 = {
+		pool = {
+			icons = {
+			}
+		}
+	}
+
+	medium_plane_airframe_0 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	medium_plane_airframe_1 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	medium_plane_airframe_2 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	medium_plane_airframe_4 = {
+		pool = {
+			icons = {
+			}
+			models = {
+				
+			}
+		}
+	}
+
+	# HEAVY FIGHTER
+	medium_plane_fighter_airframe = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	medium_plane_fighter_airframe_1 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	medium_plane_fighter_airframe_2 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	medium_plane_fighter_airframe_3 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+
+	# SCOUT PLANE
+	medium_plane_scout_plane_airframe = {
+		pool = {
+			icons = {
+			}
+			models = {
+				
+			}
+		}
+	}
+	medium_plane_scout_plane_airframe_0 = { #Duplicate of tier 1 so that it appears first for IW tier
+		pool = {
+			icons = {
+			}
+			models = {
+					
+			}
+		}
+	}
+	medium_plane_scout_plane_airframe_1 = {
+		pool = {
+			icons = {
+			}
+			models = {
+					
+			}
+		}
+	}
+	medium_plane_scout_plane_airframe_2 = { #No needto duplicate since tier 2 icon will already appear first in the list for tier 3
+		pool = {
+			icons = {
+			}
+			models = {
+				
+			}
+		}
+	}
+
+	#STRATEGIC BOMBER
+	large_plane_airframe = {
+		pool = {
+			icons = {
+			}
+		}
+	}
+	
+	large_plane_airframe_0 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	large_plane_airframe_1 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	large_plane_airframe_2 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	large_plane_airframe_3 = {
+		pool = {
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	large_plane_airframe_4 = {
+		pool = {
+			icons = {
+			}
+			models = {
+				
+			}
+		}
+	}
+}

@@ -1,19 +1,22 @@
 capital = 343
 
-	oob = "standard_templates"
+	oob = "FVI"
 	GYE = {give_guarantee = FVI}
 
 # Starting tech
 set_technology = {
-	infantry_weapons = 1
-	tech_support = 1		
-	tech_engineers = 1
+	infantry_weapons = 1	
 	tech_trucks = 1
+	motorised_infantry = 1
+	tech_support = 1
+	tech_engineers = 1
+	basic_train = 1
 	gw_artillery = 1
-	interwar_antiair = 1
-	basic_train = 1	
+	sniper_rifle = 1
+	camo = 1
 }
 
+#No Step Back
 IF = {
 	limit = {
 		has_dlc = "No Step Back"
@@ -30,6 +33,30 @@ IF = {
 		gwtank = 1
 	}
 }
+
+#Blood Alone
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_technology = {
+			aa_lmg = 1
+			engines_1 = 1
+			early_bombs = 1
+			aircraft_construction = 1
+			iw_small_airframe = 1
+			iw_medium_airframe = 1
+			basic_small_airframe = 1
+		}
+	else = {
+		set_technology = {
+			early_fighter = 1
+			naval_bomber1 = 1
+			tactical_bomber1 = 1
+			CAS1 = 1
+			fighter1 = 1
+		}
+	}
+}
+
 IF = {
 	limit = {
 		NOT = { has_dlc = "Man the Guns"}
@@ -50,7 +77,6 @@ IF = {
 		basic_naval_mines = 1
 		submarine_mine_laying = 1
 		early_ship_hull_submarine = 1
-		basic_ship_hull_submarine = 1
 		early_ship_hull_light = 1
 		early_ship_hull_cruiser = 1
 		early_ship_hull_heavy = 1

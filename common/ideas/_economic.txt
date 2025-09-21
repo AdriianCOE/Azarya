@@ -58,7 +58,6 @@ ideas = {
 					factor = 0 #don't even look at it if you could be taking partial mob
 				}
 				modifier = {
-					tag = ENG
 					has_war = no
 					date < 1937.6.1
 					factor = 0
@@ -205,7 +204,6 @@ ideas = {
 				modifier = {
 					factor = 0
 
-					tag = SOV
 					has_war = yes
 					OR = {
 						has_manpower < 2000000

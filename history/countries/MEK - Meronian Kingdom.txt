@@ -1,4 +1,4 @@
-capital = 242
+capital = 217
 set_oob = "standard_templates"
 
 
@@ -9,7 +9,6 @@ set_technology = {
 	tech_engineers = 1
 	tech_trucks = 1
 	gw_artillery = 1
-	interwar_antiair = 1
 	basic_train = 1	
 }
 

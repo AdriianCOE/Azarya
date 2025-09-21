@@ -1,13 +1,17 @@
 
 state={
 	id=315
-	name="STATE_315"
+	name="Pannonia"
 	resources={
-		oil=15.000
+		oil=20.000
 	}
 
 	history={
 		owner = GYE
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 2
+		}
 		add_core_of = GYE
 		add_core_of = CBS
 
@@ -16,7 +20,7 @@ state={
 	provinces={
 		115 680 1017 1162 1219 1242 2540 2756 3412 3903 4126 4975 
 	}
-	manpower=690829
+	manpower=298594
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

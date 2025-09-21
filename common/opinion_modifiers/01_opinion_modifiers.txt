@@ -10,6 +10,22 @@
 
 opinion_modifiers = {
 
+	generic_pro_neutrality_transition = {
+		value = 65
+	}
+
+	generic_lead_minors_opinion = {
+		value = 40
+	}
+
+	generic_lead_fascists_opinion = {
+		value = 75
+	}
+
+	generic_pro_neutrality = {
+		value = 100
+	}
+
 	generic_pro_soviet_communism = {
 		value = 50
 	}

@@ -21,3 +21,13 @@ SIT_Navy_Legacy_desc:0 "The Sithius Empire's history is rich with naval achievem
 
 SIT_Unstable_Government:0 "Unstable Government"
 SIT_Unstable_Government_desc:0 "The Sithius Empire faces significant internal challenges, with political instability and economic difficulties. The government's struggle to maintain control has led to decreased stability and war support, reflecting the turbulent state of the nation."
+
+#CZL
+CZL_Fear_of_the_population:0 "Legacy of Fear"
+CZL_Fear_of_the_population_desc:0 "Decades of brutal oppression in the northern provinces, especially over the Alarican population, have left deep scars. The memories of exile, confiscation, and violence still haunt the people, creating an atmosphere of mistrust and unrest throughout the nation."
+
+CZL_Autoritarismo:0 "Authoritarian Rule"
+CZL_Autoritarismo_desc:0 "The Czardom of Lesc has long relied on the might of its army and the iron grip of the ruling Lescote dynasty to maintain order. While effective in suppressing dissent, this rigid control fuels resistance and stifles political development."
+
+CZL_Monetary_retention:0 "Seized Assets"
+CZL_Monetary_retention_desc:0 "In an effort to secure absolute control, the Czardom has enacted harsh economic policies—seizing private property, hoarding national wealth, and taxing the poor heavily. The economy suffers, and political unrest continues to fester under the weight of inequality."

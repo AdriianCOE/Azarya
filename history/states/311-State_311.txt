@@ -4,13 +4,13 @@ state={
 	name="Artenay"
 
 			history={
-		owner = NIC
+		owner = SLV
 		buildings = {
 		infrastructure = 1
 		air_base = 1
 
 		}
-		add_core_of = NIC
+		add_core_of = SLV
 
 	}
 	

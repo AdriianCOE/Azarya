@@ -1,19 +1,27 @@
 
 state={
 	id=30
-	name="Drachenfels"
+	name="Herminonia"
 
 	history={
 		owner = GYE
+		victory_points = {
+			711 5 
+		}
+		buildings = {
+			industrial_complex = 2
+			arms_factory = 1
+			infrastructure = 2
+		}
 		add_core_of = GYE
 
 	}
 
 	provinces={
-		57 157 243 465 1385 2447 3486 4215 4809 7484 7487 7565 389 711
+		57 157 243 465 1385 2447 3486 4215 4809 7484 7487 7565 389 711 1926
 	}
-	manpower=37958
+	manpower=719284
 	buildings_max_level_factor=1.000
-	state_category=tiny_island
+	state_category=large_town
 	local_supplies=0.000
 }

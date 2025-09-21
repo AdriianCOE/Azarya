@@ -1,0 +1,16 @@
+country_is_minor_minor_nation = {
+    OR = {
+    }
+}
+country_is_minor_nation = {
+	OR = {
+    }
+}
+country_is_major_minor_nation = {  
+    OR = {
+    }
+}
+country_is_major_nation = {
+    OR = {
+    }
+}

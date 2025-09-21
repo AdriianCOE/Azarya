@@ -2,6 +2,10 @@
 state={
 	id=229
 	name="STATE_229"
+	history={
+		owner = EDR
+		add_core_of = EDR
+	}
 	provinces={
 		302 854 2084 2455 2567 3495 3666 4153 6099 
 	}
