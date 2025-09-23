@@ -1,0 +1,25 @@
+state={
+	id=500
+	name="Shast"
+	history={
+		owner = SHT
+		victory_points = {
+			1038 20 
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+		add_core_of = SHT
+		add_core_of = NIR
+	}
+	provinces={
+		2500 8401 8430 8418 1038 8478 1818 8523 3427 4847
+	}
+	manpower=212501
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

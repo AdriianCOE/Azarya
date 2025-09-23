@@ -1,21 +1,18 @@
 ﻿division_template = {
-	name = "Divisao de Infantaria"
+	name = "Divisao de Milicianos"
 	division_names_group = SPAN_INFB_02
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
-		infantry = { x = 1 y = 0 }
 	}
 }
 division_template = {
-	name = "Cavalaria"  
+	name = "Cavalaria Miliciana"  
 	division_names_group = SPAN_CAVB_01
 
 	regiments = {
 		cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
-		cavalry = { x = 1 y = 0 }
 
 	}
 }
@@ -28,7 +25,7 @@ units = {
 				name_order = 1
 		}
 		location = 2915
-		division_template = "Divisao de Infantaria"
+		division_template = "Divisao de Milicianos"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
@@ -39,7 +36,7 @@ units = {
 				name_order = 1
 		}
 		location = 8400
-		division_template = "Divisao de Infantaria"
+		division_template = "Divisao de Milicianos"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
@@ -50,29 +47,29 @@ units = {
 				name_order = 1
 		}
 		location = 4213
-		division_template = "Divisao de Infantaria"
+		division_template = "Divisao de Milicianos"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 
 	}
-	division= {	# "1a Divisao de Cavalaria'"
+	division= {	# "1a Divisao de Cavalaria Miliciana'"
 		division_name = {
 				is_name_ordered = yes
 				name_order = 1
 		}
 		location = 8400
-		division_template = "Cavalaria" 
+		division_template = "Cavalaria Miliciana" 
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 
 	}
-	division= {	# "2a Divisao de Cavalaria'"
+	division= {	# "2a Divisao de Cavalaria Miliciana'"
 		division_name = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 8374
-		division_template = "Cavalaria" 
+		location = 8584
+		division_template = "Cavalaria Miliciana" 
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 

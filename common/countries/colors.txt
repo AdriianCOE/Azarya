@@ -186,3 +186,19 @@ CMR = {
     color = rgb { 153 30 30 }
     color_ui = rgb { 153 30 30 }
 }
+BLA = {
+    color = rgb { 130 20 20 }
+    color_ui = rgb { 130 20 20 }
+}
+ASV = {
+    color = rgb { 70 65 60 }
+    color_ui = rgb { 70 65 60 }
+}
+RES = {
+    color = rgb { 45 20 60 }
+    color_ui = rgb { 45 20 60 }
+}
+SHT = {
+    color = rgb { 90 10 30 }
+    color_ui = rgb { 90 10 30 }
+}

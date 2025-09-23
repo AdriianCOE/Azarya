@@ -1,0 +1,24 @@
+state={
+	id=498
+	name="Sidney"
+	history={
+		owner = ASV
+		victory_points = {
+			3987 20 
+		}
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		add_core_of = ASV
+		add_core_of = NIR
+	}
+	provinces={
+		177 584 2356 2857 2997 3034 3375 3559 3934 3987 4664 4904 8374 8386 8422 8484 8507 8532 8549 8554 8651 8662 8707 
+	}
+	manpower=452501
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}
