@@ -1,5 +1,18 @@
 ﻿l_english:
   ### Red Scars Dominion ###
+  DRM_fascism:0 "Draemir Principate"
+  DRM_fascism_DEF:0 "the Draemir Principate"
+  DRM_democratic:0 "Republic of Draemir"
+  DRM_democratic_DEF:0 "the Republic of Draemir"
+  DRM_neutrality:0 "Principality of Draemir"
+  DRM_neutrality_DEF:0 "the Principality of Draemir"
+  DRM_communism:0 "Draemir People's Commune"
+  DRM_communism_DEF:0 "the Draemir People's Commune"
+  DRM_fascism_ADJ:0 "Draemiri"
+  DRM_democratic_ADJ:0 "Draemiri"
+  DRM_neutrality_ADJ:0 "Draemiri"
+  DRM_communism_ADJ:0 "Draemiri"
+  ### Red Scars Dominion ###
   RES_fascism:0 "Red Scars Dominion"
   RES_fascism_DEF:0 "the Red Scars Dominion"
   RES_democratic:0 "Free Republic of the Red Scars"

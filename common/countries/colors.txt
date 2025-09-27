@@ -202,3 +202,7 @@ SHT = {
     color = rgb { 90 10 30 }
     color_ui = rgb { 90 10 30 }
 }
+DRM = {
+    color = rgb { 145 115 180 }
+    color_ui = rgb { 145 115 180 }
+}

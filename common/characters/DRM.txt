@@ -1,0 +1,427 @@
+characters={
+	 DRM_ar={
+		advisor={
+			slot = high_command
+			idea_token =  DRM_ar
+			ledger  = army 
+				allowed  = {
+					original_tag  =  DRM
+				}
+				traits  = {
+					army_regrouping_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_1"
+			}
+		}
+	}
+	 DRM_acr={
+		advisor={
+			slot = air_chief
+			idea_token =  DRM_acr
+			allowed  = {
+					original_tag  =  DRM
+				}
+				traits  = {
+					air_chief_reform_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_3"
+			}
+		}
+	}
+	 DRM_mt={
+		advisor={
+			slot = theorist
+			idea_token =  DRM_mt
+			ledger  = army 
+				allowed  = {
+					original_tag  =  DRM
+				}
+				traits  = {
+					military_theorist 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_1"
+			}
+		}
+	}
+	 DRM_stc={
+		advisor={
+			slot = political_advisor
+			idea_token =  DRM_stc
+			allowed  = {
+					original_tag  =  DRM
+				}
+				traits  = {
+					smooth_talking_charmer 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_3"
+			}
+		}
+	}
+	 DRM_aa2={
+		advisor={
+			slot = high_command
+			idea_token =  DRM_aa2
+			ledger  = army 
+				allowed  = {
+					original_tag  =  DRM
+				}
+				traits  = {
+					army_armored_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_2"
+			}
+		}
+	}
+	 DRM_acgs={
+		advisor={
+			slot = air_chief
+			idea_token =  DRM_acgs
+			allowed  = {
+					original_tag  =  DRM
+				}
+				traits  = {
+					air_chief_ground_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_3"
+			}
+		}
+	}
+	 DRM_ncm={
+		advisor={
+			slot = navy_chief
+			idea_token =  DRM_ncm
+			allowed  = {
+					original_tag  =  DRM
+				}
+				traits  = {
+					navy_chief_maneuver_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_3"
+			}
+		}
+	}
+	 DRM_nccr={
+		advisor={
+			slot = navy_chief
+			idea_token =  DRM_nccr
+			allowed  = {
+					original_tag  =  DRM
+				}
+				traits  = {
+					navy_chief_commerce_raiding_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_2"
+			}
+		}
+	}
+	 DRM_coi={
+		advisor={
+			slot = political_advisor
+			idea_token =  DRM_coi
+			allowed  = {
+					original_tag  =  DRM
+				}
+				traits  = {
+					captain_of_industry 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_1"
+			}
+		}
+	}
+	 DRM_democratic_guy={
+		advisor={
+			slot = political_advisor
+			idea_token =  DRM_democratic_guy
+			allowed  = {
+					original_tag  =  DRM
+				}
+				traits  = {
+					democratic_reformer 
+				}
+				do_effect  = {
+					not  = {
+						has_government  = democratic 
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_1"
+			}
+		}
+	}
+	 DRM_acd2={
+		advisor={
+			slot = army_chief
+			idea_token =  DRM_acd2
+			allowed  = {
+					original_tag  =  DRM
+				}
+				traits  = {
+					army_chief_defensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_1"
+			}
+		}
+	}
+	 DRM_acas={
+		advisor={
+			slot = high_command
+			idea_token =  DRM_acas
+			ledger  = air 
+				allowed  = {
+					original_tag  =  DRM
+				}
+				traits  = {
+					air_close_air_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_2"
+			}
+		}
+	}
+	 DRM_communist_guy={
+		advisor={
+			slot = political_advisor
+			idea_token =  DRM_communist_guy
+			allowed  = {
+					original_tag  =  DRM
+				}
+				traits  = {
+					communist_revolutionary 
+				}
+				do_effect  = {
+					not  = {
+						has_government  = communism 
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_3"
+			}
+		}
+	}
+	 DRM_ncs={
+		advisor={
+			slot = high_command
+			idea_token =  DRM_ncs
+			ledger  = navy 
+				allowed  = {
+					original_tag  =  DRM
+				}
+				traits  = {
+					navy_capital_ship_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_2"
+			}
+		}
+	}
+	 DRM_awt={
+		advisor={
+			slot = theorist
+			idea_token =  DRM_awt
+			ledger  = air 
+				allowed  = {
+					original_tag  =  DRM
+				}
+				traits  = {
+					air_warfare_theorist 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_2"
+			}
+		}
+	}
+	 DRM_pot={
+		advisor={
+			slot = political_advisor
+			idea_token =  DRM_pot
+			allowed  = {
+					original_tag  =  DRM
+				}
+				traits  = {
+					prince_of_terror 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_2"
+			}
+		}
+	}
+	 DRM_fascist_guy={
+		advisor={
+			slot = political_advisor
+			idea_token =  DRM_fascist_guy
+			allowed  = {
+					original_tag  =  DRM
+				}
+				traits  = {
+					fascist_demagogue 
+				}
+				do_effect  = {
+					not  = {
+						has_government  = fascism 
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_2"
+			}
+		}
+	}
+	 DRM_ai2={
+		advisor={
+			slot = high_command
+			idea_token =  DRM_ai2
+			ledger  = army 
+				allowed  = {
+					original_tag  =  DRM
+				}
+				traits  = {
+					army_infantry_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_3"
+			}
+		}
+	}
+	 DRM_nt={
+		advisor={
+			slot = theorist
+			idea_token =  DRM_nt
+			ledger  = navy 
+				allowed  = {
+					original_tag  =  DRM
+				}
+				traits  = {
+					naval_theorist 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_3"
+			}
+		}
+	}
+	 DRM_aco2={
+		advisor={
+			slot = army_chief
+			idea_token =  DRM_aco2
+			allowed  = {
+					original_tag  =  DRM
+				}
+				traits  = {
+					army_chief_organizational_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_2"
+			}
+		}
+	}
+}
