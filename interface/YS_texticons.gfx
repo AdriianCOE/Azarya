@@ -8,38 +8,43 @@ spriteTypes = {
 	}	
 	
 	spriteType = {
-		name = "GFX_country_view_map_EMP"
-		texturefile = "gfx/texticons/country_view_map_EMP.png"
+		name = "GFX_country_view_map_THK"
+		texturefile = "gfx/texticons/country_view_map_THK.png"
 		legacy_lazy_load = no
 	}	
 	
 	spriteType = {
-		name = "GFX_country_view_map_REP"
-		texturefile = "gfx/texticons/country_view_map_REP.png"
+		name = "GFX_country_view_map_CZL"
+		texturefile = "gfx/texticons/country_view_map_CZL.png"
 		legacy_lazy_load = no
 	}	
 	
 	spriteType = {
-		name = "GFX_country_view_map_LEG"
-		texturefile = "gfx/texticons/country_view_map_LEG.png"
+		name = "GFX_country_view_map_SRV"
+		texturefile = "gfx/texticons/country_view_map_SRV.png"
 		legacy_lazy_load = no
 	}	
 	
 	spriteType = {
-		name = "GFX_country_view_map_DAC"
-		texturefile = "gfx/texticons/country_view_map_DAC.png"
+		name = "GFX_country_view_map_NIC"
+		texturefile = "gfx/texticons/country_view_map_NIC.png"
 		legacy_lazy_load = no
 	}	
 	
 	spriteType = {
-		name = "GFX_country_view_map_RUS"
-		texturefile = "gfx/texticons/country_view_map_RUS.png"
+		name = "GFX_country_view_map_SLU"
+		texturefile = "gfx/texticons/country_view_map_SLU.png"
 		legacy_lazy_load = no
 	}	
 	
 	spriteType = {
-		name = "GFX_country_view_map_ILD"
-		texturefile = "gfx/texticons/country_view_map_ILD.png"
+		name = "GFX_country_view_map_LUQ"
+		texturefile = "gfx/texticons/country_view_map_LUQ.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_country_view_map_SIT"
+		texturefile = "gfx/texticons/country_view_map_SIT.png"
 		legacy_lazy_load = no
 	}
 }
