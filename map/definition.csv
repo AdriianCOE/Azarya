@@ -11347,7 +11347,7 @@
 11346;9;2;62;sea;false;ocean;0
 11347;28;20;8;sea;false;ocean;0
 11348;12;45;16;sea;false;ocean;0
-11349;11;21;62;sea;false;ocean;0
+11349;11;21;192;land;false;plains;1
 11350;40;12;31;sea;false;ocean;0
 11351;10;55;32;sea;true;ocean;0
 11352;10;26;48;sea;false;ocean;0
@@ -11371,7 +11371,7 @@
 11370;0;64;28;sea;false;ocean;0
 11371;26;24;38;sea;false;ocean;0
 11372;5;24;22;sea;false;ocean;0
-11373;4;22;18;sea;false;ocean;0
+11373;4;100;18;sea;false;plains;0
 11374;42;3;24;sea;false;ocean;0
 11375;5;28;43;sea;false;ocean;0
 11376;4;58;35;sea;false;ocean;0
@@ -13075,7 +13075,7 @@
 13074;3;12;58;sea;false;ocean;0
 13075;40;6;31;sea;false;ocean;0
 13076;35;26;35;sea;false;ocean;0
-13077;35;41;15;sea;false;ocean;0
+13077;35;41;109;land;true;plains;1
 13078;16;17;33;sea;true;ocean;0
 13079;27;31;14;sea;false;ocean;0
 13080;5;21;13;sea;false;ocean;0
@@ -13512,7 +13512,7 @@
 13511;32;31;20;sea;false;ocean;0
 13512;5;24;69;sea;true;ocean;0
 13513;8;37;11;sea;false;ocean;0
-13514;12;22;6;sea;false;ocean;0
+13514;12;124;6;land;true;plains;1
 13515;15;8;69;sea;false;ocean;0
 13516;4;61;30;sea;false;ocean;0
 13517;17;48;19;sea;false;ocean;0
@@ -13595,7 +13595,7 @@
 13594;27;11;50;sea;false;ocean;0
 13595;4;16;79;sea;false;ocean;0
 13596;4;19;43;sea;false;ocean;0
-13597;8;29;16;sea;false;ocean;0
+13597;8;70;16;land;true;plains;1
 13598;6;59;23;sea;false;ocean;0
 13599;3;27;5;sea;false;ocean;0
 13600;64;0;0;sea;false;ocean;0
@@ -14986,7 +14986,7 @@
 14985;41;23;29;sea;true;ocean;0
 14986;62;0;17;sea;true;ocean;0
 14987;15;41;36;sea;false;ocean;0
-14988;0;32;42;sea;false;ocean;0
+14988;0;32;42;land;true;ocean;1
 14989;19;11;14;sea;false;ocean;0
 14990;9;9;20;sea;false;ocean;0
 14991;18;29;41;sea;false;ocean;0
@@ -15019,7 +15019,7 @@
 15018;15;6;40;sea;false;ocean;0
 15019;0;37;26;sea;false;ocean;0
 15020;3;60;16;sea;false;ocean;0
-15021;53;14;24;sea;false;ocean;0
+15021;93;14;24;land;true;plains;1
 15022;81;3;0;sea;false;ocean;0
 15023;26;24;16;sea;false;ocean;0
 15024;4;53;9;sea;false;ocean;0
@@ -15905,7 +15905,11 @@
 15904;170;239;142;land;false;desert;1
 15905;51;239;142;land;false;desert;1
 15906;114;239;142;land;false;desert;1
-15907;22;237;220;land;false;desert;1
+15907;22;237;220;land;true;desert;1
 15908;180;132;197;land;false;desert;1
 15909;125;242;130;land;false;desert;1
 15910;123;202;196;land;false;plains;1
+15911;190;21;62;land;true;plains;1
+15912;4;110;18;land;true;plains;1
+15913;0;180;42;land;false;plains;1
+
