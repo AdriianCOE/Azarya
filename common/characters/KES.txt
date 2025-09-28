@@ -1,0 +1,427 @@
+characters={
+	KES_ar={
+		advisor={
+			slot = high_command
+			idea_token = KES_ar
+			ledger  = army 
+				allowed  = {
+					original_tag  = KES
+				}
+				traits  = {
+					army_regrouping_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_1"
+			}
+		}
+	}
+	KES_acr={
+		advisor={
+			slot = air_chief
+			idea_token = KES_acr
+			allowed  = {
+					original_tag  = KES
+				}
+				traits  = {
+					air_chief_reform_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_3"
+			}
+		}
+	}
+	KES_mt={
+		advisor={
+			slot = theorist
+			idea_token = KES_mt
+			ledger  = army 
+				allowed  = {
+					original_tag  = KES
+				}
+				traits  = {
+					military_theorist 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_1"
+			}
+		}
+	}
+	KES_stc={
+		advisor={
+			slot = political_advisor
+			idea_token = KES_stc
+			allowed  = {
+					original_tag  = KES
+				}
+				traits  = {
+					smooth_talking_charmer 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_3"
+			}
+		}
+	}
+	KES_aa2={
+		advisor={
+			slot = high_command
+			idea_token = KES_aa2
+			ledger  = army 
+				allowed  = {
+					original_tag  = KES
+				}
+				traits  = {
+					army_armored_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_2"
+			}
+		}
+	}
+	KES_acgs={
+		advisor={
+			slot = air_chief
+			idea_token = KES_acgs
+			allowed  = {
+					original_tag  = KES
+				}
+				traits  = {
+					air_chief_ground_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_3"
+			}
+		}
+	}
+	KES_ncm={
+		advisor={
+			slot = navy_chief
+			idea_token = KES_ncm
+			allowed  = {
+					original_tag  = KES
+				}
+				traits  = {
+					navy_chief_maneuver_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_3"
+			}
+		}
+	}
+	KES_nccr={
+		advisor={
+			slot = navy_chief
+			idea_token = KES_nccr
+			allowed  = {
+					original_tag  = KES
+				}
+				traits  = {
+					navy_chief_commerce_raiding_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_2"
+			}
+		}
+	}
+	KES_coi={
+		advisor={
+			slot = political_advisor
+			idea_token = KES_coi
+			allowed  = {
+					original_tag  = KES
+				}
+				traits  = {
+					captain_of_industry 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_1"
+			}
+		}
+	}
+	KES_democratic_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = KES_democratic_guy
+			allowed  = {
+					original_tag  = KES
+				}
+				traits  = {
+					democratic_reformer 
+				}
+				do_effect  = {
+					not  = {
+						has_government  = democratic 
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_1"
+			}
+		}
+	}
+	KES_acd2={
+		advisor={
+			slot = army_chief
+			idea_token = KES_acd2
+			allowed  = {
+					original_tag  = KES
+				}
+				traits  = {
+					army_chief_defensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_1"
+			}
+		}
+	}
+	KES_acas={
+		advisor={
+			slot = high_command
+			idea_token = KES_acas
+			ledger  = air 
+				allowed  = {
+					original_tag  = KES
+				}
+				traits  = {
+					air_close_air_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_2"
+			}
+		}
+	}
+	KES_communist_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = KES_communist_guy
+			allowed  = {
+					original_tag  = KES
+				}
+				traits  = {
+					communist_revolutionary 
+				}
+				do_effect  = {
+					not  = {
+						has_government  = communism 
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_3"
+			}
+		}
+	}
+	KES_ncs={
+		advisor={
+			slot = high_command
+			idea_token = KES_ncs
+			ledger  = navy 
+				allowed  = {
+					original_tag  = KES
+				}
+				traits  = {
+					navy_capital_ship_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_2"
+			}
+		}
+	}
+	KES_awt={
+		advisor={
+			slot = theorist
+			idea_token = KES_awt
+			ledger  = air 
+				allowed  = {
+					original_tag  = KES
+				}
+				traits  = {
+					air_warfare_theorist 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_2"
+			}
+		}
+	}
+	KES_pot={
+		advisor={
+			slot = political_advisor
+			idea_token = KES_pot
+			allowed  = {
+					original_tag  = KES
+				}
+				traits  = {
+					prince_of_terror 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_2"
+			}
+		}
+	}
+	KES_fascist_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = KES_fascist_guy
+			allowed  = {
+					original_tag  = KES
+				}
+				traits  = {
+					fascist_demagogue 
+				}
+				do_effect  = {
+					not  = {
+						has_government  = fascism 
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_2"
+			}
+		}
+	}
+	KES_ai2={
+		advisor={
+			slot = high_command
+			idea_token = KES_ai2
+			ledger  = army 
+				allowed  = {
+					original_tag  = KES
+				}
+				traits  = {
+					army_infantry_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_3"
+			}
+		}
+	}
+	KES_nt={
+		advisor={
+			slot = theorist
+			idea_token = KES_nt
+			ledger  = navy 
+				allowed  = {
+					original_tag  = KES
+				}
+				traits  = {
+					naval_theorist 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_3"
+			}
+		}
+	}
+	KES_aco2={
+		advisor={
+			slot = army_chief
+			idea_token = KES_aco2
+			allowed  = {
+					original_tag  = KES
+				}
+				traits  = {
+					army_chief_organizational_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_2"
+			}
+		}
+	}
+}

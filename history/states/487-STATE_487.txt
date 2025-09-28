@@ -2,7 +2,7 @@ state={
 	id=487
 	name="Gallowmere"
 	history={
-		owner = BOK
+		owner = ATI
 		victory_points = {
 			1111 5
 		}
@@ -11,10 +11,10 @@ state={
 			industrial_complex = 1
 			arms_factory = 1
 		}
-		add_core_of = BOK
+		add_core_of = ATI
 	}
 	provinces={
-		6089 6127 6176 1111 787
+		6089 6127 6176 1111 787 15906 15905 15904
 	}
 	manpower=791093
 	buildings_max_level_factor=1.000

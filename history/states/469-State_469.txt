@@ -3,14 +3,14 @@ state={
 	name="Bahjat"
 
 	history={
-		owner = CBS
+		owner = INV
 		victory_points = {
 			     620 30
 		}
 		buildings = {
 			infrastructure = 2
             }
-		add_core_of = CBS
+		add_core_of = INV
 				}
 	provinces={
 		317 2406 3752 1196 7034 7010 620 4604 6958 15834 15835 15832

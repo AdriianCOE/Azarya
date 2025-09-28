@@ -206,3 +206,19 @@ DRM = {
     color = rgb { 145 115 180 }
     color_ui = rgb { 145 115 180 }
 }
+INV = {
+    color = rgb { 105 82 56 }
+    color_ui = rgb { 105 82 56 }
+}
+DKM = {
+    color = rgb { 88 42 117 }
+    color_ui = rgb { 88 42 117 }
+}
+KES = {
+    color = rgb { 208 153 69 }
+    color_ui = rgb { 208 153 69 }
+}
+EYD = {
+    color = rgb { 90 170 60 }
+    color_ui = rgb { 90 170 60 }
+}

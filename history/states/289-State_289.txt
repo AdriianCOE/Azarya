@@ -7,7 +7,7 @@ state={
 	}
 
 		history={
-		owner = CBS
+		owner = SDB
 		victory_points = {
 			     1025 10
 		}
@@ -17,10 +17,10 @@ state={
                 bunker = 2
             }
          }
-		add_core_of = CBS
+		add_core_of = SDB
 				}
 	provinces={
-	     112 1025 1970 6866 6965 2357
+	     112 1025 1970 6866 6965 2357 6837 163
 	}
 	manpower=97958
 	buildings_max_level_factor=1.000

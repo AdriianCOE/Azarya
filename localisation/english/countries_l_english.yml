@@ -1,4 +1,65 @@
 ﻿l_english:
+  EYD_democratic:0 "Eryndale Republic"
+  EYD_democratic_DEF:0 "The Eryndale Republic"
+  EYD_fascism:0 "Eryndale State"
+  EYD_fascism_DEF:0 "The Eryndale State"
+  EYD_neutrality:0 "Kingdom of Eryndale"
+  EYD_neutrality_DEF:0 "The Kingdom of Eryndale"
+  EYD_communism:0 "People's Republic of Eryndale"
+  EYD_communism_DEF:0 "The People's Republic of Eryndale"
+
+  EYD_democratic_ADJ:0 "Eryndalian"
+  EYD_fascism_ADJ:0 "Eryndalian"
+  EYD_neutrality_ADJ:0 "Eryndalian"
+  EYD_communism_ADJ:0 "Eryndalian"
+
+  ### Duskmoor Principality
+  DKM_fascism:0 "Duskmoor Principality"
+  DKM_fascism_DEF:0 "the Duskmoor Principality"
+  DKM_democratic:0 "Principality of Duskmoor"
+  DKM_democratic_DEF:0 "the Principality of Duskmoor"
+  DKM_neutrality:0 "Principality of Duskmoor"
+  DKM_neutrality_DEF:0 "the Principality of Duskmoor"
+  DKM_communism:0 "People's Duchy of Duskmoor"
+  DKM_communism_DEF:0 "the People's Duchy of Duskmoor"
+
+  DKM_fascism_ADJ:0 "Duskmoorian"
+  DKM_democratic_ADJ:0 "Duskmoorian"
+  DKM_neutrality_ADJ:0 "Duskmoorian"
+  DKM_communism_ADJ:0 "Duskmoorian"
+
+
+  ### Republic of Kaesset
+  KES_fascism:0 "Republic of Kaesset"
+  KES_fascism_DEF:0 "the Republic of Kaesset"
+  KES_democratic:0 "Republic of Kaesset"
+  KES_democratic_DEF:0 "the Republic of Kaesset"
+  KES_neutrality:0 "Kaesset State"
+  KES_neutrality_DEF:0 "the Kaesset State"
+  KES_communism:0 "Workers' Republic of Kaesset"
+  KES_communism_DEF:0 "the Workers' Republic of Kaesset"
+
+  KES_fascism_ADJ:0 "Kaesseti"
+  KES_democratic_ADJ:0 "Kaesseti"
+  KES_neutrality_ADJ:0 "Kaesseti"
+  KES_communism_ADJ:0 "Kaesseti"
+
+
+  ### Ironvale Confederacy
+  INV_fascism:0 "Ironvale Confederacy"
+  INV_fascism_DEF:0 "the Ironvale Confederacy"
+  INV_democratic:0 "Confederacy of Ironvale"
+  INV_democratic_DEF:0 "the Confederacy of Ironvale"
+  INV_neutrality:0 "Ironvale Confederacy"
+  INV_neutrality_DEF:0 "the Ironvale Confederacy"
+  INV_communism:0 "Union of Ironvale Communes"
+  INV_communism_DEF:0 "the Union of Ironvale Communes"
+
+  INV_fascism_ADJ:0 "Ironvalian"
+  INV_democratic_ADJ:0 "Ironvalian"
+  INV_neutrality_ADJ:0 "Ironvalian"
+  INV_communism_ADJ:0 "Ironvalian"
+
   ### Red Scars Dominion ###
   DRM_fascism:0 "Draemir Principate"
   DRM_fascism_DEF:0 "the Draemir Principate"

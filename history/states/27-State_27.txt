@@ -6,7 +6,7 @@ state={
 		oil=12
 	}
 	history={
-		owner = LUA
+		owner = EYD
 		victory_points = {
 			5692 10
 		}
@@ -17,12 +17,12 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = LUA
+		add_core_of = EYD
 		
 
 	}
 	provinces={
-		170 536 1137 1199 1202 1369 1461 3012 3470 5664 5676 5692 5718 5810 5823 5826 5842 5893 5932 
+		170 536 1137 1199 1202 1369 1461 3012 3470 5664 5676 5692 5718 5810 5823 5826 5842 5893 5932 1100 1541 15907 15908
 	}
 	manpower=849582
 	buildings_max_level_factor=1.000

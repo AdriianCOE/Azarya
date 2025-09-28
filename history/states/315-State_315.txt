@@ -8,6 +8,9 @@ state={
 
 	history={
 		owner = GYE
+		victory_points = {
+			     3185 5
+		}
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 2
@@ -18,7 +21,7 @@ state={
 	}
 
 	provinces={
-		115 680 1017 1162 1219 1242 2540 2756 3412 3903 4126 4975 
+		115 680 1017 1162 1219 1242 2540 2756 3412 3903 4126 4975 783 3185
 	}
 	manpower=298594
 	buildings_max_level_factor=1.000

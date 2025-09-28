@@ -19,7 +19,7 @@ state={
 		add_core_of = BOK
 	}
 	provinces={
-		4769 1652 293 2579 1253 5886 1708 3493 5880
+		4769 1652 293 2579 1253 5886 1708 3493 5880 15903
 	}
 	manpower=1695828
 	buildings_max_level_factor=1.000

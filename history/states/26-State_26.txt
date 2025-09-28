@@ -2,11 +2,11 @@ state={
 	id=26
 	name="Isle Bir"
 	history={
-		owner = LUA
+		owner = EYD
 		buildings = {
 			infrastructure = 0
 		}
-		add_core_of = LUA
+		add_core_of = EYD
 		
 
 	}

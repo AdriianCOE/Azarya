@@ -1,0 +1,6 @@
+#SeddusBadlands
+
+graphical_culture = middle_eastern_gfx
+graphical_culture_2d = middle_eastern_gfx_2d
+
+color = { 105 82 56 }

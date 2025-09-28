@@ -6,14 +6,14 @@ state={
 		oil=5
 	 }
 	history={
-		owner = SDB
+		owner = DKM
 			victory_points = {
 			     15793 10
 		}
 				buildings = {
 			infrastructure = 1
             }
-		add_core_of = SDB
+		add_core_of = DKM
 				}
 	provinces={
 		473 508 4493 4561 6698 15789 15790 15793 15796 15791 15810 1113

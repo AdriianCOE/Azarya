@@ -4,7 +4,7 @@ state={
 	name="Nadim"
 
 				history={
-		owner = CBS
+		owner = INV
 			victory_points = {
 			     3472 20
 		}
@@ -14,7 +14,7 @@ state={
 			air_base = 1
 
             }
-		add_core_of = CBS
+		add_core_of = INV
 				}
 
 

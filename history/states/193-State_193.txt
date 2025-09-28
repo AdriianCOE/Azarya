@@ -3,17 +3,17 @@ state={
 	id=193
 	name="Duneshire"
 	history={
-		owner = LUA
+		owner = BOK
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1
 		}
-		add_core_of = LUA
+		add_core_of = BOK
 		
 
 	}
 	provinces={
-		478 494 1707 3265 3345 3389 3755 4019 5862 561
+		478 494 1707 3265 3345 3389 3755 4019 5862 561 2545 15910
 	}
 	manpower=418592
 	buildings_max_level_factor=1.000

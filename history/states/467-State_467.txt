@@ -7,16 +7,13 @@ state={
 
 	history={
 		owner = TRB
-			victory_points = {
-			     3185 5
-		}
-						buildings = {
+		buildings = {
 			infrastructure = 1
             }
 		add_core_of = TRB
 				}
 	provinces={
-		3909 53 3052 3185 783 163 6837
+		3909 53 3052
 	}
 	manpower=101892
 	buildings_max_level_factor=1.000
