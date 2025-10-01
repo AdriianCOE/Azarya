@@ -1,0 +1,16 @@
+state={
+	id=505
+	name="Net"
+	history={
+		owner = LUA
+		add_core_of = LUA
+	}
+	provinces={
+		15929
+	}
+	manpower=10938
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+	impassable=yes
+}

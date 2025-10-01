@@ -3,6 +3,9 @@ state={
 	name="Shast"
 	history={
 		owner = EYD
+		victory_points = {
+			14988 12
+		}
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
