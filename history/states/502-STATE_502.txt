@@ -1,0 +1,27 @@
+state={
+	id=502
+	name="Yet"
+	history={
+		owner = KRT
+
+		victory_points = {
+			15907 20
+		}
+		victory_points = {
+			478 5
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 2
+		}
+		add_core_of = KRT
+	}
+	provinces={
+		170 478 1100 1199 1541 2545 3389 15907 15908 15910
+	}
+	manpower=812501
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}
