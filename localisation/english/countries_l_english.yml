@@ -1,4 +1,14 @@
 ﻿l_english:
+  KRT_fascism:0 "Karethian State"
+  KRT_fascism_DEF:0 "The Karethian State"
+  KRT_democratic:0 "Republic of Kareth"
+  KRT_democratic_DEF:0 "The Republic of Kareth"
+  KRT_neutrality:0 "Dominion of Kareth"
+  KRT_neutrality_DEF:0 "The Dominion of Kareth"
+  KRT_communism:0 "People’s Republic of Kareth"
+  KRT_communism_DEF:0 "The People’s Republic of Kareth"
+  KRT_ADJ:0 "Karethian"
+
   EYD_democratic:0 "Eryndale Republic"
   EYD_democratic_DEF:0 "The Eryndale Republic"
   EYD_fascism:0 "Eryndale State"

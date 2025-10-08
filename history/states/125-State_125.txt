@@ -1,4 +1,3 @@
-
 state={
 	id=125
 	name="Brunhaven"
@@ -15,7 +14,7 @@ state={
 		add_core_of = LUA
 	}
 	provinces={
-		41 237 314 390 793 1303 1420 1706 2070 4742 6070 6149 6319 15909
+		237 390 793 1303 1420 1706 4742 6070 6149 6319 15909 15931
 	}
 	manpower=1009283
 	buildings_max_level_factor=1.000
