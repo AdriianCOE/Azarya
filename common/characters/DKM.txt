@@ -1,11 +1,11 @@
 characters={
-	DMK_ar={
+	DKM_ar={
 		advisor={
 			slot = high_command
-			idea_token = DMK_ar
+			idea_token = DKM_ar
 			ledger  = army 
 				allowed  = {
-					original_tag  = DMK
+					original_tag  = DKM
 				}
 				traits  = {
 					army_regrouping_2 
@@ -21,12 +21,12 @@ characters={
 			}
 		}
 	}
-	DMK_acr={
+	DKM_acr={
 		advisor={
 			slot = air_chief
-			idea_token = DMK_acr
+			idea_token = DKM_acr
 			allowed  = {
-					original_tag  = DMK
+					original_tag  = DKM
 				}
 				traits  = {
 					air_chief_reform_2 
@@ -42,13 +42,13 @@ characters={
 			}
 		}
 	}
-	DMK_mt={
+	DKM_mt={
 		advisor={
 			slot = theorist
-			idea_token = DMK_mt
+			idea_token = DKM_mt
 			ledger  = army 
 				allowed  = {
-					original_tag  = DMK
+					original_tag  = DKM
 				}
 				traits  = {
 					military_theorist 
@@ -61,12 +61,12 @@ characters={
 			}
 		}
 	}
-	DMK_stc={
+	DKM_stc={
 		advisor={
 			slot = political_advisor
-			idea_token = DMK_stc
+			idea_token = DKM_stc
 			allowed  = {
-					original_tag  = DMK
+					original_tag  = DKM
 				}
 				traits  = {
 					smooth_talking_charmer 
@@ -79,13 +79,13 @@ characters={
 			}
 		}
 	}
-	DMK_aa2={
+	DKM_aa2={
 		advisor={
 			slot = high_command
-			idea_token = DMK_aa2
+			idea_token = DKM_aa2
 			ledger  = army 
 				allowed  = {
-					original_tag  = DMK
+					original_tag  = DKM
 				}
 				traits  = {
 					army_armored_2 
@@ -101,12 +101,12 @@ characters={
 			}
 		}
 	}
-	DMK_acgs={
+	DKM_acgs={
 		advisor={
 			slot = air_chief
-			idea_token = DMK_acgs
+			idea_token = DKM_acgs
 			allowed  = {
-					original_tag  = DMK
+					original_tag  = DKM
 				}
 				traits  = {
 					air_chief_ground_support_2 
@@ -122,12 +122,12 @@ characters={
 			}
 		}
 	}
-	DMK_ncm={
+	DKM_ncm={
 		advisor={
 			slot = navy_chief
-			idea_token = DMK_ncm
+			idea_token = DKM_ncm
 			allowed  = {
-					original_tag  = DMK
+					original_tag  = DKM
 				}
 				traits  = {
 					navy_chief_maneuver_2 
@@ -143,12 +143,12 @@ characters={
 			}
 		}
 	}
-	DMK_nccr={
+	DKM_nccr={
 		advisor={
 			slot = navy_chief
-			idea_token = DMK_nccr
+			idea_token = DKM_nccr
 			allowed  = {
-					original_tag  = DMK
+					original_tag  = DKM
 				}
 				traits  = {
 					navy_chief_commerce_raiding_2 
@@ -164,12 +164,12 @@ characters={
 			}
 		}
 	}
-	DMK_coi={
+	DKM_coi={
 		advisor={
 			slot = political_advisor
-			idea_token = DMK_coi
+			idea_token = DKM_coi
 			allowed  = {
-					original_tag  = DMK
+					original_tag  = DKM
 				}
 				traits  = {
 					captain_of_industry 
@@ -182,12 +182,12 @@ characters={
 			}
 		}
 	}
-	DMK_democratic_guy={
+	DKM_democratic_guy={
 		advisor={
 			slot = political_advisor
-			idea_token = DMK_democratic_guy
+			idea_token = DKM_democratic_guy
 			allowed  = {
-					original_tag  = DMK
+					original_tag  = DKM
 				}
 				traits  = {
 					democratic_reformer 
@@ -208,12 +208,12 @@ characters={
 			}
 		}
 	}
-	DMK_acd2={
+	DKM_acd2={
 		advisor={
 			slot = army_chief
-			idea_token = DMK_acd2
+			idea_token = DKM_acd2
 			allowed  = {
-					original_tag  = DMK
+					original_tag  = DKM
 				}
 				traits  = {
 					army_chief_defensive_2 
@@ -229,13 +229,13 @@ characters={
 			}
 		}
 	}
-	DMK_acas={
+	DKM_acas={
 		advisor={
 			slot = high_command
-			idea_token = DMK_acas
+			idea_token = DKM_acas
 			ledger  = air 
 				allowed  = {
-					original_tag  = DMK
+					original_tag  = DKM
 				}
 				traits  = {
 					air_close_air_support_2 
@@ -251,12 +251,12 @@ characters={
 			}
 		}
 	}
-	DMK_communist_guy={
+	DKM_communist_guy={
 		advisor={
 			slot = political_advisor
-			idea_token = DMK_communist_guy
+			idea_token = DKM_communist_guy
 			allowed  = {
-					original_tag  = DMK
+					original_tag  = DKM
 				}
 				traits  = {
 					communist_revolutionary 
@@ -277,13 +277,13 @@ characters={
 			}
 		}
 	}
-	DMK_ncs={
+	DKM_ncs={
 		advisor={
 			slot = high_command
-			idea_token = DMK_ncs
+			idea_token = DKM_ncs
 			ledger  = navy 
 				allowed  = {
-					original_tag  = DMK
+					original_tag  = DKM
 				}
 				traits  = {
 					navy_capital_ship_2 
@@ -299,13 +299,13 @@ characters={
 			}
 		}
 	}
-	DMK_awt={
+	DKM_awt={
 		advisor={
 			slot = theorist
-			idea_token = DMK_awt
+			idea_token = DKM_awt
 			ledger  = air 
 				allowed  = {
-					original_tag  = DMK
+					original_tag  = DKM
 				}
 				traits  = {
 					air_warfare_theorist 
@@ -318,12 +318,12 @@ characters={
 			}
 		}
 	}
-	DMK_pot={
+	DKM_pot={
 		advisor={
 			slot = political_advisor
-			idea_token = DMK_pot
+			idea_token = DKM_pot
 			allowed  = {
-					original_tag  = DMK
+					original_tag  = DKM
 				}
 				traits  = {
 					prince_of_terror 
@@ -336,12 +336,12 @@ characters={
 			}
 		}
 	}
-	DMK_fascist_guy={
+	DKM_fascist_guy={
 		advisor={
 			slot = political_advisor
-			idea_token = DMK_fascist_guy
+			idea_token = DKM_fascist_guy
 			allowed  = {
-					original_tag  = DMK
+					original_tag  = DKM
 				}
 				traits  = {
 					fascist_demagogue 
@@ -362,13 +362,13 @@ characters={
 			}
 		}
 	}
-	DMK_ai2={
+	DKM_ai2={
 		advisor={
 			slot = high_command
-			idea_token = DMK_ai2
+			idea_token = DKM_ai2
 			ledger  = army 
 				allowed  = {
-					original_tag  = DMK
+					original_tag  = DKM
 				}
 				traits  = {
 					army_infantry_2 
@@ -384,13 +384,13 @@ characters={
 			}
 		}
 	}
-	DMK_nt={
+	DKM_nt={
 		advisor={
 			slot = theorist
-			idea_token = DMK_nt
+			idea_token = DKM_nt
 			ledger  = navy 
 				allowed  = {
-					original_tag  = DMK
+					original_tag  = DKM
 				}
 				traits  = {
 					naval_theorist 
@@ -403,12 +403,12 @@ characters={
 			}
 		}
 	}
-	DMK_aco2={
+	DKM_aco2={
 		advisor={
 			slot = army_chief
-			idea_token = DMK_aco2
+			idea_token = DKM_aco2
 			allowed  = {
-					original_tag  = DMK
+					original_tag  = DKM
 				}
 				traits  = {
 					army_chief_organizational_2 

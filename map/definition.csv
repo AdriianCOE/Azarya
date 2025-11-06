@@ -1301,7 +1301,7 @@
 1300;144;249;163;land;false;plains;1
 1301;230;183;143;land;false;desert;1
 1302;208;164;222;land;false;forest;1
-1303;55;237;220;land;true;desert;1
+1303;55;237;220;land;false;desert;1
 1304;179;246;80;land;true;marsh;1
 1305;99;238;238;land;false;forest;1
 1306;192;63;249;land;false;forest;1

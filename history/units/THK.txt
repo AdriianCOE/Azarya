@@ -25,6 +25,14 @@ division_template = {
 	}
 }
 
+add_ace = {
+			name = "Captain Voss"
+			surname = "von Voss"
+			callsign = "Blue Death"
+			type = fighter_genius
+			is_female = yes
+		}
+
 units = {
 	##### Exercito de Thiryn #####
 	division= {	# "1a Divisao do Exercito"

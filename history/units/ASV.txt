@@ -48,7 +48,6 @@ units = {
 		division_template = "Cavalaria Miliciana" 
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
-
 	}
 }
 

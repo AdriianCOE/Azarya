@@ -202,6 +202,7 @@ if = {
 			coordination_skill = 4
     visible = { has_stability > 0.3 }
 }
+	
 
 	IF = {
 		limit = { NOT = { has_dlc = "Man the Guns" } }
