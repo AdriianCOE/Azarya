@@ -12,7 +12,6 @@
 <img src="https://img.shields.io/badge/game-Hearts%20of%20Iron%20IV-111827?style=for-the-badge" />
 <img src="https://img.shields.io/badge/type-Total%20Conversion-111827?style=for-the-badge" />
 
-</div>
 
 <br/>
 
@@ -21,6 +20,8 @@
 </a>
 
 <br/><br/>
+
+</div>
 
 ---
 
