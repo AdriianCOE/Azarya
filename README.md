@@ -1,28 +1,49 @@
 <div align="center">
 
-# Fernando de Noronha — DayZ Map Mod
+# Empires of Azarya
 
-### Uma recriação jogável do arquipélago de Fernando de Noronha para DayZ.
+### Mod total conversion para Hearts of Iron IV
 
-**WORK IN PROGRESS**
+**Mundo fictício · Estratégia · Guerra · Política**
+
+<br/>
+
+<img src="https://img.shields.io/badge/status-WIP-111827?style=for-the-badge" />
+<img src="https://img.shields.io/badge/game-Hearts%20of%20Iron%20IV-111827?style=for-the-badge" />
+<img src="https://img.shields.io/badge/type-Total%20Conversion-111827?style=for-the-badge" />
 
 </div>
 
 ---
 
-## Sobre o projeto
+## Sobre
 
-**Fernando de Noronha** é um mapa customizado em desenvolvimento para **DayZ**, inspirado no arquipélago brasileiro de mesmo nome.
+**Empires of Azarya** é um mod de conversão total para **Hearts of Iron IV**, ambientado em um mundo fictício criado do zero.
 
-O objetivo do projeto é trazer uma experiência de sobrevivência com identidade brasileira, misturando exploração, ambientação tropical, loot personalizado e uma recriação em escala aproximada do território real de Noronha.
+O projeto substitui o cenário histórico tradicional por um novo universo, com países próprios, fronteiras originais, disputas políticas, tensões regionais e conflitos militares únicos.
 
-O mapa ainda está em desenvolvimento e pode passar por mudanças frequentes de terreno, loot, vegetação, construções, áreas jogáveis e balanceamento.
+A ideia é criar uma experiência diferente dentro do HOI4, onde o jogador explora um mundo novo, sem depender dos eventos e nações da história real.
 
 ---
 
-## Área jogável
+## Mundo
 
-O mapa busca recriar o arquipélago de Fernando de Noronha em escala **1:1**, oferecendo aproximadamente:
+Azarya é um continente marcado por disputas antigas, governos instáveis, ambições imperiais e ideologias em conflito.
+
+Cada país possui sua própria identidade, interesses e desafios internos. Algumas nações buscam expansão, outras tentam sobreviver, enquanto movimentos políticos e militares disputam o futuro do continente.
+
+O mundo ainda está em desenvolvimento, com lore, países e sistemas sendo expandidos aos poucos.
+
+---
+
+## Recursos
 
 ```txt
-26 km² de área terrestre jogável
+Mapa fictício
+Países originais
+Bandeiras próprias
+Lore personalizada
+Conflitos regionais
+Ideologias alternativas
+Árvores de foco em desenvolvimento
+Eventos e decisões customizadas
