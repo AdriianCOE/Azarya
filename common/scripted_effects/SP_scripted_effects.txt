@@ -478,7 +478,16 @@ SP_create_variant_based_on_country_improved_small_airframe_rocket_engine = {
 		 			special_type_slot_2 = empty
 				}
 				icon = "GFX_light_plane_1_medium"
-			}		
+			}
+		}
+	}
+}
+
+# Vanilla mechanic gated to original_tag = USA; no Azarya nation matches, kept as a no-op for compatibility
+SP_create_variant_of_habakkuk_for_production_line = {
+	if = {
+		limit = {
+			original_tag = USA
 		}
 	}
 }

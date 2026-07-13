@@ -57,27 +57,18 @@ set_technology = {
 		
 }
 
-if = {
-	limit = {
-		NOT = { has_dlc = "No Step Back" }
-	}
-	set_technology = {
-		gwtank = 1
-		basic_light_tank = 1
-		improved_light_tank = 1
-	}
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_technology = {
-		gwtank_chassis = 1
-		basic_light_tank_chassis = 1
-		improved_light_tank_chassis = 1
-		armor_tech_1 = 1
-		engine_tech_1 = 1
-	}
+set_technology = {
+	# Granted unconditionally: set_technology bypasses allow/available checks,
+	# and the "D-03" variant (light_tank_chassis_1) below hard-codes the
+	# No Step Back-tier equipment regardless of DLC ownership.
+	gwtank = 1
+	basic_light_tank = 1
+	improved_light_tank = 1
+	gwtank_chassis = 1
+	basic_light_tank_chassis = 1
+	improved_light_tank_chassis = 1
+	armor_tech_1 = 1
+	engine_tech_1 = 1
 }
 
 recruit_character = CZL_ar

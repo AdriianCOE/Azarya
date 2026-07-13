@@ -808,11 +808,6 @@ technologies = {
 				date > "1930.1.1"
 			}
 
-			modifier = {
-				factor = 15.0
-				tag = GYE
-				has_opinion_modifier = sov_ger_treaty
-			}
 		}
 
 		categories = {

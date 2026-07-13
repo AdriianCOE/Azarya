@@ -2016,83 +2016,6 @@ leader_traits = {
 #ai_focus_naval_air_factor
 #ai_focus_aviation_factor
 
-	dislikes_germany = {
-		random = no
-		ai_strategy = {
-			type = antagonize
-			id = "GER"
-			value = 200
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	dislikes_soviet = {
-		random = no
-		ai_strategy = {
-			type = antagonize
-			id = "SOV"
-			value = 200
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	likes_germany = {
-		random = no
-		ai_strategy = {
-			type = alliance
-			id = "GER"
-			value = 300
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	likes_mexico = {
-		random = no
-		ai_strategy = {
-			type = alliance
-			id = "MEX"
-			value = 300
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	likes_allies = {
-		random = no
-		ai_strategy = {
-			type = alliance
-			id = "ENG"
-			value = 300
-		}
-
-		ai_strategy = {
-			type = alliance
-			id = "FRA"
-			value = 300
-		}
-
-		ai_strategy = {
-			type = alliance
-			id = "USA"
-			value = 300
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
 	tenacious_defender = {
 		random = no
 
@@ -2991,19 +2914,6 @@ leader_traits = {
 		random = no
 		war_support_factor = 0.05
 		justify_war_goal_time = -0.15
-	}
-
-	likes_turkey = {
-		random = no
-		ai_strategy = {
-			type = befriend
-			id = "TUR"
-			value = 50
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
 	}
 
 	archon_basileus = {
@@ -6731,19 +6641,6 @@ leader_traits = {
 
 	}
 
-	IRQ_the_grand_mufti = {
-		random = no 
-		sprite = 13
-
-		war_support_factor = 0.1
-		fascism_acceptance = 30
-
-		targeted_modifier = { # TODO: why doesn't this seem to work? 
-			tag = ENG
-			attack_bonus_against = 0.1
-		}
-	}
-
 	IRQ_kurdish_politician = {
 		random = no 
 		sprite = 13
@@ -8134,10 +8031,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				not = { has_completed_focus = USA_suspend_the_presecution }
-				factor = 0
-			}
 		}
 	}
 
@@ -8160,11 +8053,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				tag = USA
-				NOT = { has_completed_focus = USA_america_first }
-				factor = 0
-			}
 		}
 	}
 	staunch_monarchist = {
@@ -8175,11 +8063,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				tag = HUN
-				NOT = { has_completed_focus = HUN_invite_the_habsburg_prince }
-				factor = 0
-			}
 		}
 	}
 
@@ -8382,21 +8265,6 @@ leader_traits = {
 		production_speed_arms_factory_factor = 0.1
 		production_speed_dockyard_factor = 0.1
 		production_speed_fuel_silo_factor = 0.1
-
-		ai_will_do = {
-			factor = 2
-		}
-	}
-
-	naval_architect = {
-		sprite = 10
-		random = no
-		
-		production_speed_dockyard_factor = 0.15
-		production_speed_fuel_silo_factor = 0.1
-		production_speed_naval_base_factor = 0.1
-		production_speed_naval_headquarters_factor = 0.1
-		production_speed_naval_supply_hub_factor = 0.1
 
 		ai_will_do = {
 			factor = 2
@@ -9137,18 +9005,6 @@ leader_traits = {
 		sprite = 13
 		consumer_goods_factor = -0.15
 		neutrality_drift = 0.05
-	}
-
-	anti_german_personality = {
-		random = no
-		sprite = 13
-		fascism_drift = -0.05
-		fascism_acceptance = -40
-		targeted_modifier = {
-			tag = GER
-			attack_bonus_against = 0.1
-			defense_bonus_against = 0.1
-		}
 	}
 
 	subservient_democrat = {
@@ -12448,15 +12304,6 @@ leader_traits = {
 		stability_factor = 0.05
 		war_support_factor = 0.05
 		conscription = 0.005
-	}
-
-	AUS_elizabeth = {
-		random = no #this is Johann Hiedler
-
-		targeted_modifier = {
-			tag = ENG
-			compliance_growth = 0.01
-		}
 	}
 
 	AUS_fascist_propaganda_artist = {

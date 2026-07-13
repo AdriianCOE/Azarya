@@ -1,5 +1,9 @@
 # Self-built generic naval goals — NO blocked_for TAG references
 # (vanilla lists THK/FRA/GER/ITA/JAP/NSA/SLU which crash our TC MOD)
+# Only the 6 objective types currently supported by the engine are used
+# (see common/ai_navy/_documentation.md, "Objective Types"); the previous
+# naval_dominance/mines_planting/training/naval_blockade/strike_force_objective
+# goals used obsolete types removed by Paradox and were dropped here.
 generic_naval_invasion_support = { objective_type = naval_invasion_support
 	min_priority = 4  max_priority = 14 }
 generic_mine_sweeping = { objective_type = mines_sweeping
@@ -12,13 +16,3 @@ generic_convoy_protection = { objective_type = convoy_protection
 	min_priority = 1  max_priority = 5 }
 generic_convoy_raiding = { objective_type = convoy_raiding
 	min_priority = 3  max_priority = 7 }
-generic_naval_dominance = { objective_type = naval_dominance
-	min_priority = 1  max_priority = 13 }
-generic_mine_laying = { objective_type = mines_planting
-	min_priority = 2  max_priority = 8 }
-generic_training = { objective_type = training
-	min_priority = 10 max_priority = 20 }
-generic_naval_blockade = { objective_type = naval_blockade
-	min_priority = 10 max_priority = 20 }
-generic_strike_force = { objective_type = strike_force_objective
-	min_priority = 10 max_priority = 20 }

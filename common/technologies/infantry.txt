@@ -525,14 +525,6 @@ technologies = {
 				tag = THK
 			}
 
-			modifier = { #Sokolov Raid prep
-				factor = 20
-				tag = GYE
-				CZE = { 
-					is_ai = no
-				}
-			}
-
 			modifier = {
 				factor = 5
 				tag = GYE
@@ -2478,7 +2470,7 @@ technologies = {
 		}
 	}
 
-
+	JAP_silver_wheels = { #hidden tech to boost Bicycles in Jungles and Forests.
 		allow = {
 			always = no
 		}
@@ -2498,7 +2490,7 @@ technologies = {
 		}
 	}
 
-
+	JAP_lighter_tanks = { #hidden tech to boost Tanks in Jungles and Forests.
 		allow = {
 			always = no
 		}
@@ -2784,6 +2776,7 @@ technologies = {
 		}
 	}
 
+	GER_heavy_armored_car = {
  		allow = { always = no }
 		enable_equipments = {
 			#armored_car_at_equipment
@@ -2938,6 +2931,8 @@ technologies = {
 	}
 
 	##### FROM PHILIPPINE FOCUS #####
+
+	PHI_battalion_combat_teams = {
 
 		allow = {
 			always = no #UPDATE PHI_battalion_combat_teams_tt if changing
