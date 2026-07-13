@@ -1,32 +1,26 @@
-state={
-	id=431
-	name="Navarre"
-	resources = {
-		chromium = 10
-	}
-	history={
-		owner = ARD
-		victory_points = {
-			9291 10
-		}
-		victory_points = {
-			1789  20
-		}
+state = {
+	id = 431
+	name = "STATE_WT_431"
+	manpower = 1
+	state_category = town
+
+	history = {
+		owner = AEI
+		add_core_of = AEI
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 1
-			dockyard = 3
-			1789 = {
-                naval_base = 2
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2
+			dockyard = 1
+			air_base = 1
+			2523 = {
+				naval_base = 2
 			}
 		}
-		add_core_of = ARD
+		victory_points = { 1261 1 }
 	}
-	provinces={
-		245 419 456 581 1444 1524 1789 1903 3165 3318 3716 4221 5139 9139 9147 9161 9189 9190 9210 9214 9216 9225 9227 9243 9246 9249 9254 9284 9291 9304 9315 
+
+	provinces = {
+		1261 2523 2758 3528 9163 9192 9197 9239 9244 9266
 	}
-	manpower=2423000
-	buildings_max_level_factor=1.000
-	state_category=city
-	local_supplies=0.000
 }

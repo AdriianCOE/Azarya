@@ -1,33 +1,24 @@
+state = {
+	id = 121
+	name = "STATE_WT_121"
+	manpower = 292859
+	state_category = rural
 
-state={
-	id=121
-	name="Azzurria"
-
-	history={
-		owner = SLU
-		victory_points = {
-			271 10
-		}
-		victory_points = {
-			5159 5 
-		}
+	history = {
+		owner = AEI
+		add_core_of = AEI
 		buildings = {
-			infrastructure = 2
-			air_base = 1
-			271 = {
-				naval_base = 1
-
+			infrastructure = 1
+			industrial_complex = 1
+			dockyard = 1
+			1356 = {
+				naval_base = 2
 			}
 		}
-		add_core_of = SLU
-
+		victory_points = { 2 1 }
 	}
 
-	provinces={
-		181 271 852 1361 3068 5151 5152 5154 5155 5157 5159 5165 5167 
+	provinces = {
+		2 1356 2617 2868 5073 5710 5798
 	}
-	manpower=822347
-	buildings_max_level_factor=1.000
-	state_category=large_town
-	local_supplies=0.000
 }

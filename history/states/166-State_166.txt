@@ -1,23 +1,24 @@
-state={
-	id=166
-	name="Sackenzach"
-	resources = {
-		steel = 2
-	}
-	history={
-		owner = RFO
+state = {
+	id = 166
+	name = "STATE_WT_166"
+	manpower = 401938
+	state_category = rural
+
+	history = {
+		owner = DTB
+		add_core_of = DTB
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
+			industrial_complex = 1
+			dockyard = 1
+			2495 = {
+				naval_base = 2
 			}
-	
-			add_core_of = SVD
-			add_core_of = BKG
-			add_core_of = RFO
 		}
-	provinces={
-		339 1106 1685 3078 4157 4341 5452 5458 5490 5548 5568 5578 5600 
+		victory_points = { 5514 8 }
 	}
-	buildings_max_level_factor=1.000
-        manpower=395824
-        state_category = town
+
+	provinces = {
+		88 733 1099 1550 2495 2576 2592 2701 2877 2930 3049 4168 4829 5085 5418 5429 5438 5448 5470 5495 5503 5514 5525 5543 5559 5591 5590 5622 5
+	}
 }

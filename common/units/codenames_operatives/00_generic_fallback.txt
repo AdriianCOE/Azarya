@@ -1,0 +1,10 @@
+﻿GENERIC_OPERATIVES = {
+	name = "Generic Operatives"
+	for_countries = { }
+	type = codename
+	fallback_name = "Agent %d"
+	unique = {
+		"Wolf" "Sparrow" "Hawk" "Eagle" "Snake" "Bear"
+		"Tiger" "Condor" "Magpie" "Shark" "Hornet" "Dragon"
+	}
+}

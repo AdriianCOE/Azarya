@@ -1,28 +1,23 @@
+state = {
+	id = 47
+	name = "STATE_WT_47"
+	manpower = 2839849
+	state_category = large_city
 
-state={
-	id=47
-	name="Attica"
-	history={
+	history = {
 		owner = ATI
-		victory_points = {
-			3863 20
-		}
-		victory_points = {
-			6159 5
-		}
-		buildings = {
-			infrastructure = 3
-			arms_factory = 1
-			industrial_complex = 3
-			air_base = 1
-		}
 		add_core_of = ATI
+		buildings = {
+			infrastructure = 4
+			arms_factory = 3
+			industrial_complex = 5
+			air_base = 2
+		}
+		victory_points = { 3863 20 }
+		victory_points = { 6159 5 }
 	}
-	provinces={
+
+	provinces = {
 		146 891 979 1256 1445 1529 1534 1894 2972 3249 3863 6062 6159 6229 6272 6300 6327 15801 15802 15803 15804 15805 15806 15807 15808 15809 6361
 	}
-	manpower=2839849
-	buildings_max_level_factor=1.000
-	state_category=large_city
-	local_supplies=0.000
 }

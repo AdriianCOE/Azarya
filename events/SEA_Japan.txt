@@ -1,0 +1,12 @@
+# Emptied — TC MOD overrides vanilla SEA_Japan.txt
+# Reason: references state IDs or scope targets not in TC MOD
+# Keep add_namespace declarations so other files' ID refs don't break
+add_namespace = SEA_japan
+add_namespace = SEA_japan_foreign_policy
+add_namespace = SEA_japan_popup_events
+add_namespace = SEA_japan_tokko_arrest_events
+add_namespace = SEA_japan_news_events
+add_namespace = SEA_japan_hidden_events
+add_namespace = SEA_japan_air_accidents_events
+add_namespace = SEA_border_incidents_events
+add_namespace = SEA_imperial_influence_events

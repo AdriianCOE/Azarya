@@ -1,26 +1,26 @@
+state = {
+	id = 408
+	name = "STATE_WT_408"
+	manpower = 461792
+	state_category = town
 
-state={
-	id=408
-	name="Adramet"
-
-	history={
+	history = {
 		owner = UPG
-		victory_points = {
-			1337 25 
-		}
-		buildings = {
-			infrastructure = 1
-
-		}
 		add_core_of = UPG
-
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2
+			dockyard = 1
+			air_base = 1
+			4782 = {
+				naval_base = 2
+			}
+		}
+		victory_points = { 870 1 }
 	}
 
-	provinces={
-		1274 1337 1702 1852 2008 2580 2982 3283 3617 3957 4090 4106 4125 4326 8846 8893 8901 8906 8942 8950 8986 8997 9019 9029 9030 9053 9061 9082 9114 9138 
+	provinces = {
+		870 897 1279 1367 2321 3301 3459 3484 3685 3808 4584 4608 4782 5012 8869 8916 8952 8956 8959 8994 8999 9005 9023 9024 9042 9052 9075 9094 9113
 	}
-	manpower=278894
-	buildings_max_level_factor=1.000
-	state_category=rural
-	local_supplies=0.000
 }

@@ -1,0 +1,23 @@
+state = {
+	id = 466
+	name = "STATE_WT_466"
+	manpower = 101892
+	state_category = rural
+	resources = {
+		oil = 9
+	}
+
+	history = {
+		owner = TRB
+		add_core_of = TRB
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+		victory_points = { 3909 1 }
+	}
+
+	provinces = {
+		3909 53 3052
+	}
+}

@@ -1,32 +1,26 @@
+state = {
+	id = 25
+	name = "STATE_WT_25"
+	manpower = 910394
+	state_category = city
 
-state={
-	id=25
-	name="Baselternia"
-
-	history={
+	history = {
 		owner = RFO
-		victory_points = {
-			4541 15
-		}
+		add_core_of = RFO
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 3
-			4541 = {
-				naval_base = 1
-				}
-
+			arms_factory = 2
+			industrial_complex = 4
+			dockyard = 2
+			air_base = 2
+			752 = {
+				naval_base = 3
+			}
 		}
-		add_core_of = SVD
-		add_core_of = BKG
-		add_core_of = RFO
-
+		victory_points = { 4541 15 }
 	}
 
-	provinces={
+	provinces = {
 		63 752 1098 1134 2513 2720 3529 4541 5661 5673 5725 5785 3255
 	}
-	manpower=910394
-	buildings_max_level_factor=1.000
-	state_category= city
-	local_supplies=0.000
 }

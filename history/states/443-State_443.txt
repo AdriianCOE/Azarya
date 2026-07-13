@@ -1,36 +1,26 @@
+state = {
+	id = 443
+	name = "STATE_WT_443"
+	manpower = 1
+	state_category = town
 
-state={
-	id=443
-	name="Miravelle"
-	resources={
-		tungsten=15
-	}
-	history={
-		owner = TOL
-		add_core_of = TOL
-		1924.1.1 = {
-			controller = KOZ
-
-		     }
-		victory_points = {
-			9335  5
-		}
-	    buildings = {
+	history = {
+		owner = AEI
+		add_core_of = AEI
+		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
-			9335 = {
-                naval_base = 1
+			arms_factory = 1
+			industrial_complex = 2
+			dockyard = 1
+			air_base = 1
+			2917 = {
+				naval_base = 2
+			}
 		}
-        
-         }
-		add_core_of = TOL
+		victory_points = { 917 1 }
+	}
 
+	provinces = {
+		917 2425 2573 2917 2980 4684 5137 9415 9424 9435 9436 9447
 	}
-	provinces={
-		1974 3285 3522 4020 9309 9335 9345 9369 9383 9384 9385 9402 
-	}
-	manpower=682875
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
 }

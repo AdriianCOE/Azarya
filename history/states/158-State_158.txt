@@ -1,34 +1,29 @@
+state = {
+	id = 158
+	name = "STATE_WT_158"
+	manpower = 1398698
+	state_category = large_city
+	resources = {
+		tungsten = 3
+	}
 
-state={
-	id=158
-	name="Elbach"
-
-	history={
-		owner = RFO
-		victory_points = {
-			5518 10
-		}
-		victory_points = {
-			5451 5
-		}
+	history = {
+		owner = NSA
+		add_core_of = NSA
 		buildings = {
-			infrastructure = 1
-			5451 = {
-				naval_base = 2
-				}
-
+			infrastructure = 4
+			arms_factory = 3
+			industrial_complex = 5
+			dockyard = 3
+			air_base = 2
+			142 = {
+				naval_base = 3
+			}
 		}
-		add_core_of = SVD
-		add_core_of = BKG
-		add_core_of = RFO
-
+		victory_points = { 4283 12 }
 	}
 
-	provinces={
-		360 670 704 1762 1839 2224 3866 4006 4200 4911 5441 5451 5476 5489 5518 5577 5604 
+	provinces = {
+		142 913 1249 1362 2537 2555 2884 3589 4162 4283 5446 5474 5563 5596 5610 5626
 	}
-	manpower=210398
-	buildings_max_level_factor=1.000
-	state_category=rural
-	local_supplies=0.000
 }

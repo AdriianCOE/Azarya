@@ -1,0 +1,3 @@
+# Empty — TC MOD overrides vanilla 10_toa_on_actions.txt
+on_actions = {
+}

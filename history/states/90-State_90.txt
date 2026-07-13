@@ -1,43 +1,19 @@
+state = {
+	id = 90
+	name = "STATE_WT_90"
+	manpower = 8421
+	state_category = tiny_island
 
-state={
-	id=90
-	name="Brankiev"
-	resources={
-		steel=4
-	}
-
-	history={
-		owner = THK
-		victory_points = {
-			4452 25 
-		}
-		victory_points = {
-			631 10
-		}
-		victory_points = {
-			9131 2
-		}
+	history = {
+		owner = AEI
+		add_core_of = AEI
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 3
-			4452 = {
-                naval_base = 2
-            }
-			9131 = {
-                naval_base = 1
-            }
-
+			infrastructure = 1
 		}
-		add_core_of = THK
-
+		victory_points = { 633 1 }
 	}
 
-	provinces={
-		631 2623 3736 3856 4452 9027 9050 9051 9088 9112 9131 9497 2652
+	provinces = {
+		633 923 1434 1634 1715 2578 3593 3973 4481 4510 4699 4788 8120 8132 8138 8167 8175 8224 8235 8263 8264 8279 8288 8331 8347
 	}
-	manpower=738769
-	buildings_max_level_factor=1.000
-	state_category=city
-
-	local_supplies=0.0 
 }

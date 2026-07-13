@@ -1,10 +1,27 @@
-state={
-	id=327
-	name="STATE_327"
-	provinces={
-		50 387 914 1245 1645 1794 4402 7323 7387 7466 
+state = {
+	id = 327
+	name = "STATE_WT_327"
+	manpower = 1799598
+	state_category = large_city
+
+	history = {
+		owner = GYE
+		add_core_of = GYE
+		buildings = {
+			infrastructure = 4
+			arms_factory = 3
+			industrial_complex = 5
+			dockyard = 3
+			air_base = 2
+			54 = {
+				naval_base = 3
+			}
+		}
+		victory_points = { 2494 15 }
+		victory_points = { 1956 5 }
 	}
-	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+
+	provinces = {
+		29 37 54 169 482 523 1615 1884 1956 1971 2365 2494 2525 3341 3358 3385 3906 5078 7288 7331 7354 7362 7376 7396 7404 7444 7455 7459 7471 7474 7493 7535 7569 7620 7627
+	}
 }

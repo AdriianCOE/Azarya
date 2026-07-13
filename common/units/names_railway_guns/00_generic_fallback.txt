@@ -1,0 +1,10 @@
+﻿RG_COMMON_FALLBACK = {
+	name = "Railway Gun"
+	for_countries = { }
+	can_use = { always = yes }
+	type = railway_gun
+	fallback_name = "Railway Gun %d"
+	unique = {
+		"Big Gun" "Heavy Gun" "Long Gun" "Siege Gun"
+	}
+}

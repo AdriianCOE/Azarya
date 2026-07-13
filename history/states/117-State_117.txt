@@ -1,31 +1,23 @@
-state={
-	id=117
-	name="Vallée d'Or"
-	history={
-		owner = TOL
-			victory_points = {
-			9428  10
-		}
-		    victory_points = {
-			3478 5 
-		}
-		owner = TOL
-			victory_points = {
-			9450  5
-		}
+state = {
+	id = 117
+	name = "STATE_WT_117"
+	manpower = 9879
+	state_category = tiny_island
+
+	history = {
+		owner = UPG
+		add_core_of = UPG
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 2
-			dockyard = 5
-
-            }
-		add_core_of = TOL
-
+			infrastructure = 1
+			dockyard = 1
+			9499 = {
+				naval_base = 2
+			}
+		}
+		victory_points = { 9499 1 }
 	}
-	provinces={
-		2992 3478 3855 5077 9428 9431 9439 9450 9455 9457 9463 489
+
+	provinces = {
+		9499
 	}
-	buildings_max_level_factor=1.000
-        manpower=1447749
-        state_category = large_city
 }

@@ -1,12 +1,19 @@
+state = {
+	id = 5
+	name = "STATE_WT_5"
+	manpower = 5861
+	state_category = tiny_island
 
-state={
-	id=5
-	name="Min Island"
-	provinces={
-		304 591 847 974 2293 2559 3280 3374 3432 4129 4831 7108 7148 7277 7299 7355 7416 
+	history = {
+		owner = AEI
+		add_core_of = AEI
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = { 304 1 }
 	}
-	manpower=5861
-	buildings_max_level_factor=1.000
-	state_category=tiny_island
-	local_supplies=0.000
+
+	provinces = {
+		304 591 847 974 2293 2559 3280 3374 3432 4129 4831 7108 7148 7277 7299 7355 7416
+	}
 }

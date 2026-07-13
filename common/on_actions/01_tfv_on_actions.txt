@@ -1,0 +1,3 @@
+# Empty — TC MOD overrides vanilla 01_tfv_on_actions.txt
+on_actions = {
+}

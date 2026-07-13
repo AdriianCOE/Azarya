@@ -1,19 +1,22 @@
+state = {
+	id = 475
+	name = "STATE_WT_475"
+	manpower = 659867
+	state_category = large_town
 
-state={
-	id=475
-	name="Ormarch"
-	history={
-		owner = VRD
+	history = {
+		owner = NSA
+		add_core_of = NSA
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 3
+			air_base = 1
 		}
-		add_core_of = VRD
+		victory_points = { 5951 1 }
 	}
-	provinces={
-		 712 5835 4356 1069 1325 4171 5804 17 4010 124 5963 95 1595 865 239
+
+	provinces = {
+		5951 758 5969 5989 6013 6027 5999 5971 2783 1185 1639 30 4082 2431 2108 1500 1826 1023 5957 5984 920
 	}
-	manpower=226828
-	state_category=rural
-	buildings_max_level_factor=1.000
-	local_supplies=0.000
 }

@@ -1,0 +1,22 @@
+state = {
+	id = 465
+	name = "STATE_WT_465"
+	manpower = 24576
+	state_category = wasteland
+	resources = {
+		steel = 19
+		chromium = 6
+	}
+
+	history = {
+		owner = INV
+		add_core_of = INV
+		buildings = {
+		}
+		victory_points = { 2876 1 }
+	}
+
+	provinces = {
+		2876 2139 1105 1807 7194 4565 15833
+	}
+}

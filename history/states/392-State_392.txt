@@ -1,12 +1,25 @@
-
-state={
-	id=392
-	name="STATE_392"
-	provinces={
-		960 1198 1726 2087 3025 4184 4825 8375 8408 8446 8456 8480 8492 8519 8595 8638 8677 8728 8789 
+state = {
+	id = 392
+	name = "STATE_WT_392"
+	manpower = 1
+	state_category = town
+	resources = {
+		tungsten = 5
 	}
-	manpower=1
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
+
+	history = {
+		owner = AEI
+		add_core_of = AEI
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2
+			air_base = 1
+		}
+		victory_points = { 33 1 }
+	}
+
+	provinces = {
+		33 603 1633 1758 1943 2050 2154 2621 3151 3647 3779 3969 4630 4802 4912 8623 8640 8645 8668 8681 8753 8805 8813 8833 8881
+	}
 }

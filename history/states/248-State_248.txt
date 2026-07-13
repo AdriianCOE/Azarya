@@ -1,16 +1,21 @@
+state = {
+	id = 248
+	name = "STATE_WT_248"
+	manpower = 959895
+	state_category = rural
 
-state={
-	id=248
-	name="STATE_248"
-	history={
-		owner = ATV
-		add_core_of = ATV
+	history = {
+		owner = BOM
+		add_core_of = BOM
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
 		}
-	provinces={
-		1 299 342 393 745 1227 1308 1877 1902 3321 3582 4154 4777 4989 6516 6658 6582 926 932 6619
+		victory_points = { 2341 20 }
+		victory_points = { 6589 10 }
 	}
-	manpower=1
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
+
+	provinces = {
+		173 236 484 608 896 1110 1136 1309 1625 1738 1115 6432 1867 2338 2341 2563 2583 2683 2686 2693 2948 3132 3313 3378 3475 4147 4194 4209 4233 4244 4722 6458 6476 6520 6521 6522 6550 6568 6580 6583 6589 6615 6646 6649 6654 6655 6668 6679 6681 6683 6702
+	}
 }

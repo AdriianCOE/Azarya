@@ -1,33 +1,26 @@
+state = {
+	id = 171
+	name = "STATE_WT_171"
+	manpower = 585828
+	state_category = town
 
-state={
-	id=171
-	name="Deyokaya"
-	resources = {
-		oil = 3
-	}
-	history={
-		owner = NSA
-		victory_points = {
-			3706 12
-		}
+	history = {
+		owner = BKG
+		add_core_of = BKG
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 1
+			infrastructure = 2
 			arms_factory = 1
-			3706 = {
+			industrial_complex = 2
+			dockyard = 1
+			air_base = 1
+			2616 = {
 				naval_base = 2
-				}
-
 			}
-			add_core_of = NSA
 		}
-	provinces={
-		129 361  497 501  1265 1516 1584 2141 3424 3623 3706 4001 4619 4665 4844 5850 5861 5864 5916 6036 6060 6081 
+		victory_points = { 2616 1 }
 	}
-	manpower=698578
-	buildings_max_level_factor=1.000
-	state_category=large_town
-	local_supplies=0.000
-}
 
- 
+	provinces = {
+		2616 3218 3322 3360 5519 5537 5539 5544 5549 5569 5570 5574 5585 5586
+	}
+}

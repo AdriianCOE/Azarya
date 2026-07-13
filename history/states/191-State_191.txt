@@ -1,25 +1,27 @@
+state = {
+	id = 191
+	name = "STATE_WT_191"
+	manpower = 189859
+	state_category = rural
+	resources = {
+		tungsten = 6
+	}
 
-state={
-	id=191
-	name="Opfheimenia"
-
-	history={
+	history = {
 		owner = BKG
-		buildings = {
-			infrastructure = 2
-
-		}
-		add_core_of = SVD
 		add_core_of = BKG
-		add_core_of = RFO
-
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			dockyard = 1
+			1606 = {
+				naval_base = 2
+			}
+		}
+		victory_points = { 3187 5 }
 	}
 
-	provinces={
-		2890 2925 4134 5833 5852 
+	provinces = {
+		934 1606 3187 5752 5771 5808 5813
 	}
-	manpower=157896
-	buildings_max_level_factor=1.000
-	state_category=rural
-	local_supplies=0.000
 }

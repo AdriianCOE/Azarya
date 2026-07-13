@@ -1,16 +1,29 @@
+state = {
+	id = 216
+	name = "STATE_WT_216"
+	manpower = 1
+	state_category = town
+	resources = {
+		tungsten = 6
+	}
 
-state={
-	id=216
-	name="STATE_216"
-	history={
-		owner = VAL
-		add_core_of = VAL
+	history = {
+		owner = MEK
+		add_core_of = MEK
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2
+			dockyard = 1
+			air_base = 1
+			2741 = {
+				naval_base = 2
+			}
+		}
+		victory_points = { 172 1 }
 	}
-	provinces={
-		640 661 1341 1668 1992 2038 3625 3827 3847 4036 4150 4230 4359 4868 4982 6245 6258 6262 6274 6292 6298 6312 6318 6349 6352 
+
+	provinces = {
+		172 2741 2841 2912 2924 3709 3828 3930 6160 6161 6180 6196 6202 6208 6218 6232 6246 6263 6277 6328 6353
 	}
-	manpower=1
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
 }

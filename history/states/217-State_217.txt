@@ -1,17 +1,26 @@
+state = {
+	id = 217
+	name = "STATE_WT_217"
+	manpower = 1
+	state_category = town
 
-state={
-	id=217
-	name="STATE_217"
-	history={
-		owner = MEK
-		add_core_of = MEK
+	history = {
+		owner = AEI
+		add_core_of = AEI
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2
+			dockyard = 1
+			air_base = 1
+			474 = {
+				naval_base = 2
+			}
+		}
+		victory_points = { 474 1 }
+	}
 
+	provinces = {
+		474 1207 2547 3482 3775 3955 4417 4512 4935 4939 6275 6302 6314 6334 6342 6376 6382 6414
 	}
-	provinces={
-		172 2741 2841 2912 2924 3709 3828 3930 6160 6161 6180 6196 6202 6208 6218 6232 6246 6263 6277 6328 6353 
-	}
-	manpower=1
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
 }

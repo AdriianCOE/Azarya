@@ -1,20 +1,29 @@
-state={
-	id=360
-	name="Eboracum"
-	
-    history = {
-        owner = CZL
-				buildings = {
-			infrastructure = 3	
-
-				}
-		add_core_of = CZL
-    }
-	
-	provinces={
-		688 1166 1757 1905 2056 2735 3893 4046 7702 7794 
+state = {
+	id = 360
+	name = "STATE_WT_360"
+	manpower = 658691
+	state_category = town
+	resources = {
+		tungsten = 2
 	}
-	buildings_max_level_factor=1.000
-        manpower=287219
-        state_category = rural
+
+	history = {
+		owner = KOZ
+		add_core_of = KOZ
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2
+			dockyard = 1
+			air_base = 1
+			1791 = {
+				naval_base = 2
+			}
+		}
+		victory_points = { 8057 15 }
+	}
+
+	provinces = {
+		109 123 577 849 1238 1401 1791 2335 2717 2806 2969 4539 7841 7856 7892 7893 7938 7943 7944 7958 7964 7974 7996 8013 8040 8050 8057 8091 8096 8125 8195
+	}
 }

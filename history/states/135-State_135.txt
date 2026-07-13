@@ -1,22 +1,28 @@
+state = {
+	id = 135
+	name = "STATE_WT_135"
+	manpower = 2395805
+	state_category = metropolis
 
-state={
-	id=135
-	name="Aquilano"
-
-	history={
+	history = {
 		owner = SLU
-		buildings = {
-			infrastructure = 2
-		}
 		add_core_of = SLU
-
+		buildings = {
+			infrastructure = 1
+			arms_factory = 4
+			industrial_complex = 6
+			dockyard = 3
+			air_base = 3
+			2272 = {
+				naval_base = 3
+			}
+		}
+		victory_points = { 5231 50 }
+		victory_points = { 2439 20 }
+		victory_points = { 3017 15 }
 	}
 
-	provinces={
-		607 1120 1358 1363 1854 1898 2277 2395 3125 3205 3554 3767 4111 4420 4546 4983 5158 5161 5162 5163 5164 5168 5170 5173 5180 5184 5191 5196 5199 5208 5211 5215 5219 5223 5228 
+	provinces = {
+		2272 2439 2779 2869 3017 5179 5185 5193 5194 5197 5204 5205 5231
 	}
-	manpower=495824
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
 }

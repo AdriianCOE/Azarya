@@ -1,31 +1,22 @@
+state = {
+	id = 279
+	name = "STATE_WT_279"
+	manpower = 1
+	state_category = town
 
-state={
-	id=279
-	name="Agraria"
-	history={
-		owner = SIT
-		victory_points = {
-			7166 12
-		}
-		victory_points = {
-			7187 5
-		}
+	history = {
+		owner = AEI
+		add_core_of = AEI
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2
 			air_base = 1
-			dockyard = 4
-			7166 = {
-				naval_base = 2
-				}
-			}
-		add_core_of = SIT
+		}
+		victory_points = { 144 1 }
+	}
 
+	provinces = {
+		144 330 3076 3124 3898 3978 3994 4530 4960 5053 6910 6925 6967 6973 7008 7009 7036 7069 7075
 	}
-	provinces={
-		49 832 1470 1664 2990 7187 2804 5062 7181 1813 4232 833 2472 431 2965 4375 101 7093 7125 2177 7158 7151 4943 3823 4288 7045 7082 7088 7102 7112 7143 7166 
-	}
-	manpower=1495869
-	buildings_max_level_factor=1.000
-	state_category=city
-	local_supplies=0.000
 }

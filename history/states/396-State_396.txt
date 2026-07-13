@@ -1,45 +1,25 @@
-
-state={
-	id=396
-	name="Marlond"
-	    resources={
-		steel=18
-		aluminium=4
+state = {
+	id = 396
+	name = "STATE_WT_396"
+	manpower = 1
+	state_category = town
+	resources = {
+		tungsten = 7
 	}
 
-	history={
-		owner = KOZ
-		    victory_points = {
-			4930 50 
-		}
-		    victory_points = {
-			836 20 
-		}
-		    victory_points = {
-			4051 15 
-		}
-		    victory_points = {
-			8697 10 
-		}
-		victory_points = {
-			8646 5
-		}
+	history = {
+		owner = AEI
+		add_core_of = AEI
 		buildings = {
-			infrastructure = 4
-			arms_factory = 3
-			industrial_complex = 5
-			air_base = 2
-			4051 = {
-                naval_base = 4
-            }
-        }
-		add_core_of = KOZ
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2
+			air_base = 1
+		}
+		victory_points = { 262 1 }
 	}
-	provinces={
-		26 110 131 409 677 836 892 1173 1404 1593 2389 2417 2503 2672 2702 2750 2968 3483 3835 3871 3887 4051 4078 4179 4335 4589 4707 4925 4930 4953 5074 8395 8404 8425 8449 8450 8491 8502 8508 8509 8516 8524 8550 8556 8580 8592 8605 8633 8634 8635 8646 8652 8655 8674 8692 8697 8718 8759 8776 8796 8817 8830 
+
+	provinces = {
+		262 280 285 572 795 1122 1571 2079 2337 2346 2734 2815 2816 2820 3083 3117 3242 915 3253 3367 3379 3531 3727 3830 4100 4143 4145 4188 4192 4263 4447 4448 4449 4459 4537 4610 4990 8435 8497 8505 8513 8547 8598 8601 8649 8653 8667 8705 8713 8726 8740 8747 8773 8787 8798 8822 8823 8840 8873 8895 8931 8945 8949 8954 8989 8990 8995 9016 9017 9020 9021 9058 9085 9092 9127
 	}
-	manpower=4798579
-	buildings_max_level_factor=1.000
-	state_category=megalopolis
-	local_supplies=0.000
 }

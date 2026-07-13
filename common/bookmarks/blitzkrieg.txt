@@ -1,0 +1,9 @@
+bookmarks = {
+	bookmark = {
+		name = "DISABLED_BLITZKRIEG"
+		desc = ""
+		date = 1936.1.1.12
+		picture = GFX_select_date_1936
+		effect = { randomize_weather = 12345 }
+	}
+}

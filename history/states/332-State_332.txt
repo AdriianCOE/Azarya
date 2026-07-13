@@ -1,24 +1,27 @@
+state = {
+	id = 332
+	name = "STATE_WT_332"
+	manpower = 2892000
+	state_category = metropolis
+	resources = {
+		steel = 11
+		chromium = 9
+	}
 
-state={
-	id=332
-	name="STATE_332"
-
-	history={
-		owner = SLV
+	history = {
+		owner = GYE
+		add_core_of = GYE
 		buildings = {
-			air_base = 1
 			infrastructure = 1
-
+			arms_factory = 4
+			industrial_complex = 6
+			air_base = 3
 		}
-		add_core_of = SLV
-
+		victory_points = { 4677 20 }
+		victory_points = { 7550 5 }
 	}
 
-	provinces={
-		73 376 687 1382 1576 3319 3391 7351 7375 7432 7440 7445 7462 7483 7498 7504 7573 
+	provinces = {
+		89 132 802 1350 1483 1563 1568 1849 2075 2248 2374 2886 3003 3023 3811 3953 4677 5011 7286 7304 7324 7327 7335 7367 7380 7384 7393 7395 7410 7414 7419 7433 7436 7441 7452 7463 7472 7499 7518 7523 7540 7544 7550 7587
 	}
-	manpower=107987
-	buildings_max_level_factor=1.000
-	state_category=rural
-	local_supplies=0.000
 }

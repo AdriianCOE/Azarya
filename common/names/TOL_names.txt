@@ -1,0 +1,10 @@
+TOL = {
+	male = {
+		names = { "Alex" "Benjamin" "Charles" "David" "Edward" "Frank" "George" "Henry" "James" "John" "Kevin" "Louis" "Michael" "Nathan" "Oliver" "Peter" }
+	}
+	female = {
+		names = { "Alice" "Beatrice" "Catherine" "Diana" "Emma" "Fiona" "Grace" "Helen" "Isabel" "Julia" "Kate" "Laura" "Maria" "Nora" "Olivia" "Patricia" }
+	}
+	surnames = { "Smith" "Jones" "Taylor" "Brown" "Williams" "Wilson" "Evans" "Walker" "White" "Roberts" "Lewis" "Harris" "Clark" "Young" "King" "Hill" }
+	callsigns = { }
+}

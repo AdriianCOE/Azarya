@@ -1,36 +1,24 @@
+state = {
+	id = 346
+	name = "STATE_WT_346"
+	manpower = 190592
+	state_category = rural
 
-state={
-	id=346
-	name="Alaricium"
-	resources={
-		steel=20.000
-	}
-	history={
-		owner = GYE
-		victory_points = {
-			15850 50 
-		}
-		victory_points = {
-			7524 25 
-		}
-		victory_points = {
-			1217 15
-		}
+	history = {
+		owner = SLV
+		add_core_of = SLV
 		buildings = {
-			industrial_complex = 6
-			arms_factory = 3
-			air_base = 3
-			infrastructure = 4
+			infrastructure = 1
+			industrial_complex = 1
+			dockyard = 1
+			1932 = {
+				naval_base = 2
+			}
 		}
-		add_core_of = GYE
-
+		victory_points = { 1932 1 }
 	}
 
-	provinces={
-		318 578 798 1217 15850 1280 1502 1640 1957 2059 2468 7492 2469 2610 2619 2662 2703 3616 3815 3820 4203 4357 4740 4756 5008 7524 7534 7545 7575 7603 7608 7630 7639 7651 7658 7662 7711 7719 7734 7755 7758 7775 7789 7807 7817 7857 7882 7889 7911 
+	provinces = {
+		1932 3113 7572 7602 7611 7616 7647 7689 7693
 	}
-	manpower=6859285
-	buildings_max_level_factor=1.000
-	state_category=megalopolis
-	local_supplies=0.000
 }

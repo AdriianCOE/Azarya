@@ -1,22 +1,25 @@
-state={
-	id=478
-	name="Sancta"
-	history={
-		owner = SIT
-		victory_points = {
-			3414 5
-		}
-		buildings = {
-			infrastructure = 2
-		}
-		add_core_of = SIT
+state = {
+	id = 478
+	name = "STATE_WT_478"
+	manpower = 595839
+	state_category = rural
 
+	history = {
+		owner = SIT
+		add_core_of = SIT
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			dockyard = 1
+			562 = {
+				naval_base = 2
+			}
+		}
+		victory_points = { 4258 10 }
+		victory_points = { 6796 5 }
 	}
-	provinces={
-		485 789 1586 1269 4698 6894 6959 6909 3010 3234 3414 6960 6986 2642 4650 7014 1890 6852
+
+	provinces = {
+		194 461 562 580 1085 1158 1460 1736 2005 2090 4258 4641 6640 6751 6796 6803 6818 6918 6922 6962
 	}
-	manpower=718578
-	buildings_max_level_factor=1.000
-	state_category=rural
-	local_supplies=0.000
 }

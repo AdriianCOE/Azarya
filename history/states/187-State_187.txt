@@ -1,19 +1,27 @@
+state = {
+	id = 187
+	name = "STATE_WT_187"
+	manpower = 2193842
+	state_category = city
 
-state={
-	id=187
-	name="STATE_187"
-	history={
-		owner = VRD
+	history = {
+		owner = MOR
+		add_core_of = MOR
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 4
+			dockyard = 2
+			air_base = 2
+			738 = {
+				naval_base = 3
+			}
 		}
-		add_core_of = VRD
+		victory_points = { 5642 30 }
+		victory_points = { 134 5 }
 	}
-	provinces={
-		64 619 720 1731 2091 2791 4114 5778 
+
+	provinces = {
+		134 256 738 2006 3140 5630 5642 5650 5655 15901 15902
 	}
-	manpower=1
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
 }

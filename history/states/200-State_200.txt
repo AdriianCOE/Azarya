@@ -1,28 +1,27 @@
-
-state={
-	id=200
-	name="Leninovsk"
-	resources={
-		steel=20.000
+state = {
+	id = 200
+	name = "STATE_WT_200"
+	manpower = 389859
+	state_category = rural
+	resources = {
+		tungsten = 7
 	}
 
-	history={
-		owner = NSA
+	history = {
+		owner = SVD
+		add_core_of = SVD
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 2
-			arms_factory = 1
-
+			infrastructure = 1
+			industrial_complex = 1
+			dockyard = 1
+			1080 = {
+				naval_base = 2
+			}
 		}
-		add_core_of = NSA
-
+		victory_points = { 8 1 }
 	}
 
-	provinces={
-		454 468 480 902 2694 4497 4672 5737 5768 5819 5830 5872 
+	provinces = {
+		8 1080 1872 2218 3105 3168 3665 3715 4276 4311 4900 5890 5913 6009 6019 6098
 	}
-	manpower=501958
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
 }

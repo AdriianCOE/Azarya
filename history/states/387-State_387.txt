@@ -1,34 +1,28 @@
+state = {
+	id = 387
+	name = "STATE_WT_387"
+	manpower = 4500000
+	state_category = large_city
 
-state={
-	id=387
-	name="Leovar Proper"
-	resources = {
-		steel = 50
-	}
-	history={
-		owner = LVD
-		victory_points = {
-			2737  30
-		}
-		victory_points = {
-			8337  20
-		}
-		victory_points = {
-			8618  5
-		}
+	history = {
+		owner = ARD
+		add_core_of = ARD
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 3
 			arms_factory = 3
+			industrial_complex = 5
+			dockyard = 3
 			air_base = 2
+			1436 = {
+				naval_base = 3
+			}
 		}
-		add_core_of = LVD
+		victory_points = { 3679 25 }
+		victory_points = { 8725 15 }
+		victory_points = { 834 5 }
 	}
-	provinces={
-		232 516 681 821 1124 1402 1592 1836 1928 1991 2173 2737 2744 2811 3498 3677 3732 4484 4506 4666 4691 4821 4871 5079 8337 8445 8463 8471 8518 8543 8563 8618 8637 
+
+	provinces = {
+		363 834 928 1071 1419 1436 1977 3622 3679 3738 3793 3959 3972 4127 4247 4307 4461 4590 8574 8636 8648 8665 8703 8709 8725 8751 8752 8788 8848 8859 8960
 	}
-	manpower=5293847
-	buildings_max_level_factor=1.000
-	state_category=megalopolis
-	local_supplies=0.000
 }

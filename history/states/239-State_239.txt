@@ -1,16 +1,25 @@
+state = {
+	id = 239
+	name = "STATE_WT_239"
+	manpower = 694857
+	state_category = rural
 
-state={
-	id=239
-	name="STATE_239"
-	history={
-		owner = DKG
-		add_core_of = DKG
+	history = {
+		owner = SIT
+		add_core_of = SIT
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			dockyard = 1
+			225 = {
+				naval_base = 2
+			}
+		}
+		victory_points = { 6769 5 }
+		victory_points = { 6666 5 }
 	}
-	provinces={
-		39 137 404 866 1328 1415 3062 5030 6335 6371 6384 6434 6559 1035 2504 6604 4917 6673 214
+
+	provinces = {
+		225 249 268 488 602 958 1208 1403 1995 2413 2846 4102 4181 6666 6762 6765 6769 6793 6811 6833 6850 880
 	}
-	manpower=1
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
 }

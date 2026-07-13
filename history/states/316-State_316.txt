@@ -1,24 +1,27 @@
+state = {
+	id = 316
+	name = "STATE_WT_316"
+	manpower = 297403
+	state_category = rural
+	resources = {
+		tungsten = 5
+	}
 
-state={
-	id=316
-	name="Aestia"
-
-	history={
-		owner = GYE
+	history = {
+		owner = CZL
+		add_core_of = CZL
 		buildings = {
+			infrastructure = 1
 			industrial_complex = 1
-			arms_factory = 2
-			infrastructure = 2
+			dockyard = 1
+			3854 = {
+				naval_base = 2
+			}
 		}
-		add_core_of = GYE
-
+		victory_points = { 7302 5 }
 	}
 
-	provinces={
-		240 395 818 1042 1205 1569 2700 2764 3331 3575 7252 7269 7325 
+	provinces = {
+		977 1013 2035 2577 2710 3854 4354 7260 7302 7339 7430
 	}
-	manpower=908942
-	buildings_max_level_factor=1.000
-	state_category=large_town
-	local_supplies=0.000
 }

@@ -1,22 +1,27 @@
+state = {
+	id = 177
+	name = "STATE_WT_177"
+	manpower = 847000
+	state_category = large_town
 
-state={
-	id=177
-	name="Schut"
-	history={
+	history = {
 		owner = BKG
+		add_core_of = BKG
 		buildings = {
 			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 3
+			dockyard = 2
+			air_base = 1
+			2787 = {
+				naval_base = 2
 			}
-	
-			add_core_of = SVD
-			add_core_of = BKG
-			add_core_of = RFO
 		}
-	provinces={
-		863 1368 1453 1733 2294 2309 2870 3147 3323 4035 4596 5486 5522 5523 5550 5579 5612 5617 5674 5698 
+		victory_points = { 5620 12 }
+		victory_points = { 2787 5 }
 	}
-	manpower=219458
-	buildings_max_level_factor=1.000
-	state_category=rural
-	local_supplies=0.000
+
+	provinces = {
+		2787 3196 3837 4732 5142 5597 5606 5616 5620 5624 5651 5667 5682 5693
+	}
 }

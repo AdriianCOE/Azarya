@@ -1,20 +1,23 @@
-state={
-	id=14
-	name="Bafendin"
-	history={
+state = {
+	id = 14
+	name = "STATE_WT_14"
+	manpower = 9859
+	state_category = tiny_island
+
+	history = {
 		owner = RFO
+		add_core_of = RFO
 		buildings = {
 			infrastructure = 1
+			dockyard = 1
+			535 = {
+				naval_base = 2
 			}
-	
-			add_core_of = SVD
-			add_core_of = BKG
-			add_core_of = RFO
 		}
-	provinces={
-		535 
+		victory_points = { 535 1 }
 	}
-	buildings_max_level_factor=1.000
-        manpower=9859
-        state_category = tiny_island	
+
+	provinces = {
+		535
+	}
 }

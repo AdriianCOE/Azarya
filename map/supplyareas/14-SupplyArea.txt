@@ -1,0 +1,8 @@
+supply_area={
+	id=14
+	name="SUPPLYAREA_WT_14"
+	value=10
+	states={
+		196 197 198 199 200 201 202 203 204 205 206 207 208 209 210
+	}
+}

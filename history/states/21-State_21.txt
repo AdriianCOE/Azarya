@@ -1,18 +1,23 @@
-state={
-	id=21
-	name="Mondinsel"
-	history={
+state = {
+	id = 21
+	name = "STATE_WT_21"
+	manpower = 21923
+	state_category = tiny_island
+
+	history = {
 		owner = DTB
+		add_core_of = DTB
 		buildings = {
 			infrastructure = 1
+			dockyard = 1
+			2819 = {
+				naval_base = 2
 			}
-	
-			add_core_of = DTB
 		}
-	provinces={
-		2819 5386 5420 5431 5456 
+		victory_points = { 2819 1 }
 	}
-	buildings_max_level_factor=1.000
-        manpower=21923
-        state_category = tiny_island
+
+	provinces = {
+		2819 5386 5420 5431 5456
+	}
 }

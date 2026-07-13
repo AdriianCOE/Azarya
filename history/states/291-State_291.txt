@@ -1,21 +1,30 @@
+state = {
+	id = 291
+	name = "STATE_WT_291"
+	manpower = 1
+	state_category = town
+	resources = {
+		steel = 9
+		chromium = 2
+	}
 
-state={
-	id=291
-	name="Novus"
-	history={
-		owner = SIT
+	history = {
+		owner = AEI
+		add_core_of = AEI
 		buildings = {
 			infrastructure = 2
+			arms_factory = 1
 			industrial_complex = 2
+			dockyard = 1
+			air_base = 1
+			3886 = {
+				naval_base = 2
+			}
 		}
-		add_core_of = SIT
+		victory_points = { 126 1 }
+	}
 
+	provinces = {
+		126 145 380 422 635 877 1321 2254 2499 2961 3021 3199 3200 3511 3865 3886 4122 4920 5042 7025 7074 7135 7160 7167 7192 7201 7222 7250 7262 7306 7318 7328
 	}
-	provinces={
-		  692 1237 1847 2204 2862 3251  3333 4856 7024 7055 7111  7177 7186 7232
-	}
-	manpower=495827
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
 }

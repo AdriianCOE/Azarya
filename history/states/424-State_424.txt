@@ -1,25 +1,26 @@
+state = {
+	id = 424
+	name = "STATE_WT_424"
+	manpower = 1
+	state_category = town
 
-state={
-	id=424
-	name="Chovepidana"
-
-	history={
-		owner = UPG
+	history = {
+		owner = AEI
+		add_core_of = AEI
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
 			arms_factory = 1
-
+			industrial_complex = 2
+			dockyard = 1
+			air_base = 1
+			1530 = {
+				naval_base = 2
+			}
 		}
-		add_core_of = UPG
-
+		victory_points = { 279 1 }
 	}
 
-	provinces={
-		1463 2971 3763 3929 4306 5054 5101 9025 9039 9060 9081 9107 9132 9146 
+	provinces = {
+		279 486 810 829 1187 1530 1744 2542 3192 3259 3288 3434 3490 3769 3885 3931 3960 4066 4108 4164 4206 4350 4550 4784 4797 5036 5069 8671 8698 8779 8803 8812 8831 8849 8851 8884 8894 8907 8912 8914 8923 8936 8948 8951 8969 8970 9055
 	}
-	manpower=496987
-	buildings_max_level_factor=1.000
-	state_category=rural
-	local_supplies=0.000
 }

@@ -1,0 +1,8 @@
+supply_area={
+	id=19
+	name="SUPPLYAREA_WT_19"
+	value=10
+	states={
+		271 272 273 274 275 276 277 278 279 280 281 282 283 284 285
+	}
+}

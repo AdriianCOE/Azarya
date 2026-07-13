@@ -1,42 +1,25 @@
+state = {
+	id = 136
+	name = "STATE_WT_136"
+	manpower = 310912
+	state_category = town
+	resources = {
+		steel = 17
+	}
 
-state={
-	id=136
-	name="Carmine"
-	resources={
-	aluminium = 5
-}
-
-	history={
+	history = {
 		owner = SLU
 		add_core_of = SLU
-		victory_points = {
-			5231 50 
-		}
-		victory_points = {
-			2439 20 
-		}
-		victory_points = {
-			3017 15 
-		}
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 4
-			arms_factory = 2
-			air_base = 4
-			5231 = {
-				naval_base = 4
-
-			}
-
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2
+			air_base = 1
 		}
-
+		victory_points = { 2697 10 }
 	}
 
-	provinces={
-		2272 2439 2779 2869 3017 5179 5185 5193 5194 5197 5204 5205 5231 
+	provinces = {
+		45 1679 2107 2505 2697 2768 3402 5275 5282 5297 5303 5305 5307 5317 5339
 	}
-	manpower=2395805
-	buildings_max_level_factor=1.000
-	state_category=metropolis
-	local_supplies=0.000
 }

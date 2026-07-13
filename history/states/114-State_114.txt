@@ -1,24 +1,31 @@
-state={
-	id=114
-	name="Rivages Bleus"
-	history={
-		owner = TOL
-		add_core_of = TOL
-		1924.1.1 = {
-			controller = KOZ
+state = {
+	id = 114
+	name = "STATE_WT_114"
+	manpower = 5982
+	state_category = large_city
+	resources = {
+		tungsten = 6
+	}
 
-		     }
+	history = {
+		owner = WIH
+		add_core_of = WIH
 		buildings = {
-			infrastructure = 1
-
+			infrastructure = 4
+			arms_factory = 3
+			industrial_complex = 5
+			dockyard = 3
+			air_base = 2
+			552 = {
+				naval_base = 3
+			}
 		}
-		add_core_of = TOL
+		victory_points = { 5764 30 }
+		victory_points = { 5792 15 }
+		victory_points = { 4612 10 }
+	}
 
+	provinces = {
+		470 552 566 831 942 1297 1383 1439 1617 2026 2060 2101 2152 3123 3142 3178 3942 4172 4376 4496 4513 4612 4627 4692 5738 5751 5763 5764 5787 5792 5817 5820 5837 5838 5841 5858 5873 5882 5897 5906 5907 5915 5920 5930
 	}
-	provinces={
-		1723 4228 9339 9354 9365 
-	}
-	buildings_max_level_factor=1.000
-        manpower=67985
-        state_category = rural
 }

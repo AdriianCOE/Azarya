@@ -1,26 +1,29 @@
+state = {
+	id = 351
+	name = "STATE_WT_351"
+	manpower = 1138497
+	state_category = city
+	resources = {
+		tungsten = 4
+	}
 
-state={
-	id=351
-	name="Akrajuana"
-
-		history={
-			owner = NIR
-			victory_points = {
-				7660 5 
-		}
+	history = {
+		owner = GYE
+		add_core_of = GYE
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 2
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 4
+			dockyard = 2
+			air_base = 2
+			1642 = {
+				naval_base = 3
+			}
 		}
-		add_core_of = NIR
+		victory_points = { 1145 1 }
+	}
 
+	provinces = {
+		1145 1192 1522 1642 2099 2625 2911 3452 3549 3881 4351 5100 7531 7561 7588 7596 7645 7652 7653 7709 7735 7738 7739 7743
 	}
-	
-	provinces={
-		340 348 1121 1727 1966 2094 2198 2690 2937 3088 3615 4201 4235 4419 4817 4862 4885 4924 7660 7674 7706 7707 7708 7733 7766 7784 7809 7821 7873 
-	}
-	manpower=1342921
-	buildings_max_level_factor=1.000
-	state_category=large_town
-	local_supplies=0.000
 }

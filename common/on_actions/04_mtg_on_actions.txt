@@ -1,0 +1,3 @@
+# Empty — TC MOD overrides vanilla 04_mtg_on_actions.txt
+on_actions = {
+}

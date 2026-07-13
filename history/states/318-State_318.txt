@@ -1,26 +1,30 @@
-
-state={
-	id=318
-	name="Ingvaeonia"
+state = {
+	id = 318
+	name = "STATE_WT_318"
+	manpower = 987958
+	state_category = town
 	resources = {
-		chromium = 12
+		tungsten = 7
 	}
 
-	history={
-		owner = GYE
+	history = {
+		owner = SLV
+		add_core_of = SLV
 		buildings = {
-			dockyard = 3
 			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2
+			dockyard = 1
+			air_base = 1
+			2565 = {
+				naval_base = 2
+			}
 		}
-		add_core_of = GYE
-
+		victory_points = { 1150 20 }
+		victory_points = { 3748 15 }
 	}
 
-	provinces={
-		479 721 817 1296 1423 2155 3071 3137 3329 3998 5111 7215 7226 7243 7249 7261 7278 7281 7321 7332 7345 7368 7390 
+	provinces = {
+		742 966 1150 1782 2193 2565 2762 3051 3092 3210 3417 3488 3517 3748 4000 4281 4709 7338 7340 7374 7401 7403 7415 7425 7431 7435 7460 7461 7496
 	}
-	manpower=629586
-	buildings_max_level_factor=1.000
-	state_category=large_town 
-	local_supplies=0.000
 }

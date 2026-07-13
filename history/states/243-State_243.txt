@@ -1,12 +1,25 @@
-
-state={
-	id=243
-	name="STATE_243"
-	provinces={
-		98 472 588 792 1806 2203 2230 2584 2844 3135 3502 3759 4523 4717 4734 4811 5083 6488 6506 6515 6537 6539 6545 6554 6566 6572 6577 6579 6596 
+state = {
+	id = 243
+	name = "STATE_WT_243"
+	manpower = 1
+	state_category = town
+	resources = {
+		oil = 10
 	}
-	manpower=1
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
+
+	history = {
+		owner = TRB
+		add_core_of = TRB
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2
+			air_base = 1
+		}
+		victory_points = { 462 1 }
+	}
+
+	provinces = {
+		462 797 1161 265 6789 530
+	}
 }

@@ -1,12 +1,26 @@
+state = {
+	id = 454
+	name = "STATE_WT_454"
+	manpower = 1
+	state_category = town
 
-state={
-	id=454
-	name="STATE_454"
-	provinces={
-		216 447 1047 1395 1637 2043 2821 3235 3271 3339 3782 4069 5113 8925 8946 8957 8991 8996 9022 9037 9059 9073 9096 9105 9136 9186 
+	history = {
+		owner = AEI
+		add_core_of = AEI
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2
+			dockyard = 1
+			air_base = 1
+			2304 = {
+				naval_base = 2
+			}
+		}
+		victory_points = { 168 1 }
 	}
-	manpower=1
-	state_category=town
-	buildings_max_level_factor=1.000
-	local_supplies=0.000
+
+	provinces = {
+		168 930 2304 3602 4015 4104 8804 8853 8937 8962 8974 8998
+	}
 }

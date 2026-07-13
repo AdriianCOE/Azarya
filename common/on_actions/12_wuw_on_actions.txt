@@ -1,0 +1,3 @@
+# Empty — TC MOD overrides vanilla 12_wuw_on_actions.txt
+on_actions = {
+}

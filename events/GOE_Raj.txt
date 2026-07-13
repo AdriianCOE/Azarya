@@ -1,0 +1,14 @@
+# Emptied — TC MOD overrides vanilla GOE_Raj.txt
+# Reason: references state IDs or scope targets not in TC MOD
+# Keep add_namespace declarations so other files' ID refs don't break
+add_namespace = GOE_RAJ
+add_namespace = GOE_RAJ_partition
+add_namespace = GOE_RAJ_famine
+add_namespace = GOE_RAJ_eic
+add_namespace = GOE_RAJ_princely
+add_namespace = GOE_RAJ_navy
+add_namespace = GOE_RAJ_goa
+add_namespace = GOE_RAJ_generals
+add_namespace = GOE_RAJ_mughals_peace_deal
+add_namespace = GOE_RAJ_loyalist
+add_namespace = GOE_RAJ_news

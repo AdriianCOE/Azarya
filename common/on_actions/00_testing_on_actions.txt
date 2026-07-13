@@ -1,0 +1,3 @@
+# Empty — TC MOD overrides vanilla 00_testing_on_actions.txt
+on_actions = {
+}

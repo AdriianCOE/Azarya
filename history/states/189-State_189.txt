@@ -1,28 +1,28 @@
+state = {
+	id = 189
+	name = "STATE_WT_189"
+	manpower = 1695894
+	state_category = metropolis
 
-state={
-	id=189
-	name="Horbhaulach"
-	resources = {
-		steel = 20
-	}
-
-	history={
-		owner = BKG
-		buildings = {
-			infrastructure = 3
-
-		}
-		add_core_of = SVD
-		add_core_of = BKG
+	history = {
+		owner = RFO
 		add_core_of = RFO
-
+		buildings = {
+			infrastructure = 1
+			arms_factory = 4
+			industrial_complex = 6
+			dockyard = 3
+			air_base = 3
+			2429 = {
+				naval_base = 3
+			}
+		}
+		victory_points = { 2429 20 }
+		victory_points = { 5791 15 }
+		victory_points = { 3377 8 }
 	}
 
-	provinces={
-		411 1257 1552 1781 1840 1889 2753 3411 3570 4601 4981 5714 5728 5735 5756 5761 
+	provinces = {
+		2135 2429 3377 4888 4897 5766 5791 5802 5821 5825
 	}
-	manpower=448592
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
 }

@@ -1,34 +1,20 @@
+state = {
+	id = 303
+	name = "STATE_WT_303"
+	manpower = 317942
+	state_category = rural
 
-state={
-	id=303
-	name="Emporiae"
-	resources={
-	   steel=5
-	}
-	
-    history = {
-        owner = CZL
+	history = {
+		owner = CZL
+		add_core_of = CZL
 		buildings = {
-		    infrastructure = 2	
-			}
-		victory_points = {
-			7241 15 
+			infrastructure = 1
+			industrial_complex = 1
 		}
-		victory_points = {
-			3244 5 
-		}
-		victory_points = {
-			3993 8 
-		}
-			add_core_of = CZL
-		
-    }
-	
-	provinces={
-		467 1316 1372 2095 2920 2929 3244 3311 3359 3993 4087 4770 7117 7144 7209 7241 7273 7310 15857 15858 15859
+		victory_points = { 1892 8 }
 	}
-	manpower=989501
-	buildings_max_level_factor=1.000
-	state_category=city
-	local_supplies=0.000
+
+	provinces = {
+		504 816 1892 1984 2486 2665 3131 3364 3858 4308 4337 7159 7203 7272 7301
+	}
 }

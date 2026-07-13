@@ -1,15 +1,28 @@
+state = {
+	id = 89
+	name = "STATE_WT_89"
+	manpower = 738769
+	state_category = city
 
-state={
-	id=89
-	name="Caeloria"
-
-
-
-	provinces={
-		160 1525 2003 3606 4462 4754 4884 5029 7528 7536 7564 7566 7567 7585 7589 7605 7615 7623 7649 7667 
+	history = {
+		owner = THK
+		add_core_of = THK
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 4
+			dockyard = 2
+			air_base = 2
+			631 = {
+				naval_base = 3
+			}
+		}
+		victory_points = { 4452 25 }
+		victory_points = { 631 10 }
+		victory_points = { 9131 2 }
 	}
-	manpower=9502
-	buildings_max_level_factor=1.000
-	state_category=tiny_island
-	local_supplies=0.000
+
+	provinces = {
+		631 2623 3736 3856 4452 9027 9050 9051 9088 9112 9131 9497 2652
+	}
 }

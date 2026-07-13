@@ -1,0 +1,17 @@
+﻿GENERIC_INF_01 = {
+	name = "Infantry Division"
+
+	for_countries = { }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d Infantry Division"
+
+	ordered = {
+		1 = { "1st Infantry Division" }
+		2 = { "2nd Infantry Division" }
+		3 = { "3rd Infantry Division" }
+	}
+}

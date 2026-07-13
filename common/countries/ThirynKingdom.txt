@@ -1,8 +1,0 @@
-#ThirynKingdom
-
-#use_legacy_ai_pp_spend = yes
-
-graphical_culture = commonwealth_gfx
-graphical_culture_2d = commonwealth_2d
-
-color = { 57  113  228 }

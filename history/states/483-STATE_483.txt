@@ -1,27 +1,21 @@
-
-state={
-	id=483
-	name="State_483"
-	history={
-		owner = AEI
-		victory_points = {
-			1694 10
-		}
-		buildings = {
-			infrastructure = 3
-			industrial_complex = 1
-			1694 = {
-				naval_base = 2
-			}
-		}
-	
-			add_core_of = AEI
-		}
-	provinces={
-		5777 1694 1388 155 5707 2873 5647 5621 5588
+state = {
+	id = 483
+	name = "STATE_WT_483"
+	manpower = 21093
+	state_category = wasteland
+	resources = {
+		steel = 16
 	}
-	manpower=359968
-	buildings_max_level_factor=1.000
-	state_category=rural
-	local_supplies=0.000
+
+	history = {
+		owner = SDB
+		add_core_of = SDB
+		buildings = {
+		}
+		victory_points = { 819 1 }
+	}
+
+	provinces = {
+		819 1621
+	}
 }

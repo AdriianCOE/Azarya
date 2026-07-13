@@ -1,16 +1,27 @@
+state = {
+	id = 222
+	name = "STATE_WT_222"
+	manpower = 1094589
+	state_category = city
 
-state={
-	id=222
-	name="STATE_222"
-	history={
-		owner = DKG
-		add_core_of = DKG
+	history = {
+		owner = GET
+		add_core_of = GET
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 4
+			dockyard = 2
+			air_base = 2
+			729 = {
+				naval_base = 3
+			}
+		}
+		victory_points = { 6238 20 }
+		victory_points = { 6251 5 }
 	}
-	provinces={
-		242 388 646 780 1031 1281 1458 1941 2392 2478 2747 3153 3684 3838 4501 6137 6167 6217 6223 6230 6250 6253 6266 6285 6295 6311 
+
+	provinces = {
+		729 2324 2721 3813 3928 4033 4332 6194 6197 6209 6212 6213 6238 6251 6261 6279 6293 6307
 	}
-	manpower=1
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
 }

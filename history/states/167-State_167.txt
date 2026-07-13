@@ -1,24 +1,27 @@
+state = {
+	id = 167
+	name = "STATE_WT_167"
+	manpower = 1298572
+	state_category = large_city
 
-state={
-	id=167
-	name="Steinbach"
-	history={
-		owner = DTB
-		victory_points = {
-			5514 8
-		}
+	history = {
+		owner = RFO
+		add_core_of = RFO
 		buildings = {
-			dockyard = 1
-			infrastructure = 1
+			infrastructure = 4
+			arms_factory = 3
+			industrial_complex = 5
+			dockyard = 3
+			air_base = 2
+			2597 = {
+				naval_base = 3
 			}
-	
-			add_core_of = DTB
 		}
-	provinces={
-		88 733 1099 1550 2495 2576 2592 2701 2877 2930 3049 4168 4829 5085 5418 5429 5438 5448 5470 5495 5503 5514 5525 5543 5559 5591 5590 5622 5
+		victory_points = { 5411 30 }
+		victory_points = { 5567 5 }
 	}
-	manpower=401938
-	buildings_max_level_factor=1.000
-	state_category=rural
-	local_supplies=0.000
+
+	provinces = {
+		643 1455 2597 2761 2838 3223 3555 3654 5056 5350 5362 5378 5411 5444 5457 5499 5504 5557 5567 5605 5611
+	}
 }

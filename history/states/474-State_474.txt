@@ -1,41 +1,20 @@
-state={
-	id=474
-	name="Maritimia"
-	resources = {
-		rubber = 30
-		oil = 20
-	}
+state = {
+	id = 474
+	name = "STATE_WT_474"
+	manpower = 226828
+	state_category = rural
 
-	history={
-		victory_points = {
-			2790 30
-		}
-		victory_points = {
-			4903 8
-		}
-		owner = MER
-				buildings = {
-			infrastructure = 3
-			arms_factory = 2
-			industrial_complex = 3
-			dockyard = 1
-			2790 = {
-				naval_base = 2
-				coastal_bunker = 2
-				}
-				2393 = {
-					bunker = 3
-				}
-            }
-		add_core_of = MER
+	history = {
+		owner = VRD
 		add_core_of = VRD
-				}
-	provinces={
-		2790 5346 5335 5354 4903 5347 5380 2393
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+		victory_points = { 712 1 }
 	}
-	manpower=2532985
-	buildings_max_level_factor=1.000
-	state_category=metropolis
-	local_supplies=0.000
 
+	provinces = {
+		712 5835 4356 1069 1325 4171 5804 17 4010 124 5963 95 1595 865 239
+	}
 }

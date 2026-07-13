@@ -1,19 +1,22 @@
+state = {
+	id = 17
+	name = "STATE_WT_17"
+	manpower = 2192869
+	state_category = large_city
 
-state={
-	id=17
-	name="Pitlochry"
-	history={
+	history = {
 		owner = DKG
-		victory_points = {
-			2909 30
-		}
 		add_core_of = DKG
+		buildings = {
+			infrastructure = 4
+			arms_factory = 3
+			industrial_complex = 5
+			air_base = 2
+		}
+		victory_points = { 2909 30 }
 	}
-	provinces={
+
+	provinces = {
 		657 1301 1638 1832 2202 2570 2909 3287 3968 4178 4736 6142 6185 6199 6203 6234 6255 6264 6294 6325 6381
 	}
-	manpower=2192869
-	buildings_max_level_factor=1.000
-	state_category=large_city
-	local_supplies=0.000
 }

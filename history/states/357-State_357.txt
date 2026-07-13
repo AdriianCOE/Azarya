@@ -1,34 +1,26 @@
-
-state={
-	id=357
-	name="Kaltmark"
+state = {
+	id = 357
+	name = "STATE_WT_357"
+	manpower = 1
+	state_category = town
 	resources = {
-		aluminium = 40
+		steel = 6
+		chromium = 3
 	}
-			history={
-		owner = GYE
-		victory_points = {
-			7825 10
-		}
-		victory_points = {
-			7858 5
-		}
+
+	history = {
+		owner = AEI
+		add_core_of = AEI
 		buildings = {
-			industrial_complex = 1
-			infrastructure = 3
+			infrastructure = 2
 			arms_factory = 1
-			dockyard = 3
-			7825 = {
-				naval_base = 2
-			}
+			industrial_complex = 2
+			air_base = 1
 		}
-		add_core_of = GYE
+		victory_points = { 238 1 }
 	}
-	provinces={
-		514 1050 1125 1329 1670 2120 2552 2832 3193 3877 4979 7759 7783 7808 7824 7825 7845 7858 7880 7917 7939 7945 7980 7987 7997 8003 8032 8041 
+
+	provinces = {
+		238 475 1191 1590 1931 2501 2539 3041 3303 3353 3701 3799 4293 4635 4877 4938 7609 7636 7671 7680 7686 7690 7724 7756 7757 7771 7792 7843 7846 7852 7894
 	}
-	manpower=1996958
-	buildings_max_level_factor=1.000
-	state_category=large_city
-	local_supplies=0.000
 }

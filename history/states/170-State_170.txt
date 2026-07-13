@@ -1,22 +1,26 @@
+state = {
+	id = 170
+	name = "STATE_WT_170"
+	manpower = 698578
+	state_category = large_town
 
-state={
-	id=170
-	name="Karlsbach"
-	history={
-		owner = BKG
+	history = {
+		owner = NSA
+		add_core_of = NSA
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 3
+			dockyard = 2
+			air_base = 1
+			361 = {
+				naval_base = 2
 			}
-	
-			add_core_of = SVD
-			add_core_of = BKG
-			add_core_of = RFO
 		}
-	provinces={
-		1975 3091 3324 4686 4716 4737 5453 5459 5479 5485 5516 5521 5526 
+		victory_points = { 3706 12 }
 	}
-	manpower=768293
-	buildings_max_level_factor=1.000
-	state_category=large_town
-	local_supplies=0.000
+
+	provinces = {
+		129 361 497 501 1265 1516 1584 2141 3424 3623 3706 4001 4619 4665 4844 5850 5861 5864 5916 6036 6060 6081
+	}
 }

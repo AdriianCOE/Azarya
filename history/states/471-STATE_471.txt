@@ -1,0 +1,21 @@
+state = {
+	id = 471
+	name = "STATE_WT_471"
+	manpower = 12576
+	state_category = wasteland
+	resources = {
+		steel = 15
+	}
+
+	history = {
+		owner = CBS
+		add_core_of = CBS
+		buildings = {
+		}
+		victory_points = { 944 1 }
+	}
+
+	provinces = {
+		944 372
+	}
+}

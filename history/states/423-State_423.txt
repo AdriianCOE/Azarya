@@ -1,12 +1,20 @@
+state = {
+	id = 423
+	name = "STATE_WT_423"
+	manpower = 496987
+	state_category = rural
 
-state={
-	id=423
-	name="STATE_423"
-	provinces={
-		1323 1379 1575 1623 1802 2194 2234 2372 2742 3029 3742 3915 4563 4655 4662 8975 9010 9040 9046 9063 9076 9103 9104 9135 9159 9168 9193 9222 9240 9247 
+	history = {
+		owner = UPG
+		add_core_of = UPG
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+		victory_points = { 1463 1 }
 	}
-	manpower=1
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
+
+	provinces = {
+		1463 2971 3763 3929 4306 5054 5101 9025 9039 9060 9081 9107 9132 9146
+	}
 }

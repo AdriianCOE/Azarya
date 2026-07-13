@@ -1,29 +1,20 @@
+state = {
+	id = 23
+	name = "STATE_WT_23"
+	manpower = 201928
+	state_category = rural
 
-state={
-	id=23
-	name="Illyricum"
-	resources = {
-		oil = 10
-	}
-
-	history={
+	history = {
 		owner = GYE
-		victory_points = {
-			957 5 
-		}
-		buildings = {
-			industrial_complex = 1
-			infrastructure = 1
-		}
 		add_core_of = GYE
-
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+		victory_points = { 957 5 }
 	}
 
-	provinces={
-		103 347 391 445 957 1452 1814 2231 2358 2401 3159 4089 4973 5107 6953 7027 7040 7044 7048 7092 7097 7113 7118 7142 7150 7168 7184 7190 7200 
+	provinces = {
+		103 347 391 445 957 1452 1814 2231 2358 2401 3159 4089 4973 5107 6953 7027 7040 7044 7048 7092 7097 7113 7118 7142 7150 7168 7184 7190 7200
 	}
-	manpower=201928
-	buildings_max_level_factor=1.000
-	state_category=rural
-	local_supplies=0.000
 }

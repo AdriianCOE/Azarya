@@ -1,22 +1,24 @@
+state = {
+	id = 4
+	name = "STATE_WT_4"
+	manpower = 159684
+	state_category = rural
 
-state={
-	id=4
-	name="Mon Island"
-
-	history={
+	history = {
 		owner = NSA
+		add_core_of = NSA
 		buildings = {
 			infrastructure = 1
+			industrial_complex = 1
+			dockyard = 1
+			204 = {
+				naval_base = 2
+			}
 		}
-		add_core_of = NSA
-
+		victory_points = { 204 1 }
 	}
 
-	provinces={
-		204 830 871 997 1079 1786 2368 3421 3795 4477 4806 6037 6085 6092 6110 6243 
+	provinces = {
+		204 830 871 997 1079 1786 2368 3421 3795 4477 4806 6037 6085 6092 6110 6243
 	}
-	manpower=159684
-	buildings_max_level_factor=1.000
-	state_category=rural
-	local_supplies=0.000
 }

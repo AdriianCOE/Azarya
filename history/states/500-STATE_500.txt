@@ -1,25 +1,26 @@
-state={
-	id=500
-	name="Shast"
-	history={
-		owner = SHT
-		victory_points = {
-			1038 20 
-		}
-		buildings = {
-			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 1
+state = {
+	id = 500
+	name = "STATE_WT_500"
+	manpower = 212501
+	state_category = city
 
+	history = {
+		owner = EYD
+		add_core_of = EYD
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 4
+			dockyard = 2
+			air_base = 2
+			13514 = {
+				naval_base = 3
+			}
 		}
-		add_core_of = SHT
-		add_core_of = NIR
+		victory_points = { 14988 12 }
 	}
-	provinces={
-		2500 8401 8430 8418 1038 8478 1818 8523 3427 4847
+
+	provinces = {
+		13514 15021 13077 13597 15911 14988 15913 15912 11349 15927
 	}
-	manpower=212501
-	buildings_max_level_factor=1.000
-	state_category=rural
-	local_supplies=0.000
 }

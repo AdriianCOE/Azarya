@@ -1,14 +1,19 @@
+state = {
+	id = 53
+	name = "STATE_WT_53"
+	manpower = 989
+	state_category = tiny_island
 
-state={
-	id=53
-	name="Vive"
-
-
-	provinces={
-		1289 1465 1742 1827 2011 2089 2159 2184 2828 3330 3650 3802 3977 4103 4587 4922 5124 7721 7741 7749 7750 7764 7833 7854 7861 7867 7905 7906 7915 7924 7940 7955 7962 7968 8015 
+	history = {
+		owner = AEI
+		add_core_of = AEI
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = { 1289 1 }
 	}
-	manpower=989
-	buildings_max_level_factor=1.000
-	state_category=tiny_island
-	local_supplies=0.000
+
+	provinces = {
+		1289 1465 1742 1827 2011 2089 2159 2184 2828 3330 3650 3802 3977 4103 4587 4922 5124 7721 7741 7749 7750 7764 7833 7854 7861 7867 7905 7906 7915 7924 7940 7955 7962 7968 8015
+	}
 }

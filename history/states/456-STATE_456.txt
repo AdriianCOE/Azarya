@@ -1,0 +1,22 @@
+state = {
+	id = 456
+	name = "STATE_WT_456"
+	manpower = 1
+	state_category = wasteland
+	resources = {
+		steel = 17
+		chromium = 6
+	}
+
+	history = {
+		owner = MOR
+		add_core_of = MOR
+		buildings = {
+		}
+		victory_points = { 5848 1 }
+	}
+
+	provinces = {
+		5848 1326 1347
+	}
+}

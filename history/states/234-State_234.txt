@@ -1,16 +1,30 @@
+state = {
+	id = 234
+	name = "STATE_WT_234"
+	manpower = 3392859
+	state_category = metropolis
+	resources = {
+		tungsten = 3
+	}
 
-state={
-	id=234
-	name="STATE_234"
-	history={
-		owner = VAL
-		add_core_of = VAL
+	history = {
+		owner = SIT
+		add_core_of = SIT
+		buildings = {
+			infrastructure = 1
+			arms_factory = 4
+			industrial_complex = 6
+			dockyard = 3
+			air_base = 3
+			1068 = {
+				naval_base = 3
+			}
+		}
+		victory_points = { 3001 12 }
+		victory_points = { 6557 8 }
 	}
-	provinces={
-		822 1676 1722 1981 2116 2895 3872 4062 4363 4423 4609 6385 6399 6435 6452 6480 6481 6526 6540 6541 
+
+	provinces = {
+		114 329 660 1068 1076 1376 1517 2319 3001 3032 3217 3315 3336 3592 3913 3940 4107 4173 6651 4704 5049 6509 6535 6536 6542 6557 6569 6570 6585 6599 6613 6620 6622 6631 6644 6645 6660 6661 6670 6674 6680 6684
 	}
-	manpower=1
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
 }

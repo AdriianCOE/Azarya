@@ -1,24 +1,25 @@
-state={
-	id=492
-	name="Pikespin"
-	history={
-		owner = FVI
-		victory_points = {
-			7699 15
-		}
+state = {
+	id = 492
+	name = "STATE_WT_492"
+	manpower = 790593
+	state_category = large_town
+	resources = {
+		tungsten = 6
+	}
+
+	history = {
+		owner = MEK
+		add_core_of = MEK
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
-			arms_factory = 2
+			arms_factory = 1
+			industrial_complex = 3
+			air_base = 1
 		}
-			add_core_of = FVI
-			add_core_of = NIR
-		}
-	provinces={
-		164 1335 1648 3326 3409 3964 4285 4771 7670 7699 7774 7779 7796 7815 
+		victory_points = { 6400 1 }
 	}
-	manpower=890593
-	buildings_max_level_factor=1.000
-	state_category=large_town
-	local_supplies=0.000
+
+	provinces = {
+		6400 6373 6359 4045 6299 2275 4998 6267 4978 3284 6231 1998 6187 6164 2391
+	}
 }

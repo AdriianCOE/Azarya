@@ -1,24 +1,23 @@
-state={
-	id=499
-	name="Sidest"
-	history={
-		owner = BLA
-		victory_points = {
-			8319 20 
-		}
+state = {
+	id = 499
+	name = "STATE_WT_499"
+	manpower = 212501
+	state_category = rural
+	resources = {
+		tungsten = 5
+	}
+
+	history = {
+		owner = SHT
+		add_core_of = SHT
 		buildings = {
-			infrastructure = 2
-			arms_factory = 1
+			infrastructure = 1
 			industrial_complex = 1
 		}
-		add_core_of = BLA
-		add_core_of = NIR
+		victory_points = { 1038 20 }
 	}
-	provinces={
-		522 610 1811 1859 1909 2148 4680 8220 8233 8283 8319 8342 15813 
+
+	provinces = {
+		2500 8401 8430 8418 1038 8478 1818 8523 3427 4847
 	}
-	manpower=322501
-	buildings_max_level_factor=1.000
-	state_category=rural
-	local_supplies=0.000
 }

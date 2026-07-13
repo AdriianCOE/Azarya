@@ -1,0 +1,1 @@
+# Empty — no vanilla generic files for common/ai_equipment

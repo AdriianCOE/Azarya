@@ -1,16 +1,26 @@
-state={
-	id=505
-	name="Net"
-	history={
+state = {
+	id = 505
+	name = "STATE_WT_505"
+	manpower = 500938
+	state_category = town
+
+	history = {
 		owner = LUA
 		add_core_of = LUA
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2
+			dockyard = 1
+			air_base = 1
+			1260 = {
+				naval_base = 2
+			}
+		}
+		victory_points = { 6117 5 }
 	}
-	provinces={
-		15929
+
+	provinces = {
+		314 1260 1479 1509 1803 2066 2070 2435 2517 3302 3481 4220 6117 6121 6316 6394 15930 15932 15933 41
 	}
-	manpower=10938
-	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=0.000
-	impassable=yes
 }

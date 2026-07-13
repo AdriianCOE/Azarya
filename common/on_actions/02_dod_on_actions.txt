@@ -1,0 +1,3 @@
+# Empty — TC MOD overrides vanilla 02_dod_on_actions.txt
+on_actions = {
+}

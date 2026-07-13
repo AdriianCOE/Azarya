@@ -1,34 +1,29 @@
+state = {
+	id = 128
+	name = "STATE_WT_128"
+	manpower = 659294
+	state_category = large_town
+	resources = {
+		tungsten = 2
+	}
 
-state={
-	id=128
-	name="Solari"
-	history={
+	history = {
 		owner = SLU
-		victory_points = {
-			3814 28
-		}
-		victory_points = {
-			4720 15
-		}
-		buildings = {
-			infrastructure = 3
-			industrial_complex = 2
-			arms_factory = 2
-			air_base = 2
-			3814 = {
-				naval_base = 2
-
-			}
-
-		}
 		add_core_of = SLU
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 3
+			dockyard = 2
+			air_base = 1
+			1456 = {
+				naval_base = 2
+			}
+		}
+		victory_points = { 1456 1 }
+	}
 
+	provinces = {
+		1456 1936 2654 3581 3721 4013 4952 5166 5169 5171 5175 5176 5177 5181 5182 5186 5188 5189 5198 5201 5206
 	}
-	provinces={
-		2653 2845 3814 3848 4133 4720 5174 5187 5190 5200 5202 5207 5210 5218 5232 
-	}
-	manpower=1524323
-	buildings_max_level_factor=1.000
-	state_category=large_city
-	local_supplies=0.000
 }

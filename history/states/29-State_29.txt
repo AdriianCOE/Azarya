@@ -1,19 +1,23 @@
-state={
-	id=29
-	name="Isla Maronnia"
-	history={
-		owner = EYD
-		buildings = {
-			infrastructure = 0
-		}
-		add_core_of = EYD
-		
+state = {
+	id = 29
+	name = "STATE_WT_29"
+	manpower = 2194
+	state_category = tiny_island
 
+	history = {
+		owner = EYD
+		add_core_of = EYD
+		buildings = {
+			infrastructure = 1
+			dockyard = 1
+			9491 = {
+				naval_base = 2
+			}
+		}
+		victory_points = { 9491 1 }
 	}
-	provinces={
-		9491 
+
+	provinces = {
+		9491
 	}
-	buildings_max_level_factor=1.000
-        manpower=2194
-        state_category = tiny_island
 }

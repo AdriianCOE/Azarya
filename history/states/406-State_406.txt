@@ -1,31 +1,29 @@
-
-state={
-	id=406
-	name="Karltonia"
-	history={
-		owner = KOZ
-		victory_points = {
-			4191  10
-		}
-		victory_points = {
-			4378  5
-		}
-		victory_points = {
-			3415 5
-		}
-		buildings = {
-			infrastructure = 3
-			arms_factory = 2
-			industrial_complex = 2
-		    }
-		add_core_of = KOZ
-
-    }
-	provinces={
-		 950 1282 1482 2029 3236 3415 3416 4039 4191 4226 4378 4838 8448 8555 8591 8604 8691 8739 8744 8842 8902 8913 
+state = {
+	id = 406
+	name = "STATE_WT_406"
+	manpower = 1
+	state_category = town
+	resources = {
+		tungsten = 5
 	}
-	manpower=1754985
-	buildings_max_level_factor=1.000
-	state_category=large_town
-	local_supplies=0.000
+
+	history = {
+		owner = AEI
+		add_core_of = AEI
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2
+			dockyard = 1
+			air_base = 1
+			2450 = {
+				naval_base = 2
+			}
+		}
+		victory_points = { 219 1 }
+	}
+
+	provinces = {
+		219 406 1108 1130 1972 2450 2935 3282 3507 3521 3878 3900 4439 5090 8659 8686 8693 8722 8736 8742 8793 8855 8880 8904 8933 8977 9018
+	}
 }

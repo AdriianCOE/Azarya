@@ -1,20 +1,27 @@
+state = {
+	id = 155
+	name = "STATE_WT_155"
+	manpower = 2189682
+	state_category = city
 
-state={
-	id=155
-	name="Komarovsk"
-	history={
-		owner = NSA
+	history = {
+		owner = VRD
+		add_core_of = VRD
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 4
+			dockyard = 2
+			air_base = 2
+			382 = {
+				naval_base = 3
 			}
-	
-			add_core_of = NSA
 		}
-	provinces={
-		1400 2291 2354 2908 2970 4703 5483 5492 5506 5520 5540 5571 5587 
+		victory_points = { 5371 10 }
+		victory_points = { 5469 5 }
 	}
-	manpower=201948
-	buildings_max_level_factor=1.000
-	state_category=rural
-	local_supplies=0.000
+
+	provinces = {
+		87 382 634 1741 2786 3338 3599 3753 4623 4671 5006 5110 5345 5353 5358 5367 5371 5375 5383 5384 5395 5404 5407 5417 5425 5465 5428 5450 5469 5477 5478 5488 5493 5501 5509 5513
+	}
 }

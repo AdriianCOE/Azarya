@@ -1,34 +1,28 @@
+state = {
+	id = 194
+	name = "STATE_WT_194"
+	manpower = 658982
+	state_category = town
 
-state={
-	id=194
-	name="Geilernachia"
-	history={
-		owner = BKG
-		victory_points = {
-			5854 18
-		}
-		victory_points = {
-			5885 14
-		}
+	history = {
+		owner = SVD
+		add_core_of = SVD
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
 			arms_factory = 1
-			industrial_complex = 1
+			industrial_complex = 2
+			dockyard = 1
 			air_base = 1
-			5854 = {
-				naval_base = 3
-				}
+			3274 = {
+				naval_base = 2
 			}
-	
-			add_core_of = SVD
-			add_core_of = BKG
-			add_core_of = RFO
 		}
-	provinces={
-		313 744 1513 3714 4799 5836 5846 5854 5857 5885 5922 
+		victory_points = { 5075 12 }
+		victory_points = { 2213 5 }
+		victory_points = { 5860 5 }
 	}
-	manpower=1442189
-	buildings_max_level_factor=1.000
-	state_category=large_city
-	local_supplies=0.000
+
+	provinces = {
+		965 1075 1443 1712 2142 2213 2498 2726 2784 2793 2834 3274 3682 4216 4290 4362 5075 5844 5849 5851 5859 5860 5863 5875 5876 5879 5888 5904 5909 5918 5921 5934
+	}
 }

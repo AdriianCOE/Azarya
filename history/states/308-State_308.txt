@@ -1,31 +1,26 @@
-state={
-	id=308
-	name="Divinant"
+state = {
+	id = 308
+	name = "STATE_WT_308"
+	manpower = 1
+	state_category = town
 
-	    history = {
-        owner = BOM
-		victory_points = {
-			3629 20 
-		}
-		victory_points = {
-			7240 8 
-		}
+	history = {
+		owner = AEI
+		add_core_of = AEI
 		buildings = {
-			infrastructure = 3	
-			industrial_complex = 2
+			infrastructure = 2
 			arms_factory = 1
+			industrial_complex = 2
 			dockyard = 1
-
+			air_base = 1
+			228 = {
+				naval_base = 2
+			}
 		}
-		add_core_of = BOM
+		victory_points = { 228 1 }
+	}
 
+	provinces = {
+		228 358 524 665 1559 2000 2166 2485 3279 7121 7128 7155 7199 7216 7239 7300 7308 7356
 	}
-	
-	provinces={
-		1795 1831 2112 2124 2270 2847 3239 3328 3425 3566 3629 3766 4073 4083 4296 4643 4822 6957 6999 7013 7033 7038 7058 7070 7086 7094 7163 7164 7171 7195 7220 7229 7240 7246 7265 7266 7274 7284 7297 
-	}
-	buildings_max_level_factor=1.000
-        manpower=2459875
-        state_category = large_town
 }
-

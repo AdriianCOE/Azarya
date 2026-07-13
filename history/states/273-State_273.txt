@@ -1,12 +1,25 @@
-
-state={
-	id=273
-	name="STATE_273"
-	provinces={
-		81 311 702 941 1037 1060 2093 2947 4702 6877 6948 
+state = {
+	id = 273
+	name = "STATE_WT_273"
+	manpower = 1
+	state_category = town
+	resources = {
+		oil = 4
 	}
-	manpower=1
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
+
+	history = {
+		owner = AEI
+		add_core_of = AEI
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2
+			air_base = 1
+		}
+		victory_points = { 167 1 }
+	}
+
+	provinces = {
+		167 439 658 909 1364 2086 2133 2175 2191 2566 3004 3567 3635 3670 3992 4011 4052 4284 5104 6903 6938 6955 6976 6990 6995 7012 7015 7020 7021 7042 7047 7063 7068 7078
+	}
 }

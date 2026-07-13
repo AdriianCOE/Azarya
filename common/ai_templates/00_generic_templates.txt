@@ -1,0 +1,80 @@
+# Generic AI templates — no allowed filter, matches all countries
+infantry_generic = {
+	role = infantry
+	upgrade_prio = { base = 2 }
+	infantry_default = {
+		upgrade_prio = { base = 1 }
+		target_template = {
+			regiments = {
+				infantry = 6
+			}
+		}
+		target_min_match = 0.5
+	}
+}
+garrison_generic = {
+	role = garrison
+	upgrade_prio = { base = 1 }
+	garrison_default = {
+		upgrade_prio = { base = 1 }
+		target_template = {
+			regiments = {
+				infantry = 4
+			}
+		}
+		target_min_match = 0.5
+	}
+}
+cavalry_generic = {
+	role = cavalry
+	upgrade_prio = { base = 1 }
+	cavalry_default = {
+		upgrade_prio = { base = 1 }
+		target_template = {
+			regiments = {
+				cavalry = 6
+			}
+		}
+		target_min_match = 0.5
+	}
+}
+motorized_generic = {
+	role = motorized
+	upgrade_prio = { base = 1 }
+	motorized_default = {
+		upgrade_prio = { base = 1 }
+		target_template = {
+			regiments = {
+				motorized = 6
+			}
+		}
+		target_min_match = 0.5
+	}
+}
+mechanized_generic = {
+	role = mechanized
+	upgrade_prio = { base = 1 }
+	mechanized_default = {
+		upgrade_prio = { base = 1 }
+		target_template = {
+			regiments = {
+				mechanized = 6
+			}
+		}
+		target_min_match = 0.5
+	}
+}
+armor_generic = {
+	role = armor
+	upgrade_prio = { base = 2 }
+	armor_default = {
+		upgrade_prio = { base = 1 }
+		target_template = {
+			regiments = {
+				light_armor = 4
+				motorized = 4
+			}
+		}
+		target_min_match = 0.5
+	}
+}

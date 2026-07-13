@@ -1,0 +1,3 @@
+# Empty — TC MOD overrides vanilla 08_bba_on_actions.txt
+on_actions = {
+}

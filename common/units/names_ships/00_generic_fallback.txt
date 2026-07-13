@@ -1,0 +1,11 @@
+﻿GENERIC_SHIPS = {
+	name = "Generic Ships"
+	for_countries = { }
+	type = ship
+	prefix = ""
+	unique = {
+		"Hope" "Victory" "Glory" "Honor" "Liberty" "Dawn"
+		"Valiant" "Courage" "Pride" "Endeavor" "Triumph" "Conquest"
+	}
+	fallback_name = "Ship %d"
+}

@@ -1,22 +1,27 @@
+state = {
+	id = 120
+	name = "STATE_WT_120"
+	manpower = 822347
+	state_category = large_town
 
-state={
-	id=120
-	name="Brisevent"
-	history={
-		owner = WIH
+	history = {
+		owner = SLU
+		add_core_of = SLU
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 3
+			dockyard = 2
+			air_base = 1
+			271 = {
+				naval_base = 2
 			}
-	
-		add_core_of = WIH
 		}
-
-
-	provinces={
-		794 1167 1319 1424 1618 1914 1930 2462 2730 3207 3433 3523 3892 4004 4040 4227 4783 4827 5896 5917 5923 5926 5935 5937 5961 5973 5974 6001 6025 
+		victory_points = { 271 10 }
+		victory_points = { 5159 5 }
 	}
-	manpower=589869
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
+
+	provinces = {
+		181 271 852 1361 3068 5151 5152 5154 5155 5157 5159 5165 5167
+	}
 }

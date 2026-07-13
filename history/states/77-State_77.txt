@@ -1,31 +1,26 @@
-
 state = {
 	id = 77
-	name = Castlecross
-	manpower = 898482
-	state_category = large_town
-		resources={
-		chromium=3
-	}
+	name = "STATE_WT_77"
+	manpower = 1
+	state_category = town
 
 	history = {
-		owner = THK
-		add_core_of = THK
-		victory_points = {
-			8289 12
-		}
-		victory_points = {
-			8262 5
-		}
+		owner = AEI
+		add_core_of = AEI
 		buildings = {
 			infrastructure = 2
-			air_base = 1
 			arms_factory = 1
-			industrial_complex = 1
+			industrial_complex = 2
+			dockyard = 1
+			air_base = 1
+			3734 = {
+				naval_base = 2
+			}
 		}
+		victory_points = { 3734 1 }
 	}
 
 	provinces = {
-		874 2296 2949 3710 4095 4919 5060 5121 8155 8156 8176 8197 8200 8206 8261 8262 8289 8335 8102 284 5084 8157
+		3734
 	}
 }

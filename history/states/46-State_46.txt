@@ -1,15 +1,26 @@
-state={
-	id=46
-	name="STATE_46"
-	history={
+state = {
+	id = 46
+	name = "STATE_WT_46"
+	manpower = 1
+	state_category = town
+
+	history = {
 		owner = MEK
 		add_core_of = MEK
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2
+			dockyard = 1
+			air_base = 1
+			4392 = {
+				naval_base = 2
+			}
+		}
+		victory_points = { 4392 1 }
+	}
 
+	provinces = {
+		4392 6225
 	}
-	provinces={
-		4392 6225 
-	}
-	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
 }

@@ -1,31 +1,22 @@
+state = {
+	id = 384
+	name = "STATE_WT_384"
+	manpower = 1
+	state_category = town
 
-state={
-	id=384
-	name="Eastreach"
-	resources = {
-		chromium = 18
-	}
-	history={
-		owner = LVD
-		victory_points = {
-			8160 5
-		}
+	history = {
+		owner = AEI
+		add_core_of = AEI
 		buildings = {
 			infrastructure = 2
-			dockyard = 1
-			industrial_complex = 1
+			arms_factory = 1
+			industrial_complex = 2
 			air_base = 1
-			8160 = {
-			naval_base = 1
-			}
 		}
-		add_core_of = LVD
+		victory_points = { 569 1 }
 	}
-	provinces={
-		531 1690 2445 2732 3229 4502 4648 4687 8160 8259 8284 8388 8431 8479 
+
+	provinces = {
+		569 967 1177 1622 1945 2082 2829 8025 8077 8117 8150 8202 8234
 	}
-	manpower=921827
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
 }

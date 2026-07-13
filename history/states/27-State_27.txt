@@ -1,31 +1,29 @@
-
-state={
-	id=27
-	name="Oakenridge"
+state = {
+	id = 27
+	name = "STATE_WT_27"
+	manpower = 849582
+	state_category = town
 	resources = {
-		oil=12
+		tungsten = 3
 	}
-	history={
+
+	history = {
 		owner = EYD
-		victory_points = {
-			5692 30
-		}
+		add_core_of = EYD
 		buildings = {
 			infrastructure = 2
-			dockyard = 2
-			5692 = {
-				naval_base = 1
+			arms_factory = 1
+			industrial_complex = 2
+			dockyard = 1
+			air_base = 1
+			1137 = {
+				naval_base = 2
 			}
 		}
-		add_core_of = EYD
-		
-
+		victory_points = { 5692 30 }
 	}
-	provinces={
+
+	provinces = {
 		536 1137 1202 1369 1461 3012 3470 5664 5676 5692 5718 5810 5823 5826 5842 5893 5932
 	}
-	manpower=849582
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
 }

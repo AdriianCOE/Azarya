@@ -1,17 +1,26 @@
-state={
-	id=103
-	name="Crownport Isles"
-	history={
-		owner = CMR
+state = {
+	id = 103
+	name = "STATE_WT_103"
+	manpower = 1
+	state_category = town
+
+	history = {
+		owner = ARD
+		add_core_of = ARD
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2
+			dockyard = 1
+			air_base = 1
+			9200 = {
+				naval_base = 2
+			}
 		}
-		add_core_of = LVD
+		victory_points = { 9200 1 }
 	}
-	provinces={
-		9196 9202 
+
+	provinces = {
+		9200
 	}
-	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
 }

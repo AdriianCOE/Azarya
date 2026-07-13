@@ -1,22 +1,26 @@
+state = {
+	id = 140
+	name = "STATE_WT_140"
+	manpower = 495000
+	state_category = town
 
-state={
-	id=140
-	name="Luciana"
-
-	history={
+	history = {
 		owner = SLU
+		add_core_of = SLU
 		buildings = {
 			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2
+			dockyard = 1
+			air_base = 1
+			2028 = {
+				naval_base = 2
+			}
 		}
-		add_core_of = SLU
-
+		victory_points = { 2028 5 }
 	}
 
-	provinces={
-		969 1754 2333 2763 2910 3002 3310 4115 4286 4753 4913 4991 4994 5255 5263 5268 5269 5270 5278 5279 5286 5287 
+	provinces = {
+		207 512 1389 1422 2028 3214 3651 3669 3737 4092 4966 5220 5240 5248 5249 5250 5254 5258 5264 5265 5277 5280 5295 5298
 	}
-	manpower=367000
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
 }

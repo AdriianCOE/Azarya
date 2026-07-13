@@ -1,0 +1,3 @@
+# Empty — TC MOD overrides vanilla 13_goe_on_actions.txt
+on_actions = {
+}

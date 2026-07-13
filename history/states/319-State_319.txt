@@ -1,32 +1,22 @@
+state = {
+	id = 319
+	name = "STATE_WT_319"
+	manpower = 1400125
+	state_category = city
 
-state={
-	id=319
-	name="Aillant"
-	resources={
-	steel=6
+	history = {
+		owner = GYE
+		add_core_of = GYE
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 4
+			air_base = 2
+		}
+		victory_points = { 344 1 }
 	}
 
-	history={
-		owner = SLV
-		victory_points = {
-			1150 20
-		}
-		victory_points = {
-			3748 15
-		}
-				buildings = {
-			infrastructure = 2
-
-		}
-		add_core_of = SLV
-
+	provinces = {
+		344 408 425 706 805 1275 1578 3026 4159 4407 7283 7317 7446 7517 7522
 	}
-
-	provinces={
-		742 966 1150 1782 2193 2565 2762 3051 3092 3210 3417 3488 3517 3748 4000 4281 4709 7338 7340 7374 7401 7403 7415 7425 7431 7435 7460 7461 7496 
-	}
-	manpower=987958
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
 }

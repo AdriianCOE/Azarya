@@ -1,28 +1,26 @@
+state = {
+	id = 363
+	name = "STATE_WT_363"
+	manpower = 1
+	state_category = town
 
-state={
-	id=363
-	name="Krendhal"
-
-	history={
-		owner = DUH
-		    victory_points = {
-			8064 10 
-		}
-		victory_points = {
-			7806 4 
-		}
+	history = {
+		owner = AEI
+		add_core_of = AEI
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
+			arms_factory = 1
 			industrial_complex = 2
-        }
-		add_core_of = DUH
+			dockyard = 1
+			air_base = 1
+			1029 = {
+				naval_base = 2
+			}
+		}
+		victory_points = { 491 1 }
 	}
 
-	provinces={
-		743 901 1472 2214 2588 2596 3365 3667 4464 7806 8064 8104 8112 15820 15822 15823 15824 15825
+	provinces = {
+		491 1029 1498 2353 3776 4965 7842 7884 7959 7983 8039 8087
 	}
-	manpower=995827
-	buildings_max_level_factor=1.000
-	state_category=large_town
-	local_supplies=0.000
 }

@@ -1,24 +1,25 @@
-
-state={
-	id=183
-	name="Draakskov"
-	history={
-		owner = LUQ
-		victory_points = {
-			3440 5
-		}
-		buildings = {
-			infrastructure = 1
-			industrial_complex = 1
-	
-			}
-		add_core_of = LUQ
-		}
-	provinces={
-		1365 3440 3609 4651 4823 5640 5668 5691 5701 5722 5730 5744 5750 15812 15811 15831
+state = {
+	id = 183
+	name = "STATE_WT_183"
+	manpower = 1
+	state_category = town
+	resources = {
+		oil = 2
 	}
-	manpower=349878
-	buildings_max_level_factor=1.000
-	state_category=rural
-	local_supplies=0.000
+
+	history = {
+		owner = VAN
+		add_core_of = VAN
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2
+			air_base = 1
+		}
+		victory_points = { 2964 1 }
+	}
+
+	provinces = {
+		2964 3520 15865 15866 15867 15868
+	}
 }

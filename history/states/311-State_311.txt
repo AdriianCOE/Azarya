@@ -1,24 +1,26 @@
+state = {
+	id = 311
+	name = "STATE_WT_311"
+	manpower = 1
+	state_category = town
 
-state={
-	id=311
-	name="Artenay"
-
-			history={
-		owner = SLV
+	history = {
+		owner = AEI
+		add_core_of = AEI
 		buildings = {
-		infrastructure = 1
-		air_base = 1
-
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2
+			dockyard = 1
+			air_base = 1
+			933 = {
+				naval_base = 2
+			}
 		}
-		add_core_of = SLV
+		victory_points = { 113 1 }
+	}
 
+	provinces = {
+		113 223 246 466 769 933 1306 3398 4360 4794 4887 7176 7202 7206 7235 7259 7271 7296
 	}
-	
-	provinces={
-		1168 1850 3758 7208 7237 7264 7279 7280 7293 7294 7312 7316 7320 
-	}
-	manpower=415929
-	buildings_max_level_factor=1.000
-	state_category=rural
-	local_supplies=0.000
 }

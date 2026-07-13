@@ -1,12 +1,26 @@
-
-state={
-	id=364
-	name="STATE_364"
-	provinces={
-		491 1029 1498 2353 3776 4965 7842 7884 7959 7983 8039 8087 
+state = {
+	id = 364
+	name = "STATE_WT_364"
+	manpower = 1322501
+	state_category = large_town
+	resources = {
+		tungsten = 2
 	}
-	manpower=1
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
+
+	history = {
+		owner = NIR
+		add_core_of = NIR
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 3
+			air_base = 1
+		}
+		victory_points = { 8049 15 }
+		victory_points = { 4405 5 }
+	}
+
+	provinces = {
+		76 808 853 1466 1675 2290 2460 2645 2831 3020 3036 3107 3268 3970 4022 4353 4367 4374 4405 4430 4458 4620 4905 5010 5102 5114 7855 7863 7887 7909 7935 7936 7978 7990 8012 8035 8036 8049 8066 8083 8103 8148 8163 8170 8192 8207 8214 8219 8243 8251 8256 8257 8269 8292 8296 8315 8327 8336 8442
+	}
 }

@@ -1,12 +1,23 @@
+state = {
+	id = 362
+	name = "STATE_WT_362"
+	manpower = 995827
+	state_category = large_town
 
-state={
-	id=362
-	name="STATE_362"
-	provinces={
-		230 384 521 568 672 1574 1737 1797 2115 2122 2181 2484 2569 2602 2899 2978 3009 3281 3397 3450 3473 3772 3907 3936 3975 3990 4037 4048 4074 4152 4294 4471 4543 4576 4637 4721 4819 4853 5000 5007 5071 7628 7629 7641 7655 7656 7666 7668 7681 7695 7701 7704 7713 7714 7720 7725 7730 7736 7748 7754 7772 7778 7787 7793 7800 7801 7819 7828 7838 7839 7871 7876 7877 7904 7913 7920 7921 7929 
+	history = {
+		owner = DUH
+		add_core_of = DUH
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 3
+			air_base = 1
+		}
+		victory_points = { 8064 10 }
+		victory_points = { 7806 4 }
 	}
-	manpower=1
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
+
+	provinces = {
+		743 901 1472 2214 2588 2596 3365 3667 4464 7806 8064 8104 8112 15820 15822 15823 15824 15825
+	}
 }

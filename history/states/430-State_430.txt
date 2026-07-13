@@ -1,39 +1,30 @@
-
-state={
-	id=430
-	name="Movilla"
-		resources={
-		oil=1
+state = {
+	id = 430
+	name = "STATE_WT_430"
+	manpower = 2423000
+	state_category = city
+	resources = {
+		tungsten = 6
 	}
 
-	history={
-		owner = UPG
-		victory_points = {
-			1448 50 
-		}
-		victory_points = {
-			9164 20 
-		}
-		victory_points = {
-			9233 5 
-		}
+	history = {
+		owner = ARD
+		add_core_of = ARD
 		buildings = {
 			infrastructure = 3
-			arms_factory = 1
-			industrial_complex = 3
+			arms_factory = 2
+			industrial_complex = 4
+			dockyard = 2
 			air_base = 2
-			1448 = {
-                naval_base = 3
-            }
+			245 = {
+				naval_base = 3
+			}
 		}
-		add_core_of = UPG
+		victory_points = { 9291 10 }
+		victory_points = { 1789 20 }
 	}
 
-	provinces={
-		1448 2235 2323 2452 3169 4167 4681 9140 9164 9166 9219 9231 9233 9250 9268 9283 9289 
+	provinces = {
+		245 419 456 581 1444 1524 1789 1903 3165 3318 3716 4221 5139 9139 9147 9161 9189 9190 9210 9214 9216 9225 9227 9243 9246 9249 9254 9284 9291 9304 9315
 	}
-	manpower=2195859
-	buildings_max_level_factor=1.000
-	state_category=large_city
-	local_supplies=0.000
 }

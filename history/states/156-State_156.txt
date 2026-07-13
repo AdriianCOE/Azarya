@@ -1,25 +1,26 @@
+state = {
+	id = 156
+	name = "STATE_WT_156"
+	manpower = 947094
+	state_category = city
 
-state={
-	id=156
-	name="Forgeheim"
-	history={
-		owner = VRD
-		victory_points = {
-			5371 10
-		}
-		victory_points = {
-			5469 5
-		}
+	history = {
+		owner = DTB
+		add_core_of = DTB
 		buildings = {
 			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 4
+			dockyard = 2
+			air_base = 2
+			385 = {
+				naval_base = 3
+			}
 		}
-		add_core_of = VRD
+		victory_points = { 2160 5 }
 	}
-	provinces={
-		87 382 634 1741 2786 3338 3599 3753 4623 4671 5006 5110 5345 5353 5358 5367 5371 5375 5383 5384 5395 5404 5407 5417 5425 5465 5428 5450 5469 5477 5478 5488 5493 5501 5509 5513 
+
+	provinces = {
+		385 1747 2160 2778 3430 3431 4536 5449 5466 5482 5496 5535 5536 5547 19 5645
 	}
-	manpower=2189682
-	buildings_max_level_factor=1.000
-	state_category=city
-	local_supplies=0.000
 }

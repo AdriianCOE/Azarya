@@ -1,26 +1,28 @@
-state={
-	id=197
-	name="STATE_197"
-	history={
-		owner = SAH
-		victory_points = {
-			4517 10
-		}
+state = {
+	id = 197
+	name = "STATE_WT_197"
+	manpower = 1
+	state_category = town
+
+	history = {
+		owner = HEL
+		add_core_of = HEL
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
-			4517 = {
-				naval_base = 5
+			arms_factory = 1
+			industrial_complex = 2
+			dockyard = 1
+			air_base = 1
+			193 = {
+				naval_base = 2
 			}
 		}
-		add_core_of = SAH
+		victory_points = { 1681 30 }
+		victory_points = { 1346 15 }
+		victory_points = { 5941 10 }
 	}
 
-	provinces={
-		46 162 188 355 716 4287 4517 2281 3128
+	provinces = {
+		193 554 755 765 851 856 1127 1190 1346 1644 1681 1885 1951 2209 2822 3094 3164 3197 3262 3561 3603 4422 4573 4836 4997 5140 5843 5866 5884 5887 5894 5899 5900 5901 5911 5927 5936 5941 5945 5946 5947 5964 5965 5980 6015 6016 6020 6068
 	}
-	manpower=1
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
 }

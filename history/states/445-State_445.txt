@@ -1,12 +1,28 @@
+state = {
+	id = 445
+	name = "STATE_WT_445"
+	manpower = 1620985
+	state_category = city
 
-state={
-	id=445
-	name="STATE_445"
-	provinces={
-		60 294 527 695 1235 1239 1411 2902 2945 3127 3671 4236 4995 9363 9371 9374 9377 9382 9388 9398 9399 9419 9426 9437 
+	history = {
+		owner = TOL
+		add_core_of = TOL
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 4
+			dockyard = 2
+			air_base = 2
+			3553 = {
+				naval_base = 3
+			}
+		}
+		victory_points = { 4358 22 }
+		victory_points = { 4910 8 }
+		victory_points = { 9314 5 }
 	}
-	manpower=1
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
+
+	provinces = {
+		156 3553 3687 3794 4023 4358 4910 5063 5123 9314 9325 9334 9362 9368 9381 9397 9410 9411 9421
+	}
 }

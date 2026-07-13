@@ -1,25 +1,27 @@
+state = {
+	id = 131
+	name = "STATE_WT_131"
+	manpower = 1052985
+	state_category = city
 
-state={
-	id=131
-	name="Aurora"
-
-	history={
-		owner = SLU
-		victory_points = {
-			5195 8
-		}
+	history = {
+		owner = DTB
+		add_core_of = DTB
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 4
+			dockyard = 2
+			air_base = 2
+			636 = {
+				naval_base = 3
+			}
 		}
-		add_core_of = SLU
-
+		victory_points = { 5759 15 }
+		victory_points = { 636 12 }
 	}
 
-	provinces={
-		1473 2146 3809 4751 5009 5178 5183 5192 5195 5203 5209 5213 5221 
+	provinces = {
+		260 636 1258 1858 2063 2582 5731 5734 5759 5774 5780 5795 5799 5805 5793 2128 1627 2739
 	}
-	manpower=328039
-	buildings_max_level_factor=1.000
-	state_category=rural
-	local_supplies=0.000
 }

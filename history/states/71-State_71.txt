@@ -1,12 +1,27 @@
-
-state={
-	id=71
-	name="Aubigny"
-	provinces={
-		47 386 873 1925 1982 2104 2223 2738 2897 2903 3182 3347 3788 3825 4160 4229 4613 5002 5015 5126 8367 8393 8410 8423 8424 8453 8465 8473 8474 8496 8526 8546 8558 8577 8621 8679 8685 8756 8797 
+state = {
+	id = 71
+	name = "STATE_WT_71"
+	manpower = 197495
+	state_category = rural
+	resources = {
+		tungsten = 4
 	}
-	manpower=11589
-	buildings_max_level_factor=1.000
-	state_category=tiny_island
-	local_supplies=0.000
+
+	history = {
+		owner = GYE
+		add_core_of = GYE
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			dockyard = 1
+			2663 = {
+				naval_base = 2
+			}
+		}
+		victory_points = { 2663 1 }
+	}
+
+	provinces = {
+		2663 2851 3418 3448 3544 4495 7683 7710 7740 7744 7777 7848
+	}
 }

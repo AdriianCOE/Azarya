@@ -1,40 +1,29 @@
-
-state={
-	id=412
-	name="Erlowen"
+state = {
+	id = 412
+	name = "STATE_WT_412"
+	manpower = 1387985
+	state_category = large_town
 	resources = {
-		tungsten = 50
+		tungsten = 3
 	}
-	history={
-		owner = CMR
-		victory_points = {
-			528 30
-		}
-		victory_points = {
-			8984 10
-		}
-		victory_points = {
-			9162 5
-		}
+
+	history = {
+		owner = KOZ
+		add_core_of = KOZ
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 3
+			infrastructure = 2
 			arms_factory = 1
-			dockyard = 1
-			528 = {
+			industrial_complex = 3
+			dockyard = 2
+			air_base = 1
+			835 = {
 				naval_base = 2
 			}
-			9162 = {
-				naval_base = 1
-			}
 		}
-		add_core_of = CMR
+		victory_points = { 9043 5 }
 	}
-	provinces={
-		528 1554 1565 1605 2024 2330 2708 3220 3227 3867 3948 4176 4441 4750 8961 8967 8984 9002 9003 9013 9032 9033 9069 9119 9148 9162 9171 9001 3064
+
+	provinces = {
+		460 835 1010 1608 2073 2251 2255 2541 4060 4278 5120 8918 8987 9006 9043 9080 9122
 	}
-	manpower=2728374
-	buildings_max_level_factor=1.000
-	state_category=large_city
-	local_supplies=0.000
 }

@@ -1,18 +1,24 @@
-state={
-	id=11
-	name="STATE_11"
-	history={
+state = {
+	id = 11
+	name = "STATE_WT_11"
+	manpower = 17948
+	state_category = rural
+
+	history = {
 		owner = MER
-				buildings = {
-			infrastructure = 1
-            }
 		add_core_of = MER
-		add_core_of = VRD
-				}
-	provinces={
-		3816 
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			dockyard = 1
+			3816 = {
+				naval_base = 2
+			}
+		}
+		victory_points = { 3816 1 }
 	}
-	buildings_max_level_factor=1.000
-        manpower=17948
-        state_category = rural
+
+	provinces = {
+		3816
+	}
 }

@@ -1,23 +1,22 @@
-state={
-	id=470
-	name="Ghani"
-
-	history={
-		owner = CBS
-			victory_points = {
-			     1172 20
-		}
-				buildings = {
-			infrastructure = 1
-            }
-		add_core_of = CBS
-				}
-	provinces={
-		3404 1841 2132 122 906 3889 2574 6858 2585 1172 2817 2827
+state = {
+	id = 470
+	name = "STATE_WT_470"
+	manpower = 33576
+	state_category = wasteland
+	resources = {
+		steel = 11
+		chromium = 4
 	}
-	manpower=302985
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
 
+	history = {
+		owner = GYE
+		add_core_of = GYE
+		buildings = {
+		}
+		victory_points = { 3695 1 }
+	}
+
+	provinces = {
+		3695 766 3212 1178 343 459 7361
+	}
 }

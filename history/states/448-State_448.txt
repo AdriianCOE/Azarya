@@ -1,28 +1,28 @@
+state = {
+	id = 448
+	name = "STATE_WT_448"
+	manpower = 1198592
+	state_category = city
 
-state={
-	id=448
-	name="Lysbourg"
-	history={
+	history = {
 		owner = TOL
-		victory_points = {
-			9434  5
-		}
-		victory_points = {
-			2394  10
-		}
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-
-		}
 		add_core_of = TOL
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 4
+			dockyard = 2
+			air_base = 2
+			413 = {
+				naval_base = 3
+			}
+		}
+		victory_points = { 4476 40 }
+		victory_points = { 4075 5 }
+		victory_points = { 9483 5 }
+	}
 
+	provinces = {
+		413 1342 1837 1904 2080 2134 2892 3468 3693 3705 4075 4269 4289 4339 4476 4668 4760 4762 9461 9465 9466 9467 9468 9470 9471 9472 9473 9474 9475 9476 9477 9478 9479 9480 9481 9482 9483 9484 9485 9486 9487 9488
 	}
-	provinces={
-		558 1920 2394 3916 4688 9423 9425 9427 9433 9434 9441 9442 9445 9446 9448 9451 9453 9454 9456 9458 9459 9460 9462 
-	}
-	manpower=889895
-	buildings_max_level_factor=1.000
-	state_category=large_town
-	local_supplies=0.000
 }

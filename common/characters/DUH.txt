@@ -1,427 +1,144 @@
-characters={
-	DUH_ar={
-		advisor={
-			slot = high_command
-			idea_token = DUH_ar
-			ledger  = army 
-				allowed  = {
-					original_tag  = DUH
-				}
-				traits  = {
-					army_regrouping_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
+﻿characters = {
+
+	DUH_leader_despotism = {
+		name = DUH_leader_despotism
+		portraits = {
+			civilian = { large = GFX_Portrait_Europe_Generic_1 }
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_army_arab_1"
-			}
+		country_leader = {
+			ideology = despotism
+			traits = { }
 		}
 	}
-	DUH_acr={
-		advisor={
-			slot = air_chief
-			idea_token = DUH_acr
-			allowed  = {
-					original_tag  = DUH
-				}
-				traits  = {
-					air_chief_reform_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
+
+	DUH_leader_conservatism = {
+		name = DUH_leader_conservatism
+		portraits = {
+			civilian = { large = GFX_Portrait_Europe_Generic_1 }
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_air_arab_3"
-			}
+		country_leader = {
+			ideology = conservatism
+			traits = { }
 		}
 	}
-	DUH_mt={
-		advisor={
-			slot = theorist
-			idea_token = DUH_mt
-			ledger  = army 
-				allowed  = {
-					original_tag  = DUH
-				}
-				traits  = {
-					military_theorist 
-				}
+
+	DUH_leader_nazism = {
+		name = DUH_leader_nazism
+		portraits = {
+			civilian = { large = GFX_Portrait_Europe_Generic_1 }
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_army_arab_1"
-			}
+		country_leader = {
+			ideology = nazism
+			traits = { }
 		}
 	}
-	DUH_stc={
-		advisor={
-			slot = political_advisor
-			idea_token = DUH_stc
-			allowed  = {
-					original_tag  = DUH
-				}
-				traits  = {
-					smooth_talking_charmer 
-				}
+
+	DUH_leader_marxism = {
+		name = DUH_leader_marxism
+		portraits = {
+			civilian = { large = GFX_Portrait_Europe_Generic_1 }
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_arab_3"
-			}
+		country_leader = {
+			ideology = marxism
+			traits = { }
 		}
 	}
-	DUH_aa2={
-		advisor={
-			slot = high_command
-			idea_token = DUH_aa2
-			ledger  = army 
-				allowed  = {
-					original_tag  = DUH
-				}
-				traits  = {
-					army_armored_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
+
+	DUH_field_marshal_1 = {
+		name = DUH_field_marshal_1
+		portraits = {
+			army = { large = GFX_Portrait_Europe_Generic_land_1 }
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_army_arab_2"
-			}
+		field_marshal = {
+			traits = { }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
 		}
 	}
-	DUH_acgs={
-		advisor={
-			slot = air_chief
-			idea_token = DUH_acgs
-			allowed  = {
-					original_tag  = DUH
-				}
-				traits  = {
-					air_chief_ground_support_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
+
+	DUH_general_1 = {
+		name = DUH_general_1
+		portraits = {
+			army = { large = GFX_Portrait_Europe_Generic_land_2 }
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_air_arab_3"
-			}
+		corps_commander = {
+			traits = { }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
 		}
 	}
-	DUH_ncm={
-		advisor={
-			slot = navy_chief
-			idea_token = DUH_ncm
-			allowed  = {
-					original_tag  = DUH
-				}
-				traits  = {
-					navy_chief_maneuver_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
+
+	DUH_admiral_1 = {
+		name = DUH_admiral_1
+		portraits = {
+			army = { large = GFX_Portrait_Europe_Generic_navy_1 }
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_navy_arab_3"
-			}
+		navy_leader = {
+			traits = { }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 2
 		}
 	}
-	DUH_nccr={
-		advisor={
-			slot = navy_chief
-			idea_token = DUH_nccr
-			allowed  = {
-					original_tag  = DUH
-				}
-				traits  = {
-					navy_chief_commerce_raiding_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
+
+	DUH_scientist_1 = {
+		name = DUH_scientist_1
+		portraits = {
+			civilian = { large = GFX_Portrait_Europe_Generic_1 }
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_navy_arab_2"
+		scientist = {
+			skills = {
+				specialization_air = 2
 			}
+			traits = { }
 		}
 	}
-	DUH_coi={
-		advisor={
-			slot = political_advisor
-			idea_token = DUH_coi
-			allowed  = {
-					original_tag  = DUH
-				}
-				traits  = {
-					captain_of_industry 
-				}
+
+	DUH_scientist_2 = {
+		name = DUH_scientist_2
+		portraits = {
+			civilian = { large = GFX_Portrait_Europe_Generic_1 }
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_arab_1"
+		scientist = {
+			skills = {
+				specialization_industry = 2
 			}
+			traits = { }
 		}
 	}
-	DUH_democratic_guy={
-		advisor={
-			slot = political_advisor
-			idea_token = DUH_democratic_guy
-			allowed  = {
-					original_tag  = DUH
-				}
-				traits  = {
-					democratic_reformer 
-				}
-				do_effect  = {
-					not  = {
-						has_government  = democratic 
-					}
-				}
-				ai_will_do  = {
-					factor  = 0.000
-				}
+
+	DUH_scientist_3 = {
+		name = DUH_scientist_3
+		portraits = {
+			civilian = { large = GFX_Portrait_Europe_Generic_1 }
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_arab_1"
+		scientist = {
+			skills = {
+				specialization_naval = 2
 			}
+			traits = { }
 		}
 	}
-	DUH_acd2={
-		advisor={
-			slot = army_chief
-			idea_token = DUH_acd2
-			allowed  = {
-					original_tag  = DUH
-				}
-				traits  = {
-					army_chief_defensive_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
+
+	DUH_scientist_4 = {
+		name = DUH_scientist_4
+		portraits = {
+			civilian = { large = GFX_Portrait_Europe_Generic_1 }
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_army_arab_1"
+		scientist = {
+			skills = {
+				specialization_army = 2
 			}
+			traits = { }
 		}
 	}
-	DUH_acas={
-		advisor={
-			slot = high_command
-			idea_token = DUH_acas
-			ledger  = air 
-				allowed  = {
-					original_tag  = DUH
-				}
-				traits  = {
-					air_close_air_support_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_air_arab_2"
-			}
-		}
-	}
-	DUH_communist_guy={
-		advisor={
-			slot = political_advisor
-			idea_token = DUH_communist_guy
-			allowed  = {
-					original_tag  = DUH
-				}
-				traits  = {
-					communist_revolutionary 
-				}
-				do_effect  = {
-					not  = {
-						has_government  = communism 
-					}
-				}
-				ai_will_do  = {
-					factor  = 0.000
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_arab_3"
-			}
-		}
-	}
-	DUH_ncs={
-		advisor={
-			slot = high_command
-			idea_token = DUH_ncs
-			ledger  = navy 
-				allowed  = {
-					original_tag  = DUH
-				}
-				traits  = {
-					navy_capital_ship_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_navy_arab_2"
-			}
-		}
-	}
-	DUH_awt={
-		advisor={
-			slot = theorist
-			idea_token = DUH_awt
-			ledger  = air 
-				allowed  = {
-					original_tag  = DUH
-				}
-				traits  = {
-					air_warfare_theorist 
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_air_arab_2"
-			}
-		}
-	}
-	DUH_pot={
-		advisor={
-			slot = political_advisor
-			idea_token = DUH_pot
-			allowed  = {
-					original_tag  = DUH
-				}
-				traits  = {
-					prince_of_terror 
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_arab_2"
-			}
-		}
-	}
-	DUH_fascist_guy={
-		advisor={
-			slot = political_advisor
-			idea_token = DUH_fascist_guy
-			allowed  = {
-					original_tag  = DUH
-				}
-				traits  = {
-					fascist_demagogue 
-				}
-				do_effect  = {
-					not  = {
-						has_government  = fascism 
-					}
-				}
-				ai_will_do  = {
-					factor  = 0.000
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_arab_2"
-			}
-		}
-	}
-	DUH_ai2={
-		advisor={
-			slot = high_command
-			idea_token = DUH_ai2
-			ledger  = army 
-				allowed  = {
-					original_tag  = DUH
-				}
-				traits  = {
-					army_infantry_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_army_arab_3"
-			}
-		}
-	}
-	DUH_nt={
-		advisor={
-			slot = theorist
-			idea_token = DUH_nt
-			ledger  = navy 
-				allowed  = {
-					original_tag  = DUH
-				}
-				traits  = {
-					naval_theorist 
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_navy_arab_3"
-			}
-		}
-	}
-	DUH_aco2={
-		advisor={
-			slot = army_chief
-			idea_token = DUH_aco2
-			allowed  = {
-					original_tag  = DUH
-				}
-				traits  = {
-					army_chief_organizational_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_army_arab_2"
-			}
-		}
-	}
+
 }

@@ -1,0 +1,8 @@
+supply_area={
+	id=22
+	name="SUPPLYAREA_WT_22"
+	value=10
+	states={
+		316 317 318 319 320 321 322 323 324 325 326 327 328 329 330
+	}
+}

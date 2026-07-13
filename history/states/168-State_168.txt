@@ -1,33 +1,26 @@
+state = {
+	id = 168
+	name = "STATE_WT_168"
+	manpower = 392958
+	state_category = town
 
-state={
-	id=168
-	name="Opoldia"
-	history={
-		owner = RFO
-		victory_points = {
-			5411 30
-		}
-		victory_points = {
-			5567 5
-		}
+	history = {
+		owner = BOA
+		add_core_of = BOA
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 3
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2
+			dockyard = 1
 			air_base = 1
-			5411 = {
-				naval_base = 4
-				}
+			176 = {
+				naval_base = 2
 			}
-	
-			add_core_of = SVD
-			add_core_of = BKG
-			add_core_of = RFO
 		}
-	provinces={
-		643 1455 2597 2761 2838 3223 3555 3654 5056 5350 5362 5378 5411 5444 5457 5499 5504 5557 5567 5605 5611 
+		victory_points = { 5656 15 }
 	}
-	manpower=1298572
-	buildings_max_level_factor=1.000
-	state_category= large_city
-	local_supplies=0.000
+
+	provinces = {
+		176 234 1089 1092 1989 2140 3305 3600 3637 4580 5138 5564 5637 5639 5656 5657 5658 5679 5680 5686 5712 5727
+	}
 }

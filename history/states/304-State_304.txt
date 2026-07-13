@@ -1,25 +1,27 @@
+state = {
+	id = 304
+	name = "STATE_WT_304"
+	manpower = 587520
+	state_category = rural
+	resources = {
+		tungsten = 3
+	}
 
-state={
-	id=304
-	name="Castellum"
-
-	history={
+	history = {
 		owner = CZL
-		buildings = {
-		    infrastructure = 1	
-			}
-		victory_points = {
-			1892 8 
-		}
-
 		add_core_of = CZL
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			dockyard = 1
+			2692 = {
+				naval_base = 2
+			}
+		}
+		victory_points = { 9 1 }
 	}
 
-	provinces={
-		504 816 1892 1984 2486 2665 3131 3364 3858 4308 4337 7159 7203 7272 7301 
+	provinces = {
+		9 1193 2470 2692 3134 4214 4508 7218 7256 7275 7309 7382 15852
 	}
-	manpower=317942
-	buildings_max_level_factor=1.000
-	state_category=rural
-	local_supplies=0.000
 }

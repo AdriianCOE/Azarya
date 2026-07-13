@@ -1,14 +1,19 @@
+state = {
+	id = 91
+	name = "STATE_WT_91"
+	manpower = 39527
+	state_category = small_island
 
-state={
-	id=91
-	name="Brindoria"
-
-
-	provinces={
-		633 923 1434 1634 1715 2578 3593 3973 4481 4510 4699 4788 8120 8132 8138 8167 8175 8224 8235 8263 8264 8279 8288 8331 8347 
+	history = {
+		owner = AEI
+		add_core_of = AEI
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = { 601 1 }
 	}
-	manpower=8421
-	buildings_max_level_factor=1.000
-	state_category=tiny_island
-	local_supplies=0.000
+
+	provinces = {
+		601 1632 1693 2004 2674 2714 4873 7604 7637 7691 7780
+	}
 }

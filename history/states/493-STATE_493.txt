@@ -1,14 +1,22 @@
-state={
-	id=493
-	name="Ilda"
-	history={
-		owner = MEK
+state = {
+	id = 493
+	name = "STATE_WT_493"
+	manpower = 790593
+	state_category = large_town
+
+	history = {
+		owner = EDR
+		add_core_of = EDR
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 3
+			air_base = 1
 		}
-	provinces={
-		6400 6373 6359 4045 6299 2275 4998 6267 4978 3284 6231 1998 6187 6164 2391
+		victory_points = { 457 1 }
 	}
-	manpower=790593
-	buildings_max_level_factor=1.000
-	state_category=large_town
-	local_supplies=0.000
+
+	provinces = {
+		457 6378 6336 1526 401 4800 187
+	}
 }

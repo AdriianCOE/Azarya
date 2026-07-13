@@ -1,17 +1,25 @@
-
-state={
-	id=491
-	name="State_491"
-	history={
-		owner = DKG
-		add_core_of = DKG
-		}
-	provinces={
-		708 3849
+state = {
+	id = 491
+	name = "STATE_WT_491"
+	manpower = 890593
+	state_category = large_town
+	resources = {
+		steel = 10
 	}
-	manpower=5593
-	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=0.000
-	impassable=yes
+
+	history = {
+		owner = FVI
+		add_core_of = FVI
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 3
+			air_base = 1
+		}
+		victory_points = { 7699 15 }
+	}
+
+	provinces = {
+		164 1335 1648 3326 3409 3964 4285 4771 7670 7699 7774 7779 7796 7815
+	}
 }

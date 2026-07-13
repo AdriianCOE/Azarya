@@ -1,21 +1,22 @@
+state = {
+	id = 330
+	name = "STATE_WT_330"
+	manpower = 1
+	state_category = town
 
-state={
-	id=330
-	name="Marcomannia"
-			history={
-		owner = GYE
+	history = {
+		owner = AEI
+		add_core_of = AEI
 		buildings = {
-			industrial_complex = 3
+			infrastructure = 2
 			arms_factory = 1
-			infrastructure = 3
+			industrial_complex = 2
+			air_base = 1
 		}
-		add_core_of = GYE
+		victory_points = { 77 1 }
 	}
-	provinces={
-		118 133 734 879 1024 1355 2454 2548 3626 4009 4041 4949 4985 7276 7287 7295 7305 7342 7352 7358 7381 7385 7389 7398 7411 7447 7458 7464 7473 7505 
+
+	provinces = {
+		77 513 553 772 1184 1272 1354 1538 1553 1555 1649 1766 1907 2020 2190 2871 3059 3334 3457 3699 4324 4473 4774 4940 7510 7538 7610 7682 7692 7697 7745 7773 7781 7803 7813 7844 7866 7872 7985 7986
 	}
-	manpower=1529384
-	buildings_max_level_factor=1.000
-	state_category=city
-	local_supplies=0.000
 }

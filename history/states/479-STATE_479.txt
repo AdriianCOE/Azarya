@@ -1,31 +1,26 @@
+state = {
+	id = 479
+	name = "STATE_WT_479"
+	manpower = 1
+	state_category = town
 
-state={
-	id=479
-	name="Montis"
-	resources = {
-		steel = 25
-	}
-
-	history={
-		owner = SIT
-		victory_points = {
-			4258 10
-		}
-		victory_points = {
-			6796 5
-		}
+	history = {
+		owner = WIH
+		add_core_of = WIH
 		buildings = {
 			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2
+			dockyard = 1
+			air_base = 1
+			2713 = {
+				naval_base = 2
+			}
 		}
-		add_core_of = SIT
-
+		victory_points = { 432 1 }
 	}
 
-	provinces={
-		194 461 562 580 1085 1158 1460 1736 2005 2090 4258 4641 6640 6751 6796 6803 6818 6918 6922 6962 
+	provinces = {
+		432 498 727 1683 2068 2713 3911 4002 4014 4242 4349 4700 5853 5855 5856 5871 5874 5877 5881 5892 5895 5925 5952 5972 6000 6066
 	}
-	manpower=595839
-	buildings_max_level_factor=1.000
-	state_category=rural
-	local_supplies=0.000
 }

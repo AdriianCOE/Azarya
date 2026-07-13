@@ -1,19 +1,26 @@
-state={
-	id=16
-	name="Isles of Ardenne"
-	history={
-		owner = AEI
-		buildings = {
-			infrastructure = 0
-		}
-		add_core_of = AEI
-		
-
+state = {
+	id = 16
+	name = "STATE_WT_16"
+	manpower = 11979
+	state_category = tiny_island
+	resources = {
+		tungsten = 6
 	}
-	provinces={
+
+	history = {
+		owner = AEI
+		add_core_of = AEI
+		buildings = {
+			infrastructure = 1
+			dockyard = 1
+			3614 = {
+				naval_base = 2
+			}
+		}
+		victory_points = { 3614 1 }
+	}
+
+	provinces = {
 		3614 9489
 	}
-	buildings_max_level_factor=1.000
-        manpower=11979
-        state_category = tiny_island
 }

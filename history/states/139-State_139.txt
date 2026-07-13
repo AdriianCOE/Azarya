@@ -1,30 +1,26 @@
+state = {
+	id = 139
+	name = "STATE_WT_139"
+	manpower = 367000
+	state_category = town
 
-state={
-	id=139
-	name="Alpino"
-
-	history={
+	history = {
 		owner = SLU
-		victory_points = {
-			2369 12
-		}
-		victory_points = {
-			4679 20
-		}
-		buildings = {
-			infrastructure = 3
-			industrial_complex = 2
-		}
-
 		add_core_of = SLU
-
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2
+			dockyard = 1
+			air_base = 1
+			5255 = {
+				naval_base = 2
+			}
+		}
+		victory_points = { 969 1 }
 	}
 
-	provinces={
-		1142 1315 1464 2369 2634 3337 3860 4138 4679 5222 5236 5239 5245 5253 5259 5260 5266 5267 5272 5273 5276 5283 
+	provinces = {
+		969 1754 2333 2763 2910 3002 3310 4115 4286 4753 4913 4991 4994 5255 5263 5268 5269 5270 5278 5279 5286 5287
 	}
-	manpower=1115892
-	buildings_max_level_factor=1.000
-	state_category=city
-	local_supplies=0.000
 }

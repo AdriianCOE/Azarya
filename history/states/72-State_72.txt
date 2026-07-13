@@ -1,20 +1,26 @@
-state={
-	id=72
-	name="Moesia"
+state = {
+	id = 72
+	name = "STATE_WT_72"
+	manpower = 1
+	state_category = town
 
-				history={
-		owner = GYE
+	history = {
+		owner = AEI
+		add_core_of = AEI
 		buildings = {
-			industrial_complex = 1
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2
 			dockyard = 1
-			infrastructure = 1
+			air_base = 1
+			437 = {
+				naval_base = 2
+			}
 		}
-		add_core_of = GYE
+		victory_points = { 437 1 }
 	}
-	provinces={
-		2663 2851 3418 3448 3544 4495 7683 7710 7740 7744 7777 7848 
+
+	provinces = {
+		437 3173 3422 3730 7580 7769
 	}
-	buildings_max_level_factor=1.000
-        manpower=197495
-        state_category = rural 
 }

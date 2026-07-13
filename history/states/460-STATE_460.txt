@@ -1,12 +1,25 @@
-
-state={
-	id=460
-	name="STATE_460"
-	provinces={
-		200 815 1123 1357 1728 1760 2074 2349 2896 3267 4482 5108 5117 7508 7559 7593 7598 7672 7676 
+state = {
+	id = 460
+	name = "STATE_WT_460"
+	manpower = 1
+	state_category = town
+	resources = {
+		oil = 11
 	}
-	manpower=1
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
+
+	history = {
+		owner = AEI
+		add_core_of = AEI
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2
+			air_base = 1
+		}
+		victory_points = { 589 1 }
+	}
+
+	provinces = {
+		589 6171
+	}
 }

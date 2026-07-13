@@ -1,12 +1,24 @@
-
-state={
-	id=60
-	name="STATE_60"
-	provinces={
-		424 1313 1435 1764 1881 4538 4795 6947 6954 6971 6974 6997 
+state = {
+	id = 60
+	name = "STATE_WT_60"
+	manpower = 291929
+	state_category = rural
+	resources = {
+		steel = 10
+		chromium = 10
 	}
-	manpower=1
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
+
+	history = {
+		owner = SLV
+		add_core_of = SLV
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+		victory_points = { 203 1 }
+	}
+
+	provinces = {
+		203 1278 2076 2651 4275 4948 7053 7059 7072 7076 7077 7104 7122 7138 7179
+	}
 }

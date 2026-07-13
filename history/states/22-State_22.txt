@@ -1,26 +1,22 @@
+state = {
+	id = 22
+	name = "STATE_WT_22"
+	manpower = 838893
+	state_category = city
 
-state={
-	id=22
-	name="Red Dunes"
-	history={
+	history = {
 		owner = SDB
-			victory_points = {
-			     1431 20
-		}
-				buildings = {
-			industrial_complex = 2
-			arms_factory = 1
-			infrastructure = 2
-            }
 		add_core_of = SDB
-				}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 4
+			air_base = 2
+		}
+		victory_points = { 1431 20 }
+	}
 
-
-	provinces={
+	provinces = {
 		6 105 838 1066 1431 1688 15788 6657 6757 15798 15800 15799 15792 15794 15795 15797 12 6748 4886 539
 	}
-	manpower=838893
-	buildings_max_level_factor=1.000
-	state_category=city
-	local_supplies=0.000
 }

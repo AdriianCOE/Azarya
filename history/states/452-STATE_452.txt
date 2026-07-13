@@ -1,23 +1,26 @@
+state = {
+	id = 452
+	name = "STATE_WT_452"
+	manpower = 751293
+	state_category = large_town
 
-state={
-	id=452
-	name="Bendito"
-
-	 history = {
-        owner = BOM
+	history = {
+		owner = DTB
+		add_core_of = DTB
 		buildings = {
-			infrastructure = 2	
-			industrial_complex = 2
+			infrastructure = 2
 			arms_factory = 1
-				}
-		add_core_of = BOM
+			industrial_complex = 3
+			dockyard = 2
+			air_base = 1
+			5089 = {
+				naval_base = 2
+			}
+		}
+		victory_points = { 320 1 }
+	}
 
+	provinces = {
+		320 2215 4674 4988 5019 5089 5462 5473 5510 5515
 	}
-	provinces={
-		571 1386 2102 2149 2477 2716 2983 3206 3530 3773 4081 4370 5035 6809 6810 6836 6865 6885 6888 6906 6937 
-	}
-	manpower=1169982
-	state_category=town
-	buildings_max_level_factor=1.000
-	local_supplies=0.000
 }

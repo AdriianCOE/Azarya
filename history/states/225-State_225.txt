@@ -1,26 +1,26 @@
-state={
-	id=225
-	name="Auraliana"
-	history={
-		owner = ARK
-		victory_points = {
-			4727 20
-		}
-		victory_points = {
-			3712 5
-		}
+state = {
+	id = 225
+	name = "STATE_WT_225"
+	manpower = 698672
+	state_category = large_town
+
+	history = {
+		owner = GET
+		add_core_of = GET
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			arms_factory = 1
 			industrial_complex = 3
+			dockyard = 2
+			air_base = 1
+			4161 = {
+				naval_base = 2
+			}
 		}
-		add_core_of = ARK
+		victory_points = { 6331 15 }
 	}
-	provinces={
-		13 844 996 1012 1713 2514 3040 3583 3636 3638 3697 3712 4727 4942 6377 6380 6415 6426 6443 6464 6470 6492 6524 6547 4421 6370
+
+	provinces = {
+		4161 5057 6324 6331 6345 6350 6354 6355 6388 6401
 	}
-	manpower=2984792
-	buildings_max_level_factor=1.000
-	state_category=large_city
-	local_supplies=0.000
 }

@@ -1,25 +1,27 @@
-state={
-	id=24
-	name="Isle of Ghentia"
-	history={
+state = {
+	id = 24
+	name = "STATE_WT_24"
+	manpower = 57968
+	state_category = rural
+	resources = {
+		tungsten = 2
+	}
+
+	history = {
 		owner = AEI
-		victory_points = {
-			893 5
-		}
+		add_core_of = AEI
 		buildings = {
 			infrastructure = 1
+			industrial_complex = 1
+			dockyard = 1
 			893 = {
-				naval_base = 1
+				naval_base = 2
 			}
 		}
-		add_core_of = AEI
-		
+		victory_points = { 893 5 }
+	}
 
+	provinces = {
+		893 5426 5440
 	}
-	provinces={
-		893 5426 5440 
-	}
-	buildings_max_level_factor=1.000
-        manpower=57968
-        state_category = rural
 }

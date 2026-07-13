@@ -1,34 +1,24 @@
+state = {
+	id = 252
+	name = "STATE_WT_252"
+	manpower = 291938
+	state_category = rural
 
-state={
-	id=252
-	name="Imperialis"
-	history={
+	history = {
 		owner = SIT
-		victory_points = {
-			6671 30
-		}
-		victory_points = {
-			1701 10
-		}
+		add_core_of = SIT
 		buildings = {
-			infrastructure = 4
-			air_base = 3
-			industrial_complex = 4
-			arms_factory = 2
+			infrastructure = 1
+			industrial_complex = 1
 			dockyard = 1
-		6671 = {
-			naval_base = 4
-			coastal_bunker = 1
-			bunker = 1
+			298 = {
+				naval_base = 2
 			}
 		}
-		add_core_of = SIT
+		victory_points = { 298 5 }
 	}
-	provinces={
-		80 551 690 1701 2521 2792 2885 3876 3895 4267 4867 4875 6671 6700 6770 6716
+
+	provinces = {
+		298 629 999 1993 6752 6838
 	}
-	manpower=5198598
-	buildings_max_level_factor=1.000
-	state_category=megalopolis
-	local_supplies=0.000
 }

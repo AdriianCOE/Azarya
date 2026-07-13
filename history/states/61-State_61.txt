@@ -1,19 +1,26 @@
+state = {
+	id = 61
+	name = "STATE_WT_61"
+	manpower = 1
+	state_category = town
 
-state={
-	id=61
-	name="Ascheres"
+	history = {
+		owner = AEI
+		add_core_of = AEI
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2
+			dockyard = 1
+			air_base = 1
+			2887 = {
+				naval_base = 2
+			}
+		}
+		victory_points = { 1899 1 }
+	}
 
-				history={
-		owner = SLV
-		add_core_of = SLV
-		add_core_of = CBS
+	provinces = {
+		1899 2682 2724 2887 3044 3167 4124 5131 7359 7369 7394 7427 7442
 	}
-	
-	provinces={
-		203 1278 2076 2651 4275 4948 7053 7059 7072 7076 7077 7104 7122 7138 7179 
-	}
-	manpower=291929
-	buildings_max_level_factor=1.000
-	state_category=rural
-	local_supplies=0.000
 }

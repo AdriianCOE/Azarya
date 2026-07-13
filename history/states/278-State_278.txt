@@ -1,12 +1,27 @@
+state = {
+	id = 278
+	name = "STATE_WT_278"
+	manpower = 1495869
+	state_category = city
 
-state={
-	id=278
-	name="STATE_278"
-	provinces={
-		1384 2273 2799 2998 3356 3601 4728 7234 7292 
+	history = {
+		owner = SIT
+		add_core_of = SIT
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 4
+			dockyard = 2
+			air_base = 2
+			1664 = {
+				naval_base = 3
+			}
+		}
+		victory_points = { 7166 12 }
+		victory_points = { 7187 5 }
 	}
-	manpower=1
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
+
+	provinces = {
+		49 832 1470 1664 2990 7187 2804 5062 7181 1813 4232 833 2472 431 2965 4375 101 7093 7125 2177 7158 7151 4943 3823 4288 7045 7082 7088 7102 7112 7143 7166
+	}
 }

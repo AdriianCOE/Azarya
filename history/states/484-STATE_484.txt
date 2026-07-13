@@ -1,17 +1,26 @@
-
-state={
-	id=484
-	name="State_484"
-	history={
-		owner = SDB
-		add_core_of = SDB
-		}
-	provinces={
-		819 1621
+state = {
+	id = 484
+	name = "STATE_WT_484"
+	manpower = 1695828
+	state_category = city
+	resources = {
+		steel = 17
 	}
-	manpower=21093
-	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=0.000
-	impassable=yes
+
+	history = {
+		owner = BOK
+		add_core_of = BOK
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 4
+			air_base = 2
+		}
+		victory_points = { 5880 5 }
+		victory_points = { 1652 20 }
+	}
+
+	provinces = {
+		4769 1652 293 2579 1253 5886 1708 3493 5880 15903
+	}
 }
