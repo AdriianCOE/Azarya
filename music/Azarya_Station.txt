@@ -1,0 +1,20 @@
+music_station = "Azarya_Station"
+music = {
+	song = "Katyusha"
+}
+
+music = {
+	song = "Dark_is_The_Night"
+}
+
+music = {
+	song = "He_was_a_good_stalker"
+}
+
+music = {
+	song = "Joao_e_Maria"
+}
+
+music = {
+	song = "The_World_We_Knew"
+}

@@ -1,22 +1,22 @@
-state = {
-	id = 124
-	name = "STATE_WT_124"
-	manpower = 1009283
-	state_category = city
-
-	history = {
-		owner = LUA
-		add_core_of = LUA
-		buildings = {
-			infrastructure = 3
-			arms_factory = 2
-			industrial_complex = 4
-			air_base = 2
+state={
+	id=124
+	name="STATE_124"
+	history={
+		owner = SAH
+		victory_points = {
+			6140 20
 		}
-		victory_points = { 6070 10 }
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		add_core_of = SAH
 	}
-
-	provinces = {
-		237 390 793 1303 1420 1706 4742 6070 6149 6319 15909 15931
+	provinces={
+		3 139 575 652 910 1339 1475 1720 2643 6113 6140 6166 6249 
 	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

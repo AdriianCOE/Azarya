@@ -1,25 +1,32 @@
-state = {
-	id = 67
-	name = "STATE_WT_67"
-	manpower = 1
-	state_category = town
-	resources = {
-		tungsten = 5
+state={
+	id=67
+	name="Amilly"
+	resources={
+	steel=2
 	}
 
-	history = {
-		owner = AEI
-		add_core_of = AEI
-		buildings = {
-			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 2
-			air_base = 1
+			history={
+		owner = SLV
+		victory_points = {
+			4435 25 
 		}
-		victory_points = { 300 1 }
-	}
+				buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 1
+			4435 = {
+                naval_base = 1
+            }
 
-	provinces = {
-		300 1157 1285 1582 1650 1691 1698 1793 2888 3181 3233 4438 4582 4766 8576 8678 8699 8720 8735 8755 8771 8772 8786 8818 8852 8877 8878 8908 8930
+		}
+		add_core_of = SLV
+
 	}
+	
+	provinces={
+		2736 2995 4435 4570 4724 7486 7530 7601 3447 7663 
+	}
+	buildings_max_level_factor=1.000
+        manpower=437422
+        state_category = large_town
 }

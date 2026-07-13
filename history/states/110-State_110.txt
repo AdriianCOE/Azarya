@@ -1,26 +1,24 @@
-state = {
-	id = 110
-	name = "STATE_WT_110"
-	manpower = 1
-	state_category = town
+state={
+	id=110
+	name="Île de Brise"
+	history={
+		owner = TOL
+		add_core_of = TOL
+		1924.1.1 = {
+			controller = KOZ
 
-	history = {
-		owner = AEI
-		add_core_of = AEI
-		buildings = {
-			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 2
-			dockyard = 1
-			air_base = 1
-			9498 = {
-				naval_base = 2
-			}
+		     }
+	    buildings = {
+			infrastructure = 1
+
 		}
-		victory_points = { 9498 1 }
-	}
+		add_core_of = TOL
 
-	provinces = {
-		9498
 	}
+	provinces={
+		9251 9271 9201 9205 3084
+	}
+	buildings_max_level_factor=1.000
+        manpower=9061
+        state_category = tiny_island
 }

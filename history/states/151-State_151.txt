@@ -1,29 +1,25 @@
-state = {
-	id = 151
-	name = "STATE_WT_151"
-	manpower = 875472
-	state_category = large_city
-	resources = {
-		tungsten = 5
-	}
 
-	history = {
-		owner = BKG
-		add_core_of = BKG
-		buildings = {
-			infrastructure = 4
-			arms_factory = 3
-			industrial_complex = 5
-			dockyard = 3
-			air_base = 2
-			3550 = {
-				naval_base = 3
-			}
+state={
+	id=151
+	name="Stormhavn"
+	history={
+		owner = LUQ
+		victory_points = {
+			1220 15
 		}
-		victory_points = { 5376 15 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			}
+	
+		add_core_of = LUQ
+		}
+	provinces={
+		51 1220 1304 1661 2402 2657 3149 3466 3508 5045 5403 5436 5468 5497 5507 5529 5538 5561 5572 
 	}
-
-	provinces = {
-		3428 3550 5032 5364 5376 5377 5399 5435 5454 5460 5463
-	}
+	manpower=779895
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
 }

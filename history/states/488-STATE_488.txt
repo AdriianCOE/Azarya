@@ -1,22 +1,21 @@
-state = {
-	id = 488
-	name = "STATE_WT_488"
-	manpower = 1593
-	state_category = wasteland
-	resources = {
-		steel = 4
-		chromium = 11
-	}
-
-	history = {
-		owner = DKG
-		add_core_of = DKG
-		buildings = {
+state={
+	id=488
+	name="Skibidi"
+	history={
+		owner = ARK
+		victory_points = {
+			6320 5
 		}
-		victory_points = { 2287 1 }
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = ARK
 	}
-
-	provinces = {
-		2287
+	provinces={
+		1824 257 3269 1084 6320 394
 	}
+	manpower=191093
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

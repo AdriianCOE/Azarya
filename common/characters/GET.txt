@@ -1,144 +1,427 @@
-﻿characters = {
-
-	GET_leader_despotism = {
-		name = GET_leader_despotism
-		portraits = {
-			civilian = { large = GFX_Portrait_Europe_Generic_1 }
+characters={
+	GET_ar={
+		advisor={
+			slot = high_command
+			idea_token = GET_ar
+			ledger  = army 
+				allowed  = {
+					original_tag  = GET
+				}
+				traits  = {
+					army_regrouping_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
 		}
-		country_leader = {
-			ideology = despotism
-			traits = { }
-		}
-	}
-
-	GET_leader_conservatism = {
-		name = GET_leader_conservatism
-		portraits = {
-			civilian = { large = GFX_Portrait_Europe_Generic_1 }
-		}
-		country_leader = {
-			ideology = conservatism
-			traits = { }
-		}
-	}
-
-	GET_leader_nazism = {
-		name = GET_leader_nazism
-		portraits = {
-			civilian = { large = GFX_Portrait_Europe_Generic_1 }
-		}
-		country_leader = {
-			ideology = nazism
-			traits = { }
-		}
-	}
-
-	GET_leader_marxism = {
-		name = GET_leader_marxism
-		portraits = {
-			civilian = { large = GFX_Portrait_Europe_Generic_1 }
-		}
-		country_leader = {
-			ideology = marxism
-			traits = { }
-		}
-	}
-
-	GET_field_marshal_1 = {
-		name = GET_field_marshal_1
-		portraits = {
-			army = { large = GFX_Portrait_Europe_Generic_land_1 }
-		}
-		field_marshal = {
-			traits = { }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 3
-			planning_skill = 3
-			logistics_skill = 3
-		}
-	}
-
-	GET_general_1 = {
-		name = GET_general_1
-		portraits = {
-			army = { large = GFX_Portrait_Europe_Generic_land_2 }
-		}
-		corps_commander = {
-			traits = { }
-			skill = 2
-			attack_skill = 2
-			defense_skill = 2
-			planning_skill = 2
-			logistics_skill = 2
-		}
-	}
-
-	GET_admiral_1 = {
-		name = GET_admiral_1
-		portraits = {
-			army = { large = GFX_Portrait_Europe_Generic_navy_1 }
-		}
-		navy_leader = {
-			traits = { }
-			skill = 2
-			attack_skill = 2
-			defense_skill = 2
-			maneuvering_skill = 2
-			coordination_skill = 2
-		}
-	}
-
-	GET_scientist_1 = {
-		name = GET_scientist_1
-		portraits = {
-			civilian = { large = GFX_Portrait_Europe_Generic_1 }
-		}
-		scientist = {
-			skills = {
-				specialization_air = 2
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_1"
 			}
-			traits = { }
 		}
 	}
-
-	GET_scientist_2 = {
-		name = GET_scientist_2
-		portraits = {
-			civilian = { large = GFX_Portrait_Europe_Generic_1 }
+	GET_acr={
+		advisor={
+			slot = air_chief
+			idea_token = GET_acr
+			allowed  = {
+					original_tag  = GET
+				}
+				traits  = {
+					air_chief_reform_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
 		}
-		scientist = {
-			skills = {
-				specialization_industry = 2
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_3"
 			}
-			traits = { }
 		}
 	}
-
-	GET_scientist_3 = {
-		name = GET_scientist_3
-		portraits = {
-			civilian = { large = GFX_Portrait_Europe_Generic_1 }
+	GET_mt={
+		advisor={
+			slot = theorist
+			idea_token = GET_mt
+			ledger  = army 
+				allowed  = {
+					original_tag  = GET
+				}
+				traits  = {
+					military_theorist 
+				}
 		}
-		scientist = {
-			skills = {
-				specialization_naval = 2
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_1"
 			}
-			traits = { }
 		}
 	}
-
-	GET_scientist_4 = {
-		name = GET_scientist_4
-		portraits = {
-			civilian = { large = GFX_Portrait_Europe_Generic_1 }
+	GET_stc={
+		advisor={
+			slot = political_advisor
+			idea_token = GET_stc
+			allowed  = {
+					original_tag  = GET
+				}
+				traits  = {
+					smooth_talking_charmer 
+				}
 		}
-		scientist = {
-			skills = {
-				specialization_army = 2
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_3"
 			}
-			traits = { }
 		}
 	}
-
+	GET_aa2={
+		advisor={
+			slot = high_command
+			idea_token = GET_aa2
+			ledger  = army 
+				allowed  = {
+					original_tag  = GET
+				}
+				traits  = {
+					army_armored_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_2"
+			}
+		}
+	}
+	GET_acgs={
+		advisor={
+			slot = air_chief
+			idea_token = GET_acgs
+			allowed  = {
+					original_tag  = GET
+				}
+				traits  = {
+					air_chief_ground_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_3"
+			}
+		}
+	}
+	GET_ncm={
+		advisor={
+			slot = navy_chief
+			idea_token = GET_ncm
+			allowed  = {
+					original_tag  = GET
+				}
+				traits  = {
+					navy_chief_maneuver_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_3"
+			}
+		}
+	}
+	GET_nccr={
+		advisor={
+			slot = navy_chief
+			idea_token = GET_nccr
+			allowed  = {
+					original_tag  = GET
+				}
+				traits  = {
+					navy_chief_commerce_raiding_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_2"
+			}
+		}
+	}
+	GET_coi={
+		advisor={
+			slot = political_advisor
+			idea_token = GET_coi
+			allowed  = {
+					original_tag  = GET
+				}
+				traits  = {
+					captain_of_industry 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_1"
+			}
+		}
+	}
+	GET_democratic_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = GET_democratic_guy
+			allowed  = {
+					original_tag  = GET
+				}
+				traits  = {
+					democratic_reformer 
+				}
+				do_effect  = {
+					not  = {
+						has_government  = democratic 
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_1"
+			}
+		}
+	}
+	GET_acd2={
+		advisor={
+			slot = army_chief
+			idea_token = GET_acd2
+			allowed  = {
+					original_tag  = GET
+				}
+				traits  = {
+					army_chief_defensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_1"
+			}
+		}
+	}
+	GET_acas={
+		advisor={
+			slot = high_command
+			idea_token = GET_acas
+			ledger  = air 
+				allowed  = {
+					original_tag  = GET
+				}
+				traits  = {
+					air_close_air_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_2"
+			}
+		}
+	}
+	GET_communist_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = GET_communist_guy
+			allowed  = {
+					original_tag  = GET
+				}
+				traits  = {
+					communist_revolutionary 
+				}
+				do_effect  = {
+					not  = {
+						has_government  = communism 
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_3"
+			}
+		}
+	}
+	GET_ncs={
+		advisor={
+			slot = high_command
+			idea_token = GET_ncs
+			ledger  = navy 
+				allowed  = {
+					original_tag  = GET
+				}
+				traits  = {
+					navy_capital_ship_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_2"
+			}
+		}
+	}
+	GET_awt={
+		advisor={
+			slot = theorist
+			idea_token = GET_awt
+			ledger  = air 
+				allowed  = {
+					original_tag  = GET
+				}
+				traits  = {
+					air_warfare_theorist 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_2"
+			}
+		}
+	}
+	GET_pot={
+		advisor={
+			slot = political_advisor
+			idea_token = GET_pot
+			allowed  = {
+					original_tag  = GET
+				}
+				traits  = {
+					prince_of_terror 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_2"
+			}
+		}
+	}
+	GET_fascist_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = GET_fascist_guy
+			allowed  = {
+					original_tag  = GET
+				}
+				traits  = {
+					fascist_demagogue 
+				}
+				do_effect  = {
+					not  = {
+						has_government  = fascism 
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_2"
+			}
+		}
+	}
+	GET_ai2={
+		advisor={
+			slot = high_command
+			idea_token = GET_ai2
+			ledger  = army 
+				allowed  = {
+					original_tag  = GET
+				}
+				traits  = {
+					army_infantry_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_3"
+			}
+		}
+	}
+	GET_nt={
+		advisor={
+			slot = theorist
+			idea_token = GET_nt
+			ledger  = navy 
+				allowed  = {
+					original_tag  = GET
+				}
+				traits  = {
+					naval_theorist 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_3"
+			}
+		}
+	}
+	GET_aco2={
+		advisor={
+			slot = army_chief
+			idea_token = GET_aco2
+			allowed  = {
+					original_tag  = GET
+				}
+				traits  = {
+					army_chief_organizational_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_2"
+			}
+		}
+	}
 }

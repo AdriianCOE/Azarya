@@ -1,0 +1,73 @@
+﻿capital = 80
+
+	oob = "RFB"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+IF = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+	}
+}
+IF = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+	}
+}
+
+recruit_character = RFB_ar
+recruit_character = RFB_acr
+recruit_character = RFB_mt
+recruit_character = RFB_stc
+recruit_character = RFB_aa2
+recruit_character = RFB_acgs
+recruit_character = RFB_ncm
+recruit_character = RFB_nccr
+recruit_character =  RFB_coi
+recruit_character =  RFB_democratic_guy
+recruit_character =  RFB_acd2
+recruit_character =  RFB_acas
+recruit_character =  RFB_communist_guy
+recruit_character =  RFB_ncs
+recruit_character =  RFB_awt
+recruit_character =  RFB_pot
+recruit_character =  RFB_fascist_guy
+recruit_character =  RFB_ai2
+recruit_character =  RFB_nt
+recruit_character =  RFB_aco2
+
+army_experience = 50
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 0
+	fascism = 0
+	communism = 0
+	neutrality = 100
+}
+
+add_ideas = {
+	Great_Earthquake
+}
+
+create_country_leader = {
+	name = "Salamaleko"
+	ideology = Outlaws
+}
+
+create_field_marshal = {
+}

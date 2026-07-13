@@ -1,22 +1,32 @@
-state = {
-	id = 6
-	name = "STATE_WT_6"
-	manpower = 1693844
-	state_category = city
 
-	history = {
-		owner = DUH
-		add_core_of = DUH
-		buildings = {
-			infrastructure = 3
-			arms_factory = 2
-			industrial_complex = 4
-			air_base = 2
-		}
-		victory_points = { 3597 20 }
+state={
+	id=6
+	name="Valdor-Burg"
+	resources = {
+		steel = 2
 	}
 
-	provinces = {
+	history={
+		owner = DUH
+		    victory_points = {
+			3597 20 
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+			3597 = {
+                bunker = 2
+            }
+        }
+		add_core_of = DUH
+	}
+
+	provinces={
 		290 397 750 985 2673 7910 8076 8134 3597 15816 15814 15815 15817 15818 15819 8024 15821 15826 15827 15828 15829 15830
 	}
+	manpower=1693844
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
 }

@@ -1,27 +1,32 @@
-state = {
-	id = 153
-	name = "STATE_WT_153"
-	manpower = 172958
-	state_category = rural
-	resources = {
-		tungsten = 7
-	}
 
-	history = {
-		owner = BOA
-		add_core_of = BOA
+state={
+	id=153
+	name="Fjordland"
+	resources={
+		aluminium=16
+}
+	history={
+		owner = LUQ
+		victory_points = {
+			1528 25
+		}
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 			industrial_complex = 1
 			dockyard = 1
-			1299 = {
-				naval_base = 2
+			air_base = 1
+			1528 = {
+				naval_base = 1
+				}
 			}
+	
+		add_core_of = LUQ
 		}
-		victory_points = { 3501 5 }
+	provinces={
+		1467 1528 1655 2044 4516 5439 5455 5467 5484 5533 5555 5627 
 	}
-
-	provinces = {
-		1212 1299 1514 1544 1564 1750 2444 3501 5598 5608 5623 5652 5654 5675 5704
-	}
+	manpower=1129896
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
 }

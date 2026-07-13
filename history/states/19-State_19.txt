@@ -1,23 +1,27 @@
-state = {
-	id = 19
-	name = "STATE_WT_19"
-	manpower = 59859
-	state_category = small_island
-
-	history = {
+state={
+	id=19
+	name="Schobernach"
+	history={
 		owner = RFO
-		add_core_of = RFO
-		buildings = {
-			infrastructure = 1
-			dockyard = 1
-			898 = {
-				naval_base = 2
-			}
+		victory_points = {
+			898 5
 		}
-		victory_points = { 898 5 }
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+			898 = {
+				naval_base = 1
+				}
+			}
+	
+			add_core_of = SVD
+			add_core_of = BKG
+			add_core_of = RFO
+		}
+	provinces={
+		898 1496 5130 5333 5401 
 	}
-
-	provinces = {
-		898 1496 5130 5333 5401
-	}
+	buildings_max_level_factor=1.000
+        manpower=59859
+        state_category = small_island
 }

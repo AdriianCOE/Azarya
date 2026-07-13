@@ -1,24 +1,32 @@
-state = {
-	id = 144
-	name = "STATE_WT_144"
-	manpower = 275698
-	state_category = rural
 
-	history = {
-		owner = BKG
-		add_core_of = BKG
-		buildings = {
-			infrastructure = 1
-			industrial_complex = 1
-			dockyard = 1
-			2996 = {
-				naval_base = 2
-			}
+state={
+	id=144
+	name="Dreierland"
+	resources = {
+		aluminium = 12
+	}
+	history={
+		owner = DTB
+		victory_points = {
+			5361 20
 		}
-		victory_points = { 1447 1 }
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			dockyard = 3
+			air_base = 1
+			5361 = {
+				naval_base = 3
+				}
+			}
+	
+			add_core_of = DTB
+		}
+	provinces={
+		841 2796 3275 3519 4500 4667 4835 4971 5326 5348 5349 5355 5361 5393 5398 5419 5430 
 	}
-
-	provinces = {
-		1447 2996 4222 4238 4480 5306 5318 5394 5402 5433
-	}
+	manpower=1298598
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
 }

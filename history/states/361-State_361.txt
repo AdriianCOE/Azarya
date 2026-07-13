@@ -1,25 +1,27 @@
-state = {
-	id = 361
-	name = "STATE_WT_361"
-	manpower = 1
-	state_category = town
-	resources = {
-		steel = 8
-	}
 
-	history = {
-		owner = AEI
-		add_core_of = AEI
+state={
+	id=361
+	name="Karleston"
+
+	history={
+		owner = KOZ
+		victory_points = {
+			8057 15 
+		}
 		buildings = {
 			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 2
-			air_base = 1
+
 		}
-		victory_points = { 230 1 }
+		add_core_of = KOZ
+		add_core_of = GYE
+
 	}
 
-	provinces = {
-		230 384 521 568 672 1574 1737 1797 2115 2122 2181 2484 2569 2602 2899 2978 3009 3281 3397 3450 3473 3772 3907 3936 3975 3990 4037 4048 4074 4152 4294 4471 4543 4576 4637 4721 4819 4853 5000 5007 5071 7628 7629 7641 7655 7656 7666 7668 7681 7695 7701 7704 7713 7714 7720 7725 7730 7736 7748 7754 7772 7778 7787 7793 7800 7801 7819 7828 7838 7839 7871 7876 7877 7904 7913 7920 7921 7929
+	provinces={
+		109 123 577 849 1238 1401 1791 2335 2717 2806 2969 4539 7841 7856 7892 7893 7938 7943 7944 7958 7964 7974 7996 8013 8040 8050 8057 8091 8096 8125 8195 
 	}
+	manpower=658691
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

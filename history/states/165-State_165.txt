@@ -1,26 +1,20 @@
-state = {
-	id = 165
-	name = "STATE_WT_165"
-	manpower = 395824
-	state_category = town
 
-	history = {
-		owner = RFO
-		add_core_of = RFO
+state={
+	id=165
+	name="Vostokgrad"
+	history={
+		owner = NSA
 		buildings = {
 			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 2
-			dockyard = 1
-			air_base = 1
-			1106 = {
-				naval_base = 2
 			}
+	
+			add_core_of = NSA
 		}
-		victory_points = { 339 1 }
+	provinces={
+		1072 2789 2867 3063 4025 4592 5052 5670 5678 5696 5706 5716 5717 5720 5743 
 	}
-
-	provinces = {
-		339 1106 1685 3078 4157 4341 5452 5458 5490 5548 5568 5578 5600
-	}
+	manpower=439686
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

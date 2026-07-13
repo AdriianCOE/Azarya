@@ -1,24 +1,23 @@
-state = {
-	id = 359
-	name = "STATE_WT_359"
-	manpower = 287219
-	state_category = rural
 
-	history = {
-		owner = CZL
-		add_core_of = CZL
+state={
+	id=359
+	name="Istvaeonia"
+
+	history={
+		owner = GYE
 		buildings = {
-			infrastructure = 1
-			industrial_complex = 1
-			dockyard = 1
-			688 = {
-				naval_base = 2
-			}
+			industrial_complex = 3
+			infrastructure = 2
 		}
-		victory_points = { 688 1 }
+		add_core_of = GYE
+
 	}
 
-	provinces = {
-		688 1166 1757 1905 2056 2735 3893 4046 7702 7794
+	provinces={
+		429 732 899 1310 2253 4137 4312 
 	}
+	manpower=871293
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
 }

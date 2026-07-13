@@ -1,5 +1,5 @@
 # Self-built generic naval goals — NO blocked_for TAG references
-# (vanilla lists ENG/FRA/GER/ITA/JAP/SOV/USA which crash our TC MOD)
+# (vanilla lists THK/FRA/GER/ITA/JAP/NSA/SLU which crash our TC MOD)
 generic_naval_invasion_support = { objective_type = naval_invasion_support
 	min_priority = 4  max_priority = 14 }
 generic_mine_sweeping = { objective_type = mines_sweeping

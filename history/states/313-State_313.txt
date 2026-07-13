@@ -1,22 +1,33 @@
-state = {
-	id = 313
-	name = "STATE_WT_313"
-	manpower = 1
-	state_category = town
 
-	history = {
-		owner = AEI
-		add_core_of = AEI
-		buildings = {
-			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 2
-			air_base = 1
+state={
+	id=313
+	name="Aubin"
+		resources={
+	oil=5
+	rubber=16
+	}
+
+			history={
+		owner = SLV
+		victory_points = {
+			7315 5
 		}
-		victory_points = { 301 1 }
-	}
+				victory_points = {
+			3390 16
+		}
+				buildings = {
+			infrastructure = 1
 
-	provinces = {
-		301 303 333 525 547 1263 1689 1792 1828 1869 1923 1952 2077 2195 2252 2265 2907 2957 3357 3474 3586 3595 3722 3729 4135 4347 4371 4381 4518 4525 4661 7619 7675 7700 7729 7760 7810 7832 7850 7860 7874 7881 7912 7928 7932 7933 7946 7975 7982 8009 8034 8051 8053 8078 8079 8098 8099 8118 8136 8178
+		}
+		add_core_of = SLV
+		
 	}
+	
+	provinces={
+		724 889 1370 1567 1873 2528 2765 3390 3571 4055 4142 4967 7290 7307 7315 7329 7334 7341 7357 7364 7365 7366 7379 7392 7409 
+	}
+	manpower=224929
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

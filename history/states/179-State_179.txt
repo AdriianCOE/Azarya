@@ -1,24 +1,25 @@
-state = {
-	id = 179
-	name = "STATE_WT_179"
-	manpower = 158692
-	state_category = rural
 
-	history = {
-		owner = RFO
-		add_core_of = RFO
-		buildings = {
-			infrastructure = 1
-			industrial_complex = 1
-			dockyard = 1
-			42 = {
-				naval_base = 2
-			}
+state={
+	id=179
+	name="Steiburg"
+	history={
+		owner = BKG
+		victory_points = {
+			4850 5
 		}
-		victory_points = { 5573 12 }
+		buildings = {
+			infrastructure = 2
+			}
+	
+			add_core_of = SVD
+			add_core_of = BKG
+			add_core_of = RFO
+		}
+	provinces={
+		68 618 1014 1065 1318 2216 2262 2864 4110 4850 5487 5505 5517 5524 5581 5592 5613 5653 5739 
 	}
-
-	provinces = {
-		42 1835 5005 5573 5609
-	}
+	manpower=237948
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

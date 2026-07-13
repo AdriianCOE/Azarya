@@ -1,0 +1,14 @@
+spriteTypes = { 
+	##Icon For: Monarquia Estabelecida
+	SpriteType = { 
+		name = "GFX_idea_THK_Corrupt_Queen_GFX"
+		texturefile = "gfx/interface/ideas/THK_Corrupt_Queen_GFX.dds"
+	}
+	SpriteType = { 
+		name = "GFX_POL_ideology_drift_defence"
+		texturefile = "GFX_POL_ideology_drift_defence"
+	}
+ 
+ }
+ 	
+

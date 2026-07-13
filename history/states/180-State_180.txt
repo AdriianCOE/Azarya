@@ -1,26 +1,28 @@
-state = {
-	id = 180
-	name = "STATE_WT_180"
-	manpower = 446983
-	state_category = town
 
-	history = {
-		owner = AEI
-		add_core_of = AEI
-		buildings = {
-			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 2
-			dockyard = 1
-			air_base = 1
-			868 = {
-				naval_base = 2
-			}
+state={
+	id=180
+	name="Selzach"
+	history={
+		owner = RFO
+		victory_points = {
+			5573 12
 		}
-		victory_points = { 655 5 }
+		buildings = {
+			infrastructure = 1
+			5573 = {
+				naval_base = 1
+				}
+			}
+	
+			add_core_of = SVD
+			add_core_of = BKG
+			add_core_of = RFO
+		}
+	provinces={
+		42 1835 5005 5573 5609 
 	}
-
-	provinces = {
-		655 868 936 5669 5684 15899 15900
-	}
+	manpower=158692
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

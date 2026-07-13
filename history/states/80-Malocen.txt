@@ -1,0 +1,37 @@
+
+state={
+	id=80
+	name="Malocen"
+	resources={
+		oil=2.000
+		steel=1.000
+	}
+
+	history={
+		owner = RFB
+		victory_points = {
+			2915 30 
+		}
+		victory_points = {
+			8400 15 
+		}
+		victory_points = {
+			8316 5 
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 3
+
+		}
+		add_core_of = RFB
+		add_core_of = NIR
+	}
+
+	provinces={
+		364 463 1958 2493 2915 3130 3873 3996 4213 4239 8188 8237 8270 8282 8290 8293 8311 8316 8328 8356 8398 8400 8439 8485 8501 8533 8584 
+	}
+	manpower=1892940
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

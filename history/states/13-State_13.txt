@@ -1,26 +1,29 @@
-state = {
-	id = 13
-	name = "STATE_WT_13"
-	manpower = 874982
-	state_category = city
 
-	history = {
+state={
+	id=13
+	name="Fischin"
+	resources = {
+		oil = 12
+	}
+	history={
 		owner = RFO
-		add_core_of = RFO
-		buildings = {
-			infrastructure = 3
-			arms_factory = 2
-			industrial_complex = 4
-			dockyard = 2
-			air_base = 2
-			3306 = {
-				naval_base = 3
-			}
+		victory_points = {
+			4921 15
 		}
-		victory_points = { 4921 15 }
+		buildings = {
+			industrial_complex = 3
+			infrastructure = 3
+			}
+	
+			add_core_of = SVD
+			add_core_of = BKG
+			add_core_of = RFO
+		}
+	provinces={
+		2522 3306 3492 3579 3711 4196 4223 4696 4921 5109 5308 5315 5324 5343 5370 5432 5443 
 	}
-
-	provinces = {
-		2522 3306 3492 3579 3711 4196 4223 4696 4921 5109 5308 5315 5324 5343 5370 5432 5443
-	}
+	manpower=874982
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
 }

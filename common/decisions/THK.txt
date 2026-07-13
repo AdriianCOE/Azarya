@@ -1,0 +1,242 @@
+THK_bop_decisions_category = {
+	THK_very_low_increase_effect = {
+		icon = decision_generic_decision
+		priority = 90
+		allowed = {
+			original_tag = THK
+		}
+
+		cost = 10
+
+		days_re_enable = 10
+
+		complete_effect = {
+			THK_bop_very_low_increase_effect = yes
+		}
+
+		
+	}
+	
+	THK_low_increase_effect = {
+		priority = 90
+		icon = GFX_decision_generic_factory
+
+		allowed = {
+			original_tag = THK
+		}
+
+		cost = 50
+
+		days_re_enable = 365
+
+		complete_effect = {
+			custom_effect_tooltip = add_factory_effect
+			THK_bop_low_increase_effect = yes
+			add_offsite_building = { type = arms_factory level = 1 }
+		}
+
+		
+	}
+	
+#	THK_medium_increase_effect = {
+#		priority = 90
+#		icon = GFX_decision_generic_military
+#
+#		allowed = {
+#			original_tag = THK
+#		}
+#
+#		cost = 50
+#
+#		days_re_enable = 10
+#
+#		complete_effect = {
+#			THK_bop_medium_increase_effect = yes
+#		}
+#
+#		
+#	}
+	
+	THK_high_increase_effect = {
+		priority = 90
+		icon = GFX_decision_THK_military_buildup
+
+		allowed = {
+			original_tag = THK
+		}
+
+		cost = 50
+
+		days_re_enable = 365
+
+		complete_effect = {
+			custom_effect_tooltip = add_equipment_effect
+			THK_bop_high_increase_effect = yes
+			add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 1000
+		}
+			add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 250
+		}
+	}
+
+		
+	}
+	
+#	THK_absurdly_high_increase_effect = {
+#		priority = 90
+#		icon = GFX_decision_generic_military
+#
+#		allowed = {
+#			original_tag = THK
+#		}
+#
+#		cost = 50
+#
+#		days_re_enable = 10
+#
+#		complete_effect = {
+#			THK_bop_absurdly_high_increase_effect = yes
+#		}
+#
+#		
+#	}
+	
+	THK_very_low_decrease_effect = {
+		priority = 90
+		icon = GFX_decision_generic_decision
+
+		allowed = {
+			original_tag = THK
+		}
+
+		cost = 10
+
+		days_re_enable = 10
+
+		complete_effect = {
+			THK_bop_very_low_decrease_effect = yes
+		}
+
+		
+	}
+	
+	THK_low_decrease_effect = {
+		priority = 90
+		icon = GFX_decision_generic_construction
+
+		allowed = {
+			original_tag = THK
+		}
+
+		cost = 50
+
+		days_re_enable = 365
+
+		complete_effect = {
+			custom_effect_tooltip = add_building_slot
+			THK_bop_low_decrease_effect = yes
+			random_core_state = {
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+
+		
+	}
+	
+#	THK_medium_decrease_effect = {
+#		priority = 90
+#		icon = GFX_decision_generic_military
+#
+#		allowed = {
+#			original_tag = THK
+#		}
+#
+#		cost = 50
+#
+#		days_re_enable = 10
+#
+#		complete_effect = {
+#			THK_bop_medium_decrease_effect = yes
+#		}
+#
+#		
+#	}
+	
+	THK_high_decrease_effect = {
+		priority = 90
+		icon = GFX_decision_generic_military
+
+		allowed = {
+			original_tag = THK
+		}
+
+		custom_cost_trigger = {
+			command_power > 49
+#			has_political_power > 49
+#			has_army_experience > 14
+		}
+		custom_cost_text = decision_cost_CP_50_pp_50_ArmXP_15
+				
+		days_re_enable = 365
+
+		complete_effect = {
+			if = {
+				limit = {
+					NOT = { has_country_flag = infantry_division_TK }
+				}
+				infantry_division_TK = yes
+			}
+			custom_effect_tooltip = THK_division_infantry_ss
+			THK_bop_high_decrease_effect = yes
+			
+				hidden_effect = {
+					random_owned_controlled_state = {
+								limit = { ROOT = { has_full_control_of_state = PREV } }
+								create_unit = {
+									division = "name = \"\" division_template = \"TK Militia-Division\" start_experience_factor = 0.7 start_equipment_factor = 0.5" 
+									owner = THK
+								}
+								create_unit = {
+									division = "name = \"\" division_template = \"TK Militia-Division\" start_experience_factor = 0.7 start_equipment_factor = 0.5" 
+									owner = THK
+						}
+					}
+				add_command_power = -50
+				army_experience = -10
+				}
+		}
+		visible = { has_completed_focus = THK_RoyalAlternative }
+	}
+	
+#	THK_absurdly_high_decrease_effect = {
+#		priority = 90
+#		icon = GFX_decision_generic_military
+#
+#		allowed = {
+#			original_tag = THK
+#		}
+#
+#		custom_cost_trigTHK = {
+#			command_power > 49
+#			has_political_power > 49
+#			has_army_experience > 14
+#		}
+#		custom_cost_text = decision_cost_CP_50_pp_50_ArmXP_15
+#		
+#		days_re_enable = 10
+#
+#		complete_effect = {
+#			THK_bop_absurdly_high_decrease_effect = yes
+#			hidden_effect = {
+#				add_command_power = -50
+#				add_political_power = -50
+#				army_experience = -15
+#			}
+#		}
+#
+#		
+#	}
+}

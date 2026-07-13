@@ -1,25 +1,30 @@
-state = {
-	id = 212
-	name = "STATE_WT_212"
-	manpower = 1
-	state_category = town
-	resources = {
-		oil = 5
-	}
-
-	history = {
-		owner = DKG
-		add_core_of = DKG
-		buildings = {
-			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 2
-			air_base = 1
+state={
+	id=212
+	name="Terramor"
+	history={
+		owner = LUA
+		victory_points = {
+			1159 30
 		}
-		victory_points = { 557 1 }
+		victory_points = {
+			6491 15
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 3
+			air_base = 1
+			1159 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = LUA
 	}
-
-	provinces = {
-		557 675 747 1018 1536 1682 1808 2039 2113 2301 2411 2428 2534 2557 2776 2814 2901 3266 3290 3403 3406 3525 3547 3563 3796 3880 3956 4116 4121 4163 4166 4272 4453 4466 4646 4670 5013 5987 5994 6004 6012 6014 6021 6051 6052 6058 6071 6079 6128 6129 6136 6150 6151 6154 6173 6182 6190 6191 6216 6222 6244 6257
+	provinces={
+		222 812 1159 1234 1591 2328 2840 3546 4117 4243 4451 4741 6241 6256 6283 6291 6304 6315 6322 6351 6368 6398 6402 6408 6411 6412 6422 6437 6438 6439 6456 6469 6491 
 	}
+	manpower=2195655
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
 }

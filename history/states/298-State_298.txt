@@ -1,22 +1,22 @@
-state = {
-	id = 298
-	name = "STATE_WT_298"
-	manpower = 1
-	state_category = town
 
-	history = {
-		owner = AEI
-		add_core_of = AEI
-		buildings = {
-			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 2
-			air_base = 1
-		}
-		victory_points = { 641 1 }
+state={
+	id=298
+	name="Blestium"
+
+	history={
+		owner = CZL
+			buildings = {
+		    infrastructure = 1	
+			}
+			
+	  add_core_of = CZL
 	}
 
-	provinces = {
-		641 710 719 1020 1377 1658 1934 2297 2527 2627 2950 3314 3462 3708 4425 7079 7099 7149 7193 7289 7291
+	provinces={
+		31 2022 2045 2264 3276 3294 3371 3382 3445 3982 4861 7183 7196 7223 7230 7236 7267 7337 7350 7378 7413 
 	}
+	manpower=627861
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

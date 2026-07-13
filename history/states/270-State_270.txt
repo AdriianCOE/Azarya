@@ -1,22 +1,16 @@
-state = {
-	id = 270
-	name = "STATE_WT_270"
-	manpower = 1
-	state_category = town
 
-	history = {
-		owner = AEI
-		add_core_of = AEI
-		buildings = {
-			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 2
-			air_base = 1
+state={
+	id=270
+	name="STATE_270"
+	history={
+		owner = TRB
+		add_core_of = TRB
 		}
-		victory_points = { 79 1 }
+	provinces={
+		44 107 128 790 918 1116 1656 6808 6872 6886 6956 7019 
 	}
-
-	provinces = {
-		79 292 341 350 354 369 396 651 751 859 1000 1194 1643 1703 1912 1955 2055 2274 2993 3008 3031 3109 3539 3578 3580 3591 3594 4843 6624 6794 6805 6912 6936 6988
-	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

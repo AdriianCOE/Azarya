@@ -1,0 +1,133 @@
+focus_tree = {
+	id = czl_focus
+	continuous_focus_position = { x = -40 y = 1500 }
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CZL
+		}
+	}
+
+	# A Revolução Incompleta
+	focus = {
+		id = CZL_Unfinished_Revolution
+		icon = GFX_SOV_a_new_theory_of_revolution_ccp_2d_sov_compatibility
+		x = 0
+		y = 0
+		cost = 10
+		ai_will_do = { factor = 50 }
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+
+	# Conselho Sombra
+	focus = {
+		id = CZL_Shadow_Council
+		icon = GFX_focus_FIN_the_second_finnish_civil_war
+		prerequisite = { focus = CZL_Unfinished_Revolution }
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 40 }
+		completion_reward = {
+			add_political_power = 25
+			add_stability = -0.05
+		}
+	}
+
+	# Purga do Partido
+	focus = {
+		id = CZL_Party_Purge
+		icon = GFX_SOV_expand_the_agitprop_ccp_2d_sov_compatibility
+		prerequisite = { focus = CZL_Shadow_Council }
+		x = 0
+		y = 2
+		cost = 10
+		ai_will_do = { factor = 30 }
+		completion_reward = {
+			add_stability = -0.05
+			add_political_power = 50
+		}
+	}
+
+	# Centralizar o Comando
+	focus = {
+		id = CZL_Centralize_Command
+		icon = GFX_focus_SOV_zinovyevists
+		prerequisite = { focus = CZL_Party_Purge }
+		x = 0
+		y = 3
+		cost = 10
+		ai_will_do = { factor = 40 }
+		completion_reward = {
+			set_politics = {
+				ruling_party = communism
+				name = "Partido Revolucionário de Lesc"
+				elections_allowed = no
+			}
+		}
+	}
+
+	# Industrialização Acelerada
+	focus = {
+		id = CZL_Accelerated_Industry
+		icon = GFX_focus_generic_industry_2
+		prerequisite = { focus = CZL_Centralize_Command }
+		x = -1
+		y = 4
+		cost = 10
+		ai_will_do = { factor = 30 }
+		completion_reward = {
+			random_owned_state = {
+				limit = { is_core_of = ROOT }
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	# Reorganizar o Exército Popular
+	focus = {
+		id = CZL_Reorganize_Peoples_Army
+		icon = GFX_SOV_war_measures_in_the_east_ccp_2d_sov_compatibility
+		prerequisite = { focus = CZL_Centralize_Command }
+		x = 1
+		y = 4
+		cost = 10
+		ai_will_do = { factor = 30 }
+		completion_reward = {
+			create_corps_commander = {
+				name = "General Karet"
+				portrait_path = "GFX_portrait_generic_general"
+				skill = 3
+				attack_skill = 4
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+		}
+	}
+
+	# Preparar a Guerra Libertadora
+	focus = {
+		id = CZL_Prepare_Liberation_War
+		icon = GFX_focus_GER_war_with_the_ussr
+		prerequisite = { focus = CZL_Reorganize_Peoples_Army }
+		x = 0
+		y = 5
+		cost = 10
+		ai_will_do = { factor = 50 }
+		completion_reward = {
+			add_war_support = 0.15
+			set_rule = {
+				can_create_factions = yes
+				can_send_volunteers = yes
+			}
+		}
+	}
+}

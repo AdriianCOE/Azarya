@@ -1,26 +1,12 @@
-state = {
-	id = 257
-	name = "STATE_WT_257"
-	manpower = 908984
-	state_category = large_town
-	resources = {
-		steel = 19
-		chromium = 10
-	}
 
-	history = {
-		owner = INV
-		add_core_of = INV
-		buildings = {
-			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 3
-			air_base = 1
-		}
-		victory_points = { 3472 20 }
+state={
+	id=257
+	name="STATE_257"
+	provinces={
+		490 594 1478 1653 1821 2197 2549 3240 3413 6754 6763 6781 6792 6799 6825 6831 6839 6851 
 	}
-
-	provinces = {
-		21 224 613 964 1597 1609 1942 1978 2057 3472 4292 4384 5031 6907 7022 7031 7039 7043
-	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

@@ -1,27 +1,25 @@
-state = {
-	id = 127
-	name = "STATE_WT_127"
-	manpower = 1524323
-	state_category = large_city
 
-	history = {
-		owner = SLU
-		add_core_of = SLU
-		buildings = {
-			infrastructure = 4
-			arms_factory = 3
-			industrial_complex = 5
-			dockyard = 3
-			air_base = 2
-			2845 = {
-				naval_base = 3
-			}
+state={
+	id=127
+	name="Pietus"
+
+	history={
+		owner = GYE
+		victory_points = {
+			3170 5 
 		}
-		victory_points = { 3814 28 }
-		victory_points = { 4720 15 }
+		buildings = {
+			arms_factory = 1
+			infrastructure = 1
+		}
+		add_core_of = GYE
 	}
 
-	provinces = {
-		2653 2845 3814 3848 4133 4720 5174 5187 5190 5200 5202 5207 5210 5218 5232
+	provinces={
+		102 444 471 1039 2371 3170 3821 6890 6895 6941 
 	}
+	manpower=201923
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

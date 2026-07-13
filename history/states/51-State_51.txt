@@ -1,29 +1,29 @@
-state = {
-	id = 51
-	name = "STATE_WT_51"
-	manpower = 1649859
-	state_category = large_city
-	resources = {
-		tungsten = 5
-	}
-
-	history = {
+state={
+	id=51
+	name="Sithius"
+	history={
 		owner = SIT
-		add_core_of = SIT
+		victory_points = {
+			6444 30
+		}
 		buildings = {
 			infrastructure = 4
-			arms_factory = 3
-			industrial_complex = 5
-			dockyard = 3
 			air_base = 2
-			3016 = {
-				naval_base = 3
+			industrial_complex = 4
+			arms_factory = 2
+		6444 = {
+			naval_base = 4
+			coastal_bunker = 2
+			bunker = 2
 			}
 		}
-		victory_points = { 6444 30 }
-	}
+		add_core_of = SIT
 
-	provinces = {
+	}
+	provinces={
 		3016 6444 6455 6329
 	}
+	buildings_max_level_factor=1.000
+        manpower=1649859
+        state_category = large_city
 }

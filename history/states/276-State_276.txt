@@ -1,26 +1,32 @@
-state = {
-	id = 276
-	name = "STATE_WT_276"
-	manpower = 1
-	state_category = town
 
-	history = {
-		owner = AEI
-		add_core_of = AEI
+state={
+	id=276
+	name="Theranda"
+	resources={
+	    steel=12
+		tungsten=4
+	}
+	
+	    history = {
+        owner = CZL
 		buildings = {
-			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 2
-			dockyard = 1
-			air_base = 1
-			3771 = {
-				naval_base = 2
+		    infrastructure = 1	
 			}
+		victory_points = {
+			6940 5 
 		}
-		victory_points = { 542 1 }
-	}
+		victory_points = {
+			7001 5 
+		}
 
-	provinces = {
-		542 788 1631 2226 3771 7057 7120
+		add_core_of = CZL
+    }
+	
+	provinces={
+		327 405 654 827 876 1719 1796 1960 2632 2938 3524 4105 4141 4719 6857 6889 6899 6901 6915 6935 6940 6943 6945 6952 6994 7001 
 	}
+	manpower=977951
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

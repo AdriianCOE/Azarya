@@ -1,27 +1,29 @@
-state = {
-	id = 173
-	name = "STATE_WT_173"
-	manpower = 1394859
-	state_category = large_city
 
-	history = {
-		owner = AEI
-		add_core_of = AEI
-		buildings = {
-			infrastructure = 4
-			arms_factory = 3
-			industrial_complex = 5
-			dockyard = 3
-			air_base = 2
-			628 = {
-				naval_base = 3
-			}
+state={
+	id=173
+	name="Bruchwald"
+	history={
+		owner = DTB
+		victory_points = {
+			2905 10
 		}
-		victory_points = { 5541 25 }
-		victory_points = { 3171 8 }
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			2905 = {
+				naval_base = 2
+				}
+			}
+	
+			add_core_of = SVD
+			add_core_of = BKG
+			add_core_of = RFO
+		}
+	provinces={
+		25 1964 2905 2974 4187 5530 5631 5632 5663 
 	}
-
-	provinces = {
-		52 628 737 1067 1186 1251 1264 3030 3096 3171 3443 3778 3853 4198 4252 4299 4916 5366 5387 5389 5424 5508 5512 5541 5638
-	}
+	manpower=318492
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

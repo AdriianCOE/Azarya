@@ -1,24 +1,28 @@
-state = {
-	id = 349
-	name = "STATE_WT_349"
-	manpower = 617090
-	state_category = rural
-	resources = {
-		steel = 11
-		chromium = 8
-	}
 
-	history = {
-		owner = FVI
-		add_core_of = FVI
-		buildings = {
-			infrastructure = 1
-			industrial_complex = 1
+state={
+	id=349
+	name="Vorlagia"
+
+	history={
+		owner = GYE
+		victory_points = {
+			3724 12
 		}
-		victory_points = { 2508 5 }
+		buildings = {
+			industrial_complex = 4
+			infrastructure = 3
+			arms_factory = 2
+			air_base = 2
+		}
+		add_core_of = GYE
+
 	}
 
-	provinces = {
-		1497 2310 2508 2805 2939 2999 3901 4119 7634 7644 7650 7737 7795 7822 7878
+	provinces={
+		352 377 1224 2364 2589 2733 2782 3564 3724 4638 5133 7557 7579 7595 7638 7648 7661 7742 7767 7776 
 	}
+	manpower=2442512
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
 }

@@ -1,22 +1,22 @@
-state = {
-	id = 486
-	name = "STATE_WT_486"
-	manpower = 791093
-	state_category = large_town
-
-	history = {
-		owner = BOK
-		add_core_of = BOK
+state={
+	id=486
+	name="Yoipa"
+	history={
+		owner = ARK
+		victory_points = {
+			1188 5
+		}
 		buildings = {
 			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 3
-			air_base = 1
+			industrial_complex = 1
 		}
-		victory_points = { 1111 5 }
+		add_core_of = ARK
 	}
-
-	provinces = {
-		6089 6127 6176 1111 787 15906 15905 15904
+	provinces={
+		362 469 1188 6478 
 	}
+	manpower=591093
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
 }

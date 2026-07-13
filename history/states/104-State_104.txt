@@ -1,23 +1,17 @@
-state = {
-	id = 104
-	name = "STATE_WT_104"
-	manpower = 987
-	state_category = tiny_island
-
-	history = {
-		owner = WIH
-		add_core_of = WIH
+state={
+	id=104
+	name="STATE_104"
+	history={
+		owner = ARD
 		buildings = {
 			infrastructure = 1
-			dockyard = 1
-			261 = {
-				naval_base = 2
-			}
 		}
-		victory_points = { 120 1 }
+		add_core_of = ARD
 	}
-
-	provinces = {
-		120 261 307 315 331 1267 1492 1504 1870 1959 2018 2220 2311 3011 3089 3537 3696 4208 4388 4972 5583 5615 5635 5641 5689 5721 5742 5747 5765 5794 5868 5870 5891 6042
+	provinces={
+		9200 
 	}
+	buildings_max_level_factor=1.000
+        manpower=1
+        state_category = town
 }

@@ -1,22 +1,26 @@
-state = {
-	id = 398
-	name = "STATE_WT_398"
-	manpower = 1
-	state_category = town
 
-	history = {
-		owner = AEI
-		add_core_of = AEI
+state={
+	id=398
+	name="Veridia"
+	history={
+		owner = ARD
+		victory_points = {
+			8911  10
+		}
 		buildings = {
 			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 2
-			air_base = 1
+			industrial_complex = 1
+			8911 = {
+                naval_base = 1
+			}
 		}
-		victory_points = { 428 1 }
+		add_core_of = ARD
 	}
-
-	provinces = {
-		428 1548 1788 1924 2850 2916 3461 4259 4475 4840 5072 5093 8570 8586 8639 8654 8695 8745 8761 8774 8826 8860 8924 8938 8939 8971 8980
+	provinces={
+		375 1457 1753 2604 2825 3278 3405 4669 4711 4915 4976 5115 8724 8754 8766 8800 8871 8911 8947 
 	}
+	manpower=1350200
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

@@ -1,22 +1,23 @@
-state = {
-	id = 389
-	name = "STATE_WT_389"
-	manpower = 1
-	state_category = town
 
-	history = {
-		owner = AEI
-		add_core_of = AEI
-		buildings = {
-			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 2
-			air_base = 1
+state={
+	id=389
+	name="Mount Avenlock"
+	history={
+		owner = LVD
+		victory_points = {
+			8278  5
 		}
-		victory_points = { 922 1 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+		}
+		add_core_of = LVD
 	}
-
-	provinces = {
-		922 1004 1062 1087 1228 1566 3401 3642 3680 4391 8534 8544 8606 8619 8669 8684 8891
+	provinces={
+		1155 2282 2531 2535 3201 3469 4440 5125 8225 8253 8278 8297 8329 8365 8379 8407 8444 8451 8454 8455 8557 8575 8593 8594 
 	}
+	manpower=2192837
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
 }

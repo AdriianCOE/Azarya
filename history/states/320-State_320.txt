@@ -1,22 +1,24 @@
-state = {
-	id = 320
-	name = "STATE_WT_320"
-	manpower = 509483
-	state_category = town
 
-	history = {
+state={
+	id=320
+	name="Hesperia"
+
+	history={
 		owner = GYE
-		add_core_of = GYE
 		buildings = {
-			infrastructure = 2
-			arms_factory = 1
 			industrial_complex = 2
-			air_base = 1
+			arms_factory = 2
+			infrastructure = 3
 		}
-		victory_points = { 820 1 }
+		add_core_of = GYE
+
 	}
 
-	provinces = {
-		820 1052 1988 2440 2529 2659 2926 3019 4366 4554 4712 5096 7613 7696 7727 7790 7805 7926
+	provinces={
+		344 408 425 706 805 1275 1578 3026 4159 4407 7283 7317 7446 7517 7522 
 	}
+	manpower=1400125
+	buildings_max_level_factor=1.000
+	state_category=city 
+	local_supplies=0.000
 }

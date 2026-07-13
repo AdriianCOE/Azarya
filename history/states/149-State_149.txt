@@ -1,24 +1,33 @@
-state = {
-	id = 149
-	name = "STATE_WT_149"
-	manpower = 188829
-	state_category = rural
 
-	history = {
-		owner = SLU
-		add_core_of = SLU
-		buildings = {
-			infrastructure = 1
-			industrial_complex = 1
-			dockyard = 1
-			2748 = {
-				naval_base = 2
-			}
+state={
+	id=149
+	name="Fenymalia"
+	resources={
+		oil=1
+}
+	history={
+		owner = BOA
+		victory_points = {
+			1324 15
 		}
-		victory_points = { 1577 8 }
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 1
+			1324 = {
+				naval_base = 1
+				}
+	
+			}
+			
+	
+		add_core_of = BOA
+		}
+	provinces={
+		85 1183 1324 1601 1660 1710 1790 2415 2656 2740 3191 5360 5368 5560 5565 
 	}
-
-	provinces = {
-		414 446 1179 1501 1577 2748 2960 3988 4830 5309 5320 5323 5334 5357 5388 5416
-	}
+	manpower=598598
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
 }

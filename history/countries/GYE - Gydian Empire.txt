@@ -1,0 +1,191 @@
+capital = 346
+set_oob = "GYE"
+
+
+# Starting tech
+set_technology = {
+		infantry_weapons = 1
+		infantry_weapons1 = 1
+		basic_train = 1	
+		tech_trucks = 1
+		tech_recon = 1
+		armored_car1 = 1
+		tech_field_hospital = 1
+		motorised_infantry = 1
+		tech_support = 1		
+		tech_engineers = 1
+		tech_maintenance_company = 1
+		gw_artillery = 1
+		interwar_antiair = 1
+		interwar_antitank = 1
+		interwar_artillery = 1
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+		improved_light_tank = 1
+		basic_medium_tank = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		basic_medium_tank_chassis = 1
+		improved_light_tank_chassis = 1
+		armor_tech_1 = 1
+		engine_tech_1 = 1
+	}
+}
+IF = {
+	limit = {
+		NOT = { has_dlc = "Man the Guns"}
+	}
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		transport = 1
+	}
+	
+}
+IF = {
+	limit = { has_dlc = "Man the Guns"}
+	set_technology = {
+		basic_naval_mines = 1
+			submarine_mine_laying = 1
+			early_ship_hull_light = 1
+			early_ship_hull_cruiser = 1
+			early_ship_hull_heavy = 1
+			basic_ship_hull_heavy = 1
+			basic_ship_hull_submarine = 1
+			basic_ship_hull_light = 1
+			pre_dreadnoughts = 1
+			early_ship_hull_submarine = 1
+			mtg_transport = 1
+			basic_torpedo = 1
+			improved_ship_torpedo_launcher = 1
+			basic_battery = 1
+			basic_light_battery = 1
+			basic_heavy_battery = 1
+			basic_depth_charges = 1
+			sonar = 1
+			basic_cruiser_armor_scheme = 1
+			damage_control_1 = 1
+	}
+}
+	if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_technology = {
+			aa_lmg = 1
+			aa_cannon_1 = 1
+			engines_1 = 1
+			engines_2 = 1
+			early_bombs = 1
+			aircraft_construction = 1
+			iw_small_airframe = 1
+			iw_medium_airframe = 1
+			iw_large_airframe = 1
+			basic_small_airframe = 1
+			basic_medium_airframe = 1
+			basic_large_airframe = 1
+			armor_piercing_bombs = 1
+			range_improvements = 1
+		}
+	else = {
+		set_technology = {
+			early_fighter = 1
+			naval_bomber1 = 1
+			early_bomber = 1
+			tactical_bomber1 = 1
+			CAS1 = 1
+			fighter1 = 1
+		}
+	}
+}
+
+recruit_character = GYE_ar
+recruit_character = GYE_acr
+recruit_character = GYE_mt
+recruit_character = GYE_stc
+recruit_character = GYE_aa2
+recruit_character = GYE_acgs
+recruit_character = GYE_ncm
+recruit_character = GYE_nccr
+recruit_character = GYE_coi
+recruit_character = GYE_democratic_guy
+recruit_character = GYE_acd2
+recruit_character = GYE_acas
+recruit_character = GYE_communist_guy
+recruit_character = GYE_ncs
+recruit_character = GYE_awt
+recruit_character = GYE_pot
+recruit_character = GYE_fascist_guy
+recruit_character = GYE_ai2
+recruit_character = GYE_nt
+recruit_character = GYE_aco2
+
+
+set_convoys = 157
+army_experience = 50
+set_research_slots = 3
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+		democratic = 10
+		fascism = 80
+		communism = 5
+		neutrality = 5
+}
+
+create_country_leader = {
+	ideology = Rexism
+}
+
+create_field_marshal = {
+	name = ""
+	picture = ""
+    traits = { Skilled_Staffer Infantry_Expert }
+    skill = 10
+    attack_skill = 8
+    defense_skill = 1
+    planning_skill = 10
+    logistics_skill = 10
+}
+
+create_equipment_variant = {
+		name = "Panzer-07"
+		type = medium_tank_chassis_1
+		modules = {
+			main_armament_slot = tank_small_cannon_2
+				turret_type_slot = tank_medium_three_man_tank_turret
+				suspension_type_slot = tank_torsion_bar_suspension
+				armor_type_slot = tank_welded_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_1
+				special_type_slot_2 = smoke_launchers
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 6
+				tank_nsb_armor_upgrade = 3
+		}
+		icon = "GFX_GER_basic_medium_tank_medium"
+}

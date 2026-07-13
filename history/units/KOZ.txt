@@ -1,0 +1,320 @@
+division_template = {
+	name = "Divisao de Infantaria"
+	division_names_group = SPAN_INFB_02
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 2 }
+		
+	}
+}
+division_template = {
+	name = "Cavalaria"  
+	division_names_group = SPAN_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+
+units = {
+	##### Ejército de KOZ #####
+	division= {	# "1a Divisao do Exercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 4930
+		division_template = "Divisao de Infantaria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+		division= {	# "2a Divisao do Exercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 4051
+		division_template = "Divisao de Infantaria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+		division= {	# "3a Divisao do Exercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 4908
+		division_template = "Divisao de Infantaria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+		division= {	# "4a Divisao do Exercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 3415
+		division_template = "Divisao de Infantaria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+			division= {	# "5a Divisao do Exercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 8057
+		division_template = "Divisao de Infantaria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+			division= {	# "6a Divisao do Exercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 1007
+		division_template = "Divisao de Infantaria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+
+			division= {	# "7a Divisao do Exercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 2380
+		division_template = "Divisao de Infantaria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+				division= {	# "8a Divisao do Exercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 9299
+		division_template = "Divisao de Infantaria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+					division= {	# "9a Divisao do Exercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 3932
+		division_template = "Divisao de Infantaria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+					division= {	# "10a Divisao do Exercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 9300
+		division_template = "Divisao de Infantaria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+					division= {	# "11a Divisao do Exercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 1007
+		division_template = "Divisao de Infantaria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+						division= {	# "12a Divisao do Exercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 9309
+		division_template = "Divisao de Infantaria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+							division= {	# "13a Divisao do Exercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 4056
+		division_template = "Divisao de Infantaria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+	    division= {	# "14a Divisao do Exercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 1007
+		division_template = "Divisao de Infantaria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+	    division= {	# "15a Divisao do Exercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 4852
+		division_template = "Divisao de Infantaria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+
+	division= {	# "1a Divisao de Cavalaria'"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 4151
+		division_template = "Cavalaria" 
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+	division= {	# "2a Divisao de Cavalaria'"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 2380
+		division_template = "Cavalaria" 
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+		division= {	# "3a Divisao de Cavalaria'"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 1007
+		division_template = "Cavalaria" 
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+			division= {	# "4a Divisao de Cavalaria'"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 9300
+		division_template = "Cavalaria" 
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+				division= {	# "5a Divisao de Cavalaria'"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 8194
+		division_template = "Cavalaria" 
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+        division= {	# "6a Divisao de Cavalaria'"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 9043
+		division_template = "Cavalaria" 
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+}
+
+	##### Naval OOB #####
+	units = {
+		fleet = {
+			name = "Marinha de Zauern"			
+				naval_base = 4051 
+				task_force = {	
+		name = "Marinha de Zauern"
+		location = 4051
+		ship = { name = "NRZ Thorund" pride_of_the_fleet = yes definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = KOZ version_name = "Thorund Class"} } }
+		ship = { name = "NRZ Aegir" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = KOZ version_name = "Thorund Class"} } }
+		ship = { name = "NRZ Aegir II" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = KOZ version_name = "Thorund Class"} } }
+		ship = { name = "NRZ Lumina" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOZ version_name = "Lumina Class"} } }
+		ship = { name = "NRZ Lumina II" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOZ version_name = "Lumina Class"} } }
+		ship = { name = "NRZ Lumina III" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOZ version_name = "Lumina Class"} } }
+		ship = { name = "NRZ Vesper" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOZ version_name = "Lumina Class"} } }
+		ship = { name = "NRZ Zephyr" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOZ version_name = "Lumina Class"} } }
+		ship = { name = "NRZ Hyperion" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOZ version_name = "Lumina Class"} } }
+		
+		# 1a Flotilla de Contratorpedeiros
+		ship = { name = "NRZ Fenix I" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOZ version_name = "Fenix Class"} } }
+		ship = { name = "NRZ Fenix II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOZ version_name = "Fenix Class"} } }
+		ship = { name = "NRZ Fenix III" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOZ version_name = "Fenix Class"} } }
+		ship = { name = "NRZ Fenix IV" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOZ version_name = "Fenix Class"} } }
+		ship = { name = "NRZ Fenix V" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOZ version_name = "Fenix Class"} } }
+		ship = { name = "NRZ Fenix VI" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOZ version_name = "Fenix Class"} } }
+		ship = { name = "NRZ Fenix VII" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOZ version_name = "Fenix Class"} } }
+		
+		# 2a Flotilla de Contratorpedeiros
+		ship = { name = "NRZ Fenix VIII" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOZ version_name = "Fenix Class"} } }	
+		ship = { name = "NRZ Borbol" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOZ version_name = "Fenix Class"} } }
+		ship = { name = "NRZ Fenix IX" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOZ version_name = "Fenix Class"} } }
+		ship = { name = "NRZ Fenix X" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOZ version_name = "Fenix Class"} } }
+	}				
+	task_force = {				
+		name = "Flotilha de Submarinos"			
+		location = 4051
+		ship = { name = "NRZ Leviatã" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = KOZ version_name = "Leviata Class"} } }
+		ship = { name = "NRZ Kraken" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = KOZ version_name = "Leviata Class" } } }
+		ship = { name = "NRZ Náutilus" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = KOZ version_name = "Leviata Class" } } }
+		ship = { name = "NRZ Tritão" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = KOZ version_name = "Leviata Class" } } }
+		ship = { name = "NRZ Scylla" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = KOZ version_name = "Leviata Class" } } }
+		}				
+	}
+}
+
+##### No Notable Air Forces #####
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "KOZ"
+		}
+		requested_factories = 5
+		progress = 0.60
+		efficiency = 50
+	}
+}

@@ -1,26 +1,31 @@
-state = {
-	id = 354
-	name = "STATE_WT_354"
-	manpower = 1
-	state_category = town
+state={
+	id=354
+	name="Pejosia"
+	resources={
+	chromium=10
+	}
 
-	history = {
-		owner = AEI
-		add_core_of = AEI
-		buildings = {
-			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 2
-			dockyard = 1
-			air_base = 1
-			2062 = {
-				naval_base = 2
-			}
+			history={
+		owner = SLV
+		victory_points = {
+			7763 20 
 		}
-		victory_points = { 487 1 }
+				buildings = {
+			infrastructure = 2
+			7763 = {
+                naval_base = 1
+            }
+
+		}
+		add_core_of = SLV
+
 	}
 
-	provinces = {
-		487 1378 1428 2001 2062 2833 2927 3925 4072 4555 4633 7726 7770 7786 7816 7836 7885
+	provinces={
+		682 1033 1147 2430 2709 3453 3604 4660 7688 7718 7732 7763 7804 7834 
 	}
+	manpower=321949
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

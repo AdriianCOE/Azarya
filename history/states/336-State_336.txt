@@ -1,24 +1,38 @@
-state = {
-	id = 336
-	name = "STATE_WT_336"
-	manpower = 297929
-	state_category = rural
 
-	history = {
+state={
+	id=336
+	name="Aubigny"
+	resources={
+	oil=15
+	}
+
+			history={
 		owner = SLV
-		add_core_of = SLV
-		buildings = {
-			infrastructure = 1
-			industrial_complex = 1
-			dockyard = 1
-			273 = {
-				naval_base = 2
-			}
+		victory_points = {
+			7467 50 
 		}
-		victory_points = { 4467 5 }
-	}
+				victory_points = {
+			7582 5 
+		}
+				buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 1
+			air_base = 2
+			7467 = {
+                naval_base = 3
+            }
 
-	provinces = {
-		56 273 1128 1474 1503 1635 3056 4240 4403 4467 7533 7554 7568 7590 7612 7723 7753
+		}
+		add_core_of = SLV
+
 	}
+	
+	provinces={
+		1032 2009 2881 2906 4400 4617 7467 7476 7482 7495 7539 7582 
+	}
+	manpower=1956958
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
 }

@@ -1,27 +1,21 @@
-state = {
-	id = 352
-	name = "STATE_WT_352"
-	manpower = 595027
-	state_category = town
 
-	history = {
-		owner = CZL
-		add_core_of = CZL
+state={
+	id=352
+	name="Venedia"
+			history={
+		owner = GYE
 		buildings = {
-			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 2
-			dockyard = 1
-			air_base = 1
-			4996 = {
-				naval_base = 2
-			}
+			industrial_complex = 1
+			dockyard = 3
+			infrastructure = 3
 		}
-		victory_points = { 7669 12 }
-		victory_points = { 4996 25 }
+		add_core_of = GYE
 	}
-
-	provinces = {
-		895 2728 3057 3122 4408 4996 5116 7581 7624 7632 7633 7643 7657 7669 7673 7678 7698 7722 7752 7765
+	provinces={
+		1145 1192 1522 1642 2099 2625 2911 3452 3549 3881 4351 5100 7531 7561 7588 7596 7645 7652 7653 7709 7735 7738 7739 7743 
 	}
+	manpower=1138497
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
 }

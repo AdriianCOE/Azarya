@@ -1,23 +1,18 @@
-state = {
-	id = 31
-	name = "STATE_WT_31"
-	manpower = 8589
-	state_category = tiny_island
-
-	history = {
+state={
+	id=31
+	name="Skaldvik"
+	history={
 		owner = LUQ
-		add_core_of = LUQ
 		buildings = {
 			infrastructure = 1
-			dockyard = 1
-			1233 = {
-				naval_base = 2
 			}
+	
+		add_core_of = LUQ
 		}
-		victory_points = { 1233 1 }
+	provinces={
+		1233 
 	}
-
-	provinces = {
-		1233
-	}
+	buildings_max_level_factor=1.000
+        manpower=8589
+        state_category = tiny_island
 }

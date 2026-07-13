@@ -1,24 +1,30 @@
-state = {
-	id = 178
-	name = "STATE_WT_178"
-	manpower = 237948
-	state_category = rural
 
-	history = {
+state={
+	id=178
+	name="Badefenbia"
+	history={
 		owner = BKG
-		add_core_of = BKG
-		buildings = {
-			infrastructure = 1
-			industrial_complex = 1
-			dockyard = 1
-			1014 = {
-				naval_base = 2
-			}
+		victory_points = {
+			5620 12
 		}
-		victory_points = { 4850 5 }
+		victory_points = {
+			2787 5
+		}
+		buildings = {
+			industrial_complex = 2
+			infrastructure = 3
+				
+			}
+	
+			add_core_of = SVD
+			add_core_of = BKG
+			add_core_of = RFO
+		}
+	provinces={
+		2787 3196 3837 4732 5142 5597 5606 5616 5620 5624 5651 5667 5682 5693 
 	}
-
-	provinces = {
-		68 618 1014 1065 1318 2216 2262 2864 4110 4850 5487 5505 5517 5524 5581 5592 5613 5653 5739
-	}
+	manpower=847000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
 }

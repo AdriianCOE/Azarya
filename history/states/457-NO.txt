@@ -1,0 +1,17 @@
+
+state={
+	id=457
+	name="Londmontains"
+	history={
+		owner = MOR
+		add_core_of = MOR
+	}
+	provinces={
+		 5848 1326 1347
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+	impassable=yes
+}

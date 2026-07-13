@@ -6,5 +6,5 @@ continents = {
 	africa
 	asia
 	middle_east
-	default_continent
+	Azarya
 }

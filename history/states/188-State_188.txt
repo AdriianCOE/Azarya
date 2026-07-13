@@ -1,25 +1,30 @@
-state = {
-	id = 188
-	name = "STATE_WT_188"
-	manpower = 448592
-	state_category = town
-	resources = {
-		steel = 14
-	}
 
-	history = {
-		owner = BKG
-		add_core_of = BKG
-		buildings = {
-			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 2
-			air_base = 1
+state={
+	id=188
+	name="Duskland"
+	history={
+		owner = MOR
+		victory_points = {
+			5642 30
 		}
-		victory_points = { 411 1 }
-	}
+		victory_points = {
+			134 5
+		}
+		buildings = {
+			infrastructure = 3
+			5642 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = MOR
+		
 
-	provinces = {
-		411 1257 1552 1781 1840 1889 2753 3411 3570 4601 4981 5714 5728 5735 5756 5761
 	}
+	provinces={
+		134 256 738 2006 3140 5630 5642 5650 5655 15901 15902
+	}
+	manpower=2193842
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
 }

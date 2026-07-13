@@ -1,27 +1,22 @@
-state = {
-	id = 476
-	name = "STATE_WT_476"
-	manpower = 4298578
-	state_category = megalopolis
 
-	history = {
+state={
+	id=476
+	name="Proletarsk"
+	history={
 		owner = NSA
-		add_core_of = NSA
 		buildings = {
-			infrastructure = 5
-			arms_factory = 5
-			industrial_complex = 7
-			dockyard = 4
-			air_base = 3
-			5625 = {
-				naval_base = 3
+			infrastructure = 3
+			industrial_complex = 3
+			air_base = 1
 			}
+	
+			add_core_of = NSA
 		}
-		victory_points = { 5625 18 }
-		victory_points = { 4146 30 }
+	provinces={
+		5951 758 5969 5989 6013 6027 5999 5971 2783 1185 1639 30 4082 2431 2108 1500 1826 1023 5957 5984 920
 	}
-
-	provinces = {
-		5625 5601 5103 442 4759 5607 5582 2515 5554 5593 5614 3533 5636 1489 3947 4474 3941 5662 5683 5705 5688 1815 5634 781 4146 415 5685 1834 5709 5699 5715 5736 2752 5711 5719 5746 943 4059 520
-	}
+	manpower=659867
+	state_category=large_town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
 }

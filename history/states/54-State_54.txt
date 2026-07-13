@@ -1,23 +1,15 @@
-state = {
-	id = 54
-	name = "STATE_WT_54"
-	manpower = 12092
-	state_category = tiny_island
-
-	history = {
-		owner = BOM
+state={
+	id=54
+	name="Nascent"
+			    history = {
+        owner = BOM
 		add_core_of = BOM
-		buildings = {
-			infrastructure = 1
-			dockyard = 1
-			1112 = {
-				naval_base = 2
-			}
-		}
-		victory_points = { 1112 1 }
-	}
 
-	provinces = {
-		1112 9494 9495 86
 	}
+	provinces={
+		1112 9494 9495
+	}
+	buildings_max_level_factor=1.000
+        manpower=12092
+        state_category = tiny_island
 }

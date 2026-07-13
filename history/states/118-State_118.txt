@@ -1,23 +1,19 @@
-state = {
-	id = 118
-	name = "STATE_WT_118"
-	manpower = 22985
-	state_category = small_island
-
-	history = {
+state={
+	id=118
+	name="Lipre Island"
+		history={
 		owner = UPG
-		add_core_of = UPG
-		buildings = {
+			buildings = {
 			infrastructure = 1
-			dockyard = 1
-			4964 = {
-				naval_base = 2
-			}
+
 		}
-		victory_points = { 4964 1 }
+		add_core_of = UPG
 	}
 
-	provinces = {
-		4964 5095
+	provinces={
+		9499 
 	}
+	buildings_max_level_factor=1.000
+        manpower=9879
+        state_category = tiny_island
 }

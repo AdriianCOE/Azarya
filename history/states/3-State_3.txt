@@ -1,22 +1,24 @@
-state = {
-	id = 3
-	name = "STATE_WT_3"
-	manpower = 985984
-	state_category = large_town
 
-	history = {
+state={
+	id=3
+	name="Sarmatia"
+
+	history={
 		owner = GYE
-		add_core_of = GYE
 		buildings = {
-			infrastructure = 2
+			industrial_complex = 2
 			arms_factory = 1
-			industrial_complex = 3
-			air_base = 1
+			infrastructure = 2
 		}
-		victory_points = { 130 1 }
+		add_core_of = GYE
+
 	}
 
-	provinces = {
-		130 135 1948 2661 3156 7591 7785
+	provinces={
+		130 135 1948 2661 3156 7591 7785 
 	}
+	manpower=985984
+	buildings_max_level_factor=1.000
+	state_category=large_town 
+	local_supplies=0.000
 }

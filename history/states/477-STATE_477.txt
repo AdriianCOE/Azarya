@@ -1,24 +1,31 @@
-state = {
-	id = 477
-	name = "STATE_WT_477"
-	manpower = 718578
-	state_category = rural
-
-	history = {
-		owner = SIT
-		add_core_of = SIT
-		buildings = {
-			infrastructure = 1
-			industrial_complex = 1
-			dockyard = 1
-			3234 = {
-				naval_base = 2
-			}
+state={
+	id=477
+	name="Sovetskaya"
+	history={
+		owner = NSA
+		victory_points = {
+			5625 18
 		}
-		victory_points = { 3414 5 }
-	}
+		victory_points = {
+			4146 30
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 5
+			arms_factory = 2
+			air_base = 4
+			5625 = {
+				naval_base = 4
+				}
 
-	provinces = {
-		485 789 1586 1269 4698 6894 6959 6909 3010 3234 3414 6960 6986 2642 4650 7014 1890 6852
+			}
+			add_core_of = NSA
+		}
+	provinces={
+		5625 5601 5103 442 4759 5607 5582 2515 5554 5593 5614 3533 5636 1489 3947 4474 3941 5662 5683 5705 5688 1815 5634 781 4146 415 5685 1834 5709 5699 5715 5736 2752 5711 5719 5746 943 4059 520
 	}
+	manpower=4298578
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+	local_supplies=0.000
 }

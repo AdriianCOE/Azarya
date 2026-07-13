@@ -1,26 +1,10 @@
-state = {
-	id = 94
-	name = "STATE_WT_94"
-	manpower = 1
-	state_category = town
-
-	history = {
-		owner = ARD
-		add_core_of = ARD
-		buildings = {
-			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 2
-			dockyard = 1
-			air_base = 1
-			3806 = {
-				naval_base = 2
-			}
-		}
-		victory_points = { 3806 1 }
+state={
+	id=94
+	name="STATE_94"
+	provinces={
+		9099 9137 
 	}
-
-	provinces = {
-		3806
-	}
+	buildings_max_level_factor=1.000
+        manpower=1
+        state_category = town
 }

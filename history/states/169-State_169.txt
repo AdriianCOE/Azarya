@@ -1,26 +1,23 @@
-state = {
-	id = 169
-	name = "STATE_WT_169"
-	manpower = 768293
-	state_category = large_town
 
-	history = {
-		owner = BKG
-		add_core_of = BKG
+state={
+	id=169
+	name="Asvodajkbia"
+	history={
+		owner = BOA
+		victory_points = {
+			5656 15
+		}
 		buildings = {
 			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 3
-			dockyard = 2
-			air_base = 1
-			4716 = {
-				naval_base = 2
 			}
+	
+		add_core_of = BOA
 		}
-		victory_points = { 1975 1 }
+	provinces={
+		176 234 1089 1092 1989 2140 3305 3600 3637 4580 5138 5564 5637 5639 5656 5657 5658 5679 5680 5686 5712 5727 
 	}
-
-	provinces = {
-		1975 3091 3324 4686 4716 4737 5453 5459 5479 5485 5516 5521 5526
-	}
+	manpower=392958
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

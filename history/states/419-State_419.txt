@@ -1,29 +1,31 @@
-state = {
-	id = 419
-	name = "STATE_WT_419"
-	manpower = 1704000
-	state_category = large_town
-	resources = {
-		tungsten = 2
-	}
 
-	history = {
-		owner = ARD
-		add_core_of = ARD
-		buildings = {
-			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 3
-			dockyard = 2
-			air_base = 1
-			499 = {
-				naval_base = 2
-			}
+state={
+	id=419
+	name="Faeloria"
+		resources={
+			tungsten=4
+	}
+	
+	history={
+		owner = THK
+		victory_points = {
+			1901 10 
 		}
-		victory_points = { 499 1 }
-	}
+		buildings = {
+			infrastructure = 1
+			dockyard = 1
+			1901 = {
+                naval_base = 2
+         	   }
 
-	provinces = {
-		499 861 1880 2373 2722 4606 5003 5044 8944 8973 8981 8982 9012 9031 9044 9054 9068 9072 9078 9084 9110
+			}
+
+		add_core_of = THK
+		}
+	provinces={
+		312 1901 2770 3050 4773 9008 9011 9028 9034 9047 9070 9077 9089 
 	}
+	manpower=307291
+	buildings_max_level_factor=1.000
+	state_category=rural
 }

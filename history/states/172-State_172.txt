@@ -1,29 +1,23 @@
-state = {
-	id = 172
-	name = "STATE_WT_172"
-	manpower = 318492
-	state_category = town
-	resources = {
-		tungsten = 3
-	}
 
-	history = {
-		owner = DTB
-		add_core_of = DTB
+state={
+	id=172
+	name="Haisesen"
+	history={
+		owner = BKG
 		buildings = {
-			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 2
-			dockyard = 1
-			air_base = 1
-			25 = {
-				naval_base = 2
+			infrastructure = 3
+			industrial_complex = 1
 			}
+	
+			add_core_of = SVD
+			add_core_of = BKG
+			add_core_of = RFO
 		}
-		victory_points = { 2905 10 }
+	provinces={
+		2616 3218 3322 3360 5519 5537 5539 5544 5549 5569 5570 5574 5585 5586 
 	}
-
-	provinces = {
-		25 1964 2905 2974 4187 5530 5631 5632 5663
-	}
+	manpower=585828
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

@@ -1,27 +1,19 @@
-state = {
-	id = 241
-	name = "STATE_WT_241"
-	manpower = 1
-	state_category = town
 
-	history = {
+state={
+	id=241
+	name="STATE_241"
+	history={
 		owner = ATV
-		add_core_of = ATV
-		buildings = {
-			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 2
-			dockyard = 1
-			air_base = 1
-			1939 = {
-				naval_base = 2
-			}
+		victory_points = {
+			6627 12
 		}
-		victory_points = { 1939 30 }
-		victory_points = { 3476 12 }
+		add_core_of = ATV
+		}
+	provinces={
+		226 455 649 970 2143 2512 2660 3138 3577 3610 4175 4330 4549 5040 6551 6560 6573 6578 6591 6627 6642 6650 6682 6703 3918 3005
 	}
-
-	provinces = {
-		326 987 1392 1671 1939 1987 2037 2147 2178 2594 2824 2981 3476 3658 3963 4382 4787 4828 6479 6503 6528 6555 6556 6605 6610 6616 6634
-	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

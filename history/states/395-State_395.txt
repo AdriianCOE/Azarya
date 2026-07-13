@@ -1,33 +1,35 @@
-state = {
-	id = 395
-	name = "STATE_WT_395"
-	manpower = 4798579
-	state_category = megalopolis
-	resources = {
-		tungsten = 5
-	}
 
-	history = {
-		owner = KOZ
-		add_core_of = KOZ
-		buildings = {
-			infrastructure = 5
-			arms_factory = 5
-			industrial_complex = 7
-			dockyard = 4
-			air_base = 3
-			3483 = {
-				naval_base = 3
-			}
+state={
+	id=395
+	name="Southern Kervania"
+	history={
+		owner = LVD
+		victory_points = { 
+			8843  25
 		}
-		victory_points = { 4930 50 }
-		victory_points = { 836 20 }
-		victory_points = { 4051 15 }
-		victory_points = { 8697 10 }
-		victory_points = { 8646 5 }
-	}
+		victory_points = {
+			8888  15
+		}
+		victory_points = {
+			15851  15
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 2
+			dockyard = 2
+			8843 = {
+                naval_base = 2
+			}
 
-	provinces = {
-		26 110 131 409 677 836 892 1173 1404 1593 2389 2417 2503 2672 2702 2750 2968 3483 3835 3871 3887 4051 4078 4179 4335 4589 4707 4925 4930 4953 5074 8395 8404 8425 8449 8450 8491 8502 8508 8509 8516 8524 8550 8556 8580 8592 8605 8633 8634 8635 8646 8652 8655 8674 8692 8697 8718 8759 8776 8796 8817 8830
+		}
+		add_core_of = LVD
 	}
+	provinces={
+		532 545 739 1230 1302 2250 2572 2608 3013 3087 3114 3494 3951 4255 4515 4675 4864 8612 8656 8704 8746 8767 8801 8821 15851 8843 8872 8888 8903 8921 8922 8953 8983 
+	}
+	manpower=3938472
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
 }

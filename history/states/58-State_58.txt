@@ -1,26 +1,10 @@
-state = {
-	id = 58
-	name = "STATE_WT_58"
-	manpower = 909895
-	state_category = town
-	resources = {
-		steel = 19
-		chromium = 2
+state={
+	id=58
+	name="STATE_58"
+	provinces={
+		4088 6869 
 	}
-
-	history = {
-		owner = BOM
-		add_core_of = BOM
-		buildings = {
-			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 2
-			air_base = 1
-		}
-		victory_points = { 842 1 }
-	}
-
-	provinces = {
-		842 1614 4156 4207 6961 7030 7061 7091
-	}
+	buildings_max_level_factor=1.000
+        manpower=1
+        state_category = town
 }

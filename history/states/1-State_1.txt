@@ -1,24 +1,27 @@
-state = {
-	id = 1
-	name = "STATE_WT_1"
-	manpower = 142000
-	state_category = rural
 
-	history = {
+state={
+	id=1
+	name="Valverde"
+	resources={
+		oil = 8
+	}
+	history={
 		owner = SLU
-		add_core_of = SLU
+		victory_points = {
+			5144 5 
+		}
 		buildings = {
 			infrastructure = 1
-			industrial_complex = 1
-			dockyard = 1
-			1405 = {
-				naval_base = 2
-			}
 		}
-		victory_points = { 5144 5 }
+		add_core_of = SLU
+
 	}
 
-	provinces = {
-		1405 2156 2941 3225 3327 3739 4183 4268 5144 5145 5146 5147 5148 5149 5150 5153
+	provinces={
+		1405 2156 2941 3225 3327 3739 4183 4268 5144 5145 5146 5147 5148 5149 5150 5153 
 	}
+	manpower=142000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

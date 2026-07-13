@@ -1,25 +1,27 @@
-state = {
-	id = 290
-	name = "STATE_WT_290"
-	manpower = 495827
-	state_category = town
-	resources = {
-		tungsten = 7
-	}
 
-	history = {
-		owner = SIT
-		add_core_of = SIT
-		buildings = {
-			infrastructure = 2
+state={
+	id=290
+	name="Sagranesk"
+
+		    history = {
+        owner = BOM
+				buildings = {
+			infrastructure = 2	
+			industrial_complex = 3
 			arms_factory = 1
-			industrial_complex = 2
-			air_base = 1
+				}
+		victory_points = {
+			3640 20 
 		}
-		victory_points = { 692 1 }
+		add_core_of = BOM
+
 	}
 
-	provinces = {
-		692 1237 1847 2204 2862 3251 3333 4856 7024 7055 7111 7177 7186 7232
+	provinces={
+		736 1046 2027 2103 2207 2412 2427 2680 2807 3640 3728 4841 6939 6963 6964 6989 7007 7095 7131 7172 
 	}
+	manpower=1587978
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

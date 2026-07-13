@@ -1,29 +1,20 @@
-state = {
-	id = 134
-	name = "STATE_WT_134"
-	manpower = 495824
-	state_category = town
-	resources = {
-		tungsten = 7
-	}
 
-	history = {
+state={
+	id=134
+	name="Cascata"
+	history={
 		owner = SLU
-		add_core_of = SLU
 		buildings = {
 			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 2
-			dockyard = 1
-			air_base = 1
-			1358 = {
-				naval_base = 2
-			}
 		}
-		victory_points = { 607 1 }
-	}
+		add_core_of = SLU
 
-	provinces = {
-		607 1120 1358 1363 1854 1898 2277 2395 3125 3205 3554 3767 4111 4420 4546 4983 5158 5161 5162 5163 5164 5168 5170 5173 5180 5184 5191 5196 5199 5208 5211 5215 5219 5223 5228
 	}
+	provinces={
+		1908 2242 2344 3121 4346 4615 5212 5214 5225 5227 5234 5237 5242 5256 
+	}
+	manpower=755894
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
 }

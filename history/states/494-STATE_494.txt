@@ -1,22 +1,15 @@
-state = {
-	id = 494
-	name = "STATE_WT_494"
-	manpower = 5593
-	state_category = wasteland
-	resources = {
-		steel = 14
-		chromium = 5
-	}
-
-	history = {
-		owner = EDR
-		add_core_of = EDR
-		buildings = {
+state={
+	id=494
+	name="Ilda"
+	history={
+			owner = EDR
+			add_core_of = EDR
 		}
-		victory_points = { 5962 1 }
+	provinces={
+		457 6378 6336 1526 401 4800 187
 	}
-
-	provinces = {
-		5962
-	}
+	manpower=790593
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
 }

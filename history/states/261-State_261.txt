@@ -1,22 +1,25 @@
-state = {
-	id = 261
-	name = "STATE_WT_261"
-	manpower = 1
-	state_category = town
 
-	history = {
-		owner = AEI
-		add_core_of = AEI
+state={
+	id=261
+	name="Misericandes"
+
+		 history = {
+        owner = BOM
+				victory_points = {
+			3585 5
+		}
 		buildings = {
 			infrastructure = 2
-			arms_factory = 1
 			industrial_complex = 2
-			air_base = 1
 		}
-		victory_points = { 74 1 }
-	}
+		add_core_of = BOM
 
-	provinces = {
-		74 357 1016 1141 1164 1203 1416 1585 1953 2292 2668 2853 3497 3812 3859 4772 4789 6917 6966 6969 6987 6991 6992 7005 7006 7026
 	}
+	provinces={
+		1865 2085 2283 2386 2771 3175 3340 3585 3937 6686 6728 6742 6756 6764 6667 2442 15898
+	}
+	manpower=999892
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

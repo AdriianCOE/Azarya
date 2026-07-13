@@ -1,26 +1,27 @@
-state = {
-	id = 350
-	name = "STATE_WT_350"
-	manpower = 1342921
-	state_category = large_town
-	resources = {
-		steel = 6
-		chromium = 2
-	}
 
-	history = {
-		owner = NIR
-		add_core_of = NIR
-		buildings = {
-			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 3
-			air_base = 1
+state={
+	id=350
+	name="Rubre"
+
+		history={
+			owner = FVI
+			add_core_of = FVI
+			add_core_of = NIR
+		victory_points = {
+			2508 5 
 		}
-		victory_points = { 7660 5 }
-	}
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = NIR
 
-	provinces = {
-		340 348 1121 1727 1966 2094 2198 2690 2937 3088 3615 4201 4235 4419 4817 4862 4885 4924 7660 7674 7706 7707 7708 7733 7766 7784 7809 7821 7873
 	}
+	
+	provinces={
+		1497 2310 2508 2805 2939 2999 3901 4119 7634 7644 7650 7737 7795 7822 7878 
+	}
+	manpower=617090
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

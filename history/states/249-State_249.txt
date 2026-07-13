@@ -1,29 +1,33 @@
-state = {
-	id = 249
-	name = "STATE_WT_249"
-	manpower = 1
-	state_category = town
-	resources = {
-		tungsten = 7
+
+state={
+	id=249
+	name="Bênce"
+	resources={
+		steel=30.000
 	}
 
-	history = {
-		owner = AEI
-		add_core_of = AEI
-		buildings = {
-			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 2
-			dockyard = 1
-			air_base = 1
-			638 = {
-				naval_base = 2
-			}
+	history={
+		owner = BOM
+		victory_points = {
+			2341 20 
 		}
-		victory_points = { 638 1 }
+		victory_points = {
+			6589 10 
+		}
+		buildings = {
+			infrastructure = 1
+			air_base = 1
+
+		}
+		add_core_of = BOM
+
 	}
 
-	provinces = {
-		638 1454 1561 1583 2033 2502 2866 3126 4683 6597 6669 6730
+	provinces={
+		173 236 484 608 896 1110 1136 1309 1625 1738 1115 6432 1867 2338 2341 2563 2583 2683 2686 2693 2948 3132 3313 3378 3475 4147 4194 4209 4233 4244 4722 6458 6476 6520 6521 6522 6550 6568 6580 6583 6589 6615 6646 6649 6654 6655 6668 6679 6681 6683 6702 
 	}
+	manpower=959895
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

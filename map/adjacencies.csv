@@ -12,7 +12,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 15811;15831;sea;13814;-1;-1;-1;-1;;Luq-Small
 10093;15719;sea;2272;-1;-1;-1;-1;Solsea;Solsea
 13638;12832;sea;9306;-1;-1;-1;-1;Tolose;Tolose
-10856;14157;sea;-1;-1;-1;-1;-1;Riosfhios;Riosfhios
+10856;14157;;-1;-1;-1;-1;-1;Riosfhios;Riosfhios
 15839;15840;sea;11351;-1;-1;-1;-1;;Island-Land2
 15842;15843;sea;10824;-1;-1;-1;-1;;Island-Land3
 11155;15705;sea;6280;-1;-1;-1;-1;Sidus;Sidus
@@ -31,4 +31,4 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 15021;15926;sea;14328;-1;-1;-1;-1;;
 15914;9492;sea;12635;-1;-1;-1;-1;;
 9492;4220;sea;13121;-1;-1;-1;-1;;
--1;-1;-1;-1;-1;-1;-1;-1;-1
+

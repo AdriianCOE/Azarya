@@ -1,27 +1,27 @@
-state = {
-	id = 502
-	name = "STATE_WT_502"
-	manpower = 712501
-	state_category = large_town
+state={
+	id=502
+	name="Yet"
+	history={
+		owner = KRT
 
-	history = {
-		owner = EYD
-		add_core_of = EYD
-		buildings = {
-			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 3
-			dockyard = 2
-			air_base = 1
-			15914 = {
-				naval_base = 2
-			}
+		victory_points = {
+			15907 20
 		}
-		victory_points = { 15915 15 }
-		victory_points = { 15926 10 }
+		victory_points = {
+			478 5
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 2
+		}
+		add_core_of = KRT
 	}
-
-	provinces = {
-		15914 15915 15916 15917 15918 15919 15920 15921 15922 15923 15924 15925 15926
+	provinces={
+		170 478 1100 1199 1541 2545 3389 15907 15908 15910
 	}
+	manpower=812501
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
 }

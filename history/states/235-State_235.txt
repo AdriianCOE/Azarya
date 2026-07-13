@@ -1,27 +1,34 @@
-state = {
-	id = 235
-	name = "STATE_WT_235"
-	manpower = 2098598
-	state_category = city
 
-	history = {
-		owner = KES
-		add_core_of = KES
+state={
+	id=235
+	name="Bellator"
+	resources = {
+		tungsten = 12
+	}
+	history={
+		owner = SIT
+		victory_points = {
+			3001 12 
+		}
+		victory_points = {
+			6557 8
+		}
 		buildings = {
 			infrastructure = 3
+			industrial_complex = 3
 			arms_factory = 2
-			industrial_complex = 4
-			dockyard = 2
-			air_base = 2
-			140 = {
-				naval_base = 3
+			3001 = {
+				naval_base = 2
+				}
 			}
-		}
-		victory_points = { 6626 5 }
-		victory_points = { 6364 5 }
-	}
+		add_core_of = SIT
 
-	provinces = {
-		140 178 202 213 220 573 776 990 1133 1799 2351 2801 3292 3455 3966 4444 4503 4583 6364 6365 6395 6403 6453 6457 6475 6494 6496 6507 6546 6567 6588 6590 6626 6653
 	}
+	provinces={
+		114 329 660 1068 1076 1376 1517 2319 3001 3032 3217 3315 3336 3592 3913 3940 4107 4173 6651 4704 5049 6509 6535 6536 6542 6557 6569 6570 6585 6599 6613 6620 6622 6631 6644 6645 6660 6661 6670 6674 6680 6684 
+	}
+	manpower=3392859
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
 }

@@ -1,26 +1,12 @@
-state = {
-	id = 383
-	name = "STATE_WT_383"
-	manpower = 921827
-	state_category = town
 
-	history = {
-		owner = LVD
-		add_core_of = LVD
-		buildings = {
-			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 2
-			dockyard = 1
-			air_base = 1
-			531 = {
-				naval_base = 2
-			}
-		}
-		victory_points = { 8160 5 }
+state={
+	id=383
+	name="STATE_383"
+	provinces={
+		259 691 982 989 1070 1144 1413 2164 2560 2989 3082 3317 4946 5051 8022 8033 8052 8058 8069 8086 8097 8105 8139 8143 8151 8177 8203 8215 8221 8239 8271 8314 8330 8359 8368 8402 8406 8440 8486 
 	}
-
-	provinces = {
-		531 1690 2445 2732 3229 4502 4648 4687 8160 8259 8284 8388 8431 8479
-	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

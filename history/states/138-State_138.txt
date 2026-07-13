@@ -1,27 +1,31 @@
-state = {
-	id = 138
-	name = "STATE_WT_138"
-	manpower = 1115892
-	state_category = city
-	resources = {
-		steel = 6
-		chromium = 8
-	}
 
-	history = {
+state={
+	id=138
+	name="Serena"
+
+	history={
 		owner = SLU
-		add_core_of = SLU
-		buildings = {
-			infrastructure = 3
-			arms_factory = 2
-			industrial_complex = 4
-			air_base = 2
+		victory_points = {
+			2426 5 
 		}
-		victory_points = { 2369 12 }
-		victory_points = { 4679 20 }
+		buildings = {
+			infrastructure = 2
+			dockyard = 4
+			2426 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = SLU
+
 	}
 
-	provinces = {
-		1142 1315 1464 2369 2634 3337 3860 4138 4679 5222 5236 5239 5245 5253 5259 5260 5266 5267 5272 5273 5276 5283
+	provinces={
+		904 959 1381 1600 2426 2835 2913 4859 5238 5246 5262 
 	}
+	manpower=855823
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
 }

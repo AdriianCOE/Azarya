@@ -1,23 +1,25 @@
-state = {
-	id = 176
-	name = "STATE_WT_176"
-	manpower = 219458
-	state_category = rural
-	resources = {
-		tungsten = 2
-	}
 
-	history = {
-		owner = BKG
-		add_core_of = BKG
-		buildings = {
-			infrastructure = 1
-			industrial_complex = 1
+state={
+	id=176
+	name="Grensmoor"
+	resources={
+	    aluminium = 8
+	}
+	history={
+		owner = VRD
+		victory_points = {
+			78 5
 		}
-		victory_points = { 863 1 }
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = VRD
 	}
-
-	provinces = {
-		863 1368 1453 1733 2294 2309 2870 3147 3323 4035 4596 5486 5522 5523 5550 5579 5612 5617 5674 5698
+	provinces={
+		762 2859 3380 3505 3981 5580 5665 78 1946
 	}
+	manpower=1005728
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
 }

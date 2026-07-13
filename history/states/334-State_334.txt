@@ -1,27 +1,25 @@
-state = {
-	id = 334
-	name = "STATE_WT_334"
-	manpower = 1958259
-	state_category = large_city
 
-	history = {
-		owner = CZL
-		add_core_of = CZL
-		buildings = {
-			infrastructure = 4
-			arms_factory = 3
-			industrial_complex = 5
-			dockyard = 3
-			air_base = 2
-			1527 = {
-				naval_base = 3
-			}
+state={
+	id=334
+	name="Attray"
+
+				history={
+		owner = SLV
+		victory_points = {
+			3108 8 
 		}
-		victory_points = { 1527 50 }
-		victory_points = { 7388 10 }
-	}
+		buildings = {
+			infrastructure = 1
 
-	provinces = {
-		809 1527 1769 1896 2188 2684 3291 4054 5028 7388 7406 7424 7450 7494 7541
+		}
+		add_core_of = SLV
 	}
+	
+	provinces={
+		526 583 1054 2278 2644 3108 3260 3746 4456 4725 7451 7457 7491 7516 7521 7527 7548 
+	}
+	manpower=297985
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

@@ -1,25 +1,27 @@
-state = {
-	id = 266
-	name = "STATE_WT_266"
-	manpower = 1
-	state_category = town
+
+state={
+	id=266
+	name="Augusta"
 	resources = {
-		steel = 4
+		rubber = 10
 	}
-
-	history = {
-		owner = AEI
-		add_core_of = AEI
-		buildings = {
-			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 2
-			air_base = 1
+	history={
+		owner = SIT
+		victory_points = {
+			2543 10 
 		}
-		victory_points = { 685 1 }
-	}
+		buildings = {
+			industrial_complex = 2
+			infrastructure = 3
+		}
+		
+		add_core_of = SIT
 
-	provinces = {
-		685 2465 2759 2769 2955 3392 3598 4180 4564 6800 6827 6853 6868 6871 6881 6891 6897 6908 6919 6927
 	}
+	provinces={
+		61 453 663 1197 1922 2064 2097 2382 2385 2543 2544 3097 3211 3316 4413 4492 4706 4746 4987 6767 6779 6795 6797 6801 6816 6819 6826 6843 6846 6848 6862 6867 6870 6876 6887 6896 6916 
+	}
+	manpower=1183984
+	buildings_max_level_factor=1.000
+	state_category=large_town
 }

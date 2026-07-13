@@ -1,26 +1,21 @@
-state = {
-	id = 143
-	name = "STATE_WT_143"
-	manpower = 1298598
-	state_category = city
-
-	history = {
+State={
+	id=143
+	name="Greifenwald"
+	history={
 		owner = DTB
-		add_core_of = DTB
 		buildings = {
-			infrastructure = 3
-			arms_factory = 2
-			industrial_complex = 4
-			dockyard = 2
-			air_base = 2
-			3275 = {
-				naval_base = 3
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 1
 			}
+	
+			add_core_of = DTB
 		}
-		victory_points = { 5361 20 }
+	provinces={
+		153 623 1469 2096 3818 4380 4386 4410 5340 5369 5373 5385 5414 
 	}
-
-	provinces = {
-		841 2796 3275 3519 4500 4667 4835 4971 5326 5348 5349 5355 5361 5393 5398 5419 5430
-	}
+	manpower=397959
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

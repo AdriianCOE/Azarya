@@ -1,27 +1,35 @@
-state = {
-	id = 307
-	name = "STATE_WT_307"
-	manpower = 2459875
-	state_category = large_town
 
-	history = {
-		owner = BOM
-		add_core_of = BOM
-		buildings = {
-			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 3
-			dockyard = 2
-			air_base = 1
-			1831 = {
-				naval_base = 2
-			}
+state={
+	id=307
+	name="Ardon"
+
+			history={
+		owner = SLV
+		victory_points = {
+			7330 12 
 		}
-		victory_points = { 3629 20 }
-		victory_points = { 7240 8 }
-	}
+				victory_points = {
+			7132 5 
+		}
 
-	provinces = {
-		1795 1831 2112 2124 2270 2847 3239 3328 3425 3566 3629 3766 4073 4083 4296 4643 4822 6957 6999 7013 7033 7038 7058 7070 7086 7094 7163 7164 7171 7195 7220 7229 7240 7246 7265 7266 7274 7284 7297
+				buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			dockyard = 2
+			7330 = {
+                naval_base = 2
+            }
+
+		}
+		add_core_of = SLV
+		add_core_of = CBS
 	}
+	
+	provinces={
+		267 625 1520 2837 3407 4310 5018 7132 7147 7156 7173 7207 7231 7268 7285 7313 7326 7330 7343 
+    }
+	manpower=647959
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

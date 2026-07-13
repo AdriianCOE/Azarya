@@ -1,28 +1,31 @@
-state = {
-	id = 302
-	name = "STATE_WT_302"
-	manpower = 989501
-	state_category = city
-
-	history = {
-		owner = CZL
-		add_core_of = CZL
-		buildings = {
-			infrastructure = 3
-			arms_factory = 2
-			industrial_complex = 4
-			dockyard = 2
-			air_base = 2
-			2920 = {
-				naval_base = 3
-			}
+state={
+    id=302
+    name="Zahra"
+    history={
+        owner = CBS
+        victory_points = {
+			     192 5
 		}
-		victory_points = { 7241 15 }
-		victory_points = { 3244 5 }
-		victory_points = { 3993 8 }
-	}
-
-	provinces = {
-		467 1316 1372 2095 2920 2929 3244 3311 3359 3993 4087 4770 7117 7144 7209 7241 7273 7310 15857 15858 15859
-	}
+        buildings = {
+            infrastructure = 2
+            industrial_complex = 1
+            1926 = {
+                bunker = 4
+            }
+            1893 = {
+                bunker = 4
+            }
+			192 = {
+                bunker = 2
+            }
+        }
+        add_core_of = CBS
+    }
+    provinces={
+        192 717 986 3136 3296 1893 1926
+    }
+    manpower=565592
+    buildings_max_level_factor=1.000
+    state_category="town"
+    local_supplies=0.000
 }

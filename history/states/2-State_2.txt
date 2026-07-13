@@ -1,23 +1,15 @@
-state = {
-	id = 2
-	name = "STATE_WT_2"
-	manpower = 5982
-	state_category = tiny_island
-
-	history = {
+state={
+	id=2
+	name="Isola del Sole"
+	history={
 		owner = SLU
 		add_core_of = SLU
-		buildings = {
-			infrastructure = 1
-			dockyard = 1
-			5092 = {
-				naval_base = 2
-			}
-		}
-		victory_points = { 5092 1 }
-	}
 
-	provinces = {
-		5092
 	}
+	provinces={
+		5092 
+	}
+	buildings_max_level_factor=1.000
+        manpower=5982
+        state_category = tiny_island
 }

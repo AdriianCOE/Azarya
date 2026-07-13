@@ -1,32 +1,19 @@
-state = {
-	id = 112
-	name = "STATE_WT_112"
-	manpower = 1995892
-	state_category = large_city
-	resources = {
-		tungsten = 4
-	}
-
-	history = {
+state={
+	id=112
+	name="Île aux Étoiles"
+	history={
 		owner = TOL
-		add_core_of = TOL
 		buildings = {
-			infrastructure = 4
-			arms_factory = 3
-			industrial_complex = 5
-			dockyard = 3
-			air_base = 2
-			2225 = {
-				naval_base = 3
-			}
-		}
-		victory_points = { 2453 28 }
-		victory_points = { 3912 18 }
-		victory_points = { 1317 5 }
-		victory_points = { 9323 5 }
-	}
+			infrastructure = 1
 
-	provinces = {
-		1317 1494 2225 2317 2453 2731 2933 3146 3801 3912 4710 4768 9290 9306 9311 9318 9323 9327 9328 9333 9344 9348 9350 9353 9361 9367 9370 9379 9391 9401 9404 9409 9413 9414 9417 9418
+		}
+		add_core_of = TOL
+
 	}
+	provinces={
+		2630 9338
+	}
+	buildings_max_level_factor=1.000
+        manpower=11967
+        state_category = tiny_island
 }

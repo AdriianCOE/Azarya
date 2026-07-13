@@ -1,21 +1,27 @@
-state = {
-	id = 503
-	name = "STATE_WT_503"
-	manpower = 12938
-	state_category = wasteland
-	resources = {
-		steel = 13
-	}
+state={
+	id=503
+	name="Net"
+	history={
+		owner = EYD
 
-	history = {
-		owner = BOK
-		add_core_of = BOK
-		buildings = {
+		victory_points = {
+			15915 15
 		}
-		victory_points = { 15928 1 }
+		victory_points = {
+			15926 10
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		add_core_of = EYD
 	}
-
-	provinces = {
-		15928
+	provinces={
+		15914 15915 15916 15917 15918 15919 15920 15921 15922 15923 15924 15925 15926
 	}
+	manpower=712501
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
 }

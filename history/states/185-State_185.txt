@@ -1,23 +1,29 @@
-state = {
-	id = 185
-	name = "STATE_WT_185"
-	manpower = 4994892
-	state_category = megalopolis
 
-	history = {
-		owner = DTB
-		add_core_of = DTB
-		buildings = {
-			infrastructure = 5
-			arms_factory = 5
-			industrial_complex = 7
-			air_base = 3
+state={
+	id=185
+	name="March"
+	history={
+		owner = RFO
+		victory_points = {
+			5755 10
 		}
-		victory_points = { 1286 40 }
-		victory_points = { 1349 5 }
+		buildings = {
+			infrastructure = 3
+			dockyard = 3
+			5755 = {
+				naval_base = 2
+				}
+			}
+	
+			add_core_of = SVD
+			add_core_of = BKG
+			add_core_of = RFO
+		}
+	provinces={
+		976 1103 1636 2553 3143 3945 3999 4043 4445 4907 4993 5633 5644 5646 5648 5666 5677 5702 5732 5755 5760 5769 5781 5784 5788 5789 5807 
 	}
-
-	provinces = {
-		1225 1286 1349 1598 2977 3935 5643 5754 2137
-	}
+	manpower=694828
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
 }

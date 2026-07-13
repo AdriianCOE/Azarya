@@ -1,30 +1,37 @@
-state = {
-	id = 174
-	name = "STATE_WT_174"
-	manpower = 1769092
-	state_category = metropolis
-	resources = {
-		tungsten = 5
-	}
 
-	history = {
-		owner = LUQ
-		add_core_of = LUQ
+state={
+	id=174
+	name="Verdantia"
+	resources={
+		aluminium=4
+	}
+	
+	history={
+		owner = AEI
+		victory_points = {
+			5541 25
+		}
+		victory_points = {
+			3171 8
+		}
 		buildings = {
-			infrastructure = 1
-			arms_factory = 4
-			industrial_complex = 6
-			dockyard = 3
-			air_base = 3
-			2206 = {
-				naval_base = 3
+			infrastructure = 3
+			air_base = 1
+			industrial_complex = 4
+			arms_factory = 1
+			3171 = {
+				naval_base = 1
 			}
 		}
-		victory_points = { 5576 40 }
-		victory_points = { 3451 8 }
-	}
+		add_core_of = AEI
+		
 
-	provinces = {
-		2206 2285 2826 3362 3451 3518 4579 5556 5576 5584 5660 5687 5700 5713 5729 5733 5749 5758
 	}
+	provinces={
+		52 628 737 1067 1186 1251 1264 3030 3096 3171 3443 3778 3853 4198 4252 4299 4916 5366 5387 5389 5424 5508 5512 5541 5638 
+	}
+	manpower=1394859
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
 }

@@ -1,27 +1,33 @@
-state = {
-	id = 306
-	name = "STATE_WT_306"
-	manpower = 647959
-	state_category = town
-
-	history = {
-		owner = SLV
-		add_core_of = SLV
-		buildings = {
-			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 2
-			dockyard = 1
-			air_base = 1
-			2837 = {
-				naval_base = 2
-			}
+state={
+	id=306
+	name="Teno"
+	resources={
+	aluminium=5
+	}
+	
+		history={
+		owner = CZL
+		victory_points = {
+			2620 15 
 		}
-		victory_points = { 7330 12 }
-		victory_points = { 7132 5 }
-	}
+		buildings = {
+		infrastructure = 2
+		industrial_complex = 1
+		air_base = 2
+			2620 = {
+                naval_base = 1
+            }
 
-	provinces = {
-		267 625 1520 2837 3407 4310 5018 7132 7147 7156 7173 7207 7231 7268 7285 7313 7326 7330 7343
+		}
+		add_core_of = CZL
+
 	}
+	
+	provinces={
+		2620 7298 7311 15856 15854 15855 15853
+	}
+	manpower=787509
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
 }

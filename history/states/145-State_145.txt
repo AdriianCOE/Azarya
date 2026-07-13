@@ -1,29 +1,22 @@
-state = {
-	id = 145
-	name = "STATE_WT_145"
-	manpower = 875827
-	state_category = city
-	resources = {
-		tungsten = 5
-	}
 
-	history = {
+state={
+	id=145
+	name="Renchia"
+	history={
 		owner = BKG
-		add_core_of = BKG
 		buildings = {
-			infrastructure = 3
-			arms_factory = 2
-			industrial_complex = 4
-			dockyard = 2
-			air_base = 2
-			1236 = {
-				naval_base = 3
+			infrastructure = 2
 			}
+	
+			add_core_of = SVD
+			add_core_of = BKG
+			add_core_of = RFO
 		}
-		victory_points = { 5421 12 }
+	provinces={
+		1447 2996 4222 4238 4480 5306 5318 5394 5402 5433 
 	}
-
-	provinces = {
-		1236 4076 5312 5330 5336 5356 5363 5421
-	}
+	manpower=275698
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

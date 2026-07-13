@@ -1,27 +1,39 @@
-state = {
-	id = 190
-	name = "STATE_WT_190"
-	manpower = 157896
-	state_category = rural
-	resources = {
-		tungsten = 4
-	}
 
-	history = {
-		owner = BKG
-		add_core_of = BKG
-		buildings = {
-			infrastructure = 1
-			industrial_complex = 1
-			dockyard = 1
-			4134 = {
-				naval_base = 2
-			}
+state={
+	id=190
+	name="Othengstet"
+
+	history={
+		owner = RFO
+		victory_points = {
+			2429 20
 		}
-		victory_points = { 2890 1 }
+		victory_points = {
+			5791 15
+		}
+		victory_points = {
+			3377 8
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 5
+			air_base = 2
+			2429 = {
+				naval_base = 3
+				}
+			}
+		add_core_of = SVD
+		add_core_of = BKG
+		add_core_of = RFO
+
 	}
 
-	provinces = {
-		2890 2925 4134 5833 5852
+	provinces={
+		2135 2429 3377 4888 4897 5766 5791 5802 5821 5825 
 	}
+	manpower=1695894
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
 }

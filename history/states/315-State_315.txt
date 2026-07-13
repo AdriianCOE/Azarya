@@ -1,22 +1,30 @@
-state = {
-	id = 315
-	name = "STATE_WT_315"
-	manpower = 908942
-	state_category = large_town
 
-	history = {
+state={
+	id=315
+	name="Pannonia"
+	resources={
+		oil=20.000
+	}
+
+	history={
 		owner = GYE
-		add_core_of = GYE
-		buildings = {
-			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 3
-			air_base = 1
+		victory_points = {
+			     3185 5
 		}
-		victory_points = { 240 1 }
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 2
+		}
+		add_core_of = GYE
+		add_core_of = CBS
+
 	}
 
-	provinces = {
-		240 395 818 1042 1205 1569 2700 2764 3331 3575 7252 7269 7325
+	provinces={
+		115 680 1017 1162 1219 1242 2540 2756 3412 3903 4126 4975 783 3185
 	}
+	manpower=298594
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

@@ -1,19 +1,14 @@
-state = {
-	id = 45
-	name = "STATE_WT_45"
-	manpower = 1968
-	state_category = tiny_island
 
-	history = {
-		owner = AEI
-		add_core_of = AEI
-		buildings = {
-			infrastructure = 1
-		}
-		victory_points = { 165 1 }
-	}
+state={
+	id=45
+	name="Miku Island"
 
-	provinces = {
-		165 800 3286 3293 3346 3864 4562 4574 6981 7004 7011 7028 7037 7041 7056 7119 7126 7161 7174
+
+	provinces={
+		165 800 3286 3293 3346 3864 4562 4574 6981 7004 7011 7028 7037 7041 7056 7119 7126 7161 7174 
 	}
+	manpower=1968
+	buildings_max_level_factor=1.000
+	state_category=tiny_island
+	local_supplies=0.000
 }

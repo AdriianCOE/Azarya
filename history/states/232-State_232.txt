@@ -1,22 +1,25 @@
-state = {
-	id = 232
-	name = "STATE_WT_232"
-	manpower = 1
-	state_category = town
 
-	history = {
-		owner = VAL
-		add_core_of = VAL
-		buildings = {
-			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 2
-			air_base = 1
+state={
+	id=232
+	name="Aranant"
+	resources={
+		oil=5
+	 }
+	history={
+		owner = DKM
+			victory_points = {
+			     15793 10
 		}
-		victory_points = { 100 1 }
+				buildings = {
+			infrastructure = 1
+            }
+		add_core_of = DKM
+				}
+	provinces={
+		473 508 4493 4561 6698 15789 15790 15793 15796 15791 15810 1113
 	}
-
-	provinces = {
-		100 190 209 215 1359 2162 2492 2979 3480 3704 3899 4050 4314 4489 4714 4808 6235 6273 6297 6317 6323 6337 6343 6366 6372 6405 6416 6420 6447 6450 6451 6484 6490 6497 6499 6500 6525 6531 2670 2034 6242 3177
-	}
+	manpower=378893
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

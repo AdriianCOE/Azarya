@@ -1,26 +1,20 @@
-state = {
-	id = 100
-	name = "STATE_WT_100"
-	manpower = 1
-	state_category = town
+state={
+	id=100
+	name="STATE_100"
+	
+		history={
+		owner = UPG
+			buildings = {
+			infrastructure = 1
 
-	history = {
-		owner = CMR
-		add_core_of = CMR
-		buildings = {
-			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 2
-			dockyard = 1
-			air_base = 1
-			9179 = {
-				naval_base = 2
-			}
 		}
-		victory_points = { 9179 1 }
+		add_core_of = UPG
 	}
 
-	provinces = {
-		9179 9206
+	provinces={
+		4507 
 	}
+	buildings_max_level_factor=1.000
+        manpower=3721
+        state_category = tiny_island
 }

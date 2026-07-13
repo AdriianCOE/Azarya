@@ -1,0 +1,34 @@
+state={
+	id=465
+	name="Kence"
+	resources={
+		steel=1.000
+	}
+
+	history={
+		owner = RES
+		victory_points = {
+			1646 20 
+		}
+		victory_points = {
+			759 15 
+		}
+		victory_points = {
+			2605 5
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 2
+			industrial_complex = 2
+		}
+		add_core_of = RES
+		add_core_of = NIR
+	}
+	provinces={
+		398 759 811 1119 1646 2305 2487 2605 2891 2975 3186 3789 4956 5076 8528 8572 8573 8585 8590 8631 8632 8642 8690 8708 8733 8738 8758 8764 8847 8864 
+	}
+	manpower=890985
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

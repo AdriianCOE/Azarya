@@ -1,24 +1,12 @@
-state = {
-	id = 295
-	name = "STATE_WT_295"
-	manpower = 2557941
-	state_category = large_city
 
-	history = {
-		owner = CZL
-		add_core_of = CZL
-		buildings = {
-			infrastructure = 4
-			arms_factory = 3
-			industrial_complex = 5
-			air_base = 2
-		}
-		victory_points = { 4842 5 }
-		victory_points = { 502 12 }
-		victory_points = { 1829 30 }
+state={
+	id=295
+	name="STATE_295"
+	provinces={
+		69 423 449 784 1059 1490 1511 1823 1875 2271 2649 2813 2823 3195 3215 3376 3921 3980 4034 4824 5023 5136 7029 7046 7062 7085 7089 7103 7107 7175 7178 7205 7233 7319 7386 7391 
 	}
-
-	provinces = {
-		116 349 502 1001 1394 1468 1829 2239 2743 3213 3272 3817 4169 4369 4520 4533 4553 4607 4826 4842 6893 6911 6946 7002 7003 7052 7065 7071 7087 7137 15860 15861
-	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

@@ -1,26 +1,35 @@
-state = {
-	id = 199
-	name = "STATE_WT_199"
-	manpower = 501958
-	state_category = town
-	resources = {
-		steel = 10
-		chromium = 6
-	}
 
-	history = {
-		owner = NSA
-		add_core_of = NSA
-		buildings = {
-			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 2
-			air_base = 1
+state={
+	id=199
+	name="Dornsruten"
+
+	history={
+		owner = SVD
+		victory_points = {
+			6022 15
 		}
-		victory_points = { 454 1 }
+		victory_points = {
+			6030 8 
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 3
+		6030 = {
+			naval_base = 2
+			}
+		}
+		add_core_of = SVD
+		add_core_of = BKG
+		add_core_of = RFO
+
 	}
 
-	provinces = {
-		454 468 480 902 2694 4497 4672 5737 5768 5819 5830 5872
+	provinces={
+		272 334 1718 1862 3183 3542 3735 3784 3836 4490 5966 5968 5975 5976 5981 5996 6022 6030 6074 6083 
 	}
+	manpower=1418982
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
 }

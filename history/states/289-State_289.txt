@@ -1,25 +1,29 @@
-state = {
-	id = 289
-	name = "STATE_WT_289"
-	manpower = 1587978
-	state_category = town
-	resources = {
-		steel = 9
+
+state={
+	id=289
+	name="Wadi"
+	resources={
+	    oil=50
 	}
 
-	history = {
-		owner = BOM
-		add_core_of = BOM
-		buildings = {
-			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 2
-			air_base = 1
+		history={
+		owner = SDB
+		victory_points = {
+			     1025 10
 		}
-		victory_points = { 3640 20 }
+		buildings = {
+			infrastructure = 1
+		 163 = {
+                bunker = 2
+            }
+         }
+		add_core_of = SDB
+				}
+	provinces={
+	     112 1025 1970 6866 6965 2357 6837 163
 	}
-
-	provinces = {
-		736 1046 2027 2103 2207 2412 2427 2680 2807 3640 3728 4841 6939 6963 6964 6989 7007 7095 7131 7172
-	}
+	manpower=97958
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

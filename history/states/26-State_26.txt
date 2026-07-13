@@ -1,23 +1,19 @@
-state = {
-	id = 26
-	name = "STATE_WT_26"
-	manpower = 986
-	state_category = tiny_island
-
-	history = {
+state={
+	id=26
+	name="Isle Bir"
+	history={
 		owner = EYD
-		add_core_of = EYD
 		buildings = {
-			infrastructure = 1
-			dockyard = 1
-			9490 = {
-				naval_base = 2
-			}
+			infrastructure = 0
 		}
-		victory_points = { 9490 1 }
-	}
+		add_core_of = EYD
+		
 
-	provinces = {
-		9490
 	}
+	provinces={
+		9490 
+	}
+	buildings_max_level_factor=1.000
+        manpower=986
+        state_category = tiny_island
 }

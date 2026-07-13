@@ -1,25 +1,12 @@
-state = {
-	id = 376
-	name = "STATE_WT_376"
-	manpower = 299751
-	state_category = rural
 
-	history = {
-		owner = THK
-		add_core_of = THK
-		buildings = {
-			infrastructure = 1
-			industrial_complex = 1
-			dockyard = 1
-			2012 = {
-				naval_base = 2
-			}
-		}
-		victory_points = { 4112 5 }
-		victory_points = { 3569 5 }
+state={
+	id=376
+	name="STATE_376"
+	provinces={
+		399 559 653 674 753 858 1292 1651 2016 2071 2298 2482 2648 2865 2942 3689 4878 5041 8140 8180 8183 8211 8247 8255 8301 8302 8332 8333 8354 8355 8376 8380 8381 8384 8411 8415 8436 8466 
 	}
-
-	provinces = {
-		2012 2507 3024 3120 3569 3749 4017 4112 4387 5065 8231 8281 8309 8318 8351 8361 8364 8397 8403 8414 8438 8461 8477 8500 8522 8542
-	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

@@ -1,19 +1,14 @@
-state = {
-	id = 70
-	name = "STATE_WT_70"
-	manpower = 11589
-	state_category = tiny_island
 
-	history = {
-		owner = AEI
-		add_core_of = AEI
-		buildings = {
-			infrastructure = 1
-		}
-		victory_points = { 47 1 }
-	}
+state={
+	id=70
+	name="915"
 
-	provinces = {
-		47 386 873 1925 1982 2104 2223 2738 2897 2903 3182 3347 3788 3825 4160 4229 4613 5002 5015 5126 8367 8393 8410 8423 8424 8453 8465 8473 8474 8496 8526 8546 8558 8577 8621 8679 8685 8756 8797
+
+	provinces={
+		93 410 1291 2212 2437 2464 3971 4882 8089 8115 8137 8191 8222 8223 8246 8273 8287 8346 
 	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

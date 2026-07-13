@@ -1,29 +1,25 @@
-state = {
-	id = 137
-	name = "STATE_WT_137"
-	manpower = 855823
-	state_category = large_town
-	resources = {
-		tungsten = 2
-	}
 
-	history = {
+state={
+	id=137
+	name="Mirabella"
+
+	history={
 		owner = SLU
-		add_core_of = SLU
+		victory_points = {
+			2697 10 
+		}
 		buildings = {
 			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 3
-			dockyard = 2
-			air_base = 1
-			2426 = {
-				naval_base = 2
-			}
 		}
-		victory_points = { 2426 5 }
+		add_core_of = SLU
+
 	}
 
-	provinces = {
-		904 959 1381 1600 2426 2835 2913 4859 5238 5246 5262
+	provinces={
+		45 1679 2107 2505 2697 2768 3402 5275 5282 5297 5303 5305 5307 5317 5339 
 	}
+	manpower=310912
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

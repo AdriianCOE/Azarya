@@ -1,23 +1,20 @@
-state = {
-	id = 49
-	name = "STATE_WT_49"
-	manpower = 9542
-	state_category = tiny_island
-
-	history = {
+state={
+	id=49
+	name="STATE_49"
+	history={
 		owner = SVD
-		add_core_of = SVD
 		buildings = {
-			infrastructure = 1
-			dockyard = 1
-			6303 = {
-				naval_base = 2
+			infrastructure = 0
 			}
+	
+			add_core_of = SVD
+			add_core_of = BKG
+			add_core_of = RFO
 		}
-		victory_points = { 6303 1 }
-	}
-
-	provinces = {
+	provinces={
 		6303 9493
 	}
+	buildings_max_level_factor=1.000
+        manpower=9542
+        state_category = tiny_island
 }

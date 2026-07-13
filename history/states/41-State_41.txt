@@ -1,19 +1,11 @@
-state = {
-	id = 41
-	name = "STATE_WT_41"
-	manpower = 2589
-	state_category = tiny_island
+state={
+	id=41
+	name="Oka Island"
 
-	history = {
-		owner = AEI
-		add_core_of = AEI
-		buildings = {
-			infrastructure = 1
-		}
-		victory_points = { 6410 1 }
-	}
-
-	provinces = {
+	provinces={
 		6410
 	}
+	buildings_max_level_factor=1.000
+        manpower=2589
+        state_category = tiny_island
 }

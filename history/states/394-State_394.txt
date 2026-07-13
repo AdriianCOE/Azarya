@@ -1,31 +1,21 @@
-state = {
-	id = 394
-	name = "STATE_WT_394"
-	manpower = 3938472
-	state_category = large_city
-	resources = {
-		tungsten = 5
-	}
 
-	history = {
+state={
+	id=394
+	name="Estland Frontier"
+	history={
 		owner = LVD
-		add_core_of = LVD
 		buildings = {
-			infrastructure = 4
-			arms_factory = 3
-			industrial_complex = 5
-			dockyard = 3
-			air_base = 2
-			739 = {
-				naval_base = 3
-			}
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 2
 		}
-		victory_points = { 8843 25 }
-		victory_points = { 8888 15 }
-		victory_points = { 15851 15 }
+		add_core_of = LVD
 	}
-
-	provinces = {
-		532 545 739 1230 1302 2250 2572 2608 3013 3087 3114 3494 3951 4255 4515 4675 4864 8612 8656 8704 8746 8767 8801 8821 15851 8843 8872 8888 8903 8921 8922 8953 8983
+	provinces={
+		684 730 1140 1604 1624 1888 2533 2675 2849 2882 3028 4318 8657 8675 8676 8683 8710 8768 8769 8802 8809 8825 8867 8889 8890 
 	}
+	manpower=2592837
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
 }

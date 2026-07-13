@@ -1,20 +1,12 @@
-state = {
-	id = 288
-	name = "STATE_WT_288"
-	manpower = 97958
-	state_category = rural
 
-	history = {
-		owner = SDB
-		add_core_of = SDB
-		buildings = {
-			infrastructure = 1
-			industrial_complex = 1
-		}
-		victory_points = { 1025 10 }
+state={
+	id=288
+	name="STATE_288"
+	provinces={
+		281 931 935 1602 2336 2443 3933 4600 5129 6968 6984 6993 7032 7136 
 	}
-
-	provinces = {
-		112 1025 1970 6866 6965 2357 6837 163
-	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

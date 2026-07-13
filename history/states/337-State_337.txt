@@ -1,26 +1,26 @@
-state = {
-	id = 337
-	name = "STATE_WT_337"
-	manpower = 1
-	state_category = town
 
-	history = {
-		owner = AEI
-		add_core_of = AEI
-		buildings = {
-			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 2
-			dockyard = 1
-			air_base = 1
-			2284 = {
-				naval_base = 2
-			}
+state={
+	id=337
+	name="Ascoux"
+
+			history={
+		owner = SLV
+		victory_points = {
+			4467 5
 		}
-		victory_points = { 611 1 }
+				buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = SLV
+
 	}
 
-	provinces = {
-		611 837 1240 1672 2284 2387 2575 2655 3368 4234 4820 7600 7677 7687 7746 7751
+	provinces={
+		56 273 1128 1474 1503 1635 3056 4240 4403 4467 7533 7554 7568 7590 7612 7723 7753 
 	}
+	manpower=297929
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

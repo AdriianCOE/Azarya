@@ -1,29 +1,12 @@
-state = {
-	id = 265
-	name = "STATE_WT_265"
-	manpower = 1183984
-	state_category = large_town
-	resources = {
-		tungsten = 4
-	}
 
-	history = {
-		owner = SIT
-		add_core_of = SIT
-		buildings = {
-			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 3
-			dockyard = 2
-			air_base = 1
-			453 = {
-				naval_base = 2
-			}
-		}
-		victory_points = { 2543 10 }
+state={
+	id=265
+	name="STATE_265"
+	provinces={
+		403 2040 2581 3419 3619 4053 4361 4893 6755 6759 6775 6785 6812 6835 6854 
 	}
-
-	provinces = {
-		61 453 663 1197 1922 2064 2097 2382 2385 2543 2544 3097 3211 3316 4413 4492 4706 4746 4987 6767 6779 6795 6797 6801 6816 6819 6826 6843 6846 6848 6862 6867 6870 6876 6887 6896 6916
-	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

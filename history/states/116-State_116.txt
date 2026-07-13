@@ -1,28 +1,21 @@
-state = {
-	id = 116
-	name = "STATE_WT_116"
-	manpower = 1447749
-	state_category = large_city
 
-	history = {
-		owner = TOL
-		add_core_of = TOL
+state={
+	id=116
+	name="Île du Repos"
+	history={
+		owner = WIH
 		buildings = {
-			infrastructure = 4
-			arms_factory = 3
-			industrial_complex = 5
-			dockyard = 3
-			air_base = 2
-			2992 = {
-				naval_base = 3
+			infrastructure = 1
 			}
+	
+		add_core_of = WHI
 		}
-		victory_points = { 9428 10 }
-		victory_points = { 3478 5 }
-		victory_points = { 9450 5 }
-	}
 
-	provinces = {
-		2992 3478 3855 5077 9428 9431 9439 9450 9455 9457 9463 489
+	provinces={
+		241 529 586 801 2031 3851 3917 4494 5903 5943 
 	}
+	manpower=27985
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
 }

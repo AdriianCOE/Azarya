@@ -1,26 +1,30 @@
-state = {
-	id = 468
-	name = "STATE_WT_468"
-	manpower = 1198984
-	state_category = city
-	resources = {
-		steel = 4
-		chromium = 5
+state={
+	id=468
+	name="Qalifah"
+	resources={
+	    steel=5
 	}
 
-	history = {
-		owner = INV
-		add_core_of = INV
-		buildings = {
-			infrastructure = 3
-			arms_factory = 2
-			industrial_complex = 4
-			air_base = 2
+	history={
+		owner = CBS
+		victory_points = {
+			7073 50 
 		}
-		victory_points = { 620 30 }
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 2
+			air_base = 2
+            538 = {
+                bunker = 2
+            }
+		}
+		add_core_of = CBS
+				}
+	provinces={
+		 538 565 7073
 	}
-
-	provinces = {
-		317 2406 3752 1196 7034 7010 620 4604 6958 15834 15835 15832
-	}
+	manpower=1772851
+	buildings_max_level_factor=1.000
+	state_category=large_city
 }

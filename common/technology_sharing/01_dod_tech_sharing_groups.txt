@@ -1,0 +1,149 @@
+technology_sharing_group = {
+
+	id = HUN_joint_oil_exploitation_company_tech_group
+	name = HUN_joint_oil_exploitation_company
+	desc = HUN_joint_oil_exploitation_company_desc
+	picture = GFX_technology_sharing_default
+    
+	research_sharing_per_country_bonus = 0.1
+
+	categories = { industry }
+
+    available = {
+    	is_in_faction_with = THK
+    	THK = {
+    		is_faction_leader = yes
+    		has_government = democratic
+		}
+    }
+}
+
+technology_sharing_group = {
+	id = HUN_soviet_hungarian_military_academy_tech_group
+	name = HUN_soviet_hungarian_military_academy
+	desc = HUN_soviet_hungarian_military_academy_desc
+	picture = GFX_technology_sharing_default
+    
+	research_sharing_per_country_bonus = 0.1	
+
+	categories = { land_doctrine }
+
+    available = {
+    	NOT = { has_war_with = NSA }
+    	NSA = { has_government = communism }
+    }
+}
+
+technology_sharing_group = {
+
+	picture = GFX_technology_sharing_default
+    
+	research_sharing_per_country_bonus = 0.1	
+
+	categories = { land_doctrine }
+
+    available = {
+		OR = {
+			is_in_faction = no
+			is_in_faction_with = GYE
+		}
+
+		if = {
+			limit = { tag = GYE }
+				}
+			}
+		}
+    }
+}
+
+technology_sharing_group = {
+	picture = GFX_technology_sharing_default
+    
+	research_sharing_per_country_bonus = 0.1 
+
+	categories = { land_doctrine naval_doctrine air_doctrine }
+
+    available = {
+    	THK = { is_faction_leader = yes }
+    }
+}
+
+technology_sharing_group = {
+
+	id = little_entente_research_group
+	name = little_entente_research_group_name
+	desc = little_entente_research_group_desc
+	picture = GFX_technology_sharing_default
+    
+	research_sharing_per_country_bonus = 0.1
+
+    available = {
+        is_in_faction_with = CZE
+		CZE = {
+			is_faction_leader = yes
+		}
+    }
+}
+
+technology_sharing_group = {
+	picture = GFX_technology_sharing_default
+    
+	research_sharing_per_country_bonus = 0.1
+
+	categories = { naval_doctrine naval_equipment  }
+
+    available = {
+    }
+}
+
+technology_sharing_group = {
+	picture = GFX_technology_sharing_default
+    
+	research_sharing_per_country_bonus = 0.1
+
+	categories = { air_doctrine }
+
+    available = {
+    }
+}
+
+technology_sharing_group = {
+	picture = GFX_technology_sharing_default
+    
+	research_sharing_per_country_bonus = 0.1
+
+	categories = { }
+
+    available = {
+    }
+}
+
+technology_sharing_group = {
+	id = HUN_joint_tank_development_group
+	name = HUN_joint_tank_development_group
+	desc = HUN_joint_tank_development_group_desc
+	picture = GFX_technology_sharing_default
+    
+	research_sharing_per_country_bonus = 0.1
+
+	categories = { armor }
+
+    available = {
+    	is_in_faction_with = HUN
+    }
+}
+
+technology_sharing_group = {
+	id = HUN_joint_air_development_group
+	name = HUN_joint_air_development_group
+	desc = HUN_joint_air_development_group_desc
+	picture = GFX_technology_sharing_default
+    
+	research_sharing_per_country_bonus = 0.1
+
+	categories = { air_equipment }
+
+    available = {
+    	is_in_faction_with = HUN
+    }
+}

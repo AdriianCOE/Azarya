@@ -1,27 +1,19 @@
-state = {
-	id = 386
-	name = "STATE_WT_386"
-	manpower = 5293847
-	state_category = megalopolis
-	resources = {
-		tungsten = 6
-	}
 
-	history = {
-		owner = LVD
-		add_core_of = LVD
+state={
+	id=386
+	name="STATE_386"
+	history={
+		owner = ARD
 		buildings = {
-			infrastructure = 5
-			arms_factory = 5
-			industrial_complex = 7
-			air_base = 3
+			infrastructure = 1
 		}
-		victory_points = { 2737 30 }
-		victory_points = { 8337 20 }
-		victory_points = { 8618 5 }
+		add_core_of = ARD
 	}
-
-	provinces = {
-		232 516 681 821 1124 1402 1592 1836 1928 1991 2173 2737 2744 2811 3498 3677 3732 4484 4506 4666 4691 4821 4871 5079 8337 8445 8463 8471 8518 8543 8563 8618 8637
+	provinces={
+		779 1480 2397 3174 8443 8503 8562 8611 8627 8664 8702 
 	}
+	manpower=542100
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

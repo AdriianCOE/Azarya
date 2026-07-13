@@ -1,28 +1,12 @@
-state = {
-	id = 411
-	name = "STATE_WT_411"
-	manpower = 2728374
-	state_category = large_city
 
-	history = {
-		owner = CMR
-		add_core_of = CMR
-		buildings = {
-			infrastructure = 4
-			arms_factory = 3
-			industrial_complex = 5
-			dockyard = 3
-			air_base = 2
-			528 = {
-				naval_base = 3
-			}
-		}
-		victory_points = { 528 30 }
-		victory_points = { 8984 10 }
-		victory_points = { 9162 5 }
+state={
+	id=411
+	name="STATE_411"
+	provinces={
+		367 615 664 1036 2025 3540 3702 3926 4889 5067 8770 8790 8838 8850 8929 
 	}
-
-	provinces = {
-		528 1554 1565 1605 2024 2330 2708 3220 3227 3867 3948 4176 4441 4750 8961 8967 8984 9002 9003 9013 9032 9033 9069 9119 9148 9162 9171 9001 3064
-	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

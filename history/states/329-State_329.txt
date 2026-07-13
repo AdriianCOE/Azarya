@@ -1,26 +1,28 @@
-state = {
-	id = 329
-	name = "STATE_WT_329"
-	manpower = 1529384
-	state_category = city
-	resources = {
-		steel = 11
-		chromium = 5
-	}
-
-	history = {
-		owner = GYE
-		add_core_of = GYE
-		buildings = {
-			infrastructure = 3
-			arms_factory = 2
-			industrial_complex = 4
-			air_base = 2
+state={
+	id=329
+	name="Ponta"
+	
+    history = {
+        owner = CZL
+		victory_points = {
+			7408 15 
 		}
-		victory_points = { 118 1 }
-	}
+		victory_points = {
+			7560 5 
+		}
+				buildings = {
+		infrastructure = 2	
+		industrial_complex = 1
+			}
 
-	provinces = {
-		118 133 734 879 1024 1355 2454 2548 3626 4009 4041 4949 4985 7276 7287 7295 7305 7342 7352 7358 7381 7385 7389 7398 7411 7447 7458 7464 7473 7505
+		add_core_of = CZL
+	
+    }
+	
+	provinces={
+		481 630 715 919 1273 2052 2360 2532 2856 3027 3254 3874 4654 7371 7408 7443 7481 7529 7560 7594 
 	}
+	buildings_max_level_factor=1.000
+        manpower=580957
+        state_category = town
 }

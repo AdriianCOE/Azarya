@@ -1,24 +1,22 @@
-state = {
-	id = 126
-	name = "STATE_WT_126"
-	manpower = 201923
-	state_category = rural
-	resources = {
-		steel = 5
-		chromium = 7
-	}
 
-	history = {
-		owner = GYE
-		add_core_of = GYE
+state={
+	id=126
+	name="Solterra"
+
+	history={
+		owner = SLU
 		buildings = {
 			infrastructure = 1
-			industrial_complex = 1
 		}
-		victory_points = { 3170 5 }
+		add_core_of = SLU
+
 	}
 
-	provinces = {
-		102 444 471 1039 2371 3170 3821 6890 6895 6941
+	provinces={
+		59 180 218 3261 4070 4547 5156 5160 5172 
 	}
+	manpower=189094
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

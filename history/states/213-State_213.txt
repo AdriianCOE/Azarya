@@ -1,31 +1,16 @@
-state = {
-	id = 213
-	name = "STATE_WT_213"
-	manpower = 2498698
-	state_category = metropolis
-	resources = {
-		tungsten = 6
-	}
 
-	history = {
-		owner = SVD
-		add_core_of = SVD
-		buildings = {
-			infrastructure = 1
-			arms_factory = 4
-			industrial_complex = 6
-			dockyard = 3
-			air_base = 3
-			503 = {
-				naval_base = 3
-			}
-		}
-		victory_points = { 925 20 }
-		victory_points = { 6189 15 }
-		victory_points = { 6296 8 }
+state={
+	id=213
+	name="STATE_213"
+	history={
+		owner = DKG
+		add_core_of = DKG
 	}
-
-	provinces = {
-		440 503 823 925 1034 1180 1246 2158 2205 2467 3273 3444 3487 4328 4446 4571 6112 6114 6115 6132 6139 6153 6157 6174 6189 6193 6205 6206 6211 6219 6220 6233 6236 6237 6247 6248 6260 6268 6286 6296 6330
+	provinces={
+		557 675 747 1018 1536 1682 1808 2039 2113 2301 2411 2428 2534 2557 2776 2814 2901 3266 3290 3403 3406 3525 3547 3563 3796 3880 3956 4116 4121 4163 4166 4272 4453 4466 4646 4670 5013 5987 5994 6004 6012 6014 6021 6051 6052 6058 6071 6079 6128 6129 6136 6150 6151 6154 6173 6182 6190 6191 6216 6222 6244 6257 
 	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

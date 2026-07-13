@@ -1,21 +1,17 @@
-state = {
-	id = 490
-	name = "STATE_WT_490"
-	manpower = 5593
-	state_category = wasteland
-	resources = {
-		steel = 5
-	}
 
-	history = {
-		owner = DKG
-		add_core_of = DKG
-		buildings = {
+state={
+	id=490
+	name="State_490"
+	history={
+		owner = ARK
+		add_core_of = ARK
 		}
-		victory_points = { 708 1 }
+	provinces={
+		1994 2860
 	}
-
-	provinces = {
-		708 3849
-	}
+	manpower=5593
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+	impassable=yes
 }
