@@ -187,7 +187,7 @@ THK_bop_decisions_category = {
 				limit = {
 					NOT = { has_country_flag = infantry_division_TK }
 				}
-				infantry_division_TK = yes
+				set_country_flag = infantry_division_TK
 			}
 			custom_effect_tooltip = THK_division_infantry_ss
 			THK_bop_high_decrease_effect = yes

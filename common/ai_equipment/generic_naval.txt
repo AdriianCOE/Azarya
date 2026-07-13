@@ -3,18 +3,6 @@
 destroyers = {
 	category = naval
 
-	blocked_for = {
-		GER
-		USA
-		JAP
-		ENG
-		FRA
-		ITA
-	}
-
-	available_for = {
-	}
-
 	roles = {
 		naval_screen
 	}
@@ -190,19 +178,6 @@ destroyers = {
 generic_escorts = {
 	category = naval
 
-	blocked_for = {
-		GER
-		USA
-		JAP
-		ENG
-		FRA
-		ITA
-	}
-
-	available_for = {
-
-	}
-
 	roles = {
 		naval_escort
 	}
@@ -301,18 +276,6 @@ generic_escorts = {
 naval_light_cruiser = {
 
 	category = naval
-
-	blocked_for = {
-		GER
-		USA
-		JAP
-		ENG
-		FRA
-		ITA
-	}
-
-	available_for = {
-	}
 
 	roles = {
 		naval_cruiser_light
@@ -508,18 +471,6 @@ naval_light_cruiser = {
 naval_cruiser_heavy = {
 	category = naval
 
-	blocked_for = {
-		GER
-		USA
-		JAP
-		ENG
-		FRA
-		ITA
-	}
-
-	available_for = {
-	}
-
 	roles = {
 		naval_cruiser_heavy
 	}
@@ -714,18 +665,6 @@ naval_cruiser_heavy = {
 naval_capital_battleship = {
 	category = naval
 
-	blocked_for = {
-		GER
-		USA
-		JAP
-		ENG
-		FRA
-		ITA
-	}
-
-	available_for = {
-	}
-
 	roles = {
 		naval_capital_bb
 	}
@@ -916,18 +855,6 @@ naval_capital_battleship = {
 
 naval_capital_bc = {
 	category = naval
-
-	blocked_for = {
-		GER
-		USA
-		JAP
-		ENG
-		FRA
-		ITA
-	}
-
-	available_for = {
-	}
 
 	roles = {
 		naval_capital_bc
@@ -1120,18 +1047,6 @@ naval_capital_bc = {
 naval_carrier = {
 	category = naval
 
-	blocked_for = {
-		GER
-		USA
-		JAP
-		ENG
-		FRA
-		ITA
-	}
-
-	available_for = {
-	}
-
 	roles = {
 		naval_carrier
 	}
@@ -1320,19 +1235,6 @@ naval_escort_carrier = {
 
 	category = naval
 
-	blocked_for = {
-		GER
-		USA
-		JAP
-		ENG
-		FRA
-		ITA
-	}
-
-	available_for = {
-
-	}
-
 	roles = {
 		naval_carrier_light
 	}
@@ -1356,7 +1258,6 @@ naval_escort_carrier = {
 
 		target_variant = {
 			match_value = 1000.0
-
 
 			type = ship_hull_escort_carrier
 			modules = {
@@ -1384,21 +1285,8 @@ naval_escort_carrier = {
 
 }
 
-
 naval_submarine = {
 	category = naval
-
-	blocked_for = {
-		GER
-		USA
-		JAP
-		ENG
-		FRA
-		ITA
-	}
-
-	available_for = {
-	}
 
 	roles = {
 		naval_submarine
@@ -1549,18 +1437,6 @@ naval_submarine = {
 naval_mine_sweeper = {
 	category = naval
 
-	blocked_for = {
-		GER
-		USA
-		JAP
-		ENG
-		FRA
-		ITA
-	}
-
-	available_for = {
-	}
-
 	roles = {
 		naval_mine_sweeper
 	}
@@ -1666,18 +1542,6 @@ naval_mine_sweeper = {
 
 naval_mine_layer = {
 	category = naval
-
-	blocked_for = {
-		GER
-		USA
-		JAP
-		ENG
-		FRA
-		ITA
-	}
-
-	available_for = {
-	}
 
 	roles = {
 		naval_mine_layer

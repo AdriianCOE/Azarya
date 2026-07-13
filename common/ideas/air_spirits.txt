@@ -17,7 +17,7 @@ ideas = {
 		}
 		industrial_destruction_spirit = {
 			ledger = air
-			visible = { has_tech = air_superiority }
+			visible = { has_doctrine = new_operational_integrity }
 			available = {
 			}
 			research_bonus = {
@@ -38,7 +38,7 @@ ideas = {
 		}
 		dive_bombing_spirit = {
 			ledger = air
-			visible = { has_tech = formation_flying }
+			visible = { has_doctrine = new_operational_integrity }
 			available = {
 			}
 			research_bonus = {
@@ -60,7 +60,7 @@ ideas = {
 		}
 		material_destruction_spirit = {
 			ledger = air
-			visible = { has_tech = force_rotation }
+			visible = { has_doctrine = new_operational_integrity }
 			available = {
 			}
 			research_bonus = {
@@ -245,7 +245,7 @@ ideas = {
 			ledger = air
 			available = {
 			}
-			visible = { has_tech = force_rotation }
+			visible = { has_doctrine = new_operational_integrity }
 			modifier = {
 				army_bonus_air_superiority_factor = 0.05
 			}
@@ -261,7 +261,7 @@ ideas = {
 			ledger = air
 			available = {
 			}
-			visible = { has_tech = formation_flying }
+			visible = { has_doctrine = new_operational_integrity }
 			modifier = {
 				air_cas_efficiency = 0.25
 			}
@@ -277,7 +277,7 @@ ideas = {
 			ledger = air
 			available = {
 			}
-			visible = { has_tech = air_superiority }
+			visible = { has_doctrine = new_operational_integrity }
 			modifier = {
 				air_strategic_bomber_bombing_factor = 0.1
 			}

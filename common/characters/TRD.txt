@@ -411,7 +411,7 @@ characters={
 					original_tag  = TRD
 				}
 				traits  = {
-					army_chief_organizTRDonal_2 
+					army_chief_organizational_2
 				}
 				ai_will_do  = {
 					factor  = 1.000

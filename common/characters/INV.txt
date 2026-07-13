@@ -190,7 +190,7 @@ characters={
 					original_tag  = INV
 				}
 				traits  = {
-					democrINVc_reformer 
+					democratic_reformer
 				}
 				do_effect  = {
 					not  = {
@@ -411,7 +411,7 @@ characters={
 					original_tag  = INV
 				}
 				traits  = {
-					army_chief_organizINVonal_2 
+					army_chief_organizational_2
 				}
 				ai_will_do  = {
 					factor  = 1.000
