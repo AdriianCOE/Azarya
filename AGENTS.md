@@ -1,4 +1,4 @@
-# Azaryafantasia — Contexto e Lore do Mod
+# Azarya — Contexto e Lore do Mod
 
 > Documento de referência permanente sobre o mundo, a linha do tempo e as intenções por trás do mod. Manter atualizado conforme a lore for sendo definida.
 
@@ -6,7 +6,7 @@
 
 Total conversion para Hearts of Iron IV. Ambientação **realista** (não é fantasia), mas se passa em uma **linha do tempo alternativa** à nossa.
 
-- Existe também uma pasta `Azarya` (mais simples, gerada por um gerador automático de mundos fantasiosos). Ela é só rascunho/referência — o projeto principal é o **Azaryafantasia**.
+- **Nome atual do projeto/repositório: `Azarya`.** Historicamente o projeto principal se chamava `Azaryafantasia`, e existia uma pasta separada `Azarya` com um rascunho simples gerado por um gerador automático de mundos fantasiosos. O rascunho antigo foi apagado, e a pasta principal `Azaryafantasia` foi renomeada para `Azarya`, virando também um repositório Git (`github.com/AdriianCOE/Azarya`, branch `Main1`). Daqui pra frente, `Azarya` é a única fonte de verdade do projeto; `Azaryafantasia` só aparece em contexto histórico.
 - Data de início da campanha: **1924** (em vez de 1936 como no HOI4 vanilla).
 
 ## Divergência histórica
@@ -169,3 +169,122 @@ Apenas 4 arquivos:
 O mod tem fundação de mapa e países muito mais sólida do que a árvore de pastas sugere à primeira vista — mapa 100% autoral, 57 países com history real, 506 estados preenchidos. O gargalo está em conteúdo de jogabilidade específico: só 2 árvores de foco customizadas (de 57), quase nenhum evento próprio, tecnologia 100% vanilla, e dois sistemas inteiros (doutrinas, focus inlay windows) construídos mas desligados via `.disabled`. Sugere investimento pesado em worldbuilding/mapa/lore inicial (THK e CZL na frente) que ainda não escalou para o restante das 55 nações nem para eventos.
 
 > **Nota:** por pedido do usuário, states e provinces (`history/states/`, `map/definition.csv` etc.) não precisam ser relidos em diagnósticos futuros — já confirmados como preenchidos/robustos nesta auditoria.
+
+---
+
+## Investigação de crash real (2026-07-13) — pós-reorganização `Azaryafantasia` → `Azarya`
+
+*Esta seção documenta a investigação do crash determinístico ao iniciar a campanha de THK em 1924, incluindo a reorganização do projeto (rascunho antigo apagado, pasta principal renomeada para `Azarya`, virou repositório Git). Mantida como registro histórico da investigação — não é lore.*
+
+### Contexto da reorganização
+
+- O projeto principal (antes `Azaryafantasia`) foi renomeado para `Azarya` e virou o repositório Git atual (`github.com/AdriianCOE/Azarya`, branch `Main1`). O rascunho antigo (`Azarya` gerado automaticamente) foi apagado.
+- O `error.log`/`game.log`/`crashes/` analisados foram gerados jogando este mesmo projeto, antes da renomeação — são evidência válida da linhagem atual, mas podem ser anteriores a correções já presentes no HEAD.
+
+### Classificação dos problemas conhecidos (log antigo × HEAD atual)
+
+| Problema | Estava no log antigo? | Status no HEAD atual |
+|---|---|---|
+| `START_DATE`/`END_DATE` = 1984/1999 em `common/defines/02_blankmod.lua` (arquivo-molde nunca editado, sobrescrevia a data por ordem alfabética de carregamento) | Sim | **JÁ CORRIGIDO** — linhas removidas |
+| Construção duplicada (naval_base da província 1159) no `history/states/506-STATE_506.txt` — 1159 pertence de verdade ao state 212, que já tem a atribuição legítima | Sim | **JÁ CORRIGIDO** — bloco duplicado removido |
+| Chave faltante em `history/units/ASV.txt` (2ª divisão nunca fechava antes da 3ª abrir, aninhamento inválido) | Sim | **JÁ CORRIGIDO** — estrutura igual ao `ARD.txt` |
+| `map/positions.txt` ausente (referenciado em `default.map`, vanilla também usa um arquivo vazio) | Sim (sem erro explícito) | **JÁ CORRIGIDO** — arquivo vazio criado |
+| `GUI_TYPE` `change_background`/`country_filter` indefinidos — `interface/frontendmainview.gui` e `frontendgamesetupview.gui` do mod são cópias desatualizadas (faltam elementos que o vanilla 1.19.2 atual define) | Sim | Overrides renomeados para `.gui.disabled_test` (frontend vanilla deve assumir) — **hipótese principal do crash, ainda não comprovada, depende do próximo teste** |
+| `gfx/loadingscreens/load_ncns_jap.dds` — "Unexpected token: DDS" | Sim | **JÁ CORRIGIDO por ausência** — arquivo não existe mais, sem referência em lugar nenhum |
+| `gfx/loadingscreens/load_2.dds`/`load_5.dds`/`load_6.dds` — na verdade JPEGs com extensão `.dds` | Não (achado nesta reauditoria) | **AINDA PRESENTE** — sem referência explícita encontrada em `.gfx`/`.gui`/`.asset`/`.txt`, carregamento pelo engine não determinado — candidato do Round 2, não mexido ainda |
+| Manifesto externo `mod/Azarya.mod` desatualizado (`name="Fantasy World"`, ~24 `replace_path`, sobra do rascunho antigo nunca sincronizada) | Não é erro de log, consequência da renomeação | **CORRIGIDO nesta rodada** — reescrito espelhando `descriptor.mod` |
+| `replace_path="common/collections"` / `"common/focus_inlay_windows"` removidos numa rodada anterior por engano (o vanilla tem conteúdo real nas duas pastas — removê-los deixaria vazar CZE/GER/JAP focus inlay windows e o sistema de collections vanilla) | Não é erro de log | **CORRIGIDO nesta rodada** — restaurados em `descriptor.mod` e no manifesto externo |
+| `interface/_backup_original/*.gui` — cópias com extensão carregável dentro de `interface/`, redundantes com o Git e arriscando duplicar definição de GUI_TYPE | Não existia no log antigo | **CORRIGIDO nesta rodada** — pasta removida (`git rm -r`), backup fica só no histórico do Git e no `.gui.disabled_test` |
+
+### Achado crítico: dessincronia entre o launcher e a pasta renomeada
+
+O banco do Paradox Launcher (`launcher-v2.sqlite`) tinha o playset ativo apontando para `mod/Azaryafantasia.mod` / `dirPath=...\mod\Azaryafantasia` — **caminho que não existe mais** depois da renomeação. Isso não foi editado (é estado de outro aplicativo, fora do repositório) — **o usuário precisa, no Paradox Launcher: remover a entrada antiga quebrada e adicionar/ativar a entrada atual apontando para a pasta `Azarya`** antes do próximo teste.
+
+### `tools/validate_mod.py`
+
+Reescrito com 10 checagens (manifesto externo × `descriptor.mod`, `replace_path` órfão, `.gui`/`.gfx` em pastas de backup, header DDS, building fora do state / província duplicada entre states via parsing por profundidade de chaves, balanceamento de chaves, tags/country files/history sem correspondência, focus/event IDs duplicados), classificadas em `ERROR`/`WARNING`/`INFO`, saída não-zero só com `ERROR`. Resultado após o Round 1: **3 ERROR** (os 3 DDS já conhecidos, reservados para o Round 2), **72 WARNING** (a maioria são os 25 arquivos órfãos `D51`–`D75.txt` já documentados antes, mais `common/collections`, `country_metadata` e `gfx/interface/equipmentdesigner/graphic_db` sem pasta ativa nem `.disabled` — não investigados a fundo ainda, não bloqueiam o teste desta rodada).
+
+### Próximo passo (Round 1)
+
+Checklist de teste manual (ver conversa/plano para o passo a passo completo): reconfigurar o mod no Paradox Launcher apontando para `Azarya`, desativar os demais mods, iniciar THK → 1924, e confirmar se a campanha chega ao mapa jogável. Se sim, o conjunto de correções acima resolveu o crash (sem isolar uma causa única, já que várias mudaram juntas). Se ainda fechar, o próximo passo isola só os 3 DDS corrompidos, sem mexer em mais nada.
+
+---
+
+## Rodada 2 (2026-07-13) — state 506 (capacidade de buildings) + sprites de frontend
+
+*O usuário testou de novo depois da Round 1: o launcher já reconhece `Azarya` corretamente (`system.log`: "Active Mod: Azarya"), a data cai em 1936 (fallback vanilla, não mais 1984). Mas **o jogo ainda fechou** — novo crash `crashes/hoi4_20260713_025250/`, `EXCEPTION_ACCESS_VIOLATION`, com a pilha de chamadas **idêntica offset a offset** à do crash da Round 1 (mesma rota determinística, ainda não eliminada). Confirmado no novo `error.log`: sem `Undefined GUI_TYPE`, sem erro em `ASV.txt`, sem `Province #1159`, sem `1984.01.01.12`, sem `load_ncns_jap.dds` — a Round 1 funcionou parcialmente, mas restam problemas.*
+
+### P0 — state 506, segundo bug independente (corrigido)
+
+O log ainda terminava em `506 - Net has too many buildings : -1`. A remoção do bloco duplicado da província 1159 (Round 1 anterior a esta reorganização) resolveu só um dos dois bugs desse state — este é outro, novo.
+
+Diagnóstico: `state_category=town` fornece `local_building_slots=4` (`common/state_category/town.txt`). Somando os níveis dos 4 tipos de building de state em `history/states/506-STATE_506.txt` (`infrastructure=2, arms_factory=2, industrial_complex=3, air_base=1`) dá **8** — o valor mais alto entre **todos os 242 states com `state_category=town` do mod** (o segundo mais alto, state 410, soma 7 e não gera erro; a maioria fica entre 0 e 5). `naval_base` é building **provincial** (`level_cap.province_max`), não conta contra `local_building_slots`. Não achei nenhuma segunda ocorrência do erro "too many buildings" em nenhum outro state do mod.
+
+Não há acesso ao código-fonte do engine para confirmar a fórmula exata, mas a evidência empírica (soma=8 sendo o único outlier claro, teto seguro observado = 7) é forte o suficiente para uma correção mínima: **`industrial_complex` reduzido de `3` para `2`** em `history/states/506-STATE_506.txt`, trazendo a soma para 7. Não mexeu em `provinces`, `owner`, `victory_points`, `naval_base` nem em nenhum arquivo de mapa.
+
+### P1 — sprites ausentes no frontend (diagnosticado, correção reservada)
+
+Novo no log: `GFX_subscription_widget_chinese`, `GFX_country_filter_entry`, `GFX_unplayed_content_notification` ausentes. Causa: a Round 1 desativou só os `.gui` de frontend (`frontendmainview.gui.disabled_test`, `frontendgamesetupview.gui.disabled_test`), mas os `.gfx` companheiros (`interface/frontendmainview.gfx`, `interface/frontendgamesetupview.gfx`) continuam **ativos e são cópias antigas** (mesmo nome do vanilla, sobrescrevem por completo): faltam 9 e 4 sprites respectivamente que o vanilla atual (1.19.2) define, incluindo os 3 do log. `frontendgamesetupview.gfx` não tem nenhum sprite próprio do mod; `frontendmainview.gfx` tem só um (`GFX_frontend_az_dev_logo`), hoje órfão (só era referenciado pelo `.gui` já desativado). **Não corrigido ainda** — reservado para depois do teste do state 506, conforme pedido.
+
+### `radio_station_cover.dds` — classificado
+
+`Couldn't find texture file: 'gfx/radio_station_cover.dds'` é referência do **próprio mod** (`interface/AZ_music.gfx` → `GFX_radio_station_cover`, usado em `interface/AZ_music.gui`, o player de música customizado). Não é vanilla, DLC nem outro mod Workshop — é um asset de textura que nunca foi adicionado ao mod. Cosmético (capa do widget de música), não tratado como bloqueador. Não corrigido nesta rodada.
+
+### DDS conhecidos
+
+`load_2.dds`, `load_5.dds`, `load_6.dds` continuam intocados — ainda não aparecem no `error.log`.
+
+### Próximo passo (Round 2)
+
+Testar THK → 1924 de novo. Se chegar ao mapa: a correção do state 506 era suficiente (P1 pode nem precisar ser corrigido se não estiver gerando problema real). Se ainda fechar: comparar a pilha de chamadas do novo crash com `hoi4_20260713_025250` — se mudar, o state 506 era parte do problema e a próxima camada (P1, sprites) deve ser corrigida; se ficar idêntica, o state 506 não era a causa principal e é preciso investigar mais fundo antes de mexer nos `.gfx`.
+
+---
+
+## Rodada 3 (2026-07-13) — teste A/B completo do frontend (`.gfx`)
+
+*Novo teste confirmou, de forma independente (reli o log fresco `errornovo.log` e o novo `crashes/hoi4_20260713_032139/`): `506 - Net has too many buildings` **não aparece mais** — o fix do state 506 (Round 2) funcionou e foi preservado. O crash continua, com a mesma pilha de chamadas idêntica (offset a offset) às rodadas anteriores — mesma rota determinística ainda não eliminada. O log trouxe exatamente as contagens esperadas: `GFX_subscription_widget_chinese` (1x), `GFX_country_filter_entry` (9x), `GFX_unplayed_content_notification` (8x) ausentes — confirmando o diagnóstico do P1 da Rodada 2.*
+
+### Ação: desativados os `.gfx` companheiros
+
+`interface/frontendmainview.gfx` → `frontendmainview.gfx.disabled_test`, `interface/frontendgamesetupview.gfx` → `frontendgamesetupview.gfx.disabled_test`. Os `.gui` continuam desativados de antes. **Os 4 arquivos de frontend do mod (2 `.gui` + 2 `.gfx`) estão todos desativados agora** — o jogo deve usar o `frontendmainview`/`frontendgamesetupview` (`.gui` + `.gfx`) 100% vanilla. Nenhuma cópia com extensão carregável ficou em subpasta (`_backup_original` já tinha sido removida na Round 1).
+
+### `radio_station_cover.dds` — reclassificado com o log novo (mesma conclusão)
+
+Investigação somente-leitura repetida com o log atual: sem `common/radio` no mod nem no vanilla; a única referência em todo o mod/vanilla/mods Workshop carregados continua sendo `interface/AZ_music.gfx:4` (`textureFile = "gfx/radio_station_cover.dds"`) e `interface/AZ_music.gui:120`. Os 3 mods Workshop ativos (`3707251866` HOI4 Fantasy World Map Maker, `3711359350` Focus Tree Editor, `3716626471` HOI4 ContentMaker) são ferramentas de desenvolvimento, não têm conteúdo de rádio, e não referenciam esse nome. **Confirmado: é asset do próprio mod, nunca adicionado.** Não corrigido — aguardando resultado deste teste, conforme pedido.
+
+### Próximo passo (Round 3)
+
+Testar THK → 1924. Se chegar ao mapa: os `.gfx` antigos eram a causa restante. Se ainda fechar: comparar a pilha de chamadas do novo crash com `hoi4_20260713_032139` (se mudar, avançamos mais uma camada; se ficar idêntica, o frontend não era a causa principal e a investigação precisa mudar de direção — possivelmente `radio_station_cover.dds` ou algo ainda não identificado).
+
+---
+
+## Rodada 4 (2026-07-13) — redução estrutural do error.log
+
+*O teste da Round 3 confirmou `506 - Net has too many buildings` ausente (fix preservado) mas o crash persistiu. Em vez de investigar mais o crash em si, esta rodada limpa as famílias de erro mais repetitivas do `error.log` (`errornovo.log`, 4437 linhas brutas / 3821 entradas lógicas), priorizadas por impacto real, não por sistema.*
+
+### `tools/summarize_error_log.py` (novo)
+
+Script read-only que lê o log, mescla continuações multilinha, e agrupa por assinatura detalhada (preserva IDs específicos: tech, idea, tag, sprite, specialization, trigger) e por família ampla (`invalid_technology_reference`, `invalid_idea_reference`, `invalid_specialization`, `missing_country_tag`, etc.). Gera `tools/reports/error_log_summary_baseline.md`. Rodar: `python tools/summarize_error_log.py <log> [--markdown <arquivo>]`.
+
+### Achados e correções (investigação a fundo antes de qualquer edição, git log checado antes de copiar do vanilla)
+
+- **`common/ai_strategy/doctrines.txt` (1596 linhas do log, ~42%)**: eram só **14 linhas distintas** usando sintaxe antiga de doutrinas (`has_tech = mobile_warfare` etc., de antes do rework de doutrinas do HOI4). Mapeadas contra o vanilla atual (`common/doctrines/grand_doctrines/`, `subdoctrines/`) e migradas para `has_doctrine =`/`has_completed_subdoctrine =`. 9 de 14 com correspondência direta confirmada; 5 (`large_front_operations`, `air_superiority`, `day_bombing`, `formation_flying`, `force_rotation`) sem subdoctrine exata identificável — usei o doctrine pai como aproximação razoável (só afeta peso de decisão de IA, não corretude de jogo).
+- **`BUL_army_restrictions_aat` (593 linhas, ~15%)**: os 6 arquivos de equipment (`tank_chassis.txt`, `plane_airframes.txt`, `ship_hull_{submarine,light,heavy,cruiser}.txt`) eram **100% idênticos ao vanilla** (0 diff). O bloco `can_be_produced` checava uma idea da Bulgária vanilla que não existe no Azarya (`common/ideas` é 100% autoral). Removidos os 15 blocos (mecânico, script com preview antes de aplicar). **Achado à parte, não corrigido**: outros ~10 arquivos de equipment (`ballistic_missiles.txt`, `nuclear_missiles.txt`, `ship_hull_carrier.txt` etc.) têm o mesmo padrão mas não apareceram no log atual — fica para uma rodada futura se aparecerem.
+- **Specializations/special projects (~979 linhas)**: **checei `git log --all` antes de copiar do vanilla**, como pedido. Achado importante: `common/special_projects/projects/air_projects.txt` tinha **customização real do Azarya** (troca de `original_tag = GER`→`CZL`, remoção de efeitos da Alemanha, renome de tech de motor a jato) no commit `e8bbf9d3`, perdida no commit seguinte `6124b77d` ("voltamos la v1", aparente squash/revert acidental). Recuperado desse commit, não do vanilla — copiar do vanilla teria apagado essa customização. Os outros 6 arquivos vazios (`specializations.txt` + 5 `prototype_rewards/generic_*.txt`) eram idênticos ao vanilla no commit `56511bd5`, recuperados de lá.
+- **`common/ai_navy` sem `replace_path`**: única pasta `ai_*` sem essa entrada; `fleet/`/`taskforce/` só tinham placeholder, então os 8 arquivos vanilla continuavam carregando (~117 linhas do spam de tags). Adicionado `replace_path="common/ai_navy"` nos dois manifestos.
+- **`common/factions/templates` e `common/factions/rules`**: `replace_path="common/factions"` só cobre o nível do pai (confirmado, não cascade pra subpastas — mesmo comportamento non-recursivo já visto em `map/`). Essas duas subpastas não existem no mod, então o vanilla (10+9 arquivos, `USA.txt`, `axis.txt`, `joining_rules.txt` etc.) carregava inteiro. Em vez de criar 19 stubs vazios (padrão já usado em `factions/goals/`), adicionei `replace_path="common/factions/templates"` e `="common/factions/rules"` diretamente — mesmo efeito, menos manutenção, precedente idêntico já existe em `common/scripted_guis` (replace_path + pasta vazia).
+- **`common/characters/DKM.txt`**: typo `original_tag = DMK` → `DKM` (40 ocorrências, incluindo os prefixos de ID dos personagens `DMK_ar`→`DKM_ar` etc.). Achado bônus: isso também é a causa dos 20 erros `recruit_character: Unknown character` — `history/countries/DKM - Duskmoor.txt` já chamava `recruit_character = DKM_ar` (certo), mas os personagens estavam definidos como `DMK_ar` (errado). Uma correção resolveu as duas famílias.
+
+### Não corrigido nesta rodada (adiado, confirmado sem bloquear o próximo teste)
+
+`common/raids/*` (is_literally_china, bathe_in_hellfire, the_great_wall), `common/technology_sharing/12_wuw_tech_sharing_groups.txt` (grupo Habsburg + trigger órfão `BEL`), `common/country_leader/00_traits.txt` (blocos residuais tipo `imperial_sanction`, 18k linhas, precisa de sub-rodada dedicada), `common/units` (`fire_support.txt`/`hq_support.txt` ausentes + seções cortadas em `sp_anti-air_brigade.txt`/`tank_destroyer_brigade.txt`, causa das 63 linhas de "Unexpected token" em doutrinas), `common/ai_equipment` (blocked_for de país vanilla, ~234 linhas), `coal` (recurso removido mas `industry.txt` ainda referencia, decisão de design pendente), ~10 arquivos de equipment com `BUL_army_restrictions` não vistos no log atual.
+
+### Validador e redução esperada
+
+`tools/validate_mod.py`: 3 ERROR (os 3 DDS já conhecidos, intocados), 74 WARNING (72 de antes + 2 novos, esperados, dos `replace_path` de `factions/templates`/`rules`), 0 divergência entre manifestos.
+
+Famílias tratadas nesta rodada somam **~3285 das 3821 entradas lógicas da baseline (~86%)**: `has_tech: Invalid tech` (1596), `BUL_army_restrictions_aat` (593), specialization/special projects (~979), parte do spam de tags via `ai_navy` (~117).
+
+### Próximo passo (Round 4)
+
+Testar THK → 1924 de novo. O próximo `error.log` deve ficar bem menor — aí dá pra ver com clareza se o crash ainda tem uma causa própria não relacionada a esse ruído, ou se alguma das correções desta rodada also mexeu nele (não há garantia, o objetivo aqui era limpeza de log, não o crash em si). Comparar `crashes/` de novo pela pilha de chamadas.

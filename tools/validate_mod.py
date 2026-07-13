@@ -1,15 +1,20 @@
 #!/usr/bin/env python3
-"""Read-only sanity checks for the Azaryafantasia mod tree.
+"""Read-only sanity checks for the Azarya mod tree.
 
 Run from anywhere: `python tools/validate_mod.py`. Only prints findings,
-never modifies any file.
+classified as ERROR / WARNING / INFO. Never modifies any file.
+
+Exit code: 1 if any ERROR was found, 0 otherwise.
 """
 import re
 import sys
 from pathlib import Path
-from collections import defaultdict
 
 MOD_ROOT = Path(__file__).resolve().parent.parent
+EXTERNAL_MANIFEST = MOD_ROOT.parent / f"{MOD_ROOT.name}.mod"
+DESCRIPTOR = MOD_ROOT / "descriptor.mod"
+
+counts = {"ERROR": 0, "WARNING": 0, "INFO": 0}
 
 
 def read_text(path: Path) -> str:
@@ -20,225 +25,308 @@ def section(title: str):
     print(f"\n=== {title} ===")
 
 
-# ---------------------------------------------------------------------------
-# 1/2. country_tags <-> countries files
-# ---------------------------------------------------------------------------
-def check_country_tags():
-    tags_dir = MOD_ROOT / "common" / "country_tags"
-    countries_dir = MOD_ROOT / "common" / "countries"
-
-    tag_to_file = {}  # TAG -> relative path string, e.g. "countries/Foo.txt"
-    for f in sorted(tags_dir.glob("*.txt")):
-        text = read_text(f)
-        for m in re.finditer(r'^\s*([A-Z0-9]{3})\s*=\s*"([^"]+)"', text, re.M):
-            tag_to_file[m.group(1)] = m.group(2)
-
-    section("Tags sem country file")
-    missing = 0
-    for tag, rel_path in sorted(tag_to_file.items()):
-        target = MOD_ROOT / "common" / rel_path
-        if not target.is_file():
-            print(f"  {tag} -> common/{rel_path} (NAO EXISTE)")
-            missing += 1
-    print(f"Total: {missing} tag(s) apontando para arquivo inexistente, de {len(tag_to_file)} tags.")
-
-    section("Country files sem tag")
-    referenced = {Path(p).name for p in tag_to_file.values()}
-    orphans = 0
-    for f in sorted(countries_dir.glob("*.txt")):
-        if f.name not in referenced:
-            print(f"  common/countries/{f.name} (nenhuma tag aponta para ele)")
-            orphans += 1
-    print(f"Total: {orphans} arquivo(s) de countries sem tag.")
-
-    return tag_to_file
+def report(level: str, msg: str):
+    counts[level] += 1
+    print(f"  [{level}] {msg}")
 
 
-# ---------------------------------------------------------------------------
-# 3. history/countries files sem tag conhecida
-# ---------------------------------------------------------------------------
-def check_history_countries(known_tags):
-    section("History files sem tag")
-    hdir = MOD_ROOT / "history" / "countries"
-    bad = 0
-    for f in sorted(hdir.glob("*.txt")):
-        m = re.match(r"^([A-Z0-9]{2,3})", f.stem)
-        tag = m.group(1) if m else None
-        if not tag or tag not in known_tags:
-            print(f"  history/countries/{f.name} (prefixo de tag '{tag}' nao reconhecido)")
-            bad += 1
-    print(f"Total: {bad} arquivo(s) de history/countries com tag nao reconhecida.")
+def parse_replace_paths(text: str) -> list:
+    return re.findall(r'replace_path\s*=\s*"([^"]+)"', text)
 
 
-# ---------------------------------------------------------------------------
-# 4. Localisation duplicada
-# ---------------------------------------------------------------------------
-def check_localisation_duplicates():
-    section("Localisation duplicada")
-    ldir = MOD_ROOT / "localisation"
-    total = 0
-    for f in sorted(ldir.rglob("*.yml")):
-        text = read_text(f)
-        seen = {}
-        for lineno, line in enumerate(text.splitlines(), start=1):
-            m = re.match(r"^\s*([A-Za-z0-9_.\-]+):\d*\s", line)
-            if not m:
-                continue
-            key = m.group(1)
-            if key in seen:
-                print(f"  {f.relative_to(MOD_ROOT)}: chave '{key}' duplicada (linhas {seen[key]} e {lineno})")
-                total += 1
-            else:
-                seen[key] = lineno
-    print(f"Total: {total} chave(s) duplicada(s).")
+def parse_field(text: str, field: str):
+    # anchored to start-of-line so e.g. "path" doesn't match inside "replace_path"
+    m = re.search(rf'^{field}\s*=\s*"([^"]*)"', text, re.M)
+    return m.group(1) if m else None
 
 
-# ---------------------------------------------------------------------------
-# 5. Focus IDs duplicados
-# ---------------------------------------------------------------------------
-def check_focus_id_duplicates():
-    section("Focus IDs duplicados")
-    fdir = MOD_ROOT / "common" / "national_focus"
-    seen = {}
-    dup = 0
-    for f in sorted(fdir.glob("*.txt")):
-        text = read_text(f)
-        for m in re.finditer(r"^\s*id\s*=\s*([A-Za-z0-9_.\-]+)", text, re.M):
-            fid = m.group(1)
-            if fid in seen and seen[fid] != f.name:
-                print(f"  id '{fid}' aparece em {seen[fid]} e em {f.name}")
-                dup += 1
-            else:
-                seen[fid] = f.name
-    print(f"Total: {dup} id(s) de focus duplicado(s) entre arquivos ({len(seen)} ids unicos vistos).")
+def extract_block(text: str, key: str):
+    """Return the raw content between the braces of the first `key = { ... }`
+    block, using brace-depth tracking (not naive regex) so nested nested
+    numeric keys used as plain values are not mistaken for sibling blocks."""
+    m = re.search(rf"\b{re.escape(key)}\s*=\s*{{", text)
+    if not m:
+        return None
+    start = m.end()  # position right after the opening '{'
+    depth = 1
+    i = start
+    while i < len(text) and depth > 0:
+        if text[i] == "{":
+            depth += 1
+        elif text[i] == "}":
+            depth -= 1
+        i += 1
+    if depth != 0:
+        return None  # unbalanced, caller's brace-count check will flag it
+    return text[start:i - 1]
 
 
-# ---------------------------------------------------------------------------
-# 6. Event IDs duplicados
-# ---------------------------------------------------------------------------
-def check_event_id_duplicates():
-    section("Event IDs duplicados")
-    edir = MOD_ROOT / "events"
-    seen = {}
-    dup = 0
-    for f in sorted(edir.glob("*.txt")):
-        text = read_text(f)
-        for m in re.finditer(r"^\s*id\s*=\s*([A-Za-z0-9_]+\.\d+)", text, re.M):
-            eid = m.group(1)
-            if eid in seen and seen[eid] != f.name:
-                print(f"  id '{eid}' aparece em {seen[eid]} e em {f.name}")
-                dup += 1
-            else:
-                seen[eid] = f.name
-    print(f"Total: {dup} id(s) de evento duplicado(s) entre arquivos ({len(seen)} ids unicos vistos).")
-
-
-# ---------------------------------------------------------------------------
-# 7. GFX referenciado mas nao definido (best-effort)
-# ---------------------------------------------------------------------------
-def check_gfx_references():
-    section("Referencias GFX possivelmente inexistentes (best-effort)")
-    defined = set()
-    for f in MOD_ROOT.rglob("*.gfx"):
-        text = read_text(f)
-        defined.update(re.findall(r'name\s*=\s*"(GFX_[A-Za-z0-9_]+)"', text))
-
-    used = set()
-    search_dirs = [MOD_ROOT / "events", MOD_ROOT / "common" / "national_focus", MOD_ROOT / "interface"]
-    usage_locations = defaultdict(list)
-    for d in search_dirs:
-        if not d.exists():
+def direct_numeric_children(block_text: str):
+    """Within a block's raw content, find numeric keys that are direct
+    children (depth 0 relative to this block), e.g. `1159 = { ... }`."""
+    children = []
+    depth = 0
+    i = 0
+    n = len(block_text)
+    while i < n:
+        c = block_text[i]
+        if c == "{":
+            depth += 1
+            i += 1
             continue
-        for f in d.rglob("*.*"):
-            if f.suffix.lower() not in (".txt", ".gui"):
+        if c == "}":
+            depth -= 1
+            i += 1
+            continue
+        if depth == 0:
+            m = re.match(r"\s*(\d+)\s*=\s*\{", block_text[i:])
+            if m:
+                children.append(int(m.group(1)))
+                i += m.end()
                 continue
-            text = read_text(f)
-            for gfx in re.findall(r"\b(GFX_[A-Za-z0-9_]+)\b", text):
-                used.add(gfx)
-                usage_locations[gfx].append(f.relative_to(MOD_ROOT).as_posix())
-
-    missing = sorted(used - defined)
-    for gfx in missing:
-        locs = ", ".join(sorted(set(usage_locations[gfx]))[:3])
-        print(f"  {gfx} usado em [{locs}] mas nao encontrado em nenhum .gfx")
-    print(f"Total: {len(missing)} referencia(s) GFX sem definicao encontrada "
-          f"(heuristico - nao cobre icones vanilla herdados fora das pastas varridas).")
+        i += 1
+    return children
 
 
 # ---------------------------------------------------------------------------
-# 8. Arquivos vazios relevantes
+# 1/2/10. Manifestos (.mod externo x descriptor.mod) e replace_path
 # ---------------------------------------------------------------------------
-def check_empty_files():
-    section("Arquivos vazios relevantes (0 bytes)")
-    exts = {".txt", ".yml", ".gfx", ".gui", ".lua"}
-    skip_dirs = {"_backup_original", ".git"}
-    empty = []
+def check_manifests():
+    section("Manifesto externo (.mod) e divergencia com descriptor.mod")
+
+    if not EXTERNAL_MANIFEST.is_file():
+        report("WARNING", f"manifesto externo esperado nao encontrado: {EXTERNAL_MANIFEST}")
+        ext_text = ""
+    else:
+        ext_text = read_text(EXTERNAL_MANIFEST)
+        ext_path = parse_field(ext_text, "path")
+        if ext_path:
+            if not Path(ext_path).is_dir():
+                report("ERROR", f"'{EXTERNAL_MANIFEST.name}': path=\"{ext_path}\" nao existe")
+            elif Path(ext_path).resolve() != MOD_ROOT.resolve():
+                report("WARNING", f"'{EXTERNAL_MANIFEST.name}': path=\"{ext_path}\" nao aponta para a raiz atual do mod ({MOD_ROOT})")
+        else:
+            report("WARNING", f"'{EXTERNAL_MANIFEST.name}' nao tem campo path=")
+
+    if not DESCRIPTOR.is_file():
+        report("WARNING", f"descriptor.mod nao encontrado em {DESCRIPTOR}")
+        desc_text = ""
+    else:
+        desc_text = read_text(DESCRIPTOR)
+
+    if ext_text and desc_text:
+        ext_name = parse_field(ext_text, "name")
+        desc_name = parse_field(desc_text, "name")
+        if ext_name != desc_name:
+            report("WARNING", f"name diverge: externo=\"{ext_name}\" vs descriptor.mod=\"{desc_name}\"")
+
+        ext_paths = set(parse_replace_paths(ext_text))
+        desc_paths = set(parse_replace_paths(desc_text))
+        only_ext = sorted(ext_paths - desc_paths)
+        only_desc = sorted(desc_paths - ext_paths)
+        if only_ext:
+            report("WARNING", f"replace_path só no manifesto externo (ausente do descriptor.mod): {', '.join(only_ext)}")
+        if only_desc:
+            report("WARNING", f"replace_path só no descriptor.mod (ausente do manifesto externo): {', '.join(only_desc)}")
+        if not only_ext and not only_desc and ext_name == desc_name:
+            print("  Nenhuma divergencia entre os dois manifestos.")
+
+    section("replace_path apontando para subpasta inexistente (nem como .disabled)")
+    all_paths = set(parse_replace_paths(desc_text)) if desc_text else set()
+    dangling = 0
+    for rp in sorted(all_paths):
+        active = MOD_ROOT / rp
+        disabled_variant = MOD_ROOT / f"{rp}.disabled"
+        if not active.exists() and not disabled_variant.exists():
+            report("WARNING", f"replace_path=\"{rp}\" nao existe (nem ativo, nem .disabled) - "
+                               f"pode ser bloqueio intencional de conteudo vanilla, ou lixo; verificar manualmente")
+            dangling += 1
+    if dangling == 0:
+        print("  Nenhum replace_path totalmente orfao encontrado.")
+
+
+# ---------------------------------------------------------------------------
+# 3. .gui/.gfx carregaveis dentro de pastas de backup
+# ---------------------------------------------------------------------------
+def check_backup_leftovers():
+    section("Arquivos .gui/.gfx carregaveis dentro de pastas de backup")
+    found = 0
     for f in MOD_ROOT.rglob("*"):
-        if not f.is_file() or f.suffix.lower() not in exts:
+        if not f.is_file() or f.suffix.lower() not in (".gui", ".gfx"):
             continue
-        if any(part in skip_dirs for part in f.parts):
-            continue
-        if f.stat().st_size == 0:
-            empty.append(f.relative_to(MOD_ROOT).as_posix())
-    for rel in sorted(empty):
-        print(f"  {rel}")
-    print(f"Total: {len(empty)} arquivo(s) vazio(s) (apenas listados - nada foi apagado).")
+        if any(part.lower().startswith("_backup") for part in f.parts):
+            report("ERROR", f"{f.relative_to(MOD_ROOT).as_posix()} tem extensao carregavel dentro de uma pasta de backup")
+            found += 1
+    if found == 0:
+        print("  Nenhum arquivo de backup carregavel encontrado.")
 
 
 # ---------------------------------------------------------------------------
-# 9. Pastas/arquivos .disabled
+# 4. DDS sem magic bytes validos
 # ---------------------------------------------------------------------------
-def check_disabled():
-    section("Pastas/arquivos .disabled encontrados")
-    found = []
-    for p in MOD_ROOT.rglob("*.disabled*"):
-        found.append(p.relative_to(MOD_ROOT).as_posix())
-    for rel in sorted(found):
-        print(f"  {rel}")
-    print(f"Total: {len(found)} item(ns) .disabled (nao foram tocados).")
-
-
-# ---------------------------------------------------------------------------
-# 10. Building declarado num state que nao possui a provincia
-# ---------------------------------------------------------------------------
-def check_state_building_mismatch():
-    section("Buildings referenciando provincia fora do state")
-    sdir = MOD_ROOT / "history" / "states"
+def check_dds_headers():
+    section("Arquivos .dds sem magic bytes 'DDS ' validos")
+    bad = 0
     total = 0
+    for f in MOD_ROOT.rglob("*.dds"):
+        total += 1
+        try:
+            with open(f, "rb") as fh:
+                header = fh.read(4)
+        except OSError as e:
+            report("ERROR", f"{f.relative_to(MOD_ROOT).as_posix()}: erro ao ler ({e})")
+            bad += 1
+            continue
+        if header != b"DDS ":
+            report("ERROR", f"{f.relative_to(MOD_ROOT).as_posix()}: header={header!r} (esperado b'DDS ')")
+            bad += 1
+    print(f"  {total} arquivo(s) .dds verificados, {bad} invalido(s).")
+
+
+# ---------------------------------------------------------------------------
+# 5/6. Buildings fora do state / provincia em mais de um state
+# ---------------------------------------------------------------------------
+def check_state_provinces_and_buildings():
+    section("Construcao provincial fora do state / provincia em mais de um state")
+    sdir = MOD_ROOT / "history" / "states"
+    province_owner = {}  # province id -> state file name
+    dup_provinces = 0
+    bad_buildings = 0
+
     for f in sorted(sdir.glob("*.txt")):
         text = read_text(f)
         m_id = re.search(r"\bid\s*=\s*(\d+)", text)
         state_id = m_id.group(1) if m_id else "?"
 
-        m_prov = re.search(r"provinces\s*=\s*\{([^}]*)\}", text)
-        if not m_prov:
-            continue
-        provinces = set(int(x) for x in re.findall(r"\d+", m_prov.group(1)))
+        provinces_block = extract_block(text, "provinces")
+        provinces = set(int(x) for x in re.findall(r"\d+", provinces_block)) if provinces_block else set()
 
-        m_build = re.search(r"buildings\s*=\s*\{(.*?)\n\t\t\}", text, re.S)
-        if not m_build:
+        for pid in provinces:
+            if pid in province_owner and province_owner[pid] != f.name:
+                report("ERROR", f"provincia {pid} declarada em {province_owner[pid]} e tambem em {f.name}")
+                dup_provinces += 1
+            else:
+                province_owner[pid] = f.name
+
+        history_block = extract_block(text, "history") or text
+        buildings_block = extract_block(history_block, "buildings")
+        if not buildings_block:
             continue
-        for pid_str in re.findall(r"^\s*(\d+)\s*=\s*\{", m_build.group(1), re.M):
-            pid = int(pid_str)
+        for pid in direct_numeric_children(buildings_block):
             if pid not in provinces:
-                print(f"  {f.name} (state {state_id}): building declarado para provincia {pid}, "
-                      f"que nao esta na lista de provinces deste state")
-                total += 1
-    print(f"Total: {total} inconsistencia(s) de building fora do state.")
+                report("ERROR", f"{f.name} (state {state_id}): building declarado para provincia {pid}, "
+                                 f"que nao esta na lista de provinces deste state")
+                bad_buildings += 1
+
+    print(f"  {bad_buildings} building(s) fora do state, {dup_provinces} provincia(s) duplicada(s) entre states.")
+
+
+# ---------------------------------------------------------------------------
+# 7. Chaves desbalanceadas (contagem simples)
+# ---------------------------------------------------------------------------
+def check_brace_balance():
+    section("Chaves desbalanceadas (contagem simples open/close)")
+    dirs = [
+        MOD_ROOT / "history" / "units",
+        MOD_ROOT / "history" / "countries",
+        MOD_ROOT / "history" / "states",
+        MOD_ROOT / "common" / "national_focus",
+        MOD_ROOT / "events",
+    ]
+    bad = 0
+    for d in dirs:
+        if not d.exists():
+            continue
+        for f in sorted(d.glob("*.txt")):
+            text = read_text(f)
+            o, c = text.count("{"), text.count("}")
+            if o != c:
+                report("WARNING", f"{f.relative_to(MOD_ROOT).as_posix()}: {{={o} }}={c} (diferenca={o - c})")
+                bad += 1
+    if bad == 0:
+        print("  Nenhum desbalanceamento de contagem encontrado "
+              "(nota: contagem igual NAO garante aninhamento correto).")
+
+
+# ---------------------------------------------------------------------------
+# 8. Tags <-> country files <-> history/countries
+# ---------------------------------------------------------------------------
+def check_country_tags():
+    section("Tags sem country file / country files sem tag / history sem tag valida")
+    tags_dir = MOD_ROOT / "common" / "country_tags"
+    countries_dir = MOD_ROOT / "common" / "countries"
+    hdir = MOD_ROOT / "history" / "countries"
+
+    tag_to_file = {}
+    for f in sorted(tags_dir.glob("*.txt")):
+        text = read_text(f)
+        for m in re.finditer(r'^\s*([A-Z0-9]{3})\s*=\s*"([^"]+)"', text, re.M):
+            tag_to_file[m.group(1)] = m.group(2)
+
+    for tag, rel_path in sorted(tag_to_file.items()):
+        target = MOD_ROOT / "common" / rel_path
+        if not target.is_file():
+            report("WARNING", f"tag {tag} -> common/{rel_path} (nao existe)")
+
+    referenced = {Path(p).name for p in tag_to_file.values()}
+    for f in sorted(countries_dir.glob("*.txt")):
+        if f.name not in referenced:
+            report("WARNING", f"common/countries/{f.name} (nenhuma tag aponta para ele)")
+
+    for f in sorted(hdir.glob("*.txt")):
+        m = re.match(r"^([A-Z0-9]{2,3})", f.stem)
+        tag = m.group(1) if m else None
+        if not tag or tag not in tag_to_file:
+            report("WARNING", f"history/countries/{f.name} (prefixo de tag '{tag}' nao reconhecido)")
+
+    print(f"  {len(tag_to_file)} tags conhecidas verificadas.")
+
+
+# ---------------------------------------------------------------------------
+# 9. Focus IDs / Event IDs duplicados
+# ---------------------------------------------------------------------------
+def check_id_duplicates():
+    section("Focus IDs duplicados")
+    fdir = MOD_ROOT / "common" / "national_focus"
+    seen = {}
+    for f in sorted(fdir.glob("*.txt")):
+        text = read_text(f)
+        for m in re.finditer(r"^\s*id\s*=\s*([A-Za-z0-9_.\-]+)", text, re.M):
+            fid = m.group(1)
+            if fid in seen and seen[fid] != f.name:
+                report("ERROR", f"focus id '{fid}' aparece em {seen[fid]} e em {f.name}")
+            else:
+                seen[fid] = f.name
+    print(f"  {len(seen)} focus id(s) unicos vistos.")
+
+    section("Event IDs duplicados")
+    edir = MOD_ROOT / "events"
+    seen = {}
+    for f in sorted(edir.glob("*.txt")):
+        text = read_text(f)
+        for m in re.finditer(r"^\s*id\s*=\s*([A-Za-z0-9_]+\.\d+)", text, re.M):
+            eid = m.group(1)
+            if eid in seen and seen[eid] != f.name:
+                report("ERROR", f"event id '{eid}' aparece em {seen[eid]} e em {f.name}")
+            else:
+                seen[eid] = f.name
+    print(f"  {len(seen)} event id(s) unicos vistos.")
 
 
 def main():
     print(f"Validando mod em: {MOD_ROOT}")
-    tag_to_file = check_country_tags()
-    check_history_countries(set(tag_to_file.keys()))
-    check_localisation_duplicates()
-    check_focus_id_duplicates()
-    check_event_id_duplicates()
-    check_gfx_references()
-    check_empty_files()
-    check_disabled()
-    check_state_building_mismatch()
-    print("\nValidacao concluida.")
+    print(f"Manifesto externo esperado em: {EXTERNAL_MANIFEST}")
+
+    check_manifests()
+    check_backup_leftovers()
+    check_dds_headers()
+    check_state_provinces_and_buildings()
+    check_brace_balance()
+    check_country_tags()
+    check_id_duplicates()
+
+    print(f"\nResumo: {counts['ERROR']} ERROR, {counts['WARNING']} WARNING, {counts['INFO']} INFO.")
+    return 1 if counts["ERROR"] > 0 else 0
 
 
 if __name__ == "__main__":
