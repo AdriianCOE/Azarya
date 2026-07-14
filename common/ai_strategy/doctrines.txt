@@ -72,7 +72,7 @@ superior_firepower_ratios = {
 		has_doctrine = superior_firepower
 	}
 	abort = {
-		has_completed_subdoctrine = fire_concentration
+		always = no
 	}
 	
 	ai_strategy = {
@@ -88,36 +88,6 @@ superior_firepower_ratios = {
 	}
 	
 }
-
-## Later in superior_firepower tree
-concentrated_fire_plans_ratios = {
-	enable = {
-		has_completed_subdoctrine = fire_concentration
-	}
-	abort = {
-		always = no
-	}
-	
-	ai_strategy = {
-		type = role_ratio
-		id = infantry
-		value = -5
-	}
-	
-	ai_strategy = {
-		type = role_ratio
-		id = armor
-		value = 10
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = cas
-		value = 5
-	}
-	
-}
-
 
 grand_battle_plan_ratios = {
 	enable = {

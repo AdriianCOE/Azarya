@@ -1,80 +1,268 @@
 ﻿l_english:
- # Localization for the main focuses
+ # ============================================================
+ # THIRYN NATIONAL FOCUS TREE
+ # ============================================================
+ thiryn_focus:0 "Thiryn National Focus"
+ thiryn_focus_desc:0 "The political, economic, and military future of the Kingdom of Thiryn will be decided here."
+
  THK_TheQuake:0 "The Great Earthquake"
- THK_TheQuake_desc:0 "The earthquake devastated our kingdom, leaving our infrastructure in ruins. We must unite and rebuild our land."
+ THK_TheQuake_desc:0 "The earth itself has struck at the heart of the kingdom. Before Thiryn can look outward, it must survive the ruin left beneath its feet."
 
- THK_RebuildRailways:0 "Rebuild Railways"
- THK_RebuildRailways_desc:0 "Our railways were severely damaged. Rebuilding them is essential to connect our cities and recover the economy."
+ THK_EmergencialMinister:0 "Form the Emergency Ministry"
+ THK_EmergencialMinister_desc:0 "A single authority must coordinate relief, restore order, and prevent the disaster from becoming a permanent national collapse."
 
- THK_EmergencialMinister:0 "Emergency Minister"
- THK_EmergencialMinister_desc:0 "Appointing a minister to manage the crisis is vital to maintain order and organize recovery efforts."
+ THK_CountDead:0 "Account for the Fallen"
+ THK_CountDead_desc:0 "The dead must be named, the missing found, and the true scale of the catastrophe acknowledged before the nation can begin to heal."
 
- THK_Memorial:0 "Build a Memorial"
- THK_Memorial_desc:0 "Let us honor the lives lost in the disaster by building a memorial, ensuring we never forget this tragedy."
+ THK_AidForThePeople:0 "Relief for the People"
+ THK_AidForThePeople_desc:0 "Food, shelter, medicine, and manpower must reach the shattered communities before desperation turns into unrest."
 
- THK_MenOfPride:0 "Men of Pride"
- THK_MenOfPride_desc:0 "We encourage our citizens to rise with pride, rebuilding our nation with determination and strength."
+ THK_Newlands:0 "Survey the Shattered Lands"
+ THK_Newlands_desc:0 "The earthquake has altered roads, settlements, and entire districts. A new national survey will guide reconstruction where it is needed most."
 
- THK_AcquirePower:0 "Consolidate Power"
- THK_AcquirePower_desc:0 "We need to centralize power to ensure stability during these difficult times."
+ THK_RebuildRailwaysNorth:0 "Rebuild the Northern Railways"
+ THK_RebuildRailwaysNorth_desc:0 "The northern lines once carried coal, grain, and soldiers across the realm. Restoring them will reconnect isolated provinces with the capital."
 
- THK_SearchFriends:0 "Seek Allies"
- THK_SearchFriends_desc:0 "We seek reliable allies who can support us in overcoming future challenges."
+ THK_RebuildRailwaysSouth:0 "Rebuild the Southern Railways"
+ THK_RebuildRailwaysSouth_desc:0 "The southern network is the lifeline of our ports and industrial towns. Its restoration is essential to economic recovery."
 
- THK_AssassinateHighScale:0 "Assassinate High-Ranking Officials"
- THK_AssassinateHighScale_desc:0 "Eliminating key figures who threaten our plans will secure our position of power."
+ THK_NewUrbanZones:0 "Plan New Urban Districts"
+ THK_NewUrbanZones_desc:0 "Rather than reproduce the weaknesses of the old cities, we will rebuild with wider streets, safer structures, and room for modern industry."
 
- THK_IncriminateHighScale:0 "Incriminate High-Ranking Officials"
- THK_IncriminateHighScale_desc:0 "By tarnishing the reputation of our enemies, we can turn public opinion in our favor."
+ THK_Memorial:0 "The National Memorial"
+ THK_Memorial_desc:0 "A monument to the victims will close the emergency chapter and bind the memory of the disaster to the rebirth of Thiryn."
 
- THK_queensSpeech:0 "The Queen's Speech"
- THK_queensSpeech_desc:0 "A powerful speech from the queen will inspire the people and demonstrate our resolve."
+ THK_queensSpeech:0 "The Queen's Address"
+ THK_queensSpeech_desc:0 "The Queen will speak directly to the realm. Her words must calm the court, reassure the people, and define the struggle over Thiryn's future."
 
  THK_RoyalAlternative:0 "The Royal Alternative"
- THK_RoyalAlternative_desc:0 "Exploring alternative approaches to governance could lead us to a brighter future."
+ THK_RoyalAlternative_desc:0 "A younger royal figure may offer continuity without stagnation: a crown renewed rather than a throne abandoned."
 
- THK_TripTheCountry:0 "Tour the Country"
- THK_TripTheCountry_desc:0 "A royal tour will reconnect us with the people and show that we care for their well-being."
+ THK_TripTheCountry:0 "Tour the Realm"
+ THK_TripTheCountry_desc:0 "A royal tour will bring the succession question beyond palace walls and allow the people to judge the claimant for themselves."
 
- THK_GoodImpression:0 "Leave a Good Impression"
- THK_GoodImpression_desc:0 "Our efforts to improve public perception will strengthen loyalty to the crown."
+ THK_ProveYourself:0 "Prove Worthy"
+ THK_ProveYourself_desc:0 "Birth may open the palace gates, but only courage, discipline, and service can earn the confidence of the kingdom."
 
- THK_ProveYourself:0 "Prove Yourself"
- THK_ProveYourself_desc:0 "We must demonstrate our strength and commitment to lead the nation effectively."
+ THK_GoodImpression:0 "Win the Court's Confidence"
+ THK_GoodImpression_desc:0 "The old houses, senior ministers, and military establishment must be persuaded that renewal will not mean chaos."
 
- THK_GetAccepted:0 "Gain Acceptance"
- THK_GetAccepted_desc:0 "Winning the trust of our people is the key to solidifying our leadership."
+ THK_GetAccepted:0 "Accepted by the Realm"
+ THK_GetAccepted_desc:0 "Court and country have seen enough. The royal alternative can now claim not merely legitimacy, but genuine national support."
 
- THK_RestoreInfrastructureMinister:0 "Appoint Infrastructure Minister"
- THK_RestoreInfrastructureMinister_desc:0 "A dedicated minister for infrastructure will accelerate our rebuilding efforts."
+ THK_MenOfPride:0 "Men of Pride"
+ THK_MenOfPride_desc:0 "A faction of ambitious officers and nobles believes Thiryn has been weakened by hesitation. They promise order, strength, and national pride."
 
- THK_RestoreEducationMinister:0 "Appoint Education Minister"
- THK_RestoreEducationMinister_desc:0 "Prioritizing education will prepare our nation for a prosperous future."
+ THK_AcquirePower:0 "Consolidate Power"
+ THK_AcquirePower_desc:0 "Influence must be concentrated in loyal hands before rivals can organize an effective resistance."
 
- THK_HireMoreTeachers:0 "Hire More Teachers"
- THK_HireMoreTeachers_desc:0 "Increasing the number of teachers is essential to provide quality education for all."
+ THK_SearchFriends:0 "Find Our Allies"
+ THK_SearchFriends_desc:0 "Industrialists, officers, landowners, and discontented politicians can all be useful if their ambitions are directed toward the same cause."
 
- THK_BuildMoreSchools:0 "Build More Schools"
- THK_BuildMoreSchools_desc:0 "Expanding our educational infrastructure will ensure every child has access to learning."
+ THK_AssassinateHighScale:0 "Remove the Old Guard"
+ THK_AssassinateHighScale_desc:0 "Some opponents cannot be bribed, persuaded, or intimidated. Their sudden disappearance will clear the path to power."
 
- THK_Universities:0 "Invest in Universities"
- THK_Universities_desc:0 "Strengthening higher education will cultivate the leaders and innovators of tomorrow."
+ THK_IncriminateHighScale:0 "Discredit the Old Guard"
+ THK_IncriminateHighScale_desc:0 "A carefully prepared scandal can destroy the old elite more thoroughly than violence, while leaving our own hands publicly clean."
 
- THK_InvestInRoads:0 "Invest in Roads"
- THK_InvestInRoads_desc:0 "Improving our road network will facilitate trade and enhance connectivity."
+ THK_ThirdOption:0 "The Third Option"
+ THK_ThirdOption_desc:0 "Neither palace intrigue nor military ambition speaks for the workers, veterans, and dispossessed. A third force will enter the struggle."
 
- THK_ExpandRailways:0 "Expand Railways"
- THK_ExpandRailways_desc:0 "Expanding our railways will further integrate our nation and boost the economy."
+ THK_SearchSupportOutside:0 "Seek Support Abroad"
+ THK_SearchSupportOutside_desc:0 "Foreign sympathizers and exiled movements can provide funds, weapons, and experience that cannot be obtained openly at home."
 
- THK_LessTaxes:0 "Reduce Taxes"
- THK_LessTaxes_desc:0 "Lowering taxes will stimulate growth and increase public satisfaction."
+ THK_LearnGuerrilhaTactics:0 "Lessons in Guerrilla Warfare"
+ THK_LearnGuerrilhaTactics_desc:0 "A movement that cannot yet defeat the state in open battle must learn to survive, organize, and strike from the shadows."
 
- THK_InvestSearch:0 "Research Investments"
- THK_InvestSearch_desc:0 "Focusing on research and innovation will place our nation at the forefront of progress." 
+ THK_OperationalBases:0 "Establish Operational Bases"
+ THK_OperationalBases_desc:0 "Hidden depots, safe houses, workshops, and training grounds will turn scattered sympathizers into an organized political force."
 
- THK_DownTiranny:0 "End Tyranny"
- THK_DownTiranny_desc:0 "Removing oppressive elements from governance will pave the way for a fairer society."
+ THK_InfluntMedia:0 "Shape Public Opinion"
+ THK_InfluntMedia_desc:0 "Newspapers, pamphlets, public meetings, and trusted voices will present the movement as the only credible answer to the old order."
 
+ THK_DownTiranny:0 "Break the Old Tyranny"
+ THK_DownTiranny_desc:0 "Whichever faction prevails, the decaying political arrangement that ruled before the crisis cannot survive unchanged."
+
+ THK_A_NewThiryn:0 "A New Thiryn"
+ THK_A_NewThiryn_desc:0 "The succession struggle is over. A new political order, shaped by the path we chose, will lead the kingdom into the coming age."
+
+ THK_RestoreInfrastructureMinister:0 "Restore the Ministry of Works"
+ THK_RestoreInfrastructureMinister_desc:0 "Reconstruction requires more than temporary committees. A permanent ministry will coordinate roads, railways, utilities, and public construction."
+
+ THK_InvestInRoads:0 "Roads for Recovery"
+ THK_InvestInRoads_desc:0 "Reliable roads will move relief supplies, workers, and commerce to regions the railways cannot yet reach."
+
+ THK_ExpandRailways:0 "Bind the Kingdom by Rail"
+ THK_ExpandRailways_desc:0 "A denser railway network will integrate the provinces, shorten mobilization times, and bring raw materials to our factories."
+
+ THK_LessTaxes:0 "Ease the Tax Burden"
+ THK_LessTaxes_desc:0 "Families and small businesses need room to recover. Temporary tax relief will restore confidence and stimulate private activity."
+
+ THK_SearchForInvestments:0 "Court New Investment"
+ THK_SearchForInvestments_desc:0 "Domestic capital alone cannot finance every ambition. We will attract investors with concessions, guarantees, and access to new markets."
+
+ THK_RestoreEducationMinister:0 "Restore the Ministry of Education"
+ THK_RestoreEducationMinister_desc:0 "The schools must be rebuilt alongside the roads and factories. A modern state cannot prosper while its citizens remain without opportunity."
+
+ THK_HireMoreTeachers:0 "A New Generation of Teachers"
+ THK_HireMoreTeachers_desc:0 "Training and recruiting teachers will bring qualified instruction to towns and provinces long neglected by the old system."
+
+ THK_BuildMoreSchools:0 "Schools in Every Province"
+ THK_BuildMoreSchools_desc:0 "Education should not be a privilege reserved for the capital. New schools will extend literacy and technical training across the realm."
+
+ THK_Universities:0 "The Royal Universities"
+ THK_Universities_desc:0 "Expanded universities will produce engineers, administrators, physicians, and scholars capable of guiding national modernization."
+
+ THK_Reorganize_Industrial:0 "Reorganize National Industry"
+ THK_Reorganize_Industrial_desc:0 "The industrial sector is fragmented, damaged, and inefficient. A coordinated national program will direct production toward recovery and growth."
+
+ THK_Manpower_Industrial:0 "Mobilize the Workforce"
+ THK_Manpower_Industrial_desc:0 "Reconstruction has created an enormous demand for labor. Organized recruitment and training will place idle hands where they are needed most."
+
+ THK_Resources_Industrial:0 "Survey the Iron Deposits"
+ THK_Resources_Industrial_desc:0 "New geological surveys will identify exploitable iron and steel resources capable of sustaining heavy industry."
+
+ THK_Resources_Industrial1:0 "Secure Strategic Minerals"
+ THK_Resources_Industrial1_desc:0 "Industrial expansion requires more than steel. Strategic mineral production must be brought under reliable national control."
+
+ THK_Strong_Industrial:0 "An Industry Built to Endure"
+ THK_Strong_Industrial_desc:0 "Modern plants, coordinated supply chains, and experienced workers will give Thiryn an industrial base capable of surviving future crises."
+
+ THK_Rearm:0 "Begin Rearmament"
+ THK_Rearm_desc:0 "The kingdom cannot rely on damaged arsenals and outdated stockpiles. A measured rearmament program will restore military readiness."
+
+ THK_WeNeedMoreGuns:0 "Rifles for the Army"
+ THK_WeNeedMoreGuns_desc:0 "Every formation must be equipped with reliable modern weapons before broader military reform can succeed."
+
+ THK_Alluminium:0 "Expand Aluminium Extraction"
+ THK_Alluminium_desc:0 "Aviation and modern industry depend on aluminium. Expanding extraction will reduce our reliance on uncertain foreign suppliers."
+
+ THK_TierUP:0 "Modernize the Arsenals"
+ THK_TierUP_desc:0 "Expanded factories and improved production standards will allow Thiryn to replace obsolete equipment on a national scale."
+
+ THK_NationalReconstruction:0 "National Reconstruction"
+ THK_NationalReconstruction_desc:0 "Railways, schools, factories, and public institutions will now be united under one long-term program of national renewal."
+
+ THK_Armed_Forces:0 "Reform the Armed Forces"
+ THK_Armed_Forces_desc:0 "The army, navy, and air service must emerge from the crisis as professional institutions serving a single national strategy."
+
+ THK_PioonersOfTheAir:0 "Pioneers of the Air"
+ THK_PioonersOfTheAir_desc:0 "A small circle of aviators has shown what flight can offer the kingdom. Their experiments will become the foundation of a true air arm."
+
+ THK_ExpandAirBases:0 "Expand the Airfields"
+ THK_ExpandAirBases_desc:0 "New runways, hangars, fuel stores, and maintenance facilities are required before aviation can operate at a national scale."
+
+ THK_FighterPlanes:0 "Build a Fighter Arm"
+ THK_FighterPlanes_desc:0 "Fast, agile fighters will protect Thiryn's cities, troops, and skies from hostile aircraft."
+
+ THK_AcademyOfTheAir:0 "The Royal Air Academy"
+ THK_AcademyOfTheAir_desc:0 "Pilots, navigators, engineers, and commanders need a permanent institution where experience can become doctrine."
+
+ THK_WeRuleTheSkies:0 "Rule the Skies"
+ THK_WeRuleTheSkies_desc:0 "Air superiority will allow our forces to move, fight, and supply themselves without fear of enemy interference from above."
+
+ THK_Bombers_Models:0 "A Modern Bomber Program"
+ THK_Bombers_Models_desc:0 "Long-range strike aircraft will give Thiryn the ability to disrupt enemy industry, logistics, and concentrations far beyond the front."
+
+ THK_FactoriesPlanes:0 "Aircraft Factories"
+ THK_FactoriesPlanes_desc:0 "A modern air force cannot depend on workshops and imported machines. Dedicated factories will sustain domestic aircraft production."
+
+ THK_Modern_AirForce:0 "A Modern Air Force"
+ THK_Modern_AirForce_desc:0 "Training, doctrine, airfields, and industry will be brought together into a coherent force capable of defending the kingdom's future."
+
+ THK_Our_Army:0 "Rebuild the Royal Army"
+ THK_Our_Army_desc:0 "The army must recover its discipline, confidence, and ability to defend the realm after years of neglect and national crisis."
+
+ THK_NewRifles:0 "Standardize New Rifles"
+ THK_NewRifles_desc:0 "A common modern rifle will simplify supply, improve training, and give every infantryman a dependable weapon."
+
+ THK_ArtilleryAndTrucks:0 "Artillery and Motor Transport"
+ THK_ArtilleryAndTrucks_desc:0 "Firepower is useless if it cannot reach the battlefield. Modern guns and trucks will give the army both weight and mobility."
+
+ THK_SupportTeams:0 "Expand the Support Corps"
+ THK_SupportTeams_desc:0 "Engineers, medics, signals units, and logistics specialists will make every frontline formation more effective."
+
+ THK_Factories:0 "Expand the Royal Arsenals"
+ THK_Factories_desc:0 "Additional military factories will secure the flow of rifles, ammunition, vehicles, and replacement equipment."
+
+ THK_Our_Douctrine:0 "A Doctrine of Our Own"
+ THK_Our_Douctrine_desc:0 "Thiryn must stop imitating foreign armies and develop methods suited to its geography, manpower, and strategic needs."
+
+ THK_Tanks:0 "Prepare for Armoured Warfare"
+ THK_Tanks_desc:0 "Armoured vehicles can break fortified lines and restore mobility to the battlefield. We must master their design and employment."
+
+ THK_NewArtillerys:0 "Modern Artillery"
+ THK_NewArtillerys_desc:0 "Improved guns, fire-control methods, and ammunition will give our forces decisive support in both attack and defence."
+
+ THK_Sword_Academy:0 "The Sword Academy"
+ THK_Sword_Academy_desc:0 "An elite academy will train officers and special formations in discipline, initiative, and the martial traditions of Thiryn."
+
+ THK_Navy_Forces:0 "Restore the Royal Navy"
+ THK_Navy_Forces_desc:0 "Thiryn's islands, trade routes, and coastlines demand a navy capable of more than ceremonial patrols."
+
+ THK_ExpandDocks:0 "Expand the Dockyards"
+ THK_ExpandDocks_desc:0 "Modern slips, cranes, workshops, and dry docks will allow the kingdom to construct and maintain a larger fleet."
+
+ THK_NewLaws:0 "A New Naval Code"
+ THK_NewLaws_desc:0 "Clear laws governing recruitment, command, procurement, and service will professionalize the fleet."
+
+ THK_OurIslands:0 "Defend Our Islands"
+ THK_OurIslands_desc:0 "Naval bases and coastal fortifications will ensure that the outer islands remain anchors of defence rather than exposed liabilities."
+
+ THK_BiggerBetter:0 "Larger Hulls, Greater Reach"
+ THK_BiggerBetter_desc:0 "A stronger navy requires ships with the range and endurance to operate beyond the immediate coastline."
+
+ THK_DouctrineNavy:0 "Codify Naval Doctrine"
+ THK_DouctrineNavy_desc:0 "Experience and theory must be turned into a unified doctrine for fleet movement, engagement, and command."
+
+ THK_Destroyers:0 "Modern Destroyers"
+ THK_Destroyers_desc:0 "Fast escort vessels will protect convoys, screen the fleet, and hunt enemy submarines."
+
+ THK_Cruisers:0 "A Cruiser Fleet"
+ THK_Cruisers_desc:0 "Cruisers offer the endurance, firepower, and flexibility required to project influence across regional waters."
+
+ THK_TraditionalNavy:0 "The Traditional Fleet"
+ THK_TraditionalNavy_desc:0 "Thiryn will combine modern construction with the discipline and seamanship that once made its navy respected."
+
+ THK_DefendersOfThiryn:0 "Defenders of Thiryn"
+ THK_DefendersOfThiryn_desc:0 "Army, navy, and air force will no longer compete as separate institutions. Together, they will form one shield for the kingdom."
+
+ THK_EmpireReborn:0 "The Empire Reborn"
+ THK_EmpireReborn_desc:0 "Reconstructed at home, united in politics, and secure on land, sea, and air, Thiryn can once again stand at the heart of Azarya."
+
+ # ============================================================
+ # THIRYN RESEARCH AND DOCTRINE BONUS NAMES
+ # ============================================================
+ THK_guerrilla_bonus:0 "Irregular Warfare Lessons"
+ THK_teacher_training_bonus:0 "Teacher Training Program"
+ THK_university_bonus:0 "Royal University Research"
+ THK_gun_program_bonus:0 "National Small Arms Program"
+ THK_air_doctrine_bonus:0 "Early Aviation Doctrine"
+ THK_air_academy_bonus:0 "Royal Air Academy Studies"
+ THK_modern_air_force_bonus:0 "Modern Air Force Doctrine"
+ THK_land_doctrine_bonus:0 "Army Reform Studies"
+ THK_infantry_weapons_bonus:0 "Standardized Infantry Weapons"
+ THK_artillery_bonus:0 "Artillery Modernization"
+ THK_support_bonus:0 "Support Corps Expansion"
+ THK_second_land_doctrine_bonus:0 "Thirynian Operational Doctrine"
+ THK_armor_bonus:0 "Armoured Warfare Program"
+ THK_advanced_artillery_bonus:0 "Advanced Artillery Program"
+ THK_special_forces_bonus:0 "Sword Academy Training"
+ THK_naval_doctrine_bonus:0 "Royal Navy Reform"
+ THK_second_naval_doctrine_bonus:0 "Fleet Doctrine Studies"
+ THK_traditional_navy_bonus:0 "Traditional Fleet Doctrine"
+
+ # ============================================================
+ # LEGACY COMPATIBILITY KEYS
+ # ============================================================
+ THK_RebuildRailways:0 "Rebuild the Railways"
+ THK_RebuildRailways_desc:0 "The railway network must be restored if the provinces are to be reconnected with the capital."
+ THK_InvestSearch:0 "Court New Investment"
+ THK_InvestSearch_desc:0 "New sources of capital will accelerate reconstruction and industrial expansion."
+
+ # ============================================================
+ # VANILLA / GENERIC FOCUS LOCALISATION PRESERVED
+ # ============================================================
  WHILE_FOCUSING:0 "While focusing on this, there will be the following effects:\n$EFF$"
  generic_focus:0 "National Focus"
  army_effort:0 "Army Effort"
@@ -177,13 +365,13 @@
  continuous_boost_freedom:0 "Increase Autonomy"
  continuous_boost_freedom_desc:0 "By reorganizing our colonial bureaucracy and recruiting native administrators, we will, in time, be able to take charge of our own affairs."
  continuous_restrict_freedom:0 "Suppress Subjects"
- continuous_restrict_freedom_desc:0 "Our colonial subjects have gotten rather silly ideas about things like "self-determination" or "national independence". It is time to disabuse them of these notions."
- continuous_special_facility: "Facility Construction"
- continuous_special_facility_desc: "We have the opportunity to improve our research facilities to host more scientists to find the new breakthrough that will can change our future warefare."
+ continuous_restrict_freedom_desc:0 "Our colonial subjects have developed ideas about self-determination and national independence. It is time to bring these ambitions back under control."
+ continuous_special_facility:0 "Facility Construction"
+ continuous_special_facility_desc:0 "We can expand our research facilities, host more scientists, and pursue breakthroughs capable of reshaping our future."
  subject_autonomy_mod_tt:0 "Autonomy in subjects: §G-0.5§!"
  unlocks_decision:0 "Unlocks Decision: "
- FOCUS_SHORTCUT_TOOLTIP: "§GLeft-click§! to pan to the $PATH|H$ path."
- upgrades_design_company: "§GUpgrades§! §YDesign Company§!"
+ FOCUS_SHORTCUT_TOOLTIP:0 "§GLeft-click§! to pan to the $PATH|H$ path."
+ upgrades_design_company:0 "§GUpgrades§! §YDesign Company§!"
  TREE_FILTER_TOGGLE:0 "§GClick§! to toggle showing of more filters"
  confirm_cancel_national_focus:0 "Cancel National Focus"
  confirm_cancel_national_focus_progress_loss_singular:0 "You will lose §R$LOST_DAYS$§! day of progress."

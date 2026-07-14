@@ -96,30 +96,6 @@ leader_traits = {
 			tag = UPG
 			generate_wargoal_tension_against = 0.75
 		}
-		targeted_modifier = {
-			tag = PRC
-			generate_wargoal_tension_against = 0.75
-		}
-		targeted_modifier = {
-			tag = SHX
-			generate_wargoal_tension_against = 0.75
-		}
-		targeted_modifier = {
-			tag = GXC
-			generate_wargoal_tension_against = 0.75
-		}
-		targeted_modifier = {
-			tag = YUN
-			generate_wargoal_tension_against = 0.75
-		}
-		targeted_modifier = {
-			tag = XSM
-			generate_wargoal_tension_against = 0.75
-		}
-		targeted_modifier = {
-			tag = SIK
-			generate_wargoal_tension_against = 0.75
-		}
 
 		ai_will_do = {
 			factor = 1
@@ -7606,17 +7582,6 @@ leader_traits = {
 		drift_defence_factor = -0.1
 	}
 
-	defier_of_the_sun_god = {
-		random = no
-		army_morale_factor = 0.05
-		compliance_growth = 0.05
-		targeted_modifier = {
-			tag = JAP
-			attack_bonus_against = 0.1
-			defense_bonus_against = 0.1
-		}
-	}
-
 	supreme_representative_of_god_on_earth = {
 		random = no
 		stability_factor = 0.1
@@ -14198,7 +14163,6 @@ leader_traits = {
 		planning_speed = 0.1
 		supply_consumption_factor = -0.05
 		out_of_supply_factor = -0.05
-		guerilla_war_mastery_gain_factor = 0.15 
 		peoples_war_mastery_gain_factor = 0.15
 	}
 
@@ -14428,17 +14392,6 @@ leader_traits = {
 
 		political_power_factor = 0.1
 		stability_factor = 0.05
-	}
-
-	PRC_zhang_guotao_in_kmt = {
-		random = no ## This is Zhang Guotao when in KMT
-		sprite = 13
-
-		targeted_modifier = {
-			tag = PRC
-			attack_bonus_against = 0.05
-		}
-
 	}
 
 	PRC_rural_survey_trait = {
@@ -18399,16 +18352,6 @@ leader_traits = {
 		fascism_drift = 0.05
 		neutrality_drift = 0.1
 		fascism_acceptance = 40
-	}
-
-	austrian_exile = {
-		random = no
-		sprite = 13
-		targeted_modifier = {
-			tag = AUS
-			attack_bonus_against = 0.1
-			defense_bonus_against = 0.1
-		}
 	}
 
 	well_renowned_military_theorist = {

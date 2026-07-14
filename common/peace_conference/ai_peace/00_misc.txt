@@ -873,9 +873,6 @@ peace_ai_desires = {
                     pc_is_puppeted = no
                     pc_is_puppeted_by = ROOT
                 }
-                overlord = {
-                    NOT = { tag = GER }
-                }
             }
             ROOT.FROM.FROM.FROM = {
                 NOT = { is_claimed_by = ROOT }

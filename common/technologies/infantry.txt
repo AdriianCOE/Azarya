@@ -139,12 +139,6 @@ technologies = {
 
 				OR = {
 					tag = UPG
-					tag = PRC
-					tag = XSM
-					tag = SIK
-					tag = GXC
-					tag = SHX
-					tag = YUN
 				}
 			}
 
@@ -159,11 +153,6 @@ technologies = {
 				date > "1927.1.1"
 			}
 
-			modifier = {
-				factor = 0.5
-				date < 1927.1.1
-				tag = PRC
-			}
 		}
 	}
 
@@ -1356,30 +1345,6 @@ technologies = {
 
 	}
 
-
-		research_cost = 1
-
-		# only from focus!!! #####
-		allow = {
-			always = no
-		}
-
-
-		#If you change these
-		#Change the custom tooltip too: HUN_light_infantry_divisions_doctrine_effect
-		infantry = {
-			forest = {
-				attack = 0.02
-				movement = 0.05
-			}
-
-			urban = {
-				attack = 0.05
-				movement = 0.05
-			}
-		}
-	}
-
 	mountain_warfare = {
 
 		research_cost = 1
@@ -1641,12 +1606,6 @@ technologies = {
 
 				OR = {
 					tag = UPG
-					tag = PRC
-					tag = XSM
-					tag = SIK
-					tag = GXC
-					tag = SHX
-					tag = YUN
 				}
 			}
 			modifier = {

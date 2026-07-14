@@ -288,3 +288,74 @@ Famílias tratadas nesta rodada somam **~3285 das 3821 entradas lógicas da base
 ### Próximo passo (Round 4)
 
 Testar THK → 1924 de novo. O próximo `error.log` deve ficar bem menor — aí dá pra ver com clareza se o crash ainda tem uma causa própria não relacionada a esse ruído, ou se alguma das correções desta rodada also mexeu nele (não há garantia, o objetivo aqui era limpeza de log, não o crash em si). Comparar `crashes/` de novo pela pilha de chamadas.
+
+---
+
+## Rodada 5A (fora desta sessão) — resultado
+
+Teste runtime mais longo até agora: **THK/Thiryn iniciou em 1924, avançou até 3 de fevereiro sem crash, save criado com sucesso.** OOB, variantes aéreas e texticons foram corrigidos nessa rodada (detalhes não documentados aqui, aconteceram fora desta conversa) — **não foram tocados na Rodada 5B**, confirmado via `git status` (nenhum arquivo em `common/units` ou `interface/AZ_texticons*` no diff).
+
+## Rodada 5B (2026-07-13) — traits soviéticos residuais + fallback de portraits
+
+*O novo `error.log` (96KB, 666 linhas) veio bem menor graças às rodadas anteriores. 443 das 666 linhas eram só duas ideias soviéticas inexistentes; o resto eram problemas pontuais de portrait/personagem.*
+
+### P0 — `SOV_purged_junior_army_officers_3` / `SOV_purged_junior_navy_officers_3` (443 linhas → 0)
+
+As duas ideias existem no vanilla (`common/ideas/SOV.txt`, expurgos de Stalin) mas não no Azarya (sem URSS). Apareciam em 24 blocos `new_commander_weight` (11 army + 13 navy) de traits **genéricas** (`old_guard`, `brilliant_strategist`, `inflexible_strategist` etc. — não são traits soviéticas, são traits de personalidade comuns), como mais um `modifier = { FROM = { has_idea = X } factor = 0 }` entre vários (ao lado de `best_of_the_best_spirit`/`academy_scholarships_spirit`, que existem no mod e foram preservados). Removidos os 24 blocos de 4 linhas (96 linhas no total), nada mais tocado em `common/unit_leader/00_traits.txt` (747 chaves antes e depois — balanceado).
+
+### P1-A/B — fallback de portrait e 4 portraits de THK (causa real: formato, não nome de arquivo)
+
+Comparei o DDS real (não só existência) do fallback `gfx/leaders/leader_unknown.dds` (herdado do vanilla, sem `replace_path` em `gfx/leaders`) e dos 4 portraits problemáticos (`Thaddeus_Ironwood.dds`, `Adric_Von_Drachen.dds`, `Lysandra_Ardent.dds`, `Magnus_Goldcrest.dds`, criados via `create_field_marshal`/`create_corps_commander`/`create_navy_leader` com `picture=` legado em `history/countries/THK - ThirynKingdom.txt`) contra um portrait confirmado funcional na mesma pasta (`Portrait_Germany_Kurt_Student.dds`, cópia do vanilla, 0 erro): todos têm as mesmas dimensões (156×210), mas os problemáticos são **RGBA 32-bit não comprimido** enquanto o funcional é **DXT1 comprimido**. `character_manager.cpp` não consegue derivar o portrait pequeno a partir do formato RGBA não comprimido.
+
+Reconvertidos para DXT1 via Pillow (12.2.0, disponível no ambiente): `gfx/leaders/leader_unknown.dds` (novo, gerado a partir do original vanilla — mesma imagem, só reformatada) e os 4 arquivos de THK, in-place, mesmo conteúdo visual e dimensões. **Nota**: esses arquivos são `.dds`, cobertos pelo `.gitignore` (`*.dds`) — não aparecem em `git status`, mas estão no disco.
+
+### P1-C — personagem "sumido" em Ironvale
+
+Não estava sumido — `common/characters/INV.txt` tinha `INV_democrINVc_guy` em vez de `INV_democratic_guy` (find-replace malfeito trocou "ati" por "INV" dentro de "democr**ati**c_guy"). Único caso desse tipo no arquivo (conferido contra os outros 19 personagens). Corrigido (2 ocorrências).
+
+### P2 — placeholder AEI (melhor esforço, a confirmar)
+
+`history/countries/AEI - Aelosia.txt` referenciava `Portrait_PLACEHOLDER_2_large.dds`, que nunca existiu (nome já indica arte não finalizada). Trocado para `picture = "gfx/leaders/leader_unknown.dds"` (o fallback central recém-corrigido). **Sem precedente no mod** de `picture=` com caminho completo apontando pra fora da pasta da própria tag — não é 100% certo que o engine aceita esse override de caminho; confirmar no próximo teste se Aelosia mostra o silhouette genérico em vez de erro.
+
+### Validador
+
+3 ERROR (os mesmos 3 DDS conhecidos de sempre, intocados), 76 WARNING (nenhum novo relacionado a esta rodada), 0 divergência de manifesto. Nenhum dos 5 `.dds` recodificados apareceu na checagem de header DDS (confirma que a conversão pra DXT1 produziu headers válidos).
+
+### Próximo passo (Round 5B)
+
+Carregar o save de 3 de fevereiro de 1924, avançar ≥7 dias, abrir Officer Corps e conferir os portraits (THK principalmente + Aelosia), salvar de novo, e checar se `SOV_purged_junior_*_officers_3` sumiu do novo `error.log`.
+
+---
+
+## Rodada 5C (2026-07-13) — reconstrução segura do frontend Azarya
+
+*Existiam 4 overrides antigos de frontend desativados (`interface/frontend{mainview,gamesetupview}.{gui,gfx}.disabled_test`) — cópias antigas e quebradas do frontend vanilla. Objetivo: recuperar o branding real do Azarya sem reativá-los.*
+
+### Achado principal: a maior parte do branding já estava ativa, silenciosamente
+
+`gfx/interface` não é `replace_path`'d. O mod tem vários arquivos de textura com o **mesmo nome relativo** que sprites já definidos no `.gfx` vanilla ATIVO referenciam — mesmo mecanismo de sobreposição por nome de arquivo já visto na Rodada 5B (portraits). Confirmado sprite a sprite: `GFX_frontend_game_logo` (→ `logo_game.dds`, autoral), `GFX_play_button_ready`, `GFX_tiled_frontend_upper_bar`, `GFX_tiled_frontend_lower_bar`, `GFX_mini_country_selector` (todos na tela de seleção de cenário) e o bookmark de 1924 (`GFX_select_date_1924`, definido em `AZ_Bookmark.gfx`, ativo) **já estavam mostrando arte própria do Azarya, sem eu editar nada**. `GFX_frontend_dev_logo` (logo "dev") tinha um arquivo do mod com o mesmo nome, mas era cópia byte-a-byte do vanilla (SHA1 igual) — sem efeito visual.
+
+Único sprite genuinamente órfão: **`GFX_frontend_az_dev_logo`** (`gfx/interface/az_dev_logo.dds`, 128×192 DXT5, válido) — sem nome vanilla equivalente pra sobrepor por acidente, só definido no `.gfx` antigo desativado.
+
+### Bugs do `frontendmainview.gui.disabled_test` confirmados (não reproduzidos)
+
+Chave final ausente (`social_view_interface_window` nunca fechada antes de `first_row` abrir, cascateando até faltar o fechamento de `guiTypes`), background duplicado em `mainmenu_single_player`, `career_profile_button`/`credits_button` sobrepostos em y=138 (deveria ser y=218), painel de 20 faixas fixas assumindo 1920×1080 (fundo animado sem responsividade), `privacy_policy_button` com coordenadas de um container diferente do seu pai real (estourando a área), e 4 dos 6 links hardcoded (`forum`/`facebook`/`twitter`/e o workshop) confirmados como institucionais do HOI4 vanilla, não do Azarya.
+
+`frontendgamesetupview.gui.disabled_test`: os 4 hacks (`y=2200`, `y=-3300`, `width=2000%%`) confirmados — só escondiam elementos (retrato de líder, grid médio, segundo bookmark), não devem voltar. Sem nenhum branding autoral hardcoded. Vanilla atual ganhou `country_filter`/`filters`/`more_countries`, que não existiam no arquivo antigo.
+
+### Ação tomada (bem menor que uma reconstrução completa, por causa dos achados acima)
+
+1. **`interface/AZ_frontend_brand.gfx`** (novo) — só define `GFX_frontend_az_dev_logo`. Sem colisão com nenhum `.gfx` ativo.
+2. **`interface/frontendmainview.gui`** (novo — cópia exata do vanilla atual, 732→756 linhas, + 3 edições pontuais): (a) o ícone `frontend_dev_logo` passa a usar `GFX_frontend_az_dev_logo` em vez de `GFX_frontend_dev_logo` (mesma posição/slot do vanilla, sem apagar a definição vanilla original); (b) 2 `instantTextBoxType` novos perto do logo do jogo, reaproveitando as chaves de localisation já existentes (`AZ_MOD_VERSION`, `compatible_game`) que antes só ficavam penduradas no arquivo desativado; (c) nada mais — todos os widgets essenciais (DLC, subscription, achievements, change_background, friends_button etc.) ficam idênticos ao vanilla atual.
+3. **`localisation/AZ_version_l_english.yml`**: `compatible_game` atualizado de "v1.16.9" (desatualizado) para "v1.19.*" (versão instalada).
+4. **`frontendgamesetupview.gui`/`.gfx`**: **não criados**. A tela já mostra 100% do branding autoral real (via sobreposição de textura já ativa) e já tem mais funcionalidade que o arquivo antigo — reconstruí-la seria regressivo.
+5. **Não incluído**: selo Alpha (sem asset próprio, nunca existiu — a referência já estava comentada no arquivo antigo), fundo animado de 20 faixas (é o próprio bug a não reproduzir), links sociais (reddit/discord podem estar desatualizados/expirados, sem forma de confirmar — fica pendente até o usuário confirmar links atuais).
+6. Os 4 arquivos `.disabled_test` continuam intocados.
+
+### Validador e verificação
+
+3 ERROR (mesmos DDS conhecidos), 76 WARNING (nenhum novo desta rodada), 0 divergência de manifesto. Chaves balanceadas nos 2 arquivos novos (204/204 e 2/2, excluindo comentários). Nenhuma colisão de sprite ID. Confirmado por `git status` que `AZ_texticons.gfx`, `history/countries/THK`, `history/units/THK.txt`, `gfx/leaders` não foram tocados nesta rodada.
+
+### Próximo passo (Round 5C)
+
+Testar: menu principal (logo, texto de versão, logo de dev trocado) → Continue → Singleplayer → THK → bookmark 1924 → Game Rules → campanha → Load Game → Options → sair. Testar em 1366×768 e 1920×1080. Preservar logs e `crashes/` mais recente.

@@ -1,6 +1,7 @@
 focus_tree = {
 	id = thiryn_focus
-	continuous_focus_position = { x = 30 y = 1500 } 
+	continuous_focus_position = { x = 30 y = 1500 }
+
 	country = {
 		factor = 0
 		modifier = {
@@ -9,18 +10,21 @@ focus_tree = {
 		}
 	}
 
-	#Great Earthquake
+	# ============================================================
+	# NATIONAL DISASTER — THE GREAT EARTHQUAKE
+	# ============================================================
+
 	focus = {
 		id = THK_TheQuake
 		icon = GFX_focus_generic_land_reclamation
 		x = 1
-		y = 2
-		cost = 10
-		search_filters = {
-			FOCUS_FILTER_STABILITY
-		}
-		ai_will_do = { factor = 40 }
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_STABILITY }
+		ai_will_do = { factor = 100 }
 		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.02
 		}
 	}
 
@@ -29,66 +33,13 @@ focus_tree = {
 		icon = GFX_focus_BRA_end_the_state_of_emergency
 		prerequisite = { focus = THK_TheQuake }
 		x = 1
-		y = 3
-		cost = 10
-		search_filters = {
-			FOCUS_FILTER_STABILITY
-		}
-		ai_will_do = { factor = 40 }
+		y = 2
+		cost = 5
+		search_filters = { FOCUS_FILTER_STABILITY }
+		ai_will_do = { factor = 100 }
 		completion_reward = {
-			add_political_power = 100
-			add_stability = -0.05
-		}
-	}
-
-	focus = {
-		id = THK_RebuildRailwaysNorth
-		icon = GFX_focus_generic_railroad
-		prerequisite = { focus = THK_Newlands }
-		x = 0
-		y = 6
-		cost = 10
-		search_filters = {
-			FOCUS_FILTER_STABILITY
-		}
-		ai_will_do = { factor = 40 }
-		completion_reward = {
-			add_political_power = 100
-			add_stability = -0.05
-		}
-	}
-	
-	focus = {
-		id = THK_RebuildRailwaysSouth
-		icon = GFX_focus_generic_railroad
-		prerequisite = { focus = THK_Newlands }
-		x = 2
-		y = 6
-		cost = 10
-		search_filters = {
-			FOCUS_FILTER_STABILITY
-		}
-		ai_will_do = { factor = 40 }
-		completion_reward = {
-			add_political_power = 100
-			add_stability = -0.05
-		}
-	}
-
-	focus = {
-		id = THK_NewUrbanZones
-		icon = GFX_focus_SWE_urbanization
-		prerequisite = { focus = THK_Newlands }
-		x = 1
-		y = 7
-		cost = 10
-		search_filters = {
-			FOCUS_FILTER_STABILITY
-		}
-		ai_will_do = { factor = 40 }
-		completion_reward = {
-			add_political_power = 100
-			add_stability = -0.05
+			add_political_power = 75
+			add_stability = 0.03
 		}
 	}
 
@@ -97,15 +48,13 @@ focus_tree = {
 		icon = GFX_SOV_carry_revolution_east_ccp_2d_sov_compatibility
 		prerequisite = { focus = THK_EmergencialMinister }
 		x = 0
-		y = 4
-		cost = 10
-		search_filters = {
-			FOCUS_FILTER_STABILITY
-		}
-		ai_will_do = { factor = 40 }
+		y = 3
+		cost = 5
+		search_filters = { FOCUS_FILTER_STABILITY }
+		ai_will_do = { factor = 75 }
 		completion_reward = {
-			add_political_power = 100
-			add_stability = -0.05
+			add_political_power = 35
+			add_war_support = -0.01
 		}
 	}
 
@@ -114,96 +63,171 @@ focus_tree = {
 		icon = GFX_SOV_military_engineering_university_ccp_2d_sov_compatibility
 		prerequisite = { focus = THK_EmergencialMinister }
 		x = 2
-		y = 4
-		cost = 10
-		search_filters = {
-			FOCUS_FILTER_STABILITY
-		}
-		ai_will_do = { factor = 40 }
+		y = 3
+		cost = 5
+		search_filters = { FOCUS_FILTER_STABILITY }
+		ai_will_do = { factor = 90 }
 		completion_reward = {
-			add_political_power = 100
-			add_stability = -0.05
+			add_manpower = 5000
+			add_stability = 0.05
+			add_political_power = -25
 		}
-	}	
+	}
 
 	focus = {
 		id = THK_Newlands
 		icon = GFX_focus_generic_farmland
-		prerequisite = { focus = THK_CountDead focus = THK_AidForThePeople }
+		prerequisite = { focus = THK_CountDead }
+		prerequisite = { focus = THK_AidForThePeople }
 		x = 1
-		y = 5
-		cost = 10
-		search_filters = {
-			FOCUS_FILTER_STABILITY
-		}
-		ai_will_do = { factor = 40 }
+		y = 4
+		cost = 5
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 90 }
 		completion_reward = {
-			add_political_power = 100
-			add_stability = -0.05
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_stability = 0.02
 		}
 	}
 
-	
 	focus = {
-		id = THK_Memorial
-		icon = GFX_focus_BEL_christian_corporatism
-		prerequisite = { focus = THK_NewUrbanZones }
-		available = {
-		}
-		x = 1
-		y = 8
+		id = THK_RebuildRailwaysNorth
+		icon = GFX_focus_generic_railroad
+		prerequisite = { focus = THK_Newlands }
+		x = 0
+		y = 5
 		cost = 5
-		search_filters = {
-			FOCUS_FILTER_STABILITY
-		}
-		ai_will_do = { factor = 40 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 65 }
 		completion_reward = {
-			add_political_power = 100
-			add_stability = -0.05
-			remove_ideas = {
-				Great_Earthquake
+			random_owned_controlled_state = {
+				limit = { is_in_home_area = yes }
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = THK_RebuildRailwaysSouth
+		icon = GFX_focus_generic_railroad
+		prerequisite = { focus = THK_Newlands }
+		x = 2
+		y = 5
+		cost = 5
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 65 }
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = { is_in_home_area = yes }
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = THK_NewUrbanZones
+		icon = GFX_focus_SWE_urbanization
+		prerequisite = { focus = THK_Newlands }
+		x = 1
+		y = 6
+		cost = 5
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
 			}
 		}
 	}
-	#End Great-Earthquake
 
-	#Queen's speech
+	focus = {
+		id = THK_Memorial
+		icon = GFX_focus_BEL_christian_corporatism
+		prerequisite = { focus = THK_RebuildRailwaysNorth }
+		prerequisite = { focus = THK_RebuildRailwaysSouth }
+		prerequisite = { focus = THK_NewUrbanZones }
+		x = 1
+		y = 7
+		cost = 5
+		search_filters = { FOCUS_FILTER_STABILITY }
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.10
+			add_war_support = 0.05
+			remove_ideas = { Great_Earthquake }
+		}
+	}
+
+	# ============================================================
+	# SUCCESSION CRISIS — THE QUEEN'S SPEECH
+	# ============================================================
+
 	focus = {
 		id = THK_queensSpeech
 		icon = GFX_focus_generic_monarchy_1
 		x = 15
 		y = 1
 		cost = 5
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		ai_will_do = { factor = 60 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 90 }
 		completion_reward = {
 			news_event = THK_azarya.1
-			add_political_power = 100
-			add_stability = -0.05
+			add_political_power = 75
+			add_stability = 0.03
 		}
 	}
 
-	#Niece Choise
+	# Royal alternative
+
 	focus = {
 		id = THK_RoyalAlternative
 		icon = GFX_focus_SWE_education_reform
 		prerequisite = { focus = THK_queensSpeech }
-		mutually_exclusive = { focus = THK_MenOfPride focus = THK_ThirdOption }
+		mutually_exclusive = {
+			focus = THK_MenOfPride
+			focus = THK_ThirdOption
+		}
 		x = 15
 		y = 2
 		cost = 5
-		ai_will_do = {
-			factor = 5
-		}
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		ai_will_do = { factor = 40 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 45 }
 		completion_reward = {
-			add_political_power = 100
-			add_stability = -0.05
+			add_political_power = 50
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
 		}
 	}
 
@@ -214,16 +238,11 @@ focus_tree = {
 		x = 15
 		y = 4
 		cost = 5
-		ai_will_do = {
-			factor = 5
-		}
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		ai_will_do = { factor = 40 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 70 }
 		completion_reward = {
-			add_political_power = 100
-			add_stability = -0.05
+			add_stability = 0.05
+			add_political_power = 50
 		}
 	}
 
@@ -234,37 +253,11 @@ focus_tree = {
 		x = 14
 		y = 5
 		cost = 5
-		ai_will_do = {
-			factor = 5
-		}
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		ai_will_do = { factor = 40 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 60 }
 		completion_reward = {
-			add_political_power = 100
-			add_stability = -0.05
-		}
-	}
-
-	focus = {
-		id = THK_GetAccepted
-		icon = GFX_goal_generic_military_deal
-		prerequisite = { focus = THK_TripTheCountry }
-		mutually_exclusive = { focus = THK_IncriminateHighScale focus = THK_InfluntMedia }
-		x = 15
-		y = 6
-		cost = 5
-		ai_will_do = {
-			factor = 5
-		}
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		ai_will_do = { factor = 40 }
-		completion_reward = {
-			add_political_power = 100
-			add_stability = -0.05
+			add_war_support = 0.03
+			add_political_power = 50
 		}
 	}
 
@@ -275,40 +268,65 @@ focus_tree = {
 		x = 16
 		y = 5
 		cost = 5
-		ai_will_do = {
-			factor = 5
-		}
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		ai_will_do = { factor = 40 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 60 }
 		completion_reward = {
-			add_political_power = 100
-			add_stability = -0.05
+			add_stability = 0.03
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
 		}
 	}
 
-	#Adric Choice
+	focus = {
+		id = THK_GetAccepted
+		icon = GFX_goal_generic_military_deal
+		prerequisite = { focus = THK_ProveYourself }
+		prerequisite = { focus = THK_GoodImpression }
+		mutually_exclusive = {
+			focus = THK_IncriminateHighScale
+			focus = THK_InfluntMedia
+		}
+		x = 15
+		y = 6
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 75 }
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.10
+			}
+		}
+	}
+
+	# Adric's path
+
 	focus = {
 		id = THK_MenOfPride
 		icon = GFX_focus_BEL_royal_commander_in_chief
 		prerequisite = { focus = THK_queensSpeech }
-		mutually_exclusive = {focus = THK_ThirdOption focus = THK_RoyalAlternative }
+		mutually_exclusive = {
+			focus = THK_ThirdOption
+			focus = THK_RoyalAlternative
+		}
 		x = 5
 		y = 2
 		cost = 5
-		ai_will_do = {
-			factor = 5
-		}
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		ai_will_do = { factor = 40 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 35 }
 		completion_reward = {
-			add_political_power = 100
-			add_stability = -0.05
+			add_war_support = 0.03
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
 		}
 	}
+
 	focus = {
 		id = THK_AcquirePower
 		icon = GFX_goal_tfv_sever_ties_with_uk
@@ -316,21 +334,15 @@ focus_tree = {
 		x = 4
 		y = 4
 		cost = 5
-		ai_will_do = {
-			factor = 5
-		}
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		ai_will_do = { factor = 40 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 70 }
 		completion_reward = {
-			add_political_power = 100
+			add_political_power = 75
 			add_stability = -0.05
-			add_ideas = {
-				THK_Spoiled_politics
-			}
+			add_ideas = { THK_Spoiled_politics }
 		}
 	}
+
 	focus = {
 		id = THK_SearchFriends
 		icon = GFX_focus_eng_the_kings_party
@@ -338,21 +350,17 @@ focus_tree = {
 		x = 3
 		y = 5
 		cost = 5
-		ai_will_do = {
-			factor = 5
-		}
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		ai_will_do = { factor = 40 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 65 }
 		completion_reward = {
+			add_political_power = 50
 			add_popularity = {
 				ideology = fascism
-				popularity = 0.1
+				popularity = 0.05
 			}
 		}
 	}
-	
+
 	focus = {
 		id = THK_AssassinateHighScale
 		icon = GFX_focus_hun_assassinate_horthy
@@ -360,18 +368,14 @@ focus_tree = {
 		x = 5
 		y = 5
 		cost = 5
-		ai_will_do = {
-			factor = 5
-		}
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		ai_will_do = { factor = 40 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 45 }
 		completion_reward = {
-			add_stability = -0.05
+			add_stability = -0.08
+			add_war_support = 0.05
 			add_popularity = {
 				ideology = fascism
-				popularity = 0.1
+				popularity = 0.05
 			}
 		}
 	}
@@ -379,46 +383,48 @@ focus_tree = {
 	focus = {
 		id = THK_IncriminateHighScale
 		icon = GFX_focus_mex_arrest_general_cedillo
-		prerequisite = { focus = THK_AcquirePower }
-		mutually_exclusive = { focus = THK_GetAccepted focus = THK_InfluntMedia }
+		prerequisite = { focus = THK_SearchFriends }
+		prerequisite = { focus = THK_AssassinateHighScale }
+		mutually_exclusive = {
+			focus = THK_GetAccepted
+			focus = THK_InfluntMedia
+		}
 		x = 4
 		y = 6
 		cost = 5
-		ai_will_do = {
-			factor = 5
-		}
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		ai_will_do = { factor = 40 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 70 }
 		completion_reward = {
-			add_stability = -0.05
+			add_political_power = 100
+			add_war_support = 0.05
 			add_popularity = {
 				ideology = fascism
-				popularity = 0.1
+				popularity = 0.10
 			}
 		}
 	}
 
-	#Third Option
+	# Third option
+
 	focus = {
 		id = THK_ThirdOption
 		icon = GFX_focus_fra_loyalty_trotzky
 		prerequisite = { focus = THK_queensSpeech }
-		mutually_exclusive = { focus = THK_MenOfPride focus = THK_RoyalAlternative }
+		mutually_exclusive = {
+			focus = THK_MenOfPride
+			focus = THK_RoyalAlternative
+		}
 		x = 25
 		y = 2
 		cost = 5
-		ai_will_do = {
-			factor = 5
-		}
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		ai_will_do = { factor = 40 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 20 }
 		completion_reward = {
-			add_political_power = 100
-			add_stability = -0.05
+			add_stability = -0.02
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
 		}
 	}
 
@@ -428,12 +434,15 @@ focus_tree = {
 		prerequisite = { focus = THK_ThirdOption }
 		x = 26
 		y = 4
-		cost = 10
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		ai_will_do = { factor = 40 }
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 65 }
 		completion_reward = {
+			add_political_power = 50
+			add_popularity = {
+				ideology = communism
+				popularity = 0.03
+			}
 		}
 	}
 
@@ -443,12 +452,17 @@ focus_tree = {
 		prerequisite = { focus = THK_SearchSupportOutside }
 		x = 25
 		y = 5
-		cost = 10
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		ai_will_do = { factor = 40 }
+		cost = 5
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		ai_will_do = { factor = 60 }
 		completion_reward = {
+			army_experience = 15
+			add_tech_bonus = {
+				name = THK_guerrilla_bonus
+				bonus = 0.5
+				uses = 1
+				category = cat_special_forces_generic
+			}
 		}
 	}
 
@@ -458,49 +472,121 @@ focus_tree = {
 		prerequisite = { focus = THK_SearchSupportOutside }
 		x = 27
 		y = 5
-		cost = 10
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		ai_will_do = { factor = 40 }
+		cost = 5
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 60 }
 		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = THK_InfluntMedia
 		icon = GFX_focus_NOR_a_new_norway_Trotsky_communism
-		prerequisite = { focus = THK_OperationalBases focus = THK_LearnGuerrilhaTactics }
-		mutually_exclusive = { focus = THK_GetAccepted focus = THK_IncriminateHighScale }
+		prerequisite = { focus = THK_LearnGuerrilhaTactics }
+		prerequisite = { focus = THK_OperationalBases }
+		mutually_exclusive = {
+			focus = THK_GetAccepted
+			focus = THK_IncriminateHighScale
+		}
 		x = 26
 		y = 6
-		cost = 10
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		ai_will_do = { factor = 40 }
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 70 }
 		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.03
+			add_popularity = {
+				ideology = communism
+				popularity = 0.10
+			}
 		}
 	}
 
-	#Development (Infrastructure Zone)
+	# Shared political conclusion
+
+	focus = {
+		id = THK_DownTiranny
+		icon = GFX_focus_rom_handle_king
+		prerequisite = {
+			focus = THK_IncriminateHighScale
+			focus = THK_GetAccepted
+			focus = THK_InfluntMedia
+		}
+		x = 15
+		y = 7
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			add_political_power = 150
+
+			if = {
+				limit = { has_completed_focus = THK_GetAccepted }
+				add_stability = 0.10
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.10
+				}
+				remove_ideas = { THK_Spoiled_politics }
+			}
+
+			if = {
+				limit = { has_completed_focus = THK_IncriminateHighScale }
+				add_war_support = 0.10
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.10
+				}
+			}
+
+			if = {
+				limit = { has_completed_focus = THK_InfluntMedia }
+				add_stability = 0.05
+				add_popularity = {
+					ideology = communism
+					popularity = 0.10
+				}
+				remove_ideas = { THK_Spoiled_politics }
+			}
+		}
+	}
+
+	# ============================================================
+	# NATIONAL DEVELOPMENT — INFRASTRUCTURE
+	# ============================================================
+
 	focus = {
 		id = THK_RestoreInfrastructureMinister
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = THK_MenOfPride focus = THK_RoyalAlternative focus = THK_ThirdOption }
+		prerequisite = {
+			focus = THK_MenOfPride
+			focus = THK_RoyalAlternative
+			focus = THK_ThirdOption
+		}
 		x = 11
 		y = 3
 		cost = 5
-		ai_will_do = {
-			factor = 5
-		}
-		search_filters = {
-			FOCUS_FILTER_INDUSTRY
-		}
-		ai_will_do = { factor = 40 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 55 }
 		completion_reward = {
-			add_political_power = 100
-			add_stability = -0.05
+			add_political_power = 50
+			add_stability = 0.02
 		}
 	}
 
@@ -511,16 +597,16 @@ focus_tree = {
 		x = 10
 		y = 4
 		cost = 5
-		ai_will_do = {
-			factor = 5
-		}
-		search_filters = {
-			FOCUS_FILTER_INDUSTRY
-		}
-		ai_will_do = { factor = 40 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 70 }
 		completion_reward = {
-			add_political_power = 100
-			add_stability = -0.05
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -531,16 +617,23 @@ focus_tree = {
 		x = 10
 		y = 5
 		cost = 5
-		ai_will_do = {
-			factor = 5
-		}
-		search_filters = {
-			FOCUS_FILTER_INDUSTRY
-		}
-		ai_will_do = { factor = 40 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 70 }
 		completion_reward = {
-			add_political_power = 100
-			add_stability = -0.05
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -551,56 +644,62 @@ focus_tree = {
 		x = 12
 		y = 4
 		cost = 5
-		ai_will_do = {
-			factor = 5
-		}
-		search_filters = {
-			FOCUS_FILTER_INDUSTRY
-		}
-		ai_will_do = { factor = 40 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 55 }
 		completion_reward = {
-			add_political_power = 100
-			add_stability = -0.05
-		}
-	}
-	focus = {
-		id = THK_SearchForInvestments
-		icon = GFX_SOV_aristocratic_investments_ccp_2d_sov_compatibility
-		prerequisite = { focus = THK_RestoreInfrastructureMinister }
-		x = 12
-		y = 5
-		cost = 5
-		ai_will_do = {
-			factor = 5
-		}
-		search_filters = {
-			FOCUS_FILTER_INDUSTRY
-		}
-		ai_will_do = { factor = 40 }
-		completion_reward = {
-			add_political_power = 100
-			add_stability = -0.05
+			add_political_power = 75
+			add_stability = 0.03
 		}
 	}
 
-	#Education (Research Zone)
+	focus = {
+		id = THK_SearchForInvestments
+		icon = GFX_SOV_aristocratic_investments_ccp_2d_sov_compatibility
+		prerequisite = { focus = THK_LessTaxes }
+		x = 12
+		y = 5
+		cost = 5
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 70 }
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	# ============================================================
+	# NATIONAL DEVELOPMENT — EDUCATION
+	# ============================================================
+
 	focus = {
 		id = THK_RestoreEducationMinister
 		icon = GFX_focus_NOR_moscows_education_centers
-		prerequisite = { focus = THK_MenOfPride focus = THK_RoyalAlternative focus = THK_ThirdOption }
+		prerequisite = {
+			focus = THK_MenOfPride
+			focus = THK_RoyalAlternative
+			focus = THK_ThirdOption
+		}
 		x = 7
 		y = 3
 		cost = 5
-		ai_will_do = {
-			factor = 5
-		}
-		search_filters = {
-			FOCUS_FILTER_RESEARCH
-		}
-		ai_will_do = { factor = 40 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		ai_will_do = { factor = 55 }
 		completion_reward = {
-			add_political_power = 100
-			add_stability = -0.05
+			add_political_power = 50
+			add_stability = 0.02
 		}
 	}
 
@@ -611,20 +710,14 @@ focus_tree = {
 		x = 6
 		y = 4
 		cost = 5
-		ai_will_do = {
-			factor = 5
-		}
-		search_filters = {
-			FOCUS_FILTER_RESEARCH
-		}
-		ai_will_do = { factor = 40 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		ai_will_do = { factor = 65 }
 		completion_reward = {
-			add_research_slot = 1
 			add_tech_bonus = {
-				name = secret_bonus
-				bonus = 1.0
-				uses = 4
-				category = industry	
+				name = THK_teacher_training_bonus
+				bonus = 0.5
+				uses = 2
+				category = industry
 				category = engineers_tech
 			}
 		}
@@ -637,51 +730,71 @@ focus_tree = {
 		x = 8
 		y = 4
 		cost = 5
-		ai_will_do = {
-			factor = 5
-		}
-		search_filters = {
-			FOCUS_FILTER_RESEARCH
-		}
-		ai_will_do = { factor = 40 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		ai_will_do = { factor = 65 }
 		completion_reward = {
-			add_political_power = 100
-			add_stability = -0.05
-		}
-	}
-	focus = {
-		id = THK_Universities
-		icon = GFX_focus_research2
-		prerequisite = { focus = THK_BuildMoreSchools focus = THK_HireMoreTeachers }
-		x = 7
-		y = 5
-		cost = 5
-		ai_will_do = {
-			factor = 5
-		}
-		search_filters = {
-			FOCUS_FILTER_RESEARCH
-		}
-		ai_will_do = { factor = 40 }
-		completion_reward = {
-			add_research_slot = 1
+			add_political_power = 50
+			add_stability = 0.03
 		}
 	}
 
-	#Industrial
+	focus = {
+		id = THK_Universities
+		icon = GFX_focus_research2
+		prerequisite = { focus = THK_HireMoreTeachers }
+		prerequisite = { focus = THK_BuildMoreSchools }
+		x = 7
+		y = 5
+		cost = 5
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		ai_will_do = { factor = 90 }
+		completion_reward = {
+			add_research_slot = 1
+			add_tech_bonus = {
+				name = THK_university_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+				category = engineers_tech
+			}
+		}
+	}
+
+	# ============================================================
+	# NATIONAL DEVELOPMENT — INDUSTRY
+	# ============================================================
 
 	focus = {
 		id = THK_Reorganize_Industrial
 		icon = GFX_SOV_develop_the_urals_ccp_2d_sov_compatibility
-		prerequisite = { focus = THK_MenOfPride focus = THK_RoyalAlternative focus = THK_ThirdOption }
+		prerequisite = {
+			focus = THK_MenOfPride
+			focus = THK_RoyalAlternative
+			focus = THK_ThirdOption
+		}
 		x = 19
 		y = 3
 		cost = 10
-		search_filters = {
-			FOCUS_FILTER_INDUSTRY
-		}
-		ai_will_do = { factor = 40 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 65 }
 		completion_reward = {
+			add_political_power = 50
+			add_stability = -0.02
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -692,11 +805,12 @@ focus_tree = {
 		x = 19
 		y = 4
 		cost = 10
-		search_filters = {
-			FOCUS_FILTER_STABILITY
-		}
-		ai_will_do = { factor = 40 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 60 }
 		completion_reward = {
+			add_manpower = 10000
+			add_stability = -0.02
+			add_political_power = 50
 		}
 	}
 
@@ -707,15 +821,13 @@ focus_tree = {
 		x = 17
 		y = 4
 		cost = 10
-		search_filters = {
-			FOCUS_FILTER_STABILITY
-		}
-		ai_will_do = { factor = 40 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 65 }
 		completion_reward = {
 			add_resource = {
-			type = steel
-			amount = 12
-			state = 450
+				type = steel
+				amount = 12
+				state = 450
 			}
 		}
 	}
@@ -723,50 +835,88 @@ focus_tree = {
 	focus = {
 		id = THK_Resources_Industrial1
 		icon = GFX_focus_GER_factories_for_resources
-		prerequisite = { focus = THK_Resources_Industrial focus = THK_Manpower_Industrial }
+		prerequisite = { focus = THK_Resources_Industrial }
+		prerequisite = { focus = THK_Manpower_Industrial }
 		x = 18
 		y = 5
 		cost = 10
-		search_filters = {
-			FOCUS_FILTER_STABILITY
-		}
-		ai_will_do = { factor = 40 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 70 }
 		completion_reward = {
+			add_resource = {
+				type = aluminium
+				amount = 4
+				state = 382
+			}
+			add_political_power = 50
 		}
 	}
 
 	focus = {
 		id = THK_Strong_Industrial
 		icon = GFX_focus_generic_industry_3
-		prerequisite = { focus = THK_Resources_Industrial focus = THK_Manpower_Industrial }
+		prerequisite = { focus = THK_Resources_Industrial }
+		prerequisite = { focus = THK_Manpower_Industrial }
 		x = 20
 		y = 5
 		cost = 10
-		search_filters = {
-			FOCUS_FILTER_STABILITY
-		}
-		ai_will_do = { factor = 40 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 90 }
 		completion_reward = {
 			add_political_power = 50
-			add_stability = 0.02
-			add_ideas = thk_reorganized_industry_spirit  # <- único Spirit do ramo
+			add_stability = 0.05
+			add_ideas = { thk_reorganized_industry_spirit }
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
-	#idk
+	# ============================================================
+	# NATIONAL DEVELOPMENT — REARMAMENT
+	# ============================================================
 
 	focus = {
 		id = THK_Rearm
 		icon = GFX_focus_generic_military_industry
-		prerequisite = { focus = THK_MenOfPride focus = THK_RoyalAlternative focus = THK_ThirdOption }
+		prerequisite = {
+			focus = THK_MenOfPride
+			focus = THK_RoyalAlternative
+			focus = THK_ThirdOption
+		}
 		x = 23
 		y = 3
 		cost = 10
-		search_filters = {
-			FOCUS_FILTER_INDUSTRY
-		}
-		ai_will_do = { factor = 40 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 60 }
 		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -777,28 +927,19 @@ focus_tree = {
 		x = 22
 		y = 4
 		cost = 10
-		search_filters = {
-			FOCUS_FILTER_STABILITY
-		}
-		ai_will_do = { factor = 40 }
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		ai_will_do = { factor = 65 }
 		completion_reward = {
+			add_tech_bonus = {
+				name = THK_gun_program_bonus
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
+			}
+			army_experience = 10
 		}
 	}
-	focus = {
-		id = THK_TierUP
-		icon = GFX_focus_AUS_raid_military_storages
-		prerequisite = { focus = THK_WeNeedMoreGuns focus = THK_Alluminium }
-		x = 23
-		y = 5
-		cost = 10
-		search_filters = {
-			FOCUS_FILTER_STABILITY
-		}
-		ai_will_do = { factor = 40 }
-		completion_reward = {
-		}
-	}
-	
+
 	focus = {
 		id = THK_Alluminium
 		icon = GFX_SOV_the_faithful_servant_of_lenin_ccp_2d_sov_compatibility
@@ -806,54 +947,131 @@ focus_tree = {
 		x = 24
 		y = 4
 		cost = 10
-		search_filters = {
-			FOCUS_FILTER_STABILITY
-		}
-		ai_will_do = { factor = 40 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 60 }
 		completion_reward = {
 			add_resource = {
 				type = aluminium
 				amount = 6
 				state = 382
-				}
+			}
 		}
 	}
 
-	#New Part
 	focus = {
-		id = THK_DownTiranny
-		icon = GFX_focus_rom_handle_king
-		prerequisite = { focus = THK_IncriminateHighScale focus = THK_GetAccepted focus = THK_InfluntMedia }
-		x = 15
-		y = 7
-		cost = 5
-		ai_will_do = {
-			factor = 5
+		id = THK_TierUP
+		icon = GFX_focus_AUS_raid_military_storages
+		prerequisite = { focus = THK_WeNeedMoreGuns }
+		prerequisite = { focus = THK_Alluminium }
+		x = 23
+		y = 5
+		cost = 10
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 85 }
+		completion_reward = {
+			army_experience = 15
+			add_war_support = 0.03
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
+	}
+
+	# ============================================================
+	# NATIONAL RECONSTRUCTION CAPSTONE
+	# ============================================================
+
+	focus = {
+		id = THK_NationalReconstruction
+		icon = GFX_focus_generic_industry_2
+		prerequisite = { focus = THK_Memorial }
+		prerequisite = { focus = THK_Universities }
+		prerequisite = { focus = THK_Strong_Industrial }
+		prerequisite = { focus = THK_TierUP }
+		x = 12
+		y = 8
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_STABILITY
+		}
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			add_political_power = 150
+			add_stability = 0.08
+			add_war_support = 0.05
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = THK_A_NewThiryn
+		icon = GFX_focus_generic_monarchy_2
+		prerequisite = { focus = THK_DownTiranny }
+		prerequisite = { focus = THK_NationalReconstruction }
+		x = 15
+		y = 9
+		cost = 10
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_STABILITY
 		}
-		ai_will_do = { factor = 40 }
+		ai_will_do = { factor = 100 }
 		completion_reward = {
-			add_political_power = 100
-			add_stability = -0.05
+			add_political_power = 200
+			add_stability = 0.10
+			add_war_support = 0.05
 		}
 	}
 
-	#Armed Forces
+	# ============================================================
+	# ARMED FORCES
+	# ============================================================
+
 	focus = {
 		id = THK_Armed_Forces
 		icon = GFX_focus_BEL_free_belgian_forces
 		x = 37
-		y = 2
+		y = 1
 		cost = 10
-		search_filters = {
-			FOCUS_FILTER_ARMY_XP
-		}
-		ai_will_do = { factor = 40 }
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		ai_will_do = { factor = 65 }
 		completion_reward = {
+			army_experience = 10
+			air_experience = 10
+			navy_experience = 10
+			add_war_support = 0.03
 		}
 	}
+
+	# Air force
+
 	focus = {
 		id = THK_PioonersOfTheAir
 		icon = GFX_focus_FIN_expand_air_force_academy
@@ -861,13 +1079,19 @@ focus_tree = {
 		x = 31
 		y = 3
 		cost = 10
-		search_filters = {
-			FOCUS_FILTER_AIR_XP
-		}
-		ai_will_do = { factor = 40 }
+		search_filters = { FOCUS_FILTER_AIR_XP }
+		ai_will_do = { factor = 55 }
 		completion_reward = {
+			air_experience = 15
+			add_doctrine_cost_reduction = {
+				name = THK_air_doctrine_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}
 		}
 	}
+
 	focus = {
 		id = THK_ExpandAirBases
 		icon = GFX_focus_generic_air_bases
@@ -875,41 +1099,20 @@ focus_tree = {
 		x = 31
 		y = 4
 		cost = 10
-		search_filters = {
-			FOCUS_FILTER_AIR_XP
-		}
-		ai_will_do = { factor = 40 }
+		search_filters = { FOCUS_FILTER_AIR_XP }
+		ai_will_do = { factor = 65 }
 		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			air_experience = 10
 		}
 	}
-	focus = {
-		id = THK_AcademyOfTheAir
-		icon = GFX_focus_generic_military_academy
-		prerequisite = { focus = THK_ExpandAirBases }
-		x = 31
-		y = 5
-		cost = 10
-		search_filters = {
-			FOCUS_FILTER_AIR_XP
-		}
-		ai_will_do = { factor = 40 }
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = THK_WeRuleTheSkies
-		icon = GFX_SOV_the_modern_war_in_the_skies_ccp_2d_sov_compatibility
-		prerequisite = { focus = THK_ExpandAirBases }
-		x = 33
-		y = 5
-		cost = 10
-		search_filters = {
-			FOCUS_FILTER_AIR_XP
-		}
-		ai_will_do = { factor = 40 }
-		completion_reward = {
-		}
-	}
+
 	focus = {
 		id = THK_FighterPlanes
 		icon = GFX_focus_PER_raf_planes
@@ -917,11 +1120,46 @@ focus_tree = {
 		x = 33
 		y = 4
 		cost = 10
-		search_filters = {
-			FOCUS_FILTER_AIR_XP
-		}
-		ai_will_do = { factor = 40 }
+		search_filters = { FOCUS_FILTER_AIR_XP }
+		ai_will_do = { factor = 65 }
 		completion_reward = {
+			air_experience = 20
+			add_war_support = 0.02
+		}
+	}
+
+	focus = {
+		id = THK_AcademyOfTheAir
+		icon = GFX_focus_generic_military_academy
+		prerequisite = { focus = THK_ExpandAirBases }
+		x = 31
+		y = 5
+		cost = 10
+		search_filters = { FOCUS_FILTER_AIR_XP }
+		ai_will_do = { factor = 70 }
+		completion_reward = {
+			air_experience = 25
+			add_doctrine_cost_reduction = {
+				name = THK_air_academy_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = THK_WeRuleTheSkies
+		icon = GFX_SOV_the_modern_war_in_the_skies_ccp_2d_sov_compatibility
+		prerequisite = { focus = THK_FighterPlanes }
+		x = 33
+		y = 5
+		cost = 10
+		search_filters = { FOCUS_FILTER_AIR_XP }
+		ai_will_do = { factor = 70 }
+		completion_reward = {
+			air_experience = 25
+			add_war_support = 0.04
 		}
 	}
 
@@ -932,43 +1170,67 @@ focus_tree = {
 		x = 29
 		y = 6
 		cost = 10
-		search_filters = {
-			FOCUS_FILTER_AIR_XP
-		}
-		ai_will_do = { factor = 40 }
+		search_filters = { FOCUS_FILTER_AIR_XP }
+		ai_will_do = { factor = 55 }
 		completion_reward = {
+			air_experience = 20
+			add_political_power = 50
 		}
 	}
 
 	focus = {
 		id = THK_FactoriesPlanes
 		icon = GFX_focus_HUN_establish_the_mavag_aircraft_factory
-		prerequisite = { focus = THK_AcademyOfTheAir focus = THK_WeRuleTheSkies }
+		prerequisite = { focus = THK_AcademyOfTheAir }
+		prerequisite = { focus = THK_WeRuleTheSkies }
 		x = 31
 		y = 6
 		cost = 10
-		search_filters = {
-			FOCUS_FILTER_AIR_XP
-		}
-		ai_will_do = { factor = 40 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 75 }
 		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			air_experience = 10
 		}
 	}
 
 	focus = {
 		id = THK_Modern_AirForce
 		icon = GFX_focus_BRA_air_force
+		prerequisite = { focus = THK_Bombers_Models }
 		prerequisite = { focus = THK_FactoriesPlanes }
 		x = 31
 		y = 7
 		cost = 10
-		search_filters = {
-			FOCUS_FILTER_AIR_XP
-		}
-		ai_will_do = { factor = 40 }
+		search_filters = { FOCUS_FILTER_AIR_XP }
+		ai_will_do = { factor = 90 }
 		completion_reward = {
+			air_experience = 35
+			add_war_support = 0.05
+			add_doctrine_cost_reduction = {
+				name = THK_modern_air_force_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}
 		}
 	}
+
+	# Army
 
 	focus = {
 		id = THK_Our_Army
@@ -977,21 +1239,20 @@ focus_tree = {
 		x = 37
 		y = 3
 		cost = 10
-		search_filters = {
-			FOCUS_FILTER_ARMY_XP
-		}
-		ai_will_do = { factor = 40 }
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		ai_will_do = { factor = 75 }
 		completion_reward = {
 			add_stability = 0.05
 			army_experience = 15
 			add_doctrine_cost_reduction = {
-				name = land_doc_bonus
+				name = THK_land_doctrine_bonus
 				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
 		}
 	}
+
 	focus = {
 		id = THK_NewRifles
 		icon = GFX_SOV_barrier_troops_ccp_2d_sov_compatibility
@@ -999,51 +1260,68 @@ focus_tree = {
 		x = 35
 		y = 4
 		cost = 10
-		search_filters = {
-			FOCUS_FILTER_ARMY_XP
-		}
-		ai_will_do = { factor = 40 }
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		ai_will_do = { factor = 70 }
 		completion_reward = {
 			add_tech_bonus = {
-				name = infantry_artillery_bonus
-				bonus = 1.0
-				uses = 1
+				name = THK_infantry_weapons_bonus
+				bonus = 0.5
+				uses = 2
 				category = infantry_weapons
 			}
+			army_experience = 10
+		}
+	}
+
+	focus = {
+		id = THK_ArtilleryAndTrucks
+		icon = GFX_SOV_soviet_artillery_ccp_2d_sov_compatibility
+		prerequisite = { focus = THK_Our_Army }
+		x = 39
+		y = 4
+		cost = 10
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		ai_will_do = { factor = 70 }
+		completion_reward = {
+			add_tech_bonus = {
+				name = THK_artillery_bonus
+				bonus = 0.5
+				uses = 2
+				category = artillery
+			}
+			army_experience = 10
 		}
 	}
 
 	focus = {
 		id = THK_SupportTeams
 		icon = GFX_SOV_found_the_pcdi_ccp_2d_sov_compatibility
-		prerequisite = { focus = THK_Our_Army }
+		prerequisite = { focus = THK_NewRifles }
 		x = 35
 		y = 5
 		cost = 10
-		search_filters = {
-			FOCUS_FILTER_ARMY_XP
-		}
-		ai_will_do = { factor = 40 }
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		ai_will_do = { factor = 70 }
 		completion_reward = {
 			add_tech_bonus = {
-				bonus = 1.0
+				name = THK_support_bonus
+				bonus = 0.5
 				uses = 2
 				category = support_tech
 			}
+			army_experience = 10
 		}
 	}
 
 	focus = {
 		id = THK_Factories
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = THK_Our_Army }
+		prerequisite = { focus = THK_ArtilleryAndTrucks }
 		x = 39
 		y = 5
 		cost = 10
-		search_filters = {
-			FOCUS_FILTER_ARMY_XP
-		}
-		ai_will_do = { factor = 40 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 75 }
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -1079,22 +1357,22 @@ focus_tree = {
 	}
 
 	focus = {
-		id = THK_NewArtillerys
-		icon = GFX_focus_generic_anti_tank_guns
-		prerequisite = { focus = THK_Factories }
-		x = 39
-		y = 6
+		id = THK_Our_Douctrine
+		icon = GFX_SOV_experts_in_camouflage_ccp_2d_sov_compatibility
+		prerequisite = { focus = THK_NewRifles }
+		prerequisite = { focus = THK_ArtilleryAndTrucks }
+		x = 37
+		y = 5
 		cost = 10
-		search_filters = {
-			FOCUS_FILTER_ARMY_XP
-		}
-		ai_will_do = { factor = 40 }
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		ai_will_do = { factor = 85 }
 		completion_reward = {
-			add_tech_bonus = {
-				name = infantry_artillery_bonus
-				bonus = 1.0
-				uses = 2
-				category = artillery
+			army_experience = 20
+			add_doctrine_cost_reduction = {
+				name = THK_second_land_doctrine_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
 			}
 		}
 	}
@@ -1106,88 +1384,66 @@ focus_tree = {
 		x = 35
 		y = 6
 		cost = 10
-		search_filters = {
-			FOCUS_FILTER_ARMY_XP
-		}
-		ai_will_do = { factor = 40 }
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		ai_will_do = { factor = 55 }
 		completion_reward = {
 			add_tech_bonus = {
-				name = armor_bonus
-				bonus = 1.0
+				name = THK_armor_bonus
+				bonus = 0.5
 				uses = 2
 				category = armor
 			}
+			army_experience = 15
 		}
 	}
+
 	focus = {
-		id = THK_ArtilleryAndTrucks
-		icon = GFX_SOV_soviet_artillery_ccp_2d_sov_compatibility
-		prerequisite = { focus = THK_Our_Army }
+		id = THK_NewArtillerys
+		icon = GFX_focus_generic_anti_tank_guns
+		prerequisite = { focus = THK_Factories }
 		x = 39
-		y = 4
+		y = 6
 		cost = 10
-		search_filters = {
-			FOCUS_FILTER_ARMY_XP
-		}
-		ai_will_do = { factor = 40 }
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		ai_will_do = { factor = 65 }
 		completion_reward = {
 			add_tech_bonus = {
-				name = infantry_artillery_bonus
-				bonus = 1.0
-				uses = 1
+				name = THK_advanced_artillery_bonus
+				bonus = 0.5
+				uses = 2
 				category = artillery
 			}
-		}
-	}
-	focus = {
-		id = THK_Our_Douctrine
-		icon = GFX_SOV_experts_in_camouflage_ccp_2d_sov_compatibility
-		prerequisite = { focus = THK_Our_Army focus = THK_NewRifles focus = THK_ArtilleryAndTrucks }
-		x = 37
-		y = 5
-		cost = 10
-		search_filters = {
-			FOCUS_FILTER_ARMY_XP
-		}
-		ai_will_do = { factor = 40 }
-		completion_reward = {
 			army_experience = 15
-			add_doctrine_cost_reduction = {
-				name = land_doc_bonus
-				cost_reduction = 0.5
-				uses = 1
-				category = land_doctrine
-			}
 		}
 	}
+
 	focus = {
 		id = THK_Sword_Academy
 		icon = GFX_SOV_strengthen_the_mobilization_plan_ccp_2d_sov_compatibility
 		prerequisite = { focus = THK_Our_Douctrine }
+		prerequisite = { focus = THK_Tanks }
+		prerequisite = { focus = THK_NewArtillerys }
 		x = 37
 		y = 7
 		cost = 10
-		search_filters = {
-			FOCUS_FILTER_ARMY_XP
-		}
-		ai_will_do = { factor = 40 }
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		ai_will_do = { factor = 95 }
 		completion_reward = {
 			add_tech_bonus = {
-				name = special_forces_bonus
-				bonus = 1.0
+				name = THK_special_forces_bonus
+				bonus = 0.5
 				uses = 1
 				category = cat_special_forces_generic
 			}
 			army_experience = 25
 			add_war_support = 0.05
-			add_ideas = {
-				THK_academia_espada
-			}
-			remove_ideas = {
-				THK_Defeated_Army
-			}
+			add_ideas = { THK_academia_espada }
+			remove_ideas = { THK_Defeated_Army }
 		}
 	}
+
+	# Navy
+
 	focus = {
 		id = THK_Navy_Forces
 		icon = GFX_focus_PER_establish_the_navy
@@ -1195,13 +1451,19 @@ focus_tree = {
 		x = 43
 		y = 3
 		cost = 10
-		search_filters = {
-			FOCUS_FILTER_NAVY_XP
-		}
-		ai_will_do = { factor = 40 }
+		search_filters = { FOCUS_FILTER_NAVY_XP }
+		ai_will_do = { factor = 45 }
 		completion_reward = {
+			navy_experience = 15
+			add_doctrine_cost_reduction = {
+				name = THK_naval_doctrine_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = naval_doctrine
+			}
 		}
 	}
+
 	focus = {
 		id = THK_ExpandDocks
 		icon = GFX_goal_generic_construct_naval_dockyard
@@ -1209,13 +1471,28 @@ focus_tree = {
 		x = 42
 		y = 4
 		cost = 10
-		search_filters = {
-			FOCUS_FILTER_NAVY_XP
-		}
-		ai_will_do = { factor = 40 }
+		search_filters = { FOCUS_FILTER_NAVY_XP }
+		ai_will_do = { factor = 65 }
 		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
+
 	focus = {
 		id = THK_NewLaws
 		icon = GFX_SOV_military_reorganization_ccp_2d_sov_compatibility
@@ -1223,11 +1500,12 @@ focus_tree = {
 		x = 44
 		y = 4
 		cost = 10
-		search_filters = {
-			FOCUS_FILTER_NAVY_XP
-		}
-		ai_will_do = { factor = 40 }
+		search_filters = { FOCUS_FILTER_NAVY_XP }
+		ai_will_do = { factor = 55 }
 		completion_reward = {
+			navy_experience = 15
+			add_war_support = 0.02
+			add_political_power = 50
 		}
 	}
 
@@ -1238,11 +1516,74 @@ focus_tree = {
 		x = 41
 		y = 5
 		cost = 10
-		search_filters = {
-			FOCUS_FILTER_NAVY_XP
-		}
-		ai_will_do = { factor = 40 }
+		search_filters = { FOCUS_FILTER_NAVY_XP }
+		ai_will_do = { factor = 60 }
 		completion_reward = {
+			random_owned_controlled_state = {
+				limit = { is_coastal = yes }
+				add_building_construction = {
+					type = naval_base
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					instant_build = yes
+				}
+			}
+			navy_experience = 10
+		}
+	}
+
+	focus = {
+		id = THK_BiggerBetter
+		icon = GFX_focus_generic_navy_battleship2
+		prerequisite = { focus = THK_ExpandDocks }
+		prerequisite = { focus = THK_NewLaws }
+		x = 43
+		y = 5
+		cost = 10
+		search_filters = { FOCUS_FILTER_NAVY_XP }
+		ai_will_do = { factor = 55 }
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			navy_experience = 10
+		}
+	}
+
+	focus = {
+		id = THK_DouctrineNavy
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = THK_NewLaws }
+		x = 45
+		y = 5
+		cost = 10
+		search_filters = { FOCUS_FILTER_NAVY_XP }
+		ai_will_do = { factor = 70 }
+		completion_reward = {
+			navy_experience = 20
+			add_doctrine_cost_reduction = {
+				name = THK_second_naval_doctrine_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = naval_doctrine
+			}
 		}
 	}
 
@@ -1253,71 +1594,103 @@ focus_tree = {
 		x = 41
 		y = 6
 		cost = 10
-		search_filters = {
-			FOCUS_FILTER_NAVY_XP
-		}
-		ai_will_do = { factor = 40 }
+		search_filters = { FOCUS_FILTER_NAVY_XP }
+		ai_will_do = { factor = 65 }
 		completion_reward = {
-		}
-	}
-	
-
-	focus = {
-		id = THK_TraditionalNavy
-		icon = GFX_focus_AUS_reestablish_austrian_navy
-		prerequisite = { focus = THK_Destroyers focus = THK_Cruisers }
-		x = 43
-		y = 7
-		cost = 10
-		search_filters = {
-			FOCUS_FILTER_NAVY_XP
-		}
-		ai_will_do = { factor = 40 }
-		completion_reward = {
+			navy_experience = 20
+			add_war_support = 0.02
 		}
 	}
 
 	focus = {
 		id = THK_Cruisers
 		icon = GFX_focus_generic_cruiser2
-		prerequisite = { focus = THK_OurIslands focus= THK_DouctrineNavy }
+		prerequisite = { focus = THK_OurIslands }
+		prerequisite = { focus = THK_DouctrineNavy }
 		x = 45
 		y = 6
 		cost = 10
-		search_filters = {
-			FOCUS_FILTER_NAVY_XP
-		}
-		ai_will_do = { factor = 40 }
+		search_filters = { FOCUS_FILTER_NAVY_XP }
+		ai_will_do = { factor = 60 }
 		completion_reward = {
+			navy_experience = 20
+			add_political_power = 50
 		}
 	}
 
 	focus = {
-		id = THK_BiggerBetter
-		icon = GFX_focus_generic_navy_battleship2
-		prerequisite = { focus = THK_ExpandDocks focus = THK_NewLaws }
+		id = THK_TraditionalNavy
+		icon = GFX_focus_AUS_reestablish_austrian_navy
+		prerequisite = { focus = THK_Destroyers }
+		prerequisite = { focus = THK_BiggerBetter }
+		prerequisite = { focus = THK_Cruisers }
 		x = 43
-		y = 5
+		y = 7
 		cost = 10
-		search_filters = {
-			FOCUS_FILTER_NAVY_XP
-		}
-		ai_will_do = { factor = 40 }
+		search_filters = { FOCUS_FILTER_NAVY_XP }
+		ai_will_do = { factor = 90 }
 		completion_reward = {
+			navy_experience = 35
+			add_war_support = 0.05
+			add_doctrine_cost_reduction = {
+				name = THK_traditional_navy_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = naval_doctrine
+			}
 		}
 	}
+
+	# Armed forces capstone
+
 	focus = {
-		id = THK_DouctrineNavy
-		icon = GFX_goal_generic_navy_doctrines_tactics
-		prerequisite = { focus = THK_NewLaws }
-		x = 45
-		y = 5
+		id = THK_DefendersOfThiryn
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = THK_Modern_AirForce }
+		prerequisite = { focus = THK_Sword_Academy }
+		prerequisite = { focus = THK_TraditionalNavy }
+		x = 37
+		y = 9
 		cost = 10
 		search_filters = {
+			FOCUS_FILTER_ARMY_XP
+			FOCUS_FILTER_AIR_XP
 			FOCUS_FILTER_NAVY_XP
 		}
-		ai_will_do = { factor = 40 }
+		ai_will_do = { factor = 100 }
 		completion_reward = {
+			army_experience = 25
+			air_experience = 25
+			navy_experience = 25
+			add_war_support = 0.10
+			add_stability = 0.03
+		}
+	}
+
+	# ============================================================
+	# FINAL NATIONAL CAPSTONE
+	# ============================================================
+
+	focus = {
+		id = THK_EmpireReborn
+		icon = GFX_focus_generic_monarchy_1
+		prerequisite = { focus = THK_A_NewThiryn }
+		prerequisite = { focus = THK_DefendersOfThiryn }
+		x = 26
+		y = 11
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_STABILITY
+		}
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			add_political_power = 250
+			add_stability = 0.10
+			add_war_support = 0.10
+			army_experience = 15
+			air_experience = 15
+			navy_experience = 15
 		}
 	}
 }

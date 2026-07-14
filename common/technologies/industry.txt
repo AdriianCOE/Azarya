@@ -1161,16 +1161,6 @@ technologies = {
 			cat_synth_oil
 		}
 
-		on_research_complete = {
-			# FIN effect from focus Tire Factory at Nokia
-			if = {
-				limit = {
-					tag = FIN
-					controls_state = 927
-				}
-			}
-		}
-		
 		ai_will_do = {
 			factor = 5
 			modifier = {

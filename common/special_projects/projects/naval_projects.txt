@@ -1127,67 +1127,6 @@ sp_naval_midget_submarine = {
 					equipment = ship_hull_midget_submarine
 				}
 			}
-
-			if = { #Italian content from Midget Submarines focus moved here (focus now completes this SP)
-				limit = {
-					original_tag = ITA
-				}
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					create_equipment_variant = {
-						name = "CB Class"
-						type = ship_hull_midget_submarine
-						allow_without_tech = yes # Display tooltip as if we have the tech.
-						name_group = ITA_SS_HISTORICAL
-						parent_version = 0
-						allow_without_tech = yes # Display tooltip as if we have the tech.
-						mark_older_equipment_obsolete = yes
-						modules = {
-							fixed_ship_torpedo_slot = ship_torpedo_sub_2
-							fixed_ship_engine_slot = sub_ship_engine_2
-						}
-					}
-					add_equipment_production = {
-						equipment = {
-							type = ship_hull_midget_submarine
-							creator = "ITA"
-							version_name = "CB Class"
-						}
-						name = "Ammiraglio Millo"
-						requested_factories = 1
-						progress = 0.35
-						amount = 2
-					}
-				}
-				else = {
-					create_equipment_variant = {
-						name = "CB Class"
-						type = midget_submarine
-						allow_without_tech = yes # Display tooltip as if we have the tech.
-						name_group = ITA_SS_HISTORICAL
-						parent_version = 0
-						allow_without_tech = yes # Display tooltip as if we have the tech.
-						mark_older_equipment_obsolete = yes
-						upgrades = {
-							sub_torpedo_upgrade = 2
-							sub_engine_upgrade = 2
-						}
-					}
-					add_equipment_production = {
-						equipment = {
-							type = midget_submarine
-							creator = "ITA"
-							version_name = "CB Class"
-						}
-						name = "Ammiraglio Millo"
-						requested_factories = 1
-						progress = 0.35
-						amount = 2
-					}
-				}	
-			}
 		}
 	}
 
@@ -1338,16 +1277,6 @@ sp_naval_aip_engine = {
 
 	ai_will_do = {
 		base = 1
-		modifier = {
-			factor = 0.2
-			ROOT = { 
-				original_tag = JAP
-				OR = {
-					has_government = fascism
-					has_government = neutrality
-				}
-			}
-		}
 	}
 
 	allowed = {
@@ -1511,16 +1440,6 @@ sp_naval_anechoic_tiles = {
 
 	ai_will_do = {
 		base = 1
-		modifier = {
-			factor = 0.2
-			ROOT = { 
-				original_tag = JAP
-				OR = {
-					has_government = fascism
-					has_government = neutrality
-				}
-			}
-		}
 	}
 
 	allowed = {
@@ -1678,16 +1597,6 @@ specialization = specialization_naval
 
 	ai_will_do = {
 		base = 1
-		modifier = {
-			factor = 2
-			ROOT = { 
-				original_tag = JAP
-				OR = {
-					has_government = fascism
-					has_government = neutrality
-				}
-			}
-		}
 	}
 
 	allowed = {
@@ -1844,16 +1753,6 @@ sp_naval_torpedo_cruiser = {
 
 	ai_will_do = {
 		base = 1
-		modifier = {
-			factor = 2
-			ROOT = { 
-				original_tag = JAP
-				OR = {
-					has_government = fascism
-					has_government = neutrality
-				}
-			}
-		}
 	}
 
 	allowed = {
@@ -2057,16 +1956,6 @@ sp_naval_super_heavy_battleship = {
 			factor = 0.3 
 			AND = {
 				ROOT = { is_major = no } # Pointless unless we are big enough to do this
-			}
-		}
-		modifier = {
-			factor = 5
-			ROOT = { 
-				original_tag = JAP
-				OR = {
-					has_government = fascism
-					has_government = neutrality
-				}
 			}
 		}
 	}

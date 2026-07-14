@@ -246,16 +246,8 @@ sp_land_land_cruiser = {
 				ROOT = { has_government = democratic }# Don't spend the tax payers' money on this, then they won't vote for you again
 			}
 		}
-		modifier = {
-			factor = 2
-			ROOT = { 
-				original_tag = GER
-				has_government = fascism
-			}
-			date > 1943.6.1
-		}
 	}
-	
+
 	project_output = {
 		country_effects = {
 			if = {
@@ -1241,19 +1233,8 @@ sp_land_super_heavy_railway_gun = {
 		}
 
 		country_effects = {
-			if = {
-				limit = {
-					original_tag = GER
-				}
-				create_railway_gun = {
-					equipment = super_heavy_railway_gun_equipment_1
-					name = "Dora"
-				}
-			}
-			else = {
-				create_railway_gun = {
-					equipment = super_heavy_railway_gun_equipment_1
-				}
+			create_railway_gun = {
+				equipment = super_heavy_railway_gun_equipment_1
 			}
 		}
 	}
@@ -2107,28 +2088,6 @@ sp_land_large_caliber_kinetic_energy_sabot = {
 		# 		}
 		# 	}
 		# }
-		modifier = { #Forts are a very pressing issue for me
-			factor = 100
-			ROOT = {
-				original_tag = GER
-				any_enemy_country = {
-					OR = {
-						original_tag = CZE
-						original_tag = FRA
-					}
-					is_neighbor_of = ROOT
-					any_controlled_state = {
-						any_province_building_level = {
-							province = {
-								limit_to_border = yes
-							}
-							building = bunker
-							level > 4
-						}
-					}
-				}
-			}
-		}
 	}
 
 	allowed = {
