@@ -25,7 +25,7 @@ forming_category = {
 			custom_effect_tooltip = form_test_tt
 			hidden_effect = {
 				set_global_flag = form_test_flag
-				news_event = { id = news.59 hours = 6 }
+				news_event = { id = azarya_formables.1 hours = 6 }
 				set_country_flag = created_country
 			}
 		}

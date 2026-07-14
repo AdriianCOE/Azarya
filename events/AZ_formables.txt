@@ -1,0 +1,15 @@
+add_namespace = azarya_formables
+
+news_event = {
+	id = azarya_formables.1
+	title = azarya_formables.1.t
+	desc = azarya_formables.1.d
+	picture = GFX_news_event_generic_parliament
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = azarya_formables.1.a
+	}
+}
