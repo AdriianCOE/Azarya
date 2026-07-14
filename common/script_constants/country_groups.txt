@@ -1,0 +1,27 @@
+country_groups = {
+	schema = {
+		any_key = yes
+		array = country
+	}
+
+	# Vanilla definia aqui grupos de tags historicas reais (paises nordicos,
+	# Europa continental 1936, China/senhores da guerra chineses, mundo
+	# islamico) que nao existem no universo Azarya. Nenhum arquivo do mod
+	# referencia country_groups.*, entao os grupos ficam vazios (preservando
+	# o schema, caso algo genérico do motor consulte a existencia da chave)
+	# em vez de tags vanilla que disparam countrytag.cpp:135.
+	nordics = {
+	}
+
+	continental_europe_1936 = {
+	}
+
+	literally_china = {
+	}
+
+	chinese_warlords = {
+	}
+
+	islamic_world = {
+	}
+}

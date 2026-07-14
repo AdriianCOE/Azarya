@@ -359,3 +359,135 @@ Chave final ausente (`social_view_interface_window` nunca fechada antes de `firs
 ### Próximo passo (Round 5C)
 
 Testar: menu principal (logo, texto de versão, logo de dev trocado) → Continue → Singleplayer → THK → bookmark 1924 → Game Rules → campanha → Load Game → Options → sair. Testar em 1366×768 e 1920×1080. Preservar logs e `crashes/` mais recente.
+
+---
+
+## Rodada 5D (2026-07-14) — correção direta dos erros restantes
+
+*Mod já estável (menu animado ok, THK inicia, campanha avança, save funciona, sem crash). Objetivo: reduzir o `error.log` restante (`countrytag.cpp:135`, `INS_underground_revolution`, colisões de `text.log`, comandos navais descartados), sem tocar em assets nem nos itens explicitamente ignorados pelo usuário (portraits/flags ausentes, discrepância bitmap/província).*
+
+### Task 1 — `countrytag.cpp:135` (139 ocorrências, 114 tags distintas)
+
+**Achado arquitetural**: `common/doctrines` está inteiramente desativado (`common/doctrines.disabled/`, sem `replace_path`) — o jogo carrega `common/doctrines` 100% vanilla, explicando boa parte da cauda longa de tags (`SOV`, `USA`, `JAP`, `ITA`, `GER`, `ENG`, `FRA`, `FIN`, `SAF`, `NZL`, `INS`, `CAN`, `AST`, `SWE`, `PRC`, `POL`, `NOR`, `CHI`, `BEL`, `SIA`, `RAJ`, `BRM`). Existe uma versão autoral já pronta do Azarya para `infantry_subdoctrines.txt` dentro de `common/doctrines.disabled/`, mas desatualizada frente ao vanilla atual (796 vs 898 linhas — faltam blocos de balanceamento de patches posteriores). **Decisão**: não reativar `common/doctrines.disabled` inteiro nesta rodada (mudança grande demais, desatualizada) — fica documentado como pendência de decisão do usuário para uma rodada futura dedicada.
+
+Removidos ~110 linhas/blocos de resíduo vanilla puro (sem uso autoral, confirmado por 3 agentes de investigação independentes com cruzamento de achados) em 14 arquivos: `common/country_leader/00_traits.txt` (traits `defier_of_the_sun_god`, `PRC_zhang_guotao_in_kmt`, `austrian_exile` + 6 linhas em `imperial_sanction`), `common/technology_sharing/{00,01_dod,09_aat,14_tsr}_tech_sharing_groups.txt` (18 grupos inteiros: TUR, BUL, FIN, DEN, RAJ, CZE, HUN, SWE, ICE, MAN+PRC), `common/peace_conference/ai_peace/00_misc.txt` (GER em `puppet_their_puppets`), `common/scorers/country/operative_mission_scorer.txt` (GER em scorer dummy/exemplo), `common/ai_equipment/generic_naval.txt` (ENG/USA/JAP), `common/special_projects/projects/{land,naval,rocket}_projects.txt` (blocos GER "Dora"/fortificação, ITA "CB Class", JAP×5, GER/USA/SOV em recompensas), `common/technologies/{artillery,infantry}.txt` (PRC/XSM/SIK/GXC/SHX/YUN, mantendo `tag = UPG`), `common/technologies/industry.txt` (bloco `on_research_complete` órfão referenciando FIN/Nokia).
+
+Em todos os casos: preservado tudo que tinha uso autoral genuíno (tags reais do Azarya como UPG/THK/GYE/SLU/LUQ/NSA/SIT nunca tocadas); removido só o vanilla puro sem função no universo Azarya. **Casos documentados, não removidos** (incerteza real ou fora de escopo): `technologies/infantry.txt` linha ~890 `tag = BRA` misturado em bloco autoral (pode ser resíduo vanilla ou erro de digitação de outra tag Azarya iniciada com B — não dá pra saber sem confirmação); `country_leader/00_traits.txt` `tag = SOU` (nem é tag vanilla válida hoje, não gera erro atualmente); `common/dynamic_modifiers/HABSBURG_dynamic_modifiers.txt` (idêntico ao vanilla, mas sem referência literal de tag, nunca usado — resíduo morto fora do escopo desta limpeza específica); pasta duplicada `common/organizations/` (não é um caminho reconhecido pelo motor, nunca carregada, lixo de repo inofensivo); `common/scripted_diplomatic_actions/` e `common/scripted_triggers/diplomacy_scripted_triggers.txt` (referências de tag 100% dentro de comentários, inertes); `common/scripted_effects/SP_scripted_effects.txt:486-490` (stub `original_tag = USA` deliberado e documentado pelo próprio autor como no-op de compatibilidade — gera 1 linha de log mas é intencional).
+
+**Achado extra durante a verificação de chaves**: `common/technologies/infantry.txt` tinha um bug estrutural pré-existente (não relacionado a esta rodada, confirmado via bisseção de profundidade de chaves) — um bloco de tecnologia perdeu sua linha de cabeçalho em algum momento anterior (só sobrou um comentário órfão citando `HUN_light_infantry_divisions_doctrine_effect`, sem nenhuma outra referência no mod), deixando `research_cost`/`allow`/`infantry` soltos com uma chave de fechamento sem abertura correspondente. Isso fechava o `technologies = {` do arquivo prematuramente na linha 1370, desalinhando ~48 tecnologias subsequentes (support_weapons, tech_trucks, motorised_infantry, armored_car*, mechanised_infantry etc.) para fora do bloco esperado — sem gerar erro no log (o parser do HOI4 não acusa), mas potencialmente quebrando o registro dessas tecnologias silenciosamente. Como o bloco órfão não tinha ID (portanto já era inacessível/inútil independente do bug de chaves), removido para restaurar o aninhamento correto. Vale testar a árvore de tecnologia de infantaria em jogo para confirmar que essas techs agora aparecem corretamente.
+
+### Task 2 — `INS_underground_revolution`
+
+`common/doctrines/subdoctrines/land/infantry_subdoctrines.txt` não tinha override ativo (100% vanilla, 898 linhas). O `if/else` de `peoples_war.available` sempre cai no `if` (`NOT = { original_tag = INS }` sempre verdadeiro no universo Azarya), tornando o `else` (com `INS_underground_revolution`) logicamente inatingível — mas o HOI4 valida os dois ramos no load mesmo assim. **Fix**: criado override do mod (vanilla atual + `available = { has_government = communism }`, sem `if/else`) — texto idêntico ao que o próprio autor já usava na versão desativada do arquivo, confirmando que é a correção pretendida. Também removida uma referência residual a `original_tag = PRC` num `ai_will_do.modifier` da mesma subdoctrine (achado ao copiar o vanilla atual, não estava na versão desativada do autor porque ela é mais antiga). `descriptor.mod`/`Azarya.mod` ganharam `replace_path="common/doctrines/subdoctrines/land"` (mínimo necessário).
+
+### Task 3 — Colisões internas de localisation
+
+Analisado `logs/text.log` (1744 linhas "Duplicate localization found"). 872 das colisões são overrides intencionais vanilla-vs-Azarya (não mexidas). Só 2 colisões genuínas — mesma chave duplicada dentro do mesmo arquivo Azarya —, ambas em `localisation/AZ_victory_points_l_english.yml`: `VICTORY_POINTS_759` (`"Fuembellope"` órfã vs `"Vorraketh"` com lastro real em `history/states/465-Kence.txt`) e `VICTORY_POINTS_7806` (`"Noviomagus"` órfã vs `"Steinwacht"` com lastro real em `history/states/363-State_363.txt`). Removidas as 2 entradas órfãs (sem correspondência a nenhuma província real no mod); não foi tentado realocar os nomes para outros IDs sem dono (3185/4677/2494 em GYE) por falta de confirmação.
+
+### Task 4 — `naval_mission_move_command` descartado
+
+5 ocorrências, todas nos primeiros dias de campanha, `tick: 65535` (sentinela de tick inválido, mensagem genérica de engine sem referência a arquivo/linha de mod). Base naval do THK verificada e correta (província 4744, nível 5, estado 382 "Eldoria", owner THK). Sem causa concreta encontrada — documentado como aviso de baixo risco, sem alteração de código.
+
+### Task 5 — Ocultar "Change Background"
+
+Já satisfeito: o container `change_background` em `interface/frontendmainview.gui` já tinha `hide = yes` (adicionado junto da implementação do fundo animado responsivo de 20 faixas, fora desta sessão) — diferente do vanilla atual, que não oculta esse botão. Nenhuma edição necessária.
+
+### Validação final
+
+`tools/validate_mod.py`: 3 ERROR (os 3 DDS conhecidos, inalterados), 76 WARNING (mesma baseline, nenhum novo), 0 divergência de manifesto, 0 desbalanceamento de chaves, 0 building fora de state / província duplicada, 0 foco/evento duplicado. Confirmado manualmente que todos os arquivos tocados têm chaves `{`/`}` balanceadas (contagem exata, incluindo o fix do bug estrutural pré-existente em `infantry.txt`). Nenhum `*.dds/png/tga`, `gfx/flags/`, `gfx/leaders/`, `map/` tocado. `AZ_animated_frontendmainviewbg.gfx` e `AZ_frontend_brand.gfx` confirmados intactos (timestamps anteriores a esta sessão). Sem commit/push.
+
+### Pendências para rodadas futuras
+
+- Decidir se vale a pena atualizar e reativar `common/doctrines.disabled` por completo (reduziria bastante o restante de `countrytag.cpp:135`, mas precisa antes reconciliar com os blocos de balanceamento adicionados pelo vanilla em patches posteriores).
+- Confirmar `tag = BRA` em `technologies/infantry.txt` (resíduo vanilla ou erro de digitação de outra tag Azarya com B).
+- Testar em jogo a árvore de tecnologia de infantaria (o fix do bug estrutural pode ter "destravado" tecnologias que antes podiam não estar registrando corretamente).
+- `common/organizations/` (pasta duplicada não carregada pelo motor) pode ser removida como limpeza de repositório, sem urgência.
+
+---
+
+## Diagnóstico e correção — oceano chapado/branco no fundo do menu (2026-07-14)
+
+*Usuário reportou oceanos renderizando como cor chapada (teal) e uma "bolha branca" no meio do mapa de fundo do menu.*
+
+**Causa confirmada**: `replace_path="map"` no manifesto bloqueava fallback pro vanilla, e `map/terrain/` do mod só tinha 5 dos ~64 arquivos vanilla (faltavam `atlas*`/`atlas_normal*` — detalhe de textura —, `fow_noise_*`/`fow_rgb_waterspec_a` — fog-of-war/nuvem/especular —, `underwater_terrain_*`, bordas, neve, lama etc.). Sem essas camadas o shader cai pra cor lisa da `colormap_water_*` (única camada presente) — exatamente o oceano chapado — e a falta de `fow_noise_*` explica a bolha branca. Segunda causa, independente, confirmada via dica de outro modder no Discord: `common/terrain/00_terrain.txt` (arquivo próprio do Azarya) tinha o bloco `ocean` e outras categorias de água (`water_fjords`, `water_shallow_sea`, `water_deep_ocean`) sem `minimum_seazone_dominance` (e `ocean` também sem `naval_terrain`/`naval_mine_hit_chance`) — chaves presentes no vanilla, relevantes pra dominância naval/zona de mar.
+
+**Fix aplicado**:
+1. Copiadas as 59 texturas `.dds`/`.bmp` que faltavam em `map/terrain/` a partir do vanilla instalado (confirmado byte-a-byte idênticas ao original, nenhuma nova arte criada — só restauração de assets genéricos do motor).
+2. Adicionadas as chaves faltantes em `common/terrain/00_terrain.txt`: `minimum_seazone_dominance` (250/100/100/250 em `ocean`/`water_fjords`/`water_shallow_sea`/`water_deep_ocean`) e `naval_terrain`/`naval_mine_hit_chance` em `ocean`, todos com os valores do vanilla. Não mexido o `naval_mine_hit_chance = -0.5` que `water_deep_ocean` já tinha (vanilla usa -0.95, mas isso parece ajuste de balanceamento autoral do Azarya, não bug).
+
+Testar visualmente o mapa de fundo do menu pra confirmar que o oceano voltou a ter profundidade/sombreamento normal.
+
+---
+
+## Rodada 5E (2026-07-14) — menu principal e Select Scenario mais autorais
+
+*Menu principal funcionando mas parecendo "vanilla com overlay"; tela de Select Scenario sem override, rodando 100% vanilla, mostrando 2 bookmarks quase idênticos (1924 principal + 1925 rascunho de teste). Objetivo: dar identidade visual própria a essas 2 telas sem tocar em imagem nenhuma.*
+
+### `common/bookmarks/1925.txt` → `1925.txt.disabled`
+
+Bookmark de teste desativado (mesmo padrão `.disabled` do resto do mod, 100% reversível). Tinha nome/descrição idênticos ao 1924 e só 2 países-placeholder — resolvia a "duplicidade de cenários" na raiz, sem precisar de lógica de GUI pra filtrar cards (HOI4 não tem flag nativa de visibilidade por bookmark).
+
+### `interface/frontendmainview.gui` (editado)
+
+- `azarya_version_label`/`azarya_compatible_game_label` aproximadas do logo (de y=220/240 pra y=170/192).
+- Nova `azarya_tagline_label` (chave `AZ_MENU_TAGLINE`, nova, em `AZ_version_l_english.yml`): *"A world scarred by disaster, now marching toward war."*
+- Removido `version_label` hardcoded "ALPHA" (duplicava/conflitava com a label de versão real).
+- Removido `mainmenu_achievement_button` — um segundo botão de achievements órfão, marcado pelo próprio autor com `## This position needs updated` e posicionado em x=-500 (fora dos limites do próprio container pai), duplicando o `achievements_button` que já funciona.
+- `exit_button` ajustado de y=300 pra y=298 (ritmo de 40px exato com os outros botões).
+- `nudge_button` mantido (a pedido do usuário — botão de debug/teste), só confirmado no ritmo correto.
+- `pdx_int_logo` (topo-direita) afastado 15px do `frontend_dev_logo` (x=135→150) pra dar mais respiro.
+- Fundo animado e `change_background` (`hide=yes`) não tocados.
+
+### `interface/frontendgamesetupview.gui` (criado, override novo)
+
+Base = cópia integral do vanilla atual (2318 linhas). Único container editado: `gamesetup_scenario_window` (o popup "Select Scenario"). Janela de 579×512 pra 760×580, fundo trocado de `GFX_select_date_bg` (spriteType simples, distorceria ao esticar) pra `GFX_tiled_window2_1b_border` (corneredTileSpriteType do vanilla `core.gfx`, escalável, já usado em outras telas do próprio Azarya). O card do bookmark (`bookmarks_grid`/`bookmark_entry`, 232×211) mantido no tamanho nativo, só reposicionado pra coluna esquerda — como só sobrou 1 bookmark ativo, a grid já mostra 1 card só, sem precisar de filtro manual.
+
+Coluna esquerda: card do cenário + nova seção "Recommended Nations" (texto puro, sem bandeira — não existe mecanismo confirmado de bandeira estática fora do binding dinâmico de grid): `THK — Thiryn Kingdom`, `CZL — Czar of Lesc`, `TOL — Torronese`, `ARD — Aeridor` (tags confirmadas válidas, nomes de `AZ_countries_l_english.yml` + os 2 primeiros conforme o próprio texto do pedido do usuário).
+
+Coluna direita: `bookmark_title`/`bookmark_desc` com `maxWidth`/`maxHeight` bem maiores (reaproveita `NEW_AZARYA_DESC`, que agora cabe inteiro sem cortar) + nova seção "resumo do cenário" (`AZ_SCENARIO_SUMMARY_TITLE` + 5 tags: Fractured Alliances, Militarizing Nations, Regional Conflicts, 57 Countries, 506 States — contagens conferidas diretamente em `history/countries/`=57 e `history/states/`=506, batem com o pedido). `back_button`/`select_button` mantidos com os mesmos nomes internos, sons e atalhos (`ESCAPE`/`RETURN`), só reposicionados.
+
+Novas chaves de loc em `localisation/AZ_bookmarks_l_english.yml`: `AZ_SCENARIO_SUMMARY_TITLE`, `AZ_SCENARIO_TAG_1..5`, `AZ_RECOMMENDED_NATIONS_TITLE`, `AZ_RECOMMENDED_NATION_1..4`.
+
+`gamesetup_interesting_countries_window` (seletor de país) não foi tocado — já tinha branding correto confirmado na Rodada 5C.
+
+### Validação
+
+`tools/validate_mod.py`: 3 ERROR (mesmos DDS conhecidos), 76 WARNING (baseline inalterada), 0 divergência de manifesto, 0 desbalanceamento de chaves. Chaves balanceadas conferidas manualmente nos 2 `.gui` (287/287 no `frontendmainview.gui`, 681/681 no `frontendgamesetupview.gui` novo). Nenhum `*.dds/png/tga` criado ou editado nesta rodada, `map/` não tocado. `AZ_animated_frontendmainviewbg.gfx`, `AZ_frontend_brand.gfx`, `AZ_Bookmark.gfx` confirmados intactos (timestamps anteriores à sessão). Sem commit/push.
+
+### Correção pós-teste: `version_label` e fonte inválida (mesmo dia)
+
+Testando em jogo, o `error.log` mostrou 2912 ocorrências (92% do log) de `[containerwindow.cpp:787] Could not find "version_label" in window mainmenu_panel_bottom` — o motor consulta esse elemento pelo nome continuamente (provavelmente alguma rotina de subscription/versão), mesmo que ele não precisasse ser exibido. Remover o elemento inteiro (em vez de só ocultá-lo) foi o erro. **Fix**: `version_label` restaurado em `frontendmainview.gui`, agora com `hide = yes` — existe pro motor encontrar, mas não mostra mais o texto "ALPHA" que conflitava com a label de versão real.
+
+Também apareceu `[graphics.cpp:1280] No font with name hoi_14b` — a fonte usada na nova `azarya_tagline_label` não existe no HOI4 (fontes válidas seguem o padrão `hoi_16`/`hoi_18`/`hoi_16mbs`/`hoi_18mbs` etc., confirmado em `core.gfx` do vanilla). **Fix**: trocada para `hoi_16mbs` (mesma família das outras labels do canto superior esquerdo).
+
+Conferido também: as novas chaves de localisation desta rodada (`AZ_MENU_TAGLINE`, `AZ_SCENARIO_*`, `AZ_RECOMMENDED_NATION*`) não aparecem em nenhuma linha de `text.log` — zero colisão introduzida por elas. A única remoção órfã que não gerou o mesmo tipo de erro foi o `mainmenu_achievement_button` (confirmado — nenhum "Could not find" relacionado a ele no log).
+
+---
+
+## Fechamento de `countrytag.cpp:135` — `common/script_constants` e resto de `common/doctrines` (2026-07-14)
+
+*Pedido do usuário: corrigir tudo no `error.log` que ele não pediu explicitamente pra ignorar. Log inicial testado veio contaminado por outro mod instalado (`Code Geass: Black Requiem`, `ugc_3759973824.mod`) — 91,8% dos erros eram desse mod (arquivos `imperial_*`/`empire_ideas.txt`/etc. que nem existem na pasta do Azarya). Usuário desativou o Code Geass e reenviou log limpo.*
+
+### Log limpo: só 2 categorias acionáveis
+
+`missing_country_tag` (137 ocorrências, 112 tags únicos, 54,8% do log) e o resto já coberto pela lista de itens ignorados (portraits/flags ausentes). Nenhuma outra categoria de erro real sobrou.
+
+### Causa raiz principal: `common/script_constants/country_groups.txt`
+
+Pasta **não é `replace_path`'d** — carregava 100% vanilla. Esse arquivo define grupos nomeados de tags (`nordics`, `continental_europe_1936`, `literally_china`, `chinese_warlords`, `islamic_world`) usados por `country_groups.X` em triggers/efeitos — mas nenhum arquivo do Azarya referencia `country_groups.*` em lugar nenhum (confirmado por grep). Sozinho, esse arquivo explicava **110 das 112 tags únicas** do log (praticamente todo o Oriente Médio, Ásia Central, Bálcãs, senhores da guerra chineses, países nórdicos e a Europa continental de 1936 vanilla). **Fix**: criado override do mod com o mesmo schema e nomes de grupo, mas arrays vazios (sem inventar conteúdo, já que nada usa esses grupos).
+
+### Causa secundária: resto de `common/doctrines` não coberto na Rodada 5D
+
+As 2 tags restantes (`JAP`, `SOV`) vinham dos 8 arquivos de subdoctrine aéreas/navais que a Rodada 5D não tinha coberto (só `subdoctrines/land` tinha sido tratado): `subdoctrines/air/{air_fighter,air_heavy,air_medium,air_strike}_aircraft_subdoctrines.txt` e `subdoctrines/sea/navy_{capital,carrier,screen,submarine}_subdoctrines.txt`. Removidas ~25 referências a ENG/USA/JAP/ITA/SOV/FRA/GER/AST/CAN/NZL/SAF (todas vanilla puro, sem uso autoral, mesmo padrão de "modifier de peso de IA isolado" das rodadas anteriores) em todos os 8 arquivos, preservando o resto de cada subdoctrine. `grand_doctrines`, `tracks` e `folders` de doctrines foram checados e não têm nenhuma referência de tag — não precisaram de override.
+
+**Achado extra**: `common/doctrines/subdoctrines/sea/navy_submarine_doctrines.txt` **vanilla** tem um bug estrutural próprio da Paradox — o último subdoctrine (`long_range_submarines`) nunca fecha (falta 1 `}` no final do arquivo original, 110 abre vs 109 fecha). Corrigido ao criar o override (chave de fechamento adicionada no final).
+
+`descriptor.mod`/`Azarya.mod` ganharam `replace_path="common/doctrines/subdoctrines/air"` e `="common/doctrines/subdoctrines/sea"`.
+
+### Validação
+
+`tools/validate_mod.py`: 3 ERROR (DDS conhecidos), 76 WARNING (baseline inalterada), 0 divergência de manifesto, 0 desbalanceamento de chaves. Conferido manualmente: as 112 tags únicas do log batem exatamente com 110 (country_groups.txt) + 2 (JAP/SOV nos 8 arquivos de doctrine) — cobertura total confirmada por diff de conjuntos, não achismo.
+
+### Pendência restante
+
+`common/doctrines.disabled` (grand_doctrines, tracks, folders — versão autoral completa) continua sem decisão de reativação (mesma pendência da Rodada 5D). `common/script_constants/state_groups.txt` (vanilla, não sobrescrito) referencia IDs de estado que provavelmente não existem no mapa do Azarya, mas não gerou nenhum erro no log atual — não mexido, documentado como possível ponto de atenção futuro se aparecer algum erro relacionado a estados.

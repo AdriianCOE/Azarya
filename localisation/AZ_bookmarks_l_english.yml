@@ -23,4 +23,17 @@ SLU_AZARYA_DESC:0 "£country_view_map_SLU\nThe Sollarium Empire claims divine ma
 #SVD
 SVD_AZARYA_DESC:0 "£country_view_map_SRV\nThe Merchant Republic of Serenvioled is a thriving coastal power, where trade guilds hold more sway than generals. Its wealth flows through silk-lined contracts and quiet influence, not battlefield conquest. \n\nBut as global tensions rise, the republic must decide: will it cling to neutrality—or leverage its riches to shape the new world order?"
 
+#Azarya - tela de selecao de cenario (resumo do mundo / nacoes recomendadas)
+AZ_SCENARIO_SUMMARY_TITLE:0 "The World in 1924"
+AZ_SCENARIO_TAG_1:0 "• Fractured Alliances"
+AZ_SCENARIO_TAG_2:0 "• Militarizing Nations"
+AZ_SCENARIO_TAG_3:0 "• Regional Conflicts"
+AZ_SCENARIO_TAG_4:0 "• 57 Countries"
+AZ_SCENARIO_TAG_5:0 "• 506 States"
+AZ_RECOMMENDED_NATIONS_TITLE:0 "Recommended Nations"
+AZ_RECOMMENDED_NATION_1:0 "THK — Thiryn Kingdom"
+AZ_RECOMMENDED_NATION_2:0 "CZL — Czar of Lesc"
+AZ_RECOMMENDED_NATION_3:0 "TOL — Torronese"
+AZ_RECOMMENDED_NATION_4:0 "ARD — Aeridor"
+
 
