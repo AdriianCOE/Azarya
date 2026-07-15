@@ -23,6 +23,10 @@ SLU_AZARYA_DESC:0 "£country_view_map_SLU\nThe Sollarium Empire claims divine ma
 #SVD
 SVD_AZARYA_DESC:0 "£country_view_map_SRV\nThe Merchant Republic of Serenvioled is a thriving coastal power, where trade guilds hold more sway than generals. Its wealth flows through silk-lined contracts and quiet influence, not battlefield conquest. \n\nBut as global tensions rise, the republic must decide: will it cling to neutrality—or leverage its riches to shape the new world order?"
 
+#Azarya - segundo bookmark (1925.txt), foco no Czariado de Lesc
+AZ_STORM_HORIZON_NAME:0 "Storm on the Horizon"
+AZ_STORM_HORIZON_DESC:0 "Half a year has passed since the world first held its breath. In the Czariado de Lesc, the unrest that once simmered in the northern provinces has hardened into open defiance of the Czar's rule, and neighboring courts watch closely to see whether the old order will bend or break. Elsewhere, the same fault lines that cracked in 1924 have only widened: armies drill, factories hum through the night, and the charismatic voices that once merely challenged power now vie to seize it outright. The storm that was gathering has begun to break — and every nation must choose how to weather it."
+
 #Azarya - tela de selecao de cenario (resumo do mundo / nacoes recomendadas)
 AZ_SCENARIO_SUMMARY_TITLE:0 "The World in 1924"
 AZ_SCENARIO_TAG_1:0 "• Fractured Alliances"

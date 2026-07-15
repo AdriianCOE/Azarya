@@ -1,0 +1,23 @@
+add_namespace = az_info
+
+# Popup de boas-vindas compacto (Fase 6): so contexto rapido + 2 botoes.
+# O conteudo completo (Visao Geral, Sua Nacao, Atlas, Cronicas) fica no
+# Arquivo de Azarya, aberto por um dos botoes ou pelo botao no topbar.
+news_event = {
+	id = az_info.1
+	title = az_info.1.t
+	desc = az_info.1.d
+	picture = GFX_news_event_generic_parliament
+
+	hidden = yes
+	is_triggered_only = yes
+
+	option = { # Abrir Arquivo de Azarya
+		name = az_info.1.a
+		set_variable = { az_info_open_target_page = 2 } # abre direto em "Sua Nacao"
+		az_info_tab_open = yes
+	}
+	option = { # Comecar a campanha
+		name = az_info.1.b
+	}
+}

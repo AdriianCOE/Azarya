@@ -124,13 +124,19 @@ guiTypes = {
 	}
 
 	### country entry
+	# TESTE TEMPORARIO: portado de forma quase literal do frontendgamesetupview.gui
+	# do Youjo Senki | Redux (mesma tecnica que eles usam pra esconder o retrato
+	# do lider no card - empurrado pra y=2200, "yeet it out of the window" - em
+	# vez de remover o elemento). GFX_country_selection_entry continua apontando
+	# pra nossa propria arte (interface/AZ_country_selection.gfx), so as posicoes
+	# dos elementos dentro do card sao deles. E pra comparar/testar, nao definitivo.
 	containerWindowType = {
 		name = "country_entry"
 
 		buttonType = {
 			name = "country_leader"
 			quadTextureSprite ="GFX_leader_unknown"
-			position = { x = 17 y = 22 }
+			position = { x = 17 y = 2200 } #yeet it out of the window
 			scale=0.75
 			clicksound = click_checkbox
 		}
@@ -146,14 +152,20 @@ guiTypes = {
 		buttonType = {
 			name = "country"
 			quadTextureSprite = "GFX_country_selection_entry"
-			position = { x=0 y =0 }
+			position = { x=-1 y =165 }
 			clicksound = click_checkbox
 		}
 
 		iconType = {
+			# GFX_unplayed_content_notification nao existe nessa versao/config
+			# do jogo ("Could not find sprite type" no log - era a "imagem
+			# bugada" na selecao de pais). Elemento precisa existir por nome
+			# (senao volta o erro "Could not find 'new_content'"), mas fica
+			# escondido em vez de apontar pra um sprite que nao resolve.
 			name = "new_content"
 			position = { x = 110 y = 180 }
-			spriteType = "GFX_unplayed_content_notification"
+			spriteType = "GFX_shield_medium"
+			hide = yes
 			alwaystransparent = yes
 		}
 
@@ -189,13 +201,6 @@ guiTypes = {
 			position = { x=0 y =0 }
 			clicksound = click_checkbox
 		}
-
-		iconType = {
-			name = "new_content"
-			position = { x = 100 y = 15 }
-			spriteType = "GFX_unplayed_content_notification"
-			alwaystransparent = yes
-		}
 	}
 
 	### country entry
@@ -216,30 +221,8 @@ guiTypes = {
 			position = { x=0 y =0 }
 			clicksound = click_checkbox
 		}
-
-		iconType = {
-			name = "new_content"
-			position = { x = 42 y = 0 }
-			spriteType = "GFX_unplayed_content_notification"
-			alwaystransparent = yes
-		}
 	}
 
-	### country filter
-	containerWindowType = {
-		name = "country_filter"
-		size = { width = 149 height = 33 }
-
-		buttonType = {
-			name = "button"
-			quadTextureSprite = "GFX_country_filter_entry"
-			buttonText = "FILTER"
-			buttonFont = "hoi_16mbs"
-			clicksound = click_default
-			oversound = ui_menu_over
-			frame = 2
-		}
-	}
 
 	### LOAD GAME
 	containerWindowType = {
@@ -537,15 +520,9 @@ guiTypes = {
 		}
 	}
 
-	# Azarya: janela de selecao de cenario redesenhada como uma "entrada de campanha"
-	# unica (o mod tem hoje um so cenario real, 1924 "Era of New Azarya"). Fundo trocado
-	# para um sprite escalavel (GFX_tiled_window2_1b_border, corneredTileSpriteType,
-	# ja usado em outras telas do proprio Azarya) em vez do GFX_select_date_bg vanilla,
-	# que e um spriteType simples e distorceria ao ser esticado. O card do bookmark
-	# (bookmarks_grid/bookmark_entry) continua no tamanho nativo, sem distorcer.
 	containerWindowType = {
 		name ="gamesetup_scenario_window"
-		size = { width = 760 height = 580 }
+		size = { width = 579 height = 512 }
 		clipping = no
 		orientation = center
 		origo = center
@@ -553,7 +530,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "title"
-			position = { x = 210 y = 18 }
+			position = { x = 120 y = 14 }
 			textureFile = ""
 			font = "hoi_20b"
 			borderSize = {x = 0 y = 0}
@@ -565,168 +542,53 @@ guiTypes = {
 
 		background = {
 			name = "single_player_date_bg"
-			quadTextureSprite ="GFX_tiled_window2_1b_border"
+			quadTextureSprite ="GFX_select_date_bg"
 		}
 
-		# Coluna esquerda: card do cenario (unico, ja que so ha 1 bookmark ativo)
 		containerWindowType = {
 			name ="bookmarks"
-			position = { x = 40 y = 90 }
-			size = { width = 280 height = 230}
-
+			position = { x = 170 y = 55 }
+			size = { width = -10 height = 120}
 			gridboxType = {
 				name ="bookmarks_grid"
 				position = { x = 0 y = 0 }
 				size = { width = 100%% height = 100%% }
-				slotsize = { width = 260 height = 0 }
+				slotsize = { width = 9999999 height = 0 }
 				add_horizontal = yes
 				max_slots_vertical = 1
 				format = "UPPER_LEFT"
 			}
 		}
 
-		# Coluna esquerda: Recommended Nations (texto, sem icone de bandeira)
 		instantTextBoxType = {
-			name = "azarya_recommended_title"
-			position = { x = 40 y = 340 }
-			font = "hoi_18b"
+			name = "history_title"
+			position = { x = 114 y = 274 }
+			font = "hoi_20b"
 			borderSize = {x = 0 y = 0}
-			text = "AZ_RECOMMENDED_NATIONS_TITLE"
-			maxWidth = 280
-			maxHeight = 24
-			format = left
+			text = "BM_HISTORY_TITLE"
+			maxWidth = 340
+			maxHeight = 30
+			format = centre
 		}
 
-		instantTextBoxType = {
-			name = "azarya_recommended_nation_1"
-			position = { x = 40 y = 370 }
-			font = "hoi4_typewriter16"
-			borderSize = {x = 0 y = 0}
-			text = "AZ_RECOMMENDED_NATION_1"
-			maxWidth = 280
-			maxHeight = 20
-			format = left
-		}
-
-		instantTextBoxType = {
-			name = "azarya_recommended_nation_2"
-			position = { x = 40 y = 392 }
-			font = "hoi4_typewriter16"
-			borderSize = {x = 0 y = 0}
-			text = "AZ_RECOMMENDED_NATION_2"
-			maxWidth = 280
-			maxHeight = 20
-			format = left
-		}
-
-		instantTextBoxType = {
-			name = "azarya_recommended_nation_3"
-			position = { x = 40 y = 414 }
-			font = "hoi4_typewriter16"
-			borderSize = {x = 0 y = 0}
-			text = "AZ_RECOMMENDED_NATION_3"
-			maxWidth = 280
-			maxHeight = 20
-			format = left
-		}
-
-		instantTextBoxType = {
-			name = "azarya_recommended_nation_4"
-			position = { x = 40 y = 436 }
-			font = "hoi4_typewriter16"
-			borderSize = {x = 0 y = 0}
-			text = "AZ_RECOMMENDED_NATION_4"
-			maxWidth = 280
-			maxHeight = 20
-			format = left
-		}
-
-		# Coluna direita: titulo e descricao do cenario
 		instantTextBoxType = {
 			name = "bookmark_title"
-			position = { x = 350 y = 90 }
+			position = { x = 120 y = 305 }
 			font = "hoi4_typewriter22"
 			borderSize = {x = 0 y = 0}
-			maxWidth = 370
+			maxWidth = 340
 			maxHeight = 30
-			format = left
+			format = center
 		}
 
 		instantTextBoxType = {
 			name = "bookmark_desc"
-			position = { x = 350 y = 128 }
+			position = { x = 18 y = 330 }
 			font = "hoi4_typewriter16"
 			borderSize = {x = 0 y = 0}
-			maxWidth = 370
-			maxHeight = 200
-			format = left
-		}
-
-		# Coluna direita: resumo do cenario
-		instantTextBoxType = {
-			name = "azarya_scenario_summary_title"
-			position = { x = 350 y = 345 }
-			font = "hoi_18b"
-			borderSize = {x = 0 y = 0}
-			text = "AZ_SCENARIO_SUMMARY_TITLE"
-			maxWidth = 370
-			maxHeight = 24
-			format = left
-		}
-
-		instantTextBoxType = {
-			name = "azarya_scenario_tag_1"
-			position = { x = 350 y = 373 }
-			font = "hoi4_typewriter16"
-			borderSize = {x = 0 y = 0}
-			text = "AZ_SCENARIO_TAG_1"
-			maxWidth = 370
-			maxHeight = 20
-			format = left
-		}
-
-		instantTextBoxType = {
-			name = "azarya_scenario_tag_2"
-			position = { x = 350 y = 393 }
-			font = "hoi4_typewriter16"
-			borderSize = {x = 0 y = 0}
-			text = "AZ_SCENARIO_TAG_2"
-			maxWidth = 370
-			maxHeight = 20
-			format = left
-		}
-
-		instantTextBoxType = {
-			name = "azarya_scenario_tag_3"
-			position = { x = 350 y = 413 }
-			font = "hoi4_typewriter16"
-			borderSize = {x = 0 y = 0}
-			text = "AZ_SCENARIO_TAG_3"
-			maxWidth = 370
-			maxHeight = 20
-			format = left
-		}
-
-		instantTextBoxType = {
-			name = "azarya_scenario_tag_4"
-			position = { x = 350 y = 433 }
-			font = "hoi4_typewriter16"
-			borderSize = {x = 0 y = 0}
-			text = "AZ_SCENARIO_TAG_4"
-			maxWidth = 370
-			maxHeight = 20
-			format = left
-		}
-
-		instantTextBoxType = {
-			name = "azarya_scenario_tag_5"
-			position = { x = 350 y = 453 }
-			font = "hoi4_typewriter16"
-			borderSize = {x = 0 y = 0}
-			text = "AZ_SCENARIO_TAG_5"
-			maxWidth = 370
-			maxHeight = 20
-			format = left
+			maxWidth = 540
+			maxHeight = 30
+			format = center
 		}
 
 		ButtonType = {
@@ -761,10 +623,16 @@ guiTypes = {
 		origo = center
 		clipping = no
 		moveable = yes
+		# TESTE TEMPORARIO: layout portado quase literal do frontendgamesetupview.gui
+		# do Youjo Senki | Redux, pra ver como as informacoes encaixam no nosso
+		# proprio country_selection_bg.dds. GFX_country_selection_bg continua
+		# apontando pra nossa arte (interface/AZ_country_selection.gfx) - so as
+		# posicoes dos elementos dentro da janela sao deles, nao definitivo.
+		position = { x = 0 y = 168 }
 
 		instantTextBoxType = {
 			name = "title"
-			position = { x = 435 y = 12 }
+			position = { x = 435 y = -336 }
 			textureFile = ""
 			font = "hoi_24header"
 			borderSize = {x = 0 y = 0}
@@ -777,11 +645,12 @@ guiTypes = {
 		background = {
 			name = "single_player_country_bg"
 			quadTextureSprite ="GFX_country_selection_bg"
+			position = { x = 0 y = -346 }
 		}
 
 		ButtonType = {
 			name = "back_button"
-			position = { x = -158 y = -42 }
+			position = { x = -158 y = -52 }
 			quadTextureSprite ="GFX_button_148x34"
 			buttonText = "BACK"
 			buttonFont = "hoi_18mbs"
@@ -793,7 +662,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "select_button"
-			position = { x = 10 y = -42 }
+			position = { x = 10 y = -52 }
 			quadTextureSprite ="GFX_button_148x34"
 			buttonText = "FE_SELECT_COUNTRY"
 			buttonFont = "hoi_18mbs"
@@ -805,7 +674,7 @@ guiTypes = {
 
 		containerWindowType = {
 			name ="countries"
-			position = { x = 15 y = 41 }
+			position = { x = 15 y = 148 }
 			size = { width = -15 height = 120}
 
 			gridboxType = {
@@ -820,17 +689,15 @@ guiTypes = {
 
 		}
 
-		OverlappingElementsBoxType = {
-			name = "filters"
-			position = { x = 22 y = 321 }
-			size = { x = 1181 y = 32 }
-			format = center
-			spacing = 14.0
-		}
+		# Removido: a caixa de filtros ("filters") do Youjo Senki depende de um
+		# template "country_filter" que eles definem em outro arquivo que a
+		# gente nao tem - sem ele o motor loga "Undefined GUI_TYPE: country_filter"
+		# repetidamente (risco de crash). Como nao usamos filtro por categoria
+		# nessa tela, o elemento foi removido em vez de portado.
 
 		containerWindowType = {
 			name ="countries_medium"
-			position = { x = 15 y = 352 }
+			position = { x = 15 y = -3300 } #yeet
 			size = { width = -15 height = 120}
 
 			gridboxType = {
@@ -839,7 +706,6 @@ guiTypes = {
 				size = { width = 100% height = 100% }
 				slotsize = { width = 150 height = 0 }
 				add_horizontal = yes
-				max_slots_horizontal = 8
 				max_slots_vertical = 1
 				format = "UPPER_LEFT"
 			}
@@ -847,9 +713,8 @@ guiTypes = {
 
 		containerWindowType = {
 			name ="countries_mini"
-			position = { x = 11 y = 360 }
-			size = { width = -15 height = 80}
-			
+			position = { x = 11 y = 338 }
+			size = { width = -15 height = 120}
 
 			gridboxType = {
 				name ="countries_grid"
@@ -865,7 +730,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "info_title"
-			position = { x = 10 y = 462 }
+			position = { x = 820 y = 450 }
 			font = "hoi4_typewriter22"
 			borderSize = {x = 0 y = 0}
 			text = "FE_COUNTRY_INFO_TITLE"
@@ -876,7 +741,7 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "info"
-			position = { x = 35 y = 497 }
+			position = { x = 810 y = 485 }
 
 			instantTextBoxType = {
 				name = "leader_label"
@@ -977,24 +842,24 @@ guiTypes = {
 				format = left
 			}
 		}
-		
+
 		iconType = {
 			name = "minor_country_leader"
 			quadTextureSprite ="GFX_leader_unknown"
-			position = { x = 289 y = 457 }
+			position = { x = 1089 y = 441 }
 			scale=0.696
 			rotation=-0.04
 		}
 
 		iconType = {
-			name ="minor_portrait_overlay"
-			spriteType = "GFX_minor_portrait_overlay"
-			position = { x= 280 y = 446 }
+				name ="minor_portrait_overlay"
+				spriteType = "GFX_minor_portrait_overlay"
+				position = { x= 1080 y = 430 }
 		}
-		
+
 		instantTextBoxType = {
 			name = "nation_title"
-			position = { x = 442 y = 433 }
+			position = { x = 442 y = 421 }
 			font = "hoi_24header"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 340
@@ -1005,7 +870,7 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "spirit"
-			position = { x = 451 y = 487 }
+			position = { x = 451 y = 475 }
 
 			iconType ={
 				name ="pol_faction_icon"
@@ -1049,7 +914,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "history_title"
-			position = { x = 830 y = 462 }
+			position = { x = 50 y = 450 }
 			font = "hoi4_typewriter22"
 			borderSize = {x = 0 y = 0}
 			text = "FE_COUNTRY_HISTORY_TITLE"
@@ -1060,7 +925,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "history"
-			position = { x = 810 y = 502 }
+			position = { x = 35 y = 455 }
 			font = "hoi4_typewriter16"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 380
@@ -1068,6 +933,11 @@ guiTypes = {
 			format = left
 		}
 
+		# Adicionado de volta: o motor espera um elemento "more_countries"
+		# dentro dessa janela mesmo sem ele ser usado ativamente (mesmo padrao
+		# do "version_label" no menu principal) - sem ele, o log acusava
+		# "Could not find 'more_countries' in window gamesetup_interesting_countries_window".
+		# Portado do Youjo Senki | Redux, so a "expandedWindow" dropdown vazia.
 		dropDownBoxType = {
 			name = "more_countries"
 			position = { x = 10 y = 412 }
@@ -1086,7 +956,7 @@ guiTypes = {
 				show_animation_type = decelerated
 				hide_animation_type = accelerated
 				animation_time = 300
-				size = { width=1205 height=58 }	# dynamically resized in code using countries_mini_expanded's slot size
+				size = { width=1205 height=58 }
 				verticalScrollbar = "right_vertical_slider"
 				scroll_wheel_factor = 50
 				smooth_scrolling = yes
@@ -1135,7 +1005,7 @@ guiTypes = {
 		}
 	}
 
-	containerWindowType = {
+		containerWindowType = {
 		name ="gamesetup_country_details"
 		position = { x=20 y =-490}
 		show_position = { x=20 y =90}
@@ -2144,18 +2014,14 @@ guiTypes = {
 			show_position = { x=0 y =-30}
 			animation_type = decelerated
 			animation_time = 1000
-			size = { width=100% height =128}
+			size = { width=102% height =128}
 			clipping = no
 
-            containerWindowType = {
-                name = background
-                size = { width=102% height=100% }
-                Background =
-                {
-                    name ="top_bg"
-                    spriteType = "GFX_tiled_frontend_upper_bar"
-                    position = { x=-10 y=0 }
-                }
+			Background =
+			{
+				name ="top_bg"
+				spriteType = "GFX_tiled_frontend_upper_bar"
+				position = { x=-10 y=0 }
 			}
 
 			containerWindowType = {
@@ -2296,7 +2162,7 @@ guiTypes = {
 			}
 
 			ButtonType = {
-				position = { x= -449 y = 48 }
+				position = { x= -487 y = 48 }
 				name = "player_shield"
 				quadTextureSprite ="GFX_player_flag"
 				Orientation = "UPPER_RIGHT"
@@ -2305,20 +2171,20 @@ guiTypes = {
 			iconType ={
 				name ="large_flag_frame"
 				spriteType = "GFX_large_flag_frame"
-				position = { x= -454 y = 45 }
+				position = { x= -492 y = 45 }
 				Orientation = "UPPER_RIGHT"
 			}
 
 			iconType ={
 				name ="selected_nation_label_bg"
 				spriteType = "GFX_generic_bg"
-				position = { x= -342 y = 46 }
+				position = { x= -380 y = 46 }
 				Orientation = "UPPER_RIGHT"
 			}
 
 			instantTextBoxType = {
 				name = "selected_nation_label"
-				position = { x = -337 y = 55 }
+				position = { x = -375 y = 55 }
 				textureFile = ""
 				font = "hoi_20bs"
 				borderSize = {x = 0 y = 0}
@@ -2331,7 +2197,7 @@ guiTypes = {
 			}
 
 			ButtonType = {
-				position = { x= -59 y = 45 }
+				position = { x= -97 y = 45 }
 				name = "extended_country_button"
 				quadTextureSprite ="GFX_extended_country_button"
 				Orientation = "UPPER_RIGHT"
@@ -2345,17 +2211,13 @@ guiTypes = {
 			show_position = { x=0 y =-100 }
 			animation_type = decelerated
 			animation_time = 1000
-			size = { width=100% height =128}
+			size = { width=102% height =128}
 			Orientation = lower_left
 
-            containerWindowType = {
-                name = background
-                size = { width=102% height=100% }
-                Background ={
-                    name ="bottom_win"
-                    spriteType = "GFX_tiled_frontend_lower_bar"
-                    position = { x=-10 y =0}
-                }
+			Background ={
+				name ="bottom_win"
+				spriteType = "GFX_tiled_frontend_lower_bar"
+				position = { x=-10 y =0}
 			}
 
 			ButtonType = {
@@ -2396,14 +2258,14 @@ guiTypes = {
 
 			iconType = {
 				name = "enabled_achievement_icons"
-				position = { x = -344 y = -115 }
+				position = { x = -382 y = -115 }
 				quadTextureSprite ="GFX_enabled_achievement_icons"
 				Orientation = "LOWER_RIGHT"
 			}
 
 			ButtonType = {
 				name = "play_button"
-				position = { x = -262 y = -100 }
+				position = { x = -300 y = -100 }
 				quadTextureSprite ="GFX_play_button"
 				buttonText = "FE_START"
 				buttonFont = "hoi_30header"
@@ -2415,7 +2277,7 @@ guiTypes = {
 
 			ButtonType = {
 				name = "play_button_ready"
-				position = { x = -262 y = -100 }
+				position = { x = -300 y = -100 }
 				spriteType ="GFX_play_button_ready"
 				buttonText = "READY"
 				buttonFont = "hoi_30header"
@@ -2427,7 +2289,7 @@ guiTypes = {
 
 			iconType = {
 				name = "play_button_checkbox"
-				position = { x = -74 y = -85 }
+				position = { x = -112 y = -85 }
 				quadTextureSprite ="GFX_generic_checkbox2"
 				Orientation = "LOWER_RIGHT"
 				alwaystransparent = yes

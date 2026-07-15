@@ -1,0 +1,28 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			# Popup de boas-vindas ao "Arquivo de Azarya" pra cada jogador
+			# humano no inicio da partida (on_startup so roda na criacao de
+			# uma partida nova, nao ao carregar um save - por isso o popup
+			# nao reaparece ao recarregar).
+			every_country = {
+				limit = { is_ai = no }
+				news_event = { id = az_info.1 }
+			}
+
+			# Popula o array de estados com entrada no Atlas de Cronicas,
+			# usado pelos icones de livro no mapa (mapicon_targets em
+			# common/scripted_guis/AZ_lore_atlas.txt). Pra adicionar um novo
+			# local com icone no mapa: adicionar o state id aqui E seguir as
+			# instrucoes no topo de common/scripted_effects/AZ_lore_effects.txt.
+			382 = { add_to_array = { global.az_lore_states = THIS } } # Eldoria (capital THK / Grande Terremoto)
+			335 = { add_to_array = { global.az_lore_states = THIS } } # Aelia (capital CZL)
+			336 = { add_to_array = { global.az_lore_states = THIS } } # Aubigny (capital SLV)
+			175 = { add_to_array = { global.az_lore_states = THIS } } # Nordhavn (capital LUQ)
+			136 = { add_to_array = { global.az_lore_states = THIS } } # Carmine (capital SLU)
+			214 = { add_to_array = { global.az_lore_states = THIS } } # Tiewald (capital SVD)
+			51  = { add_to_array = { global.az_lore_states = THIS } } # Sithius (capital SIT)
+			174 = { add_to_array = { global.az_lore_states = THIS } } # Verdantia (capital AEI, The Big Tree)
+		}
+	}
+}

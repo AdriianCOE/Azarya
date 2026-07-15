@@ -1,0 +1,67 @@
+# Azarya: efeitos do Atlas de Cronicas (entradas geograficas ligadas a
+# estados, tanto pelo indice na janela quanto pelo icone no mapa) e da aba
+# de Cronicas (linha do tempo, entradas por indice numerico simples).
+#
+# Padrao tecnico adaptado do sistema "state lore" do Equestria at War
+# (common/scripted_guis/eaw_state_lore_gui.txt) - nenhum texto, nome, arte
+# ou id deles foi reaproveitado, so a tecnica de usar uma variavel de estado
+# em ROOT (az_lore_state_id) como chave unica pra abrir/fechar/resolver a
+# entrada, tanto vindo do mapa quanto do indice interno da janela.
+#
+# Pra adicionar um novo local ao Atlas: escolher o state id, adicionar um
+# efeito "az_lore_goto_state_<id>" aqui (copiando o padrao abaixo), um botao
+# no indice em interface/AZ_info_window.gui, uma entrada na propriedade
+# "az_lore_index_button_<n>" em common/scripted_guis/AZ_lore_atlas.txt, e o
+# texto correspondente (Titulo/Categoria/Corpo) em
+# common/scripted_localisation/AZ_lore_entries.txt usando o mesmo state id.
+# O mapicon no mapa e populado automaticamente via
+# common/on_actions/AZ_info_on_actions.txt (global.az_lore_states).
+
+az_lore_close = {
+	clear_variable = az_lore_state_id
+}
+
+az_lore_mapicons_toggle = {
+	if = {
+		limit = { has_country_flag = az_lore_mapicons_hidden }
+		clr_country_flag = az_lore_mapicons_hidden
+	}
+	else = {
+		set_country_flag = az_lore_mapicons_hidden
+	}
+}
+
+# Selecionado a partir do icone no mapa (THIS ja e o estado clicado). Sempre
+# abre no topico principal (1); a entrada extra do Grande Terremoto (que
+# divide o estado 382 com a capital do THK) so e alcancavel pelo indice.
+az_lore_select_from_map = {
+	ROOT = { set_variable = { az_lore_state_id = THIS } }
+	set_variable = { az_lore_topic = 1 }
+}
+
+# Selecionados a partir do indice dentro da janela (9 entradas iniciais).
+# az_lore_topic distingue duas entradas que dividem o mesmo estado (Eldoria
+# e usada tanto pela capital do THK quanto pelo local do Grande Terremoto).
+az_lore_goto_state_382 = { 382 = { ROOT = { set_variable = { az_lore_state_id = THIS } } } set_variable = { az_lore_topic = 1 } } # Eldoria - capital THK
+az_lore_goto_state_335 = { 335 = { ROOT = { set_variable = { az_lore_state_id = THIS } } } set_variable = { az_lore_topic = 1 } } # Aelia - capital CZL
+az_lore_goto_state_336 = { 336 = { ROOT = { set_variable = { az_lore_state_id = THIS } } } set_variable = { az_lore_topic = 1 } } # Aubigny - capital SLV
+az_lore_goto_state_175 = { 175 = { ROOT = { set_variable = { az_lore_state_id = THIS } } } set_variable = { az_lore_topic = 1 } } # Nordhavn - capital LUQ
+az_lore_goto_state_136 = { 136 = { ROOT = { set_variable = { az_lore_state_id = THIS } } } set_variable = { az_lore_topic = 1 } } # Carmine - capital SLU
+az_lore_goto_state_214 = { 214 = { ROOT = { set_variable = { az_lore_state_id = THIS } } } set_variable = { az_lore_topic = 1 } } # Tiewald - capital SVD
+az_lore_goto_state_51  = { 51  = { ROOT = { set_variable = { az_lore_state_id = THIS } } } set_variable = { az_lore_topic = 1 } } # Sithius - capital SIT
+az_lore_goto_state_174 = { 174 = { ROOT = { set_variable = { az_lore_state_id = THIS } } } set_variable = { az_lore_topic = 1 } } # Verdantia - capital AEI, The Big Tree
+az_lore_goto_earthquake_site = { 382 = { ROOT = { set_variable = { az_lore_state_id = THIS } } } set_variable = { az_lore_topic = 2 } } # Eldoria - Grande Terremoto de 1922
+
+# Cronicas (linha do tempo): entradas por indice numerico, sem vinculo com
+# mapa/estado. Pra adicionar uma nova entrada: escolher o proximo numero
+# livre, criar "az_chronicle_goto_<n>" aqui, um botao no indice, e o texto
+# em common/scripted_localisation/AZ_chronicle_text.txt.
+az_chronicle_goto_1 = { set_variable = { az_chronicle_entry_id = 1 } }
+az_chronicle_goto_2 = { set_variable = { az_chronicle_entry_id = 2 } }
+az_chronicle_goto_3 = { set_variable = { az_chronicle_entry_id = 3 } }
+az_chronicle_goto_4 = { set_variable = { az_chronicle_entry_id = 4 } }
+az_chronicle_goto_5 = { set_variable = { az_chronicle_entry_id = 5 } }
+
+az_chronicle_close = {
+	clear_variable = az_chronicle_entry_id
+}

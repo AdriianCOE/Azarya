@@ -1,0 +1,77 @@
+scripted_gui = {
+	az_info_button = {
+		window_name = "az_info_button_container"
+		context_type = player_context
+		parent_window_token = top_bar
+
+		visible = {
+			is_ai = no
+			has_country_flag = az_info_tab_closed
+		}
+
+		effects = {
+			az_info_button_click = {
+				clear_variable = az_info_open_target_page
+				az_info_tab_open = yes
+			}
+		}
+	}
+
+	# Janela principal (moldura, fechar, as 4 abas). O conteudo de cada aba
+	# fica em containers separados (ver az_info_overview_panel,
+	# az_info_country_panel abaixo, e o Atlas/Cronicas em AZ_lore_atlas.txt),
+	# cada um com sua propria visibilidade ligada a az_info_tab_page.
+	az_info_ui = {
+		window_name = "az_info_ui_window"
+		context_type = player_context
+		parent_window_token = top_bar
+
+		visible = {
+			is_ai = no
+			NOT = { has_country_flag = az_info_tab_closed }
+		}
+
+		effects = {
+			tab_1_click = { az_info_tab_1 = yes }
+			tab_2_click = { az_info_tab_2 = yes }
+			tab_3_click = { az_info_tab_3 = yes }
+			tab_4_click = { az_info_tab_4 = yes }
+			close_button_click = { az_info_tab_close = yes }
+		}
+
+		properties = {
+			tab_1 = { frame = az_info_tab_1_frame }
+			tab_2 = { frame = az_info_tab_2_frame }
+			tab_3 = { frame = az_info_tab_3_frame }
+			tab_4 = { frame = az_info_tab_4_frame }
+		}
+	}
+
+	# Aba 1 (Visao Geral) e aba 2 (Sua Nacao) usam o mesmo painel de texto
+	# simples, cujo conteudo e resolvido via GetInfoPanelText.
+	#
+	# CORRECAO: "parent_window_name" apontando pra outro window_name definido
+	# por scripted_gui (az_info_ui_window) nao resolve - o jogo loga "Parent
+	# window ... is not found" e o painel nunca aparece. parent_window_name so
+	# funciona de forma confiavel apontando pra um token vanilla (como
+	# top_bar). Por isso esse painel (e o Atlas/Cronicas em AZ_lore_atlas.txt)
+	# viraram janelas independentes, tambem ancoradas em top_bar, com posicao
+	# recalculada pra encaixar visualmente na mesma area de conteudo da
+	# janela principal (que e 1092x450, centralizada, com a area de texto
+	# comecando em y=85 dentro dela - equivale a position={x=0 y=25} pra uma
+	# janela 1092x330 tambem centralizada).
+	az_info_text_panel = {
+		window_name = "az_info_text_panel"
+		context_type = player_context
+		parent_window_token = top_bar
+
+		visible = {
+			is_ai = no
+			NOT = { has_country_flag = az_info_tab_closed }
+			OR = {
+				check_variable = { az_info_tab_page = 1 }
+				check_variable = { az_info_tab_page = 2 }
+			}
+		}
+	}
+}

@@ -1,0 +1,51 @@
+# Azarya: efeitos do "Arquivo de Azarya" (janela principal + abas).
+# Paginas: 1=Visao Geral, 2=Sua Nacao, 3=Atlas de Cronicas, 4=Cronicas.
+# Logica especifica do Atlas/Cronicas (selecao de entrada, mapicons) fica em
+# common/scripted_effects/AZ_lore_effects.txt.
+
+az_info_tab_1 = {
+	set_variable = { az_info_tab_page = 1 }
+	set_variable = { az_info_tab_1_frame = 1 }
+	set_variable = { az_info_tab_2_frame = 2 }
+	set_variable = { az_info_tab_3_frame = 2 }
+	set_variable = { az_info_tab_4_frame = 2 }
+}
+az_info_tab_2 = {
+	set_variable = { az_info_tab_page = 2 }
+	set_variable = { az_info_tab_1_frame = 2 }
+	set_variable = { az_info_tab_2_frame = 1 }
+	set_variable = { az_info_tab_3_frame = 2 }
+	set_variable = { az_info_tab_4_frame = 2 }
+	set_variable = { az_info_country_tag = ROOT }
+}
+az_info_tab_3 = {
+	set_variable = { az_info_tab_page = 3 }
+	set_variable = { az_info_tab_1_frame = 2 }
+	set_variable = { az_info_tab_2_frame = 2 }
+	set_variable = { az_info_tab_3_frame = 1 }
+	set_variable = { az_info_tab_4_frame = 2 }
+}
+az_info_tab_4 = {
+	set_variable = { az_info_tab_page = 4 }
+	set_variable = { az_info_tab_1_frame = 2 }
+	set_variable = { az_info_tab_2_frame = 2 }
+	set_variable = { az_info_tab_3_frame = 2 }
+	set_variable = { az_info_tab_4_frame = 1 }
+}
+# Abre o Arquivo direto numa aba especifica (usado pelo popup inicial e pelo
+# botao do topbar). target_page: 1 = Visao Geral, 2 = Sua Nacao.
+az_info_tab_open = {
+	clr_country_flag = az_info_tab_closed
+	set_variable = { az_info_country_tag = ROOT }
+	if = {
+		limit = { check_variable = { az_info_open_target_page = 2 } }
+		az_info_tab_2 = yes
+	}
+	else = {
+		az_info_tab_1 = yes
+	}
+}
+az_info_tab_close = {
+	set_country_flag = az_info_tab_closed
+	clear_variable = az_info_tab_page
+}

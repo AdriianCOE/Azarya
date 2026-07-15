@@ -1,0 +1,95 @@
+scripted_gui = {
+
+	# ===== Atlas de Cronicas (aba 3): indice + texto da entrada =====
+	# Nao usa dynamic_lists/array pra popular o indice - com 9 entradas
+	# iniciais, botoes fixos (um por local) sao mais simples e previsiveis
+	# de manter do que uma lista dirigida por array. O array
+	# global.az_lore_states ainda existe (ver AZ_info_on_actions.txt) porque
+	# e exigido pelo sistema de icones no mapa (mapicon_targets), que esse
+	# sim precisa de um array de estados.
+	# CORRECAO: ver comentario em common/scripted_guis/AZ_info.txt -
+	# parent_window_name apontando pra outro window_name customizado nao
+	# resolve ("Parent window ... is not found" no log), por isso virou
+	# janela independente ancorada em top_bar, com posicao recalculada pra
+	# alinhar com a area de conteudo da janela principal (ver
+	# interface/AZ_lore_atlas.gui).
+	az_lore_atlas_panel = {
+		window_name = "az_lore_atlas_panel"
+		context_type = player_context
+		parent_window_token = top_bar
+
+		visible = {
+			is_ai = no
+			NOT = { has_country_flag = az_info_tab_closed }
+			check_variable = { az_info_tab_page = 3 }
+		}
+
+		effects = {
+			lore_index_eldoria_click        = { az_lore_goto_state_382 = yes }
+			lore_index_earthquake_click     = { az_lore_goto_earthquake_site = yes }
+			lore_index_aelia_click          = { az_lore_goto_state_335 = yes }
+			lore_index_aubigny_click        = { az_lore_goto_state_336 = yes }
+			lore_index_nordhavn_click       = { az_lore_goto_state_175 = yes }
+			lore_index_carmine_click        = { az_lore_goto_state_136 = yes }
+			lore_index_tiewald_click        = { az_lore_goto_state_214 = yes }
+			lore_index_sithius_click        = { az_lore_goto_state_51 = yes }
+			lore_index_verdantia_click      = { az_lore_goto_state_174 = yes }
+			lore_locate_on_map_click        = { clr_country_flag = az_lore_mapicons_hidden }
+		}
+	}
+
+	# ===== Cronicas (aba 4): indice + texto da entrada =====
+	az_chronicle_panel = {
+		window_name = "az_chronicle_panel"
+		context_type = player_context
+		parent_window_token = top_bar
+
+		visible = {
+			is_ai = no
+			NOT = { has_country_flag = az_info_tab_closed }
+			check_variable = { az_info_tab_page = 4 }
+		}
+
+		effects = {
+			chronicle_index_1_click = { az_chronicle_goto_1 = yes }
+			chronicle_index_2_click = { az_chronicle_goto_2 = yes }
+			chronicle_index_3_click = { az_chronicle_goto_3 = yes }
+			chronicle_index_4_click = { az_chronicle_goto_4 = yes }
+			chronicle_index_5_click = { az_chronicle_goto_5 = yes }
+		}
+	}
+
+	# ===== Icones de livro no mapa mundial =====
+	# Tecnica adaptada do "eaw_state_lore_mapicon_gui" (context_type =
+	# state_mapicon existe no jogo base, nao e invencao nossa). Um icone por
+	# estado listado em global.az_lore_states.
+	az_lore_mapicon = {
+		context_type = state_mapicon
+		window_name = "az_lore_mapicon_container"
+		mapicon_targets = {
+			target_array = global.az_lore_states
+		}
+		visible = {
+			ROOT = {
+				is_ai = no
+				NOT = { has_country_flag = az_lore_mapicons_hidden }
+			}
+		}
+		effects = {
+			az_lore_mapicon_click = { az_lore_select_from_map = yes }
+		}
+	}
+
+	# Botao no painel de modos de mapa pra mostrar/esconder os icones.
+	az_lore_mapicon_toggle = {
+		context_type = player_context
+		window_name = "az_lore_mapicon_toggle_container"
+		parent_window_name = "MapmodesInterface_Ingame"
+		visible = {
+			is_ai = no
+		}
+		effects = {
+			az_lore_mapicon_toggle_click = { az_lore_mapicons_toggle = yes }
+		}
+	}
+}

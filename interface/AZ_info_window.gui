@@ -1,0 +1,170 @@
+guiTypes = {
+
+	# Azarya: "Arquivo de Azarya" - janela de ambientacao do mod (botao no
+	# topbar + janela com 4 abas: Visao Geral, Sua Nacao, Atlas de Cronicas,
+	# Cronicas). So sprites vanilla usados aqui (nenhuma arte nova
+	# necessaria): GFX_tiled_plain_bg(_small), GFX_sort_button_focus_171x35,
+	# GFX_closebutton, GFX_tiled_bg_1_scrollbar, GFX_tab_large.
+	#
+	# Logica em common/scripted_guis/AZ_info.txt (janela/abas) e
+	# common/scripted_guis/AZ_lore_atlas.txt (Atlas/Cronicas/mapicons, ver
+	# interface/AZ_lore_atlas.gui pro layout dessas duas abas).
+
+	containerWindowType = {
+		name = "az_info_button_container"
+		position = { x = 0 y = -55 }
+		size = { width = 191 height = 56 }
+		Orientation = lower_left
+		moveable = yes
+
+		background = {
+			name = "Background"
+			spriteType ="GFX_tiled_plain_bg_small"
+		}
+
+		buttonType = {
+			name ="az_info_button"
+			spriteType = "GFX_sort_button_focus_171x35"
+			position = { x=11 y=12 }
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = "AZ_INFO_BUTTON_TOOLTIP"
+		}
+
+		instantTextboxType = {
+			name = "header_text"
+			position = { x = 13 y = 17 }
+			textureFile = ""
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = "AZ_INFO_TITLE"
+			maxWidth = 160
+			maxHeight = 20
+			format = center
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "az_info_ui_window"
+		size = { width = 1092 height = 450 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		# "moveable" removido: as abas Atlas/Cronicas/texto agora sao janelas
+		# independentes (ver comentario em AZ_info.txt sobre parent_window_name),
+		# entao arrastar so essa janela deixava os botoes pra tras enquanto o
+		# conteudo ficava parado - "a parte arrastavel separava os botoes".
+
+		background = {
+			name = "Background"
+			spriteType ="GFX_tiled_plain_bg"
+		}
+
+		instantTextboxType = {
+			name = "header_text"
+			position = { x = 8 y = 10 }
+			textureFile = ""
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			text = "AZ_INFO_TITLE"
+			maxWidth = 700
+			maxHeight = 40
+			format = center
+		}
+
+		buttonType = {
+			name = "close_button"
+			position = { x = -44 y = 7 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+
+		containerWindowType = {
+			name = "info_tabs"
+			position = { x=20 y=48 }
+			size = { width = 0 height = 0 }
+			Orientation = UPPER_LEFT
+
+			buttonType = {
+				name = "tab_1"
+				position = { x = 0 y = 0 }
+				quadTextureSprite = "GFX_tab_large"
+				text = "[GetInfoTab1]"
+				buttonFont = "hoi_20b"
+				frame = 1
+				clicksound = click_default
+				Orientation = "CENTER"
+			}
+			buttonType = {
+				name = "tab_2"
+				position = { x = 256 y = 0 }
+				quadTextureSprite = "GFX_tab_large"
+				text = "[GetInfoTab2]"
+				buttonFont = "hoi_20b"
+				frame = 2
+				clicksound = click_default
+				Orientation = "CENTER"
+			}
+			buttonType = {
+				name = "tab_3"
+				position = { x = 512 y = 0 }
+				quadTextureSprite = "GFX_tab_large"
+				text = "[GetInfoTab3]"
+				buttonFont = "hoi_20b"
+				frame = 2
+				clicksound = click_default
+				Orientation = "CENTER"
+			}
+			buttonType = {
+				name = "tab_4"
+				position = { x = 768 y = 0 }
+				quadTextureSprite = "GFX_tab_large"
+				text = "[GetInfoTab4]"
+				buttonFont = "hoi_20b"
+				frame = 2
+				clicksound = click_default
+				Orientation = "CENTER"
+			}
+		}
+	}
+
+	# Aba 1 (Visao Geral) / aba 2 (Sua Nacao): painel de texto simples.
+	# Janela independente ancorada em top_bar (nao aninhada no
+	# az_info_ui_window acima - ver comentario em
+	# common/scripted_guis/AZ_info.txt sobre por que parent_window_name nao
+	# funcionou). Orientation/Origo=center + position={x=0 y=25} fazem essa
+	# janela de 1092x330 se alinhar exatamente onde o conteudo ficava dentro
+	# da janela principal de 1092x450 (que comecava em y=85).
+	containerWindowType = {
+		name = "az_info_text_panel"
+		size = { width=1092 height=330 }
+		Orientation = center
+		Origo = center
+		position = { x=0 y=25 }
+		margin = { top = 13 bottom = 12}
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_bg_1_scrollbar"
+			alwaystransparent = yes
+		}
+
+		instantTextboxType = {
+			name = "text"
+			position = { x = 21 y = 1 }
+			textureFile = ""
+			font = "hoi_20bs"
+			borderSize = {x = 0 y = 10}
+			text = "[GetInfoPanelText]"
+			maxWidth = 1048
+			maxHeight = 330
+			Orientation = "UPPER_LEFT"
+			scrollbarType = standardtext_slider
+		}
+	}
+}

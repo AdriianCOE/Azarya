@@ -1,0 +1,108 @@
+# Azarya: logica de texto do "Arquivo de Azarya" - rotulos das 4 abas e o
+# texto do painel simples (abas 1 "Visao Geral" e 2 "Sua Nacao").
+#
+# NOTA TECNICA: um "defined_text" com o mesmo nome nao pode ser dividido em
+# vários arquivos (a definicao mais recente carregada substitui a anterior
+# inteira, nao mescla - mesmo comportamento de spriteType/etc). Por isso
+# GetInfoPanelText fica inteiro aqui, inclusive a ramificacao por pais da
+# aba "Sua Nacao"; quem foi dividido em arquivos separados foi o TEXTO em si
+# (localisation/AZ_country_briefings_l_english.yml), nao a logica.
+#
+# Pra adicionar o briefing de uma nova nacao: acrescentar um bloco
+# "text = { trigger = { check_variable = { az_info_tab_page = 2 } check_variable = { az_info_country_tag = TAG } } localization_key = "AZ_COUNTRY_BRIEFING_TAG" }"
+# aqui embaixo (antes do fallback generico) e escrever o texto correspondente
+# em localisation/AZ_country_briefings_l_english.yml.
+
+defined_text = {
+	name = GetInfoTab1
+	text = {
+		localization_key = "AZ_INFO_TAB_OVERVIEW"
+	}
+}
+defined_text = {
+	name = GetInfoTab2
+	text = {
+		localization_key = "AZ_INFO_TAB_COUNTRY"
+	}
+}
+defined_text = {
+	name = GetInfoTab3
+	text = {
+		localization_key = "AZ_INFO_TAB_ATLAS"
+	}
+}
+defined_text = {
+	name = GetInfoTab4
+	text = {
+		localization_key = "AZ_INFO_TAB_CHRONICLE"
+	}
+}
+
+defined_text = {
+	name = GetInfoPanelText
+
+	# --- aba 1: Visao Geral ---
+	text = {
+		trigger = {
+			check_variable = { az_info_tab_page = 1 }
+		}
+		localization_key = "AZ_INFO_TEXT_OVERVIEW_1924"
+	}
+
+	# --- aba 2: Sua Nacao (ramificado por tag) ---
+	text = {
+		trigger = {
+			check_variable = { az_info_tab_page = 2 }
+			check_variable = { az_info_country_tag = THK }
+		}
+		localization_key = "AZ_COUNTRY_BRIEFING_THK"
+	}
+	text = {
+		trigger = {
+			check_variable = { az_info_tab_page = 2 }
+			check_variable = { az_info_country_tag = CZL }
+		}
+		localization_key = "AZ_COUNTRY_BRIEFING_CZL"
+	}
+	text = {
+		trigger = {
+			check_variable = { az_info_tab_page = 2 }
+			check_variable = { az_info_country_tag = SLV }
+		}
+		localization_key = "AZ_COUNTRY_BRIEFING_SLV"
+	}
+	text = {
+		trigger = {
+			check_variable = { az_info_tab_page = 2 }
+			check_variable = { az_info_country_tag = LUQ }
+		}
+		localization_key = "AZ_COUNTRY_BRIEFING_LUQ"
+	}
+	text = {
+		trigger = {
+			check_variable = { az_info_tab_page = 2 }
+			check_variable = { az_info_country_tag = SLU }
+		}
+		localization_key = "AZ_COUNTRY_BRIEFING_SLU"
+	}
+	text = {
+		trigger = {
+			check_variable = { az_info_tab_page = 2 }
+			check_variable = { az_info_country_tag = SVD }
+		}
+		localization_key = "AZ_COUNTRY_BRIEFING_SVD"
+	}
+	text = {
+		trigger = {
+			check_variable = { az_info_tab_page = 2 }
+			check_variable = { az_info_country_tag = SIT }
+		}
+		localization_key = "AZ_COUNTRY_BRIEFING_SIT"
+	}
+	text = { # fallback generico - qualquer outra tag jogavel
+		trigger = {
+			check_variable = { az_info_tab_page = 2 }
+		}
+		localization_key = "AZ_COUNTRY_BRIEFING_GENERIC"
+	}
+}

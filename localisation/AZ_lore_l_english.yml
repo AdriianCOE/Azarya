@@ -1,0 +1,81 @@
+﻿l_english:
+ # Azarya: Atlas de Cronicas (geografico, ligado a estados) e Cronicas
+ # (linha do tempo). Logica de resolucao em
+ # common/scripted_localisation/AZ_lore_entries.txt e AZ_chronicle_text.txt.
+
+ # ===== interface comum do Atlas =====
+ AZ_LORE_INDEX_TITLE:0 "Places of Note"
+ AZ_LORE_LOCATE_ON_MAP:0 "Show on World Map"
+ AZ_LORE_LOCATE_ON_MAP_TT:0 "Makes sure the Chronicle Atlas book-markers are visible on the world map, so you can find this place yourself. Azarya doesn't force the camera to jump - the markers are discreet on purpose."
+ AZ_LORE_MAPICON_TT:0 "A Chronicle Atlas entry. Open the Azarya Archive to read it."
+ AZ_LORE_MAPICON_TOGGLE_TT:0 "Show or hide the Chronicle Atlas markers on the map"
+ AZ_LORE_TITLE_FALLBACK:0 "Unknown Location"
+ AZ_LORE_CATEGORY_FALLBACK:0 "Uncategorized"
+ AZ_LORE_TEXT_FALLBACK:0 "No record of this entry could be found in the Archive."
+
+ AZ_LORE_CATEGORY_CAPITAL:0 "Capital"
+ AZ_LORE_CATEGORY_RUINS:0 "Ruins"
+ AZ_LORE_CATEGORY_MONUMENT:0 "Monument"
+
+ # ===== entradas do Atlas (9) =====
+
+ # Eldoria - capital de Thiryn
+ AZ_LORE_TITLE_382_1:0 "Eldoria"
+ AZ_LORE_TEXT_382_1:0 "§YCapital of the Kingdom of Thiryn§!\n\nEldoria has been the seat of the Aurum crown for four centuries, and it looks it - a city of old palaces and older debts, rebuilt more than once and never quite finished the last time. The court still holds its ceremonies here, though fewer nobles bother attending than they once did.\n\nSince the Great Earthquake of 1922, whole districts remain scaffolded rather than repaired, a visible reminder that the crown's resources - like its authority - do not stretch as far as they used to."
+
+ # Eldoria - segundo topico, Grande Terremoto
+ AZ_LORE_TITLE_382_2:0 "The Shattered Quarter"
+ AZ_LORE_TEXT_382_2:0 "§YSite of the Great Earthquake, 1922§!\n\nAt the end of 1922, the ground beneath Eldoria's lower districts opened without warning. What the earthquake didn't level outright, the fires that followed did - entire streets survive now only as names on older maps.\n\nRebuilding efforts have stalled more than once, caught between an empty treasury and a political class more interested in blaming each other than clearing rubble. Locals call the district ‘the Shattered Quarter' and mean it two ways: the buildings, and the kingdom's confidence in the crown that was supposed to protect them."
+
+ # Aelia - capital do Czariado de Lesc
+ AZ_LORE_TITLE_335:0 "Aelia"
+ AZ_LORE_TEXT_335:0 "§YCapital of the Czariado de Lesc§!\n\nAelia is a court city built for stability - broad avenues, imposing ministries, a palace designed to look permanent. That design is being tested. Delegations from the unruly northern provinces arrive more often than they used to, and leave less satisfied.\n\nThe noble houses that share power with the Czar keep their townhouses here, close enough to the throne to watch it, and closer still to each other."
+
+ # Aubigny - capital de Nicollonia (SLV)
+ AZ_LORE_TITLE_336:0 "Aubigny"
+ AZ_LORE_TEXT_336:0 "§YCapital of Nicollonia§!\n\nAubigny grew from a colonial trading post into a republic's capital within living memory, and it wears both histories openly - old merchant warehouses sit beside new government halls built in a hurry once independence finally arrived.\n\nIt is, by regional standards, an unremarkable city to visit: orderly streets, functioning institutions, no ancient grudges written into its architecture. In 1924, that ordinariness is itself worth noting."
+
+ # Nordhavn - capital da Federacao de Lucafis (LUQ)
+ AZ_LORE_TITLE_175:0 "Nordhavn"
+ AZ_LORE_TEXT_175:0 "§YCapital of the Federal State of Lucafis§!\n\nNordhavn sits where the mountain passes meet the coast, which is no accident - it was chosen precisely because it belongs fully to neither the clans nor the merchants who built the federation together. The compromise that founded Lucafis was signed in a hall here that still stands, kept deliberately plain.\n\nThe city functions as a permanent negotiating table more than a capital in the usual sense - which has kept the federation together so far, and may not be enough to keep it together much longer."
+
+ # Carmine - capital do Império Sollarium (SLU)
+ AZ_LORE_TITLE_136:0 "Carmine"
+ AZ_LORE_TEXT_136:0 "§YCapital of the Sollarium Empire§!\n\nCarmine is built to be looked up at - temples and administrative halls sharing the same imposing scale, the same insistence on tradition over comfort. The Shi of Rah rules from its center, and the city's architecture leaves no doubt about who that is.\n\nVisitors describe it as beautiful and airless in equal measure: a capital that has perfected the art of looking eternal, whatever is happening underneath."
+
+ # Tiewald - capital da Republica Mercante de Serenvioled (SVD)
+ AZ_LORE_TITLE_214:0 "Tiewald"
+ AZ_LORE_TEXT_214:0 "§YCapital of the Merchant Republic of Serenvioled§!\n\nTiewald is a port city first and a capital second - the great trading houses that actually run Serenvioled conduct most of their real business along its docks and counting-houses, not in whatever hall happens to host the republic's ceremonial government.\n\nIts wealth is old, quiet, and everywhere - in the silk contracts, the merchant fleets, and the studied neutrality that has kept Tiewald prosperous while its neighbors armed themselves."
+
+ # Sithius/Sìth - capital do Sithius Imperium (SIT)
+ AZ_LORE_TITLE_51:0 "Sìth"
+ AZ_LORE_TEXT_51:0 "§YCapital of the Sithius Imperium, Island of Eòlas§!\n\nSìth was built as the capital of an empire that ruled an entire sea; it now governs a fraction of that empire's old reach, and every monument in the city seems designed to make visitors forget that. Naval memorials outnumber civic ones by a wide margin.\n\nEmperor Valerius IX has made rebuilding the fleet a matter of personal pride rather than mere strategy - the harbor below the palace is busier with shipwrights than it has been in a generation."
+
+ # Verdantia - capital de Aelosia (AEI), o Grande Arvore
+ AZ_LORE_TITLE_174:0 "Verdantia and the Great Tree"
+ AZ_LORE_TEXT_174:0 "§YCapital region of Aelosia§!\n\nVerdantia takes its name from what stands at its center: an ancient, enormous tree that predates every written record Aelosia keeps of itself. Local tradition holds that the tree is what first unified the scattered communities of the region into a single people - whether that's literal history or a very old story treated as one, no one in Verdantia much cares to argue about it out loud.\n\nWhatever its origins, the tree remains the practical and symbolic center of Aelosian life, and its shade is still where the region's most important decisions tend to get made."
+
+ # ===== Cronicas (linha do tempo, 5 entradas) =====
+ AZ_CHRONICLE_INDEX_TITLE:0 "The Timeline"
+ AZ_CHRONICLE_TITLE_FALLBACK:0 "Unrecorded"
+ AZ_CHRONICLE_TEXT_FALLBACK:0 "No record of this entry could be found in the Archive."
+
+ AZ_CHRONICLE_TITLE_1:0 "The Old Order"
+ AZ_CHRONICLE_DATE_1:0 "Before 1900"
+ AZ_CHRONICLE_TEXT_1:0 "For generations, the map of Azarya looked settled in the way maps only look right before they stop being accurate. Dynasties like the Aurum in Thiryn and the ruling caste of Sollarium had ruled long enough to seem permanent; merchant powers like Serenvioled grew rich enough that war seemed unnecessary; young republics like Nicollonia were still busy being born.\n\nNone of that stability was ever as solid as it looked from a throne room. It was, for the most part, simply undisturbed - which is a different thing, and a more fragile one."
+
+ AZ_CHRONICLE_TITLE_2:0 "The Great Earthquake"
+ AZ_CHRONICLE_DATE_2:0 "Late 1922"
+ AZ_CHRONICLE_TEXT_2:0 "At the end of 1922, the ground shook across the peninsula and did not stop for what survivors still describe, inconsistently, as anywhere between a few minutes and an hour. Cities were levelled, infrastructure collapsed, and thousands were left without homes - Thiryn's capital of Eldoria among the hardest hit, though the damage reached well beyond any single kingdom's borders.\n\nThe earthquake didn't cause the political fractures now spreading across Azarya, but it exposed every one of them at once. Governments that couldn't rebuild fast enough lost the benefit of the doubt they'd been running on for years - some are still trying to earn it back."
+
+ AZ_CHRONICLE_TITLE_3:0 "Thiryn's Reckoning"
+ AZ_CHRONICLE_DATE_3:0 "1923"
+ AZ_CHRONICLE_TEXT_3:0 "A border conflict that the Aurum crown expected to win quickly instead ended in humiliating defeat - the kind that doesn't just cost territory, but costs a dynasty the assumption that it deserves to rule. Thiryn's army, already strained by earthquake-relief spending it could barely afford, came home broken.\n\nThe old nobility, once unshakeable in its loyalty, began quietly asking questions it had never dared ask before. Queen Elara Lorenthia inherited a throne that was already cracking beneath her - and set about deciding whether to reinforce it or rebuild it from the ground up."
+
+ AZ_CHRONICLE_TITLE_4:0 "A Continent Watching Itself"
+ AZ_CHRONICLE_DATE_4:0 "Early 1924"
+ AZ_CHRONICLE_TEXT_4:0 "No formal alliances have been signed, no wars declared - and yet by early 1924, every court on the continent is behaving as though both were imminent. The Czariado de Lesc has quietly reinforced its northern garrisons. Sithius has put more shipwrights to work than at any point in a generation. Sollarium's ruling caste has grown noticeably less patient with dissent.\n\nNone of these nations are yet at war with each other. All of them are acting as if they expect to be soon - with someone, over something, before the year is out."
+
+ AZ_CHRONICLE_TITLE_5:0 "What Hasn't Happened Yet"
+ AZ_CHRONICLE_DATE_5:0 "1924 onward"
+ AZ_CHRONICLE_TEXT_5:0 "This entry is deliberately unfinished. Azarya's Chronicles record what has already happened - the earthquake, the defeat, the decades of quiet before both - but 1924 is the point where the Archive runs out of history and hands the pen to whoever is playing.\n\nWhether Thiryn's throne survives, whether Lesc's provinces are pacified or lost, whether Sollarium's iron grip holds or shatters - none of it is written yet. Come back to this entry once the world has caught up to it."

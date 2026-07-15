@@ -1,0 +1,52 @@
+# Azarya: Atlas de Cronicas - resolucao de titulo/categoria/texto por
+# entrada. Chave primaria: az_lore_state_id (estado associado). Quando duas
+# entradas dividem o mesmo estado (Eldoria: capital do THK e local do
+# Grande Terremoto), az_lore_topic desempata (1 = topico principal).
+#
+# Pra adicionar um novo local: escolher o state id, seguir as instrucoes no
+# topo de common/scripted_effects/AZ_lore_effects.txt (efeito + botao no
+# indice), depois acrescentar os 3 blocos de texto aqui embaixo (Titulo/
+# Categoria/Corpo) e escrever o conteudo em
+# localisation/AZ_lore_l_english.yml.
+
+defined_text = {
+	name = GetLoreTitle
+	text = { trigger = { check_variable = { az_lore_state_id = 382.id } check_variable = { az_lore_topic = 2 } } localization_key = "AZ_LORE_TITLE_382_2" }
+	text = { trigger = { check_variable = { az_lore_state_id = 382.id } } localization_key = "AZ_LORE_TITLE_382_1" }
+	text = { trigger = { check_variable = { az_lore_state_id = 335.id } } localization_key = "AZ_LORE_TITLE_335" }
+	text = { trigger = { check_variable = { az_lore_state_id = 336.id } } localization_key = "AZ_LORE_TITLE_336" }
+	text = { trigger = { check_variable = { az_lore_state_id = 175.id } } localization_key = "AZ_LORE_TITLE_175" }
+	text = { trigger = { check_variable = { az_lore_state_id = 136.id } } localization_key = "AZ_LORE_TITLE_136" }
+	text = { trigger = { check_variable = { az_lore_state_id = 214.id } } localization_key = "AZ_LORE_TITLE_214" }
+	text = { trigger = { check_variable = { az_lore_state_id = 51.id  } } localization_key = "AZ_LORE_TITLE_51"  }
+	text = { trigger = { check_variable = { az_lore_state_id = 174.id } } localization_key = "AZ_LORE_TITLE_174" }
+	text = { localization_key = "AZ_LORE_TITLE_FALLBACK" }
+}
+
+defined_text = {
+	name = GetLoreCategory
+	text = { trigger = { check_variable = { az_lore_state_id = 382.id } check_variable = { az_lore_topic = 2 } } localization_key = "AZ_LORE_CATEGORY_RUINS" }
+	text = { trigger = { check_variable = { az_lore_state_id = 382.id } } localization_key = "AZ_LORE_CATEGORY_CAPITAL" }
+	text = { trigger = { check_variable = { az_lore_state_id = 335.id } } localization_key = "AZ_LORE_CATEGORY_CAPITAL" }
+	text = { trigger = { check_variable = { az_lore_state_id = 336.id } } localization_key = "AZ_LORE_CATEGORY_CAPITAL" }
+	text = { trigger = { check_variable = { az_lore_state_id = 175.id } } localization_key = "AZ_LORE_CATEGORY_CAPITAL" }
+	text = { trigger = { check_variable = { az_lore_state_id = 136.id } } localization_key = "AZ_LORE_CATEGORY_CAPITAL" }
+	text = { trigger = { check_variable = { az_lore_state_id = 214.id } } localization_key = "AZ_LORE_CATEGORY_CAPITAL" }
+	text = { trigger = { check_variable = { az_lore_state_id = 51.id  } } localization_key = "AZ_LORE_CATEGORY_CAPITAL" }
+	text = { trigger = { check_variable = { az_lore_state_id = 174.id } } localization_key = "AZ_LORE_CATEGORY_MONUMENT" }
+	text = { localization_key = "AZ_LORE_CATEGORY_FALLBACK" }
+}
+
+defined_text = {
+	name = GetLoreText
+	text = { trigger = { check_variable = { az_lore_state_id = 382.id } check_variable = { az_lore_topic = 2 } } localization_key = "AZ_LORE_TEXT_382_2" }
+	text = { trigger = { check_variable = { az_lore_state_id = 382.id } } localization_key = "AZ_LORE_TEXT_382_1" }
+	text = { trigger = { check_variable = { az_lore_state_id = 335.id } } localization_key = "AZ_LORE_TEXT_335" }
+	text = { trigger = { check_variable = { az_lore_state_id = 336.id } } localization_key = "AZ_LORE_TEXT_336" }
+	text = { trigger = { check_variable = { az_lore_state_id = 175.id } } localization_key = "AZ_LORE_TEXT_175" }
+	text = { trigger = { check_variable = { az_lore_state_id = 136.id } } localization_key = "AZ_LORE_TEXT_136" }
+	text = { trigger = { check_variable = { az_lore_state_id = 214.id } } localization_key = "AZ_LORE_TEXT_214" }
+	text = { trigger = { check_variable = { az_lore_state_id = 51.id  } } localization_key = "AZ_LORE_TEXT_51"  }
+	text = { trigger = { check_variable = { az_lore_state_id = 174.id } } localization_key = "AZ_LORE_TEXT_174" }
+	text = { localization_key = "AZ_LORE_TEXT_FALLBACK" }
+}

@@ -1,0 +1,20 @@
+﻿l_english:
+ # Azarya: "The Azarya Archive" (Arquivo de Azarya) - janela de ambientacao
+ # do mod. Textos de Visao Geral / popup / rotulos de aba ficam aqui; os
+ # briefings de nacao estao em AZ_country_briefings_l_english.yml e o Atlas
+ # de Cronicas / Cronicas em AZ_lore_l_english.yml.
+
+ AZ_INFO_BUTTON_TOOLTIP:0 "Open the Azarya Archive"
+ AZ_INFO_TITLE:0 "The Azarya Archive"
+
+ AZ_INFO_TAB_OVERVIEW:0 "Overview"
+ AZ_INFO_TAB_COUNTRY:0 "Your Nation"
+ AZ_INFO_TAB_ATLAS:0 "Chronicle Atlas"
+ AZ_INFO_TAB_CHRONICLE:0 "Chronicles"
+
+ AZ_INFO_TEXT_OVERVIEW_1924:0 "§YEra of New Azarya - 1924§!\n\nAzarya is a world scarred by a great disaster, now marching toward war. A generation ago, the Great Earthquake split open the old certainties along with the earth itself, and the powers that seemed eternal - crowns, empires, ancient castes - have spent the years since pretending the cracks aren't spreading.\n\nThey are. From the Kingdom of Thiryn, where a corrupt dynasty has just been shaken loose, to the Czariado de Lesc, where unrest simmers in the northern provinces, to the old maritime remnants of Sithius still dreaming of their lost sea - every nation on this continent is carrying the same argument forward by different means: does the old order bend, or does it break?\n\nNo formal war has been declared. Not yet. Armies drill anyway, factories run through the night anyway, and the charismatic voices that once merely criticized power now openly compete for it. 1924 is not the beginning of the story - it's the year the pretending stops.\n\nUse the §YYour Nation§! tab for a briefing on the country you've chosen, the §YChronicle Atlas§! to read about specific places on the map, and §YChronicles§! for the history that got Azarya here."
+
+ az_info.1.t:0 "The World Awaits"
+ az_info.1.d:0 "You are about to lead §Y[ROOT.GetName]§! into 1924 - a year the whole continent has spent bracing for. The Azarya Archive keeps a running record of the world, your nation, and the places that matter in it; it's always one click away from the button in the corner of your screen.\n\nOpen it now for a proper briefing, or step onto the stage and find your own way."
+ az_info.1.a:0 "Open the Azarya Archive"
+ az_info.1.b:0 "Begin the Campaign"

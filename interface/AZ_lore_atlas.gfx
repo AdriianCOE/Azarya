@@ -1,0 +1,22 @@
+spriteTypes = {
+
+	# TEMPORARIO: copiados do Equestria at War (gfx/interface/state_lore_button.dds
+	# e state_lore_mapicon.dds), autorizado explicitamente como placeholder pra
+	# essa fase. Trocar antes de qualquer release publico por arte propria do
+	# Azarya com o mesmo nome de arquivo, mesmo caminho, mesmas dimensoes:
+	#
+	#   gfx/interface/AZ_lore_icon_TEMP.dds      47x50   DXT/RGBA  botao "livro" (index/topbar)
+	#   gfx/interface/AZ_lore_mapicon_TEMP.dds   47x76   DXT/RGBA  icone no mapa mundial (mais alto, tipo marcador)
+
+	spriteType = {
+		name = "GFX_AZ_lore_icon_TEMP"
+		texturefile = "gfx/interface/AZ_lore_icon_TEMP.dds"
+	}
+
+	spriteType = {
+		name = "GFX_AZ_lore_mapicon_TEMP"
+		texturefile = "gfx/interface/AZ_lore_mapicon_TEMP.dds"
+		transparencecheck = yes
+	}
+
+}
