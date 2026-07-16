@@ -491,3 +491,32 @@ As 2 tags restantes (`JAP`, `SOV`) vinham dos 8 arquivos de subdoctrine aéreas/
 ### Pendência restante
 
 `common/doctrines.disabled` (grand_doctrines, tracks, folders — versão autoral completa) continua sem decisão de reativação (mesma pendência da Rodada 5D). `common/script_constants/state_groups.txt` (vanilla, não sobrescrito) referencia IDs de estado que provavelmente não existem no mapa do Azarya, mas não gerou nenhum erro no log atual — não mexido, documentado como possível ponto de atenção futuro se aparecer algum erro relacionado a estados.
+
+---
+
+## Fechamento de `countrytag.cpp:135` (parte 2) e regressões críticas do frontend (2026-07-15)
+
+*Log novo enviado pelo usuário: só 3 tags restantes (JAP, SOV, CZE), mas também revelou 2 problemas graves ("Undefined GUI_TYPE... This will most likely crash the game") introduzidos por edições feitas fora desta conversa em `frontendmainview.gui` e `frontendgamesetupview.gui` — ambos os arquivos foram reescritos externamente (mesmo timestamp nos dois), com estrutura bem diferente da Rodada 5E. Tratado como nova base real, sem tentar reverter — só corrigidos os bugs estruturais pontuais.*
+
+### `interface/frontendmainview.gui` — `change_background` removido por completo
+
+O container `change_background` (e seus filhos `background_selection`/`background_selection_list`/`available_backgrounds`/`select_all_checkbox`/`change_background_button`) tinha sumido inteiramente do arquivo entre `owned_dlc_item` e `unowned_dlc_item`. Mesmo padrão do bug do `version_label` (Rodada 5E): o motor procura esse elemento por nome internamente mesmo quando oculto — sem ele, "Undefined GUI_TYPE: change_background - This will most likely crash the game" e uma cascata de "Could not find X in window" pros filhos. **Fix**: bloco restaurado (texto verificado, lido diretamente do arquivo numa investigação anterior desta mesma sessão), com `hide = yes` mantido. Nenhuma outra parte do arquivo foi tocada — o resto claramente tem edições novas e deliberadas de fora desta conversa (ex.: posição do `frontend_game_logo` mudou pra x=750 y=25) que não me cabe reverter.
+
+### `interface/frontendgamesetupview.gui` — `filters` removido, comentário explicava o motivo errado
+
+O elemento `filters` (`OverlappingElementsBoxType`) tinha sido removido de `gamesetup_interesting_countries_window`, com um comentário explicando que dependia de um template `country_filter` "que a gente não tem" (referência a outro mod, "Youjo Senki", usado como base externa de comparação). Na verdade `country_filter` é um template que o próprio motor cria dinamicamente ao redor do `filters` — nem o vanilla define esse template em nenhum arquivo. **Fix**: `filters` restaurado com os valores exatos do vanilla atual (posição/tamanho/spacing), resolvendo tanto o "Could not find 'filters'" quanto o "Undefined GUI_TYPE: country_filter" repetido.
+
+### `countrytag.cpp:135` — os 3 últimos: JAP, SOV, CZE
+
+Repeti a metodologia da rodada anterior (buscar um arquivo só que contenha as 3 tags juntas, cruzando com as pastas ainda não cobertas por `replace_path`). Dois arquivos, ambos 100% vanilla puro sem uso autoral:
+
+- **`common/profile_pictures/00_profile_picture.txt`** (pasta nunca tocada) — sistema de fotos de perfil de carreira multiplayer, quase todas as 59 entradas numeradas (exceto 4 genéricas) travadas atrás de `tag = <país vanilla>` ligado a focus histórico específico (CZE, JAP, SOV, GER, ENG, USA, FRA, ITA, POL, GRE, BUL, CHI, YUG, POR, MEX, HOL, LIT, RAJ, SPR, SWI, ETH etc.) — nenhuma dessas tags existe no Azarya, então nenhuma dessas entradas pode disparar de verdade. **Fix**: override novo mantendo só as 4 entradas genéricas (sem `tag =`), removendo as ~55 travadas atrás de país vanilla.
+- **`common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt`** — 9º arquivo de doctrine que tinha ficado de fora das Rodadas 5D/5D-parte-2 (só descoberto agora porque nenhuma das suas ~28 referências de tag tinha aparecido nos logs testados até então). Removidos 7 blocos `modifier = { OR = { original_tag = ... } }` (SWE/FIN/NOR, GER/SOV/POL/ITA/BEL, ENG/CAN/AST/NZL/SAF, JAP/USA, SOV/JAP/ITA, GER/ENG/POL/USA, FIN/SWE/NOR/BEL, SIA/RAJ/BRM), preservando o resto de cada subdoctrine. `descriptor.mod`/`Azarya.mod` ganharam `replace_path="common/doctrines/subdoctrines/special_forces"`.
+
+### `AZ_lore_icon_TEMP.dds`/`AZ_lore_mapicon_TEMP.dds` — placeholder temporário carregado a pedido do usuário
+
+Confirmado como Equestria at War (Steam Workshop, appid 394360, item 1826643372) — `gfx/interface/state_lore_button.dds` (47×50) e `gfx/interface/state_lore_mapicon.dds` (47×76), dimensões batendo exatamente com o que o comentário do próprio `AZ_lore_atlas.gfx` já documentava. Copiados para `gfx/interface/AZ_lore_icon_TEMP.dds`/`AZ_lore_mapicon_TEMP.dds` a pedido explícito do usuário, como placeholder temporário — headers DDS válidos confirmados via `validate_mod.py` (338 arquivos verificados, só os 3 ERROR de sempre). Ainda precisam ser trocados por arte própria do Azarya antes de qualquer release pública (mesmo aviso já presente no comentário do `.gfx`).
+
+### Validação
+
+`tools/validate_mod.py`: 3 ERROR (DDS conhecidos), 76 WARNING (baseline inalterada), 0 divergência de manifesto, 0 desbalanceamento de chaves. Chaves balanceadas conferidas manualmente em `frontendmainview.gui` (259/259), `frontendgamesetupview.gui` (642/642) e `special_forces_subdoctrines.txt` (195/195). Sem commit/push.

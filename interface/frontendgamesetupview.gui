@@ -689,11 +689,18 @@ guiTypes = {
 
 		}
 
-		# Removido: a caixa de filtros ("filters") do Youjo Senki depende de um
-		# template "country_filter" que eles definem em outro arquivo que a
-		# gente nao tem - sem ele o motor loga "Undefined GUI_TYPE: country_filter"
-		# repetidamente (risco de crash). Como nao usamos filtro por categoria
-		# nessa tela, o elemento foi removido em vez de portado.
+		# O elemento "filters" precisa existir aqui mesmo sem uso de fato: o
+		# motor cria internamente um template "country_filter" ao redor dele
+		# (nao e algo que .gui define - nem o vanilla define "country_filter"
+		# em lugar nenhum) e sem "filters" presente ele loga "Undefined
+		# GUI_TYPE: country_filter" repetidamente (risco real de crash).
+		OverlappingElementsBoxType = {
+			name = "filters"
+			position = { x = 22 y = 321 }
+			size = { x = 1181 y = 32 }
+			format = center
+			spacing = 14.0
+		}
 
 		containerWindowType = {
 			name ="countries_medium"
