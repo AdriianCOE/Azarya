@@ -12,15 +12,11 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "az_info_button_container"
-		position = { x = 0 y = -55 }
+		position = { x = 1350 y = -1090 }
 		size = { width = 191 height = 56 }
 		Orientation = lower_left
 		moveable = yes
 
-		background = {
-			name = "Background"
-			spriteType ="GFX_tiled_plain_bg_small"
-		}
 
 		buttonType = {
 			name ="az_info_button"
