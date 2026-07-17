@@ -231,6 +231,34 @@
  THK_EmpireReborn_desc:0 "Reconstructed at home, united in politics, and secure on land, sea, and air, Thiryn can once again stand at the heart of Azarya."
 
  # ============================================================
+ # THE LOST BORDER — GENGEN, GYDIAN, AND GREAT THIRYN
+ # ============================================================
+
+ THK_RevanchistSentiment:0 "The Wound That Will Not Heal"
+ THK_RevanchistSentiment_desc:0 "Doia, Haifa, and Mominches are gone in name only. In every regiment and every market square, the demand is the same: Thiryn does not forget what Gengen took."
+
+ THK_RefugeesFromTheWest:0 "Refugees from the West"
+ THK_RefugeesFromTheWest_desc:0 "Families who fled Doia, Haifa, and Mominches after the defeat still crowd the border towns, waiting for a government bold enough to promise them a way home."
+
+ THK_VeteransCommittees:0 "Veterans' Committees"
+ THK_VeteransCommittees_desc:0 "Men who marched into that humiliating war and marched back out of it defeated have organized themselves. They ask for recognition first, and for reckoning in time."
+
+ THK_MapsOfTheLostProvinces:0 "Maps of the Lost Provinces"
+ THK_MapsOfTheLostProvinces_desc:0 "Surveyors, veterans, and displaced officials compile a single detailed record of Doia, Haifa, and Mominches: population, garrisons, railways, and grievances, ready for whichever policy the Crown chooses."
+
+ THK_AcceptGydianPatronage:0 "Accept Gydian Patronage"
+ THK_AcceptGydianPatronage_desc:0 "Gydian envoys have hinted, more than once, that the lost provinces could be returned to grateful friends. Accepting their patronage buys credit, advisors, and goodwill — at a price still unwritten."
+
+ THK_RejectGydianPatronage:0 "Rely on Ourselves"
+ THK_RejectGydianPatronage_desc:0 "Every power that has offered Thiryn help has asked for something larger in return. The Crown chooses to rebuild the kingdom's strength without owing Gydian a single debt."
+
+ THK_PrepareTheClaim:0 "Prepare the Claim"
+ THK_PrepareTheClaim_desc:0 "Stockpiles grow, reservists drill, and the general staff drafts contingency after contingency. Whatever path the government has chosen, the army will be ready to press Thiryn's claim."
+
+ THK_TowardGreatThiryn:0 "Toward Great Thiryn"
+ THK_TowardGreatThiryn_desc:0 "A stable government, a prepared army, and a nation that has not forgotten its lost provinces: Thiryn now stands ready to reclaim what the old order lost, and to reforge itself as Great Thiryn."
+
+ # ============================================================
  # THIRYN RESEARCH AND DOCTRINE BONUS NAMES
  # ============================================================
  THK_guerrilla_bonus:0 "Irregular Warfare Lessons"

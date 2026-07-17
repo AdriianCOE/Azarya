@@ -119,37 +119,3 @@ news_event = {
 	}
 }
 
-
-# Formation of Great Thiryn
-news_event = {
-	id = news.59
-	title = news.59.t
-	desc = news.59.desc
-	picture = GFX_news_event_generic_parliament
-
-	is_triggered_only = yes
-    major = yes       # Marca como um evento importante
-
-	option = {
-		name = news.59.a
-		trigger = {
-			original_tag = THK
-			NOT = { has_war_with = FROM }
-		}
-	}
-
-	option = {
-		name = news.59.b
-		trigger = {
-			NOT = { original_tag = THK }
-			NOT = { has_war_with = FROM }
-		}
-	}
-
-	option = {
-		name = news.59.c
-		trigger = {
-			has_war_with = FROM
-		}
-	}
-}

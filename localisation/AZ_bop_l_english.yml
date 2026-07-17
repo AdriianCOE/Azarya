@@ -22,7 +22,7 @@
  BOP_STATIC_MODIFIER:0 "$NAME|H$"
  
  THK_balance_of_power:0 "[THK.GetNameDefCap] \nBalance of Power"
- THK_bop_left_side:0 "The Auruum House"
+ THK_bop_left_side:0 "The Aurum House"
  THK_bop_right_side:0 "The Royal Army"
  THK_mid_range:0 "Center"
  THK_strong_queen_government: "Strong Queen Government"
@@ -45,20 +45,27 @@
  
  THK_absurdly_high_increase_effect:0 "Give Royal-Army all influence"
  
- THK_very_low_decrease_effect:0 "Get Auruum Advice"
- THK_very_low_decrease_effect_desc:0 "The Auruum has some valuable advice for us. We should heed them."
+ THK_very_low_decrease_effect:0 "Get Aurum Advice"
+ THK_very_low_decrease_effect_desc:0 "The Aurum has some valuable advice for us. We should heed them."
  
  THK_low_decrease_effect:0 "Seize Civilian Property"
  THK_low_decrease_effect_desc:0 "For our war effort any empty land must be handed to the government."
  
- THK_medium_decrease_effect:0 "Give Auruum medium influence"
+ THK_medium_decrease_effect:0 "Give Aurum medium influence"
  
- THK_high_decrease_effect:0 "Recruit Auruum Divisions"
- THK_high_decrease_effect_desc:0 "The Auruum house has trained some divisions for us. We should make use of them."
+ THK_high_decrease_effect:0 "Recruit Aurum Divisions"
+ THK_high_decrease_effect_desc:0 "The Aurum house has trained some divisions for us. We should make use of them."
  
- THK_absurdly_high_decrease_effect:0 "Give Auruum all influence"
+ THK_absurdly_high_decrease_effect:0 "Give Aurum all influence"
  
- THK_division_infantry_ss:0 "Create two half-empty militia Auruum divisions in a random controlled state. Only usable once per year."
+ THK_division_infantry_ss:0 "Create two half-empty militia Aurum divisions in a random controlled state. Only usable once per year."
  add_equipment_effect:0 "Add equipment to the stockpile. Only usable once per year."
  add_factory_effect:0 "Add one offsite military factory. Only usable once per year."
  add_building_slot:0 "Add two building slots in a random core state. Only usable once per year."
+
+ decision_cost_CP_50_pp_50_ArmXP_15:0 "Cost: §Y50§! Command Power"
+
+ THK_officers_consolidate_effect:0 "Let the Officers Speak"
+ THK_officers_consolidate_effect_desc:0 "The high command has its own opinion on how the kingdom should be run, and it is tired of waiting to be asked."
+ THK_officers_consolidate_cost_text:0 "Cost: §Y50§! Command Power"
+ THK_officers_consolidate_reward_tt:0 "The general staff drills the reorganized command structure, granting §Y10§! Army Experience."

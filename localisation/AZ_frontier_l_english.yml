@@ -1,0 +1,9 @@
+﻿l_english:
+ THK_frontier_decisions_category:0 "The Lost Border"
+ THK_frontier_decisions_category_desc:0 "Decisions concerning the frontier with Gengen and the fate of Doia, Haifa, and Mominches."
+
+ THK_PatrolDoiaFrontier:0 "Patrol the Doia Frontier"
+ THK_PatrolDoiaFrontier_desc:0 "Regular patrols along the Doia frontier remind both sides that the border is watched, and remind our own people that the claim has not been forgotten."
+
+ THK_ClaimLostProvinces:0 "Press the Claim on the Lost Provinces"
+ THK_ClaimLostProvinces_desc:0 "The government formally presses Thiryn's claim on Doia, Haifa, and Mominches. This does not mean war has begun — only that the crown reserves the right to demand it."

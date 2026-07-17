@@ -132,15 +132,15 @@
 
 | Campo | Definição |
 |---|---|
-| Status | CANON |
+| Status | CANON; **lado THK parcialmente IMPLEMENTADO nesta rodada** (ver `docs/lore/countries/THK.md` e `03_thiryn_gengen_conflict.md`) |
 | Estados | Doia 86, Haifa 400, Mominches 409 |
-| Ponto inicial | UPG controla os três; THK possui interesse nacional/core conforme implementação |
-| Mecânica | tensão de fronteira + influência gydiana separada nos dois países |
-| Eventos | patrulhas, escolas, refugiados, sabotagem, contrabando, mobilização |
-| Rota histórica | Gengen inclina-se a Gydian |
-| Alternativas | aliança THK–GYE; reconciliação THK–UPG; neutralidade; guerra regional |
-| Great Thiryn | relação forte com reconquista dos três estados, mas ligação técnica exata deve ser revalidada |
-| Testes | tensão limitada não inicia guerra automaticamente; eventos não repetem; Great Thiryn não usa notícia vanilla |
+| Ponto inicial | UPG controla os três; THK possui core sobre os três (confirmado em `history/states/`) |
+| Mecânica | tensão de fronteira (`az_thk_upg_border_tension`, IMPLEMENTADA do lado THK) + influência gydiana (`az_gye_influence_thk`, IMPLEMENTADA; `az_gye_influence_upg` ainda AUSENTE) |
+| Eventos | ramo de focos "The Lost Border" em `common/national_focus/Thiryn.txt` (revanchismo, refugiados, veteranos, patronagem gydiana) + decisão repetível `THK_PatrolDoiaFrontier`; incidentes de sabotagem/contrabando/mobilização do lado UPG continuam AUSENTES |
+| Rota histórica | Gengen inclina-se a Gydian (lado UPG não implementado) |
+| Alternativas | aliança THK–GYE (`THK_AcceptGydianPatronage`) e autonomia (`THK_RejectGydianPatronage`) IMPLEMENTADAS do lado THK; reconciliação THK–UPG, neutralidade e guerra regional ainda dependem de conteúdo em UPG não criado |
+| Great Thiryn | IMPLEMENTADO E CORRIGIDO — decisão `form_Great_Thiryn` agora exige o foco final `THK_TowardGreatThiryn` e estabilidade mínima, além dos três estados; `news.59` removido |
+| Testes | tensão não inicia guerra automaticamente (confirmado — só acumula variável); decisão `THK_ClaimLostProvinces` apenas cria wargoal, não declara guerra; Great Thiryn não usa mais `news.59` |
 
 ---
 

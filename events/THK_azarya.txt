@@ -1,18 +1,52 @@
 add_namespace = THK_azarya
 
-# Queen's Speech of Thiryn
+# Queen's Speech of Thiryn — fires on completion of THK_queensSpeech, opening the succession crisis
 
-news_event = {
-    id = THK_azarya.1
-    title = THK_azarya.1.t  # Referência correta ao arquivo de localização
-    desc = THK_azarya.1.d
-    picture = GFX_THK_marcha_militar_anual_de_thiryn  # GFX deve ser definido corretamente
+country_event = {
+	id = THK_azarya.1
+	title = THK_azarya.1.t
+	desc = THK_azarya.1.d
+	picture = GFX_news_event_generic_parliament
 
-    is_triggered_only = yes
-    major = yes       # Marca como um evento importante
+	is_triggered_only = yes
+	major = yes
 
-    option = {
-        name = THK_azarya.1.a
-        ai_chance = { factor = 60 }
-    }
+	option = {
+		name = THK_azarya.1.a
+		add_political_power = 25
+		ai_chance = { factor = 40 }
+	}
+	option = {
+		name = THK_azarya.1.b
+		add_stability = 0.02
+		ai_chance = { factor = 35 }
+	}
+	option = {
+		name = THK_azarya.1.c
+		add_war_support = 0.02
+		ai_chance = { factor = 25 }
+	}
+}
+
+# The Wound That Will Not Heal — fires on completion of THK_RevanchistSentiment, opening the border-tension branch
+
+country_event = {
+	id = THK_azarya.2
+	title = THK_azarya.2.t
+	desc = THK_azarya.2.d
+	picture = GFX_news_event_generic_parliament
+
+	is_triggered_only = yes
+
+	option = {
+		name = THK_azarya.2.a
+		add_stability = 0.02
+		ai_chance = { factor = 50 }
+	}
+	option = {
+		name = THK_azarya.2.b
+		add_war_support = 0.03
+		add_stability = -0.01
+		ai_chance = { factor = 50 }
+	}
 }

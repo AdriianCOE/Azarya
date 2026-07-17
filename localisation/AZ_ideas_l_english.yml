@@ -4,10 +4,25 @@ THK_Defeated_Army:0 "Defeated Army"
 THK_Defeated_Army_desc:0 "After the humiliating defeat in the border dispute, Thiryn's army is demoralized and disorganized. Incompetent officers and poorly equipped troops have turned the kingdom's military force into a mere shadow of its former self, jeopardizing national security."
 
 THK_Corrupt_Queen:0 "The Corrupt Queen"
-THK_Corrupt_Queen_desc:0 "After the humiliating defeat in the border dispute, Thiryn's army is demoralized and disorganized. Incompetent officers and poorly equipped troops have turned the kingdom's military force into a mere shadow of its former self, jeopardizing national security."
+THK_Corrupt_Queen_desc:0 "For decades, the court of Thiryn has been synonymous with privilege, patronage, and quiet corruption. The crown's grip on power remains firm, but its legitimacy erodes a little more with each scandal that reaches the streets."
 
 Great_Earthquake:0 "The Great Earthquake"
 Great_Earthquake_desc:0 "At the end of 1922, a devastating earthquake shook the entire peninsula, destroying cities, collapsing infrastructure, and leaving thousands homeless. The aftermath of this catastrophe still affects Thiryn, as rebuilding efforts struggle against political instability and economic turmoil."
+
+THK_Revanchist_Movement:0 "The Revanchist Movement"
+THK_Revanchist_Movement_desc:0 "Veterans, dispossessed landowners, and refugees from Doia, Haifa, and Mominches have found common cause in a single demand: the return of what was lost. Their voice grows louder in every barracks and every tavern, and no government can safely ignore it."
+
+THK_War_Refugees:0 "Refugees of the Lost Provinces"
+THK_War_Refugees_desc:0 "Thousands who once called Doia, Haifa, and Mominches home now crowd the roads and outskirts of Thiryn's cities, dependent on a state that can barely feed itself. Their presence strains every ministry, yet their hands are needed in field and factory alike."
+
+THK_Gydian_Patronage:0 "Gydian Patronage"
+THK_Gydian_Patronage_desc:0 "Gydian credit has steadied the treasury, and Gydian advisors now sit in offices that once answered only to the Crown. Thiryn's finances are safer for it — but every loan carries a price yet to be named."
+
+THK_Self_Reliance:0 "The Self-Reliance Doctrine"
+THK_Self_Reliance_desc:0 "Rejecting Gydian patronage was a matter of pride as much as policy. Without foreign capital, reconstruction moves slower — but no foreign minister can claim a vote in Eldoria's council chambers."
+
+THK_War_Preparations:0 "Preparing the Claim"
+THK_War_Preparations_desc:0 "Maps of Doia, Haifa, and Mominches now hang in the war ministry beside maps of Thiryn itself. Stockpiles grow, reservists drill on weekends, and the army waits for the government to decide when — not whether — the claim will be pressed."
 
 #AEI
 AEI_TheBigTree:0 "The Tree"

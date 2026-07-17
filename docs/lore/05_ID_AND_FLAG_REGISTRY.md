@@ -63,6 +63,21 @@ Faixas não são tecnicamente obrigatórias, mas ajudam a leitura:
 
 Nenhuma faixa deve ser reservada sem verificar os IDs já existentes no momento da implementação.
 
+## IDs já implementados (não apenas propostos)
+
+Diferente do restante deste arquivo, os itens abaixo já existem em código real, criados durante a auditoria e expansão da árvore de foco de Thiryn:
+
+| ID | Tipo | Onde | Efeito |
+|---|---|---|---|
+| `az_thk_upg_border_tension` | variável de país, clampada 0–100 via `clamp_variable` (não mais inline em `add_to_variable`) | `common/national_focus/Thiryn.txt`, `common/decisions/THK.txt` | acumula tensão fronteiriça com UPG; sem leitor automático ainda |
+| `az_gye_influence_thk` | variável de país, clampada 0–100 via `clamp_variable` | `common/national_focus/Thiryn.txt` (`THK_AcceptGydianPatronage` +25, `THK_RejectGydianPatronage` -10) | reflete a influência gydiana sobre Thiryn |
+| `az_thk_gye_patronage_accepted` | flag de país | `common/national_focus/Thiryn.txt` (`THK_AcceptGydianPatronage`) | registra que Thiryn aceitou o patrocínio gydiano |
+| `az_thk_gye_patronage_rejected` | flag de país | `common/national_focus/Thiryn.txt` (`THK_RejectGydianPatronage`) | registra que Thiryn recusou o patrocínio gydiano e reduz `az_gye_influence_thk` |
+| `az_thk_great_thiryn_formed` | flag global | `common/decisions/formable_nation_decisions.txt` | substitui o antigo `form_test_flag`; impede nova formação |
+| `az_thk_great_thiryn_completed` | flag de país | `common/decisions/formable_nation_decisions.txt` | substitui o antigo `created_country` |
+
+Namespaces de evento realmente em uso: `THK_azarya` (eventos nacionais, `THK_azarya.1` e `THK_azarya.2`), `azarya_formables` (notícia de formação, `azarya_formables.1`). Nenhum desses reutiliza o namespace vanilla `news`; `news.59` foi removido por ser código morto.
+
 ## Flags globais
 
 | Flag proposta | Finalidade |

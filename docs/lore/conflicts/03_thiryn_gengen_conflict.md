@@ -117,6 +117,8 @@ Os nomes finais dos incidentes permanecem TBD.
 az_thk_upg_border_tension
 ```
 
+**IMPLEMENTADO NESTA RODADA (lado THK apenas)**: variável real (`set_variable`/`add_to_variable`), inicializada em 10 pelo foco `THK_RevanchistSentiment` e incrementada por `THK_RefugeesFromTheWest` (+5), `THK_VeteransCommittees` (+3), `THK_MapsOfTheLostProvinces` (+10) e pela decisão repetível `THK_PatrolDoiaFrontier` (+2, a cada 30 dias). Nenhum efeito automático de guerra está ligado a essa variável ainda — ela apenas acumula, pronta para um sistema geopolítico futuro que a leia. Não existe hoje nenhum equivalente do lado UPG.
+
 Faixa sugerida: `0–100`.
 
 A tensão pode alterar:
@@ -137,7 +139,11 @@ az_gye_influence_thk
 az_gye_influence_upg
 ```
 
-As duas variáveis devem poder crescer simultaneamente.
+**`az_gye_influence_thk` IMPLEMENTADO NESTA RODADA**: definida em 25 pelo foco `THK_AcceptGydianPatronage` (mutuamente exclusivo com `THK_RejectGydianPatronage`, que não altera a variável e em vez disso concede a ideia `THK_Self_Reliance`). Esse é o dilema de Thiryn descrito no "jogo duplo gydiano" — aceitar reduz `political_power_factor` e `drift_defence_factor` (dependência), recusar favorece estabilidade e apoio de guerra (independência), coerente com "Gydian não deve ser retratado como aliado confiável".
+
+`az_gye_influence_upg` continua **AUSENTE** — nenhum arquivo de UPG foi tocado nesta rodada, conforme escopo.
+
+As duas variáveis devem poder crescer simultaneamente quando `az_gye_influence_upg` for implementado.
 
 ## Rota histórica provável [CANON]
 
@@ -173,17 +179,18 @@ A tensão ou a interferência externa causa nova guerra antes ou durante a Grand
 
 ## Relação com Great Thiryn
 
-Os estados 86, 400 e 409 coincidem com a formação de Great Thiryn registrada em auditorias anteriores.
+Os estados 86, 400 e 409 coincidem com a formação de Great Thiryn.
 
-A ligação narrativa é forte, mas o wiring técnico precisa ser revalidado:
+**IMPLEMENTADO E VALIDADO NESTA RODADA** — o wiring técnico foi auditado e corrigido:
 
-- quais focos realmente ativam a formação;
-- quais estados são exigidos;
-- qual evento ou notícia é disparado;
-- se ainda existe uso indevido de `news.59`;
-- se Great Thiryn representa apenas reconquista ou ambição maior.
+- a formação é ativada apenas pela decisão `form_Great_Thiryn` (`common/decisions/formable_nation_decisions.txt`), nunca por um foco isoladamente — nenhum foco novo do lado THK duplica esse efeito;
+- os estados exigidos continuam sendo exatamente 86, 400 e 409 (`controls_state`), mais `is_subject = no`;
+- a decisão agora também exige `has_completed_focus = THK_TowardGreatThiryn` (novo foco final do ramo "The Lost Border" em `common/national_focus/Thiryn.txt`) e `has_stability > 0.4`, amarrando a formação à conclusão de uma rota política (`THK_A_NewThiryn`) e à preparação militar da reivindicação (`THK_PrepareTheClaim`), em vez de ficar disponível desde o primeiro dia;
+- o evento disparado é `azarya_formables.1` (namespace próprio `azarya_formables`), sempre depois do efeito (`hidden_effect`);
+- `news.59` era de fato um resíduo morto — um evento de notícia completo, nunca chamado, reutilizando o namespace vanilla `news` proibido pelo canon — e foi removido de `events/NewsEvents.txt`;
+- Great Thiryn continua representando apenas a reconquista dos três estados perdidos, sem ambição territorial maior.
 
-Até essa inspeção, registrar como **CANON narrativo provável / IMPLEMENTAÇÃO A VALIDAR**.
+O novo ramo "The Lost Border" (foco raiz `THK_RevanchistSentiment`, prerequisito = qualquer um dos três caminhos políticos) cobre revanchismo, refugiados, veteranos, o dilema de aceitar ou recusar o patrocínio gydiano, e a preparação de uma reivindicação formal via decisão (`THK_ClaimLostProvinces`, agora usando `retake_core_state` por estado sobre 86/400/409 — os três já são core de THK, então essa é a via preferida sobre `start_justifying_wargoal_against`/`create_wargoal_type`, tentativas anteriores desta mesma rodada de correções). A decisão valida a existência de UPG, ausência de guerra/wargoal já ativos e posse residual de UPG sobre os estados, e usa cooldown (`days_re_enable`) em vez de flag de uso único, para não travar permanentemente caso a justificação seja cancelada — nenhum foco ou decisão declara guerra automaticamente, e nada do lado de UPG ou do sistema geopolítico global (`az_gye_influence_upg`, IA de Gengen) foi implementado nesta rodada.
 
 ## Testes obrigatórios
 

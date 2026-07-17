@@ -1,5 +1,11 @@
 ﻿l_english:
-THK_azarya.1.t:0 "Annual Queen's Speech"
-THK_azarya.1.d:0 "serving as both an instrument of royal propaganda and a reflection of the people's concerns. While it publishes official decrees and speeches from the monarchy, whispers of rebellion and dissatisfaction often find their way into its pages. As tensions rise in the kingdom, the Herald's role in shaping public opinion becomes more crucial than ever."
-THK_azarya.1.a:0 "We need a replacement fast"
+THK_azarya.1.t:0 "The Queen's Address to the Realm"
+THK_azarya.1.d:0 "Queen Elara Lorenthia speaks to the nation for the first time since the earthquake and the humiliating defeat that preceded it. She speaks of reconstruction, of unity, and of a kingdom that must choose its own future — but in the taverns, barracks, and salons of Eldoria, everyone already knows that her words are only the opening move of a longer struggle."
+THK_azarya.1.a:0 "The court takes note."
+THK_azarya.1.b:0 "The people listen, cautiously hopeful."
+THK_azarya.1.c:0 "The officers listen for what she did not say."
 
+THK_azarya.2.t:0 "The Wound That Will Not Heal"
+THK_azarya.2.d:0 "News from the western frontier reaches Eldoria daily: another veterans' committee formed, another family arrived from Doia with nothing but what they carried. The court is divided on what to do with this growing anger — channel it, contain it, or simply let it burn."
+THK_azarya.2.a:0 "Let the committees organize quietly."
+THK_azarya.2.b:0 "Let the anger be heard."

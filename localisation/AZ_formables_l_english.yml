@@ -1,7 +1,11 @@
 ﻿l_english:
 form_Great_Thiryn:0 "Form Great Thiryn"
 form_Great_Thiryn_desc:0 "Unite the required lands and proclaim Great Thiryn under the Thiryn crown."
-form_test_tt:0 "Thiryn will be proclaimed as Great Thiryn."
+THK_form_great_thiryn_tt:0 "Thiryn will be proclaimed as Great Thiryn."
 azarya_formables.1.t:0 "The Formation of Great Thiryn"
 azarya_formables.1.d:0 "The Kingdom of Thiryn has proclaimed the formation of Great Thiryn, uniting its newly secured territories under a single crown."
 azarya_formables.1.a:0 "A new era for Thiryn."
+
+THK_UNIF:0 "Great Thiryn"
+THK_UNIF_DEF:0 "Great Thiryn"
+THK_UNIF_ADJ:0 "Great Thirynian"

@@ -10,23 +10,29 @@ forming_category = {
 
 		available = {
 			is_subject = no
-				controls_state = 86
-				controls_state = 409
-				controls_state = 400
+			owns_state = 86
+			owns_state = 409
+			owns_state = 400
+			controls_state = 86
+			controls_state = 409
+			controls_state = 400
+			has_completed_focus = THK_TowardGreatThiryn
+			has_stability > 0.4
+			NOT = { has_country_flag = az_thk_great_thiryn_completed }
 		}
 		visible = {
 			original_tag = THK
-			NOT = { has_global_flag = form_test_flag }
-			NOT = { has_country_flag = created_country }
+			NOT = { has_global_flag = az_thk_great_thiryn_formed }
+			NOT = { has_country_flag = az_thk_great_thiryn_completed }
 		}
 
 		complete_effect = {
 			set_cosmetic_tag = THK_UNIF
-			custom_effect_tooltip = form_test_tt
+			custom_effect_tooltip = THK_form_great_thiryn_tt
 			hidden_effect = {
-				set_global_flag = form_test_flag
+				set_global_flag = az_thk_great_thiryn_formed
 				news_event = { id = azarya_formables.1 hours = 6 }
-				set_country_flag = created_country
+				set_country_flag = az_thk_great_thiryn_completed
 			}
 		}
 

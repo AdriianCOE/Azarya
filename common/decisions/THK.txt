@@ -59,7 +59,7 @@ THK_bop_decisions_category = {
 	
 	THK_high_increase_effect = {
 		priority = 90
-		icon = GFX_decision_THK_military_buildup
+		icon = GFX_decision_generic_military
 
 		allowed = {
 			original_tag = THK
@@ -82,7 +82,34 @@ THK_bop_decisions_category = {
 		}
 	}
 
-		
+
+	}
+
+	THK_officers_consolidate_effect = {
+		priority = 90
+		icon = GFX_decision_generic_military
+
+		allowed = {
+			original_tag = THK
+		}
+
+		custom_cost_trigger = {
+			command_power > 49
+		}
+		custom_cost_text = THK_officers_consolidate_cost_text
+
+		days_re_enable = 365
+
+		complete_effect = {
+			custom_effect_tooltip = THK_officers_consolidate_reward_tt
+			THK_bop_high_increase_effect = yes
+			hidden_effect = {
+				add_command_power = -50
+				army_experience = 10
+			}
+		}
+
+		visible = { has_completed_focus = THK_MenOfPride }
 	}
 	
 #	THK_absurdly_high_increase_effect = {
@@ -237,6 +264,100 @@ THK_bop_decisions_category = {
 #			}
 #		}
 #
-#		
+#
 #	}
+}
+
+##############################################
+##############################################
+#### THE LOST BORDER — FRONTIER DECISIONS ####
+##############################################
+##############################################
+
+THK_frontier_decisions_category = {
+
+	THK_PatrolDoiaFrontier = {
+		icon = GFX_decision_generic_military
+		priority = 50
+
+		allowed = {
+			original_tag = THK
+		}
+
+		visible = {
+			has_completed_focus = THK_MapsOfTheLostProvinces
+		}
+
+		cost = 25
+
+		days_re_enable = 30
+
+		complete_effect = {
+			add_war_support = 0.01
+			add_to_variable = {
+				var = az_thk_upg_border_tension
+				value = 2
+			}
+			clamp_variable = {
+				var = az_thk_upg_border_tension
+				min = 0
+				max = 100
+			}
+		}
+	}
+
+	THK_ClaimLostProvinces = {
+		icon = GFX_decision_generic_military
+		priority = 95
+
+		allowed = {
+			original_tag = THK
+		}
+
+		visible = {
+			has_completed_focus = THK_PrepareTheClaim
+		}
+
+		available = {
+			exists = UPG
+			NOT = { has_war_with = UPG }
+			NOT = { has_wargoal_against = UPG }
+			OR = {
+				UPG = { owns_state = 86 }
+				UPG = { owns_state = 400 }
+				UPG = { owns_state = 409 }
+			}
+		}
+
+		cost = 150
+
+		days_re_enable = 90
+
+		complete_effect = {
+			if = {
+				limit = { UPG = { owns_state = 86 } }
+				retake_core_state = 86
+			}
+			if = {
+				limit = { UPG = { owns_state = 400 } }
+				retake_core_state = 400
+			}
+			if = {
+				limit = { UPG = { owns_state = 409 } }
+				retake_core_state = 409
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 3
+				date > 1927.1.1
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = { tag = UPG ratio > 1.2 }
+			}
+		}
+	}
 }
