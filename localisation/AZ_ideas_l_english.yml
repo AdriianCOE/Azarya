@@ -42,7 +42,34 @@ CZL_Fear_of_the_population:0 "Legacy of Fear"
 CZL_Fear_of_the_population_desc:0 "Decades of brutal oppression in the northern provinces, especially over the Alarican population, have left deep scars. The memories of exile, confiscation, and violence still haunt the people, creating an atmosphere of mistrust and unrest throughout the nation."
 
 CZL_Autoritarismo:0 "Authoritarian Rule"
-CZL_Autoritarismo_desc:0 "The Czardom of Lesc has long relied on the might of its army and the iron grip of the ruling Lescote dynasty to maintain order. While effective in suppressing dissent, this rigid control fuels resistance and stifles political development."
+CZL_Autoritarismo_desc:0 "The Czardom of Lesc has long relied on the might of its army and the iron grip of the ruling Vorenkov dynasty to maintain order. While effective in suppressing dissent, this rigid control fuels resistance and stifles political development."
 
 CZL_Monetary_retention:0 "Seized Assets"
 CZL_Monetary_retention_desc:0 "In an effort to secure absolute control, the Czardom has enacted harsh economic policies—seizing private property, hoarding national wealth, and taxing the poor heavily. The economy suffers, and political unrest continues to fester under the weight of inequality."
+
+LSC_northern_military_rule:0 "Military Administration of the Alarican Provinces"
+LSC_northern_military_rule_desc:0 "The north was never governed — it was garrisoned. Since the conquest, the Alarican provinces have answered to army commandants rather than magistrates, their levies and grain requisitioned under standing orders. It keeps the roads open and the mines running, but every year of martial law is a year the north does not forget."
+
+LSC_gathering_storm:0 "The Uncured Fracture"
+LSC_gathering_storm_desc:0 "The old wound between the wealthy south and the occupied north has never closed, and now the Czar's failing health threatens to reopen it at the worst possible moment. Ministers speak in careful half-sentences; the army watches the palace; the ledgers of the great southern houses stay open later than usual."
+
+LSC_gydian_doctrine:0 "Gydian Staff Manuals"
+LSC_gydian_doctrine_desc:0 "Reprinted and distributed through the officer corps, the borrowed Gydian field manuals bring a harder, more methodical edge to Lescian drill and staff planning — a first, cautious step toward a modernized army, taken without yet inviting Gydian advisors into the Czar's own councils."
+
+LSC_southern_contracts:0 "Southern Contracts and Credit"
+LSC_southern_contracts_desc:0 "State contracts, easy credit, and a great deal of goodwill flow from the counting houses of the south — goodwill that is never extended without expecting a say in how it is spent. Construction moves faster under this arrangement; the Crown's independence moves a little slower."
+
+LSC_kael_officer_network:0 "Kael's Officer Network"
+LSC_kael_officer_network_desc:0 "A quiet web of postings and promotions has put officers loyal to Kael in exactly the rooms where decisions get made. The chain of command runs smoother for it — and answers to more than one master."
+
+LSC_kael_oligarch_support:0 "Backing of the Southern Houses"
+LSC_kael_oligarch_support_desc:0 "The great industrial families back Kael's claim with contracts, credit, and favorable press — an alliance that keeps the arms factories running, at the price of the direction they run in."
+
+LSC_selene_palace_network:0 "Selene's Palace Network"
+LSC_selene_palace_network_desc:0 "Clerks, stewards, chamberlains and a discreet circle of guardsmen keep the machinery of the palace running smoothly — and keep Selene informed of everything that passes through it."
+
+LSC_alvaro_partisan_networks:0 "Alarican Partisan Networks"
+LSC_alvaro_partisan_networks_desc:0 "Messengers, veterans and organizers move between the valleys and the mill towns, building something the administration cannot see clearly enough to dismantle. It unsettles the state more than it comforts anyone."
+
+LSC_underground_press:0 "The Underground Press"
+LSC_underground_press_desc:0 "Hidden typesets and smuggled pamphlets carry word through the Alarican valleys faster than the administration can seize them. Every raid that fails to find the press only proves its point."

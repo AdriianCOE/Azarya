@@ -1,0 +1,46 @@
+﻿l_english:
+ # Azarya: LSC_imperial_fracture_category (Czariado de Lesc / CZL). Phase 2 —
+ # pre-succession decisions. Category disappears once a route flag is set;
+ # see common/decisions/categories/CZL_imperial_fracture_categories.txt.
+
+ LSC_imperial_fracture_category:0 "The Imperial Fracture"
+ LSC_imperial_fracture_category_desc:0 "With the succession openly acknowledged, the Crown, the Army, the great southern houses and the Alarican provinces all begin maneuvering before any heir has been chosen. Every decision here is a trade, not a gift — nothing here comes free."
+
+ LSC_reinforce_alarican_garrisons:0 "Reinforce the Alarican Garrisons"
+ LSC_reinforce_alarican_garrisons_desc:0 "New columns march north under sealed orders — not to conquer ground already held, but to remind the Alarican provinces exactly whose peace they live under. The general staff approves; the quartermasters do not."
+ LSC_reinforce_alarican_garrisons_tt:0 "Strengthens the Army's loyalty to the Crown and checks the momentum of northern radicals, but the visible buildup only confirms what the Alarican provinces already suspect — and the levies pulled south to pay for it are felt immediately."
+
+ LSC_negotiate_southern_industrialists:0 "Negotiate with the Southern Industrialists"
+ LSC_negotiate_southern_industrialists_desc:0 "The great houses of the south are always willing to talk — for a price. Tax relief here, a state contract there, and the Crown's coffers can call on their machine shops when it matters most."
+ LSC_negotiate_southern_industrialists_tt:0 "Deepens the oligarchy's stake in the Crown and, for a time, speeds industrial construction across the realm, at the cost of political capital and a further tightening of the screws on the north."
+
+ LSC_purge_suspect_officers:0 "Replace the Suspect Officers"
+ LSC_purge_suspect_officers_desc:0 "A quiet reshuffling of postings, retirements offered a little too firmly, and a handful of court-martials kept out of the papers. The general staff comes out leaner, and considerably more certain of where its loyalties lie."
+ LSC_purge_suspect_officers_tt:0 "Rebuilds confidence in the officer corps and cuts the ground out from under sympathizers of the northern cause, but the disruption costs the army real experience for a time — and this is not a purge that can be repeated casually."
+
+ LSC_accept_gydian_advisors:0 "Receive Gydian Military Advisors"
+ LSC_accept_gydian_advisors_desc:0 "A standing offer from Gydian finally receives an answer. Their officers arrive with staff manuals, artillery doctrine, and a great deal of polite interest in how Lesc conducts its own affairs."
+ LSC_accept_gydian_advisors_tt:0 "Brings real doctrinal expertise and a burst of army experience, and binds the general staff a little closer to the Crown — but Gydian's foothold in Lesc's own councils grows with it, and the Crown's freedom of maneuver shrinks by exactly that much. This can only be done once."
+
+ LSC_censor_alarican_press:0 "Censor the Alarican Press"
+ LSC_censor_alarican_press_desc:0 "Presses are seized, editors questioned, and the handful of Alarican-language papers still in print are reminded, in writing, what they may no longer say. The agitators go quiet — for now."
+ LSC_censor_alarican_press_tt:0 "Cuts into revolutionary organizing in the short term and pleases the men who already run the south, but a censored province is not a pacified one, and the resentment it stores up outlasts the silence."
+
+ LSC_fund_selenes_network:0 "Fund the Marble Princess's Network"
+ LSC_fund_selenes_network_desc:0 "Selene's correspondence reaches further than most in the palace realize — clerks, chamberlains, and a discreet circle of informants who owe her, quietly, for favors already rendered."
+ LSC_fund_selenes_network_tt:0 "Strengthens Selene's own standing at the oligarchy's expense, at the cost of political capital and a court that runs a little more on favors than on merit. It is influence, not command — the network cannot decide the succession on its own."
+
+ LSC_smuggle_arms_to_northern_committees:0 "Turn a Blind Eye to the Valley Smugglers"
+ LSC_smuggle_arms_to_northern_committees_desc:0 "Rifles go missing from a supply depot that was never properly inventoried. Everyone from the quartermaster to the regional prefect has a reason not to look too closely — and by the time anyone would, the crates are long gone into the Alarican valleys."
+ LSC_smuggle_arms_to_northern_committees_tt:0 "The Crown does not arm the committees — it simply fails, this time, to stop them. Revolutionary strength and northern unrest both grow, and the army's confidence in its own supply discipline takes a visible hit. Only worth attempting once the underground movement already has real momentum."
+
+ LSC_mobilize_kaels_veteran_leagues:0 "Mobilize the Veterans' Leagues"
+ LSC_mobilize_kaels_veteran_leagues_desc:0 "Old soldiers' associations and nationalist leagues take to the streets in disciplined columns, banners high, a very public reminder of who still commands the loyalty of Lesc's armed men."
+ LSC_mobilize_kaels_veteran_leagues_tt:0 "Rallies the Army's loyalty and war support and unsettles the revolutionary underground, but the marching columns fray civil order a little more each time they're called out."
+
+ LSC_northern_unrest:0 "Alarican Unrest"
+ LSC_army_loyalty:0 "Army Loyalty"
+ LSC_oligarch_influence:0 "Oligarchic Influence"
+ LSC_gydian_influence:0 "Gydian Influence"
+ LSC_selene_legitimacy:0 "Selene's Legitimacy"
+ LSC_revolutionary_strength:0 "Revolutionary Strength"

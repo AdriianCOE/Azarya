@@ -1,0 +1,316 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="7204" height="2806" viewBox="0 0 7204 2806">
+<rect width="100%" height="100%" fill="#111827"/>
+<text x="40" y="38" fill="#f9fafb" font-family="DejaVu Sans" font-size="24" font-weight="700">Czariado de Lesc — árvore reformulada</text>
+<text x="40" y="63" fill="#9ca3af" font-family="DejaVu Sans" font-size="13">Linhas cinzas: pré-requisitos • linhas vermelhas tracejadas: exclusão mútua</text>
+<g fill="none" stroke="#6b7280" stroke-width="2" opacity="0.78">
+<path d="M 3602.0 134.0 V 161.0 H 3242.0 V 188.0"/>
+<path d="M 3602.0 134.0 V 161.0 H 3962.0 V 188.0"/>
+<path d="M 3242.0 242.0 V 269.0 H 3602.0 V 296.0"/>
+<path d="M 3962.0 242.0 V 269.0 H 3602.0 V 296.0"/>
+<path d="M 3602.0 350.0 V 377.0 H 3602.0 V 404.0"/>
+<path d="M 3602.0 458.0 V 485.0 H 1802.0 V 512.0"/>
+<path d="M 1802.0 566.0 V 593.0 H 1622.0 V 620.0"/>
+<path d="M 1802.0 566.0 V 593.0 H 1982.0 V 620.0"/>
+<path d="M 1622.0 674.0 V 701.0 H 1802.0 V 728.0"/>
+<path d="M 1982.0 674.0 V 701.0 H 1802.0 V 728.0"/>
+<path d="M 1802.0 782.0 V 809.0 H 1622.0 V 836.0"/>
+<path d="M 1802.0 782.0 V 809.0 H 1982.0 V 836.0"/>
+<path d="M 1622.0 890.0 V 917.0 H 1802.0 V 944.0"/>
+<path d="M 1982.0 890.0 V 917.0 H 1802.0 V 944.0"/>
+<path d="M 1802.0 998.0 V 1079.0 H 1802.0 V 1160.0"/>
+<path d="M 1802.0 1214.0 V 1241.0 H 1622.0 V 1268.0"/>
+<path d="M 1802.0 1214.0 V 1241.0 H 1982.0 V 1268.0"/>
+<path d="M 1622.0 1322.0 V 1349.0 H 1802.0 V 1376.0"/>
+<path d="M 1982.0 1322.0 V 1349.0 H 1802.0 V 1376.0"/>
+<path d="M 1802.0 1430.0 V 1457.0 H 1622.0 V 1484.0"/>
+<path d="M 1802.0 1430.0 V 1457.0 H 1982.0 V 1484.0"/>
+<path d="M 1622.0 1538.0 V 1565.0 H 1802.0 V 1592.0"/>
+<path d="M 1982.0 1538.0 V 1565.0 H 1802.0 V 1592.0"/>
+<path d="M 3602.0 458.0 V 485.0 H 3602.0 V 512.0"/>
+<path d="M 3602.0 566.0 V 593.0 H 3422.0 V 620.0"/>
+<path d="M 3602.0 566.0 V 593.0 H 3782.0 V 620.0"/>
+<path d="M 3422.0 674.0 V 701.0 H 3602.0 V 728.0"/>
+<path d="M 3782.0 674.0 V 701.0 H 3602.0 V 728.0"/>
+<path d="M 3602.0 782.0 V 809.0 H 3422.0 V 836.0"/>
+<path d="M 3602.0 782.0 V 809.0 H 3782.0 V 836.0"/>
+<path d="M 3422.0 890.0 V 917.0 H 3602.0 V 944.0"/>
+<path d="M 3782.0 890.0 V 917.0 H 3602.0 V 944.0"/>
+<path d="M 3602.0 998.0 V 1079.0 H 3602.0 V 1160.0"/>
+<path d="M 3602.0 1214.0 V 1241.0 H 3422.0 V 1268.0"/>
+<path d="M 3602.0 1214.0 V 1241.0 H 3782.0 V 1268.0"/>
+<path d="M 3422.0 1322.0 V 1349.0 H 3602.0 V 1376.0"/>
+<path d="M 3782.0 1322.0 V 1349.0 H 3602.0 V 1376.0"/>
+<path d="M 3602.0 1430.0 V 1457.0 H 3422.0 V 1484.0"/>
+<path d="M 3602.0 1430.0 V 1457.0 H 3782.0 V 1484.0"/>
+<path d="M 3422.0 1538.0 V 1565.0 H 3602.0 V 1592.0"/>
+<path d="M 3782.0 1538.0 V 1565.0 H 3602.0 V 1592.0"/>
+<path d="M 3602.0 458.0 V 485.0 H 5402.0 V 512.0"/>
+<path d="M 5402.0 566.0 V 593.0 H 5222.0 V 620.0"/>
+<path d="M 5402.0 566.0 V 593.0 H 5582.0 V 620.0"/>
+<path d="M 5222.0 674.0 V 701.0 H 5402.0 V 728.0"/>
+<path d="M 5582.0 674.0 V 701.0 H 5402.0 V 728.0"/>
+<path d="M 5402.0 782.0 V 809.0 H 5222.0 V 836.0"/>
+<path d="M 5402.0 782.0 V 809.0 H 5582.0 V 836.0"/>
+<path d="M 5222.0 890.0 V 917.0 H 5402.0 V 944.0"/>
+<path d="M 5582.0 890.0 V 917.0 H 5402.0 V 944.0"/>
+<path d="M 5402.0 998.0 V 1079.0 H 5402.0 V 1160.0"/>
+<path d="M 5402.0 1214.0 V 1241.0 H 5222.0 V 1268.0"/>
+<path d="M 5402.0 1214.0 V 1241.0 H 5582.0 V 1268.0"/>
+<path d="M 5222.0 1322.0 V 1349.0 H 5402.0 V 1376.0"/>
+<path d="M 5582.0 1322.0 V 1349.0 H 5402.0 V 1376.0"/>
+<path d="M 5402.0 1430.0 V 1457.0 H 5222.0 V 1484.0"/>
+<path d="M 5402.0 1430.0 V 1457.0 H 5582.0 V 1484.0"/>
+<path d="M 5222.0 1538.0 V 1565.0 H 5402.0 V 1592.0"/>
+<path d="M 5582.0 1538.0 V 1565.0 H 5402.0 V 1592.0"/>
+<path d="M 1802.0 1646.0 V 1727.0 H 3602.0 V 1808.0"/>
+<path d="M 3602.0 1646.0 V 1727.0 H 3602.0 V 1808.0"/>
+<path d="M 5402.0 1646.0 V 1727.0 H 3602.0 V 1808.0"/>
+<path d="M 3602.0 1862.0 V 1889.0 H 542.0 V 1916.0"/>
+<path d="M 542.0 1970.0 V 1997.0 H 182.0 V 2024.0"/>
+<path d="M 542.0 1970.0 V 1997.0 H 902.0 V 2024.0"/>
+<path d="M 182.0 2078.0 V 2105.0 H 542.0 V 2132.0"/>
+<path d="M 902.0 2078.0 V 2105.0 H 542.0 V 2132.0"/>
+<path d="M 542.0 2186.0 V 2213.0 H 542.0 V 2240.0"/>
+<path d="M 542.0 2294.0 V 2321.0 H 542.0 V 2348.0"/>
+<path d="M 3602.0 1862.0 V 1889.0 H 2342.0 V 1916.0"/>
+<path d="M 2342.0 1970.0 V 1997.0 H 2162.0 V 2024.0"/>
+<path d="M 2342.0 1970.0 V 1997.0 H 2522.0 V 2024.0"/>
+<path d="M 2162.0 2078.0 V 2105.0 H 2342.0 V 2132.0"/>
+<path d="M 2522.0 2078.0 V 2105.0 H 2342.0 V 2132.0"/>
+<path d="M 2342.0 2186.0 V 2213.0 H 2162.0 V 2240.0"/>
+<path d="M 2342.0 2186.0 V 2213.0 H 2522.0 V 2240.0"/>
+<path d="M 2162.0 2294.0 V 2321.0 H 2342.0 V 2348.0"/>
+<path d="M 2522.0 2294.0 V 2321.0 H 2342.0 V 2348.0"/>
+<path d="M 3602.0 1862.0 V 1889.0 H 3602.0 V 1916.0"/>
+<path d="M 3602.0 1970.0 V 1997.0 H 3422.0 V 2024.0"/>
+<path d="M 3602.0 1970.0 V 1997.0 H 3782.0 V 2024.0"/>
+<path d="M 3422.0 2078.0 V 2105.0 H 3602.0 V 2132.0"/>
+<path d="M 3782.0 2078.0 V 2105.0 H 3602.0 V 2132.0"/>
+<path d="M 3602.0 2186.0 V 2267.0 H 3602.0 V 2348.0"/>
+<path d="M 3602.0 1862.0 V 1889.0 H 4862.0 V 1916.0"/>
+<path d="M 4862.0 1970.0 V 1997.0 H 4682.0 V 2024.0"/>
+<path d="M 4862.0 1970.0 V 1997.0 H 5042.0 V 2024.0"/>
+<path d="M 4682.0 2078.0 V 2105.0 H 4682.0 V 2132.0"/>
+<path d="M 5042.0 2078.0 V 2105.0 H 5042.0 V 2132.0"/>
+<path d="M 4682.0 2186.0 V 2267.0 H 4862.0 V 2348.0"/>
+<path d="M 5042.0 2186.0 V 2267.0 H 4862.0 V 2348.0"/>
+<path d="M 3602.0 1862.0 V 1889.0 H 6662.0 V 1916.0"/>
+<path d="M 6662.0 1970.0 V 1997.0 H 6302.0 V 2024.0"/>
+<path d="M 6662.0 1970.0 V 1997.0 H 7022.0 V 2024.0"/>
+<path d="M 7022.0 2078.0 V 2105.0 H 7022.0 V 2132.0"/>
+<path d="M 6302.0 2078.0 V 2159.0 H 6302.0 V 2240.0"/>
+<path d="M 7022.0 2078.0 V 2159.0 H 6302.0 V 2240.0"/>
+<path d="M 6302.0 2078.0 V 2159.0 H 6662.0 V 2240.0"/>
+<path d="M 7022.0 2078.0 V 2159.0 H 6662.0 V 2240.0"/>
+<path d="M 7022.0 2078.0 V 2159.0 H 7022.0 V 2240.0"/>
+<path d="M 6302.0 2294.0 V 2375.0 H 6662.0 V 2456.0"/>
+<path d="M 6662.0 2294.0 V 2375.0 H 6662.0 V 2456.0"/>
+<path d="M 7022.0 2294.0 V 2375.0 H 6662.0 V 2456.0"/>
+<path d="M 542.0 2402.0 V 2537.0 H 3602.0 V 2672.0"/>
+<path d="M 3602.0 2402.0 V 2537.0 H 3602.0 V 2672.0"/>
+<path d="M 2342.0 2402.0 V 2537.0 H 3602.0 V 2672.0"/>
+<path d="M 4862.0 2402.0 V 2537.0 H 3602.0 V 2672.0"/>
+<path d="M 6662.0 2510.0 V 2591.0 H 3602.0 V 2672.0"/>
+</g>
+<g fill="none" stroke="#ef4444" stroke-width="2" stroke-dasharray="8 6" opacity="0.8">
+<path d="M 1884.0 539.0 L 3520.0 539.0"/>
+<path d="M 1884.0 539.0 L 5320.0 539.0"/>
+<path d="M 1704.0 1511.0 L 1900.0 1511.0"/>
+<path d="M 3684.0 539.0 L 5320.0 539.0"/>
+<path d="M 3504.0 1511.0 L 3700.0 1511.0"/>
+<path d="M 5304.0 1511.0 L 5500.0 1511.0"/>
+<path d="M 2244.0 2267.0 L 2440.0 2267.0"/>
+<path d="M 6384.0 2051.0 L 6940.0 2051.0"/>
+</g>
+<g font-family="DejaVu Sans">
+<rect x="3520" y="80" width="164" height="54" rx="10" fill="#f3f4f6" stroke="#374151" stroke-width="3"/>
+<text x="3602.0" y="94" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">an empire built by</text>
+<text x="3602.0" y="108" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">sword</text>
+<rect x="3160" y="188" width="164" height="54" rx="10" fill="#f3f4f6" stroke="#374151" stroke-width="3"/>
+<text x="3242.0" y="208" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">count the northern dead</text>
+<rect x="3880" y="188" width="164" height="54" rx="10" fill="#f3f4f6" stroke="#374151" stroke-width="3"/>
+<text x="3962.0" y="208" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">open southern ledgers</text>
+<rect x="3520" y="296" width="164" height="54" rx="10" fill="#f3f4f6" stroke="#374151" stroke-width="3"/>
+<text x="3602.0" y="316" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">reprint gydian manuals</text>
+<rect x="3520" y="404" width="164" height="54" rx="10" fill="#f3f4f6" stroke="#374151" stroke-width="3"/>
+<text x="3602.0" y="424" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">viktors last council</text>
+<rect x="1720" y="512" width="164" height="54" rx="10" fill="#fee2e2" stroke="#7f1d1d" stroke-width="3"/>
+<text x="1802.0" y="532" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">kael claims the sword</text>
+<rect x="1540" y="620" width="164" height="54" rx="10" fill="#fee2e2" stroke="#7f1d1d" stroke-width="3"/>
+<text x="1622.0" y="634" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">kael court the general</text>
+<text x="1622.0" y="648" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">staff</text>
+<rect x="1900" y="620" width="164" height="54" rx="10" fill="#fee2e2" stroke="#7f1d1d" stroke-width="3"/>
+<text x="1982.0" y="640" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">kael bind the oligarchs</text>
+<rect x="1720" y="728" width="164" height="54" rx="10" fill="#fee2e2" stroke="#7f1d1d" stroke-width="3"/>
+<text x="1802.0" y="742" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">kael black banner</text>
+<text x="1802.0" y="756" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">league</text>
+<rect x="1540" y="836" width="164" height="54" rx="10" fill="#fee2e2" stroke="#7f1d1d" stroke-width="3"/>
+<text x="1622.0" y="856" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">kael frame alvaro</text>
+<rect x="1900" y="836" width="164" height="54" rx="10" fill="#fee2e2" stroke="#7f1d1d" stroke-width="3"/>
+<text x="1982.0" y="856" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">kael lock the capital</text>
+<rect x="1720" y="944" width="164" height="54" rx="10" fill="#fee2e2" stroke="#7f1d1d" stroke-width="3"/>
+<text x="1802.0" y="964" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">kael war of inheritance</text>
+<rect x="1720" y="1160" width="164" height="54" rx="10" fill="#fee2e2" stroke="#7f1d1d" stroke-width="3"/>
+<text x="1802.0" y="1180" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">kael crown of iron</text>
+<rect x="1540" y="1268" width="164" height="54" rx="10" fill="#fee2e2" stroke="#7f1d1d" stroke-width="3"/>
+<text x="1622.0" y="1288" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">kael southern compact</text>
+<rect x="1900" y="1268" width="164" height="54" rx="10" fill="#fee2e2" stroke="#7f1d1d" stroke-width="3"/>
+<text x="1982.0" y="1282" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">kael northern</text>
+<text x="1982.0" y="1296" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">directorate</text>
+<rect x="1720" y="1376" width="164" height="54" rx="10" fill="#fee2e2" stroke="#7f1d1d" stroke-width="3"/>
+<text x="1802.0" y="1390" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">kael one empire one</text>
+<text x="1802.0" y="1404" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">voice</text>
+<rect x="1540" y="1484" width="164" height="54" rx="10" fill="#fee2e2" stroke="#7f1d1d" stroke-width="3"/>
+<text x="1622.0" y="1504" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">kael gydian protege</text>
+<rect x="1900" y="1484" width="164" height="54" rx="10" fill="#fee2e2" stroke="#7f1d1d" stroke-width="3"/>
+<text x="1982.0" y="1504" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">kael lescian way</text>
+<rect x="1720" y="1592" width="164" height="54" rx="10" fill="#fee2e2" stroke="#7f1d1d" stroke-width="3"/>
+<text x="1802.0" y="1612" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">kael vorenkov empire</text>
+<rect x="3520" y="512" width="164" height="54" rx="10" fill="#ede9fe" stroke="#6d28d9" stroke-width="3"/>
+<text x="3602.0" y="526" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">selene the marble</text>
+<text x="3602.0" y="540" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">princess</text>
+<rect x="3340" y="620" width="164" height="54" rx="10" fill="#ede9fe" stroke="#6d28d9" stroke-width="3"/>
+<text x="3422.0" y="634" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">selene salon of</text>
+<text x="3422.0" y="648" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">whispers</text>
+<rect x="3700" y="620" width="164" height="54" rx="10" fill="#ede9fe" stroke="#6d28d9" stroke-width="3"/>
+<text x="3782.0" y="634" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">selene win the palace</text>
+<text x="3782.0" y="648" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">guard</text>
+<rect x="3520" y="728" width="164" height="54" rx="10" fill="#ede9fe" stroke="#6d28d9" stroke-width="3"/>
+<text x="3602.0" y="748" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">selene marble network</text>
+<rect x="3340" y="836" width="164" height="54" rx="10" fill="#ede9fe" stroke="#6d28d9" stroke-width="3"/>
+<text x="3422.0" y="850" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">selene offer the white</text>
+<text x="3422.0" y="864" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">ribbon</text>
+<rect x="3700" y="836" width="164" height="54" rx="10" fill="#ede9fe" stroke="#6d28d9" stroke-width="3"/>
+<text x="3782.0" y="850" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">selene break the</text>
+<text x="3782.0" y="864" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">extremes</text>
+<rect x="3520" y="944" width="164" height="54" rx="10" fill="#ede9fe" stroke="#6d28d9" stroke-width="3"/>
+<text x="3602.0" y="958" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">selene the marble</text>
+<text x="3602.0" y="972" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">gambit</text>
+<rect x="3520" y="1160" width="164" height="54" rx="10" fill="#ede9fe" stroke="#6d28d9" stroke-width="3"/>
+<text x="3602.0" y="1174" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">selene czarina of</text>
+<text x="3602.0" y="1188" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">marble</text>
+<rect x="3340" y="1268" width="164" height="54" rx="10" fill="#ede9fe" stroke="#6d28d9" stroke-width="3"/>
+<text x="3422.0" y="1288" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">selene general amnesty</text>
+<rect x="3700" y="1268" width="164" height="54" rx="10" fill="#ede9fe" stroke="#6d28d9" stroke-width="3"/>
+<text x="3782.0" y="1282" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">selene tame the</text>
+<text x="3782.0" y="1296" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">oligarchs</text>
+<rect x="3520" y="1376" width="164" height="54" rx="10" fill="#ede9fe" stroke="#6d28d9" stroke-width="3"/>
+<text x="3602.0" y="1390" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">selene crown above</text>
+<text x="3602.0" y="1404" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">factions</text>
+<rect x="3340" y="1484" width="164" height="54" rx="10" fill="#ede9fe" stroke="#6d28d9" stroke-width="3"/>
+<text x="3422.0" y="1498" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">selene charter of</text>
+<text x="3422.0" y="1512" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">realms</text>
+<rect x="3700" y="1484" width="164" height="54" rx="10" fill="#ede9fe" stroke="#6d28d9" stroke-width="3"/>
+<text x="3782.0" y="1504" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">selene silent autocracy</text>
+<rect x="3520" y="1592" width="164" height="54" rx="10" fill="#ede9fe" stroke="#6d28d9" stroke-width="3"/>
+<text x="3602.0" y="1606" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">selene all lesc under</text>
+<text x="3602.0" y="1620" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">crown</text>
+<rect x="5320" y="512" width="164" height="54" rx="10" fill="#fecaca" stroke="#991b1b" stroke-width="3"/>
+<text x="5402.0" y="526" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">alvaro speaks for the</text>
+<text x="5402.0" y="540" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">north</text>
+<rect x="5140" y="620" width="164" height="54" rx="10" fill="#fecaca" stroke="#991b1b" stroke-width="3"/>
+<text x="5222.0" y="640" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">alvaro northern cells</text>
+<rect x="5500" y="620" width="164" height="54" rx="10" fill="#fecaca" stroke="#991b1b" stroke-width="3"/>
+<text x="5582.0" y="634" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">alvaro workers</text>
+<text x="5582.0" y="648" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">committees</text>
+<rect x="5320" y="728" width="164" height="54" rx="10" fill="#fecaca" stroke="#991b1b" stroke-width="3"/>
+<text x="5402.0" y="742" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">alvaro press in the</text>
+<text x="5402.0" y="756" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">valleys</text>
+<rect x="5140" y="836" width="164" height="54" rx="10" fill="#fecaca" stroke="#991b1b" stroke-width="3"/>
+<text x="5222.0" y="856" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">alvaro arm the valleys</text>
+<rect x="5500" y="836" width="164" height="54" rx="10" fill="#fecaca" stroke="#991b1b" stroke-width="3"/>
+<text x="5582.0" y="856" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">alvaro demand autonomy</text>
+<rect x="5320" y="944" width="164" height="54" rx="10" fill="#fecaca" stroke="#991b1b" stroke-width="3"/>
+<text x="5402.0" y="958" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">alvaro northern</text>
+<text x="5402.0" y="972" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">uprising</text>
+<rect x="5320" y="1160" width="164" height="54" rx="10" fill="#fecaca" stroke="#991b1b" stroke-width="3"/>
+<text x="5402.0" y="1174" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">alvaro red north</text>
+<text x="5402.0" y="1188" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">victorious</text>
+<rect x="5140" y="1268" width="164" height="54" rx="10" fill="#fecaca" stroke="#991b1b" stroke-width="3"/>
+<text x="5222.0" y="1282" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">alvaro end military</text>
+<text x="5222.0" y="1296" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">rule</text>
+<rect x="5500" y="1268" width="164" height="54" rx="10" fill="#fecaca" stroke="#991b1b" stroke-width="3"/>
+<text x="5582.0" y="1282" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">alvaro break southern</text>
+<text x="5582.0" y="1296" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">oligarchy</text>
+<rect x="5320" y="1376" width="164" height="54" rx="10" fill="#fecaca" stroke="#991b1b" stroke-width="3"/>
+<text x="5402.0" y="1390" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">alvaro congress of</text>
+<text x="5402.0" y="1404" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">peoples</text>
+<rect x="5140" y="1484" width="164" height="54" rx="10" fill="#fecaca" stroke="#991b1b" stroke-width="3"/>
+<text x="5222.0" y="1504" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">alvaro federal union</text>
+<rect x="5500" y="1484" width="164" height="54" rx="10" fill="#fecaca" stroke="#991b1b" stroke-width="3"/>
+<text x="5582.0" y="1498" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">alvaro revolutionary</text>
+<text x="5582.0" y="1512" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">center</text>
+<rect x="5320" y="1592" width="164" height="54" rx="10" fill="#fecaca" stroke="#991b1b" stroke-width="3"/>
+<text x="5402.0" y="1612" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">alvaro union of lesc</text>
+<rect x="3520" y="1808" width="164" height="54" rx="10" fill="#f9fafb" stroke="#4b5563" stroke-width="3"/>
+<text x="3602.0" y="1828" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">bury the brothers war</text>
+<rect x="460" y="1916" width="164" height="54" rx="10" fill="#fef3c7" stroke="#92400e" stroke-width="3"/>
+<text x="542.0" y="1936" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">two halves one railway</text>
+<rect x="100" y="2024" width="164" height="54" rx="10" fill="#fef3c7" stroke="#92400e" stroke-width="3"/>
+<text x="182.0" y="2044" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">southern foundries</text>
+<rect x="820" y="2024" width="164" height="54" rx="10" fill="#fef3c7" stroke="#92400e" stroke-width="3"/>
+<text x="902.0" y="2044" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">northern mines</text>
+<rect x="460" y="2132" width="164" height="54" rx="10" fill="#fef3c7" stroke="#92400e" stroke-width="3"/>
+<text x="542.0" y="2152" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">integrated market</text>
+<rect x="460" y="2240" width="164" height="54" rx="10" fill="#fef3c7" stroke="#92400e" stroke-width="3"/>
+<text x="542.0" y="2260" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">state industrial board</text>
+<rect x="460" y="2348" width="164" height="54" rx="10" fill="#fef3c7" stroke="#92400e" stroke-width="3"/>
+<text x="542.0" y="2362" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">lescian industrial</text>
+<text x="542.0" y="2376" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">power</text>
+<rect x="2260" y="1916" width="164" height="54" rx="10" fill="#dcfce7" stroke="#166534" stroke-width="3"/>
+<text x="2342.0" y="1930" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">army after the brothers</text>
+<text x="2342.0" y="1944" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">war</text>
+<rect x="2080" y="2024" width="164" height="54" rx="10" fill="#dcfce7" stroke="#166534" stroke-width="3"/>
+<text x="2162.0" y="2044" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">the officers question</text>
+<rect x="2440" y="2024" width="164" height="54" rx="10" fill="#dcfce7" stroke="#166534" stroke-width="3"/>
+<text x="2522.0" y="2044" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">rebuild the arsenals</text>
+<rect x="2260" y="2132" width="164" height="54" rx="10" fill="#dcfce7" stroke="#166534" stroke-width="3"/>
+<text x="2342.0" y="2152" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">a new lescian army</text>
+<rect x="2080" y="2240" width="164" height="54" rx="10" fill="#dcfce7" stroke="#166534" stroke-width="3"/>
+<text x="2162.0" y="2260" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">army of occupation</text>
+<rect x="2440" y="2240" width="164" height="54" rx="10" fill="#dcfce7" stroke="#166534" stroke-width="3"/>
+<text x="2522.0" y="2260" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">army of citizens</text>
+<rect x="2260" y="2348" width="164" height="54" rx="10" fill="#dcfce7" stroke="#166534" stroke-width="3"/>
+<text x="2342.0" y="2368" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">guardians of lesc</text>
+<rect x="3520" y="1916" width="164" height="54" rx="10" fill="#f9fafb" stroke="#4b5563" stroke-width="3"/>
+<text x="3602.0" y="1936" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">rewrite the ministries</text>
+<rect x="3340" y="2024" width="164" height="54" rx="10" fill="#f9fafb" stroke="#4b5563" stroke-width="3"/>
+<text x="3422.0" y="2038" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">provincial</text>
+<text x="3422.0" y="2052" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">administration</text>
+<rect x="3700" y="2024" width="164" height="54" rx="10" fill="#f9fafb" stroke="#4b5563" stroke-width="3"/>
+<text x="3782.0" y="2044" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">population registry</text>
+<rect x="3520" y="2132" width="164" height="54" rx="10" fill="#f9fafb" stroke="#4b5563" stroke-width="3"/>
+<text x="3602.0" y="2152" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">end emergency rule</text>
+<rect x="3520" y="2348" width="164" height="54" rx="10" fill="#f9fafb" stroke="#4b5563" stroke-width="3"/>
+<text x="3602.0" y="2368" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">reconstruction complete</text>
+<rect x="4780" y="1916" width="164" height="54" rx="10" fill="#e0f2fe" stroke="#075985" stroke-width="3"/>
+<text x="4862.0" y="1936" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">fleet of the czars</text>
+<rect x="4600" y="2024" width="164" height="54" rx="10" fill="#e0f2fe" stroke="#075985" stroke-width="3"/>
+<text x="4682.0" y="2044" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">restore the shipyards</text>
+<rect x="4960" y="2024" width="164" height="54" rx="10" fill="#e0f2fe" stroke="#075985" stroke-width="3"/>
+<text x="5042.0" y="2044" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">northern sea lanes</text>
+<rect x="4600" y="2132" width="164" height="54" rx="10" fill="#e0f2fe" stroke="#075985" stroke-width="3"/>
+<text x="4682.0" y="2152" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">southern ports</text>
+<rect x="4960" y="2132" width="164" height="54" rx="10" fill="#e0f2fe" stroke="#075985" stroke-width="3"/>
+<text x="5042.0" y="2152" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">oceanic general staff</text>
+<rect x="4780" y="2348" width="164" height="54" rx="10" fill="#e0f2fe" stroke="#075985" stroke-width="3"/>
+<text x="4862.0" y="2368" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">fleet without equal</text>
+<rect x="6580" y="1916" width="164" height="54" rx="10" fill="#dbeafe" stroke="#1e40af" stroke-width="3"/>
+<text x="6662.0" y="1936" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">shadow of gydian</text>
+<rect x="6220" y="2024" width="164" height="54" rx="10" fill="#dbeafe" stroke="#1e40af" stroke-width="3"/>
+<text x="6302.0" y="2044" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">invite gydian mission</text>
+<rect x="6940" y="2024" width="164" height="54" rx="10" fill="#dbeafe" stroke="#1e40af" stroke-width="3"/>
+<text x="7022.0" y="2044" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">distance from gydian</text>
+<rect x="6940" y="2132" width="164" height="54" rx="10" fill="#dbeafe" stroke="#1e40af" stroke-width="3"/>
+<text x="7022.0" y="2152" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">helvarian counterweight</text>
+<rect x="6220" y="2240" width="164" height="54" rx="10" fill="#dbeafe" stroke="#1e40af" stroke-width="3"/>
+<text x="6302.0" y="2260" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">lescian sphere</text>
+<rect x="6580" y="2240" width="164" height="54" rx="10" fill="#dbeafe" stroke="#1e40af" stroke-width="3"/>
+<text x="6662.0" y="2260" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">palace diplomacy</text>
+<rect x="6940" y="2240" width="164" height="54" rx="10" fill="#dbeafe" stroke="#1e40af" stroke-width="3"/>
+<text x="7022.0" y="2260" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">export the revolution</text>
+<rect x="6580" y="2456" width="164" height="54" rx="10" fill="#dbeafe" stroke="#1e40af" stroke-width="3"/>
+<text x="6662.0" y="2476" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">power between empires</text>
+<rect x="3520" y="2672" width="164" height="54" rx="10" fill="#f9fafb" stroke="#4b5563" stroke-width="3"/>
+<text x="3602.0" y="2692" text-anchor="middle" fill="#111827" font-size="11" font-weight="600">a new lesc</text>
+</g></svg>

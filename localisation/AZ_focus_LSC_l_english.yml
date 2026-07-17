@@ -1,0 +1,83 @@
+﻿l_english:
+ # Azarya: LSC_focus (Czariado de Lesc / CZL). Phase 1 cut only - the common
+ # opening plus the first focus of each heir's route. See
+ # docs/specs/lesc/LSC_Lesc_focus_tree_reformulada.txt for the full contract.
+
+ LSC_an_empire_built_by_sword:0 "An Empire Built by the Sword"
+ LSC_an_empire_built_by_sword_desc:0 "The Czardom of Lesc was not born of unity but of conquest — southern houses bankrolled an army, and that army marched north until the ledgers balanced. A century on, the empire still runs on that same arrangement, and it is starting to show."
+ LSC_an_empire_built_by_sword_tt:0 "The Czardom begins to reckon, openly, with the terms of its own founding. The fault line between the wealthy south and the occupied Alarican north will only widen from here."
+
+ LSC_count_the_northern_dead:0 "Count the Northern Dead"
+ LSC_count_the_northern_dead_desc:0 "A formal accounting of the cost of pacification — punitive columns, requisitioned grain, provinces held down rather than governed. The numbers are not meant for publication, but the court reads them all the same."
+ LSC_count_the_northern_dead_tt:0 "Acknowledging the true cost of northern pacification buys the Czar's ministers some political capital, at the price of a little stability and a modest rise in Alarican unrest."
+
+ LSC_open_southern_ledgers:0 "Open the Southern Ledgers"
+ LSC_open_southern_ledgers_desc:0 "The great houses of the south have always kept two sets of books — one for the tax collector, one for themselves. Inviting the Crown to glimpse the second is a gesture of goodwill the oligarchs expect to be repaid."
+ LSC_open_southern_ledgers_tt:0 "Southern industrialists open their books to the throne, strengthening the Crown's political hand while deepening oligarchic influence over the state."
+
+ LSC_reprint_gydian_manuals:0 "Reprint the Gydian Manuals"
+ LSC_reprint_gydian_manuals_desc:0 "Borrowed, translated, and quietly distributed through the officer corps: field manuals modeled on Gydian doctrine. A cautious first step toward modernizing the army, taken without yet inviting Gydian advisors into the Czar's own councils."
+
+ LSC_viktors_last_council:0 "Viktor's Last Council"
+ LSC_viktors_last_council_desc:0 "The Czar is old, and everyone in the room knows it, even if no one says so aloud. Viktor IV summons his ministers, his generals, and — pointedly — his three children, to settle what happens to Lesc when he no longer can."
+ LSC_viktors_last_council_tt:0 "The succession is now openly acknowledged. The court, the army, and the provinces all begin positioning themselves for what comes next."
+
+ LSC_kael_claims_the_sword:0 "Kael Claims the Sword"
+ LSC_kael_claims_the_sword_desc:0 "Kael Vorenkov has spent his adult life among the general staff and the counting houses of the south. He does not intend to inherit a crumbling empire — he intends to forge a harder one."
+ LSC_kael_claims_the_sword_tt:0 "Kael steps forward as the Crown's iron heir, courting the Army and the southern oligarchy. War support rises with the promise of resolve; stability pays the price of the growing confrontation."
+
+ LSC_selene_the_marble_princess:0 "The Marble Princess"
+ LSC_selene_the_marble_princess_desc:0 "Selene Vorenkov has never commanded a regiment or signed a ledger of her own, and she has never needed to — she knows exactly which door in the palace to knock on for anything she wants. She offers Lesc balance, not conquest."
+ LSC_selene_the_marble_princess_tt:0 "Selene stakes her claim as the mediating heir, drawing on her own legitimacy among the court's older factions rather than the Army or the oligarchs alone."
+
+ LSC_alvaro_speaks_for_the_north:0 "Alvaro Speaks for the North"
+ LSC_alvaro_speaks_for_the_north_desc:0 "Alvaro Vorenkov was posted to the Alarican provinces as a young officer and came back a different man. He will not inherit the throne quietly while the north he came to know is governed at the point of a bayonet."
+ LSC_alvaro_speaks_for_the_north_tt:0 "Alvaro breaks with his own house to speak for the Alarican provinces, hardening revolutionary sentiment in the north at the cost of the Crown's stability."
+
+ # --- Phase 3: second stage of the three heir routes ---
+
+ LSC_kael_court_the_general_staff:0 "Court the General Staff"
+ LSC_kael_court_the_general_staff_desc:0 "Dinners, postings and quiet favors — Kael spends as much time in the officers' mess as he does in the palace, and the general staff has started to notice which Vorenkov actually shows up."
+
+ LSC_kael_bind_the_oligarchs:0 "Bind the Oligarchs to His Cause"
+ LSC_kael_bind_the_oligarchs_desc:0 "The southern houses have financed every Czar of Lesc since the conquest; Kael simply proposes they finance the next one a little more directly, and in exchange for rather more say than they have grown used to."
+
+ LSC_kael_black_banner_league:0 "The Black Banner League"
+ LSC_kael_black_banner_league_desc:0 "Veterans' clubs, patriotic societies and a great many young men with nowhere else to put their energy are drawn together under a single black banner and a single, unmistakable message: order, strength, and Kael Vorenkov."
+
+ LSC_kael_frame_alvaro:0 "Frame Alvaro"
+ LSC_kael_frame_alvaro_desc:0 "A dossier is assembled, page by page, out of half-truths, selective quotation and a few documents that were never meant to leave a filing cabinet. By the time it reaches Viktor's desk, it reads like a confession."
+
+ LSC_kael_lock_the_capital:0 "Lock Down the Capital"
+ LSC_kael_lock_the_capital_desc:0 "Loyal regiments quietly take up positions around Aelia's ministries, barracks and rail junctions. Nothing is announced. Nothing needs to be."
+
+ LSC_selene_salon_of_whispers:0 "The Salon of Whispers"
+ LSC_selene_salon_of_whispers_desc:0 "Selene's evenings have become the place where the court actually conducts its business — over cards and wine, long after the formal councils have adjourned and said nothing of substance."
+
+ LSC_selene_win_the_palace_guard:0 "Win the Palace Guard"
+ LSC_selene_win_the_palace_guard_desc:0 "The men who stand watch over the throne room rarely see their own loyalty courted directly. Selene changes that, one quiet conversation at a time."
+
+ LSC_selene_marble_network:0 "The Marble Network"
+ LSC_selene_marble_network_desc:0 "Stewards, clerks, guardsmen and a widening circle of minor courtiers now answer, in practice, to Selene before anyone else. Viktor is beginning to notice how much of the palace runs through his daughter's hands."
+
+ LSC_selene_offer_the_white_ribbon:0 "Offer the White Ribbon"
+ LSC_selene_offer_the_white_ribbon_desc:0 "A gesture of clemency, carefully staged: released prisoners, a lifted curfew here and there, a public acknowledgment that the north has grievances worth naming. It costs the Crown little and buys more goodwill than a garrison ever could."
+
+ LSC_selene_break_the_extremes:0 "Break the Extremes"
+ LSC_selene_break_the_extremes_desc:0 "Selene turns her network against both edges of the crisis at once — the oligarchs who would bleed the north dry and the radicals who would burn the south to the ground — and stakes her claim on being the only Vorenkov not beholden to either."
+
+ LSC_alvaro_northern_cells:0 "Organize the Northern Cells"
+ LSC_alvaro_northern_cells_desc:0 "Messengers move between mill towns and mountain villages, stitching together what used to be isolated pockets of resentment into something that can actually coordinate."
+
+ LSC_alvaro_workers_committees:0 "Workers' Committees"
+ LSC_alvaro_workers_committees_desc:0 "In the mines and foundries of the north, committees form where union halls were never permitted — electing their own delegates, keeping their own accounts, and answering to no southern foreman."
+
+ LSC_alvaro_press_in_the_valleys:0 "A Press in the Valleys"
+ LSC_alvaro_press_in_the_valleys_desc:0 "A hand-cranked press, hidden in a mill basement, begins turning out pamphlets faster than the gendarmerie can confiscate them. Every confiscated batch just proves the last one's point."
+
+ LSC_alvaro_arm_the_valleys:0 "Arm the Valleys"
+ LSC_alvaro_arm_the_valleys_desc:0 "Rifles that were never quite accounted for, powder that never quite matched the requisition ledgers — the valleys quietly stop being as disarmed as the garrison reports claim."
+
+ LSC_alvaro_demand_autonomy:0 "Demand Autonomy for North Alaric"
+ LSC_alvaro_demand_autonomy_desc:0 "Alvaro puts it to his father in writing, formally, for the first time: an end to military rule in the Alarican provinces, real political representation, and regional control over conscription and resources. It is not a request."
+ LSC_alvaro_demand_autonomy_tt:0 "Alvaro forces the succession crisis into the open with a formal ultimatum. The Crown's answer to it will be decided in the moment, not by this focus."

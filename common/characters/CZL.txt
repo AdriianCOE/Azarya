@@ -411,7 +411,7 @@ characters={
 					original_tag  = CZL
 				}
 				traits  = {
-					army_chief_organizational_2 
+					army_chief_organizational_2
 				}
 				ai_will_do  = {
 					factor  = 1.000
@@ -421,6 +421,71 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_generic_army_arab_2"
+			}
+		}
+	}
+
+	# --- Vorenkov heirs (Phase 1: recruited via their own succession-route
+	# focus in LSC_focus, not at game start). Traits and portraits reuse
+	# tokens already proven valid elsewhere in this file as documented
+	# fallback art; see Phase 1 delivery notes for original-art asset needs.
+	CZL_kael_vorenkov={
+		advisor={
+			slot = political_advisor
+			idea_token = CZL_kael_vorenkov
+			allowed  = {
+				original_tag  = CZL
+			}
+			traits  = {
+				fascist_demagogue
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_2"
+			}
+		}
+	}
+	CZL_selene_vorenkov={
+		advisor={
+			slot = political_advisor
+			idea_token = CZL_selene_vorenkov
+			allowed  = {
+				original_tag  = CZL
+			}
+			traits  = {
+				smooth_talking_charmer
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_3"
+			}
+		}
+	}
+	CZL_alvaro_vorenkov={
+		advisor={
+			slot = political_advisor
+			idea_token = CZL_alvaro_vorenkov
+			allowed  = {
+				original_tag  = CZL
+			}
+			traits  = {
+				communist_revolutionary
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_1"
 			}
 		}
 	}

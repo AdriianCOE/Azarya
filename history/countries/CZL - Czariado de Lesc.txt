@@ -101,6 +101,7 @@ add_ideas = {
 		CZL_Monetary_retention
 		CZL_Autoritarismo
 		CZL_Fear_of_the_population
+		LSC_northern_military_rule
 	}
 
 
@@ -119,8 +120,8 @@ set_popularities = {
 }
 
 create_country_leader = {
-    name = "Prince Lescote"
-    desc = "CZL_Lescote"
+    name = "Viktor IV Vorenkov"
+    desc = "CZL_Viktor_IV_Vorenkov"
 	picture = "Portrait_Soviet_Generic_1.dds"
     ideology = oligarchism
 }

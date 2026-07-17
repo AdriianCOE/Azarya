@@ -46,5 +46,124 @@ ideas = {
 		consumer_goods_factor = 0.20                  # Maior demanda de bens civis (austeridade)
 	}
 }
+
+		# --- Phase 1: LSC_focus common opening + succession ---
+
+		LSC_northern_military_rule = {
+	name = LSC_northern_military_rule
+	picture = ARG_military_government
+	allowed = { original_tag = CZL }
+	visible = { always = yes }
+
+	modifier = {
+		stability_factor = 0.03                       # Imposed order under garrison rule
+		conscription_factor = 0.05                    # Forced levies drawn from the Alarican provinces
+		political_power_gain = -0.05                  # Military administration consumes political bandwidth
+		consumer_goods_factor = 0.05                  # Occupation logistics burden
 	}
-}	
+}
+
+		LSC_gathering_storm = {
+	name = LSC_gathering_storm
+	picture = generic_deal_with_the_devil
+	allowed = { original_tag = CZL }
+	visible = { always = yes }
+
+	modifier = {
+		stability_factor = -0.05                      # The succession crisis unsettles the realm
+		war_support_factor = -0.03                    # A nation bracing for what comes next, not eager for war
+	}
+}
+
+		LSC_gydian_doctrine = {
+	name = LSC_gydian_doctrine
+	picture = generic_infantry_bonus
+	allowed = { original_tag = CZL }
+	visible = { always = yes }
+
+	modifier = {
+		training_time_factor = -0.10                  # Gydian-style staff manuals speed up officer training
+		army_org_factor = 0.05                        # Modernized command structure
+	}
+}
+
+		# --- Phase 2.5: replaces the accumulable add_tech_bonus previously granted
+		# by LSC_negotiate_southern_industrialists. A timed idea cannot stack the
+		# way a repeated uses=1 tech bonus could — re-triggering it just refreshes
+		# the duration, so the fix is structural, not just a smaller number.
+		LSC_southern_contracts = {
+	name = LSC_southern_contracts
+	picture = generic_foreign_capital
+	allowed = { original_tag = CZL }
+	visible = { always = yes }
+
+	modifier = {
+		production_speed_buildings_factor = 0.05      # Southern credit and contracts speed construction
+		political_power_cost = 0.05                   # Governance increasingly answers to oligarch patrons
+	}
+}
+
+		# --- Phase 3: pre-war preparation ideas for the three heir routes.
+		# Removable/convertible in later phases per design note in the Phase 3 report. ---
+
+		LSC_kael_officer_network = {
+	name = LSC_kael_officer_network
+	picture = generic_infantry_bonus
+	allowed = { original_tag = CZL }
+	visible = { always = yes }
+
+	modifier = {
+		army_org_factor = 0.05                        # Officers loyal to Kael tighten the chain of command
+		stability_factor = -0.02                       # A general staff answering to a faction, not just the Crown
+	}
+}
+
+		LSC_kael_oligarch_support = {
+	name = LSC_kael_oligarch_support
+	picture = RAJ_special_economic_zones
+	allowed = { original_tag = CZL }
+	visible = { always = yes }
+
+	modifier = {
+		industrial_capacity_factory = 0.03            # Southern arms contracts flow to Kael's cause
+		consumer_goods_factor = 0.03                  # Production increasingly skewed toward his patrons' interests
+	}
+}
+
+		LSC_selene_palace_network = {
+	name = LSC_selene_palace_network
+	picture = generic_pp_unity_bonus
+	allowed = { original_tag = CZL }
+	visible = { always = yes }
+
+	modifier = {
+		stability_factor = 0.02                       # Clerks, stewards and guardsmen quietly keep the palace running
+		political_power_gain = 0.05                    # Favors and information flow back to Selene's circle
+	}
+}
+
+		LSC_alvaro_partisan_networks = {
+	name = LSC_alvaro_partisan_networks
+	picture = AFG_adopt_nufus
+	allowed = { original_tag = CZL }
+	visible = { always = yes }
+
+	modifier = {
+		stability_factor = -0.02                       # A shadow organization operating beneath the administration
+		war_support_factor = 0.02                      # The north increasingly primed for confrontation
+	}
+}
+
+		LSC_underground_press = {
+	name = LSC_underground_press
+	picture = generic_intel_bonus
+	allowed = { original_tag = CZL }
+	visible = { always = yes }
+
+	modifier = {
+		stability_factor = -0.02                       # Clandestine agitation undermines public order
+		political_power_gain = -0.03                   # The administration spends itself countering a press it cannot fully silence
+	}
+}
+	}
+}

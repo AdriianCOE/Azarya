@@ -1,0 +1,182 @@
+add_namespace = LSC_succession
+
+# The Ailing Czar — fires on completion of LSC_viktors_last_council, opening the succession crisis.
+# Phase 1 scope only: this event sets the scene and lets the player signal which pillar of the
+# realm gets reassured first. The actual choice of heir is made through the three mutually
+# exclusive focuses (LSC_kael_claims_the_sword / LSC_selene_the_marble_princess /
+# LSC_alvaro_speaks_for_the_north), not through this event.
+
+country_event = {
+	id = LSC_succession.1
+	title = LSC_succession.1.t
+	desc = LSC_succession.1.d
+	picture = GFX_news_event_generic_parliament
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = LSC_succession.1.a
+		add_to_variable = { var = LSC_army_loyalty value = 5 }
+		clamp_variable = { var = LSC_army_loyalty min = 0 max = 100 }
+		ai_chance = { factor = 35 }
+	}
+	option = {
+		name = LSC_succession.1.b
+		add_to_variable = { var = LSC_oligarch_influence value = 5 }
+		clamp_variable = { var = LSC_oligarch_influence min = 0 max = 100 }
+		ai_chance = { factor = 35 }
+	}
+	option = {
+		name = LSC_succession.1.c
+		add_to_variable = { var = LSC_northern_unrest value = -5 }
+		clamp_variable = { var = LSC_northern_unrest min = 0 max = 100 }
+		ai_chance = { factor = 30 }
+	}
+}
+
+# The Accusation — fires on completion of LSC_kael_frame_alvaro (Kael's route only).
+# Kael's people present the court with documents implicating Alvaro in treason. Neither option
+# imprisons, exiles or kills Alvaro here — that stays open for a later phase.
+
+country_event = {
+	id = LSC_succession.10
+	title = LSC_succession.10.t
+	desc = LSC_succession.10.d
+	picture = GFX_news_event_generic_parliament
+
+	trigger = {
+		has_country_flag = LSC_route_kael
+	}
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = LSC_succession.10.a
+		set_country_flag = LSC_alvaro_publicly_accused
+		add_to_variable = { var = LSC_army_loyalty value = 8 }
+		add_to_variable = { var = LSC_northern_unrest value = 15 }
+		add_to_variable = { var = LSC_revolutionary_strength value = -5 }
+		LSC_clamp_imperial_fracture_variables = yes
+		custom_effect_tooltip = LSC_succession_10_a_tt
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.6
+				check_variable = { LSC_army_loyalty > 55 }
+				check_variable = { LSC_oligarch_influence > 55 }
+			}
+		}
+	}
+	option = {
+		name = LSC_succession.10.b
+		set_country_flag = LSC_alvaro_secretly_compromised
+		add_to_variable = { var = LSC_army_loyalty value = 4 }
+		add_to_variable = { var = LSC_oligarch_influence value = 8 }
+		add_to_variable = { var = LSC_revolutionary_strength value = -8 }
+		LSC_clamp_imperial_fracture_variables = yes
+		custom_effect_tooltip = LSC_succession_10_b_tt
+		ai_chance = {
+			factor = 50
+			modifier = { factor = 1.7 has_stability < 0.40 }
+		}
+	}
+}
+
+# The Marble Network — fires on completion of LSC_selene_marble_network (Selene's route only).
+# Documented deviation from the spec: the original text has no intermediate succession event for
+# Selene's branch, only Kael's frame_alvaro -> succession.10 and Alvaro's demand_autonomy ->
+# succession.30. This gives Selene's arc the same kind of narrative beat at the equivalent point,
+# without abdicating Viktor or making Selene national leader.
+
+country_event = {
+	id = LSC_succession.20
+	title = LSC_succession.20.t
+	desc = LSC_succession.20.d
+	picture = GFX_news_event_generic_parliament
+
+	trigger = {
+		has_country_flag = LSC_route_selene
+	}
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = LSC_succession.20.a
+		set_country_flag = LSC_selene_guard_compact
+		add_to_variable = { var = LSC_selene_legitimacy value = 8 }
+		clamp_variable = { var = LSC_selene_legitimacy min = 0 max = 100 }
+		add_to_variable = { var = LSC_army_loyalty value = 5 }
+		clamp_variable = { var = LSC_army_loyalty min = 0 max = 100 }
+		custom_effect_tooltip = LSC_succession_20_a_tt
+		ai_chance = {
+			factor = 50
+			modifier = { factor = 1.6 check_variable = { LSC_army_loyalty < 45 } }
+		}
+	}
+	option = {
+		name = LSC_succession.20.b
+		set_country_flag = LSC_selene_northern_contacts
+		add_to_variable = { var = LSC_selene_legitimacy value = 5 }
+		clamp_variable = { var = LSC_selene_legitimacy min = 0 max = 100 }
+		add_to_variable = { var = LSC_northern_unrest value = -8 }
+		clamp_variable = { var = LSC_northern_unrest min = 0 max = 100 }
+		custom_effect_tooltip = LSC_succession_20_b_tt
+		ai_chance = {
+			factor = 50
+			modifier = { factor = 1.6 check_variable = { LSC_northern_unrest > 55 } }
+		}
+	}
+}
+
+# The Demand for Autonomy — fires on completion of LSC_alvaro_demand_autonomy (Alvaro's route
+# only). This is Viktor's government answering Alvaro's ultimatum, still pressured by the Army and
+# the southern houses even on Alvaro's own route. No real autonomy is granted, no core is removed,
+# no state changes owner here.
+
+country_event = {
+	id = LSC_succession.30
+	title = LSC_succession.30.t
+	desc = LSC_succession.30.d
+	picture = GFX_news_event_generic_parliament
+
+	trigger = {
+		has_country_flag = LSC_route_alvaro
+	}
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = LSC_succession.30.a
+		set_country_flag = LSC_autonomy_rejected
+		add_to_variable = { var = LSC_northern_unrest value = 15 }
+		add_to_variable = { var = LSC_revolutionary_strength value = 10 }
+		add_to_variable = { var = LSC_army_loyalty value = 5 }
+		LSC_clamp_imperial_fracture_variables = yes
+		custom_effect_tooltip = LSC_succession_30_a_tt
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.6
+				check_variable = { LSC_army_loyalty > 55 }
+				check_variable = { LSC_oligarch_influence > 55 }
+			}
+		}
+	}
+	option = {
+		name = LSC_succession.30.b
+		set_country_flag = LSC_autonomy_delayed
+		add_to_variable = { var = LSC_northern_unrest value = -5 }
+		add_to_variable = { var = LSC_revolutionary_strength value = 8 }
+		add_to_variable = { var = LSC_oligarch_influence value = -5 }
+		LSC_clamp_imperial_fracture_variables = yes
+		custom_effect_tooltip = LSC_succession_30_b_tt
+		ai_chance = {
+			factor = 50
+			modifier = { factor = 1.7 has_stability < 0.40 }
+		}
+	}
+}

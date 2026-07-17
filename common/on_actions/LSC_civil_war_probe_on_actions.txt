@@ -1,0 +1,29 @@
+# TEMPORARY DEBUG HARNESS — DO NOT COMMIT
+#
+# Wires the four on_action hooks named in the Phase 4.1 audit
+# (common/on_actions/documentation.info) to probe events, purely to observe
+# whether they fire, in what scope, and who ROOT/FROM are for a civil war
+# started by the CZL_civil_war_probe decisions. Delete after testing.
+
+on_actions = {
+	on_civil_war_end = {
+		events = {
+			LSC_civil_war_probe.90
+		}
+	}
+	on_civil_war_end_before_annexation = {
+		events = {
+			LSC_civil_war_probe.91
+		}
+	}
+	on_capitulation = {
+		events = {
+			LSC_civil_war_probe.92
+		}
+	}
+	on_annex = {
+		events = {
+			LSC_civil_war_probe.93
+		}
+	}
+}

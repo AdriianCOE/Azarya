@@ -1,0 +1,12 @@
+# Shared clamp for the six Imperial Fracture crisis variables (LSC_focus / CZL).
+# Exists only to avoid repeating the same six clamp_variable lines in every
+# decision in common/decisions/CZL_imperial_fracture.txt.
+
+LSC_clamp_imperial_fracture_variables = {
+	clamp_variable = { var = LSC_northern_unrest min = 0 max = 100 }
+	clamp_variable = { var = LSC_army_loyalty min = 0 max = 100 }
+	clamp_variable = { var = LSC_oligarch_influence min = 0 max = 100 }
+	clamp_variable = { var = LSC_gydian_influence min = 0 max = 100 }
+	clamp_variable = { var = LSC_selene_legitimacy min = 0 max = 100 }
+	clamp_variable = { var = LSC_revolutionary_strength min = 0 max = 100 }
+}

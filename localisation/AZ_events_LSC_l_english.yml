@@ -1,0 +1,29 @@
+﻿l_english:
+ # Azarya: LSC_succession (Czariado de Lesc / CZL). Phase 1 cut only.
+
+ LSC_succession.1.t:0 "The Ailing Czar"
+ LSC_succession.1.d:0 "Viktor IV no longer hides it from his court: his health is failing, and the question of who follows him onto the throne of Lesc has stopped being a private matter. The general staff wait for a signal. The southern houses recalculate their loans and their loyalties. And in the north, word of the Czar's decline travels faster than any courier could carry it.\n\nThree of his children stand ready to answer the question in their own way — but before that question is settled, the Crown must decide where to spend its remaining goodwill first."
+ LSC_succession.1.a:0 "Reassure the general staff"
+ LSC_succession.1.b:0 "Reassure the great houses"
+ LSC_succession.1.c:0 "Address the northern provinces"
+
+ LSC_succession.10.t:0 "The Accusation"
+ LSC_succession.10.d:0 "A dossier lands on the Czar's desk — signed statements, intercepted letters, a ledger of contacts that all point, carefully and conveniently, toward Alvaro. Whether every page of it is genuine is a question Kael's people have already decided is beside the point. Viktor reads it in silence, aware for the first time just how much of the Army now answers to his eldest son first and to him second."
+ LSC_succession.10.a:0 "Publish the accusation openly"
+ LSC_succession_10_a_tt:0 "Kael steps forward publicly as the defender of order against a traitor in the family. The Army and the oligarchs rally to him, and Alvaro's revolutionary network takes a real hit — but the north reads the accusation exactly as intended: a pretext for the crackdown still to come."
+ LSC_succession.10.b:0 "Use the documents as private leverage"
+ LSC_succession_10_b_tt:0 "Kael keeps the dossier out of the papers and uses it instead to quietly compromise Alvaro's standing among the officer corps and the great houses. Less dramatic than a public trial, but it costs Alvaro's network more — without handing the north a martyr."
+
+ LSC_succession.20.t:0 "The Marble Network"
+ LSC_succession.20.d:0 "Selene's circle has grown quietly large — stewards, clerks, a few officers of the palace guard, and now, discreetly, a handful of contacts who can actually speak for the Alarican provinces. Viktor notices, with some unease, that fewer and fewer orders leave the palace without passing through his daughter's hands first."
+ LSC_succession.20.a:0 "Bring the Court and the Guard closer together"
+ LSC_succession_20_a_tt:0 "Selene ties the palace guard more firmly into her own circle, trading a measure of institutional legitimacy for the loyalty of the men who actually stand watch over the throne."
+ LSC_succession.20.b:0 "Open discreet contacts with Alarican representatives"
+ LSC_succession_20_b_tt:0 "Selene extends her network north, quietly, to men who would never be received at court under their own names. It costs her nothing the Army would notice, and buys a measure of calm the garrisons alone never managed."
+
+ LSC_succession.30.t:0 "The Demand for Autonomy"
+ LSC_succession.30.d:0 "Alvaro's demand reaches the Czar in writing: an end to military administration in North Alaric, real political representation, and regional control over conscription and resources. It is, on its face, a demand the Crown cannot grant without unraveling the very arrangement Lesc was built on — and Viktor's ministers, the general staff, and the southern houses are already telling him so."
+ LSC_succession.30.a:0 "Reject the demand outright"
+ LSC_succession_30_a_tt:0 "The Crown answers with a flat refusal. The Army and the hardliners approve of the firmness, but the north hears only that nothing will change short of force — and revolutionary sentiment hardens accordingly."
+ LSC_succession.30.b:0 "Offer hollow concessions and delay"
+ LSC_succession_30_b_tt:0 "Viktor's government promises study, review, and reform commissions that commit to nothing. It buys a little quiet in the streets, but the delay convinces no one who mattered, and the oligarchs read the hesitation as exactly the weakness they feared."

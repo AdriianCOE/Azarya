@@ -1,0 +1,2110 @@
+focus_tree = {
+	id = LSC_focus
+	continuous_focus_position = { x = 25 y = 1000 }
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = CZL
+		}
+	}
+
+	# IMPORTANT:
+	# - CZL is the real country tag.
+	# - LSC_ remains the content namespace used by the original skeleton.
+	# - Focuses, flags, variables, ideas and event IDs referenced here form an
+	#   implementation contract for the companion Claude prompt.
+	# - Separate prerequisite blocks are AND requirements.
+	# - Multiple focus entries inside one prerequisite block are intentional OR paths.
+
+
+	# ============================================================
+	# THE UNCURED FRACTURE — COMMON OPENING
+	# ============================================================
+
+	focus = {
+		id = LSC_an_empire_built_by_sword
+		icon = GFX_goal_generic_territory
+		x = 25
+		y = 0
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_STABILITY
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_timed_idea = { idea = LSC_gathering_storm days = 730 }
+			set_variable = { var = LSC_northern_unrest value = 45 }
+			set_variable = { var = LSC_army_loyalty value = 50 }
+			set_variable = { var = LSC_oligarch_influence value = 55 }
+			set_variable = { var = LSC_gydian_influence value = 20 }
+			set_variable = { var = LSC_selene_legitimacy value = 15 }
+			set_variable = { var = LSC_revolutionary_strength value = 10 }
+			set_country_flag = LSC_imperial_fracture_active
+			custom_effect_tooltip = LSC_an_empire_built_by_sword_tt
+		}
+	}
+
+	focus = {
+		id = LSC_count_the_northern_dead
+		icon = GFX_SOV_carry_revolution_east_ccp_2d_sov_compatibility
+		prerequisite = {
+			focus = LSC_an_empire_built_by_sword
+		}
+		x = 23
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		ai_will_do = {
+			factor = 70
+		}
+		completion_reward = {
+			add_political_power = 25
+			add_stability = -0.01
+			add_to_variable = { var = LSC_northern_unrest value = 5 }
+			clamp_variable = { var = LSC_northern_unrest min = 0 max = 100 }
+			custom_effect_tooltip = LSC_count_the_northern_dead_tt
+		}
+	}
+
+	focus = {
+		id = LSC_open_southern_ledgers
+		icon = GFX_SOV_aristocratic_investments_ccp_2d_sov_compatibility
+		prerequisite = {
+			focus = LSC_an_empire_built_by_sword
+		}
+		x = 27
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		ai_will_do = {
+			factor = 70
+		}
+		completion_reward = {
+			add_political_power = 35
+			add_to_variable = { var = LSC_oligarch_influence value = 5 }
+			clamp_variable = { var = LSC_oligarch_influence min = 0 max = 100 }
+			custom_effect_tooltip = LSC_open_southern_ledgers_tt
+		}
+	}
+
+	focus = {
+		id = LSC_reprint_gydian_manuals
+		icon = GFX_goal_generic_army
+		prerequisite = {
+			focus = LSC_count_the_northern_dead
+		}
+		prerequisite = {
+			focus = LSC_open_southern_ledgers
+		}
+		x = 25
+		y = 2
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_ARMY_XP
+		}
+		ai_will_do = {
+			factor = 85
+		}
+		completion_reward = {
+			army_experience = 10
+			add_ideas = { LSC_gydian_doctrine }
+			add_to_variable = { var = LSC_army_loyalty value = 5 }
+			add_to_variable = { var = LSC_gydian_influence value = 5 }
+			clamp_variable = { var = LSC_army_loyalty min = 0 max = 100 }
+			clamp_variable = { var = LSC_gydian_influence min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = LSC_viktors_last_council
+		icon = GFX_focus_generic_monarchy_1
+		prerequisite = {
+			focus = LSC_reprint_gydian_manuals
+		}
+		x = 25
+		y = 3
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = 50
+			country_event = { id = LSC_succession.1 hours = 6 }
+			set_country_flag = LSC_succession_open
+			custom_effect_tooltip = LSC_viktors_last_council_tt
+		}
+	}
+
+
+	# ============================================================
+	# KAEL — THE IRON HEIR
+	# ============================================================
+
+	focus = {
+		id = LSC_kael_claims_the_sword
+		icon = GFX_focus_BEL_royal_commander_in_chief
+		prerequisite = {
+			focus = LSC_viktors_last_council
+		}
+		mutually_exclusive = {
+			focus = LSC_selene_the_marble_princess
+			focus = LSC_alvaro_speaks_for_the_north
+		}
+		x = 15
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = {
+			factor = 35
+			modifier = { factor = 1.35 has_war_support > 0.45 }
+			modifier = { factor = 1.25 has_stability < 0.45 }
+		}
+		completion_reward = {
+			set_country_flag = LSC_route_kael
+			add_popularity = { ideology = fascism popularity = 0.05 }
+			add_war_support = 0.03
+			add_stability = -0.02
+			custom_effect_tooltip = LSC_kael_claims_the_sword_tt
+		}
+	}
+
+	focus = {
+		id = LSC_kael_court_the_general_staff
+		icon = GFX_SOV_military_reorganization_ccp_2d_sov_compatibility
+		prerequisite = {
+			focus = LSC_kael_claims_the_sword
+		}
+		x = 14
+		y = 5
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_ARMY_XP
+		}
+		ai_will_do = {
+			factor = 85
+		}
+		completion_reward = {
+			army_experience = 10
+			add_ideas = { LSC_kael_officer_network }
+			add_to_variable = { var = LSC_army_loyalty value = 15 }
+			clamp_variable = { var = LSC_army_loyalty min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = LSC_kael_bind_the_oligarchs
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = {
+			focus = LSC_kael_claims_the_sword
+		}
+		x = 16
+		y = 5
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_INDUSTRY
+		}
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_ideas = { LSC_kael_oligarch_support }
+			add_to_variable = { var = LSC_oligarch_influence value = 15 }
+			clamp_variable = { var = LSC_oligarch_influence min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = LSC_kael_black_banner_league
+		icon = GFX_goal_generic_fascism
+		prerequisite = {
+			focus = LSC_kael_court_the_general_staff
+		}
+		prerequisite = {
+			focus = LSC_kael_bind_the_oligarchs
+		}
+		x = 15
+		y = 6
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = {
+			factor = 90
+		}
+		completion_reward = {
+			add_war_support = 0.04
+			add_stability = -0.03
+			add_popularity = { ideology = fascism popularity = 0.05 }
+			add_to_variable = { var = LSC_northern_unrest value = 10 }
+			clamp_variable = { var = LSC_northern_unrest min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = LSC_kael_frame_alvaro
+		icon = GFX_goal_generic_propaganda
+		prerequisite = {
+			focus = LSC_kael_black_banner_league
+		}
+		x = 14
+		y = 7
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = {
+			factor = 75
+		}
+		completion_reward = {
+			add_political_power = 35
+			add_stability = -0.02
+			add_to_variable = { var = LSC_revolutionary_strength value = -5 }
+			clamp_variable = { var = LSC_revolutionary_strength min = 0 max = 100 }
+			country_event = { id = LSC_succession.10 hours = 6 }
+		}
+	}
+
+	focus = {
+		id = LSC_kael_lock_the_capital
+		icon = GFX_goal_generic_coup
+		prerequisite = {
+			focus = LSC_kael_black_banner_league
+		}
+		x = 16
+		y = 7
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_ARMY_XP
+		}
+		ai_will_do = {
+			factor = 85
+		}
+		completion_reward = {
+			add_political_power = -50
+			army_experience = 10
+			set_country_flag = LSC_kael_capital_secured
+			add_to_variable = { var = LSC_army_loyalty value = 10 }
+			clamp_variable = { var = LSC_army_loyalty min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = LSC_kael_war_of_inheritance
+		icon = GFX_goal_generic_war
+		prerequisite = {
+			focus = LSC_kael_frame_alvaro
+		}
+		prerequisite = {
+			focus = LSC_kael_lock_the_capital
+		}
+		x = 15
+		y = 8
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_ARMY_XP
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_political_power = -100
+			set_country_flag = LSC_civil_war_trigger_kael
+			country_event = { id = LSC_civil_war.10 hours = 6 }
+			custom_effect_tooltip = LSC_kael_war_of_inheritance_tt
+		}
+	}
+
+	focus = {
+		id = LSC_kael_crown_of_iron
+		icon = GFX_focus_generic_monarchy_2
+		prerequisite = {
+			focus = LSC_kael_war_of_inheritance
+		}
+		available = {
+			has_country_flag = LSC_kael_victory
+		}
+		x = 15
+		y = 10
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			set_politics = { ruling_party = fascism elections_allowed = no }
+			add_ideas = { LSC_kael_iron_crown }
+			add_stability = 0.05
+			add_war_support = 0.05
+			country_event = { id = LSC_postwar.10 hours = 6 }
+		}
+	}
+
+	focus = {
+		id = LSC_kael_southern_compact
+		icon = GFX_SOV_aristocratic_investments_ccp_2d_sov_compatibility
+		prerequisite = {
+			focus = LSC_kael_crown_of_iron
+		}
+		x = 14
+		y = 11
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		ai_will_do = {
+			factor = 75
+		}
+		completion_reward = {
+			add_ideas = { LSC_southern_compact }
+			add_political_power = 50
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = LSC_kael_northern_directorate
+		icon = GFX_goal_generic_suppression
+		prerequisite = {
+			focus = LSC_kael_crown_of_iron
+		}
+		x = 16
+		y = 11
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+			FOCUS_FILTER_ARMY_XP
+		}
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			add_ideas = { LSC_northern_directorate }
+			add_war_support = 0.03
+			add_stability = -0.02
+			custom_effect_tooltip = LSC_kael_northern_directorate_tt
+		}
+	}
+
+	focus = {
+		id = LSC_kael_one_empire_one_voice
+		icon = GFX_goal_generic_national_unity
+		prerequisite = {
+			focus = LSC_kael_southern_compact
+		}
+		prerequisite = {
+			focus = LSC_kael_northern_directorate
+		}
+		x = 15
+		y = 12
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_STABILITY
+		}
+		ai_will_do = {
+			factor = 95
+		}
+		completion_reward = {
+			add_political_power = 75
+			add_war_support = 0.05
+			add_popularity = { ideology = fascism popularity = 0.08 }
+			remove_ideas = { LSC_gathering_storm }
+		}
+	}
+
+	focus = {
+		id = LSC_kael_gydian_protege
+		icon = GFX_goal_tripartite_pact
+		prerequisite = {
+			focus = LSC_kael_one_empire_one_voice
+		}
+		mutually_exclusive = {
+			focus = LSC_kael_lescian_way
+		}
+		x = 14
+		y = 13
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = {
+			factor = 45
+			modifier = { factor = 1.4 has_country_flag = LSC_gydian_backing_received }
+		}
+		completion_reward = {
+			add_ideas = { LSC_gydian_patronage }
+			set_country_flag = LSC_foreign_alignment_gydian
+			add_to_variable = { var = LSC_gydian_influence value = 25 }
+			clamp_variable = { var = LSC_gydian_influence min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = LSC_kael_lescian_way
+		icon = GFX_goal_generic_defence
+		prerequisite = {
+			focus = LSC_kael_one_empire_one_voice
+		}
+		mutually_exclusive = {
+			focus = LSC_kael_gydian_protege
+		}
+		x = 16
+		y = 13
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = {
+			factor = 55
+		}
+		completion_reward = {
+			add_ideas = { LSC_military_independence }
+			set_country_flag = LSC_foreign_alignment_independent
+			add_stability = 0.03
+			add_political_power = -25
+		}
+	}
+
+	focus = {
+		id = LSC_kael_vorenkov_empire
+		icon = GFX_focus_generic_monarchy_1
+		prerequisite = {
+			focus = LSC_kael_gydian_protege
+			focus = LSC_kael_lescian_way
+		}
+		x = 15
+		y = 14
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_STABILITY
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			set_country_flag = LSC_kael_route_completed
+			add_political_power = 100
+			add_stability = 0.04
+			add_war_support = 0.05
+			custom_effect_tooltip = LSC_kael_vorenkov_empire_tt
+		}
+	}
+
+
+	# ============================================================
+	# SELENE — THE MARBLE CROWN
+	# ============================================================
+
+	focus = {
+		id = LSC_selene_the_marble_princess
+		icon = GFX_focus_generic_monarchy_1
+		prerequisite = {
+			focus = LSC_viktors_last_council
+		}
+		mutually_exclusive = {
+			focus = LSC_kael_claims_the_sword
+			focus = LSC_alvaro_speaks_for_the_north
+		}
+		x = 25
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = {
+			factor = 35
+			modifier = { factor = 1.25 has_stability > 0.45 }
+			modifier = { factor = 1.20 has_war_support < 0.45 }
+		}
+		completion_reward = {
+			set_country_flag = LSC_route_selene
+			add_popularity = { ideology = neutrality popularity = 0.05 }
+			add_stability = 0.02
+			add_to_variable = { var = LSC_selene_legitimacy value = 15 }
+			clamp_variable = { var = LSC_selene_legitimacy min = 0 max = 100 }
+			custom_effect_tooltip = LSC_selene_the_marble_princess_tt
+		}
+	}
+
+	focus = {
+		id = LSC_selene_salon_of_whispers
+		icon = GFX_focus_eng_the_kings_party
+		prerequisite = {
+			focus = LSC_selene_the_marble_princess
+		}
+		x = 24
+		y = 5
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_ideas = { LSC_selene_palace_network }
+			add_to_variable = { var = LSC_selene_legitimacy value = 10 }
+			clamp_variable = { var = LSC_selene_legitimacy min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = LSC_selene_win_the_palace_guard
+		icon = GFX_goal_generic_coup
+		prerequisite = {
+			focus = LSC_selene_the_marble_princess
+		}
+		x = 26
+		y = 5
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_ARMY_XP
+		}
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			army_experience = 10
+			add_to_variable = { var = LSC_army_loyalty value = 8 }
+			add_to_variable = { var = LSC_selene_legitimacy value = 8 }
+			clamp_variable = { var = LSC_army_loyalty min = 0 max = 100 }
+			clamp_variable = { var = LSC_selene_legitimacy min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = LSC_selene_marble_network
+		icon = GFX_focus_eng_the_kings_party
+		prerequisite = {
+			focus = LSC_selene_salon_of_whispers
+		}
+		prerequisite = {
+			focus = LSC_selene_win_the_palace_guard
+		}
+		x = 25
+		y = 6
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = {
+			factor = 90
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.02
+			set_country_flag = LSC_selene_network_ready
+		}
+	}
+
+	focus = {
+		id = LSC_selene_offer_the_white_ribbon
+		icon = GFX_focus_generic_concessions
+		prerequisite = {
+			focus = LSC_selene_marble_network
+		}
+		x = 24
+		y = 7
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		ai_will_do = {
+			factor = 75
+		}
+		completion_reward = {
+			add_stability = 0.03
+			add_war_support = -0.01
+			add_to_variable = { var = LSC_northern_unrest value = -10 }
+			clamp_variable = { var = LSC_northern_unrest min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = LSC_selene_break_the_extremes
+		icon = GFX_focus_rom_handle_king
+		prerequisite = {
+			focus = LSC_selene_marble_network
+		}
+		x = 26
+		y = 7
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = {
+			factor = 75
+		}
+		completion_reward = {
+			add_political_power = 35
+			add_stability = -0.01
+			add_to_variable = { var = LSC_revolutionary_strength value = -5 }
+			add_to_variable = { var = LSC_oligarch_influence value = -5 }
+			clamp_variable = { var = LSC_revolutionary_strength min = 0 max = 100 }
+			clamp_variable = { var = LSC_oligarch_influence min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = LSC_selene_the_marble_gambit
+		icon = GFX_focus_hun_assassinate_horthy
+		prerequisite = {
+			focus = LSC_selene_offer_the_white_ribbon
+		}
+		prerequisite = {
+			focus = LSC_selene_break_the_extremes
+		}
+		x = 25
+		y = 8
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_STABILITY
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			set_country_flag = LSC_civil_war_trigger_selene
+			country_event = { id = LSC_civil_war.20 hours = 6 }
+			custom_effect_tooltip = LSC_selene_the_marble_gambit_tt
+		}
+	}
+
+	focus = {
+		id = LSC_selene_czarina_of_marble
+		icon = GFX_focus_generic_monarchy_2
+		prerequisite = {
+			focus = LSC_selene_the_marble_gambit
+		}
+		available = {
+			has_country_flag = LSC_selene_victory
+		}
+		x = 25
+		y = 10
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			set_politics = { ruling_party = neutrality elections_allowed = no }
+			add_ideas = { LSC_marble_court }
+			add_stability = 0.07
+			country_event = { id = LSC_postwar.20 hours = 6 }
+		}
+	}
+
+	focus = {
+		id = LSC_selene_general_amnesty
+		icon = GFX_goal_generic_national_unity
+		prerequisite = {
+			focus = LSC_selene_czarina_of_marble
+		}
+		x = 24
+		y = 11
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		ai_will_do = {
+			factor = 75
+		}
+		completion_reward = {
+			add_ideas = { LSC_general_amnesty }
+			add_stability = 0.04
+			add_war_support = -0.02
+		}
+	}
+
+	focus = {
+		id = LSC_selene_tame_the_oligarchs
+		icon = GFX_focus_mex_arrest_general_cedillo
+		prerequisite = {
+			focus = LSC_selene_czarina_of_marble
+		}
+		x = 26
+		y = 11
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			add_political_power = 75
+			add_stability = -0.01
+			add_to_variable = { var = LSC_oligarch_influence value = -15 }
+			clamp_variable = { var = LSC_oligarch_influence min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = LSC_selene_crown_above_factions
+		icon = GFX_focus_rom_handle_king
+		prerequisite = {
+			focus = LSC_selene_general_amnesty
+		}
+		prerequisite = {
+			focus = LSC_selene_tame_the_oligarchs
+		}
+		x = 25
+		y = 12
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_STABILITY
+		}
+		ai_will_do = {
+			factor = 95
+		}
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.05
+			add_popularity = { ideology = neutrality popularity = 0.08 }
+			remove_ideas = { LSC_gathering_storm }
+		}
+	}
+
+	focus = {
+		id = LSC_selene_charter_of_realms
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		prerequisite = {
+			focus = LSC_selene_crown_above_factions
+		}
+		mutually_exclusive = {
+			focus = LSC_selene_silent_autocracy
+		}
+		x = 24
+		y = 13
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = {
+			factor = 55
+		}
+		completion_reward = {
+			set_country_flag = LSC_selene_constitutional_settlement
+			add_ideas = { LSC_charter_of_realms }
+			add_stability = 0.04
+			add_war_support = -0.02
+		}
+	}
+
+	focus = {
+		id = LSC_selene_silent_autocracy
+		icon = GFX_goal_generic_suppression
+		prerequisite = {
+			focus = LSC_selene_crown_above_factions
+		}
+		mutually_exclusive = {
+			focus = LSC_selene_charter_of_realms
+		}
+		x = 26
+		y = 13
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = {
+			factor = 45
+		}
+		completion_reward = {
+			set_country_flag = LSC_selene_autocratic_settlement
+			add_ideas = { LSC_silent_autocracy }
+			add_political_power = 75
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = LSC_selene_all_lesc_under_crown
+		icon = GFX_focus_BEL_christian_corporatism
+		prerequisite = {
+			focus = LSC_selene_charter_of_realms
+			focus = LSC_selene_silent_autocracy
+		}
+		x = 25
+		y = 14
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_STABILITY
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			set_country_flag = LSC_selene_route_completed
+			add_political_power = 100
+			add_stability = 0.05
+			custom_effect_tooltip = LSC_selene_all_lesc_under_crown_tt
+		}
+	}
+
+
+	# ============================================================
+	# ÁLVARO — THE NORTHERN REVOLUTION
+	# ============================================================
+
+	focus = {
+		id = LSC_alvaro_speaks_for_the_north
+		icon = GFX_focus_fra_loyalty_trotzky
+		prerequisite = {
+			focus = LSC_viktors_last_council
+		}
+		mutually_exclusive = {
+			focus = LSC_kael_claims_the_sword
+			focus = LSC_selene_the_marble_princess
+		}
+		x = 35
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = {
+			factor = 30
+			modifier = { factor = 1.4 has_stability < 0.40 }
+			modifier = { factor = 1.25 has_war_support < 0.40 }
+		}
+		completion_reward = {
+			set_country_flag = LSC_route_alvaro
+			add_popularity = { ideology = communism popularity = 0.05 }
+			add_stability = -0.03
+			add_to_variable = { var = LSC_revolutionary_strength value = 15 }
+			clamp_variable = { var = LSC_revolutionary_strength min = 0 max = 100 }
+			custom_effect_tooltip = LSC_alvaro_speaks_for_the_north_tt
+		}
+	}
+
+	focus = {
+		id = LSC_alvaro_northern_cells
+		icon = GFX_focus_SWE_refuge_for_revolutionaries
+		prerequisite = {
+			focus = LSC_alvaro_speaks_for_the_north
+		}
+		x = 34
+		y = 5
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = {
+			factor = 85
+		}
+		completion_reward = {
+			add_ideas = { LSC_alvaro_partisan_networks }
+			add_to_variable = { var = LSC_revolutionary_strength value = 15 }
+			clamp_variable = { var = LSC_revolutionary_strength min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = LSC_alvaro_workers_committees
+		icon = GFX_goal_generic_propaganda
+		prerequisite = {
+			focus = LSC_alvaro_speaks_for_the_north
+		}
+		x = 36
+		y = 5
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			add_political_power = 35
+			add_popularity = { ideology = communism popularity = 0.04 }
+			add_to_variable = { var = LSC_northern_unrest value = 8 }
+			clamp_variable = { var = LSC_northern_unrest min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = LSC_alvaro_press_in_the_valleys
+		icon = GFX_goal_generic_secret_weapon
+		prerequisite = {
+			focus = LSC_alvaro_northern_cells
+		}
+		prerequisite = {
+			focus = LSC_alvaro_workers_committees
+		}
+		x = 35
+		y = 6
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = {
+			factor = 90
+		}
+		completion_reward = {
+			add_political_power = 35
+			add_ideas = { LSC_underground_press }
+			add_to_variable = { var = LSC_revolutionary_strength value = 10 }
+			clamp_variable = { var = LSC_revolutionary_strength min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = LSC_alvaro_arm_the_valleys
+		icon = GFX_SOV_into_central_asia_ccp_2d_sov_compatibility
+		prerequisite = {
+			focus = LSC_alvaro_press_in_the_valleys
+		}
+		x = 34
+		y = 7
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_ARMY_XP
+		}
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			army_experience = 15
+			add_war_support = 0.03
+			set_country_flag = LSC_alvaro_arms_cached
+		}
+	}
+
+	focus = {
+		id = LSC_alvaro_demand_autonomy
+		icon = GFX_focus_generic_concessions
+		prerequisite = {
+			focus = LSC_alvaro_press_in_the_valleys
+		}
+		x = 36
+		y = 7
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_STABILITY
+		}
+		ai_will_do = {
+			factor = 75
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = -0.02
+			country_event = { id = LSC_succession.30 hours = 6 }
+			custom_effect_tooltip = LSC_alvaro_demand_autonomy_tt
+		}
+	}
+
+	focus = {
+		id = LSC_alvaro_northern_uprising
+		icon = GFX_goal_generic_war
+		prerequisite = {
+			focus = LSC_alvaro_arm_the_valleys
+		}
+		prerequisite = {
+			focus = LSC_alvaro_demand_autonomy
+		}
+		x = 35
+		y = 8
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_ARMY_XP
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			set_country_flag = LSC_civil_war_trigger_alvaro
+			country_event = { id = LSC_civil_war.30 hours = 6 }
+			custom_effect_tooltip = LSC_alvaro_northern_uprising_tt
+		}
+	}
+
+	focus = {
+		id = LSC_alvaro_red_north_victorious
+		icon = GFX_goal_generic_communism
+		prerequisite = {
+			focus = LSC_alvaro_northern_uprising
+		}
+		available = {
+			has_country_flag = LSC_alvaro_victory
+		}
+		x = 35
+		y = 10
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			set_politics = { ruling_party = communism elections_allowed = no }
+			add_ideas = { LSC_revolutionary_fervor }
+			add_stability = 0.04
+			add_war_support = 0.04
+			country_event = { id = LSC_postwar.30 hours = 6 }
+		}
+	}
+
+	focus = {
+		id = LSC_alvaro_end_military_rule
+		icon = GFX_focus_BRA_end_the_state_of_emergency
+		prerequisite = {
+			focus = LSC_alvaro_red_north_victorious
+		}
+		x = 34
+		y = 11
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			remove_ideas = { LSC_northern_military_rule }
+			add_stability = 0.05
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = LSC_alvaro_break_southern_oligarchy
+		icon = GFX_focus_mex_arrest_general_cedillo
+		prerequisite = {
+			focus = LSC_alvaro_red_north_victorious
+		}
+		x = 36
+		y = 11
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = {
+			factor = 85
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = -0.02
+			add_to_variable = { var = LSC_oligarch_influence value = -25 }
+			clamp_variable = { var = LSC_oligarch_influence min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = LSC_alvaro_congress_of_peoples
+		icon = GFX_goal_generic_national_unity
+		prerequisite = {
+			focus = LSC_alvaro_end_military_rule
+		}
+		prerequisite = {
+			focus = LSC_alvaro_break_southern_oligarchy
+		}
+		x = 35
+		y = 12
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_STABILITY
+		}
+		ai_will_do = {
+			factor = 95
+		}
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.04
+			add_popularity = { ideology = communism popularity = 0.08 }
+			remove_ideas = { LSC_gathering_storm }
+		}
+	}
+
+	focus = {
+		id = LSC_alvaro_federal_union
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		prerequisite = {
+			focus = LSC_alvaro_congress_of_peoples
+		}
+		mutually_exclusive = {
+			focus = LSC_alvaro_revolutionary_center
+		}
+		x = 34
+		y = 13
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = {
+			factor = 60
+		}
+		completion_reward = {
+			set_country_flag = LSC_alvaro_federal_settlement
+			add_ideas = { LSC_federal_union }
+			add_stability = 0.05
+			add_war_support = -0.02
+		}
+	}
+
+	focus = {
+		id = LSC_alvaro_revolutionary_center
+		icon = GFX_goal_generic_suppression
+		prerequisite = {
+			focus = LSC_alvaro_congress_of_peoples
+		}
+		mutually_exclusive = {
+			focus = LSC_alvaro_federal_union
+		}
+		x = 36
+		y = 13
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		completion_reward = {
+			set_country_flag = LSC_alvaro_centralist_settlement
+			add_ideas = { LSC_revolutionary_centralism }
+			add_political_power = 75
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = LSC_alvaro_union_of_lesc
+		icon = GFX_focus_NOR_a_new_norway_Trotsky_communism
+		prerequisite = {
+			focus = LSC_alvaro_federal_union
+			focus = LSC_alvaro_revolutionary_center
+		}
+		x = 35
+		y = 14
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_STABILITY
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			set_country_flag = LSC_alvaro_route_completed
+			add_political_power = 100
+			add_stability = 0.05
+			custom_effect_tooltip = LSC_alvaro_union_of_lesc_tt
+		}
+	}
+
+
+	# ============================================================
+	# POSTWAR RECONSTRUCTION — SHARED
+	# ============================================================
+
+	focus = {
+		id = LSC_bury_the_brothers_war
+		icon = GFX_goal_generic_national_unity
+		prerequisite = {
+			focus = LSC_kael_vorenkov_empire
+			focus = LSC_selene_all_lesc_under_crown
+			focus = LSC_alvaro_union_of_lesc
+		}
+		x = 25
+		y = 16
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			set_country_flag = LSC_postwar_reconstruction_started
+			add_stability = 0.04
+			add_war_support = -0.02
+			add_political_power = 50
+			remove_ideas = { LSC_kael_officer_network LSC_kael_oligarch_support LSC_selene_palace_network LSC_alvaro_partisan_networks LSC_underground_press }
+			country_event = { id = LSC_postwar.1 hours = 6 }
+		}
+	}
+
+
+	# ============================================================
+	# RECONSTRUCTION — TWO ECONOMIES
+	# ============================================================
+
+	focus = {
+		id = LSC_two_halves_one_railway
+		icon = GFX_focus_generic_railroad
+		prerequisite = {
+			focus = LSC_bury_the_brothers_war
+		}
+		x = 8
+		y = 17
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			random_owned_controlled_state = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			random_owned_controlled_state = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			add_political_power = -50
+		}
+	}
+
+	focus = {
+		id = LSC_southern_foundries
+		icon = GFX_focus_generic_industry_2
+		prerequisite = {
+			focus = LSC_two_halves_one_railway
+		}
+		x = 6
+		y = 18
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		ai_will_do = {
+			factor = 75
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+			    limit = { is_in_home_area = yes }
+			    add_extra_state_shared_building_slots = 1
+			    add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+			add_ideas = { LSC_southern_foundries_spirit }
+		}
+	}
+
+	focus = {
+		id = LSC_northern_mines
+		icon = GFX_SOV_steel_casting_industry_ccp_2d_sov_compatibility
+		prerequisite = {
+			focus = LSC_two_halves_one_railway
+		}
+		x = 10
+		y = 18
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		ai_will_do = {
+			factor = 75
+		}
+		completion_reward = {
+			add_ideas = { LSC_northern_mining_program }
+			add_political_power = -25
+			custom_effect_tooltip = LSC_northern_mines_tt
+		}
+	}
+
+	focus = {
+		id = LSC_integrated_market
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = {
+			focus = LSC_southern_foundries
+		}
+		prerequisite = {
+			focus = LSC_northern_mines
+		}
+		x = 8
+		y = 19
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		ai_will_do = {
+			factor = 90
+		}
+		completion_reward = {
+			add_ideas = { LSC_integrated_market_spirit }
+			add_stability = 0.03
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = LSC_state_industrial_board
+		icon = GFX_focus_generic_industry_3
+		prerequisite = {
+			focus = LSC_integrated_market
+		}
+		x = 8
+		y = 20
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		ai_will_do = {
+			factor = 85
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+			    limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } }
+			    add_extra_state_shared_building_slots = 1
+			    add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+			add_tech_bonus = { name = LSC_industrial_board_bonus bonus = 0.5 uses = 2 category = industry }
+		}
+	}
+
+	focus = {
+		id = LSC_lescian_industrial_power
+		icon = GFX_focus_generic_industry_3
+		prerequisite = {
+			focus = LSC_state_industrial_board
+		}
+		x = 8
+		y = 21
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			set_country_flag = LSC_economic_reconstruction_complete
+			add_ideas = { LSC_lescian_industrial_power_spirit }
+			add_stability = 0.02
+			add_political_power = 75
+		}
+	}
+
+
+	# ============================================================
+	# ARMED FORCES — THE ARMY AFTER THE BROTHERS’ WAR
+	# ============================================================
+
+	focus = {
+		id = LSC_army_after_the_brothers_war
+		icon = GFX_focus_NORDIC_com_selector_army
+		prerequisite = {
+			focus = LSC_bury_the_brothers_war
+		}
+		x = 18
+		y = 17
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_ARMY_XP
+		}
+		ai_will_do = {
+			factor = 85
+		}
+		completion_reward = {
+			army_experience = 10
+			add_ideas = { LSC_shattered_high_command }
+		}
+	}
+
+	focus = {
+		id = LSC_the_officers_question
+		icon = GFX_SOV_military_reorganization_ccp_2d_sov_compatibility
+		prerequisite = {
+			focus = LSC_army_after_the_brothers_war
+		}
+		x = 17
+		y = 18
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_ARMY_XP
+		}
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			army_experience = 15
+			add_political_power = 25
+			custom_effect_tooltip = LSC_the_officers_question_tt
+		}
+	}
+
+	focus = {
+		id = LSC_rebuild_the_arsenals
+		icon = GFX_focus_generic_military_industry
+		prerequisite = {
+			focus = LSC_army_after_the_brothers_war
+		}
+		x = 19
+		y = 18
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_ARMY_XP
+		}
+		ai_will_do = {
+			factor = 85
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+			    limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } }
+			    add_extra_state_shared_building_slots = 1
+			    add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+			}
+		}
+	}
+
+	focus = {
+		id = LSC_a_new_lescian_army
+		icon = GFX_goal_generic_army
+		prerequisite = {
+			focus = LSC_the_officers_question
+		}
+		prerequisite = {
+			focus = LSC_rebuild_the_arsenals
+		}
+		x = 18
+		y = 19
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_ARMY_XP
+		}
+		ai_will_do = {
+			factor = 95
+		}
+		completion_reward = {
+			remove_ideas = { LSC_shattered_high_command }
+			army_experience = 20
+			add_doctrine_cost_reduction = { name = LSC_land_doctrine_bonus cost_reduction = 0.25 uses = 1 category = land_doctrine }
+		}
+	}
+
+	focus = {
+		id = LSC_army_of_occupation
+		icon = GFX_goal_generic_suppression
+		prerequisite = {
+			focus = LSC_a_new_lescian_army
+		}
+		mutually_exclusive = {
+			focus = LSC_army_of_citizens
+		}
+		available = {
+			OR = {
+			    has_completed_focus = LSC_kael_vorenkov_empire
+			    has_completed_focus = LSC_selene_silent_autocracy
+			}
+		}
+		x = 17
+		y = 20
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_ARMY_XP
+		}
+		ai_will_do = {
+			factor = 60
+		}
+		completion_reward = {
+			add_ideas = { LSC_army_of_occupation_spirit }
+			add_war_support = 0.04
+			add_stability = -0.01
+		}
+	}
+
+	focus = {
+		id = LSC_army_of_citizens
+		icon = GFX_focus_BEL_free_belgian_forces
+		prerequisite = {
+			focus = LSC_a_new_lescian_army
+		}
+		mutually_exclusive = {
+			focus = LSC_army_of_occupation
+		}
+		available = {
+			OR = {
+			    has_completed_focus = LSC_alvaro_union_of_lesc
+			    has_completed_focus = LSC_selene_charter_of_realms
+			}
+		}
+		x = 19
+		y = 20
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_ARMY_XP
+		}
+		ai_will_do = {
+			factor = 60
+		}
+		completion_reward = {
+			add_ideas = { LSC_army_of_citizens_spirit }
+			add_stability = 0.03
+			army_experience = 10
+		}
+	}
+
+	focus = {
+		id = LSC_guardians_of_lesc
+		icon = GFX_focus_generic_military_mission
+		prerequisite = {
+			focus = LSC_army_of_occupation
+			focus = LSC_army_of_citizens
+		}
+		x = 18
+		y = 21
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_ARMY_XP
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			set_country_flag = LSC_army_reconstruction_complete
+			army_experience = 25
+			add_war_support = 0.04
+		}
+	}
+
+
+	# ============================================================
+	# STATE RECONSTRUCTION — RULE FROM SOUTH TO NORTH
+	# ============================================================
+
+	focus = {
+		id = LSC_rewrite_the_ministries
+		icon = GFX_focus_BRA_end_the_state_of_emergency
+		prerequisite = {
+			focus = LSC_bury_the_brothers_war
+		}
+		x = 25
+		y = 17
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = {
+			factor = 85
+		}
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.01
+		}
+	}
+
+	focus = {
+		id = LSC_provincial_administration
+		icon = GFX_goal_generic_territory
+		prerequisite = {
+			focus = LSC_rewrite_the_ministries
+		}
+		x = 24
+		y = 18
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			add_ideas = { LSC_provincial_administration_spirit }
+			add_political_power = 35
+		}
+	}
+
+	focus = {
+		id = LSC_population_registry
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		prerequisite = {
+			focus = LSC_rewrite_the_ministries
+		}
+		x = 26
+		y = 18
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		ai_will_do = {
+			factor = 75
+		}
+		completion_reward = {
+			add_manpower = 5000
+			add_stability = 0.02
+			custom_effect_tooltip = LSC_population_registry_tt
+		}
+	}
+
+	focus = {
+		id = LSC_end_emergency_rule
+		icon = GFX_focus_BRA_end_the_state_of_emergency
+		prerequisite = {
+			focus = LSC_provincial_administration
+		}
+		prerequisite = {
+			focus = LSC_population_registry
+		}
+		x = 25
+		y = 19
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		ai_will_do = {
+			factor = 90
+		}
+		completion_reward = {
+			remove_ideas = { LSC_gathering_storm }
+			add_stability = 0.05
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = LSC_reconstruction_complete
+		icon = GFX_goal_generic_national_unity
+		prerequisite = {
+			focus = LSC_end_emergency_rule
+		}
+		x = 25
+		y = 21
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			set_country_flag = LSC_state_reconstruction_complete
+			add_stability = 0.05
+			add_political_power = 75
+		}
+	}
+
+
+	# ============================================================
+	# THE IMPERIAL FLEET — LESC AT SEA
+	# ============================================================
+
+	focus = {
+		id = LSC_fleet_of_the_czars
+		icon = GFX_focus_PER_establish_the_navy
+		prerequisite = {
+			focus = LSC_bury_the_brothers_war
+		}
+		x = 32
+		y = 17
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_NAVY_XP
+		}
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			navy_experience = 10
+			add_ideas = { LSC_legacy_fleet }
+		}
+	}
+
+	focus = {
+		id = LSC_restore_the_shipyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = {
+			focus = LSC_fleet_of_the_czars
+		}
+		x = 31
+		y = 18
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_NAVY_XP
+			FOCUS_FILTER_INDUSTRY
+		}
+		ai_will_do = {
+			factor = 85
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+			    limit = { is_coastal = yes free_building_slots = { building = dockyard size > 0 include_locked = yes } }
+			    add_extra_state_shared_building_slots = 1
+			    add_building_construction = { type = dockyard level = 1 instant_build = yes }
+			}
+		}
+	}
+
+	focus = {
+		id = LSC_northern_sea_lanes
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = {
+			focus = LSC_fleet_of_the_czars
+		}
+		x = 33
+		y = 18
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_NAVY_XP
+		}
+		ai_will_do = {
+			factor = 75
+		}
+		completion_reward = {
+			navy_experience = 10
+			add_ideas = { LSC_northern_sea_lanes_spirit }
+		}
+	}
+
+	focus = {
+		id = LSC_southern_ports
+		icon = GFX_focus_generic_navy_battleship2
+		prerequisite = {
+			focus = LSC_restore_the_shipyards
+		}
+		x = 31
+		y = 19
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_NAVY_XP
+		}
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+			    limit = { is_coastal = yes }
+			    add_building_construction = { type = naval_base level = 1 instant_build = yes }
+			}
+			navy_experience = 5
+		}
+	}
+
+	focus = {
+		id = LSC_oceanic_general_staff
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = {
+			focus = LSC_northern_sea_lanes
+		}
+		x = 33
+		y = 19
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_NAVY_XP
+		}
+		ai_will_do = {
+			factor = 85
+		}
+		completion_reward = {
+			navy_experience = 20
+			add_doctrine_cost_reduction = { name = LSC_naval_doctrine_bonus cost_reduction = 0.25 uses = 1 category = naval_doctrine }
+		}
+	}
+
+	focus = {
+		id = LSC_fleet_without_equal
+		icon = GFX_focus_AUS_reestablish_austrian_navy
+		prerequisite = {
+			focus = LSC_southern_ports
+		}
+		prerequisite = {
+			focus = LSC_oceanic_general_staff
+		}
+		x = 32
+		y = 21
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_NAVY_XP
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			set_country_flag = LSC_naval_reconstruction_complete
+			remove_ideas = { LSC_legacy_fleet }
+			navy_experience = 25
+			add_war_support = 0.03
+			add_ideas = { LSC_modern_lescian_fleet }
+		}
+	}
+
+
+	# ============================================================
+	# FOREIGN POLICY — THE SHADOW OF GYDIAN
+	# ============================================================
+
+	focus = {
+		id = LSC_shadow_of_gydian
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = {
+			focus = LSC_bury_the_brothers_war
+		}
+		x = 42
+		y = 17
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = {
+			factor = 90
+		}
+		completion_reward = {
+			add_political_power = 50
+			country_event = { id = LSC_foreign.1 hours = 6 }
+			custom_effect_tooltip = LSC_shadow_of_gydian_tt
+		}
+	}
+
+	focus = {
+		id = LSC_invite_gydian_mission
+		icon = GFX_goal_tripartite_pact
+		prerequisite = {
+			focus = LSC_shadow_of_gydian
+		}
+		mutually_exclusive = {
+			focus = LSC_distance_from_gydian
+		}
+		available = {
+			OR = {
+			    has_completed_focus = LSC_kael_gydian_protege
+			    has_completed_focus = LSC_selene_silent_autocracy
+			}
+		}
+		x = 40
+		y = 18
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_ARMY_XP
+		}
+		ai_will_do = {
+			factor = 55
+		}
+		completion_reward = {
+			set_country_flag = LSC_gydian_mission_invited
+			add_ideas = { LSC_gydian_staff_mission }
+			army_experience = 15
+			add_to_variable = { var = LSC_gydian_influence value = 20 }
+			clamp_variable = { var = LSC_gydian_influence min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = LSC_distance_from_gydian
+		icon = GFX_goal_generic_defence
+		prerequisite = {
+			focus = LSC_shadow_of_gydian
+		}
+		mutually_exclusive = {
+			focus = LSC_invite_gydian_mission
+		}
+		x = 44
+		y = 18
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = {
+			factor = 55
+		}
+		completion_reward = {
+			set_country_flag = LSC_gydian_distance_policy
+			add_stability = 0.03
+			add_political_power = 50
+			add_to_variable = { var = LSC_gydian_influence value = -15 }
+			clamp_variable = { var = LSC_gydian_influence min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = LSC_helvarian_counterweight
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		prerequisite = {
+			focus = LSC_distance_from_gydian
+		}
+		x = 44
+		y = 19
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = {
+			factor = 65
+		}
+		completion_reward = {
+			set_country_flag = LSC_seeks_helvarian_counterweight
+			add_political_power = -25
+			custom_effect_tooltip = LSC_helvarian_counterweight_tt
+		}
+	}
+
+	focus = {
+		id = LSC_lescian_sphere
+		icon = GFX_goal_generic_military_deal
+		prerequisite = {
+			focus = LSC_invite_gydian_mission
+			focus = LSC_distance_from_gydian
+		}
+		available = {
+			has_completed_focus = LSC_kael_vorenkov_empire
+		}
+		x = 40
+		y = 20
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			set_country_flag = LSC_foreign_project_imperial_sphere
+			add_war_support = 0.04
+			add_political_power = 75
+		}
+	}
+
+	focus = {
+		id = LSC_palace_diplomacy
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		prerequisite = {
+			focus = LSC_invite_gydian_mission
+			focus = LSC_distance_from_gydian
+		}
+		available = {
+			has_completed_focus = LSC_selene_all_lesc_under_crown
+		}
+		x = 42
+		y = 20
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			set_country_flag = LSC_foreign_project_palace_balance
+			add_stability = 0.03
+			add_political_power = 75
+		}
+	}
+
+	focus = {
+		id = LSC_export_the_revolution
+		icon = GFX_focus_SWE_refuge_for_revolutionaries
+		prerequisite = {
+			focus = LSC_distance_from_gydian
+		}
+		available = {
+			has_completed_focus = LSC_alvaro_union_of_lesc
+		}
+		x = 44
+		y = 20
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			set_country_flag = LSC_foreign_project_revolutionary_solidarity
+			add_war_support = 0.03
+			add_political_power = 50
+			custom_effect_tooltip = LSC_export_the_revolution_tt
+		}
+	}
+
+	focus = {
+		id = LSC_power_between_empires
+		icon = GFX_goal_tripartite_pact
+		prerequisite = {
+			focus = LSC_lescian_sphere
+			focus = LSC_palace_diplomacy
+			focus = LSC_export_the_revolution
+		}
+		x = 42
+		y = 22
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_STABILITY
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			set_country_flag = LSC_foreign_policy_complete
+			add_political_power = 100
+			add_stability = 0.03
+			add_war_support = 0.03
+			custom_effect_tooltip = LSC_power_between_empires_tt
+		}
+	}
+
+
+	# ============================================================
+	# FINAL NATIONAL CAPSTONE
+	# ============================================================
+
+	focus = {
+		id = LSC_a_new_lesc
+		icon = GFX_focus_generic_monarchy_2
+		prerequisite = {
+			focus = LSC_lescian_industrial_power
+		}
+		prerequisite = {
+			focus = LSC_reconstruction_complete
+		}
+		prerequisite = {
+			focus = LSC_guardians_of_lesc
+		}
+		prerequisite = {
+			focus = LSC_fleet_without_equal
+		}
+		prerequisite = {
+			focus = LSC_power_between_empires
+		}
+		x = 25
+		y = 24
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_STABILITY
+			FOCUS_FILTER_INDUSTRY
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			set_country_flag = LSC_national_tree_completed
+			add_political_power = 150
+			add_stability = 0.05
+			add_war_support = 0.04
+			army_experience = 10
+			air_experience = 10
+			navy_experience = 10
+			custom_effect_tooltip = LSC_a_new_lesc_tt
+			country_event = { id = LSC_epilogue.1 hours = 6 }
+		}
+	}
+
+}

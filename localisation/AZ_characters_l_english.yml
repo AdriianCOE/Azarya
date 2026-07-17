@@ -9,13 +9,20 @@ THK_Magnus:0 "Goldcrest is a stalwart leader within the Royal Navy, renowned for
 
 #Lesc Czardom
 
-CZL_Lescote:0 "Prince Lescote, heir of the iron-blooded Lescote dynasty, governs the Czardom of Lesc with calculated pragmatism and a firm grip. Revered by loyalists and feared by dissenters, he embodies the doctrine of unyielding rule."
+CZL_Viktor_IV_Vorenkov:0 "Czar Viktor IV Vorenkov, ailing scion of the dynasty that forged the Czardom of Lesc from the ashes of the southern conquest, governs with calculated pragmatism and a firm grip. Revered by loyalists and feared by dissenters, he embodies the doctrine of unyielding rule — even as his own succession draws near."
 CZL_Katya:0 "Katya Volkova is a fearless leader, commanding respect through her decisive actions and unwavering courage on the battlefield, ensuring the security of the Czardom of Lesc."
 CZL_Mikhail:0 "Mikhail Dragunov is a veteran commander, renowned for his disciplined leadership and unmatched expertise in coordinating ground forces to safeguard the interests of the Czardom of Lesc."
 CZL_Ivanov:0 "Ivanov Rostov is a seasoned military strategist, revered for his tactical acumen and unyielding dedication to defending the borders of the Czardom of Lesc."
 CZL_Sergei:0 "Admiral Sergei Petrovich is a distinguished naval officer, revered for his strategic prowess and unwavering loyalty to the Czardom of Lesc, ensuring the nation's maritime supremacy."
 CZL_Natalia:0 "Admiral Natalia Ivanova is a trailblazing leader in the Royal Navy, known for her exceptional command at sea and unwavering commitment to protecting the maritime interests of the Czardom of Lesc."
-CZL_Yuri:0 "Yuri Romanov, a cunning and aggressive strategist known for his offensive approach in combat. His expertise in warfare tactics and quick thinking in high-stress situations make him a valued leader on the battlefield. Additionally, his deceptive nature allows him to surprise and confuse enemies, gaining an edge for the forces of the Lescari Czardom."
+CZL_Yuri:0 "Yuri Romanov, a cunning and aggressive strategist known for his offensive approach in combat. His expertise in warfare tactics and quick thinking in high-stress situations make him a valued leader on the battlefield. Additionally, his deceptive nature allows him to surprise and confuse enemies, gaining an edge for the forces of the Czardom of Lesc."
+
+CZL_kael_vorenkov:0 "Kael Vorenkov's Court Circle"
+CZL_kael_vorenkov_desc:0 "Eldest son of Viktor IV, Kael has spent his adult life among the general staff and the counting houses of the south, convinced that only an iron hand — Coroa, Exército, and the great southern families bound together — can hold Lesc against the unrest gnawing at its edges."
+CZL_selene_vorenkov:0 "Selene Vorenkov, the Marble Princess"
+CZL_selene_vorenkov_desc:0 "Viktor's daughter is fluent in the quiet arithmetic of palace favor, moving between the Army, the oligarchs, and the court's older, gentler factions without ever fully belonging to any one of them. Her admirers call it balance; her rivals call it calculation."
+CZL_alvaro_vorenkov:0 "Alvaro Vorenkov, the North's Voice"
+CZL_alvaro_vorenkov_desc:0 "The Czar's youngest child spent his formative years posted to the Alarican provinces and came back unable to unsee what he saw there. He speaks now for a north that was never asked whether it wanted to belong to Lesc at all."
 
 #Sylvan Republic
 
