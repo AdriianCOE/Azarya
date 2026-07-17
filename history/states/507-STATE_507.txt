@@ -1,0 +1,18 @@
+state={
+	id=507
+	name="Net"
+	history={
+		owner = DRM
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = DRM
+	}
+	provinces={
+		1398 3744 4663 6169 6152 696 6131 6144 6100 2379 1088 2952 6111 6138 6162
+	}
+	manpower=100000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

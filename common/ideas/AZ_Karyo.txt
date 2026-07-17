@@ -1,0 +1,65 @@
+ideas = {
+	country = {
+
+		KAR_Divine_Mandate = {
+			name = KAR_Divine_Mandate
+			picture = generic_pp_unity_bonus
+			allowed = {
+				original_tag = KAR
+			}
+
+			available = {
+			}
+
+			visible = {
+				always = yes
+			}
+
+			modifier = {
+				stability_factor = 0.10
+				drift_defence_factor = 0.20
+				political_power_factor = 0.05
+			}
+		}
+
+		KAR_Naval_Ambition = {
+			name = KAR_Naval_Ambition
+			picture = generic_the_london_naval_treaty
+			allowed = {
+				original_tag = KAR
+			}
+
+			available = {
+			}
+
+			visible = {
+				always = yes
+			}
+
+			modifier = {
+				naval_doctrine_cost_factor = -0.10
+				production_speed_dockyard_factor = 0.05
+			}
+		}
+
+		KAR_Rapid_Modernization = {
+			name = KAR_Rapid_Modernization
+			picture = generic_improved_industries
+			allowed = {
+				original_tag = KAR
+			}
+
+			available = {
+			}
+
+			visible = {
+				always = yes
+			}
+
+			modifier = {
+				research_speed_factor = 0.05
+				industrial_capacity_factory = 0.03
+			}
+		}
+	}
+}

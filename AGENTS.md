@@ -520,3 +520,17 @@ Confirmado como Equestria at War (Steam Workshop, appid 394360, item 1826643372)
 ### Validação
 
 `tools/validate_mod.py`: 3 ERROR (DDS conhecidos), 76 WARNING (baseline inalterada), 0 divergência de manifesto, 0 desbalanceamento de chaves. Chaves balanceadas conferidas manualmente em `frontendmainview.gui` (259/259), `frontendgamesetupview.gui` (642/642) e `special_forces_subdoctrines.txt` (195/195). Sem commit/push.
+
+---
+
+## 3 novos países criados: ORV, KAR, LIA (2026-07-15)
+
+*Pedido do usuário: criar a base política de 3 países novos (equivalentes de EUA, Japão e China), em inglês, para o autor atribuir estados/cidades manualmente depois. Sem bandeira, sem `capital=`/`oob=` (dependem da atribuição de território, deixados como TODO comentado nos arquivos).*
+
+- **ORV — Federation of the States of Orvena** (equivalente EUA/Canadá federativo). `ruling_party = democratic`, sub-ideologia customizada `Federalist`. Líder: Presidente Walter Ashford. `graphical_culture = commonwealth_gfx`.
+- **KAR — Solar Empire of Karyō** (equivalente Japão Meiji/imperial). `ruling_party = neutrality`, sub-ideologia `Divine_Throne`. Líder: Imperador Renji Amatsu. `graphical_culture = asian_gfx`.
+- **LIA — United Republic of Liangor** (equivalente China república/senhores da guerra; nome histórico "Celestial Empire of Liangor" registrado em `LIA_neutrality`). `ruling_party = democratic`, sub-ideologia `Nationalist`. Líder: Presidente Wen Zhaolin. `graphical_culture = asian_gfx`.
+
+Cada país recebeu: entrada em `common/country_tags/00_countries.txt`; `common/countries/<Nome>.txt` (cor + cultura gráfica); `common/characters/<TAG>.txt` (os 20 conselheiros genéricos padrão do mod, mesmo molde de AEI/CZL, só trocando tag e etnia do portrait — ORV usa `europe`, KAR/LIA usam `asia`); `history/countries/<TAG> - <Nome>.txt` (tecnologia inicial, política, popularidades, 1 líder + 1 marechal + 2 comandantes de corpo + 2 almirantes com nomes inventados culturalmente coerentes, 3 ideias nacionais próprias); localisation em `AZ_countries_l_english.yml` (nomes por ideologia, seguindo o padrão de THK/HEL) e no novo `localisation/AZ_new_nations_l_english.yml` (descrições de personagens e ideias).
+
+Nenhuma bandeira, capital, OOB ou atribuição de estado foi criada — ficam marcados como TODO nos arquivos de história pra você atribuir manualmente. `validate_mod.py`: 110 tags reconhecidas (era 107), 3 ERROR conhecidos, 76 WARNING (baseline), 0 divergência, 0 desbalanceamento. Sem commit/push.

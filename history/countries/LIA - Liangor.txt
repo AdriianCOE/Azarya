@@ -1,0 +1,167 @@
+# TODO: capital and oob will be assigned once states are manually distributed.
+# capital = <state_id>
+# oob = "LIA"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	basic_train = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_maintenance_company = 1
+	gw_artillery = 1
+	interwar_artillery = 1
+}
+
+IF = {
+	limit = {
+		NOT = { has_dlc = "By Blood Alone" }
+	}
+	set_technology = {
+		early_fighter = 1
+	}
+}
+IF = {
+	limit = { NOT = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		early_battlecruiser = 1
+		transport = 1
+	}
+}
+IF = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		basic_depth_charges = 1
+		basic_torpedo = 1
+		basic_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_battery = 1
+		basic_light_battery = 1
+		basic_heavy_armor_scheme = 1
+		early_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		mtg_transport = 1
+		coastal_defense_ships = 1
+	}
+}
+
+recruit_character = LIA_ar
+recruit_character = LIA_acr
+recruit_character = LIA_mt
+recruit_character = LIA_stc
+recruit_character = LIA_aa2
+recruit_character = LIA_acgs
+recruit_character = LIA_ncm
+recruit_character = LIA_nccr
+recruit_character = LIA_coi
+recruit_character = LIA_democratic_guy
+recruit_character = LIA_acd2
+recruit_character = LIA_acas
+recruit_character = LIA_communist_guy
+recruit_character = LIA_ncs
+recruit_character = LIA_awt
+recruit_character = LIA_pot
+recruit_character = LIA_fascist_guy
+recruit_character = LIA_ai2
+recruit_character = LIA_nt
+recruit_character = LIA_aco2
+
+set_convoys = 60
+army_experience = 20
+navy_experience = 5
+set_research_slots = 2
+add_political_power = 80
+
+add_ideas = {
+	LIA_Fractured_Mandate
+	LIA_Foreign_Concessions
+	LIA_Provincial_Loyalties
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1923.10.10"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 35
+	communism = 25
+	fascism = 15
+	neutrality = 25
+}
+
+create_country_leader = {
+	name = "Wen Zhaolin"
+	desc = "LIA_Zhaolin"
+	picture = "gfx/leaders/leader_unknown.dds"
+	ideology = Nationalist
+	traits = { }
+}
+
+create_field_marshal = {
+	name = "Liang Baoshu"
+	desc = "LIA_Baoshu"
+	traits = { defensive_doctrine }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Han Qiwei"
+	desc = "LIA_Qiwei"
+	traits = { infantry_expert }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Zhou Delin"
+	desc = "LIA_Delin"
+	traits = { trickster }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_navy_leader = {
+	name = "Tan Yuqing"
+	desc = "LIA_Yuqing"
+	traits = { navy_career_officer }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+
+create_navy_leader = {
+	name = "Feng Zicheng"
+	desc = "LIA_Zicheng"
+	traits = { navy_career_officer }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 2
+	coordination_skill = 1
+}

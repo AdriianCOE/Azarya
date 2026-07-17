@@ -2,6 +2,10 @@
 state={
 	id=421
 	name="STATE_421"
+	history={
+		owner = ORV
+		add_core_of = ORV
+		}
 	provinces={
 		295 1082 1090 1810 2109 3384 3532 3690 4210 4333 8979 9057 9062 9102 9120 
 	}

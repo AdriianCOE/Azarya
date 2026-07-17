@@ -412,6 +412,7 @@ containerWindowType = {
 		position = { x = -230 y = 0 }
 		name ="dlc_button"
 		spriteType = "GFX_frontend_banner_dlc018"
+		hide = yes
 	}
 	
 	iconType = {
@@ -419,7 +420,7 @@ containerWindowType = {
 		position = { x = -50 y = -21 }
 		spriteType = "GFX_spirit_glow"
 		scale = 0.8
-		#hide = yes
+		hide = yes
 	}
 	
 	buttonType = {
@@ -429,7 +430,7 @@ containerWindowType = {
 		Orientation = center_left
 		scale = 0.56
 		alwaysTransparent = yes
-		#hide = yes
+		hide = yes
 	}
 	
 	buttonType = {
@@ -552,6 +553,7 @@ containerWindowType = {
 		position = { x = -230 y = 0 }
 		name ="dlc_button"
 		spriteType = "GFX_frontend_banner_dlc018"
+		hide = yes
 	}
 	
 	buttonType = {
@@ -607,11 +609,11 @@ containerWindowType = {
 		{
 			name ="frontend_game_logo"
 			spriteType = "GFX_frontend_game_logo"
-			position = { x= 750 y = 25 }
+			position = { x= 20 y = 20 }
 		}
 		instantTextBoxType = {
 			name ="azarya_version_label"
-			position = { x = 755 y = 240 }
+			position = { x = 5 y = 240 }
 			textureFile = ""
 			font = "hoi_24header"
 			borderSize = {x = 0 y = 0}
@@ -621,7 +623,7 @@ containerWindowType = {
 		}
 		instantTextBoxType = {
 			name ="vanilla_version_label"
-			position = { x = 745 y = 215 }
+			position = { x = 5 y = 215 }
 			textureFile = ""
 			font = "hoi_24header"
 			borderSize = {x = 0 y = 0}
@@ -787,7 +789,7 @@ containerWindowType = {
 ### MAIN MENU PANEL (bottom)
 containerWindowType = {
 	name ="mainmenu_panel_bottom"
-		position = { x=0 y =0}
+		position = { x=-750 y =300}
 		size = { width = 320 height = 450 }
 		Orientation = CENTER
 		Origo = center		

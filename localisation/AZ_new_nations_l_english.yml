@@ -1,0 +1,49 @@
+l_english:
+
+#Orvena - leaders and characters
+ ORV_Ashford:0 "A career federal administrator who rose to the presidency on a platform of unity between the states."
+ ORV_Hale:0 "A methodical field marshal known for turning raw recruits into a disciplined national army."
+ ORV_Reyes:0 "An infantry officer who cut his teeth defending the southern frontier territories."
+ ORV_Whitfield:0 "An engineer-turned-commander focused on logistics and fortification."
+ ORV_Sutherland:0 "One of the first women to command a fleet squadron in Orvenian naval history."
+ ORV_Caldwell:0 "A gunnery specialist with a reputation for precision over aggression."
+
+#Orvena - ideas
+ ORV_Federal_Unity:0 "Federal Unity"
+ ORV_Federal_Unity_desc:0 "The federation of states holds together through shared institutions and a strong sense of common purpose."
+ ORV_Continental_Industry:0 "Continental Industry"
+ ORV_Continental_Industry_desc:0 "Vast internal markets and abundant resources fuel a rapidly growing industrial base."
+ ORV_Isolationist_Tradition:0 "Isolationist Tradition"
+ ORV_Isolationist_Tradition_desc:0 "Orvena has long preferred to watch the world's conflicts from a safe distance."
+
+#Karyo - leaders and characters
+ KAR_Amatsu:0 "The reigning emperor, regarded by his subjects as a living link between the throne and the divine."
+ KAR_Kanzaki:0 "An aggressive field marshal who champions rapid offensive doctrine."
+ KAR_Ishida:0 "A veteran infantry commander respected for his discipline."
+ KAR_Mizuhara:0 "A mountain warfare specialist from Karyō's rugged interior provinces."
+ KAR_Tachibana:0 "A torpedo warfare officer who trained under foreign naval missions."
+ KAR_Fujimori:0 "An early advocate of naval aviation within the Karyan fleet."
+
+#Karyo - ideas
+ KAR_Divine_Mandate:0 "Divine Mandate"
+ KAR_Divine_Mandate_desc:0 "The throne's legitimacy is unquestioned, lending stability to the Empire's institutions."
+ KAR_Naval_Ambition:0 "Naval Ambition"
+ KAR_Naval_Ambition_desc:0 "Karyō looks to the sea for its future, investing heavily in its fleet and its shipyards."
+ KAR_Rapid_Modernization:0 "Rapid Modernization"
+ KAR_Rapid_Modernization_desc:0 "Foreign expertise and domestic ambition drive a swift transformation of Karyō's economy."
+
+#Liangor - leaders and characters
+ LIA_Zhaolin:0 "President of the fragile United Republic, balancing the demands of the provinces against a weak central treasury."
+ LIA_Baoshu:0 "A cautious field marshal who favors entrenched, defensive warfare."
+ LIA_Qiwei:0 "An infantry general whose loyalty to the central government is often questioned."
+ LIA_Delin:0 "A provincial commander known for shifting allegiances."
+ LIA_Yuqing:0 "A junior admiral commanding what little remains of Liangor's coastal fleet."
+ LIA_Zicheng:0 "An officer trained abroad, eager to modernize the navy."
+
+#Liangor - ideas
+ LIA_Fractured_Mandate:0 "Fractured Mandate"
+ LIA_Fractured_Mandate_desc:0 "The central government's authority is contested by provincial powers and rival factions."
+ LIA_Foreign_Concessions:0 "Foreign Concessions"
+ LIA_Foreign_Concessions_desc:0 "Foreign powers control key ports and industries, extracting wealth while offering little loyalty in return."
+ LIA_Provincial_Loyalties:0 "Provincial Loyalties"
+ LIA_Provincial_Loyalties_desc:0 "Many soldiers answer to their home province before they answer to the capital."

@@ -1,0 +1,18 @@
+state={
+	id=509
+	name="Net"
+	history={
+		owner = ORV
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = ORV
+	}
+	provinces={
+		8711 8712 8643 186 8568 8535 8551 771 8620 8512 4302 2946 8472 1200 4018 8360 878
+	}
+	manpower=100000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

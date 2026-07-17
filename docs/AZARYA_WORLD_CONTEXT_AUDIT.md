@@ -1,6 +1,8 @@
-# Azarya — Contexto Mundial (Auditoria + Decisões Confirmadas)
+# Azarya — Contexto Mundial (Snapshot Técnico Revisado)
 
-*Última atualização: 2026-07-15. Este documento combina uma auditoria técnica do repositório (dados calculados a partir dos arquivos reais do mod) com decisões de lore confirmadas diretamente pelo autor em conversa. As duas fontes são marcadas separadamente — nada aqui foi inventado sem indicar a origem.*
+*Snapshot original: 2026-07-15. Revisão documental: 2026-07-17. Este arquivo preserva a auditoria quantitativa anterior, mas não é mais a fonte principal de canon. Em conflitos, prevalecem `docs/lore/00_CANON_RULES.md` e as decisões mais recentes do autor.*
+
+> **Atenção:** os números 57 tags/506 estados pertencem ao snapshot anterior à expansão oriental. ORV, KAR, LIA e estados 507–509 estavam em implementação posterior e exigem nova agregação antes de atualizar os totais.
 
 ---
 
@@ -8,9 +10,9 @@
 
 O mod tem **57 tags jogáveis confirmadas**, **57 arquivos de história de país** e **506 estados**. Cenário único: `common/bookmarks/1924.txt`, 1º de janeiro de 1924.
 
-O mundo tem desigualdade grande: **GYE (Gydian Empire)** concentra ~11% da população mundial e a maior indústria. Vários países (ATV, VAL, HEL, VAN, SAH, ELD e outros) têm população/indústria essencialmente zeradas — **por design nesta fase**: o autor confirmou que muitos países ainda são só divisão territorial, sem dados nem lore, servindo pra mapear como o mundo está dividido antes de decidir quem cada país vai ser.
+No snapshot original, o mundo tem desigualdade grande: **GYE (Gydian Empire)** concentra ~11% da população mundial e a maior indústria. Vários países (ATV, VAL, HEL, VAN, SAH, ELD e outros) têm população/indústria essencialmente zeradas — **por design nesta fase**: o autor confirmou que muitos países ainda são só divisão territorial, sem dados nem lore, servindo pra mapear como o mundo está dividido antes de decidir quem cada país vai ser.
 
-Conteúdo narrativo mecânico (foco, decisões, eventos próprios) está concentrado em **THK** e **CZL**. O terremoto já está implementado como conteúdo real de jogo (não só conceito), com nome, data, epicentro e consequências políticas descritas. Há uma guerra ativa já no cenário inicial (ver seção 6).
+Conteúdo narrativo mecânico (foco, decisões, eventos próprios) está concentrado em **THK** e **CZL**. O terremoto já está implementado como conteúdo real de jogo (não só conceito), com nome, data, epicentro e consequências políticas descritas. Há três efeitos `declare_war_on` encontrados nos arquivos de história. Eles indicam guerras pretendidas no início, mas ainda exigem validação em runtime (ver seção 6).
 
 ---
 
@@ -30,7 +32,7 @@ Conteúdo narrativo mecânico (foco, decisões, eventos próprios) está concent
 
 ---
 
-## 3. Números gerais do mundo (calculado)
+## 3. Números gerais do mundo no snapshot de 2026-07-15
 
 | Métrica | Valor |
 |---|---|
@@ -124,16 +126,16 @@ Ordenado por população. `Governo` mistura `ruling_party` padrão com o token d
 
 **Maiores exércitos (divisões)**: GYE (33), BOM (28), KOZ (21), UPG/CZL (18), SLV (14), TOL (15), CBS (17).
 
-**Principais marinhas (bases navais)**: SIT e DTB (16 níveis cada), RFO (14), BKG (12), TOL (11), THK (10), NSA (10). Em contagem de navios no OOB: KOZ (25), CZL (21), TOL (18), THK (14).
+**Maior infraestrutura naval inicial (níveis de bases navais; não equivale a força da marinha)**: SIT e DTB (16 níveis cada), RFO (14), BKG (12), TOL (11), THK (10), NSA (10). Em contagem de navios no OOB: KOZ (25), CZL (21), TOL (18), THK (14).
 
-**Principais forças aéreas (bases aéreas)**: SLU e GYE (8 cada), NSA (7), SIT e DTB (6 cada).
+**Maior infraestrutura aérea inicial (níveis de bases aéreas; não equivale a número de aeronaves)**: SLU e GYE (8 cada), NSA (7), SIT e DTB (6 cada).
 
 ---
 
-## 6. Diplomacia e guerras iniciais
+## 6. Diplomacia e declarações de guerra no history
 
 - **Nenhuma facção** existe no início do cenário.
-- **Guerras ativas confirmadas em 1924** (`declare_war_on` em `history/countries/`):
+- **Declarações de guerra encontradas nos arquivos de história** (`declare_war_on` em `history/countries/`). O início efetivo e a estabilidade dessas guerras precisam ser confirmados em runtime:
   - `ELD - Eldwyn.txt:70` → declara guerra em **SVD** (Serenvioled), CB `annex_everything`
   - `GET - Griester.txt:70` → declara guerra em **SVD** (Serenvioled), CB `annex_everything`
   - `KOZ - Kingdom of Zauern.txt:86` → declara guerra em **TOL** (Torronese League), CB `annex_everything`
@@ -162,9 +164,9 @@ Petróleo é o recurso mais concentrado num único país incomum (SDB — Seddus
 
 ### Confirmado
 - Monarquia constitucional, casa de **Aurum**. Governante: **Rainha Elara Lorenthia**.
-- Capital: **Eldoria** (estado 382) — também o epicentro do terremoto.
+- Capital: **Eldoria** (estado 382), uma das áreas mais atingidas pelo terremoto. O epicentro geológico exato permanece TBD até validação direta da localisation.
 - Árvore de foco: **75 focos** (`common/national_focus/Thiryn.txt`). **Caminho canônico: Men of Pride** (confirmado pelo autor).
-- `Great Thiryn`: mecânica de formação de nação real, incorpora estados **86, 409 e 400** (confirmado pelo autor). Evento "Formation of Great Thiryn" em `events/NewsEvents.txt:123`.
+- `Great Thiryn`: a formação incorpora os estados **86, 409 e 400** (canon). A notícia precisa ser revalidada no repositório atual: uma auditoria anterior registrou uso de `news.59` vanilla, enquanto este snapshot registrou um evento próprio. Não tratar nenhum dos dois como resolvido sem inspeção.
 - Decisões próprias: `common/decisions/THK.txt` (242 linhas), desbloqueadas após completar `THK_RoyalAlternative`.
 - Terremoto ("Great Earthquake", fim de 1922) atingiu Eldoria diretamente, ligado à derrota militar de Thiryn e à crise da coroa Aurum.
 - Marinha: 10 níveis de base naval, 14 navios no OOB.
@@ -186,7 +188,7 @@ Petróleo é o recurso mais concentrado num único país incomum (SDB — Seddus
 - Capital: estado 335. **"Czar" é um título de governo real** (confirmado pelo autor), não decorativo.
 - Agitação civil nas províncias do norte, autoridade do Czar contestada (lore de bookmark já existente).
 - Possui árvore de foco própria (`common/national_focus/Lesc.txt`) e 3 ideias próprias.
-- Maior contagem de navios no OOB entre todos os 57 países (21), 2º maior exército em divisões (18).
+- Possui 21 navios no OOB e 18 divisões, colocando Lesc entre as maiores forças iniciais, mas não como líder isolada: KOZ aparece com 25 navios e GYE/BOM/KOZ possuem mais divisões.
 - Distância de THK: moderada, cruzando parte de um oceano — não vizinhos diretos.
 
 ### Em aberto (decisão do autor)
@@ -221,7 +223,7 @@ O autor confirmou que **vários países são intencionalmente só divisão terri
 
 - **Nome**: "The Great Earthquake" (`localisation/AZ_lore_l_english.yml`).
 - **Data**: fim de 1922.
-- **Epicentro**: Eldoria, capital de Thiryn (estado 382) — bairro "the Shattered Quarter".
+- **Área central da narrativa**: Eldoria, capital de Thiryn (estado 382), incluindo o bairro "the Shattered Quarter". O epicentro geológico exato permanece TBD.
 - **Consequências**: expôs fraturas políticas já existentes; ligado diretamente à derrota militar de Thiryn e à crise da coroa Aurum.
 - Sistema de entrega: "Crônicas" (`AZ_CHRONICLE_*`) e lore por estado (`AZ_LORE_TEXT_<id>_N`), acessível via `common/scripted_guis/AZ_lore_atlas.txt` — usa as 2 texturas placeholder já carregadas numa rodada anterior (`AZ_lore_icon_TEMP.dds`/`AZ_lore_mapicon_TEMP.dds`, precisam de arte própria antes de lançamento público).
 - Uma entrada da Crônica (`AZ_CHRONICLE_TEXT_5`) diz explicitamente que o registro histórico é "deliberadamente inacabado": a Crônica cobre até o terremoto e a derrota militar de Thiryn, e entrega a narrativa ao jogador a partir de 1924.
@@ -229,7 +231,24 @@ O autor confirmou que **vários países são intencionalmente só divisão terri
 
 ---
 
-## 13. Inconsistências técnicas conhecidas
+
+## 13. Delta de canon posterior ao snapshot
+
+As seguintes decisões foram consolidadas depois da auditoria quantitativa e devem prevalecer:
+
+- Durnstad (`DUH`) e Durtenbach (`DTB`) são países diferentes.
+- A garantia gydiana a Durnstad é parte da cadeia proteção → dependência → ruptura → invasão, não uma contradição.
+- A Guerra das Três Bandeiras começa entre junho e setembro de 1924.
+- Novasovia começa a armar Varadnia aproximadamente cinco meses após o início do cenário.
+- Gydian apoia a Junta Helvariana; Montia apoia Durtenbach secretamente.
+- A rota histórica dá vitória a Durtenbach e forma uma Helvaria reunificada, principal rival continental de Gydian.
+- A Grande Guerra Continental começa aproximadamente em 1927 por uma crise envolvendo Astravern e Helvaria.
+- Gengen tende inicialmente ao bloco gydiano.
+- Sithius tende historicamente a atuar como aliado menor e oportunista de Gydian.
+- Orvena, Karyō e Liangor foram aprovados como base canônica do continente oriental e estão em implementação.
+- Doia, Haifa e Mominches devem ser descritos como contendo aproximadamente **1,7 milhão** de habitantes no total.
+
+## 14. Inconsistências técnicas conhecidas
 
 - **`events/` provavelmente ainda tem bastante resíduo vanilla** (confirmado pelo autor): arquivos com nomes de países reais (Germany, Japan, France, Poland, SovietUnion, Spain, China, Hungary, Bulgaria, Ethiopia, Turkey, Finland, Mexico, Paraguay, Britain, Yugoslavia, Greece) e dezenas prefixadas por DLC ainda estão na pasta ativa. Candidato a limpeza futura (fora do escopo desta rodada).
 - **`SLV_AZARYA_DESC` descreve "Nicollonia"**, não "Sylvan" — nome de chave e conteúdo do texto divergem.
@@ -237,7 +256,7 @@ O autor confirmou que **vários países são intencionalmente só divisão terri
 
 ---
 
-## 14. Perguntas de lore ainda em aberto
+## 15. Perguntas de lore ainda em aberto
 
 - Sucessão completa da dinastia Aurum em THK.
 - Quais países além de Thiryn foram atingidos pelo terremoto.
@@ -247,7 +266,7 @@ O autor confirmou que **vários países são intencionalmente só divisão terri
 
 ---
 
-## 15. Arquivos mais importantes consultados
+## 16. Arquivos mais importantes consultados
 
 - `common/country_tags/00_countries.txt` (57 tags)
 - `history/countries/*.txt` (57 arquivos — capital/partido/líder/ideias/guerras)

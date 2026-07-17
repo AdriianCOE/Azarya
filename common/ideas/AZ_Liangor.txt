@@ -1,0 +1,67 @@
+ideas = {
+	country = {
+
+		LIA_Fractured_Mandate = {
+			name = LIA_Fractured_Mandate
+			picture = generic_nationalization
+			allowed = {
+				original_tag = LIA
+			}
+
+			available = {
+			}
+
+			visible = {
+				always = yes
+			}
+
+			modifier = {
+				stability_factor = -0.10
+				political_power_factor = -0.05
+				communism_drift = 0.02
+				fascism_drift = 0.02
+			}
+		}
+
+		LIA_Foreign_Concessions = {
+			name = LIA_Foreign_Concessions
+			picture = generic_foreign_capital
+			allowed = {
+				original_tag = LIA
+			}
+
+			available = {
+			}
+
+			visible = {
+				always = yes
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.08
+				stability_factor = -0.05
+			}
+		}
+
+		LIA_Provincial_Loyalties = {
+			name = LIA_Provincial_Loyalties
+			picture = generic_agrarian_reform
+			allowed = {
+				original_tag = LIA
+			}
+
+			available = {
+			}
+
+			visible = {
+				always = yes
+			}
+
+			modifier = {
+				recruitable_population_factor = -0.02
+				army_org_factor = -0.05
+				drift_defence_factor = -0.10
+			}
+		}
+	}
+}

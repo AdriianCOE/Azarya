@@ -1,0 +1,18 @@
+state={
+	id=508
+	name="Net"
+	history={
+		owner = EDR
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = EDR
+	}
+	provinces={
+		865 239 1595 95 5963
+	}
+	manpower=100000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}
