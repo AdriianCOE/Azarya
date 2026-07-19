@@ -10,3 +10,19 @@ LSC_clamp_imperial_fracture_variables = {
 	clamp_variable = { var = LSC_selene_legitimacy min = 0 max = 100 }
 	clamp_variable = { var = LSC_revolutionary_strength min = 0 max = 100 }
 }
+
+# Part D: the four succession-result flags are mutually exclusive NATIONAL
+# flags on whichever country actually ends up holding the outcome (see
+# events/LSC_civil_war.txt and events/LSC_succession.txt for the callers) --
+# never global flags, since a global flag can't identify WHICH country won.
+# Every result-setting event calls this first, then sets exactly one of the
+# four itself. Runs in whatever scope calls it (THIS), no ROOT/PREV needed.
+LSC_clear_succession_results = {
+	clr_country_flag = LSC_kael_victory
+	clr_country_flag = LSC_alvaro_victory
+	clr_country_flag = LSC_selene_victory
+	clr_country_flag = LSC_succession_inconclusive
+	clr_country_flag = LSC_selene_peaceful_settlement
+	clr_country_flag = LSC_selene_palace_coup
+	clr_country_flag = LSC_selene_limited_war
+}

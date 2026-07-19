@@ -165,5 +165,90 @@ ideas = {
 		political_power_gain = -0.03                   # The administration spends itself countering a press it cannot fully silence
 	}
 }
+
+		# --- Phase 4.2: war ideas for the War of Inheritance (Kael's route).
+		# Small, removable modifiers per side -- not meant to survive the
+		# eventual postwar cleanup untouched. ---
+
+		LSC_kael_emergency_government = {
+	name = LSC_kael_emergency_government
+	picture = ARG_military_government
+	allowed = { original_tag = CZL }
+	visible = { always = yes }
+
+	modifier = {
+		army_org_factor = 0.05                        # Martial law tightens the chain of command
+		conscription_factor = 0.05                    # Emergency levies across the loyalist south
+		stability_factor = -0.05                       # A capital under martial law, still absorbing a regicide
+		political_power_cost = 0.10                    # Ruling by decree consumes the Crown's remaining goodwill
+	}
+}
+
+		LSC_alarican_revolutionary_committees = {
+	name = LSC_alarican_revolutionary_committees
+	picture = AFG_adopt_nufus
+	allowed = { original_tag = CZL }
+	visible = { always = yes }
+
+	modifier = {
+		war_support_factor = 0.05                      # A north that has stopped waiting for Aelia's permission
+		recruitable_population_factor = 0.02           # Committees put every able hand under arms
+		production_speed_buildings_factor = -0.05      # Supply and production strained by a war begun with a rifle cache, not a war ministry
+		stability_factor = -0.03                       # A revolution still improvising its own institutions
+	}
+}
+
+		# --- Part C: The Marble Gambit -- moderate, removable ideas for
+		# Selene's three possible endings. None of these are meant to survive
+		# the eventual postwar cleanup untouched. ---
+
+		LSC_selene_marble_regency = {
+	name = LSC_selene_marble_regency
+	picture = generic_pp_unity_bonus
+	allowed = { original_tag = CZL }
+	visible = { always = yes }
+
+	modifier = {
+		stability_factor = 0.05                        # A settled succession, negotiated rather than seized
+		political_power_gain = 0.05                    # A regency with room to actually govern
+	}
+}
+
+		LSC_selene_court_under_siege = {
+	name = LSC_selene_court_under_siege
+	picture = generic_deal_with_the_devil
+	allowed = { original_tag = CZL }
+	visible = { always = yes }
+
+	modifier = {
+		stability_factor = -0.03                       # The palace still shaken by an armed confrontation in its own halls
+		war_support_factor = -0.02                     # A public unnerved by a coup attempt, however short
+		political_power_cost = 0.05                    # Selene spends more than she should just holding the court together
+	}
+}
+
+		LSC_selene_divided_guard = {
+	name = LSC_selene_divided_guard
+	picture = CZE_divided_nation
+	allowed = { original_tag = CZL }
+	visible = { always = yes }
+
+	modifier = {
+		army_org_factor = -0.03                        # Part of the officer corps chose Kael's faction over the Crown
+		conscription_factor = -0.02                    # Recruitment strained by a Guard still sorting out its own loyalties
+	}
+}
+
+		LSC_selene_hidden_dossier = {
+	name = LSC_selene_hidden_dossier
+	picture = generic_intel_bonus
+	allowed = { original_tag = CZL }
+	visible = { always = yes }
+
+	modifier = {
+		political_power_gain = 0.05                    # Control bought with a secret Kael cannot afford to see published
+		stability_factor = -0.02                       # A court that senses it is being ruled by leverage, not law
+	}
+}
 	}
 }

@@ -1,0 +1,13 @@
+state={
+	id=510
+	name="Ilha1"
+	history={
+	}
+	provinces={
+		15935 15934 15936 11130 14025 14814 13776
+	}
+	manpower=100000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

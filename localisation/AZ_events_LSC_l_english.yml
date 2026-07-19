@@ -27,3 +27,155 @@
  LSC_succession_30_a_tt:0 "The Crown answers with a flat refusal. The Army and the hardliners approve of the firmness, but the north hears only that nothing will change short of force — and revolutionary sentiment hardens accordingly."
  LSC_succession.30.b:0 "Offer hollow concessions and delay"
  LSC_succession_30_b_tt:0 "Viktor's government promises study, review, and reform commissions that commit to nothing. It buys a little quiet in the streets, but the delay convinces no one who mattered, and the oligarchs read the hesitation as exactly the weakness they feared."
+
+ # --- Phase 4: the assassination of Viktor IV (Kael's route only) ---
+
+ LSC_succession.11.t:0 "Shadows Over the Palace"
+ LSC_succession.11.d:0 "The Czar's physician has been reassigned twice in a month, each time on Kael's own signature. The night kitchen staff have new faces. A courier records three contradictory schedules for Viktor's movements on the same evening, filed by three different offices, none of which admit to having spoken to the others. Nothing on paper says what is being prepared. Everything on paper says something is."
+ LSC_succession.11.a:0 "Let the physician's people handle it"
+ LSC_succession_11_a_tt:0 "A quiet method, arranged through men the Army already trusts. It will read, afterward, like illness — which is exactly the point."
+ LSC_succession.11.b:0 "Arrange an accident instead"
+ LSC_succession_11_b_tt:0 "A staged mishap costs more in favors called in among the great houses, but leaves no physician's ledger for anyone to ever go looking through."
+
+ LSC_succession.12.t:0 "The Czar is Dead"
+ LSC_succession.12.d:0 "Czar Viktor IV Vorenkov is found in his private apartments in the early hours, and by the time the court physician arrives there is already a story for him to confirm rather than a death for him to explain. The guards on duty that night have been quietly reassigned to the northern garrisons before anyone thinks to ask them what they saw. Kael receives the news standing, already dressed, in a room full of men who do not seem surprised."
+ LSC_succession.12.a:0 "Accept the throne"
+ LSC_succession_12_a_tt:0 "Kael is proclaimed Czar before the sun is fully up. The Army moves to secure the succession before anyone can question how convenient its timing is."
+
+ LSC_succession.13.t:0 "Blood and a Dossier"
+ LSC_succession.13.d:0 "The dossier that once merely implicated Alvaro in disloyalty is quietly amended, then read aloud in full to a court still absorbing the news of Viktor's death. It does not matter, at this point, which pages are genuine. It matters that the throne room needs a name to attach to its grief, and Kael's people have had one ready for weeks."
+ LSC_succession.13.a:0 "Name Alvaro his father's murderer"
+ LSC_succession_13_a_tt:0 "Kael accuses his brother of regicide before the court and, within days, the whole Czardom. The north reads the timing exactly as well as the south pretends not to."
+
+ LSC_succession.14.t:0 "The Princess Asks Questions"
+ LSC_succession.14.d:0 "Selene says nothing in open court — she has never needed to say things in open court to have them heard. But a steward who was on duty that night has been asked, gently and more than once, to describe exactly what he remembers, and the physician's dismissed predecessor has received a visit that appears nowhere in the palace's own records."
+ LSC_succession.14.a:0 "Let her circle keep asking, quietly"
+ LSC_succession_14_a_tt:0 "Selene does not challenge Kael publicly, but she starts building a private record of what does not add up. Whatever comes of it will come later, not now."
+ LSC_succession.14.b:0 "She holds her silence entirely, for now"
+ LSC_succession_14_b_tt:0 "Selene judges the moment too dangerous to be seen asking anything at all."
+
+ LSC_succession.15.t:0 "A State of Emergency"
+ LSC_succession.15.d:0 "Kael's government declares what it calls a temporary measure: martial administration extended over the capital, the press placed under review, and the ordinary machinery of succession suspended indefinitely, in the name of a mourning the throne has not actually had time to observe."
+ LSC_succession.15.a:0 "Rule by decree until order is restored"
+ LSC_succession_15_a_tt:0 "The Army and the great houses back the new Czar's emergency powers without much debate. The north hears only that the garrisons now answer to a harder hand than before."
+
+ LSC_succession.16.t:0 "The Empire Splits"
+ LSC_succession.16.d:0 "There is no single morning when it happens, but by the end of it there are unmistakably two Lescs: one that answers to the new Czar in Aelia, and one — armed, organized, and convinced beyond argument that his father's death and his brother's exile are the same crime — that no longer answers to Aelia at all."
+ LSC_succession.16.a:0 "The reckoning will come"
+
+ # --- Part B1: the War of Inheritance itself (events/LSC_civil_war.txt) ---
+
+ LSC_civil_war.10.t:0 "The War of Inheritance"
+ LSC_civil_war.10.d:0 "Aelia calls it the restoration of order. The garrisons at Teno and Emporiae call it what it plainly is: the south marching north to finish what the dossier against Alvaro started. Within the week, the Alarican provinces have declared for the brother Kael named a murderer, and for no one else."
+ LSC_civil_war.10.a:0 "Hold the realm together"
+
+ LSC_civil_war.21.kael.t:0 "The Iron Throne Holds"
+ LSC_civil_war.21.kael.d:0 "The last organized resistance in the north collapses, its committees scattered or absorbed, its leadership dead, captured, or fled beyond any border Aelia recognizes. Czar Kael's government controls the whole of what was once his father's empire — an empire that no longer troubles itself to explain how it got that way."
+ LSC_civil_war.21.oldregime.t:0 "Aelia Holds the South"
+ LSC_civil_war.21.oldregime.d:0 "The revolt Alvaro raised in his own name burns out province by province, its committees scattered or absorbed, its leadership dead, captured, or fled beyond any border Aelia still recognizes. Kael's emergency government controls the whole of what was once his father's Czardom — an empire that no longer troubles itself to explain the warrant that started this, or how convenient its timing turned out to be."
+ LSC_civil_war.21.a:0 "The realm is whole again, and Kael's alone."
+
+ LSC_civil_war.22.alvaro.t:0 "Aelia Falls"
+ LSC_civil_war.22.alvaro.d:0 "The war Kael started to secure his father's throne ends with no throne left to secure. The United Committees of North Alaric hold Aelia, the fleet, and a Czardom that has stopped answering to that name. What becomes of the south is a question the committees have not finished arguing about — but it is, for now, entirely theirs to argue."
+ LSC_civil_war.22.committees.t:0 "The Warrant Collapses"
+ LSC_civil_war.22.committees.d:0 "Kael's emergency government falls with the warrant that founded it, and the truth it was built to bury outlives it — Selene's quiet suspicions among them. Alvaro's revolutionary committees hold Aelia, the fleet, and a Czardom that answers, for the first time in generations, to the provinces it once only governed by garrison."
+ LSC_civil_war.22.a:0 "The old empire is gone."
+
+ LSC_civil_war.23.t:0 "An Uneasy Peace"
+ LSC_civil_war.23.d:0 "Neither side breaks. The fighting simply stops — exhausted armies, exhausted supply lines, and a line on the map that both governments now defend rather than cross. It resolves nothing that either side originally went to war over."
+ LSC_civil_war.23.a:0 "The guns fall silent, for now."
+
+ # --- Part B2: Alvaro's route to war (events/LSC_succession.txt .31-.36) ---
+
+ LSC_succession.31.t:0 "The Palace Goes Silent"
+ LSC_succession.31.d:0 "Word reaches the northern committees in fragments: the Czar's physician reassigned without explanation, a curfew in the capital that no office will confirm ordering, three couriers carrying three contradictory schedules for the same evening. Nothing says outright that something has already happened. Everything says it is about to."
+ LSC_succession.31.a:0 "Prepare for the worst"
+ LSC_succession_31_a_tt:0 "Alvaro's people stop waiting for Aelia to explain itself and start moving as though the break has already come — a wager that costs nothing if they are wrong, and buys precious days if they are right."
+ LSC_succession.31.b:0 "Seek confirmation through quiet channels"
+ LSC_succession_31_b_tt:0 "Rather than act on rumor, Alvaro's network spends what little time it may have chasing a straight answer out of the capital — a slower, more cautious path that keeps the movement's options open a little longer."
+
+ LSC_succession.32.t:0 "A Warrant for Alvaro"
+ LSC_succession.32.d:0 "Czar Viktor IV is dead, and the account that reaches the provinces within hours is already complete: a conspiracy, a confession extracted from men no one north of Aelia has ever heard of, and a warrant bearing Alvaro's name at the top of it. Kael's officers move through the palace as though they had been expecting exactly this morning for weeks — which, in every way that matters, they had."
+ LSC_succession.32.a:0 "The accusation stands"
+ LSC_succession_32_a_tt:0 "The capital accepts Kael's account of the night without asking the questions Selene is already quietly asking herself. The Guard receives its orders. The north receives its warning."
+
+ LSC_succession.33.t:0 "The Last Train North"
+ LSC_succession.33.d:0 "Alvaro leaves the capital hours ahead of the men sent to arrest him, on a rail line that a handful of officers — men who owe him more than they owe Kael's warrant — are in no particular hurry to report as unusual. It is not an escape so much as a departure no one quite manages to stop in time."
+ LSC_succession.33.a:0 "Ride north while the tracks are still open"
+ LSC_succession_33_a_tt:0 "Alvaro reaches the Alarican provinces still a free man, and word of how close the Guard came only sharpens the north's sense that the warrant was never really about the truth."
+
+ LSC_succession.34.t:0 "The Railways Go Dark"
+ LSC_succession.34.d:0 "What begins as a handful of missing signalmen becomes, within days, entire lines gone quiet: switches sabotaged, telegraph wire spooled up and carried off, depot stock that was accounted for on Tuesday and gone by Friday. The administration calls it disorder. The men doing it call it the first thing that has gone right in years."
+ LSC_succession.34.a:0 "Let the north do what it must"
+ LSC_succession_34_a_tt:0 "Alvaro does not order the sabotage so much as decline to stop it, and the disruption to the old chain of command costs the capital more than any single act of it would suggest."
+
+ LSC_succession.35.t:0 "The Committees Convene"
+ LSC_succession.35.d:0 "Before a single shot is fired, the Alarican committees have a quieter argument to settle: whether this is a war fought to win the whole of Lesc back to a broader, more patient coalition, or a war fought to burn the old order down on the first pass and settle the shape of what replaces it afterward. Neither answer changes what happens next week. Both change everything that happens after."
+ LSC_succession.35.a:0 "Build the broad Alarican front"
+ LSC_succession_35_a_tt:0 "The committees choose patience over purity — a coalition wide enough to include people they do not entirely trust, in exchange for a movement that does not tear itself apart the moment it wins."
+ LSC_succession.35.b:0 "Trust the revolutionary vanguard"
+ LSC_succession_35_b_tt:0 "The committees choose conviction over breadth — a smaller, harder core that will not compromise on what North Alaric is supposed to become, whatever that costs it in numbers."
+
+ LSC_succession.36.t:0 "North Alaric Rises"
+ LSC_succession.36.d:0 "There is no single morning when it happens, but by the end of it there are unmistakably two Lescs: one that still answers to the warrant issued in Alvaro's name, and one — armed, organized, and no longer willing to pretend that warrant was ever about anything but silencing the truth of what happened to Viktor."
+ LSC_succession.36.a:0 "The reckoning will come"
+
+ # --- Part B2: Alvaro's own war (events/LSC_civil_war.txt LSC_civil_war.30) ---
+
+ LSC_civil_war.30.t:0 "North Alaric Rises"
+ LSC_civil_war.30.d:0 "The break is no longer a matter of committees and railway sabotage. Alvaro is proclaimed the legitimate voice of a Lesc that Kael's warrant tried to silence, and the Alarican provinces rise behind him in arms. In Aelia, Kael inherits what is left of his father's government — a shrunken, embattled regime that now has to hold the south by force, since it has plainly lost the argument for holding it by consent."
+ LSC_civil_war.30.a:0 "There is no going back now"
+
+ # --- Part C: Selene's win, when it is her name on the winning side of the
+ # limited civil war rather than Alvaro's or the Alarican committees' ---
+
+ LSC_civil_war.22.selene.t:0 "Caralis Falls"
+ LSC_civil_war.22.selene.d:0 "Whatever the garrison at Caralis believed it was fighting for, it was not enough to survive contact with a Crown that turned out to be far better prepared than Kael's people ever briefed him to expect. The breakaway government collapses, its officers scattered, captured, or quietly asking after terms. Aelia's writ runs the length of Lesc again — and this time, everyone who mattered watched exactly how it was won."
+ LSC_civil_war.22.selene.a:0 "The Crown holds, and holds all of it."
+
+ # --- Part C: The Marble Gambit (events/LSC_succession.txt .41-.48) ---
+
+ LSC_succession.41.t:0 "A Crack in the Marble"
+ LSC_succession.41.d:0 "Selene's people bring her a folder of small things that mean nothing on their own: a physician reassigned without explanation, a night-watch roster rewritten twice in a week, a courier who delivered the same message to two offices that both deny receiving it. No one has done anything yet that a tribunal could name. Selene has read enough palace folders to know what this particular kind of nothing usually precedes."
+ LSC_succession.41.a:0 "Watch Kael, and say nothing yet"
+ LSC_succession_41_a_tt:0 "Selene lets her network keep quiet watch rather than move first — better information now, at the cost of losing whatever advantage surprise might have bought her later."
+ LSC_succession.41.b:0 "Quietly reinforce the Guard around the Court"
+ LSC_succession_41_b_tt:0 "Selene has trusted officers rotated closer to the Court under routine pretexts, buying loyalty she may need sooner than anyone else in the palace suspects."
+
+ LSC_succession.42.t:0 "The Last Audience"
+ LSC_succession.42.d:0 "Czar Viktor IV is found dead before dawn, and for perhaps an hour — less time than it took the physician's report to reach the second floor — no one in the palace is entirely certain who is meant to give the next order. Selene ends that hour herself: her people are already in the corridors, already speaking for her, already treating the question of who follows Viktor as settled before anyone with a different answer can finish drafting one."
+ LSC_succession.42.a:0 "Take up the regency at once"
+ LSC_succession_42_a_tt:0 "Selene does not wait for the Guard's confusion to resolve itself in someone else's favor. She is proclaimed before the sun is fully up, and the Czardom finds itself, for the first time in living memory, ruled by a woman who spent the crisis one full step ahead of everyone else in the room."
+
+ LSC_succession.43.t:0 "The Prepared Evidence"
+ LSC_succession.43.d:0 "The dossier naming Alvaro reaches Selene's desk within a day of Viktor's death — remarkably fast, her clerks note, for a case built entirely after the fact. Fast enough, in fact, that one filing stamp reads two days before the killing it is supposed to explain, and a witness statement is signed by a guardsman who has not been on palace grounds in a month. Someone wrote this before there was anything to write about."
+ LSC_succession.43.a:0 "Keep the discrepancy close, for now"
+ LSC_succession_43_a_tt:0 "Selene does not challenge the dossier publicly — not yet. She simply makes certain that the proof of when it was actually written never leaves her own hands."
+
+ LSC_succession.44.t:0 "The Guard Chooses"
+ LSC_succession.44.d:0 "No one refuses Selene's authority outright — that would require someone willing to say so to her face. Instead, orders reach the garrison a little slower than they should, ledgers take an extra day to close, and a handful of the great houses find reasons their representatives cannot attend court this week. It is not rebellion. It is every institution in Aelia quietly deciding, in its own time, whether the regent actually commands it."
+ LSC_succession.44.a:0 "Address the garrison in person"
+ LSC_succession_44_a_tt:0 "Selene puts herself in front of the men whose obedience is actually in question, trading the risk of the moment for a Guard less inclined to quietly humor Kael's people afterward."
+ LSC_succession.44.b:0 "Court the great houses instead"
+ LSC_succession_44_b_tt:0 "Selene spends her time on the oligarchs' drawing rooms rather than the barracks — a safer audience, and one whose money the Crown will need regardless of how the Guard eventually decides."
+
+ LSC_succession.45.t:0 "The Princess Holds the Truth"
+ LSC_succession.45.d:0 "Selene now has what amounts to proof that the case against Alvaro was written before Viktor died — proof that, handled wrong, could just as easily be read as a regent using her father's murder to settle old scores. What she does with it is the one decision in this entire crisis that is hers alone to make."
+ LSC_succession.45.a:0 "Reveal it"
+ LSC_succession_45_a_tt:0 "Selene lays the timestamps and the false witness statement before the court itself. It is the version of the truth that costs Kael the most — and the version most likely to make the officers who quietly backed him decide they have nothing left to lose."
+ LSC_succession.45.b:0 "Negotiate secretly"
+ LSC_succession_45_b_tt:0 "Selene lets Kael's people know, through channels that will never appear in any minute, exactly what she is holding — and exactly what silence from her is worth to them. It is a smaller victory than exposure, bought at the price of leaving him something to negotiate with later."
+ LSC_succession.45.c:0 "Bury it, and keep it"
+ LSC_succession_45_c_tt:0 "Selene never brings the dossier's true dates before anyone. She keeps them, instead, as the kind of leverage a court eventually learns to fear without ever being told why."
+
+ LSC_succession.46.t:0 "The Marble Gambit"
+ LSC_succession.46.d:0 "Every quiet test the Guard, the bureaucracy and the great houses have set for their new regent adds up now, whether anyone in the palace could point to the exact moment it happened or not. Aelia is about to find out — all at once, and not entirely by Selene's own choosing — exactly what kind of reign this is going to be."
+ LSC_succession.46.a:0 "The court will know soon enough"
+
+ LSC_succession.47.t:0 "The Marble Settlement"
+ LSC_succession.47.d:0 "It ends, in the end, almost gently. Kael finds himself watched, sidelined, and conspicuously short of the allies he was counting on when the ledgers close — but alive, unexiled, and quietly reminded of exactly how much worse Selene chose not to make it for him. The great houses adjust to a regent they underestimated. The north, for now, has been offered a hand rather than a garrison."
+ LSC_succession.47.a:0 "The Marble Regency begins."
+
+ LSC_succession.48.t:0 "Palace Coup"
+ LSC_succession.48.d:0 "It very nearly did not end this way. For the better part of a day, the corridors of the palace itself were a contested front — officers taking sides room by room, doors barred, and at least one attempt to reach Selene before her own Guard could reach him first. It failed. Kael is removed from every post he still held, but the court that watches her afterward is a shaken one, and the north is not the only part of the Czardom now wondering how close that actually was."
+ LSC_succession.48.a:0 "The Crown survives — barely, and everyone knows it."

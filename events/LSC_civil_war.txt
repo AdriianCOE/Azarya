@@ -1,0 +1,676 @@
+add_namespace = LSC_civil_war
+
+# ============================================================
+# THE SUCCESSION WAR — shared engine for both routes (Part B2)
+# ============================================================
+# Part B2 hardening of Part B1. Two things changed from the first version:
+#
+# 1. Lifecycle flags. LSC_civil_war.10's own re-trigger guard used to check
+#    has_country_flag = LSC_succession_war_active / _resolved on CZL. That is
+#    wrong on its face for a second war starting from a DIFFERENT route (this
+#    file), and fragile even for Kael's own war if CZL is later annexed. The
+#    lifecycle of "is a succession war currently running" is now tracked with
+#    two GLOBAL flags only: LSC_succession_war_active_global and
+#    LSC_succession_war_resolved_global. Per-country flags are now used only
+#    for what they are actually good at: identity of a specific side
+#    (LSC_succession_side_kael / _alvaro / _old_regime / _alarican_committees).
+#
+# 2. Resolution polling (.21/.22/.23) no longer assumes "CZL exists = Kael
+#    won" / "CZL doesn't exist = Alvaro won". That mapping is only true for
+#    Kael's own war. In Alvaro's war (LSC_civil_war.30 below), CZL is
+#    ALVARO's side. The three polling events now read the SIDE-IDENTITY flag
+#    of whichever CZL-descended country survived with has_civil_war = no,
+#    and translate that into a POLITICAL result:
+#      side_kael OR side_old_regime  -> LSC_kael_victory
+#      side_alvaro OR side_alarican_committees -> LSC_alvaro_victory
+#    This is the one shared resolution system for both wars (and, later,
+#    Selene's), as required -- no second, route-specific copy of it exists.
+#
+# Syntax throughout is drawn from the currently installed vanilla (Operation
+# Postern v1.19.2.0.a729): events/Spain.txt, events/Mexico.txt (PREV/
+# set_nationality, including the multi-character PREV blocks around line
+# 2725+ that this file's Alvaro-route war reuses for moving two characters
+# at once), and the fully-commented start_civil_war example in events/
+# AAT_Sweden.txt. No army_ratio, navy_ratio, air_ratio, states_filter or
+# keep_unit_leaders anywhere below, for the same reasons documented in Part
+# B1's original header.
+
+# ============================================================
+# KAEL'S WAR — The War of Inheritance (Part B1, hardened)
+# ============================================================
+
+country_event = {
+	id = LSC_civil_war.10
+	title = LSC_civil_war.10.t
+	desc = LSC_civil_war.10.d
+	picture = GFX_news_event_generic_parliament
+
+	trigger = {
+		has_country_flag = LSC_route_kael
+		has_country_flag = LSC_kael_war_pending
+		has_country_flag = LSC_viktor_dead
+		NOT = { has_global_flag = LSC_succession_war_active_global }
+		NOT = { has_global_flag = LSC_succession_war_resolved_global }
+	}
+
+	is_triggered_only = yes
+	major = yes
+
+	immediate = {
+		clr_country_flag = LSC_kael_war_pending
+		set_country_flag = LSC_succession_side_kael
+		set_global_flag = LSC_succession_war_active_global
+
+		set_stability = 0.35
+		set_war_support = 0.70
+		add_ideas = { LSC_kael_emergency_government }
+		# LSC_kael_officer_network and LSC_kael_oligarch_support are kept as
+		# they are -- Part B1/B2 do not remove or convert either.
+
+		# Variable-band bonuses (2-3 clear bands, high only): relayed to the
+		# other side via a ROOT-scope flag, since a variable set on CZL is not
+		# readable by name from inside random_other_country's own scope.
+		if = {
+			limit = { check_variable = { LSC_army_loyalty > 65 } }
+			add_war_support = 0.03
+		}
+		if = {
+			limit = { check_variable = { LSC_oligarch_influence > 65 } }
+			set_country_flag = LSC_war_bonus_oligarch
+		}
+		if = {
+			limit = { check_variable = { LSC_revolutionary_strength > 65 } }
+			set_country_flag = LSC_war_bonus_revolutionary
+		}
+		if = {
+			limit = { check_variable = { LSC_northern_unrest > 65 } }
+			set_country_flag = LSC_war_bonus_unrest
+		}
+
+		# Alvaro must exist in CZL's own roster before PREV can resolve him.
+		recruit_character = CZL_alvaro_vorenkov
+
+		start_civil_war = {
+			ruling_party = fascism
+			ideology = communism
+			size = 0.45
+			capital = 303
+			states = {
+				306
+				303
+				298
+				296
+				282
+				276
+			}
+			PREV = { # Original country (CZL, still ROOT throughout this effect)
+				CZL_alvaro_vorenkov = {
+					set_nationality = PREV.PREV
+				}
+			}
+		}
+
+		random_other_country = {
+			limit = {
+				original_tag = CZL
+				NOT = { tag = CZL }
+			}
+			set_cosmetic_tag = LSC_ALARICAN
+			set_country_flag = LSC_succession_side_alarican_committees
+			set_stability = 0.40
+			set_war_support = 0.65
+			add_ideas = { LSC_alarican_revolutionary_committees }
+			add_country_leader_role = {
+				character = CZL_alvaro_vorenkov
+				country_leader = {
+					ideology = anarchist_communism
+					traits = { }
+					expire = "1965.1.1"
+				}
+				promote_leader = yes
+			}
+			if = {
+				limit = { ROOT = { has_country_flag = LSC_war_bonus_revolutionary } }
+				add_war_support = 0.03
+			}
+			if = {
+				limit = { ROOT = { has_country_flag = LSC_war_bonus_unrest } }
+				add_manpower = 5000
+			}
+		}
+		if = {
+			limit = { has_country_flag = LSC_war_bonus_oligarch }
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 500 }
+		}
+	}
+
+	option = {
+		name = LSC_civil_war.10.a
+	}
+}
+
+# ============================================================
+# ALVARO'S WAR — North Alaric Rises (Part B2)
+# ============================================================
+# Fired from LSC_succession.36 (events/LSC_succession.txt), about a day
+# after the revolt is declared. Viktor is already dead by this point (killed
+# by Kael's own conspiracy in LSC_succession.32, on this route too -- see
+# that file's header comment). CZL itself becomes Alvaro's revolutionary
+# government; the south splits off as a new dynamic country carrying Kael,
+# Selene, and the old regime.
+
+country_event = {
+	id = LSC_civil_war.30
+	title = LSC_civil_war.30.t
+	desc = LSC_civil_war.30.d
+	picture = GFX_news_event_generic_parliament
+
+	trigger = {
+		has_country_flag = LSC_route_alvaro
+		has_country_flag = LSC_alvaro_war_pending
+		has_country_flag = LSC_viktor_dead
+		NOT = { has_global_flag = LSC_succession_war_active_global }
+		NOT = { has_global_flag = LSC_succession_war_resolved_global }
+	}
+
+	is_triggered_only = yes
+	major = yes
+
+	immediate = {
+		# Order: promote Alvaro in CZL -> set CZL's revolutionary government,
+		# capital and cosmetic tag -> mark CZL's side identity -> start the
+		# split, handing the eight southern states away -> identify the new
+		# dynamic country -> move and promote Kael and Selene there -> apply
+		# the old regime's cosmetic tag, identity flag, ideas and starting
+		# values -> raise the global war-active flag -> clear the pending
+		# flag last, only once every step above has already run.
+		# Kael has been holding CZL's leader token provisionally since
+		# LSC_succession.32 (events/LSC_succession.txt) -- retire him from CZL
+		# here, before Alvaro is promoted, so the two are never simultaneously
+		# "ruling" the same country. He is recruited into the new old-regime
+		# country and promoted there later in this same effect, never here.
+		if = {
+			limit = {
+				has_country_leader = {
+					character = CZL_kael_vorenkov
+					ruling_only = yes
+				}
+			}
+			retire_country_leader = yes
+		}
+
+		recruit_character = CZL_alvaro_vorenkov
+		add_country_leader_role = {
+			character = CZL_alvaro_vorenkov
+			country_leader = {
+				ideology = anarchist_communism
+				traits = { }
+				expire = "1965.1.1"
+			}
+			promote_leader = yes
+		}
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
+		set_capital = { state = 303 }
+		set_cosmetic_tag = LSC_ALARICAN
+		set_country_flag = LSC_succession_side_alvaro
+		add_ideas = { LSC_alarican_revolutionary_committees }
+		set_stability = 0.40
+		set_war_support = 0.65
+
+		if = {
+			limit = { check_variable = { LSC_revolutionary_strength > 65 } }
+			add_war_support = 0.03
+		}
+		if = {
+			limit = { check_variable = { LSC_northern_unrest > 65 } }
+			add_manpower = 5000
+		}
+		if = {
+			limit = { check_variable = { LSC_army_loyalty > 65 } }
+			set_country_flag = LSC_war_bonus_loyalty
+		}
+		if = {
+			limit = { check_variable = { LSC_oligarch_influence > 65 } }
+			set_country_flag = LSC_war_bonus_oligarch2
+		}
+
+		# Kael and Selene must exist in CZL's roster before PREV can resolve
+		# them -- neither is recruited on Alvaro's route by default.
+		recruit_character = CZL_kael_vorenkov
+		recruit_character = CZL_selene_vorenkov
+
+		start_civil_war = {
+			ruling_party = communism
+			ideology = fascism
+			size = 0.55
+			capital = 335
+			states = {
+				335
+				360
+				353
+				329
+				323
+				317
+				305
+				304
+			}
+			PREV = { # Original country (CZL, still ROOT throughout this effect)
+				CZL_kael_vorenkov = {
+					set_nationality = PREV.PREV
+				}
+				CZL_selene_vorenkov = {
+					set_nationality = PREV.PREV
+				}
+			}
+		}
+
+		random_other_country = {
+			limit = {
+				original_tag = CZL
+				NOT = { tag = CZL }
+			}
+			set_cosmetic_tag = LSC_OLD_REGIME
+			set_country_flag = LSC_succession_side_old_regime
+			set_stability = 0.35
+			set_war_support = 0.70
+			add_ideas = { LSC_kael_emergency_government }
+			add_country_leader_role = {
+				character = CZL_kael_vorenkov
+				country_leader = {
+					ideology = fascism_ideology
+					traits = { }
+					expire = "1965.1.1"
+				}
+				promote_leader = yes
+			}
+			if = {
+				limit = { ROOT = { has_country_flag = LSC_war_bonus_loyalty } }
+				add_war_support = 0.03
+			}
+			if = {
+				limit = { ROOT = { has_country_flag = LSC_war_bonus_oligarch2 } }
+				add_equipment_to_stockpile = { type = infantry_equipment amount = 500 }
+			}
+		}
+
+		set_global_flag = LSC_succession_war_active_global
+		clr_country_flag = LSC_alvaro_war_pending
+	}
+
+	option = {
+		name = LSC_civil_war.30.a
+	}
+}
+
+# ============================================================
+# RESOLUTION POLLING — one shared system for both wars above (and, later,
+# Selene's). Modeled on vanilla news.64 / news.65 / news.162. Reads the
+# SIDE-IDENTITY flag of whichever CZL-descended country survives with
+# has_civil_war = no, not "does CZL still exist".
+# ============================================================
+
+# Kael-aligned victory: covers both Kael winning his own war and the old
+# regime winning Alvaro's war. The surviving CZL-descended country carries
+# side_kael or side_old_regime, and no country carrying side_alvaro or
+# side_alarican_committees still exists.
+news_event = {
+	id = LSC_civil_war.21
+	title = {
+		text = LSC_civil_war.21.kael.t
+		trigger = {
+			any_country = {
+				OR = { tag = CZL original_tag = CZL }
+				has_country_flag = LSC_succession_side_kael
+			}
+		}
+	}
+	title = {
+		text = LSC_civil_war.21.oldregime.t
+		trigger = {
+			any_country = {
+				OR = { tag = CZL original_tag = CZL }
+				has_country_flag = LSC_succession_side_old_regime
+			}
+		}
+	}
+	title = LSC_civil_war.21.kael.t
+	desc = {
+		text = LSC_civil_war.21.kael.d
+		trigger = {
+			any_country = {
+				OR = { tag = CZL original_tag = CZL }
+				has_country_flag = LSC_succession_side_kael
+			}
+		}
+	}
+	desc = {
+		text = LSC_civil_war.21.oldregime.d
+		trigger = {
+			any_country = {
+				OR = { tag = CZL original_tag = CZL }
+				has_country_flag = LSC_succession_side_old_regime
+			}
+		}
+	}
+	desc = LSC_civil_war.21.kael.d
+	picture = GFX_news_event_generic_parliament
+
+	major = yes
+
+	trigger = {
+		has_global_flag = LSC_succession_war_active_global
+		NOT = { has_global_flag = LSC_succession_war_resolved_global }
+		any_country = {
+			OR = {
+				tag = CZL
+				original_tag = CZL
+			}
+			has_civil_war = no
+			OR = {
+				has_country_flag = LSC_succession_side_kael
+				has_country_flag = LSC_succession_side_old_regime
+			}
+		}
+		NOT = {
+			any_country = {
+				OR = {
+					tag = CZL
+					original_tag = CZL
+				}
+				OR = {
+					has_country_flag = LSC_succession_side_alvaro
+					has_country_flag = LSC_succession_side_alarican_committees
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 3
+	}
+
+	immediate = {
+		# Part D: the result itself is a NATIONAL flag on the surviving
+		# country, not a global one -- a global flag can't say WHICH country
+		# won. Global flags stay reserved for the cycle's own state (is a
+		# crisis active, is it resolved).
+		every_country = {
+			limit = {
+				OR = { tag = CZL original_tag = CZL }
+				has_civil_war = no
+				OR = {
+					has_country_flag = LSC_succession_side_kael
+					has_country_flag = LSC_succession_side_old_regime
+				}
+			}
+			LSC_clear_succession_results = yes
+			set_country_flag = LSC_kael_victory
+			country_event = { id = LSC_postwar.1 days = 1 }
+		}
+		set_global_flag = LSC_succession_war_resolved_global
+		clr_global_flag = LSC_succession_war_active_global
+	}
+
+	option = {
+		name = LSC_civil_war.21.a
+	}
+}
+
+# The "other side" wins: covers Alvaro winning his own war, the Alarican
+# committees winning Kael's war, AND Selene winning her own limited war
+# (side_selene, Part C) -- reusing this same event rather than a fourth,
+# incompatible copy of it. Which of those it actually was is read from the
+# survivor's identity flag and branches the immediate effect below.
+news_event = {
+	id = LSC_civil_war.22
+	title = {
+		text = LSC_civil_war.22.alvaro.t
+		trigger = {
+			any_country = {
+				OR = { tag = CZL original_tag = CZL }
+				has_country_flag = LSC_succession_side_alvaro
+			}
+		}
+	}
+	title = {
+		text = LSC_civil_war.22.committees.t
+		trigger = {
+			any_country = {
+				OR = { tag = CZL original_tag = CZL }
+				has_country_flag = LSC_succession_side_alarican_committees
+			}
+		}
+	}
+	title = {
+		text = LSC_civil_war.22.selene.t
+		trigger = {
+			any_country = {
+				OR = { tag = CZL original_tag = CZL }
+				has_country_flag = LSC_succession_side_selene
+			}
+		}
+	}
+	title = LSC_civil_war.22.alvaro.t
+	desc = {
+		text = LSC_civil_war.22.alvaro.d
+		trigger = {
+			any_country = {
+				OR = { tag = CZL original_tag = CZL }
+				has_country_flag = LSC_succession_side_alvaro
+			}
+		}
+	}
+	desc = {
+		text = LSC_civil_war.22.committees.d
+		trigger = {
+			any_country = {
+				OR = { tag = CZL original_tag = CZL }
+				has_country_flag = LSC_succession_side_alarican_committees
+			}
+		}
+	}
+	desc = {
+		text = LSC_civil_war.22.selene.d
+		trigger = {
+			any_country = {
+				OR = { tag = CZL original_tag = CZL }
+				has_country_flag = LSC_succession_side_selene
+			}
+		}
+	}
+	desc = LSC_civil_war.22.alvaro.d
+	picture = GFX_news_event_generic_parliament
+
+	major = yes
+
+	trigger = {
+		has_global_flag = LSC_succession_war_active_global
+		NOT = { has_global_flag = LSC_succession_war_resolved_global }
+		any_country = {
+			OR = {
+				tag = CZL
+				original_tag = CZL
+			}
+			has_civil_war = no
+			OR = {
+				has_country_flag = LSC_succession_side_alvaro
+				has_country_flag = LSC_succession_side_alarican_committees
+				has_country_flag = LSC_succession_side_selene
+			}
+		}
+		NOT = {
+			any_country = {
+				OR = {
+					tag = CZL
+					original_tag = CZL
+				}
+				OR = {
+					has_country_flag = LSC_succession_side_kael
+					has_country_flag = LSC_succession_side_old_regime
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 3
+	}
+
+	immediate = {
+		# Same national-flag model as .21: find the actual survivor and set
+		# its result there, rather than a global flag with no country to sit on.
+		every_country = {
+			limit = {
+				OR = { tag = CZL original_tag = CZL }
+				has_civil_war = no
+				OR = {
+					has_country_flag = LSC_succession_side_alvaro
+					has_country_flag = LSC_succession_side_alarican_committees
+					has_country_flag = LSC_succession_side_selene
+				}
+			}
+			LSC_clear_succession_results = yes
+			if = {
+				limit = { has_country_flag = LSC_succession_side_selene }
+				set_country_flag = LSC_selene_victory
+				set_country_flag = LSC_selene_limited_war
+			}
+			else = {
+				set_country_flag = LSC_alvaro_victory
+			}
+			country_event = { id = LSC_postwar.1 days = 1 }
+		}
+		set_global_flag = LSC_succession_war_resolved_global
+		clr_global_flag = LSC_succession_war_active_global
+	}
+
+	option = {
+		name = {
+			text = LSC_civil_war.22.selene.a
+			trigger = {
+				any_country = {
+					OR = { tag = CZL original_tag = CZL }
+					has_country_flag = LSC_succession_side_selene
+				}
+			}
+		}
+		name = LSC_civil_war.22.a
+	}
+}
+
+# Inconclusive fallback (anti-softlock, mirrors news.162): a CZL-descended
+# country carrying EACH SIDE's identity survives with has_civil_war = no --
+# both camps stopped fighting without either being eliminated. Deliberately
+# narrower than "any CZL-descended survivor is at peace": that broader form
+# would also be true whenever .21 or .22's own win condition is true, and
+# since mean_time_to_happen is a mean, not a fixed delay, this slower (10-day)
+# event could in rare cases have been checked before a faster (3-day) .21/.22
+# and stolen a clean, identifiable victory. Requiring BOTH sides' survival
+# makes this trigger structurally disjoint from .21 and .22 (each of which
+# requires ITS side present and the OTHER side's flags absent), so the
+# fallback can never compete with a valid win.
+news_event = {
+	id = LSC_civil_war.23
+	title = LSC_civil_war.23.t
+	desc = LSC_civil_war.23.d
+	picture = GFX_news_event_generic_parliament
+
+	major = yes
+
+	trigger = {
+		has_global_flag = LSC_succession_war_active_global
+		NOT = { has_global_flag = LSC_succession_war_resolved_global }
+		any_country = {
+			OR = { tag = CZL original_tag = CZL }
+			has_civil_war = no
+			OR = {
+				has_country_flag = LSC_succession_side_kael
+				has_country_flag = LSC_succession_side_old_regime
+			}
+		}
+		any_country = {
+			OR = { tag = CZL original_tag = CZL }
+			has_civil_war = no
+			OR = {
+				has_country_flag = LSC_succession_side_alvaro
+				has_country_flag = LSC_succession_side_alarican_committees
+				has_country_flag = LSC_succession_side_selene
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	immediate = {
+		# Both surviving CZL-descended countries get the inconclusive result
+		# on themselves and their own postwar cleanup -- there is no single
+		# "winner" here to hang a national flag on otherwise.
+		every_country = {
+			limit = {
+				OR = { tag = CZL original_tag = CZL }
+				OR = {
+					has_country_flag = LSC_succession_side_kael
+					has_country_flag = LSC_succession_side_old_regime
+					has_country_flag = LSC_succession_side_alvaro
+					has_country_flag = LSC_succession_side_alarican_committees
+					has_country_flag = LSC_succession_side_selene
+				}
+			}
+			LSC_clear_succession_results = yes
+			set_country_flag = LSC_succession_inconclusive
+			country_event = { id = LSC_postwar.1 days = 1 }
+		}
+		set_global_flag = LSC_succession_war_resolved_global
+		clr_global_flag = LSC_succession_war_active_global
+	}
+
+	option = {
+		name = LSC_civil_war.23.a
+	}
+}
+
+# Extinction fallback (Part D anti-softlock, documented as an open risk at
+# the end of Part C): if a third party wipes out every CZL-descended country
+# while the succession war is still active, none of .21/.22/.23 above can
+# ever fire again -- each of them requires at least one surviving CZL-
+# descended country to read a result from. Without this, the global active
+# flag would stay stuck forever. No result is set on any country flag here,
+# since by definition none exists; only the global cycle state is closed.
+# Does NOT attempt to recreate CZL.
+news_event = {
+	id = LSC_civil_war.24
+	title = LSC_civil_war.24.t
+	desc = LSC_civil_war.24.d
+	picture = GFX_news_event_generic_parliament
+
+	major = yes
+
+	trigger = {
+		has_global_flag = LSC_succession_war_active_global
+		NOT = { has_global_flag = LSC_succession_war_resolved_global }
+		NOT = {
+			any_country = {
+				OR = { tag = CZL original_tag = CZL }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	immediate = {
+		set_global_flag = LSC_succession_state_destroyed
+		set_global_flag = LSC_succession_war_resolved_global
+		clr_global_flag = LSC_succession_war_active_global
+	}
+
+	option = {
+		name = LSC_civil_war.24.a
+	}
+}

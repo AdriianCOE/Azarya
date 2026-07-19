@@ -8,6 +8,20 @@ focus_tree = {
 			add = 100
 			tag = CZL
 		}
+		# Part D: a civil war winner that ends up as a DYNAMIC country
+		# (original_tag = CZL, but not literally CZL -- the old regime or the
+		# Alarican split, both created by start_civil_war) still needs this
+		# tree to reach the four postwar bridge focuses. It sees the whole
+		# tree, not just the bridge, but every pre-Part-D focus is gated
+		# behind prerequisite chains rooted in LSC_viktors_last_council, which
+		# a freshly created dynamic country never completed -- those simply
+		# stay locked and harmless. Only the four bridge focuses (gated by
+		# flags, not prerequisite) are actually reachable this way.
+		modifier = {
+			add = 100
+			original_tag = CZL
+			NOT = { tag = CZL }
+		}
 	}
 
 	# IMPORTANT:
@@ -18,19 +32,25 @@ focus_tree = {
 	# - Separate prerequisite blocks are AND requirements.
 	# - Multiple focus entries inside one prerequisite block are intentional OR paths.
 	#
-	# PHASE 3 CUT (active in this file): 23 of 81 focuses.
-	# - Common opening (5) + all three heir routes up to, but NOT including,
-	#   their civil-war trigger focus:
+	# PHASE 4 CUT (active in this file): 26 of 81 focuses.
+	# - Common opening (5) + all three heir routes, now including each route's
+	#   culminating focus (added in Phase 4), but NOT the civil-war trigger
+	#   itself:
 	#     Kael:   claims_the_sword -> court_the_general_staff / bind_the_oligarchs
 	#             -> black_banner_league -> frame_alvaro / lock_the_capital
-	#             [war_of_inheritance NOT yet added]
+	#             -> war_of_inheritance (fires the LSC_succession.11-16
+	#             assassination chain; sets LSC_kael_rupture_ready, does NOT
+	#             call start_civil_war)
 	#     Selene: the_marble_princess -> salon_of_whispers / win_the_palace_guard
 	#             -> marble_network -> offer_the_white_ribbon / break_the_extremes
-	#             [the_marble_gambit NOT yet added]
+	#             -> the_marble_gambit (sets LSC_selene_rupture_ready, does NOT
+	#             call start_civil_war)
 	#     Alvaro: speaks_for_the_north -> northern_cells / workers_committees
 	#             -> press_in_the_valleys -> arm_the_valleys / demand_autonomy
-	#             [northern_uprising (civil war trigger) NOT yet added]
-	# - Everything past those three routes (civil war, postwar, fleet, state
+	#             -> northern_uprising (sets LSC_alvaro_rupture_ready, does NOT
+	#             call start_civil_war)
+	# - The actual start_civil_war effect for all three routes is Part B, not
+	#   yet implemented. Everything past that (postwar, fleet, state
 	#   reconstruction, foreign policy, capstone) is intentionally omitted.
 	#   It is untouched in the structural contract at
 	#   docs/specs/lesc/LSC_Lesc_focus_tree_reformulada.txt and will be
@@ -41,6 +61,10 @@ focus_tree = {
 	#   frame_alvaro -> succession.10 and Alvaro's demand_autonomy ->
 	#   succession.30); this is a small, documented addition so all three
 	#   routes get one narrative beat at the equivalent point in their arc.
+	# - Phase 4 lore change: Viktor IV is assassinated on Kael's route only
+	#   (LSC_succession.11-16, in events/LSC_succession.txt), and Kael frames
+	#   Alvaro for it. Viktor's fate on Selene's and Alvaro's own routes is not
+	#   touched by this and remains open for a later phase.
 
 
 	# ============================================================
@@ -645,6 +669,234 @@ focus_tree = {
 			add_stability = -0.02
 			country_event = { id = LSC_succession.30 hours = 6 }
 			custom_effect_tooltip = LSC_alvaro_demand_autonomy_tt
+		}
+	}
+
+
+	# ============================================================
+	# THE THREE CULMINATING FOCUSES — Phase 4
+	# One per route, sitting directly below that route's two Phase 3 focuses.
+	# Each closes the pre-war arc and sets a "<route>_rupture_ready" flag, but
+	# none of them call start_civil_war here — that effect stays deferred to a
+	# later event/decision (Part B), per the Phase 4 scope: prepare the
+	# culminating focus, do not start the civil war yet.
+	# ============================================================
+
+	focus = {
+		id = LSC_kael_war_of_inheritance
+		icon = GFX_focus_generic_military_mission
+		prerequisite = {
+			focus = LSC_kael_frame_alvaro
+		}
+		prerequisite = {
+			focus = LSC_kael_lock_the_capital
+		}
+		x = 15
+		y = 8
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_ARMY_XP
+		}
+		ai_will_do = {
+			factor = 90
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_war_support = 0.05
+			add_to_variable = { var = LSC_northern_unrest value = 10 }
+			clamp_variable = { var = LSC_northern_unrest min = 0 max = 100 }
+			set_country_flag = LSC_kael_rupture_ready
+			country_event = { id = LSC_succession.11 hours = 12 }
+			custom_effect_tooltip = LSC_kael_war_of_inheritance_tt
+		}
+	}
+
+	focus = {
+		id = LSC_selene_the_marble_gambit
+		icon = GFX_focus_generic_monarchy_2
+		prerequisite = {
+			focus = LSC_selene_offer_the_white_ribbon
+		}
+		prerequisite = {
+			focus = LSC_selene_break_the_extremes
+		}
+		x = 25
+		y = 8
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = {
+			factor = 90
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.02
+			add_to_variable = { var = LSC_selene_legitimacy value = 10 }
+			clamp_variable = { var = LSC_selene_legitimacy min = 0 max = 100 }
+			set_country_flag = LSC_selene_rupture_ready
+			country_event = { id = LSC_succession.41 hours = 12 }
+			custom_effect_tooltip = LSC_selene_the_marble_gambit_tt
+		}
+	}
+
+	focus = {
+		id = LSC_alvaro_northern_uprising
+		icon = GFX_focus_fra_loyalty_trotzky
+		prerequisite = {
+			focus = LSC_alvaro_arm_the_valleys
+		}
+		prerequisite = {
+			focus = LSC_alvaro_demand_autonomy
+		}
+		x = 35
+		y = 8
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = {
+			factor = 90
+		}
+		completion_reward = {
+			add_political_power = 35
+			add_war_support = 0.04
+			add_to_variable = { var = LSC_revolutionary_strength value = 15 }
+			clamp_variable = { var = LSC_revolutionary_strength min = 0 max = 100 }
+			set_country_flag = LSC_alvaro_rupture_ready
+			country_event = { id = LSC_succession.31 hours = 12 }
+			custom_effect_tooltip = LSC_alvaro_northern_uprising_tt
+		}
+	}
+
+	# ============================================================
+	# POSTWAR BRIDGE — four entry points only (Part D). None of these
+	# develop a full branch; each just closes one immediate consequence of
+	# the crisis and unlocks its own future route. Gated by country flags
+	# set in events/LSC_postwar.txt's LSC_postwar.1, NOT by prerequisite --
+	# a civil war winner that ends up as a dynamic country (original_tag =
+	# CZL) never completed any earlier focus in this tree, so a prerequisite
+	# chain would leave it permanently locked out. This does mean these four
+	# focuses have no drawn prerequisite line back to their culminating
+	# focus for a player who stayed on the original CZL tag; they are still
+	# positioned directly beneath it so they read as its continuation.
+	# ============================================================
+
+	focus = {
+		id = LSC_kael_the_black_crown
+		icon = GFX_goal_generic_fascism
+		available = {
+			has_country_flag = LSC_postwar_kael_ready
+			has_country_flag = LSC_kael_victory
+		}
+		x = 15
+		y = 9
+		cost = 6
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = {
+			factor = 90
+		}
+		completion_reward = {
+			remove_ideas = {
+				LSC_alvaro_partisan_networks
+				LSC_underground_press
+				LSC_selene_palace_network
+			}
+			add_stability = 0.02
+			add_to_variable = { var = LSC_northern_unrest value = -10 }
+			clamp_variable = { var = LSC_northern_unrest min = 0 max = 100 }
+			set_country_flag = LSC_kael_postwar_branch_unlocked
+			custom_effect_tooltip = LSC_kael_the_black_crown_tt
+		}
+	}
+
+	focus = {
+		id = LSC_alvaro_the_revolution_survives
+		icon = GFX_focus_fra_loyalty_trotzky
+		available = {
+			has_country_flag = LSC_postwar_alvaro_ready
+			has_country_flag = LSC_alvaro_victory
+		}
+		x = 35
+		y = 9
+		cost = 6
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = {
+			factor = 90
+		}
+		completion_reward = {
+			remove_ideas = {
+				LSC_kael_officer_network
+				LSC_kael_oligarch_support
+				LSC_selene_palace_network
+			}
+			add_stability = 0.03
+			set_country_flag = LSC_alvaro_postwar_branch_unlocked
+			custom_effect_tooltip = LSC_alvaro_the_revolution_survives_tt
+		}
+	}
+
+	focus = {
+		id = LSC_selene_a_crown_of_marble
+		icon = GFX_focus_generic_monarchy_1
+		available = {
+			has_country_flag = LSC_postwar_selene_ready
+			has_country_flag = LSC_selene_victory
+		}
+		x = 25
+		y = 9
+		cost = 6
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = {
+			factor = 90
+		}
+		completion_reward = {
+			remove_ideas = {
+				LSC_kael_officer_network
+				LSC_kael_oligarch_support
+				LSC_alvaro_partisan_networks
+				LSC_underground_press
+			}
+			add_stability = 0.02
+			set_country_flag = LSC_selene_postwar_branch_unlocked
+			custom_effect_tooltip = LSC_selene_a_crown_of_marble_tt
+		}
+	}
+
+	focus = {
+		id = LSC_a_provisional_settlement
+		icon = GFX_goal_generic_territory
+		available = {
+			has_country_flag = LSC_postwar_inconclusive_ready
+			has_country_flag = LSC_succession_inconclusive
+		}
+		x = 25
+		y = 10
+		cost = 6
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = {
+			factor = 90
+		}
+		completion_reward = {
+			remove_ideas = {
+				LSC_kael_officer_network
+				LSC_kael_oligarch_support
+				LSC_alvaro_partisan_networks
+				LSC_underground_press
+				LSC_selene_palace_network
+			}
+			add_stability = 0.01
+			set_country_flag = LSC_provisional_branch_unlocked
+			custom_effect_tooltip = LSC_a_provisional_settlement_tt
 		}
 	}
 

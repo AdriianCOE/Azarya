@@ -2,3 +2,20 @@ TST_UNIF = {
 	color = rgb { 30 30 30 }
 	color_ui = rgb { 30 30 30 }
 }
+
+# Phase 4.2: cosmetic tag for the Alarican dynamic country split off CZL by
+# LSC_civil_war.10 (Kael's route). Distinct from CZL's own navy blue
+# (color = { 0 35 70 }, common/countries/Czariado de Lesc.txt). No dedicated
+# flag art yet — falls back to the engine default until original art exists.
+LSC_ALARICAN = {
+	color = rgb { 180 70 30 }
+	color_ui = rgb { 180 70 30 }
+}
+
+# Part B2: cosmetic tag for the southern dynamic country split off CZL by
+# LSC_civil_war.30 (Alvaro's route) -- Kael's old regime, retreated to Aelia.
+# Distinct from both CZL's navy blue and LSC_ALARICAN's rust orange.
+LSC_OLD_REGIME = {
+	color = rgb { 90 20 20 }
+	color_ui = rgb { 90 20 20 }
+}

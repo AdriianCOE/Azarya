@@ -180,3 +180,965 @@ country_event = {
 		}
 	}
 }
+
+
+# ============================================================
+# THE ASSASSINATION OF VIKTOR IV — Kael's route only (Phase 4)
+# ============================================================
+# Six-event chain, fired in sequence from LSC_kael_war_of_inheritance
+# (common/national_focus/Lesc.txt). Gated to has_country_flag = LSC_route_kael
+# throughout, so a player on Selene's or Alvaro's route never sees this — on
+# those routes Viktor's fate is untouched and left open for a later phase.
+# The chain builds on the dossier already prepared in LSC_succession.10 (the
+# "later phase" that event's own comment pointed to). It ends by setting
+# LSC_kael_war_pending, not by calling start_civil_war — that effect is Part B.
+
+# Step 1 — Preparation. Shown through orders and logistics, not a stated plan.
+country_event = {
+	id = LSC_succession.11
+	title = LSC_succession.11.t
+	desc = LSC_succession.11.d
+	picture = GFX_news_event_generic_parliament
+
+	trigger = {
+		has_country_flag = LSC_route_kael
+	}
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = LSC_succession.11.a
+		set_country_flag = LSC_kael_conspiracy_physician
+		add_to_variable = { var = LSC_army_loyalty value = 3 }
+		clamp_variable = { var = LSC_army_loyalty min = 0 max = 100 }
+		custom_effect_tooltip = LSC_succession_11_a_tt
+		country_event = { id = LSC_succession.12 days = 3 }
+		ai_chance = { factor = 55 }
+	}
+	option = {
+		name = LSC_succession.11.b
+		set_country_flag = LSC_kael_conspiracy_accident
+		add_to_variable = { var = LSC_oligarch_influence value = 3 }
+		clamp_variable = { var = LSC_oligarch_influence min = 0 max = 100 }
+		custom_effect_tooltip = LSC_succession_11_b_tt
+		country_event = { id = LSC_succession.12 days = 3 }
+		ai_chance = { factor = 45 }
+	}
+}
+
+# Step 2 — Viktor dies. Retires him and promotes Kael in the same effect
+# (mirrors vanilla Spain: spain.1 immediate retires the old SPR leader and
+# add_country_leader_role promotes the replacement in one block), so the
+# Czardom is never left with no leader between the two events.
+country_event = {
+	id = LSC_succession.12
+	title = LSC_succession.12.t
+	desc = LSC_succession.12.d
+	picture = GFX_news_event_generic_parliament
+
+	trigger = {
+		has_country_flag = LSC_route_kael
+	}
+
+	is_triggered_only = yes
+	major = yes
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_leader = {
+						character = CZL_viktor_iv_vorenkov
+						ruling_only = yes
+					}
+				}
+				retire_country_leader = yes
+				add_country_leader_role = {
+					character = CZL_kael_vorenkov
+					country_leader = {
+						ideology = fascism_ideology
+						traits = { }
+						expire = "1965.1.1"
+					}
+					promote_leader = yes
+				}
+			}
+			set_country_flag = LSC_viktor_dead
+		}
+	}
+
+	option = {
+		name = LSC_succession.12.a
+		add_stability = -0.05
+		add_war_support = 0.03
+		add_to_variable = { var = LSC_army_loyalty value = 5 }
+		clamp_variable = { var = LSC_army_loyalty min = 0 max = 100 }
+		custom_effect_tooltip = LSC_succession_12_a_tt
+		country_event = { id = LSC_succession.13 hours = 18 }
+	}
+}
+
+# Step 3 — The accusation is renewed and made public, now as regicide rather
+# than mere treason, using whichever dossier LSC_succession.10 produced.
+country_event = {
+	id = LSC_succession.13
+	title = LSC_succession.13.t
+	desc = LSC_succession.13.d
+	picture = GFX_news_event_generic_parliament
+
+	trigger = {
+		has_country_flag = LSC_route_kael
+		has_country_flag = LSC_viktor_dead
+	}
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = LSC_succession.13.a
+		set_country_flag = LSC_alvaro_blamed_for_regicide
+		add_to_variable = { var = LSC_northern_unrest value = 15 }
+		add_to_variable = { var = LSC_revolutionary_strength value = -8 }
+		add_to_variable = { var = LSC_army_loyalty value = 8 }
+		LSC_clamp_imperial_fracture_variables = yes
+		custom_effect_tooltip = LSC_succession_13_a_tt
+		ai_chance = { factor = 100 }
+		country_event = { id = LSC_succession.14 days = 1 }
+	}
+}
+
+# Step 4 — Selene's reaction. She does not accept the official account, but
+# nothing is proven or acted on yet; this only opens a thread for later phases.
+country_event = {
+	id = LSC_succession.14
+	title = LSC_succession.14.t
+	desc = LSC_succession.14.d
+	picture = GFX_news_event_generic_parliament
+
+	trigger = {
+		has_country_flag = LSC_route_kael
+		has_country_flag = LSC_viktor_dead
+	}
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = LSC_succession.14.a
+		set_country_flag = LSC_selene_suspects_kael
+		add_to_variable = { var = LSC_selene_legitimacy value = 5 }
+		clamp_variable = { var = LSC_selene_legitimacy min = 0 max = 100 }
+		custom_effect_tooltip = LSC_succession_14_a_tt
+		ai_chance = { factor = 60 }
+		country_event = { id = LSC_succession.15 days = 1 }
+	}
+	option = {
+		name = LSC_succession.14.b
+		add_stability = 0.01
+		custom_effect_tooltip = LSC_succession_14_b_tt
+		ai_chance = { factor = 40 }
+		country_event = { id = LSC_succession.15 days = 1 }
+	}
+}
+
+# Step 5 — Emergency powers. Legal/institutional escalation, distinct from the
+# leadership change already resolved in step 2.
+country_event = {
+	id = LSC_succession.15
+	title = LSC_succession.15.t
+	desc = LSC_succession.15.d
+	picture = GFX_news_event_generic_parliament
+
+	trigger = {
+		has_country_flag = LSC_route_kael
+		has_country_flag = LSC_viktor_dead
+	}
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = LSC_succession.15.a
+		set_country_flag = LSC_kael_state_of_emergency
+		add_political_power = 50
+		add_to_variable = { var = LSC_army_loyalty value = 10 }
+		add_to_variable = { var = LSC_oligarch_influence value = 5 }
+		add_to_variable = { var = LSC_northern_unrest value = 5 }
+		LSC_clamp_imperial_fracture_variables = yes
+		custom_effect_tooltip = LSC_succession_15_a_tt
+		ai_chance = { factor = 100 }
+		country_event = { id = LSC_succession.16 days = 1 }
+	}
+}
+
+# Step 6 — Closing beat. Confirms the realm has split in two irreconcilable
+# camps, but stops short of the war itself: LSC_kael_war_pending marks the
+# chain as complete and ready for Part B's start_civil_war effect, which is
+# not called here.
+country_event = {
+	id = LSC_succession.16
+	title = LSC_succession.16.t
+	desc = LSC_succession.16.d
+	picture = GFX_news_event_generic_parliament
+
+	trigger = {
+		has_country_flag = LSC_route_kael
+		has_country_flag = LSC_kael_state_of_emergency
+	}
+
+	is_triggered_only = yes
+	major = yes
+
+	immediate = {
+		set_country_flag = LSC_kael_war_pending
+	}
+
+	option = {
+		name = LSC_succession.16.a
+		country_event = { id = LSC_civil_war.10 days = 1 }
+	}
+}
+
+# ============================================================
+# THE FALL OF THE OLD REGIME — Alvaro's route only (Part B2)
+# ============================================================
+# Six-event chain, fired in sequence from LSC_alvaro_northern_uprising
+# (common/national_focus/Lesc.txt). Gated to has_country_flag = LSC_route_alvaro
+# throughout, mirroring the pacing of the Kael-route chain above (~1 week from
+# first event to LSC_civil_war.30). Canon note: Kael is still the true
+# mastermind of Viktor's death on THIS route as well -- he controls the capital
+# and prepares the killing; Alvaro does not kill Viktor, and false evidence is
+# used to accuse him of it. There is only ever one cause of Viktor's death in
+# this mod, told from two points of view. Viktor's death itself is guarded by
+# NOT = { has_country_flag = LSC_viktor_dead } so it can never fire twice
+# regardless of which route the player takes.
+#
+# Unlike LSC_succession.12, this chain does NOT retire Viktor's country_leader
+# role or promote anyone in his place: Kael cannot become CZL's active leader
+# on this route (CZL stays the player's country under Alvaro), and Alvaro is a
+# fugitive at this point, not yet in a position to rule. CZL's actual political
+# transition -- Alvaro's promotion as ruling leader -- happens at the rupture
+# itself (LSC_civil_war.30, events/LSC_civil_war.txt), exactly where the user's
+# rupture order places it. Viktor's leader token is a lame-duck legal fiction
+# for the few days in between, same as a monarch already known to be dying.
+
+# Step 1 — Preparation, seen from the north: contradictory orders, a silence
+# from the capital that reads as ominous before anyone north of Aelia knows why.
+country_event = {
+	id = LSC_succession.31
+	title = LSC_succession.31.t
+	desc = LSC_succession.31.d
+	picture = GFX_news_event_generic_parliament
+
+	trigger = {
+		has_country_flag = LSC_route_alvaro
+	}
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = LSC_succession.31.a
+		set_country_flag = LSC_alvaro_wary_of_capital
+		add_to_variable = { var = LSC_northern_unrest value = 5 }
+		clamp_variable = { var = LSC_northern_unrest min = 0 max = 100 }
+		custom_effect_tooltip = LSC_succession_31_a_tt
+		country_event = { id = LSC_succession.32 days = 2 }
+		ai_chance = { factor = 55 }
+	}
+	option = {
+		name = LSC_succession.31.b
+		set_country_flag = LSC_alvaro_seeks_confirmation
+		add_to_variable = { var = LSC_revolutionary_strength value = 3 }
+		clamp_variable = { var = LSC_revolutionary_strength min = 0 max = 100 }
+		custom_effect_tooltip = LSC_succession_31_b_tt
+		country_event = { id = LSC_succession.32 days = 2 }
+		ai_chance = { factor = 45 }
+	}
+}
+
+# Step 2 — Viktor dies (same underlying act as LSC_succession.12, told from
+# the other side). Kael assumes emergency control of the capital's apparatus —
+# and this time that control IS made mechanical: CZL's active leader token
+# would otherwise sit vacant for days between Viktor's death and the rupture
+# (LSC_civil_war.30), which is not a state the game leaves a country in
+# cleanly. Kael is provisionally promoted here using his own existing
+# CZL_kael_vorenkov token (already carrying a fascism_ideology country_leader
+# role, added in Part A) -- no new or temporary character is created. This
+# provisional hold does NOT change the player's chosen route: CZL remains
+# Alvaro's route in every other sense, and LSC_civil_war.30 explicitly retires
+# Kael from CZL and promotes Alvaro in his place at the rupture, then moves
+# Kael (and only Kael -- no duplicate token) to the new old-regime country.
+# Defensive guard prevents double-execution if this chain is ever reached
+# after LSC_succession.12 already ran.
+country_event = {
+	id = LSC_succession.32
+	title = LSC_succession.32.t
+	desc = LSC_succession.32.d
+	picture = GFX_news_event_generic_parliament
+
+	trigger = {
+		has_country_flag = LSC_route_alvaro
+	}
+
+	is_triggered_only = yes
+	major = yes
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = { has_country_flag = LSC_viktor_dead }
+				}
+				set_country_flag = LSC_viktor_dead
+				if = {
+					limit = {
+						has_country_leader = {
+							character = CZL_viktor_iv_vorenkov
+							ruling_only = yes
+						}
+					}
+					retire_country_leader = yes
+					recruit_character = CZL_kael_vorenkov
+					add_country_leader_role = {
+						character = CZL_kael_vorenkov
+						country_leader = {
+							ideology = fascism_ideology
+							traits = { }
+							expire = "1965.1.1"
+						}
+						promote_leader = yes
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = LSC_succession.32.a
+		set_country_flag = LSC_alvaro_framed_for_regicide
+		add_stability = -0.05
+		add_to_variable = { var = LSC_army_loyalty value = 6 }
+		add_to_variable = { var = LSC_northern_unrest value = 10 }
+		add_to_variable = { var = LSC_revolutionary_strength value = -3 }
+		LSC_clamp_imperial_fracture_variables = yes
+		custom_effect_tooltip = LSC_succession_32_a_tt
+		ai_chance = { factor = 100 }
+		country_event = { id = LSC_succession.33 hours = 18 }
+	}
+}
+
+# Step 3 — The warrant, and the escape. Alvaro leaves the capital before the
+# Guard closes on him; sympathetic officers slow the pursuit rather than stop it
+# outright, keeping the escape plausible instead of effortless.
+country_event = {
+	id = LSC_succession.33
+	title = LSC_succession.33.t
+	desc = LSC_succession.33.d
+	picture = GFX_news_event_generic_parliament
+
+	trigger = {
+		has_country_flag = LSC_route_alvaro
+		has_country_flag = LSC_viktor_dead
+	}
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = LSC_succession.33.a
+		set_country_flag = LSC_alvaro_escaped_north
+		add_to_variable = { var = LSC_army_loyalty value = -5 }
+		add_to_variable = { var = LSC_revolutionary_strength value = 8 }
+		LSC_clamp_imperial_fracture_variables = yes
+		custom_effect_tooltip = LSC_succession_33_a_tt
+		ai_chance = { factor = 100 }
+		country_event = { id = LSC_succession.34 days = 1 }
+	}
+}
+
+# Step 4 — Sabotage and disintegration of the old chain of command: railways,
+# wires, depots. Modest penalties only, and applied to CZL as a whole -- the
+# territory has not split yet, so there is no separate "old regime" country to
+# target here.
+country_event = {
+	id = LSC_succession.34
+	title = LSC_succession.34.t
+	desc = LSC_succession.34.d
+	picture = GFX_news_event_generic_parliament
+
+	trigger = {
+		has_country_flag = LSC_route_alvaro
+		has_country_flag = LSC_viktor_dead
+	}
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = LSC_succession.34.a
+		set_country_flag = LSC_alvaro_railways_sabotaged
+		add_stability = -0.03
+		add_war_support = -0.02
+		add_to_variable = { var = LSC_northern_unrest value = 8 }
+		add_to_variable = { var = LSC_revolutionary_strength value = 5 }
+		LSC_clamp_imperial_fracture_variables = yes
+		custom_effect_tooltip = LSC_succession_34_a_tt
+		ai_chance = { factor = 100 }
+		country_event = { id = LSC_succession.35 days = 1 }
+	}
+}
+
+# Step 5 — The committees choose their own posture toward the coming war. This
+# only records a flag for a later, postwar phase; it does not fork the war
+# itself, its states, or its outcome.
+country_event = {
+	id = LSC_succession.35
+	title = LSC_succession.35.t
+	desc = LSC_succession.35.d
+	picture = GFX_news_event_generic_parliament
+
+	trigger = {
+		has_country_flag = LSC_route_alvaro
+		has_country_flag = LSC_viktor_dead
+	}
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = LSC_succession.35.a
+		set_country_flag = LSC_alvaro_broad_alarican_front
+		add_to_variable = { var = LSC_northern_unrest value = -3 }
+		add_to_variable = { var = LSC_revolutionary_strength value = 3 }
+		LSC_clamp_imperial_fracture_variables = yes
+		custom_effect_tooltip = LSC_succession_35_a_tt
+		ai_chance = { factor = 50 }
+		country_event = { id = LSC_succession.36 days = 1 }
+	}
+	option = {
+		name = LSC_succession.35.b
+		set_country_flag = LSC_alvaro_revolutionary_vanguard
+		add_to_variable = { var = LSC_revolutionary_strength value = 8 }
+		add_to_variable = { var = LSC_army_loyalty value = -3 }
+		LSC_clamp_imperial_fracture_variables = yes
+		custom_effect_tooltip = LSC_succession_35_b_tt
+		ai_chance = { factor = 50 }
+		country_event = { id = LSC_succession.36 days = 1 }
+	}
+}
+
+# Step 6 — Closing beat, mirroring LSC_succession.16: the revolt is declared,
+# LSC_alvaro_war_pending marks the chain complete, and LSC_civil_war.30 (events/
+# LSC_civil_war.txt) is scheduled a day later rather than firing in the same
+# instant.
+country_event = {
+	id = LSC_succession.36
+	title = LSC_succession.36.t
+	desc = LSC_succession.36.d
+	picture = GFX_news_event_generic_parliament
+
+	trigger = {
+		has_country_flag = LSC_route_alvaro
+		has_country_flag = LSC_viktor_dead
+	}
+
+	is_triggered_only = yes
+	major = yes
+
+	immediate = {
+		set_country_flag = LSC_alvaro_war_pending
+	}
+
+	option = {
+		name = LSC_succession.36.a
+		country_event = { id = LSC_civil_war.30 days = 1 }
+	}
+}
+
+# ============================================================
+# THE MARBLE GAMBIT — Selene's route only (Part C)
+# ============================================================
+# Six-event chain, fired from LSC_selene_the_marble_gambit (common/national_
+# focus/Lesc.txt). Gated to has_country_flag = LSC_route_selene throughout.
+# Canon: Viktor's death is the SAME act as on Kael's and Alvaro's routes --
+# Kael is still the true mastermind, Alvaro is still innocent, false evidence
+# still points at him. What is different here is that Selene already holds
+# LSC_selene_suspects_kael (set on Kael's route in LSC_succession.14; on THIS
+# route the equivalent suspicion is baked into the chain itself, since her own
+# palace network was already primed to react) and her network is prepared
+# well before the killing, not after it. Viktor's death is guarded the same
+# way as the other two routes (NOT = { has_country_flag = LSC_viktor_dead }),
+# so it can never fire twice no matter which route reaches it first.
+#
+# Unlike Kael's route (successor promoted a day after the killing) and
+# Alvaro's route (Kael holds CZL provisionally for days), Selene's own
+# network is already in position when Viktor dies: retiring him and
+# promoting her happen in the SAME event (.42), so CZL is never left without
+# an active leader for even a single day on this route.
+#
+# The chain ends not in a single fixed outcome but in three: a peaceful
+# succession, a short palace coup, or a limited civil war against a small
+# breakaway faction led by Kael. LSC_succession.44 and .45 accumulate
+# variable changes; LSC_succession.46 is where the three-way branch is
+# actually decided, using a priority if/else_if chain over the SAME five
+# variables used throughout the succession crisis (LSC_selene_legitimacy,
+# LSC_army_loyalty, LSC_oligarch_influence, LSC_northern_unrest,
+# LSC_revolutionary_strength) and the SAME <45 / 45-55 / >55 low/mid/high
+# bands already established by this file's own ai_chance and
+# custom_effect_tooltip checks elsewhere (e.g. LSC_succession.10/.13/.30's
+# "> 55" / "< 45" checks) and by common/decisions/CZL_imperial_fracture.txt's
+# own thresholds -- not new, arbitrary numbers.
+
+# Step 1 — Selene's network reports contradictory movements around Kael. No
+# assassination has happened yet; this is pattern-recognition, not proof.
+country_event = {
+	id = LSC_succession.41
+	title = LSC_succession.41.t
+	desc = LSC_succession.41.d
+	picture = GFX_news_event_generic_parliament
+
+	trigger = {
+		has_country_flag = LSC_route_selene
+	}
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = LSC_succession.41.a
+		set_country_flag = LSC_selene_watching_kael
+		add_to_variable = { var = LSC_selene_legitimacy value = 5 }
+		clamp_variable = { var = LSC_selene_legitimacy min = 0 max = 100 }
+		custom_effect_tooltip = LSC_succession_41_a_tt
+		country_event = { id = LSC_succession.42 days = 2 }
+		ai_chance = { factor = 55 }
+	}
+	option = {
+		name = LSC_succession.41.b
+		set_country_flag = LSC_selene_reinforces_guard
+		add_to_variable = { var = LSC_army_loyalty value = 4 }
+		clamp_variable = { var = LSC_army_loyalty min = 0 max = 100 }
+		custom_effect_tooltip = LSC_succession_41_b_tt
+		country_event = { id = LSC_succession.42 days = 2 }
+		ai_chance = { factor = 45 }
+	}
+}
+
+# Step 2 — Viktor dies (same underlying act as LSC_succession.12/.32). Unlike
+# those two routes, Selene's promotion is not delayed at all: her network was
+# already positioned to move the instant the Guard's orders started
+# contradicting each other, so retiring Viktor and raising her happen in this
+# same immediate block. Defensive guard prevents double-execution if this
+# chain is ever reached after .12 or .32 already ran.
+country_event = {
+	id = LSC_succession.42
+	title = LSC_succession.42.t
+	desc = LSC_succession.42.d
+	picture = GFX_news_event_generic_parliament
+
+	trigger = {
+		has_country_flag = LSC_route_selene
+	}
+
+	is_triggered_only = yes
+	major = yes
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = { has_country_flag = LSC_viktor_dead }
+				}
+				set_country_flag = LSC_viktor_dead
+				if = {
+					limit = {
+						has_country_leader = {
+							character = CZL_viktor_iv_vorenkov
+							ruling_only = yes
+						}
+					}
+					retire_country_leader = yes
+					recruit_character = CZL_selene_vorenkov
+					set_politics = {
+						ruling_party = neutrality
+						elections_allowed = no
+					}
+					add_country_leader_role = {
+						character = CZL_selene_vorenkov
+						country_leader = {
+							ideology = Constitutional_Monarchy
+							traits = { }
+							expire = "1965.1.1"
+						}
+						promote_leader = yes
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = LSC_succession.42.a
+		add_stability = -0.03
+		add_to_variable = { var = LSC_selene_legitimacy value = 10 }
+		add_to_variable = { var = LSC_army_loyalty value = 4 }
+		clamp_variable = { var = LSC_selene_legitimacy min = 0 max = 100 }
+		clamp_variable = { var = LSC_army_loyalty min = 0 max = 100 }
+		custom_effect_tooltip = LSC_succession_42_a_tt
+		country_event = { id = LSC_succession.43 hours = 18 }
+	}
+}
+
+# Step 3 — The dossier against Alvaro surfaces, exactly as on the other two
+# routes -- but Selene's agents catch what the other routes never get a
+# chance to: paperwork with dates that precede the killing it is supposed to
+# explain.
+country_event = {
+	id = LSC_succession.43
+	title = LSC_succession.43.t
+	desc = LSC_succession.43.d
+	picture = GFX_news_event_generic_parliament
+
+	trigger = {
+		has_country_flag = LSC_route_selene
+		has_country_flag = LSC_viktor_dead
+	}
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = LSC_succession.43.a
+		set_country_flag = LSC_selene_holds_regicide_evidence
+		add_to_variable = { var = LSC_selene_legitimacy value = 8 }
+		add_to_variable = { var = LSC_northern_unrest value = -5 }
+		clamp_variable = { var = LSC_selene_legitimacy min = 0 max = 100 }
+		clamp_variable = { var = LSC_northern_unrest min = 0 max = 100 }
+		custom_effect_tooltip = LSC_succession_43_a_tt
+		ai_chance = { factor = 100 }
+		country_event = { id = LSC_succession.44 days = 1 }
+	}
+}
+
+# Step 4 — The Guard, the bureaucracy and the great houses decide, in
+# practice rather than in any formal vote, whether the new regent actually
+# commands them. Selene's own posture here nudges the same variables that
+# LSC_succession.46 will read to pick an ending, but does not decide anything
+# by itself.
+country_event = {
+	id = LSC_succession.44
+	title = LSC_succession.44.t
+	desc = LSC_succession.44.d
+	picture = GFX_news_event_generic_parliament
+
+	trigger = {
+		has_country_flag = LSC_route_selene
+		has_country_flag = LSC_viktor_dead
+	}
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = LSC_succession.44.a
+		set_country_flag = LSC_selene_addressed_the_garrison
+		add_to_variable = { var = LSC_army_loyalty value = -6 }
+		add_to_variable = { var = LSC_selene_legitimacy value = 6 }
+		clamp_variable = { var = LSC_army_loyalty min = 0 max = 100 }
+		clamp_variable = { var = LSC_selene_legitimacy min = 0 max = 100 }
+		custom_effect_tooltip = LSC_succession_44_a_tt
+		ai_chance = {
+			factor = 50
+			modifier = { factor = 1.5 check_variable = { LSC_army_loyalty < 45 } }
+		}
+		country_event = { id = LSC_succession.45 days = 1 }
+	}
+	option = {
+		name = LSC_succession.44.b
+		set_country_flag = LSC_selene_courts_the_oligarchs
+		add_to_variable = { var = LSC_oligarch_influence value = -6 }
+		add_to_variable = { var = LSC_selene_legitimacy value = 4 }
+		clamp_variable = { var = LSC_oligarch_influence min = 0 max = 100 }
+		clamp_variable = { var = LSC_selene_legitimacy min = 0 max = 100 }
+		custom_effect_tooltip = LSC_succession_44_b_tt
+		ai_chance = {
+			factor = 50
+			modifier = { factor = 1.5 check_variable = { LSC_oligarch_influence > 55 } }
+		}
+		country_event = { id = LSC_succession.45 days = 1 }
+	}
+}
+
+# Step 5 — Selene decides what to do with the regicide evidence she is
+# holding. Each option is a real variable trade, not a free win: revealing it
+# publicly weakens Kael but risks pushing the army toward him out of
+# corporate self-preservation; negotiating spares her a wider confrontation
+# at the price of leaving some of his influence intact; hiding it buys her
+# personal control at the cost of her own legitimacy. These feed directly
+# into LSC_succession.46's calculation -- they do not bypass it.
+country_event = {
+	id = LSC_succession.45
+	title = LSC_succession.45.t
+	desc = LSC_succession.45.d
+	picture = GFX_news_event_generic_parliament
+
+	trigger = {
+		has_country_flag = LSC_route_selene
+		has_country_flag = LSC_selene_holds_regicide_evidence
+	}
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = LSC_succession.45.a
+		set_country_flag = LSC_selene_evidence_revealed
+		add_to_variable = { var = LSC_selene_legitimacy value = 12 }
+		add_to_variable = { var = LSC_army_loyalty value = -8 }
+		clamp_variable = { var = LSC_selene_legitimacy min = 0 max = 100 }
+		clamp_variable = { var = LSC_army_loyalty min = 0 max = 100 }
+		custom_effect_tooltip = LSC_succession_45_a_tt
+		ai_chance = { factor = 34 }
+		country_event = { id = LSC_succession.46 days = 1 }
+	}
+	option = {
+		name = LSC_succession.45.b
+		set_country_flag = LSC_selene_evidence_negotiated
+		add_to_variable = { var = LSC_selene_legitimacy value = 4 }
+		add_to_variable = { var = LSC_army_loyalty value = 3 }
+		add_to_variable = { var = LSC_oligarch_influence value = 3 }
+		clamp_variable = { var = LSC_selene_legitimacy min = 0 max = 100 }
+		clamp_variable = { var = LSC_army_loyalty min = 0 max = 100 }
+		clamp_variable = { var = LSC_oligarch_influence min = 0 max = 100 }
+		custom_effect_tooltip = LSC_succession_45_b_tt
+		ai_chance = { factor = 33 }
+		country_event = { id = LSC_succession.46 days = 1 }
+	}
+	option = {
+		name = LSC_succession.45.c
+		set_country_flag = LSC_selene_evidence_hidden
+		add_stability = -0.02
+		add_to_variable = { var = LSC_selene_legitimacy value = -5 }
+		clamp_variable = { var = LSC_selene_legitimacy min = 0 max = 100 }
+		add_ideas = { LSC_selene_hidden_dossier }
+		custom_effect_tooltip = LSC_succession_45_c_tt
+		ai_chance = { factor = 33 }
+		country_event = { id = LSC_succession.46 days = 1 }
+	}
+}
+
+# Step 6 — The Marble Gambit resolves. Alvaro's posture is decided first and
+# independently (he is never a third belligerent here -- see events/
+# LSC_civil_war.txt's shared resolution system for how his flags are read
+# later, and Part D's proposal for how they pay off). The succession itself
+# then resolves to exactly one of three endings via a priority if/else_if
+# chain over the accumulated variables, worst-case (limited civil war) last.
+country_event = {
+	id = LSC_succession.46
+	title = LSC_succession.46.t
+	desc = LSC_succession.46.d
+	picture = GFX_news_event_generic_parliament
+
+	trigger = {
+		has_country_flag = LSC_route_selene
+		has_country_flag = LSC_selene_holds_regicide_evidence
+		NOT = { has_global_flag = LSC_succession_war_active_global }
+		NOT = { has_global_flag = LSC_succession_war_resolved_global }
+	}
+
+	is_triggered_only = yes
+	major = yes
+
+	immediate = {
+		hidden_effect = {
+			# Alvaro's posture: an independent, single-flag read of the same
+			# variables, not a war of his own (section 8 of the brief).
+			if = {
+				limit = { check_variable = { LSC_revolutionary_strength > 55 } }
+				set_country_flag = LSC_alvaro_demands_autonomy
+			}
+			else_if = {
+				limit = { check_variable = { LSC_northern_unrest > 55 } }
+				set_country_flag = LSC_alvaro_armed_neutrality
+			}
+			else = {
+				set_country_flag = LSC_alvaro_supports_selene
+			}
+
+			# The three-way succession outcome itself.
+			if = {
+				limit = {
+					check_variable = { LSC_selene_legitimacy > 55 }
+					check_variable = { LSC_army_loyalty < 55 }
+					check_variable = { LSC_oligarch_influence < 55 }
+					check_variable = { LSC_northern_unrest < 55 }
+				}
+				# RESULT 1 — The Marble Settlement (no start_civil_war). Kael
+				# is recruited (so future content can use him) but never
+				# retired -- Part D's own audit found no vanilla proof that
+				# retire_character leaves a character safely reusable, so his
+				# disposition is tracked purely by flag instead, per the
+				# user's explicit correction: keep the token accessible for
+				# future interrogation/trial/exile content.
+				remove_ideas = { LSC_gathering_storm }
+				recruit_character = CZL_kael_vorenkov
+				set_country_flag = LSC_kael_under_surveillance
+				add_stability = 0.03
+				add_ideas = { LSC_selene_marble_regency }
+				LSC_clear_succession_results = yes
+				set_country_flag = LSC_selene_victory
+				set_country_flag = LSC_selene_peaceful_settlement
+				set_global_flag = LSC_succession_war_resolved_global
+				country_event = { id = LSC_succession.47 hours = 6 }
+			}
+			else_if = {
+				limit = {
+					check_variable = { LSC_selene_legitimacy > 45 }
+					NOT = { check_variable = { LSC_northern_unrest > 65 } }
+					OR = {
+						check_variable = { LSC_army_loyalty > 55 }
+						check_variable = { LSC_oligarch_influence > 55 }
+					}
+				}
+				# RESULT 2 — Palace Coup (no start_civil_war, no territory
+				# split). Kael was never CZL's ruling leader on this route, so
+				# the defensive retire_country_leader check from the original
+				# draft is dropped as dead code; same reasoning as Result 1
+				# applies to keeping his token intact rather than retiring it.
+				recruit_character = CZL_kael_vorenkov
+				set_country_flag = LSC_kael_imprisoned
+				add_stability = -0.08
+				add_war_support = -0.05
+				add_ideas = { LSC_selene_court_under_siege }
+				add_to_variable = { var = LSC_northern_unrest value = 10 }
+				clamp_variable = { var = LSC_northern_unrest min = 0 max = 100 }
+				LSC_clear_succession_results = yes
+				set_country_flag = LSC_selene_victory
+				set_country_flag = LSC_selene_palace_coup
+				set_global_flag = LSC_succession_war_resolved_global
+				country_event = { id = LSC_succession.48 hours = 6 }
+			}
+			else = {
+				# RESULT 3 — Limited civil war. Only this branch uses
+				# start_civil_war. Kael's breakaway faction gets the three
+				# contiguous southern states audited for this purpose (329
+				# Ponta, 317 Caralis, 304 Castellum -- real land adjacency
+				# confirmed via map/provinces.bmp; 317 holds the only other
+				# supply node in the old 8-state south besides Aelia itself).
+				# Selene keeps Aelia, the Crown, the Court and the remaining
+				# eleven states, including every other state ever considered
+				# for the earlier Kael/Alvaro 8-state split.
+				recruit_character = CZL_kael_vorenkov
+				set_country_flag = LSC_succession_side_selene
+				set_global_flag = LSC_succession_war_active_global
+
+				add_ideas = { LSC_selene_divided_guard }
+
+				if = {
+					limit = { check_variable = { LSC_army_loyalty > 65 } }
+					set_country_flag = LSC_war_bonus_selene_loyalty
+				}
+				if = {
+					limit = { check_variable = { LSC_selene_legitimacy > 65 } }
+					add_war_support = 0.03
+				}
+
+				start_civil_war = {
+					ruling_party = neutrality
+					ideology = fascism
+					size = 0.25
+					capital = 317
+					states = {
+						329
+						317
+						304
+					}
+					PREV = { # Original country (CZL, still ROOT throughout this effect)
+						CZL_kael_vorenkov = {
+							set_nationality = PREV.PREV
+						}
+					}
+				}
+
+				random_other_country = {
+					limit = {
+						original_tag = CZL
+						NOT = { tag = CZL }
+					}
+					set_cosmetic_tag = LSC_OLD_REGIME
+					set_country_flag = LSC_succession_side_old_regime
+					set_stability = 0.35
+					set_war_support = 0.60
+					add_ideas = { LSC_kael_emergency_government }
+					add_country_leader_role = {
+						character = CZL_kael_vorenkov
+						country_leader = {
+							ideology = fascism_ideology
+							traits = { }
+							expire = "1965.1.1"
+						}
+						promote_leader = yes
+					}
+					if = {
+						limit = { ROOT = { has_country_flag = LSC_war_bonus_selene_loyalty } }
+						add_war_support = 0.03
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = LSC_succession.46.a
+	}
+}
+
+# Step 6 epilogues — LSC_succession.46 itself has no way to safely display
+# outcome-specific text: its title/desc would need to read flags set inside
+# its OWN immediate block, and this mod does not rely on same-tick
+# conditional title/desc ordering anywhere else without direct proof it
+# works that way. These two short, separately-scheduled epilogues use the
+# same trusted country_event delay mechanism as every other branch point in
+# this file instead. The limited civil war (Result 3) needs no equivalent --
+# its outcome is already reported later by events/LSC_civil_war.txt's shared
+# .21/.22/.23 resolution system, now widened to recognize Selene's side.
+
+country_event = {
+	id = LSC_succession.47
+	title = LSC_succession.47.t
+	desc = LSC_succession.47.d
+	picture = GFX_news_event_generic_parliament
+
+	trigger = {
+		has_country_flag = LSC_selene_peaceful_settlement
+	}
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = LSC_succession.47.a
+		country_event = { id = LSC_postwar.1 hours = 6 }
+	}
+}
+
+country_event = {
+	id = LSC_succession.48
+	title = LSC_succession.48.t
+	desc = LSC_succession.48.d
+	picture = GFX_news_event_generic_parliament
+
+	trigger = {
+		has_country_flag = LSC_selene_palace_coup
+	}
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = LSC_succession.48.a
+		country_event = { id = LSC_postwar.1 hours = 6 }
+	}
+}

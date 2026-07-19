@@ -1,0 +1,88 @@
+LSC_postwar_category = {
+
+	# Three minimal, one-shot consolidation decisions (Part D, section 13).
+	# Available only after events/LSC_postwar.txt's LSC_postwar.1 has run
+	# (LSC_postwar_cleanup_completed), regardless of which of the four
+	# results produced it. Each decision guards itself with its own
+	# "_done" flag so it can only ever be taken once -- this is closure, not
+	# the start of a reconstruction system, so nothing here scales with time
+	# or repeats.
+
+	LSC_postwar_restore_railway_traffic = {
+		icon = GFX_decision_generic_construction
+
+		allowed = {
+			original_tag = CZL
+		}
+
+		available = {
+			has_country_flag = LSC_postwar_cleanup_completed
+			NOT = { has_country_flag = LSC_postwar_railways_restored }
+		}
+
+		cost = 75
+
+		complete_effect = {
+			clr_country_flag = LSC_alvaro_railways_sabotaged
+			add_stability = 0.02
+			set_country_flag = LSC_postwar_railways_restored
+			custom_effect_tooltip = LSC_postwar_restore_railway_traffic_tt
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	LSC_postwar_reopen_military_depots = {
+		icon = GFX_decision_generic_military
+
+		allowed = {
+			original_tag = CZL
+		}
+
+		available = {
+			has_country_flag = LSC_postwar_cleanup_completed
+			NOT = { has_country_flag = LSC_postwar_depots_reopened }
+		}
+
+		cost = 75
+
+		complete_effect = {
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 300 }
+			add_stability = 0.01
+			set_country_flag = LSC_postwar_depots_reopened
+			custom_effect_tooltip = LSC_postwar_reopen_military_depots_tt
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	LSC_postwar_demobilize_irregulars = {
+		icon = GFX_decision_generic_manpower
+
+		allowed = {
+			original_tag = CZL
+		}
+
+		available = {
+			has_country_flag = LSC_postwar_cleanup_completed
+			NOT = { has_country_flag = LSC_postwar_irregulars_demobilized }
+		}
+
+		cost = 75
+
+		complete_effect = {
+			add_manpower = 2000
+			add_war_support = -0.02
+			set_country_flag = LSC_postwar_irregulars_demobilized
+			custom_effect_tooltip = LSC_postwar_demobilize_irregulars_tt
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+}

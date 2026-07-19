@@ -71,6 +71,13 @@ set_technology = {
 	engine_tech_1 = 1
 }
 
+# Phase 4: Viktor recruited first, by character token, so he becomes the
+# starting ruling leader automatically (matches vanilla history/countries/
+# SPR - Spain.txt: SPR_niceto_alcala_zamora is recruited first, no separate
+# "make ruler" effect is needed). Replaces the old inline create_country_leader
+# block below, which had no stable id the succession-crisis events could target.
+recruit_character = CZL_viktor_iv_vorenkov
+
 recruit_character = CZL_ar
 recruit_character = CZL_acr
 recruit_character = CZL_mt
@@ -117,13 +124,6 @@ set_popularities = {
 	fascism = 5
 	communism = 60
 	neutrality = 30
-}
-
-create_country_leader = {
-    name = "Viktor IV Vorenkov"
-    desc = "CZL_Viktor_IV_Vorenkov"
-	picture = "Portrait_Soviet_Generic_1.dds"
-    ideology = oligarchism
 }
 
 create_field_marshal = {

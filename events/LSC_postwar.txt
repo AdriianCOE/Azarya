@@ -1,0 +1,221 @@
+add_namespace = LSC_postwar
+
+# ============================================================
+# THE GUNS FALL SILENT — common postwar dispatcher (Part D)
+# ============================================================
+# Single shared entry point for consolidating the succession crisis no
+# matter how it ended: Kael's war, Alvaro's war, any of Selene's three
+# endings, or the inconclusive stalemate. Fired ~1 day after whichever
+# result event actually set the national result flag (events/LSC_civil_war.
+# txt's .21/.22/.23, or events/LSC_succession.txt's .47/.48 epilogues for
+# Selene's two warless endings) -- always from an EARLIER event, never from
+# this one's own immediate block, so the conditional title/desc blocks below
+# are reading flags that were already reliably set before this event's
+# trigger was even evaluated. This is the same safe pattern already used by
+# LSC_civil_war.21/.22's own conditional titles.
+#
+# The four branches below are the ONLY place Part D makes any lasting
+# mechanical decision about the postwar country. None of them start an
+# economy, a military buildup or foreign policy -- see this event's own
+# immediate block for exactly how small each branch's effects are.
+
+country_event = {
+	id = LSC_postwar.1
+	title = {
+		text = LSC_postwar.1.kael.t
+		trigger = { has_country_flag = LSC_kael_victory }
+	}
+	title = {
+		text = LSC_postwar.1.alvaro.t
+		trigger = { has_country_flag = LSC_alvaro_victory }
+	}
+	title = {
+		text = LSC_postwar.1.selene.t
+		trigger = { has_country_flag = LSC_selene_victory }
+	}
+	title = {
+		text = LSC_postwar.1.inconclusive.t
+		trigger = { has_country_flag = LSC_succession_inconclusive }
+	}
+	title = LSC_postwar.1.t
+	desc = {
+		text = LSC_postwar.1.kael.d
+		trigger = { has_country_flag = LSC_kael_victory }
+	}
+	desc = {
+		text = LSC_postwar.1.alvaro.d
+		trigger = { has_country_flag = LSC_alvaro_victory }
+	}
+	desc = {
+		text = LSC_postwar.1.selene_peaceful.d
+		trigger = {
+			has_country_flag = LSC_selene_victory
+			has_country_flag = LSC_selene_peaceful_settlement
+		}
+	}
+	desc = {
+		text = LSC_postwar.1.selene_coup.d
+		trigger = {
+			has_country_flag = LSC_selene_victory
+			has_country_flag = LSC_selene_palace_coup
+		}
+	}
+	desc = {
+		text = LSC_postwar.1.selene_war.d
+		trigger = {
+			has_country_flag = LSC_selene_victory
+			has_country_flag = LSC_selene_limited_war
+		}
+	}
+	desc = {
+		text = LSC_postwar.1.inconclusive.d
+		trigger = { has_country_flag = LSC_succession_inconclusive }
+	}
+	desc = LSC_postwar.1.d
+	picture = GFX_news_event_generic_parliament
+
+	trigger = {
+		NOT = { has_country_flag = LSC_postwar_cleanup_completed }
+		OR = {
+			has_country_flag = LSC_kael_victory
+			has_country_flag = LSC_alvaro_victory
+			has_country_flag = LSC_selene_victory
+			has_country_flag = LSC_succession_inconclusive
+		}
+	}
+
+	is_triggered_only = yes
+	major = yes
+
+	immediate = {
+		hidden_effect = {
+			# --- Shared cleanup, regardless of outcome ---
+			# Crisis/war ideas that have no reason to outlive the crisis
+			# itself under ANY result (Part D idea audit, category "crise
+			# encerrada"). remove_ideas on an idea the country never held is
+			# a safe no-op, same assumption already relied on throughout
+			# this file's own earlier events.
+			remove_ideas = {
+				LSC_gathering_storm
+				LSC_kael_emergency_government
+				LSC_alarican_revolutionary_committees
+				LSC_selene_divided_guard
+			}
+
+			# Purely operational/pacing flags with no narrative payload left
+			# to give -- safe to clear under every outcome.
+			clr_country_flag = LSC_kael_war_pending
+			clr_country_flag = LSC_alvaro_war_pending
+			clr_country_flag = LSC_kael_rupture_ready
+			clr_country_flag = LSC_alvaro_rupture_ready
+			clr_country_flag = LSC_selene_rupture_ready
+			clr_country_flag = LSC_kael_state_of_emergency
+			clr_country_flag = LSC_war_bonus_oligarch
+			clr_country_flag = LSC_war_bonus_revolutionary
+			clr_country_flag = LSC_war_bonus_unrest
+			clr_country_flag = LSC_war_bonus_loyalty
+			clr_country_flag = LSC_war_bonus_oligarch2
+			clr_country_flag = LSC_war_bonus_selene_loyalty
+
+			if = {
+				limit = { has_country_flag = LSC_kael_victory }
+				# --- KAEL WINS: The Black Crown ---
+				if = {
+					limit = { controls_state = 335 }
+					set_capital = { state = 335 }
+				}
+				if = {
+					limit = { has_cosmetic_tag = LSC_OLD_REGIME }
+					drop_cosmetic_tag = yes
+				}
+				add_stability = 0.03
+				add_war_support = 0.03
+				add_political_power = -30
+				if = {
+					limit = {
+						OR = {
+							has_country_flag = LSC_route_kael
+							has_country_flag = LSC_route_alvaro
+						}
+					}
+					set_country_flag = LSC_alvaro_missing
+				}
+				set_country_flag = LSC_postwar_kael_ready
+			}
+			else_if = {
+				limit = { has_country_flag = LSC_alvaro_victory }
+				# --- ALVARO WINS: The Committees Endure ---
+				if = {
+					limit = { controls_state = 303 }
+					set_capital = { state = 303 }
+				}
+				# LSC_ALARICAN is left exactly as it is -- a provisional
+				# identity, per the brief, until a later choice between an
+				# Alarican federation and revolutionary centralization
+				# decides whether it becomes permanent or is replaced.
+				add_stability = -0.05
+				add_war_support = 0.03
+				add_political_power = -20
+				if = {
+					limit = { has_country_flag = LSC_alvaro_revolutionary_vanguard }
+					add_to_variable = { var = LSC_revolutionary_strength value = 5 }
+					clamp_variable = { var = LSC_revolutionary_strength min = 0 max = 100 }
+				}
+				if = {
+					limit = { has_country_flag = LSC_alvaro_broad_alarican_front }
+					add_stability = 0.02
+				}
+				set_country_flag = LSC_kael_missing
+				set_country_flag = LSC_postwar_alvaro_ready
+			}
+			else_if = {
+				limit = { has_country_flag = LSC_selene_victory }
+				# --- SELENE WINS: A Crown of Marble (3 variants) ---
+				if = {
+					limit = { controls_state = 335 }
+					set_capital = { state = 335 }
+				}
+				if = {
+					limit = {
+						OR = {
+							has_cosmetic_tag = LSC_ALARICAN
+							has_cosmetic_tag = LSC_OLD_REGIME
+						}
+					}
+					drop_cosmetic_tag = yes
+				}
+				if = {
+					limit = { has_country_flag = LSC_selene_peaceful_settlement }
+					add_political_power = 20
+				}
+				else_if = {
+					limit = { has_country_flag = LSC_selene_palace_coup }
+					add_stability = -0.02
+				}
+				else = {
+					# Limited-war variant: Kael's breakaway has just been
+					# defeated -- this is the first point his disposition
+					# can be set, since LSC_succession.46 only started the
+					# war rather than resolving it.
+					set_country_flag = LSC_kael_imprisoned
+					add_political_power = -10
+				}
+				set_country_flag = LSC_postwar_selene_ready
+			}
+			else = {
+				# --- INCONCLUSIVE: Neither Crown nor Committee ---
+				# No artificial capital transfer -- whatever this country
+				# already controls, it keeps.
+				add_stability = -0.05
+				add_political_power = -20
+				set_country_flag = LSC_postwar_inconclusive_ready
+			}
+
+			set_country_flag = LSC_postwar_cleanup_completed
+		}
+	}
+
+	option = {
+		name = LSC_postwar.1.a
+	}
+}

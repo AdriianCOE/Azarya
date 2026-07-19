@@ -3,9 +3,9 @@
  # opening plus the first focus of each heir's route. See
  # docs/specs/lesc/LSC_Lesc_focus_tree_reformulada.txt for the full contract.
 
- LSC_an_empire_built_by_sword:0 "An Empire Built by the Sword"
- LSC_an_empire_built_by_sword_desc:0 "The Czardom of Lesc was not born of unity but of conquest — southern houses bankrolled an army, and that army marched north until the ledgers balanced. A century on, the empire still runs on that same arrangement, and it is starting to show."
- LSC_an_empire_built_by_sword_tt:0 "The Czardom begins to reckon, openly, with the terms of its own founding. The fault line between the wealthy south and the occupied Alarican north will only widen from here."
+ LSC_an_empire_built_by_sword:0 "Distrust and Disloyalty"
+ LSC_an_empire_built_by_sword_desc:0 "Viktor IV can no longer cross the throne room unassisted, and the court has stopped pretending not to notice. His three children already hold courts of their own — the general staff answers questions from Kael before they reach the Ministry of War; the great houses of the south quietly recalculate which heir their contracts should favor; and in the Alarican provinces, garrison commanders report unrest they no longer expect Aelia to take seriously. The Gydian advisors invited to modernize the army now advise rather more than they were asked to."
+ LSC_an_empire_built_by_sword_tt:0 "The Czardom begins to reckon, openly, with a Crown too weak to hide its own fault lines: an ailing Czar, three rival heirs, an Army answering to itself, oligarchs hedging their bets, an occupied north, and a foreign power watching it all with interest."
 
  LSC_count_the_northern_dead:0 "Count the Northern Dead"
  LSC_count_the_northern_dead_desc:0 "A formal accounting of the cost of pacification — punitive columns, requisitioned grain, provinces held down rather than governed. The numbers are not meant for publication, but the court reads them all the same."
@@ -81,3 +81,17 @@
  LSC_alvaro_demand_autonomy:0 "Demand Autonomy for North Alaric"
  LSC_alvaro_demand_autonomy_desc:0 "Alvaro puts it to his father in writing, formally, for the first time: an end to military rule in the Alarican provinces, real political representation, and regional control over conscription and resources. It is not a request."
  LSC_alvaro_demand_autonomy_tt:0 "Alvaro forces the succession crisis into the open with a formal ultimatum. The Crown's answer to it will be decided in the moment, not by this focus."
+
+ # --- Phase 4: the three culminating focuses ---
+
+ LSC_kael_war_of_inheritance:0 "War of Inheritance"
+ LSC_kael_war_of_inheritance_desc:0 "The dossier is written. The capital is held. Kael's people are no longer asking permission for anything — they are simply informing the relevant offices of what has already been decided. All that remains is the occasion."
+ LSC_kael_war_of_inheritance_tt:0 "Kael's faction is ready to move on the throne itself. What happens next will be decided by events, not by this focus."
+
+ LSC_selene_the_marble_gambit:0 "The Marble Gambit"
+ LSC_selene_the_marble_gambit_desc:0 "Selene has spent her clemency and her contacts in equal measure, and both edges of the crisis now owe her something they would rather not admit to. Whether that debt is enough to hold the realm together is a question she can no longer put off answering."
+ LSC_selene_the_marble_gambit_tt:0 "Selene's network is as wide as it will get before the crisis forces her hand. What happens next will be decided by events, not by this focus."
+
+ LSC_alvaro_northern_uprising:0 "The Northern Uprising"
+ LSC_alvaro_northern_uprising_desc:0 "The presses do not stop, the rifles do not go back to their hiding places, and the committees no longer pretend to be anything other than what they are. North Alaric has stopped asking Aelia for anything at all."
+ LSC_alvaro_northern_uprising_tt:0 "The north stands ready to rise. What happens next will be decided by events, not by this focus."

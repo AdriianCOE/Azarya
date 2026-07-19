@@ -425,6 +425,28 @@ characters={
 		}
 	}
 
+	# --- Viktor IV Vorenkov (Phase 4: migrated from an inline create_country_leader
+	# in history/countries/CZL - Czariado de Lesc.txt to a stable character token.
+	# Reason: the Kael-route assassination chain (events/LSC_succession.txt,
+	# LSC_succession.11-16) needs to retire_country_leader / promote a successor by
+	# character id, which an inline leader with no token cannot support — see
+	# vanilla history/countries/SPR - Spain.txt (recruit_character =
+	# SPR_niceto_alcala_zamora, first in the list, becomes the starting ruling
+	# leader automatically) for the proven pattern this follows. Same name,
+	# ideology and fallback portrait as the old inline block; no other role added.
+	CZL_viktor_iv_vorenkov={
+		country_leader={
+			ideology = oligarchism
+			traits = { indecisive }
+			expire = "1965.1.1"
+		}
+		portraits={
+			civilian={
+				large="Portrait_Soviet_Generic_1.dds"
+			}
+		}
+	}
+
 	# --- Vorenkov heirs (Phase 1: recruited via their own succession-route
 	# focus in LSC_focus, not at game start). Traits and portraits reuse
 	# tokens already proven valid elsewhere in this file as documented
@@ -443,9 +465,21 @@ characters={
 				factor  = 1.000
 			}
 		}
+		# Phase 4: added so LSC_succession.12 can promote Kael to ruling Czar via
+		# add_country_leader_role after Viktor is retired (vanilla Spain pattern,
+		# spain.1 immediate effect). Not active until promoted — recruiting Kael via
+		# his focus does not by itself make him ruler.
+		country_leader={
+			ideology = fascism_ideology
+			traits = { }
+			expire = "1965.1.1"
+		}
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_arab_2"
+			}
+			civilian={
+				large="Portrait_Soviet_Generic_1.dds"
 			}
 		}
 	}
@@ -463,9 +497,27 @@ characters={
 				factor  = 1.000
 			}
 		}
+		# Party-leader normalization: Selene is the political leader of the
+		# czarist/monarchist route. Constitutional_Monarchy is used rather than
+		# Viktor's own oligarchism -- both are subtypes of the neutrality group
+		# (common/ideologies/00_ideologies.txt), already used elsewhere in this
+		# mod for exactly this kind of restorationist/constitutionalist monarchy
+		# (see history/countries/THK - ThirynKingdom.txt). Mirrors Kael's and
+		# Alvaro's own country_leader roles: present on the token from the
+		# start, but not active until her route promotes her by name via
+		# add_country_leader_role -- recruiting Selene does not by itself make
+		# her ruler, and Viktor remains the sole leader shown in 1924.
+		country_leader={
+			ideology = Constitutional_Monarchy
+			traits = { }
+			expire = "1965.1.1"
+		}
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_arab_3"
+			}
+			civilian={
+				large="Portrait_Soviet_Generic_1.dds"
 			}
 		}
 	}
@@ -483,9 +535,24 @@ characters={
 				factor  = 1.000
 			}
 		}
+		# Phase 4.2: added so start_civil_war's default character-transfer rule
+		# (keep_political_leader = no, confirmed from the fully-commented
+		# vanilla example in events/AAT_Sweden.txt) recognizes Alvaro as the
+		# "party leader" of the communism split and moves him to the new
+		# Alarican country. events/LSC_civil_war.txt also recruits and moves
+		# him explicitly via PREV/set_nationality (vanilla Mexico.txt pattern)
+		# as a second, redundant guarantee -- not just this role alone.
+		country_leader={
+			ideology = anarchist_communism
+			traits = { }
+			expire = "1965.1.1"
+		}
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_arab_1"
+			}
+			civilian={
+				large="Portrait_Soviet_Generic_1.dds"
 			}
 		}
 	}
