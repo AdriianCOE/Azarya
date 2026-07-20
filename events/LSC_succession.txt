@@ -990,6 +990,7 @@ country_event = {
 				LSC_clear_succession_results = yes
 				set_country_flag = LSC_selene_victory
 				set_country_flag = LSC_selene_peaceful_settlement
+				set_global_flag = LSC_succession_result_locked_global
 				set_global_flag = LSC_succession_war_resolved_global
 				country_event = { id = LSC_succession.47 hours = 6 }
 			}
@@ -1017,6 +1018,7 @@ country_event = {
 				LSC_clear_succession_results = yes
 				set_country_flag = LSC_selene_victory
 				set_country_flag = LSC_selene_palace_coup
+				set_global_flag = LSC_succession_result_locked_global
 				set_global_flag = LSC_succession_war_resolved_global
 				country_event = { id = LSC_succession.48 hours = 6 }
 			}

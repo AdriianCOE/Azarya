@@ -1,0 +1,168 @@
+add_namespace = LSC_alvaro
+
+# Part E2: Álvaro's postwar route. All events are called by its focuses;
+# none can start another civil war or resolve Kael and Selene by force.
+
+country_event = {
+	id = LSC_alvaro.1
+	title = LSC_alvaro.1.t
+	desc = LSC_alvaro.1.d
+	picture = GFX_news_event_generic_parliament
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = LSC_alvaro.1.a
+		add_stability = 0.01
+	}
+}
+
+country_event = {
+	id = LSC_alvaro.2
+	title = LSC_alvaro.2.t
+	desc = LSC_alvaro.2.d
+	picture = GFX_news_event_generic_parliament
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = LSC_alvaro.2.a
+		trigger = { has_country_flag = LSC_kael_regicide_proof_destroyed }
+		add_stability = 0.01
+		set_country_flag = LSC_alvaro_truth_delayed
+		set_country_flag = LSC_alvaro_viktor_inquiry_open
+		ai_chance = { factor = 100 }
+	}
+	option = {
+		name = LSC_alvaro.2.b
+		trigger = {
+			OR = {
+				has_country_flag = LSC_kael_regicide_proof_archived_by_crown
+				has_country_flag = LSC_kael_regicide_proof_known_to_staff
+				has_country_flag = LSC_selene_holds_regicide_evidence
+			}
+		}
+		add_political_power = 20
+		add_stability = -0.01
+		set_country_flag = LSC_alvaro_truth_commissioned
+		set_country_flag = LSC_alvaro_viktor_inquiry_open
+		ai_chance = { factor = 100 }
+	}
+	option = {
+		name = LSC_alvaro.2.c
+		trigger = {
+			NOT = {
+				OR = {
+					has_country_flag = LSC_kael_regicide_proof_destroyed
+					has_country_flag = LSC_kael_regicide_proof_archived_by_crown
+					has_country_flag = LSC_kael_regicide_proof_known_to_staff
+					has_country_flag = LSC_selene_holds_regicide_evidence
+				}
+			}
+		}
+		add_stability = 0.02
+		set_country_flag = LSC_alvaro_innocence_declared
+		set_country_flag = LSC_alvaro_viktor_inquiry_open
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = LSC_alvaro.3
+	title = LSC_alvaro.3.t
+	desc = LSC_alvaro.3.d
+	picture = GFX_news_event_generic_parliament
+	is_triggered_only = yes
+
+	option = {
+		name = LSC_alvaro.3.a
+		add_stability = 0.01
+		add_to_variable = { var = LSC_northern_unrest value = -2 }
+		LSC_clamp_imperial_fracture_variables = yes
+		set_country_flag = LSC_alvaro_rationing_accepted
+		ai_chance = { factor = 65 }
+	}
+	option = {
+		name = LSC_alvaro.3.b
+		add_political_power = 15
+		add_stability = -0.02
+		add_to_variable = { var = LSC_northern_unrest value = 3 }
+		LSC_clamp_imperial_fracture_variables = yes
+		set_country_flag = LSC_alvaro_requisitions_extended
+		ai_chance = { factor = 35 }
+	}
+}
+
+country_event = {
+	id = LSC_alvaro.4
+	title = LSC_alvaro.4.t
+	desc = LSC_alvaro.4.d
+	picture = GFX_news_event_generic_parliament
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = LSC_alvaro.4.a
+		trigger = { has_country_flag = LSC_kael_missing }
+		add_political_power = -15
+		set_country_flag = LSC_alvaro_kael_search_continues
+		ai_chance = { factor = 55 }
+	}
+	option = {
+		name = LSC_alvaro.4.b
+		trigger = { has_country_flag = LSC_kael_missing }
+		add_stability = 0.01
+		set_country_flag = LSC_alvaro_kael_tried_in_absentia
+		ai_chance = { factor = 45 }
+	}
+	option = {
+		name = LSC_alvaro.4.c
+		trigger = { NOT = { has_country_flag = LSC_kael_missing } }
+		add_political_power = 10
+		set_country_flag = LSC_alvaro_kael_record_preserved
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = LSC_alvaro.5
+	title = LSC_alvaro.5.t
+	desc = LSC_alvaro.5.d
+	picture = GFX_news_event_generic_parliament
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = LSC_alvaro.5.a
+		add_stability = -0.01
+		add_political_power = 15
+		set_country_flag = LSC_alvaro_selene_testimony_received
+		ai_chance = { factor = 45 }
+	}
+	option = {
+		name = LSC_alvaro.5.b
+		add_stability = 0.01
+		set_country_flag = LSC_alvaro_selene_protected_return_offered
+		ai_chance = { factor = 35 }
+	}
+	option = {
+		name = LSC_alvaro.5.c
+		add_political_power = 10
+		set_country_flag = LSC_alvaro_selene_exile_respected
+		ai_chance = { factor = 20 }
+	}
+}
+
+country_event = {
+	id = LSC_alvaro.6
+	title = LSC_alvaro.6.t
+	desc = LSC_alvaro.6.d
+	picture = GFX_news_event_generic_parliament
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = LSC_alvaro.6.a
+		add_stability = 0.01
+	}
+}

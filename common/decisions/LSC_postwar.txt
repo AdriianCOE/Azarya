@@ -21,10 +21,15 @@ LSC_postwar_category = {
 		}
 
 		cost = 75
+		days_re_enable = 30
 
 		complete_effect = {
 			clr_country_flag = LSC_alvaro_railways_sabotaged
 			add_stability = 0.02
+			if = {
+				limit = { has_country_flag = LSC_alvaro_victory }
+				add_political_power = 15
+			}
 			set_country_flag = LSC_postwar_railways_restored
 			custom_effect_tooltip = LSC_postwar_restore_railway_traffic_tt
 		}
@@ -47,10 +52,15 @@ LSC_postwar_category = {
 		}
 
 		cost = 75
+		days_re_enable = 30
 
 		complete_effect = {
 			add_equipment_to_stockpile = { type = infantry_equipment amount = 300 }
 			add_stability = 0.01
+			if = {
+				limit = { has_country_flag = LSC_kael_victory }
+				army_experience = 5
+			}
 			set_country_flag = LSC_postwar_depots_reopened
 			custom_effect_tooltip = LSC_postwar_reopen_military_depots_tt
 		}
@@ -73,10 +83,15 @@ LSC_postwar_category = {
 		}
 
 		cost = 75
+		days_re_enable = 30
 
 		complete_effect = {
 			add_manpower = 2000
 			add_war_support = -0.02
+			if = {
+				limit = { has_country_flag = LSC_selene_victory }
+				add_stability = 0.01
+			}
 			set_country_flag = LSC_postwar_irregulars_demobilized
 			custom_effect_tooltip = LSC_postwar_demobilize_irregulars_tt
 		}

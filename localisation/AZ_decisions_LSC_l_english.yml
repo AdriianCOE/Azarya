@@ -44,3 +44,42 @@
  LSC_gydian_influence:0 "Gydian Influence"
  LSC_selene_legitimacy:0 "Selene's Legitimacy"
  LSC_revolutionary_strength:0 "Revolutionary Strength"
+
+ # --- Part D: immediate post-war consolidation ---
+
+ LSC_postwar_category:0 "After the Fracture"
+ LSC_postwar_category_desc:0 "The succession crisis has ended, but ministries, depots, railways, and armed men still carry its scars. These are immediate measures of consolidation, not a substitute for the political settlement still to come."
+
+ LSC_postwar_restore_railway_traffic:0 "Restore Civil Administration"
+ LSC_postwar_restore_railway_traffic_desc:0 "Reopen the lines, reappoint clerks, and put the movement of grain and dispatches back under a single civil timetable."
+ LSC_postwar_restore_railway_traffic_tt:0 "Removes the railway-sabotage marker, grants stability, and gives an additional administrative reserve to Alvaro's government."
+
+ LSC_postwar_reopen_military_depots:0 "Reopen the Military Depots"
+ LSC_postwar_reopen_military_depots_desc:0 "The war left rifles behind locked gates and ledgers behind empty desks. Recover what can still serve the state without rebuilding the whole army today."
+ LSC_postwar_reopen_military_depots_tt:0 "Adds a small infantry-equipment reserve and stability; Kael's government also gains Army Experience."
+
+ LSC_postwar_demobilize_irregulars:0 "Demobilize the Irregulars"
+ LSC_postwar_demobilize_irregulars_desc:0 "Not every wartime volunteer can remain under arms. Offer wages, papers, and a way home before temporary formations become permanent factions."
+ LSC_postwar_demobilize_irregulars_tt:0 "Returns manpower, reduces War Support slightly, and grants Selene's government a small stability bonus."
+
+ # --- Part E1: Kael's consolidation decisions ---
+
+ LSC_kael_consolidation_category:0 "The Black Crown Consolidation"
+ LSC_kael_consolidation_category_desc:0 "Kael's regime has ended the war, not the conflict beneath it. Each measure strengthens control while leaving a record that North Alaric will not forget."
+ LSC_kael_hunt_alarican_cells:0 "Hunt the Alarican Cells"
+ LSC_kael_hunt_alarican_cells_desc:0 "Deploy informants and military police against the remnants of the underground. The arrests will weaken the networks and deepen the resentment that created them."
+ LSC_kael_secure_northern_railway:0 "Fund the Northern Railway Guard"
+ LSC_kael_secure_northern_railway_desc:0 "Pay guards, station agents, and favored local intermediaries to keep the export lines open without turning every rail town into an open battlefield."
+ LSC_kael_control_viktors_memory:0 "Control Viktor's Memory"
+ LSC_kael_control_viktors_memory_desc:0 "The proof of Viktor's murder must remain useful only to the Crown. Memorials, speeches, and selected documents will turn a dangerous secret into a managed national myth."
+
+ # --- Part E2: Alvaro's reconstruction decisions ---
+
+ LSC_alvaro_reconstruction_category:0 "Revolutionary Reconstruction"
+ LSC_alvaro_reconstruction_category_desc:0 "These are finite measures for a government that must rebuild its country without letting every emergency become permanent authority."
+ LSC_alvaro_issue_ration_cards:0 "Issue Ration Cards"
+ LSC_alvaro_issue_ration_cards_desc:0 "Make scarcity visible, limited, and accountable before private stockpiles and uncontrolled requisitions make it political poison."
+ LSC_alvaro_register_committee_clerks:0 "Register the Committee Clerks"
+ LSC_alvaro_register_committee_clerks_desc:0 "Give wartime delegates papers, payrolls, and accountable posts so the administration can keep local knowledge without remaining improvised."
+ LSC_alvaro_recover_crown_records:0 "Recover Crown Records"
+ LSC_alvaro_recover_crown_records_desc:0 "Search the recovered archives for orders, payments, and testimony without pretending that a missing page can be replaced by a convenient answer."

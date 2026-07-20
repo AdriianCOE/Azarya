@@ -1,0 +1,161 @@
+add_namespace = LSC_kael
+
+# Part E1 — Kael's second act. These events are triggered only by the Kael
+# focus branch; their flags are deliberately retained as hooks for later
+# insurgency, court, diplomatic, and military content.
+
+country_event = {
+	id = LSC_kael.1
+	title = LSC_kael.1.t
+	desc = LSC_kael.1.d
+	picture = GFX_news_event_generic_parliament
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = LSC_kael.1.a
+		add_to_variable = { var = LSC_army_loyalty value = 3 }
+		LSC_clamp_imperial_fracture_variables = yes
+		set_country_flag = LSC_kael_coronation_proclaimed
+	}
+}
+
+country_event = {
+	id = LSC_kael.2
+	title = LSC_kael.2.t
+	desc = LSC_kael.2.d
+	picture = GFX_news_event_generic_parliament
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = LSC_kael.2.a
+		add_stability = 0.02
+		set_country_flag = LSC_kael_regicide_proof_destroyed
+		ai_chance = { factor = 40 }
+	}
+	option = {
+		name = LSC_kael.2.b
+		add_political_power = 25
+		set_country_flag = LSC_kael_regicide_proof_archived_by_crown
+		ai_chance = { factor = 35 }
+	}
+	option = {
+		name = LSC_kael.2.c
+		add_to_variable = { var = LSC_army_loyalty value = 5 }
+		add_to_variable = { var = LSC_oligarch_influence value = -3 }
+		LSC_clamp_imperial_fracture_variables = yes
+		set_country_flag = LSC_kael_regicide_proof_known_to_staff
+		ai_chance = { factor = 25 }
+	}
+}
+
+country_event = {
+	id = LSC_kael.3
+	title = LSC_kael.3.t
+	desc = LSC_kael.3.d
+	picture = GFX_news_event_generic_parliament
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = LSC_kael.3.a
+		add_political_power = -25
+		add_to_variable = { var = LSC_northern_unrest value = 4 }
+		add_to_variable = { var = LSC_revolutionary_strength value = -4 }
+		LSC_clamp_imperial_fracture_variables = yes
+		set_country_flag = LSC_kael_railway_reprisals
+		ai_chance = { factor = 60 }
+	}
+	option = {
+		name = LSC_kael.3.b
+		add_political_power = -50
+		add_to_variable = { var = LSC_northern_unrest value = -5 }
+		add_to_variable = { var = LSC_oligarch_influence value = 3 }
+		LSC_clamp_imperial_fracture_variables = yes
+		set_country_flag = LSC_kael_railway_patronage
+		ai_chance = { factor = 40 }
+	}
+}
+
+country_event = {
+	id = LSC_kael.4
+	title = LSC_kael.4.t
+	desc = LSC_kael.4.d
+	picture = GFX_news_event_generic_parliament
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = LSC_kael.4.a
+		add_war_support = 0.02
+		set_country_flag = LSC_kael_alvaro_declared_dead
+		ai_chance = { factor = 35 }
+	}
+	option = {
+		name = LSC_kael.4.b
+		add_political_power = -20
+		add_to_variable = { var = LSC_revolutionary_strength value = 3 }
+		LSC_clamp_imperial_fracture_variables = yes
+		set_country_flag = LSC_kael_alvaro_hunt_open
+		ai_chance = { factor = 45 }
+	}
+	option = {
+		name = LSC_kael.4.c
+		add_stability = -0.01
+		set_country_flag = LSC_kael_alvaro_survival_concealed
+		ai_chance = { factor = 20 }
+	}
+}
+
+country_event = {
+	id = LSC_kael.5
+	title = LSC_kael.5.t
+	desc = LSC_kael.5.d
+	picture = GFX_news_event_generic_parliament
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = LSC_kael.5.a
+		add_political_power = -15
+		set_country_flag = LSC_kael_selene_confined_in_aelia
+		ai_chance = { factor = 45 }
+	}
+	option = {
+		name = LSC_kael.5.b
+		add_stability = 0.02
+		set_country_flag = LSC_kael_selene_ceremonial_submission
+		ai_chance = { factor = 35 }
+	}
+	option = {
+		name = LSC_kael.5.c
+		add_to_variable = { var = LSC_northern_unrest value = 2 }
+		LSC_clamp_imperial_fracture_variables = yes
+		set_country_flag = LSC_kael_selene_controlled_exile
+		ai_chance = { factor = 20 }
+	}
+}
+
+country_event = {
+	id = LSC_kael.6
+	title = LSC_kael.6.t
+	desc = LSC_kael.6.d
+	picture = GFX_news_event_generic_parliament
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = LSC_kael.6.a
+		# ponytail: two stable hooks cover later content; split them only when
+		# a concrete military or diplomatic branch needs separate gating.
+		set_country_flag = LSC_kael_future_military_branch_ready
+		set_country_flag = LSC_kael_future_diplomatic_branch_ready
+	}
+}

@@ -1,0 +1,55 @@
+LSC_alvaro_reconstruction_category = {
+	# One-shot measures for the reconstruction interval. They supplement the
+	# focus route without becoming an infinite political-power conversion loop.
+
+	LSC_alvaro_issue_ration_cards = {
+		icon = GFX_decision_generic_construction
+		allowed = { original_tag = CZL }
+		available = {
+			has_country_flag = LSC_alvaro_martius_provisioned
+			NOT = { has_country_flag = LSC_alvaro_ration_cards_issued }
+		}
+		cost = 35
+		days_re_enable = 45
+		complete_effect = {
+			add_stability = 0.01
+			add_to_variable = { var = LSC_northern_unrest value = -2 }
+			LSC_clamp_imperial_fracture_variables = yes
+			set_country_flag = LSC_alvaro_ration_cards_issued
+		}
+		ai_will_do = { factor = 25 }
+	}
+
+	LSC_alvaro_register_committee_clerks = {
+		icon = GFX_decision_generic_military
+		allowed = { original_tag = CZL }
+		available = {
+			has_country_flag = LSC_alvaro_committees_in_administration
+			NOT = { has_country_flag = LSC_alvaro_committee_clerks_registered }
+		}
+		cost = 40
+		days_re_enable = 45
+		complete_effect = {
+			add_political_power = 15
+			add_stability = 0.01
+			set_country_flag = LSC_alvaro_committee_clerks_registered
+		}
+		ai_will_do = { factor = 20 }
+	}
+
+	LSC_alvaro_recover_crown_records = {
+		icon = GFX_decision_generic_military
+		allowed = { original_tag = CZL }
+		available = {
+			has_country_flag = LSC_alvaro_viktor_inquiry_open
+			NOT = { has_country_flag = LSC_alvaro_crown_records_recovered }
+		}
+		cost = 45
+		days_re_enable = 60
+		complete_effect = {
+			add_political_power = 20
+			set_country_flag = LSC_alvaro_crown_records_recovered
+		}
+		ai_will_do = { factor = 15 }
+	}
+}

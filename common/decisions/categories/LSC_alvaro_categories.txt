@@ -1,0 +1,8 @@
+LSC_alvaro_reconstruction_category = {
+	icon = GFX_decision_category_power_struggle
+	allowed = { original_tag = CZL }
+	visible = {
+		has_country_flag = LSC_alvaro_revolutionary_government_established
+		NOT = { has_country_flag = LSC_alvaro_second_act_complete }
+	}
+}

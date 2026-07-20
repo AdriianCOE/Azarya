@@ -76,6 +76,7 @@ country_event = {
 
 	trigger = {
 		NOT = { has_country_flag = LSC_postwar_cleanup_completed }
+		NOT = { has_global_flag = LSC_postwar_dispatched_global }
 		OR = {
 			has_country_flag = LSC_kael_victory
 			has_country_flag = LSC_alvaro_victory
@@ -89,6 +90,9 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
+			# The resolver owns a single national result; this guard prevents a
+			# delayed duplicate from replaying cleanup after a save/load race.
+			set_global_flag = LSC_postwar_dispatched_global
 			# --- Shared cleanup, regardless of outcome ---
 			# Crisis/war ideas that have no reason to outlive the crisis
 			# itself under ANY result (Part D idea audit, category "crise
@@ -97,6 +101,7 @@ country_event = {
 			# this file's own earlier events.
 			remove_ideas = {
 				LSC_gathering_storm
+				LSC_southern_contracts
 				LSC_kael_emergency_government
 				LSC_alarican_revolutionary_committees
 				LSC_selene_divided_guard
@@ -116,10 +121,36 @@ country_event = {
 			clr_country_flag = LSC_war_bonus_loyalty
 			clr_country_flag = LSC_war_bonus_oligarch2
 			clr_country_flag = LSC_war_bonus_selene_loyalty
+			clr_country_flag = LSC_succession_side_kael
+			clr_country_flag = LSC_succession_side_alvaro
+			clr_country_flag = LSC_succession_side_old_regime
+			clr_country_flag = LSC_succession_side_alarican_committees
+			clr_country_flag = LSC_succession_side_selene
 
 			if = {
 				limit = { has_country_flag = LSC_kael_victory }
 				# --- KAEL WINS: The Black Crown ---
+				recruit_character = CZL_kael_vorenkov
+				if = {
+					limit = {
+						NOT = {
+							has_country_leader = {
+								character = CZL_kael_vorenkov
+								ruling_only = yes
+							}
+						}
+					}
+					add_country_leader_role = {
+						character = CZL_kael_vorenkov
+						country_leader = {
+							ideology = fascism_ideology
+							traits = { }
+							expire = "1965.1.1"
+						}
+						promote_leader = yes
+					}
+				}
+				set_politics = { ruling_party = fascism elections_allowed = no }
 				if = {
 					limit = { controls_state = 335 }
 					set_capital = { state = 335 }
@@ -131,20 +162,37 @@ country_event = {
 				add_stability = 0.03
 				add_war_support = 0.03
 				add_political_power = -30
-				if = {
-					limit = {
-						OR = {
-							has_country_flag = LSC_route_kael
-							has_country_flag = LSC_route_alvaro
-						}
-					}
-					set_country_flag = LSC_alvaro_missing
-				}
+				# Kael's consolidation cannot leave Alvaro's immediate fate open;
+				# later content may decide what "missing" ultimately means.
+				set_country_flag = LSC_alvaro_missing
+				# Selene remains a living, controlled court figure for E1.
+				set_country_flag = LSC_selene_under_house_arrest
 				set_country_flag = LSC_postwar_kael_ready
 			}
 			else_if = {
 				limit = { has_country_flag = LSC_alvaro_victory }
 				# --- ALVARO WINS: The Committees Endure ---
+				recruit_character = CZL_alvaro_vorenkov
+				if = {
+					limit = {
+						NOT = {
+							has_country_leader = {
+								character = CZL_alvaro_vorenkov
+								ruling_only = yes
+							}
+						}
+					}
+					add_country_leader_role = {
+						character = CZL_alvaro_vorenkov
+						country_leader = {
+							ideology = anarchist_communism
+							traits = { }
+							expire = "1965.1.1"
+						}
+						promote_leader = yes
+					}
+				}
+				set_politics = { ruling_party = communism elections_allowed = no }
 				if = {
 					limit = { controls_state = 303 }
 					set_capital = { state = 303 }
@@ -156,6 +204,14 @@ country_event = {
 				add_stability = -0.05
 				add_war_support = 0.03
 				add_political_power = -20
+				remove_ideas = {
+					LSC_northern_military_rule
+					LSC_kael_officer_network
+					LSC_kael_oligarch_support
+					LSC_selene_palace_network
+					LSC_alvaro_partisan_networks
+					LSC_underground_press
+				}
 				if = {
 					limit = { has_country_flag = LSC_alvaro_revolutionary_vanguard }
 					add_to_variable = { var = LSC_revolutionary_strength value = 5 }
@@ -166,11 +222,33 @@ country_event = {
 					add_stability = 0.02
 				}
 				set_country_flag = LSC_kael_missing
+				set_country_flag = LSC_selene_exiled_from_the_north
 				set_country_flag = LSC_postwar_alvaro_ready
 			}
 			else_if = {
 				limit = { has_country_flag = LSC_selene_victory }
 				# --- SELENE WINS: A Crown of Marble (3 variants) ---
+				recruit_character = CZL_selene_vorenkov
+				if = {
+					limit = {
+						NOT = {
+							has_country_leader = {
+								character = CZL_selene_vorenkov
+								ruling_only = yes
+							}
+						}
+					}
+					add_country_leader_role = {
+						character = CZL_selene_vorenkov
+						country_leader = {
+							ideology = Constitutional_Monarchy
+							traits = { }
+							expire = "1965.1.1"
+						}
+						promote_leader = yes
+					}
+				}
+				set_politics = { ruling_party = neutrality elections_allowed = no }
 				if = {
 					limit = { controls_state = 335 }
 					set_capital = { state = 335 }
@@ -187,10 +265,14 @@ country_event = {
 				if = {
 					limit = { has_country_flag = LSC_selene_peaceful_settlement }
 					add_political_power = 20
+					set_country_flag = LSC_kael_under_surveillance
+					set_country_flag = LSC_alvaro_conditional_autonomy
 				}
 				else_if = {
 					limit = { has_country_flag = LSC_selene_palace_coup }
 					add_stability = -0.02
+					set_country_flag = LSC_kael_imprisoned
+					set_country_flag = LSC_alvaro_armed_neutrality
 				}
 				else = {
 					# Limited-war variant: Kael's breakaway has just been
@@ -199,6 +281,15 @@ country_event = {
 					# war rather than resolving it.
 					set_country_flag = LSC_kael_imprisoned
 					add_political_power = -10
+					set_country_flag = LSC_alvaro_conditional_autonomy
+				}
+				remove_ideas = {
+					LSC_northern_military_rule
+					LSC_kael_officer_network
+					LSC_kael_oligarch_support
+					LSC_alvaro_partisan_networks
+					LSC_underground_press
+					LSC_selene_palace_network
 				}
 				set_country_flag = LSC_postwar_selene_ready
 			}
@@ -208,6 +299,33 @@ country_event = {
 				# already controls, it keeps.
 				add_stability = -0.05
 				add_political_power = -20
+				recruit_character = CZL_selene_vorenkov
+				if = {
+					limit = {
+						NOT = {
+							has_country_leader = {
+								character = CZL_selene_vorenkov
+								ruling_only = yes
+							}
+						}
+					}
+					add_country_leader_role = {
+						character = CZL_selene_vorenkov
+						country_leader = {
+							ideology = Constitutional_Monarchy
+							traits = { }
+							expire = "1965.1.1"
+						}
+						promote_leader = yes
+					}
+				}
+				set_politics = { ruling_party = neutrality elections_allowed = no }
+				set_country_flag = LSC_selene_provisional_caretaker
+				remove_ideas = {
+					LSC_kael_emergency_government
+					LSC_alarican_revolutionary_committees
+					LSC_selene_divided_guard
+				}
 				set_country_flag = LSC_postwar_inconclusive_ready
 			}
 

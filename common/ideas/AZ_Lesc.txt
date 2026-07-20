@@ -248,7 +248,194 @@ ideas = {
 	modifier = {
 		political_power_gain = 0.05                    # Control bought with a secret Kael cannot afford to see published
 		stability_factor = -0.02                       # A court that senses it is being ruled by leverage, not law
+		}
+
+		# --- Part E1: Kael's Black Crown. Each route replaces its temporary
+		# pillar with one final state idea, rather than accumulating bonuses. ---
+
+		LSC_kael_black_crown_regime = {
+			name = LSC_kael_black_crown_regime
+			picture = ARG_military_government
+			allowed = { original_tag = CZL }
+			visible = { always = yes }
+			modifier = {
+				political_power_gain = 0.05
+				war_support_factor = 0.05
+				stability_factor = -0.02
+			}
+		}
+
+		LSC_kael_cult_of_viktor = {
+			name = LSC_kael_cult_of_viktor
+			picture = generic_pp_unity_bonus
+			allowed = { original_tag = CZL }
+			visible = { always = yes }
+			modifier = {
+				stability_factor = 0.02
+				war_support_factor = 0.03
+			}
+		}
+
+		LSC_kael_penal_north = {
+			name = LSC_kael_penal_north
+			picture = generic_deal_with_the_devil
+			allowed = { original_tag = CZL }
+			visible = { always = yes }
+			modifier = {
+				local_resources_factor = 0.10
+				consumer_goods_factor = 0.02
+				stability_factor = -0.03
+			}
+		}
+
+		LSC_kael_concession_north = {
+			name = LSC_kael_concession_north
+			picture = RAJ_special_economic_zones
+			allowed = { original_tag = CZL }
+			visible = { always = yes }
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.03
+				consumer_goods_factor = 0.03
+			}
+		}
+
+		LSC_kael_general_staff_supremacy = {
+			name = LSC_kael_general_staff_supremacy
+			picture = generic_infantry_bonus
+			allowed = { original_tag = CZL }
+			visible = { always = yes }
+			modifier = {
+				army_org_factor = 0.05
+				planning_speed = 0.05
+				industrial_capacity_factory = 0.03
+				consumer_goods_factor = 0.02
+			}
+		}
+
+		LSC_kael_oligarchic_pact_idea = {
+			name = LSC_kael_oligarchic_pact_idea
+			picture = generic_foreign_capital
+			allowed = { original_tag = CZL }
+			visible = { always = yes }
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = 0.04
+				stability_factor = -0.02
+			}
+		}
+
+		LSC_kael_vorenkov_state_military = {
+			name = LSC_kael_vorenkov_state_military
+			picture = ARG_military_government
+			allowed = { original_tag = CZL }
+			visible = { always = yes }
+			modifier = {
+				political_power_gain = 0.05
+				army_org_factor = 0.05
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.02
+			}
+		}
+
+		LSC_kael_vorenkov_state_oligarchic = {
+			name = LSC_kael_vorenkov_state_oligarchic
+			picture = RAJ_special_economic_zones
+			allowed = { original_tag = CZL }
+			visible = { always = yes }
+			modifier = {
+				production_speed_buildings_factor = 0.06
+				industrial_capacity_factory = 0.05
+				local_resources_factor = 0.05
+				stability_factor = -0.02
+			}
+		}
+
+		# --- Part E2: Alvaro's postwar revolution. Temporary institutions are
+		# replaced by one enduring settlement at the end of either route. ---
+
+		LSC_alvaro_provisional_government = {
+			name = LSC_alvaro_provisional_government
+			picture = generic_pp_unity_bonus
+			allowed = { original_tag = CZL }
+			visible = { always = yes }
+			modifier = {
+				political_power_gain = 0.03
+				stability_factor = -0.02
+			}
+		}
+
+		LSC_alvaro_reconstruction_administration = {
+			name = LSC_alvaro_reconstruction_administration
+			picture = generic_pp_unity_bonus
+			allowed = { original_tag = CZL }
+			visible = { always = yes }
+			modifier = {
+				production_speed_buildings_factor = 0.04
+				political_power_gain = 0.03
+			}
+		}
+
+		LSC_alvaro_southern_resistance = {
+			name = LSC_alvaro_southern_resistance
+			picture = generic_deal_with_the_devil
+			allowed = { original_tag = CZL }
+			visible = { always = yes }
+			modifier = {
+				stability_factor = -0.02
+				political_power_cost = 0.04
+			}
+		}
+
+		LSC_alvaro_broad_front_government = {
+			name = LSC_alvaro_broad_front_government
+			picture = generic_pp_unity_bonus
+			allowed = { original_tag = CZL }
+			visible = { always = yes }
+			modifier = {
+				stability_factor = 0.03
+				political_power_gain = 0.05
+				industrial_capacity_factory = -0.02
+			}
+		}
+
+		LSC_alvaro_vanguard_party = {
+			name = LSC_alvaro_vanguard_party
+			picture = generic_pp_unity_bonus
+			allowed = { original_tag = CZL }
+			visible = { always = yes }
+			modifier = {
+				political_power_gain = 0.07
+				production_speed_buildings_factor = 0.04
+				stability_factor = -0.02
+			}
+		}
+
+		LSC_alvaro_alarican_federation = {
+			name = LSC_alvaro_alarican_federation
+			picture = generic_pp_unity_bonus
+			allowed = { original_tag = CZL }
+			visible = { always = yes }
+			modifier = {
+				political_power_gain = 0.06
+				stability_factor = 0.04
+				production_speed_buildings_factor = 0.03
+			}
+		}
+
+		LSC_alvaro_vanguard_state_idea = {
+			name = LSC_alvaro_vanguard_state_idea
+			picture = generic_pp_unity_bonus
+			allowed = { original_tag = CZL }
+			visible = { always = yes }
+			modifier = {
+				political_power_gain = 0.08
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.04
+				stability_factor = -0.01
+			}
+		}
 	}
 }
-	}
 }

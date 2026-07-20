@@ -179,3 +179,93 @@
  LSC_succession.48.t:0 "Palace Coup"
  LSC_succession.48.d:0 "It very nearly did not end this way. For the better part of a day, the corridors of the palace itself were a contested front — officers taking sides room by room, doors barred, and at least one attempt to reach Selene before her own Guard could reach him first. It failed. Kael is removed from every post he still held, but the court that watches her afterward is a shaken one, and the north is not the only part of the Czardom now wondering how close that actually was."
  LSC_succession.48.a:0 "The Crown survives — barely, and everyone knows it."
+
+ # --- Part D: war resolution and immediate post-war consolidation ---
+
+ LSC_civil_war.24.t:0 "The Fracture Consumed Lesc"
+ LSC_civil_war.24.d:0 "The last organized commands have exhausted one another, and the succession itself has become a question no battlefield can answer. What remains of Lesc is gathered back under a provisional caretaker administration: not a victory for any heir, but a promise that the state will survive long enough to decide its future another day."
+ LSC_civil_war.24.a:0 "Lesc must endure before it can choose."
+
+ LSC_postwar.1.t:0 "After the Fracture"
+ LSC_postwar.1.d:0 "The succession crisis is over, but the country that emerges from it is not yet whole. Ministries must reopen, arms must be counted, and those who fought for rival Lescs must be returned to a single state before any durable political settlement can begin."
+ LSC_postwar.1.a:0 "Begin the work of consolidation."
+
+ LSC_postwar.1.kael.t:0 "The Black Crown"
+ LSC_postwar.1.kael.d:0 "Kael has prevailed, and the southern command once again speaks with one voice. The emergency government has survived its first trial; what it becomes after that survival remains unsettled."
+
+ LSC_postwar.1.alvaro.t:0 "The North Holds"
+ LSC_postwar.1.alvaro.d:0 "Alvaro's victory has broken the old southern order, but the committees that won the war have not yet agreed on the state that will replace it. For now, Emporiae must keep the revolution alive and the country functioning."
+
+ LSC_postwar.1.selene.t:0 "The Marble Crown"
+ LSC_postwar.1.selene_peaceful.d:0 "Selene has held Lesc together without turning its succession into a general war. Her restraint has bought the court time; it has not made the questions beneath the crisis disappear."
+ LSC_postwar.1.selene_coup.d:0 "Selene survived the coup, but the palace remembers how near the Crown came to breaking. Her first government must restore authority without pretending that the old certainties remain."
+ LSC_postwar.1.selene_war.d:0 "Selene has won the war for the Crown, and the cost of that victory is written across the ministries and garrisons now returning to her authority."
+
+ LSC_postwar.1.inconclusive.t:0 "A Provisional Lesc"
+ LSC_postwar.1.inconclusive.d:0 "No heir has won enough to claim a final settlement. Selene's caretaker administration is charged with the narrower task of keeping Lesc intact while the succession is deferred rather than decided."
+
+ # --- Part E1: Kael's Black Crown ---
+
+ LSC_kael.1.t:0 "The Black Coronation"
+ LSC_kael.1.d:0 "The coronation is staged as a military rite rather than a dynastic celebration. Viktor's portrait is carried beneath black banners, officers swear before the throne, and Kael accepts a crown presented as the last defense of Lesc against treason."
+ LSC_kael.1.a:0 "The Crown will command without apology."
+
+ LSC_kael.2.t:0 "The Documents Beneath Aelia"
+ LSC_kael.2.d:0 "A sealed packet recovered from a dead courier contains the trail Kael thought had vanished: orders routed through intermediaries, payments to a physician, and a notation that makes clear Viktor's death was no Alarican plot. The truth is not public. It is now in Kael's hands."
+ LSC_kael.2.a:0 "Burn every page."
+ LSC_kael.2.b:0 "Seal it in the Crown archive."
+ LSC_kael.2.c:0 "Let the General Staff hold the secret."
+
+ LSC_kael.3.t:0 "A Break on the Northern Line"
+ LSC_kael.3.d:0 "A supply train is derailed outside Emporiae. The wreck is small, but the message is not: someone in the north still knows the lines better than the soldiers sent to guard them. Kael can answer with collective punishment or buy a quieter form of obedience."
+ LSC_kael.3.a:0 "Make an example of the district."
+ LSC_kael.3.b:0 "Pay collaborators to keep the rails open."
+
+ LSC_kael.4.t:0 "The Alvaro File"
+ LSC_kael.4.d:0 "Reports disagree on whether Alvaro died in the retreat, crossed a border, or still moves between northern contacts. The uncertainty is useful, but it can also become an opening through which a new rebellion enters the public imagination."
+ LSC_kael.4.a:0 "Declare him dead and the conspiracy broken."
+ LSC_kael.4.b:0 "Keep the hunt open."
+ LSC_kael.4.c:0 "Bury the report that suggests he survived."
+
+ LSC_kael.5.t:0 "Selene's Silence"
+ LSC_kael.5.d:0 "Selene remains a Vorenkov and an uncomfortable memory of every path Kael prevented. Her household is watched, her correspondence intercepted, and the court waits to learn whether the new Czar needs her silent, useful, or far away."
+ LSC_kael.5.a:0 "Confine her to Aelia."
+ LSC_kael.5.b:0 "Require a public oath of submission."
+ LSC_kael.5.c:0 "Send her into controlled exile."
+
+ LSC_kael.6.t:0 "The Vorenkov State"
+ LSC_kael.6.d:0 "The new order no longer calls itself temporary. Whether held together by generals or contracts, Kael's state has chosen its ruling pillar and bound North Alaric to the south by force and dependency. The next questions lie beyond its borders and in the Army it has made indispensable."
+ LSC_kael.6.a:0 "The second act is complete."
+
+ # --- Part E2: Alvaro's Alarican Revolution ---
+
+ LSC_alvaro.1.t:0 "A Government in Emporiae"
+ LSC_alvaro.1.d:0 "The capital has moved north in everything but ceremony. Railway clerks, committee delegates, and exhausted fighters crowd into offices built for an imperial administration that no longer exists. Emporiae can celebrate later; today it must make the trains run."
+ LSC_alvaro.1.a:0 "Begin with the work at hand."
+
+ LSC_alvaro.2.t:0 "The Case Against Alvaro"
+ LSC_alvaro.2.d:0 "The accusation that Alvaro murdered Viktor survives in police files, southern pamphlets, and the memories of men who used it to justify the war. The revolution can establish his innocence. What it cannot claim without evidence is precisely who ordered the lie."
+ LSC_alvaro.2.a:0 "Record that the proof was destroyed; the truth must wait."
+ LSC_alvaro.2.b:0 "Open a commission around the surviving evidence."
+ LSC_alvaro.2.c:0 "Clear Alvaro without inventing a culprit."
+
+ LSC_alvaro.3.t:0 "The Martius Granaries"
+ LSC_alvaro.3.d:0 "The first convoys reach Martius, but not enough of them. Delegates demand equal rations, railway crews demand fuel, and villages remember too well what requisition used to mean under the Crown."
+ LSC_alvaro.3.a:0 "Keep the rationing public and limited."
+ LSC_alvaro.3.b:0 "Extend emergency requisitions."
+
+ LSC_alvaro.4.t:0 "The Kael Question"
+ LSC_alvaro.4.d:0 "Kael is absent from the prisons, the barracks, and the first lists of the dead. Some demand a search that never closes; others argue that a public record is more useful than a fugitive turned into legend."
+ LSC_alvaro.4.a:0 "Keep the search open."
+ LSC_alvaro.4.b:0 "Try him in absence and preserve the record."
+ LSC_alvaro.4.c:0 "Preserve the record already in hand."
+
+ LSC_alvaro.5.t:0 "Selene's Letter"
+ LSC_alvaro.5.d:0 "From exile, Selene offers an account of the last days of the court. She asks for neither crown nor office, only that the revolution decide whether her name is evidence, danger, or a door that should remain closed."
+ LSC_alvaro.5.a:0 "Receive her testimony, but grant no privilege."
+ LSC_alvaro.5.b:0 "Offer a protected return under the new law."
+ LSC_alvaro.5.c:0 "Respect her exile and leave the question open."
+
+ LSC_alvaro.6.t:0 "The Revolution's Second Act"
+ LSC_alvaro.6.d:0 "The emergency has ended without resolving every debt of the war. Lesc now has a political settlement, a reconstruction program, and unresolved questions beyond its borders. The next act will test whether this new order can endure them."
+ LSC_alvaro.6.a:0 "The future is no longer provisional."
