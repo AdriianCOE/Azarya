@@ -1,5 +1,5 @@
 # Self-built generic naval goals — NO blocked_for TAG references
-# (vanilla lists THK/FRA/GER/ITA/JAP/NSA/SLU which crash our TC MOD)
+# (the vanilla list contains removed legacy tags, unsuitable for this TC MOD)
 # Only the 6 objective types currently supported by the engine are used
 # (see common/ai_navy/_documentation.md, "Objective Types"); the previous
 # naval_dominance/mines_planting/training/naval_blockade/strike_force_objective

@@ -230,8 +230,11 @@ def check_brace_balance():
         MOD_ROOT / "history" / "units",
         MOD_ROOT / "history" / "countries",
         MOD_ROOT / "history" / "states",
+        MOD_ROOT / "common" / "ideas",
+        MOD_ROOT / "common" / "decisions",
         MOD_ROOT / "common" / "national_focus",
         MOD_ROOT / "events",
+        MOD_ROOT / "interface",
     ]
     bad = 0
     for d in dirs:
@@ -313,6 +316,43 @@ def check_id_duplicates():
     print(f"  {len(seen)} event id(s) unicos vistos.")
 
 
+# ---------------------------------------------------------------------------
+# 10. Regressions found by the game parser in this stabilization pass
+# ---------------------------------------------------------------------------
+def check_script_regressions():
+    section("Efeitos obsoletos, recrutamento dinamico e focos sem icone")
+    obsolete_effects = 0
+    dynamic_recruits = 0
+    missing_icons = 0
+
+    for root in (MOD_ROOT / "common", MOD_ROOT / "events"):
+        for f in root.rglob("*.txt"):
+            text = read_text(f)
+            for line, raw in enumerate(text.splitlines(), 1):
+                code = raw.split("#", 1)[0]
+                if re.search(r"\bretake_core_state\s*=", code):
+                    report("ERROR", f"{f.relative_to(MOD_ROOT).as_posix()}:{line}: effect obsoleto retake_core_state")
+                    obsolete_effects += 1
+                if "recruit_character" in code:
+                    report("WARNING", f"{f.relative_to(MOD_ROOT).as_posix()}:{line}: recruit_character fora de history")
+                    dynamic_recruits += 1
+
+    for f in sorted((MOD_ROOT / "common" / "national_focus").glob("*.txt")):
+        text = read_text(f)
+        for block in re.finditer(r"\bfocus\s*=\s*\{", text):
+            start = block.end()
+            depth, pos = 1, start
+            while pos < len(text) and depth:
+                depth += (text[pos] == "{") - (text[pos] == "}")
+                pos += 1
+            focus = text[start:pos]
+            if re.search(r"\bid\s*=", focus) and not re.search(r"\bicon\s*=", focus):
+                report("WARNING", f"{f.relative_to(MOD_ROOT).as_posix()}: focus com id sem campo icon")
+                missing_icons += 1
+
+    print(f"  {obsolete_effects} efeito(s) obsoleto(s), {dynamic_recruits} recrutamento(s) dinamico(s), {missing_icons} foco(s) sem icon.")
+
+
 def main():
     print(f"Validando mod em: {MOD_ROOT}")
     print(f"Manifesto externo esperado em: {EXTERNAL_MANIFEST}")
@@ -324,6 +364,7 @@ def main():
     check_brace_balance()
     check_country_tags()
     check_id_duplicates()
+    check_script_regressions()
 
     print(f"\nResumo: {counts['ERROR']} ERROR, {counts['WARNING']} WARNING, {counts['INFO']} INFO.")
     return 1 if counts["ERROR"] > 0 else 0

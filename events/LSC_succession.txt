@@ -500,7 +500,6 @@ country_event = {
 						}
 					}
 					retire_country_leader = yes
-					recruit_character = CZL_kael_vorenkov
 					add_country_leader_role = {
 						character = CZL_kael_vorenkov
 						country_leader = {
@@ -760,7 +759,6 @@ country_event = {
 						}
 					}
 					retire_country_leader = yes
-					recruit_character = CZL_selene_vorenkov
 					set_politics = {
 						ruling_party = neutrality
 						elections_allowed = no
@@ -983,7 +981,6 @@ country_event = {
 				# user's explicit correction: keep the token accessible for
 				# future interrogation/trial/exile content.
 				remove_ideas = { LSC_gathering_storm }
-				recruit_character = CZL_kael_vorenkov
 				set_country_flag = LSC_kael_under_surveillance
 				add_stability = 0.03
 				add_ideas = { LSC_selene_marble_regency }
@@ -1008,7 +1005,6 @@ country_event = {
 				# the defensive retire_country_leader check from the original
 				# draft is dropped as dead code; same reasoning as Result 1
 				# applies to keeping his token intact rather than retiring it.
-				recruit_character = CZL_kael_vorenkov
 				set_country_flag = LSC_kael_imprisoned
 				add_stability = -0.08
 				add_war_support = -0.05
@@ -1032,7 +1028,6 @@ country_event = {
 				# Selene keeps Aelia, the Crown, the Court and the remaining
 				# eleven states, including every other state ever considered
 				# for the earlier Kael/Alvaro 8-state split.
-				recruit_character = CZL_kael_vorenkov
 				set_country_flag = LSC_succession_side_selene
 				set_global_flag = LSC_succession_war_active_global
 

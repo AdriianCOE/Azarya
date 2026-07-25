@@ -1,5 +1,5 @@
-# TODO: capital and oob will be assigned once states are manually distributed.
-# capital = <state_id>
+capital = 36
+# OOB remains intentionally unassigned.
 # oob = "LIA"
 
 # Starting tech
@@ -106,7 +106,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Wen Zhaolin"
 	desc = "LIA_Zhaolin"
-	picture = "gfx/leaders/leader_unknown.dds"
+	picture = "gfx/leaders/placeholder/Portrait_PLACEHOLDER_large.dds"
 	ideology = Nationalist
 	traits = { }
 }

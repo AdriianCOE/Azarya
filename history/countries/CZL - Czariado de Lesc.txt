@@ -78,6 +78,13 @@ set_technology = {
 # block below, which had no stable id the succession-crisis events could target.
 recruit_character = CZL_viktor_iv_vorenkov
 
+# The succession cast must be registered at game start. Their leader roles
+# remain inactive until the appropriate focus/event promotes them, which
+# avoids unsafe dynamic recruitment and preserves Viktor as the 1924 ruler.
+recruit_character = CZL_kael_vorenkov
+recruit_character = CZL_selene_vorenkov
+recruit_character = CZL_alvaro_vorenkov
+
 recruit_character = CZL_ar
 recruit_character = CZL_acr
 recruit_character = CZL_mt

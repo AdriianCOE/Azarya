@@ -2,10 +2,6 @@
 state={
 	id=277
 	name="STATE_277"
-	history={
-		owner = LIA
-		add_core_of = LIA
-		}
 	provinces={
 		542 788 1631 2226 3771 7057 7120 
 	}

@@ -1,5 +1,5 @@
-# TODO: capital and oob will be assigned once states are manually distributed.
-# capital = <state_id>
+capital = 106
+# OOB remains intentionally unassigned.
 # oob = "ORV"
 
 # Starting tech
@@ -106,7 +106,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Walter Ashford"
 	desc = "ORV_Ashford"
-	picture = "gfx/leaders/leader_unknown.dds"
+	picture = "gfx/leaders/placeholder/Portrait_PLACEHOLDER_large.dds"
 	ideology = Federalist
 	traits = { }
 }
@@ -114,7 +114,7 @@ create_country_leader = {
 create_field_marshal = {
 	name = "Marcus Hale"
 	desc = "ORV_Hale"
-	traits = { organisational_genius }
+	traits = { organizer }
 	skill = 3
 	attack_skill = 3
 	defense_skill = 3
@@ -136,7 +136,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Daniel Whitfield"
 	desc = "ORV_Whitfield"
-	traits = { engineer }
+	traits = { infantry_leader }
 	skill = 2
 	attack_skill = 2
 	defense_skill = 3
@@ -158,7 +158,7 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "Henry Caldwell"
 	desc = "ORV_Caldwell"
-	traits = { navy_career_officer superintending_gunnery_officer }
+	traits = { navy_career_officer superior_tactician }
 	skill = 2
 	attack_skill = 3
 	defense_skill = 2

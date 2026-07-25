@@ -248,7 +248,8 @@ ideas = {
 	modifier = {
 		political_power_gain = 0.05                    # Control bought with a secret Kael cannot afford to see published
 		stability_factor = -0.02                       # A court that senses it is being ruled by leverage, not law
-		}
+	}
+	}
 
 		# --- Part E1: Kael's Black Crown. Each route replaces its temporary
 		# pillar with one final state idea, rather than accumulating bonuses. ---
@@ -437,5 +438,4 @@ ideas = {
 			}
 		}
 	}
-}
 }

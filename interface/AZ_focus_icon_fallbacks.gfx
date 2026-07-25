@@ -1,0 +1,74 @@
+spriteTypes = {
+	# Fallbacks for generic focus IDs not supplied by the current UI set.
+	# They reuse loaded assets from the mod and keep the distinct gameplay
+	# branches readable until bespoke Lesc artwork is produced.
+	spriteType = {
+		name = "GFX_goal_generic_territory"
+		texturefile = "gfx/interface/goals/focus_state_is_me.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_goal_generic_suppression"
+		texturefile = "gfx/interface/goals/focus_armed_ready.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_goal_generic_army"
+		texturefile = "gfx/interface/goals/focus_armed_ready.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_goal_generic_fascism"
+		texturefile = "gfx/interface/goals/focus_masters_over_all.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_goal_generic_coup"
+		texturefile = "gfx/interface/goals/focus_state_is_me.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_goal_generic_propaganda"
+		texturefile = "gfx/interface/goals/focus_will_of_people.dds"
+		legacy_lazy_load = no
+	}
+
+	# The focus renderer asks for a paired "_shine" sprite. Keep the
+	# fallback icons paired so every focus can use the normal hover effect.
+	spriteType = {
+		name = "GFX_goal_generic_territory_shine"
+		texturefile = "gfx/interface/goals/focus_state_is_me.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_goal_generic_suppression_shine"
+		texturefile = "gfx/interface/goals/focus_armed_ready.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_goal_generic_army_shine"
+		texturefile = "gfx/interface/goals/focus_armed_ready.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_goal_generic_fascism_shine"
+		texturefile = "gfx/interface/goals/focus_masters_over_all.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_goal_generic_coup_shine"
+		texturefile = "gfx/interface/goals/focus_state_is_me.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_goal_generic_propaganda_shine"
+		texturefile = "gfx/interface/goals/focus_will_of_people.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		legacy_lazy_load = no
+	}
+}

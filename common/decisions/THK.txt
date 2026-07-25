@@ -319,7 +319,7 @@ THK_frontier_decisions_category = {
 		}
 
 		available = {
-			exists = UPG
+			UPG = { exists = yes }
 			NOT = { has_war_with = UPG }
 			NOT = { has_wargoal_against = UPG }
 			OR = {
@@ -336,15 +336,15 @@ THK_frontier_decisions_category = {
 		complete_effect = {
 			if = {
 				limit = { UPG = { owns_state = 86 } }
-				retake_core_state = 86
+				transfer_state = 86
 			}
 			if = {
 				limit = { UPG = { owns_state = 400 } }
-				retake_core_state = 400
+				transfer_state = 400
 			}
 			if = {
 				limit = { UPG = { owns_state = 409 } }
-				retake_core_state = 409
+				transfer_state = 409
 			}
 		}
 

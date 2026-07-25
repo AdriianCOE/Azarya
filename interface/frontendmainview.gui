@@ -14,13 +14,11 @@ containerWindowType = {
 	Origo = center
 	clipping = no 
 	
-	#	background = {
-	#		name = "Background"		
-	#		quadTextureSprite ="GFX_frontend_bg"
-	#		alwaystransparent = yes
-	#	}
-	#	
-	#}
+	background = {
+		name = "Background"
+		quadTextureSprite ="GFX_frontend_bg"
+		alwaystransparent = yes
+	}
 
 	containerWindowType = {
 		name ="frontend_bg_tile_1"

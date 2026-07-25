@@ -15,6 +15,14 @@ ideologies = {
 
 			Merchant_Republic = {
 			}
+
+			# Federal constitutional republics such as Orvena.
+			Federalist = {
+			}
+
+			# Parliamentary nationalist movements such as Liangor.
+			Nationalist = {
+			}
 		}
 
 		dynamic_faction_names = {
@@ -220,6 +228,10 @@ ideologies = {
 			}
 
 			Constitutional_Monarchy = {
+			}
+
+			# Sacral imperial monarchy used by Karyō.
+			Divine_Throne = {
 			}
 			
 			Polity = {

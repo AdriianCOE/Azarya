@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(echo \"=== CodeGeass frontendmainview.gui \\(menu panel orientation & names\\) ===\" *)"
+    ]
+  }
+}

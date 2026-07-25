@@ -17943,8 +17943,8 @@ leader_traits = {
 		}
 	}
 
-############Pfot - CZE - SLO - RUT
-	CZE_pro_soviet_diplomat = { 
+############Pfot and related legacy regional traits
+	AZY_pro_soviet_diplomat = {
 		random = no
 		sprite = 13
 

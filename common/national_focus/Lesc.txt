@@ -228,7 +228,6 @@ focus_tree = {
 			add_popularity = { ideology = fascism popularity = 0.05 }
 			add_war_support = 0.03
 			add_stability = -0.02
-			recruit_character = CZL_kael_vorenkov
 			custom_effect_tooltip = LSC_kael_claims_the_sword_tt
 		}
 	}
@@ -390,7 +389,6 @@ focus_tree = {
 			add_stability = 0.02
 			add_to_variable = { var = LSC_selene_legitimacy value = 15 }
 			clamp_variable = { var = LSC_selene_legitimacy min = 0 max = 100 }
-			recruit_character = CZL_selene_vorenkov
 			custom_effect_tooltip = LSC_selene_the_marble_princess_tt
 		}
 	}
@@ -550,7 +548,6 @@ focus_tree = {
 			add_stability = -0.03
 			add_to_variable = { var = LSC_revolutionary_strength value = 15 }
 			clamp_variable = { var = LSC_revolutionary_strength min = 0 max = 100 }
-			recruit_character = CZL_alvaro_vorenkov
 			custom_effect_tooltip = LSC_alvaro_speaks_for_the_north_tt
 		}
 	}
@@ -932,7 +929,7 @@ focus_tree = {
 
 	focus = {
 		id = LSC_kael_a_father_betrayed
-		icon = GFX_focus_generic_propaganda
+		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = LSC_kael_black_coronation }
 		x = 15
 		y = 11

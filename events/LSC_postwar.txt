@@ -130,7 +130,6 @@ country_event = {
 			if = {
 				limit = { has_country_flag = LSC_kael_victory }
 				# --- KAEL WINS: The Black Crown ---
-				recruit_character = CZL_kael_vorenkov
 				if = {
 					limit = {
 						NOT = {
@@ -172,7 +171,6 @@ country_event = {
 			else_if = {
 				limit = { has_country_flag = LSC_alvaro_victory }
 				# --- ALVARO WINS: The Committees Endure ---
-				recruit_character = CZL_alvaro_vorenkov
 				if = {
 					limit = {
 						NOT = {
@@ -228,7 +226,6 @@ country_event = {
 			else_if = {
 				limit = { has_country_flag = LSC_selene_victory }
 				# --- SELENE WINS: A Crown of Marble (3 variants) ---
-				recruit_character = CZL_selene_vorenkov
 				if = {
 					limit = {
 						NOT = {
@@ -299,7 +296,6 @@ country_event = {
 				# already controls, it keeps.
 				add_stability = -0.05
 				add_political_power = -20
-				recruit_character = CZL_selene_vorenkov
 				if = {
 					limit = {
 						NOT = {

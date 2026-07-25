@@ -87,8 +87,7 @@ country_event = {
 			set_country_flag = LSC_war_bonus_unrest
 		}
 
-		# Alvaro must exist in CZL's own roster before PREV can resolve him.
-		recruit_character = CZL_alvaro_vorenkov
+		# Alvaro is registered in CZL history before PREV resolves him.
 
 		start_civil_war = {
 			ruling_party = fascism
@@ -199,7 +198,6 @@ country_event = {
 			retire_country_leader = yes
 		}
 
-		recruit_character = CZL_alvaro_vorenkov
 		add_country_leader_role = {
 			character = CZL_alvaro_vorenkov
 			country_leader = {
@@ -237,10 +235,8 @@ country_event = {
 			set_country_flag = LSC_war_bonus_oligarch2
 		}
 
-		# Kael and Selene must exist in CZL's roster before PREV can resolve
-		# them -- neither is recruited on Alvaro's route by default.
-		recruit_character = CZL_kael_vorenkov
-		recruit_character = CZL_selene_vorenkov
+		# Kael and Selene are registered in CZL history before PREV resolves
+		# them, including on Alvaro's route.
 
 		start_civil_war = {
 			ruling_party = communism
@@ -551,17 +547,27 @@ news_event = {
 		clr_global_flag = LSC_succession_war_active_global
 	}
 
+	# Event option names cannot be conditional blocks.  Keep Selene's
+	# distinct acknowledgement, and use the generic one for the other routes.
 	option = {
-		name = {
-			text = LSC_civil_war.22.selene.a
-			trigger = {
+		name = LSC_civil_war.22.selene.a
+		trigger = {
+			any_country = {
+				OR = { tag = CZL original_tag = CZL }
+				has_country_flag = LSC_succession_side_selene
+			}
+		}
+	}
+	option = {
+		name = LSC_civil_war.22.a
+		trigger = {
+			NOT = {
 				any_country = {
 					OR = { tag = CZL original_tag = CZL }
 					has_country_flag = LSC_succession_side_selene
 				}
 			}
 		}
-		name = LSC_civil_war.22.a
 	}
 }
 
@@ -723,7 +729,6 @@ news_event = {
 				set_country_flag = LSC_succession_inconclusive
 				set_country_flag = LSC_provisional_reconstitution
 				set_country_flag = LSC_selene_provisional_caretaker
-				recruit_character = CZL_selene_vorenkov
 				add_country_leader_role = {
 					character = CZL_selene_vorenkov
 					country_leader = {

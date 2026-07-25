@@ -14,10 +14,10 @@ default = {
 	#}
 	
 	male = {
-		"gfx/leaders/leader_unknown.dds"
+		"gfx/leaders/placeholder/Portrait_PLACEHOLDER_large.dds"
 	}
 	female = {
-		"gfx/leaders/leader_unknown.dds"
+		"gfx/leaders/placeholder/Portrait_PLACEHOLDER_large.dds"
 	}
 	
 	operative = {

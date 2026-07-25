@@ -442,7 +442,7 @@ characters={
 		}
 		portraits={
 			civilian={
-				large="Portrait_Soviet_Generic_1.dds"
+				large="gfx/leaders/CZL/Portrait_Soviet_Generic_1.dds"
 			}
 		}
 	}
@@ -469,17 +469,12 @@ characters={
 		# add_country_leader_role after Viktor is retired (vanilla Spain pattern,
 		# spain.1 immediate effect). Not active until promoted — recruiting Kael via
 		# his focus does not by itself make him ruler.
-		country_leader={
-			ideology = fascism_ideology
-			traits = { }
-			expire = "1965.1.1"
-		}
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_arab_2"
 			}
 			civilian={
-				large="Portrait_Soviet_Generic_1.dds"
+				large="gfx/leaders/CZL/Portrait_Soviet_Generic_1.dds"
 			}
 		}
 	}
@@ -507,17 +502,12 @@ characters={
 		# start, but not active until her route promotes her by name via
 		# add_country_leader_role -- recruiting Selene does not by itself make
 		# her ruler, and Viktor remains the sole leader shown in 1924.
-		country_leader={
-			ideology = Constitutional_Monarchy
-			traits = { }
-			expire = "1965.1.1"
-		}
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_arab_3"
 			}
 			civilian={
-				large="Portrait_Soviet_Generic_1.dds"
+				large="gfx/leaders/CZL/Portrait_Soviet_Generic_1.dds"
 			}
 		}
 	}
@@ -542,17 +532,12 @@ characters={
 		# Alarican country. events/LSC_civil_war.txt also recruits and moves
 		# him explicitly via PREV/set_nationality (vanilla Mexico.txt pattern)
 		# as a second, redundant guarantee -- not just this role alone.
-		country_leader={
-			ideology = anarchist_communism
-			traits = { }
-			expire = "1965.1.1"
-		}
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_arab_1"
 			}
 			civilian={
-				large="Portrait_Soviet_Generic_1.dds"
+				large="gfx/leaders/CZL/Portrait_Soviet_Generic_1.dds"
 			}
 		}
 	}
