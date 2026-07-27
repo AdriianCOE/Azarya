@@ -1,0 +1,11 @@
+state={
+    id=515
+    name="IlhaIsolada"
+    manpower=50000
+    state_category=town
+    buildings_max_level_factor=1
+    local_supplies=0
+    provinces={
+        16125 16127 16148 16159 16168 16171 16178 16186 16203 16235 16241 16255 16257 16260 16263 16266 16293 16297 16307 16321
+    }
+}
