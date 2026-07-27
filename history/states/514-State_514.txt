@@ -2,9 +2,9 @@ state={
     id=514
     name="IlhaMaior"
     manpower=80000
-    state_category=Town
-    buildings_max_level_factor=1
-    local_supplies=0
+    buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
     provinces={
         16129 16133 16146 16156 16157 16160 16166 16182 16189 16198 16199 16202 16204 16214 16224 16225 16237 16244 16245 16248 16252 16253 16256 16269 16271 16279 16280 16284 16287 16303 16309 16316 16320
     }

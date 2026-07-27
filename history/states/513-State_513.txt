@@ -1,10 +1,10 @@
 state={
     id=513
     name="IlhaMetdade"
-    manpower=100000
-    state_category=Town
-    buildings_max_level_factor=1
-    local_supplies=0
+    manpower=100502
+    buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
     provinces={
         16130 16136 16137 16144 16147 16149 16151 16167 16173 16177 16180 16181 16184 16191 16192 16193 16194 16195 16196 16208 16209 16211 16218 16221 16227 16234 16264 16274 16277 16286 16290 16291 16294 16296 16300 16308 16311 16312 16314 16317
     }
