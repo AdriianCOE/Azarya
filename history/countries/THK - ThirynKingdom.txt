@@ -196,7 +196,6 @@ if = {
 			defense_skill = 2
 			maneuvering_skill = 4
 			coordination_skill = 4
-    visible = { has_stability > 0.3 }
 }
 
 	IF = {
