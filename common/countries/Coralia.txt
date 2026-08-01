@@ -1,0 +1,6 @@
+#Coralia
+
+graphical_culture = southamerican_gfx
+graphical_culture_2d = southamerican_2d
+
+color = { 214  94  68 }

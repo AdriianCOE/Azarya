@@ -1,6 +1,6 @@
 state={
     id=516
-    name="North Island"
+    name="Inis Morra"
     manpower=20000
     buildings_max_level_factor=1.000
 	state_category=town
@@ -12,6 +12,8 @@ state={
         15934 15935 15946 15957 15986 16020 16026 16047 16060 16070 16075 16114 16115 16123
     }
     history={
+		owner = DUN
+		add_core_of = DUN
         buildings={
             industrial_complex=2
             industrial_infrastructure=1

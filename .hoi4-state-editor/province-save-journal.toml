@@ -1,4 +1,0 @@
-transaction_id = "1785162585426-23492-0"
-destination = "C:\\Users\\drioj\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\Azarya\\map"
-state = "Verified"
-committed_files = ["adjacencies.csv", "definition.csv", "provinces.bmp"]

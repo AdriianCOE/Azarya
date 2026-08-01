@@ -126,7 +126,11 @@ add_ideas = {
 }
 
 create_country_leader = {
+	name = "Edward Wilson"
+	desc = "UPG_Edward_Wilson"
+	picture = "Edward_Wilson.dds"
 	ideology = conservatism
+	traits = { conservative_grandee }
 }
 
 create_field_marshal = {

@@ -121,6 +121,7 @@ set_politics = {
 	}
 
 create_country_leader = {
+	picture = "leader_unknown.dds"
 	ideology = Centrism
 	name = "Lucien Draemont"
 	traits = {}

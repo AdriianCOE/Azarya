@@ -82,6 +82,7 @@ set_politics = {
 	}
 
 create_country_leader = {
+	picture = "leader_unknown.dds"
 	ideology = Merchant_Republic
 	traits = {}
 }

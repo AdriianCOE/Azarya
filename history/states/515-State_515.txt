@@ -1,6 +1,10 @@
 state={
     id=515
-    name="IlhaIsolada"
+    name="Cayos de Solano"
+    history={
+		owner = COR
+		add_core_of = COR
+		}
     manpower=50000
     state_category=town
     buildings_max_level_factor=1

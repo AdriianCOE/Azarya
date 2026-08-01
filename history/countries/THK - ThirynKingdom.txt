@@ -158,22 +158,22 @@ if = {
         picture = "Thaddeus_Ironwood.dds" 
         traits = { war_hero inflexible_strategist infantry_officer politically_connected }
 				attack_skill = 3
-				defense_skill = 4
-				planning_skill = 4
+				defense_skill = 3
+				planning_skill = 3
 				logistics_skill = 3
-				skill = 4
+				skill = 3
 
 }
 	create_corps_commander = {
 		name = "Adric Von Drachen"
 		desc = "THK_Adric"
 		picture = "Adric_Von_Drachen.dds"
-		traits = { infantry_officer trickster war_hero trait_reckless }
+		traits = { trickster war_hero trait_reckless }
 				skill = 2
-				attack_skill = 5
-				defense_skill = 2
+				attack_skill = 3
+				defense_skill = 1
 				planning_skill = 2
-				logistics_skill = 1
+				logistics_skill = 2
 	}
 	create_corps_commander = {
 		name = "Lysandra Ardent"
@@ -182,8 +182,8 @@ if = {
 		traits = { defensive_doctrine brilliant_strategist trait_cautious }
 		skill = 2
 			    attack_skill = 1
-			    defense_skill = 4
-			    planning_skill = 3
+			    defense_skill = 3
+			    planning_skill = 2
 			    logistics_skill = 2
 	}
     create_navy_leader = {

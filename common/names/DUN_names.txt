@@ -1,0 +1,10 @@
+DUN = {
+	male = {
+		names = { "Cormac" "Declan" "Eamon" "Fionn" "Gearoid" "Liam" "Niall" "Oisin" "Padraig" "Ruairi" "Seamus" "Tadhg" "Aidan" "Brendan" "Colm" "Diarmuid" }
+	}
+	female = {
+		names = { "Aoife" "Brigid" "Ciara" "Deirdre" "Eilis" "Fiona" "Grainne" "Maeve" "Niamh" "Orla" "Roisin" "Sinead" "Aine" "Blathnaid" "Caoimhe" "Nuala" }
+	}
+	surnames = { "Fennelly" "Byrne" "Callahan" "Doyle" "Egan" "Farrell" "Gallagher" "Hogan" "Kavanagh" "Lynch" "Molloy" "Nolan" "O'Brien" "Quinn" "Ryan" "Sheehan" }
+	callsigns = { }
+}

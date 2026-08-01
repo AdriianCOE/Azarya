@@ -127,6 +127,7 @@ set_politics = {
 	}
 
 create_country_leader = {
+	picture = "leader_unknown.dds"
 	name = "Lourenço Navarro"
 	ideology = conservatism
 	traits = {}

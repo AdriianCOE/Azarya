@@ -1,6 +1,10 @@
 state={
     id=513
-    name="IlhaMetdade"
+    name="Nueva Coralia"
+    history={
+		owner = COR
+		add_core_of = COR
+		}
     manpower=100502
     buildings_max_level_factor=1.000
 	state_category=town

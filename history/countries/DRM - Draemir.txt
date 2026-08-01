@@ -1,4 +1,4 @@
-﻿capital = 497
+capital = 497
 
 set_oob = "DRM"
 
@@ -118,6 +118,7 @@ set_popularities = {
 }
 
 create_country_leader = {
+	picture = "leader_unknown.dds"
 	name = "Prince Alvric Thalendor"
 	ideology = centrism
 }

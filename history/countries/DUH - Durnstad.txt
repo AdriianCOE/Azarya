@@ -73,6 +73,7 @@ set_politics = {
 	}
 
 create_country_leader = {
+	picture = "leader_unknown.dds"
 	name = "König Albrecht IV"
 	desc = "DUH_Konig_Albrecht_IV"
 	ideology = Constitutional_Monarchy

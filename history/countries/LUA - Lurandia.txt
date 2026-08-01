@@ -96,6 +96,7 @@ set_popularities = {
 }
 
 create_country_leader = {
+	picture = "leader_unknown.dds"
 	name = "Shiprianus"
 	desc = "Esse cara é um mandão"
 	ideology = oligarchism

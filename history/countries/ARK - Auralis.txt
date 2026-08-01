@@ -124,6 +124,7 @@ set_politics = {
 	}
 
 create_country_leader = {
+	picture = "leader_unknown.dds"
 	ideology = conservatism
 	traits = {}
 }

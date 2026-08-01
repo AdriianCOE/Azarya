@@ -226,3 +226,11 @@ KRT = {
     color = rgb { 60 60 60 }
     color_ui = rgb { 60 60 60 }
 }
+COR = {
+    color = rgb { 214 94 68 }
+    color_ui = rgb { 214 94 68 }
+}
+DUN = {
+    color = rgb { 34 102 51 }
+    color_ui = rgb { 34 102 51 }
+}

@@ -125,6 +125,7 @@ set_politics = {
 	}
 
 create_country_leader = {
+	picture = "leader_unknown.dds"
 	name = "Queen Alvienne III"
 	ideology = Constitutional_Monarchy
 	traits = {}

@@ -146,6 +146,7 @@ set_popularities = {
 }
 
 create_country_leader = {
+	picture = "leader_unknown.dds"
 	ideology = Rexism
 }
 

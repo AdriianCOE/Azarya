@@ -147,7 +147,7 @@ set_politics = {
 create_country_leader = {
 	ideology = oligarchism
 	Name = "Cleitinho do Durten"
-	picture = ""
+	picture = "leader_unknown.dds"
 	traits = {}
 }
 

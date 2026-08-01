@@ -65,6 +65,7 @@ add_ideas = {
 }
 
 create_country_leader = {
+	picture = "leader_unknown.dds"
 	name = "Rovak Drenn"
 	ideology = Outlaws
 }

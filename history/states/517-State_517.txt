@@ -1,6 +1,10 @@
 state={
     id=517
-    name="Nort Island"
+    name="Glenbarra"
+    history={
+		owner = DUN
+		add_core_of = DUN
+		}
     manpower=50000
     state_category=city
     buildings_max_level_factor=1

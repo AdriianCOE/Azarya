@@ -1,4 +1,4 @@
-﻿capital = 80
+capital = 80
 
 	oob = "RFB"
 
@@ -65,6 +65,7 @@ add_ideas = {
 }
 
 create_country_leader = {
+	picture = "leader_unknown.dds"
 	name = "Salamaleko"
 	ideology = Outlaws
 }

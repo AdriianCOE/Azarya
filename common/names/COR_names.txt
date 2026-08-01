@@ -1,0 +1,10 @@
+COR = {
+	male = {
+		names = { "Rafael" "Osvaldo" "Emilio" "Fernando" "Gustavo" "Hector" "Ignacio" "Julio" "Leandro" "Mateo" "Nestor" "Octavio" "Pablo" "Ramiro" "Salvador" "Tomas" }
+	}
+	female = {
+		names = { "Adriana" "Beatriz" "Carmela" "Dulce" "Esperanza" "Fidelia" "Graciela" "Ines" "Josefina" "Lucia" "Marisol" "Nieves" "Ofelia" "Paloma" "Rosario" "Yolanda" }
+	}
+	surnames = { "Reyes" "Contreras" "Delgado" "Espinoza" "Figueroa" "Guzman" "Herrera" "Iglesias" "Jimenez" "Lozano" "Marquez" "Navarro" "Ortega" "Pizarro" "Quintana" "Rivas" }
+	callsigns = { }
+}
