@@ -1,0 +1,15 @@
+schema-version = 1
+
+[province-map]
+preserve-ids = true
+generate-coastal-on-save = true
+
+[extra-warnings]
+lone-pixels = false
+few-shared-borders = false
+few-shared-borders-threshold = 3
+
+[image-overlay]
+visible = false
+opacity-percent = 80
+use-project-heightmap = false
